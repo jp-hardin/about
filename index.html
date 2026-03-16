@@ -104,7 +104,7 @@
     pointer-events: none;
   }
 
-  .hero-text { position: relative; z-index: 2; }
+  .hero-text { position: relative; z-index: 2; padding-left: 2rem; }
 
   .hero-label {
     font-family: var(--font-body); font-size: 0.68rem; font-weight: 700;
@@ -157,6 +157,7 @@
   .hero-photo {
     position: relative;
     z-index: 2;
+    padding-right: 2rem;
     opacity: 0;
     animation: fadeUp 1s ease forwards 0.5s;
   }
@@ -199,9 +200,14 @@
     width: 100%;
     height: 380px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .editorial-break img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -221,27 +227,24 @@
     background: linear-gradient(
       to bottom,
       var(--near-black) 0%,
-      rgba(10,10,10,0.3) 25%,
-      rgba(10,10,10,0.3) 75%,
+      rgba(10,10,10,0.4) 30%,
+      rgba(10,10,10,0.4) 70%,
       var(--dark-surface) 100%
     );
     pointer-events: none;
   }
 
   .editorial-break .editorial-quote {
-    position: absolute;
-    bottom: 3rem;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     z-index: 2;
     text-align: center;
     max-width: 700px;
-    padding: 0 2rem;
+    padding: 1.5rem 2rem;
   }
 
   .editorial-quote p {
     font-family: var(--font-display);
-    font-size: clamp(1rem, 2.2vw, 1.4rem);
+    font-size: clamp(0.85rem, 2.2vw, 1.4rem);
     font-weight: 400;
     letter-spacing: 0.06em;
     color: var(--white);
@@ -432,18 +435,29 @@
   .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
-  /* ── Responsive ── */
+  /* ── Responsive: Tablet ── */
   @media (max-width: 900px) {
-    .hero { grid-template-columns: 1fr; text-align: center; padding-top: 7rem; }
-    .hero-photo { order: -1; }
-    .hero-photo-frame { max-width: 300px; margin: 0 auto; }
-    .hero-photo-frame::before { top: 10px; right: -10px; }
-    .hero-rule { margin: 0 auto 1.75rem; }
-    .about-split { grid-template-columns: 1fr; }
-    .about-photo { max-width: 260px; }
-    .editorial-break { height: 280px; }
+    .hero {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 6rem 1.5rem 3rem;
+      min-height: auto;
+      gap: 2rem;
+    }
+    .hero-text { padding-left: 0 !important; }
+    .hero-photo { order: -1; padding-right: 0 !important; }
+    .hero-photo-frame { max-width: 280px; margin: 0 auto; }
+    .hero-photo-frame::before { top: 8px; right: -8px; }
+    .hero-rule { margin: 0 auto 1.5rem; }
+    .hero-cta { text-align: center; }
+    .about-split { grid-template-columns: 1fr; gap: 2rem; }
+    .about-photo { max-width: 220px; margin: 0 auto; }
+    .editorial-break { height: 260px; }
+    .editorial-quote p { font-size: 0.95rem; }
+    .timeline-role { font-size: 0.95rem; }
   }
 
+  /* ── Responsive: Mobile ── */
   @media (max-width: 768px) {
     .nav-links { display: none; }
     .nav-hamburger { display: flex; }
@@ -454,10 +468,50 @@
       padding: 1.5rem 2rem; gap: 1.25rem;
       border-bottom: 1px solid var(--card-border);
     }
-    section { padding: 3.5rem 0; }
+    section { padding: 3rem 0; }
     .container, .container--narrow { padding: 0 1.25rem; }
     .value-grid { grid-template-columns: 1fr; }
+    .value-card { padding: 1.25rem; }
     .editorial-break { height: 220px; }
+    .editorial-quote p { font-size: 0.85rem; line-height: 1.45; }
+    .section-intro { font-size: 0.88rem; margin-bottom: 2rem; }
+    .section-rule { margin-bottom: 1.75rem; }
+    .competency-grid { grid-template-columns: 1fr; }
+    .edu-grid { grid-template-columns: 1fr; }
+    .pub-item { padding: 1rem 1.15rem; }
+    .contact-links { gap: 1.5rem; }
+    .awards-list li { font-size: 0.84rem; padding: 0.7rem 0; }
+  }
+
+  /* ── Responsive: Small phones ── */
+  @media (max-width: 480px) {
+    html { font-size: 15px; }
+    .hero {
+      padding: 5.5rem 1rem 2.5rem;
+      gap: 1.5rem;
+    }
+    .hero-photo-frame { max-width: 220px; }
+    .hero-photo-frame::before { display: none; }
+    .hero-name { letter-spacing: 0.06em; }
+    .hero-summary { font-size: 0.85rem; line-height: 1.75; }
+    .hero-cta a { padding: 0.7rem 1.8rem; font-size: 0.65rem; }
+    .container, .container--narrow { padding: 0 1rem; }
+    section { padding: 2.5rem 0; }
+    .section-title { letter-spacing: 0.04em; }
+    .about-photo { max-width: 180px; }
+    .about-photo::after { display: none; }
+    .editorial-break { height: 180px; }
+    .editorial-quote p { font-size: 0.78rem; }
+    .editorial-quote .eq-rule { margin-top: 0.6rem; }
+    .timeline-item { padding-left: 1.5rem; margin-bottom: 2rem; }
+    .timeline-role { font-size: 0.9rem; }
+    .timeline-bullets li { font-size: 0.8rem; }
+    .value-card h3 { font-size: 0.72rem; }
+    .value-card p { font-size: 0.82rem; }
+    .sector-tags { gap: 0.35rem; }
+    .sector-tag { padding: 0.3rem 0.6rem; font-size: 0.65rem; }
+    .contact-headshot { width: 80px; height: 80px; }
+    .contact-links { flex-direction: column; align-items: center; gap: 1rem; }
   }
 </style>
 </head>
@@ -484,7 +538,7 @@
 <!-- ── Hero ── -->
 <section class="hero">
   <div class="container" style="display: contents;">
-    <div class="hero-text" style="padding-left: 2rem;">
+    <div class="hero-text">
       <div class="hero-label">Board Advisory &amp; Director Candidate</div>
       <h1 class="hero-name">JARED P.<br>HARDIN</h1>
       <p class="hero-title">Managing Director &amp; Head of Mid-Market Origination<br>Benchmark International<br>MBA · M&amp;A Advisory · C-Suite Operations · Lean Six Sigma</p>
@@ -496,7 +550,7 @@
         <a href="#value">Explore Board Profile</a>
       </div>
     </div>
-    <div class="hero-photo" style="padding-right: 2rem;">
+    <div class="hero-photo">
       <div class="hero-photo-frame">
         <img src="./images/hero-portrait.jpg" alt="Jared P. Hardin — Managing Director, Benchmark International" loading="eager">
       </div>
