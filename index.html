@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jared P. Hardin | Board Advisory & Director Candidate</title>
+<meta name="description" content="Jared P. Hardin — Managing Director, M&A Advisory Executive, Board of Directors & Advisory Board Candidate. 20+ years of cross-functional leadership in investment banking, technology, healthcare, and operations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #000000;
+    --near-black: #0A0A0A;
+    --dark-surface: #111111;
+    --card-bg: #161616;
+    --card-border: #222222;
+    --gold: #C48F5B;
+    --gold-dim: rgba(196,143,91,0.15);
+    --gold-glow: rgba(196,143,91,0.06);
+    --warm-gray: #C3BDB6;
+    --med-gray: #A39486;
+    --light-gray: #ADA8A4;
+    --cool-gray: #7B8898;
+    --white: #FFFFFF;
+    --off-white: #E8E8E8;
+    --text-primary: #E8E8E8;
+    --text-secondary: #A39486;
+    --text-muted: #7B8898;
+    --font-display: 'Cinzel', serif;
+    --font-body: 'Quicksand', sans-serif;
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+
+  body {
+    background: var(--near-black);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Grain */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  ::selection { background: var(--gold); color: var(--black); }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--near-black); }
+  ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 2rem; }
+  .container--narrow { max-width: 900px; margin: 0 auto; padding: 0 2rem; }
+
+  /* ── Nav ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10,10,10,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--card-border);
+  }
+  nav .container { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .nav-brand { font-family: var(--font-display); font-size: 0.85rem; letter-spacing: 0.2em; color: var(--gold); text-decoration: none; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-family: var(--font-body); font-size: 0.72rem; font-weight: 600;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--text-muted); text-decoration: none; transition: color 0.3s ease;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+  .nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--warm-gray); transition: all 0.3s ease; }
+
+  /* ── Hero ── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    padding: 6rem 0 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, var(--gold-glow) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-text { position: relative; z-index: 2; }
+
+  .hero-label {
+    font-family: var(--font-body); font-size: 0.68rem; font-weight: 700;
+    letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold);
+    margin-bottom: 1.25rem;
+    opacity: 0; animation: fadeUp 0.8s ease forwards 0.2s;
+  }
+
+  .hero-name {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
+    font-weight: 400; letter-spacing: 0.1em; color: var(--white);
+    line-height: 1.15; margin-bottom: 1rem;
+    opacity: 0; animation: fadeUp 0.8s ease forwards 0.4s;
+  }
+
+  .hero-title {
+    font-family: var(--font-body);
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    font-weight: 300; color: var(--text-secondary);
+    letter-spacing: 0.04em; margin-bottom: 1.75rem; line-height: 1.65;
+    opacity: 0; animation: fadeUp 0.8s ease forwards 0.6s;
+  }
+
+  .hero-rule {
+    width: 50px; height: 1px; background: var(--gold); margin-bottom: 1.75rem;
+    opacity: 0; animation: fadeUp 0.8s ease forwards 0.7s;
+  }
+
+  .hero-summary {
+    font-size: 0.9rem; font-weight: 300; line-height: 1.85; color: var(--text-secondary);
+    opacity: 0; animation: fadeUp 0.8s ease forwards 0.9s;
+  }
+
+  .hero-cta {
+    margin-top: 2.25rem;
+    opacity: 0; animation: fadeUp 0.8s ease forwards 1.1s;
+  }
+
+  .hero-cta a {
+    display: inline-block; font-family: var(--font-body);
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); border: 1px solid var(--gold);
+    padding: 0.8rem 2.2rem; text-decoration: none;
+    transition: all 0.4s ease;
+  }
+  .hero-cta a:hover { background: var(--gold); color: var(--black); }
+
+  /* Hero portrait */
+  .hero-photo {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    animation: fadeUp 1s ease forwards 0.5s;
+  }
+
+  .hero-photo-frame {
+    position: relative;
+    max-width: 420px;
+    margin-left: auto;
+  }
+
+  .hero-photo-frame::before {
+    content: '';
+    position: absolute;
+    top: 16px; right: -16px;
+    width: 100%; height: 100%;
+    border: 1px solid var(--gold);
+    z-index: -1;
+    transition: all 0.5s ease;
+  }
+
+  .hero-photo-frame:hover::before {
+    top: 10px; right: -10px;
+  }
+
+  .hero-photo-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: grayscale(15%) contrast(1.02);
+    transition: filter 0.5s ease;
+  }
+
+  .hero-photo-frame:hover img {
+    filter: grayscale(0%) contrast(1);
+  }
+
+  /* ── Editorial Photo Break ── */
+  .editorial-break {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+  }
+
+  .editorial-break img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    filter: grayscale(30%) contrast(1.05);
+    transition: filter 0.6s ease;
+  }
+
+  .editorial-break:hover img {
+    filter: grayscale(10%) contrast(1);
+  }
+
+  .editorial-break::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      var(--near-black) 0%,
+      rgba(10,10,10,0.3) 25%,
+      rgba(10,10,10,0.3) 75%,
+      var(--dark-surface) 100%
+    );
+    pointer-events: none;
+  }
+
+  .editorial-break .editorial-quote {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+    max-width: 700px;
+    padding: 0 2rem;
+  }
+
+  .editorial-quote p {
+    font-family: var(--font-display);
+    font-size: clamp(1rem, 2.2vw, 1.4rem);
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    line-height: 1.5;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+  }
+
+  .editorial-quote .eq-rule {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    margin: 1rem auto 0;
+  }
+
+  /* ── Section base ── */
+  section { padding: 5rem 0; }
+
+  .section-label {
+    font-family: var(--font-body); font-size: 0.65rem; font-weight: 700;
+    letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 400; letter-spacing: 0.08em; color: var(--white); margin-bottom: 1rem;
+  }
+  .section-rule { width: 40px; height: 1px; background: var(--gold); margin-bottom: 2.5rem; }
+  .section-intro {
+    font-size: 0.95rem; font-weight: 300; line-height: 1.85;
+    color: var(--text-secondary); max-width: 720px; margin-bottom: 3rem;
+  }
+
+  /* ── Board Value Cards ── */
+  .value-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+
+  .value-card {
+    background: var(--card-bg); border: 1px solid var(--card-border);
+    padding: 1.75rem; transition: all 0.4s ease; position: relative; overflow: hidden;
+  }
+  .value-card::before {
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px;
+    background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.5s ease;
+  }
+  .value-card:hover::before { transform: scaleX(1); }
+  .value-card:hover { border-color: rgba(196,143,91,0.25); }
+  .value-card h3 {
+    font-family: var(--font-body); font-size: 0.78rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem;
+  }
+  .value-card p { font-size: 0.86rem; font-weight: 300; line-height: 1.7; color: var(--text-secondary); }
+
+  /* ── About split ── */
+  .about-split {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+
+  .about-photo {
+    position: relative;
+  }
+
+  .about-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(20%) contrast(1.03);
+    transition: filter 0.5s ease;
+  }
+
+  .about-photo:hover img { filter: grayscale(0%); }
+
+  .about-photo::after {
+    content: '';
+    position: absolute;
+    bottom: -8px; left: -8px;
+    width: 60%; height: 60%;
+    border-bottom: 1px solid var(--gold);
+    border-left: 1px solid var(--gold);
+    pointer-events: none;
+  }
+
+  /* ── Experience Timeline ── */
+  .timeline { position: relative; }
+  .timeline::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--card-border) 10%, var(--card-border) 90%, transparent);
+  }
+  .timeline-item { position: relative; padding-left: 2.5rem; margin-bottom: 3rem; }
+  .timeline-item::before {
+    content: ''; position: absolute; left: -4px; top: 8px;
+    width: 9px; height: 9px; background: var(--gold); border-radius: 50%;
+  }
+  .timeline-dates {
+    font-family: var(--font-body); font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.35rem;
+  }
+  .timeline-role { font-family: var(--font-display); font-size: 1.05rem; letter-spacing: 0.04em; color: var(--white); margin-bottom: 0.2rem; }
+  .timeline-org { font-size: 0.88rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.15rem; }
+  .timeline-location { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.8rem; }
+  .timeline-desc { font-size: 0.88rem; font-weight: 300; line-height: 1.75; color: var(--text-secondary); }
+  .timeline-bullets { list-style: none; margin-top: 0.6rem; }
+  .timeline-bullets li {
+    position: relative; padding-left: 1rem; margin-bottom: 0.4rem;
+    font-size: 0.84rem; font-weight: 300; line-height: 1.65; color: var(--text-secondary);
+  }
+  .timeline-bullets li::before {
+    content: ''; position: absolute; left: 0; top: 0.55em;
+    width: 4px; height: 4px; background: var(--gold); border-radius: 50%;
+  }
+
+  /* ── Competencies ── */
+  .competency-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.6rem; }
+  .competency-item { display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 0; }
+  .competency-dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+  .competency-item span { font-size: 0.85rem; font-weight: 400; color: var(--text-secondary); }
+
+  /* ── Sector Tags ── */
+  .sector-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .sector-tag {
+    font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-muted); border: 1px solid var(--card-border);
+    padding: 0.4rem 0.85rem; transition: all 0.3s ease;
+  }
+  .sector-tag:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* ── Education ── */
+  .edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+  .edu-card { border-left: 2px solid var(--gold); padding-left: 1.25rem; }
+  .edu-degree { font-family: var(--font-display); font-size: 0.95rem; letter-spacing: 0.03em; color: var(--white); margin-bottom: 0.2rem; }
+  .edu-school { font-size: 0.85rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.15rem; }
+  .edu-detail { font-size: 0.8rem; color: var(--text-muted); }
+
+  /* ── Awards ── */
+  .awards-list { list-style: none; }
+  .awards-list li { padding: 0.85rem 0; border-bottom: 1px solid var(--card-border); font-size: 0.9rem; font-weight: 300; color: var(--text-secondary); }
+  .awards-list li:last-child { border-bottom: none; }
+  .awards-list strong { color: var(--white); font-weight: 500; }
+  .award-org { font-size: 0.78rem; color: var(--text-muted); }
+
+  /* ── Publications ── */
+  .publications-list { display: grid; gap: 1rem; }
+  .pub-item { background: var(--card-bg); border: 1px solid var(--card-border); padding: 1.25rem 1.5rem; transition: border-color 0.3s ease; }
+  .pub-item:hover { border-color: rgba(196,143,91,0.3); }
+  .pub-type { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.35rem; }
+  .pub-title { font-size: 0.92rem; font-weight: 500; color: var(--white); margin-bottom: 0.25rem; }
+  .pub-venue { font-size: 0.8rem; color: var(--text-muted); }
+
+  /* ── Contact ── */
+  .contact-section { padding: 5rem 0 3rem; text-align: center; border-top: 1px solid var(--card-border); }
+  .contact-section .section-label, .contact-section .section-title { text-align: center; }
+  .contact-section .section-rule { margin: 0 auto 2rem; }
+
+  .contact-headshot {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--gold);
+    margin: 0 auto 1.5rem;
+    display: block;
+    filter: grayscale(15%);
+    transition: filter 0.4s ease;
+  }
+  .contact-headshot:hover { filter: grayscale(0%); }
+
+  .contact-links { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
+  .contact-links a {
+    font-family: var(--font-body); font-size: 0.78rem; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text-muted); text-decoration: none; transition: color 0.3s ease;
+    padding-bottom: 2px; border-bottom: 1px solid transparent;
+  }
+  .contact-links a:hover { color: var(--gold); border-bottom-color: var(--gold); }
+
+  footer {
+    padding: 2rem 0; text-align: center;
+    font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.08em;
+  }
+
+  /* ── Animations ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; text-align: center; padding-top: 7rem; }
+    .hero-photo { order: -1; }
+    .hero-photo-frame { max-width: 300px; margin: 0 auto; }
+    .hero-photo-frame::before { top: 10px; right: -10px; }
+    .hero-rule { margin: 0 auto 1.75rem; }
+    .about-split { grid-template-columns: 1fr; }
+    .about-photo { max-width: 260px; }
+    .editorial-break { height: 280px; }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
+    .nav-links.open {
+      display: flex; flex-direction: column;
+      position: absolute; top: 64px; left: 0; right: 0;
+      background: rgba(10,10,10,0.95); backdrop-filter: blur(20px);
+      padding: 1.5rem 2rem; gap: 1.25rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+    section { padding: 3.5rem 0; }
+    .container, .container--narrow { padding: 0 1.25rem; }
+    .value-grid { grid-template-columns: 1fr; }
+    .editorial-break { height: 220px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <div class="container">
+    <a href="#" class="nav-brand">JPH</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#value">Board Value</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#competencies">Competencies</a></li>
+      <li><a href="#leadership">Thought Leadership</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="container" style="display: contents;">
+    <div class="hero-text" style="padding-left: 2rem;">
+      <div class="hero-label">Board Advisory &amp; Director Candidate</div>
+      <h1 class="hero-name">JARED P.<br>HARDIN</h1>
+      <p class="hero-title">Managing Director &amp; Head of Mid-Market Origination<br>Benchmark International<br>MBA · M&amp;A Advisory · C-Suite Operations · Lean Six Sigma</p>
+      <div class="hero-rule"></div>
+      <p class="hero-summary">
+        Senior M&amp;A executive with 20+ years of cross-functional leadership spanning investment banking, technology, healthcare, and multi-unit operations. Deep expertise in sell-side advisory, business valuation, deal origination, exit planning, and succession strategy for founder- and family-owned middle-market companies.
+      </p>
+      <div class="hero-cta">
+        <a href="#value">Explore Board Profile</a>
+      </div>
+    </div>
+    <div class="hero-photo" style="padding-right: 2rem;">
+      <div class="hero-photo-frame">
+        <img src="images/hero-portrait.jpg" alt="Jared P. Hardin — Managing Director, Benchmark International" loading="eager">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Editorial Break ── -->
+<div class="editorial-break">
+  <img src="images/editorial-wide.jpg" alt="Jared Hardin — Executive Portrait" loading="lazy">
+  <div class="editorial-quote">
+    <p>&ldquo;It&rsquo;s not just financial modeling and spreadsheets. It&rsquo;s legacy, identity, and the weight of letting go.&rdquo;</p>
+    <div class="eq-rule"></div>
+  </div>
+</div>
+
+<!-- ── Board Value Proposition ── -->
+<section id="value" style="background: var(--dark-surface);">
+  <div class="container--narrow">
+    <div class="reveal">
+      <div class="about-split">
+        <div class="about-photo">
+          <img src="images/about-portrait.jpg" alt="Jared Hardin" loading="lazy">
+        </div>
+        <div>
+          <div class="section-label">Why This Candidate</div>
+          <h2 class="section-title">Board Value Proposition</h2>
+          <div class="section-rule"></div>
+          <p class="section-intro" style="margin-bottom: 0;">
+            Uniquely positioned to contribute to boards of directors and advisory boards through a rare combination of investment banking transaction expertise, hands-on operating experience, and deep familiarity with the challenges facing privately held and founder-led businesses. Career spans C-suite roles as COO, CIO, and CMO, entrepreneurial ventures from startup to exit, and a current seat at a globally recognized M&amp;A advisory firm advising middle-market owners on the most consequential decisions of their professional lives.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="value-grid reveal">
+      <div class="value-card">
+        <h3>M&amp;A &amp; Strategic Alternatives</h3>
+        <p>Advises founder-owned businesses ($5M–$250M EV) on sell-side transactions, growth acquisitions, and shareholder value maximization. Expertise in EBITDA normalization, quality of earnings, and financial due diligence.</p>
+      </div>
+      <div class="value-card">
+        <h3>Exit &amp; Succession Planning</h3>
+        <p>Deep experience guiding business owners through ownership transitions, retirement exits, and multi-generational succession architecture. Understands the emotional and financial complexities founders face.</p>
+      </div>
+      <div class="value-card">
+        <h3>Private Equity Dynamics</h3>
+        <p>Published expertise on PE acquisition tactics and sell-side counter-playbooks. Navigates buyer universe analysis, deal structuring, and competitive process management.</p>
+      </div>
+      <div class="value-card">
+        <h3>Digital &amp; Technology Strategy</h3>
+        <p>Former CIO/CMO with hands-on experience in digital transformation, SaaS product development, e-commerce, CRM integration, and data-driven marketing across complex organizations.</p>
+      </div>
+      <div class="value-card">
+        <h3>Operational Turnarounds</h3>
+        <p>COO and operations leadership across growth-stage startups, healthcare ventures, and multi-site enterprises. Track record of achieving profitability ahead of projections.</p>
+      </div>
+      <div class="value-card">
+        <h3>Governance &amp; Risk</h3>
+        <p>Lean Six Sigma Green Belt. Executive and ownership-table experience in family-owned, PE-backed, and entrepreneurial settings. Fluent in the governance needs of closely held companies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Professional Experience ── -->
+<section id="experience">
+  <div class="container--narrow">
+    <div class="reveal">
+      <div class="section-label">Career</div>
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="timeline reveal">
+
+      <div class="timeline-item">
+        <div class="timeline-dates">2020 – Present</div>
+        <div class="timeline-role">Managing Director | Head of Mid-Market Origination</div>
+        <div class="timeline-org">Benchmark International</div>
+        <div class="timeline-location">Tampa, FL — Global M&amp;A Advisory · 450+ Staff · 10 Offices · 15 Countries · $9.4B+ Transaction Value</div>
+        <ul class="timeline-bullets">
+          <li>Lead mid-market origination strategy targeting founder-owned and family-held businesses across 30+ industry verticals</li>
+          <li>Design and execute ABM campaigns spanning insurance distribution, business services, construction, healthcare, technology, and manufacturing</li>
+          <li>Build comprehensive sector intelligence frameworks including weighted origination target guides and enriched buyer universe databases</li>
+          <li>Conduct forensic financial analysis, EBITDA normalization, and quality-of-earnings reconciliation on prospective engagements</li>
+          <li>Author published M&amp;A thought leadership on valuation strategy, market timing, PE buyer tactics, and exit planning</li>
+          <li>Panelist at ACG Florida Capital Connection on macro-trend cost structures and M&amp;A market outlook</li>
+          <li>Contributed to consecutive Global Investment Bank of the Year recognition (Global M&amp;A Atlas Awards, 2024 &amp; 2025)</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dates">2017 – 2020</div>
+        <div class="timeline-role">Chief Operating Officer</div>
+        <div class="timeline-org">Vauntium, LLC</div>
+        <div class="timeline-location">San Antonio, TX — Growth-Stage SaaS &amp; Affiliate Marketing Technology</div>
+        <ul class="timeline-bullets">
+          <li>Oversaw end-to-end operational efficiency, business process optimization, and cross-functional team leadership</li>
+          <li>Drove SaaS product development and innovation, launching multiple proprietary systems from concept through deployment</li>
+          <li>Managed technology stack architecture and go-to-market execution in the affiliate marketing sector</li>
+          <li>Concurrently served as Strategic Advisor on growth strategy, partnerships, and capital allocation</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dates">2016 – 2018</div>
+        <div class="timeline-role">Strategic Advisor &amp; Director of Operations</div>
+        <div class="timeline-org">Live Free Medical Clinic</div>
+        <div class="timeline-location">San Antonio, TX — Early-Stage Healthcare Venture</div>
+        <ul class="timeline-bullets">
+          <li>Expedited new clinical facility opening ahead of schedule and under budget</li>
+          <li>Achieved profitability surpassing projections through workflow design and patient acquisition systems</li>
+          <li>Advised leadership on strategic growth, payer strategy, and facility expansion</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dates">2007 – 2016</div>
+        <div class="timeline-role">Chief Information Officer &amp; Chief Marketing Officer</div>
+        <div class="timeline-org">Cavender Auto Group</div>
+        <div class="timeline-location">San Antonio, TX — Multi-Generational, Family-Owned · 8 Dealerships · $150M+ Revenue</div>
+        <ul class="timeline-bullets">
+          <li>Dual C-suite responsibility for enterprise technology infrastructure and omnichannel marketing across all brands</li>
+          <li>Generated significant revenue through digital-first strategy spanning e-commerce, CRM, SEM/SEO, and analytics</li>
+          <li>Key member of ownership and executive leadership team; contributed to strategic planning and capital allocation</li>
+          <li>First-hand experience in governance, succession planning, and dynamics of a multi-generational family enterprise</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dates">1998 – 2007</div>
+        <div class="timeline-role">Senior Analyst / Technical Analyst</div>
+        <div class="timeline-org">Curtis C. Gunn Inc. (Gunn Automotive Group)</div>
+        <div class="timeline-location">San Antonio, TX</div>
+        <ul class="timeline-bullets">
+          <li>Nine-year progression from Technical Analyst to Senior Analyst in a complex, multi-site enterprise</li>
+          <li>Enhanced cash management systems and improved help desk operations</li>
+          <li>Managed cross-functional projects spanning IT, finance, and dealer operations</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Core Competencies ── -->
+<section id="competencies" style="background: var(--dark-surface);">
+  <div class="container--narrow">
+    <div class="reveal">
+      <div class="section-label">Capabilities</div>
+      <h2 class="section-title">Core Competencies</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="competency-grid reveal">
+      <div class="competency-item"><div class="competency-dot"></div><span>Sell-Side M&amp;A Advisory &amp; Deal Origination</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>Business Valuation &amp; EBITDA Normalization</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>Exit Planning &amp; Succession Strategy</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>Private Equity &amp; Strategic Buyer Engagement</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>P&amp;L Ownership &amp; Operational Leadership</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>Digital Transformation &amp; Technology Strategy</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>Financial Due Diligence &amp; QoE Analysis</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>Healthcare Operations &amp; Venture Development</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>SaaS Product Development &amp; Go-to-Market</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>Account-Based Marketing &amp; Campaign Design</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>Stakeholder Negotiation &amp; Board Governance</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>Lean Six Sigma Process Improvement</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>Multi-Unit &amp; Multi-Site Operations</span></div>
+      <div class="competency-item"><div class="competency-dot"></div><span>Team Building, Coaching &amp; Talent Development</span></div>
+    </div>
+    <div class="reveal" style="margin-top: 3rem;">
+      <div class="section-label" style="margin-bottom: 1rem;">Industry Sector Expertise</div>
+      <div class="sector-tags">
+        <span class="sector-tag">Investment Banking</span>
+        <span class="sector-tag">Business Services</span>
+        <span class="sector-tag">Construction &amp; Trades</span>
+        <span class="sector-tag">Insurance Distribution</span>
+        <span class="sector-tag">Healthcare</span>
+        <span class="sector-tag">Behavioral Health</span>
+        <span class="sector-tag">SaaS &amp; Technology</span>
+        <span class="sector-tag">Industrial Manufacturing</span>
+        <span class="sector-tag">Automotive Retail</span>
+        <span class="sector-tag">Affiliate Marketing</span>
+        <span class="sector-tag">Real Estate</span>
+        <span class="sector-tag">Energy &amp; Utilities</span>
+        <span class="sector-tag">Accounting &amp; CPA</span>
+        <span class="sector-tag">Staffing &amp; Recruitment</span>
+        <span class="sector-tag">Food &amp; Beverage / QSR</span>
+        <span class="sector-tag">Consumer Services</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Thought Leadership ── -->
+<section id="leadership">
+  <div class="container--narrow">
+    <div class="reveal">
+      <div class="section-label">Published Work &amp; Speaking</div>
+      <h2 class="section-title">Thought Leadership</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="publications-list reveal">
+      <div class="pub-item">
+        <div class="pub-type">Article</div>
+        <div class="pub-title">Market Saturation is Here – Will You Ride the Wave or Get Swept Away?</div>
+        <div class="pub-venue">Benchmark International Insights</div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-type">Article Series</div>
+        <div class="pub-title">PE Buyer Tactics &amp; the Sell-Side Counter-Playbook</div>
+        <div class="pub-venue">benchmarkintl.com — M&amp;A Advisory Content</div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-type">Article</div>
+        <div class="pub-title">Don't Sideline Key Players! &amp; When Is the Right Time to Be "On the Market?"</div>
+        <div class="pub-venue">LinkedIn / Benchmark International</div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-type">Conference Panel</div>
+        <div class="pub-title">Macro-Trend Cost Structures &amp; M&amp;A Market Outlook 2025–2026</div>
+        <div class="pub-venue">ACG Florida Capital Connection</div>
+      </div>
+      <div class="pub-item">
+        <div class="pub-type">Contributing Author</div>
+        <div class="pub-title">The Mark — Award-Winning M&amp;A Publication (25 Editions)</div>
+        <div class="pub-venue">Benchmark International</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Education & Credentials ── -->
+<section id="education" style="background: var(--dark-surface);">
+  <div class="container--narrow">
+    <div class="reveal">
+      <div class="section-label">Credentials</div>
+      <h2 class="section-title">Education &amp; Certifications</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="edu-grid reveal">
+      <div class="edu-card">
+        <div class="edu-degree">Master of Business Administration</div>
+        <div class="edu-school">The University of Texas at San Antonio</div>
+        <div class="edu-detail">Leadership &amp; Marketing · 2007–2010</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-degree">Bachelor of Business Administration</div>
+        <div class="edu-school">The University of Texas at San Antonio</div>
+        <div class="edu-detail">Management of Information Systems</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-degree">International Business Studies</div>
+        <div class="edu-school">Brigham Young University – Idaho</div>
+        <div class="edu-detail"></div>
+      </div>
+    </div>
+    <div class="reveal" style="margin-top: 2.5rem;">
+      <div class="section-label" style="margin-bottom: 1rem;">Professional Certifications</div>
+      <div class="competency-grid">
+        <div class="competency-item"><div class="competency-dot"></div><span>Lean Six Sigma Green Belt</span></div>
+        <div class="competency-item"><div class="competency-dot"></div><span>Florida Real Estate Sales Associate — FL DBPR</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Awards ── -->
+<section>
+  <div class="container--narrow">
+    <div class="reveal">
+      <div class="section-label">Recognition</div>
+      <h2 class="section-title">Awards &amp; Firm Recognition</h2>
+      <div class="section-rule"></div>
+    </div>
+    <ul class="awards-list reveal">
+      <li><strong>Global Investment Bank of the Year</strong> — Global M&amp;A Atlas Awards <span class="award-org">(2024, 2025 consecutive)</span></li>
+      <li><strong>Investment Banking Firm of the Year</strong> — The M&amp;A Advisor</li>
+      <li><strong>#1 Sell-Side Privately Owned M&amp;A Advisor Worldwide</strong> — PitchBook Global League Tables</li>
+      <li><strong>#1 Sell-Side Exclusively M&amp;A Advisor Worldwide</strong> — Refinitiv Global League Tables</li>
+      <li><strong>Four Awards at the International M&amp;A Awards</strong> <span class="award-org">(2025)</span></li>
+      <li><strong>Benchmark International Arena</strong> — Tampa Bay Lightning Naming Rights Partner <span class="award-org">(2025)</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── Contact ── -->
+<section id="contact" class="contact-section">
+  <div class="container--narrow">
+    <div class="reveal">
+      <img src="images/contact-headshot.jpg" alt="Jared Hardin" class="contact-headshot" loading="lazy">
+      <div class="section-label">Connect</div>
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="section-rule"></div>
+      <p class="section-intro" style="text-align: center; margin: 0 auto 2rem;">
+        Open to board of directors, advisory board, and strategic advisory opportunities across multiple industries. Based in Tampa, FL.
+      </p>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/jared-p-hardin/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.benchmarkintl.com/about/global-team/executives/jared-hardin/" target="_blank" rel="noopener">Benchmark International</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    &copy; 2026 Jared P. Hardin. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+  });
+</script>
+
+</body>
+</html>
