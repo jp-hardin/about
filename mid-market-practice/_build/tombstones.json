@@ -6,7 +6,7 @@
   "sector": "architecture-engineering",
   "link": "https://www.benchmarkintl.com/insights/pbk-architects-inc-received-strategic-investment-from-dc-capital-partners/",
   "image": "assets/img/tombstones/pbk-architects-dc-capital-partners.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "CivilCorp, LLC",
@@ -15,7 +15,7 @@
   "sector": "architecture-engineering",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-civilcorp-and-esp-associates/",
   "image": "assets/img/tombstones/civilcorp-llc-esp-associates.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Arora Engineers, Inc.",
@@ -24,7 +24,7 @@
   "sector": "architecture-engineering",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-arora-engineers-and-jacmel-growth-partners/",
   "image": "assets/img/tombstones/arora-engineering-jacmel-growth.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Speece Lewis Engineers",
@@ -87,7 +87,7 @@
   "sector": "business-services",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitates-the-acquisition-of-ubeo-business-services-to-sentinel-capital-partners/",
   "image": "assets/img/tombstones/ubeo-sentinel-capital.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Telmark Sales Solution, Inc",
@@ -168,7 +168,7 @@
   "sector": "construction",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-carolina-marine-structures-inc-and-united-infrastructure-holdings-inc/",
   "image": "assets/img/tombstones/carolina-marine-united-infrastructure.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Clark Crane",
@@ -177,7 +177,7 @@
   "sector": "construction",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-clark-crane-and-capital-extension-crane-lift/",
   "image": "assets/img/tombstones/clark-crane-southworth-captial.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Vision BP, LLC",
@@ -249,7 +249,7 @@
   "sector": "consumer-food-retail",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-x-caliber-container-llc-and-longwater-opportunities/",
   "image": "assets/img/tombstones/xcaliber-container-longwater-opportunities.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Skillets, Inc",
@@ -330,7 +330,7 @@
   "sector": "energy-utilities",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-wilnat-inc-doing-business-as-kgm-and-st-louisbased-private-equity-firm-compass-group-equity-partners/",
   "image": "assets/img/tombstones/wilnat-dba-kgm-compass-group-equity-partners.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "IEM Energy Consultants, LLC",
@@ -546,7 +546,7 @@
   "sector": "healthcare",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-advises-on-the-sale-of-atlanta-biologicals-inc-to-biotechne-corporation/",
   "image": "assets/img/tombstones/atlantabiologists-biotechne.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Paramount Urgent Care, Inc.",
@@ -555,7 +555,7 @@
   "sector": "healthcare",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-a-transaction-between-paramount-urgent-care-inc-and-hca-healthcare/",
   "image": "assets/img/tombstones/paramount-urgent0-care-hca.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Solution Matrix Inc.",
@@ -564,7 +564,7 @@
   "sector": "healthcare",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-solution-matrix-inc-exi-investment-partners-and-broadview-group-holdings-llc/",
   "image": "assets/img/tombstones/solution-matrix-broadview-group.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Perfusion.com, Inc.",
@@ -573,7 +573,7 @@
   "sector": "healthcare",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-perfusioncom-inc-and-epic-healthcare-travel-staffing-inc/",
   "image": "assets/img/tombstones/perfusion-com-inc-epic-healthcare-staffing.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Advanced Renal Care, Inc",
@@ -636,7 +636,7 @@
   "sector": "industrial",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-negotiates-sale-of-gasco-affiliates-llc-to-tech-air-a-ci-capital-partners-company/",
   "image": "assets/img/tombstones/gasco-affiliates-tech-air.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Ranews Companies",
@@ -645,7 +645,7 @@
   "sector": "industrial",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-ranews-companies-and-alj-regional-holdings-inc-united-global-development/",
   "image": "assets/img/tombstones/ranewsco-alj-regional.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "MaxVac Inc.",
@@ -726,7 +726,7 @@
   "sector": "software",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitates-the-transaction-of-rx30-to-gtcr/",
   "image": "assets/img/tombstones/transaction-data-systems-rx30-gtcr-jpg.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Warkentine, Inc, DBA Computer RX",
@@ -735,7 +735,7 @@
   "sector": "software",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitates-the-transaction-between-computer-rx-and-rx30/",
   "image": "assets/img/tombstones/warkentine-computer-rx-transaction-data-systems.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Pruvan, Inc.",
@@ -888,7 +888,7 @@
   "sector": "transportation",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-of-nationwide-express-to-jones-logistics/",
   "image": "assets/img/tombstones/nationwide-express-jones-capital-jones-logistics.jpg",
-  "mmt": true
+  "featured": true
  },
  {
   "seller": "Carmi Logistics",
@@ -960,6 +960,6 @@
   "sector": "energy-utilities",
   "link": "",
   "image": "assets/img/tombstones/echo-power-and-engineering-high-net-worth-individual.jpg",
-  "mmt": true
+  "featured": true
  }
 ]
