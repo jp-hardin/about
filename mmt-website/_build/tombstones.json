@@ -1,0 +1,965 @@
+[
+ {
+  "seller": "PBK Architects, Inc.",
+  "buyer": "DC Capital Partners",
+  "verb": "Acquired By",
+  "sector": "architecture-engineering",
+  "link": "https://www.benchmarkintl.com/insights/pbk-architects-inc-received-strategic-investment-from-dc-capital-partners/",
+  "image": "assets/img/tombstones/pbk-architects-dc-capital-partners.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "CivilCorp, LLC",
+  "buyer": "ESP Associates",
+  "verb": "Acquired By",
+  "sector": "architecture-engineering",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-civilcorp-and-esp-associates/",
+  "image": "assets/img/tombstones/civilcorp-llc-esp-associates.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Arora Engineers, Inc.",
+  "buyer": "Jacmel Growth Partners",
+  "verb": "Acquired By",
+  "sector": "architecture-engineering",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-arora-engineers-and-jacmel-growth-partners/",
+  "image": "assets/img/tombstones/arora-engineering-jacmel-growth.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Speece Lewis Engineers",
+  "buyer": "Bowman Consulting Group Ltd.",
+  "verb": "Acquired By",
+  "sector": "architecture-engineering",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-speece-lewis-engineers-and-bowman-consulting-group-ltd/",
+  "seller_logo": "assets/img/logos/speece-lewis-engineers-750e9.png",
+  "buyer_logo": "assets/img/logos/bowman-website-e2599.png"
+ },
+ {
+  "seller": "Hole Montes, Inc.",
+  "buyer": "Bowman Consulting Group Ltd.",
+  "verb": "Acquired By",
+  "sector": "architecture-engineering",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitated-the-transaction-between-hole-montes-inc-and-bowman-consulting-group-ltd/",
+  "seller_logo": "assets/img/logos/hole-montes-inc-91ed0.png",
+  "buyer_logo": "assets/img/logos/bowman-consulting-groups-ltd-27714.png"
+ },
+ {
+  "seller": "Denmon Engineering Co Inc.",
+  "buyer": "Volkert",
+  "verb": "Acquired By",
+  "sector": "architecture-engineering",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-facilitated-the-transaction-of-denmon-engineering-company-inc-to-volkert/",
+  "seller_logo": "assets/img/logos/benchmark-international-deal-completion-denmon-engineering-company-logo-2bcf8.png",
+  "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-volkert-company-logo-05b19.png"
+ },
+ {
+  "seller": "Twenty First Century Engineering",
+  "buyer": "J.S. Held, LLC",
+  "verb": "Acquired By",
+  "sector": "architecture-engineering",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-twenty-first-century-engineering-and-j.s.-held/",
+  "seller_logo": "assets/img/logos/twenty-first-bddad.png",
+  "buyer_logo": "assets/img/logos/js-held-e7c5a.png"
+ },
+ {
+  "seller": "Texas Engineering Solutions, LLC",
+  "buyer": "Atwell, LLC",
+  "verb": "Acquired By",
+  "sector": "architecture-engineering",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-has-successfully-facilitated-the-acquisition-of-texas-engineering-solutions-llc-to-atwell-llc/",
+  "seller_logo": "assets/img/logos/texas-engineering-8665a.png",
+  "buyer_logo": "assets/img/logos/atwell-76bec.png"
+ },
+ {
+  "seller": "Data Science Automation",
+  "buyer": "Blackford Capital",
+  "verb": "Acquired By",
+  "sector": "architecture-engineering",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-data-science-automation-dsa-and-blackford-capital/",
+  "seller_logo": "assets/img/logos/data-science-automation-logo-6a823.png",
+  "buyer_logo": "assets/img/logos/blackfordcapital-logo-43ac3.png"
+ },
+ {
+  "seller": "UBEO Business Services",
+  "buyer": "Sentinel Capital Partners",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitates-the-acquisition-of-ubeo-business-services-to-sentinel-capital-partners/",
+  "image": "assets/img/tombstones/ubeo-sentinel-capital.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Telmark Sales Solution, Inc",
+  "buyer": "Sentinel Capital Partners",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-telmark-sales-solutions-inc-and-market-performance-group/",
+  "seller_logo": "assets/img/logos/telmark-c2c3b.png",
+  "buyer_logo": "assets/img/logos/sentinel-capital-partners-logo-c05fb.png"
+ },
+ {
+  "seller": "FPS Technologies Inc.",
+  "buyer": "Cintas Corporation",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-fps-technologies-inc-and-cintas-corporation/",
+  "seller_logo": "assets/img/logos/fps-logo-c9318.png",
+  "buyer_logo": "assets/img/logos/357-3579950-30548e4923-cintas-corporation-logo-5465e.png"
+ },
+ {
+  "seller": "Digital Prism Advisors, Inc.",
+  "buyer": "Mod Op",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-digital-prism-advisors-inc-and-mod-op/",
+  "seller_logo": "assets/img/logos/dprism-logo-735dc.png",
+  "buyer_logo": "assets/img/logos/facebook-modop-logo-4eebc.png"
+ },
+ {
+  "seller": "C4 Laboratories, LLC",
+  "buyer": "Riverside Company, DBA - SC Labs",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-c4-laboratories-and-sc-labs/",
+  "seller_logo": "assets/img/logos/screen-shot-2023-04-21-at-2-36-06-pm-24a81.png",
+  "buyer_logo": "assets/img/logos/download-1-cee10.png"
+ },
+ {
+  "seller": "TMCADD Consulting & Services, LLC",
+  "buyer": "NV5 Global, Inc.",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-tmcadd-consulting-services-llc-and-nv5-global-inc/",
+  "seller_logo": "assets/img/logos/tmcadd-web-asset-d44b7.png",
+  "buyer_logo": "assets/img/logos/nv5-web-asset-1847d.png"
+ },
+ {
+  "seller": "Infinity Communications & Consulting, Inc.",
+  "buyer": "Skylight Equity",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-infinity-communications-consulting-inc-and-skylight-equity/",
+  "seller_logo": "assets/img/logos/infinity-communications-consulting-inc-eb367.png",
+  "buyer_logo": "assets/img/logos/skylight-equity-1c9d9.png"
+ },
+ {
+  "seller": "Inspirant Group Inc.",
+  "buyer": "10Pearls",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-inspirant-group-inc-and-10pearls-llc/",
+  "seller_logo": "assets/img/logos/inspirant-5059e.png",
+  "buyer_logo": "assets/img/logos/10-pearls-1a543.png"
+ },
+ {
+  "seller": "MartianCraft, LLC",
+  "buyer": "Walnut Capital Partners",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-martiancraft-llc-and-walnut-capital-partners/",
+  "seller_logo": "assets/img/logos/martiancraft-logo-b9f0c.png",
+  "buyer_logo": "assets/img/logos/walnut-capital-partners-martiancraft-buyer-10be1.png"
+ },
+ {
+  "seller": "Carolina Marine Structures",
+  "buyer": "United Infrastructure Holdings",
+  "verb": "Acquired By",
+  "sector": "construction",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-carolina-marine-structures-inc-and-united-infrastructure-holdings-inc/",
+  "image": "assets/img/tombstones/carolina-marine-united-infrastructure.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Clark Crane",
+  "buyer": "SouthWorth Capital Management",
+  "verb": "Acquired By",
+  "sector": "construction",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-clark-crane-and-capital-extension-crane-lift/",
+  "image": "assets/img/tombstones/clark-crane-southworth-captial.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Vision BP, LLC",
+  "buyer": "US LBM Holdings, LLC",
+  "verb": "Acquired By",
+  "sector": "construction",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-vision-bp-llc-and-us-lbm-holdings-llc/",
+  "seller_logo": "assets/img/logos/vision-bp-llc-503b3.png",
+  "buyer_logo": "assets/img/logos/uslbm-logo-9886d.png"
+ },
+ {
+  "seller": "M&M Roofing Co.",
+  "buyer": "Allied Roofing Partners",
+  "verb": "Acquired By",
+  "sector": "construction",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-mm-roofing-co-and-allied-roofing-partners/",
+  "seller_logo": "assets/img/logos/m-m-roofing-logo-18243.png",
+  "buyer_logo": "assets/img/logos/tombstone-logos-c48fb.png"
+ },
+ {
+  "seller": "Southland Mechanical, LLC",
+  "buyer": "Modigent, LLC",
+  "verb": "Acquired By",
+  "sector": "construction",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitated-the-transaction-of-southland-mechanical-llc-and-modigent-llc/",
+  "seller_logo": "assets/img/logos/southland-mechanincal-0a35d.png",
+  "buyer_logo": "assets/img/logos/modigent-logo-8480c.png"
+ },
+ {
+  "seller": "CFA, Inc.",
+  "buyer": "Bowman Consulting Group Ltd.",
+  "verb": "Acquired By",
+  "sector": "construction",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitated-the-transaction-between-cfa-inc-and-bowman-consulting-group-ltd/",
+  "seller_logo": "assets/img/logos/cfa-00b81.png",
+  "buyer_logo": "assets/img/logos/bowman-website-31601.png"
+ },
+ {
+  "seller": "Williams Testing LLC",
+  "buyer": "Primoris Services Corp.",
+  "verb": "Acquired By",
+  "sector": "construction",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-williams-testing-llc-and-primoris-services-corp/",
+  "seller_logo": "assets/img/logos/benchmark-international-deal-completion-williams-testing-company-logo-3363c.png",
+  "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-primoris-services-company-logo-d2a23.png"
+ },
+ {
+  "seller": "Action Concrete Pumping",
+  "buyer": "Brundage-Bone Concrete Pumping, Inc.",
+  "verb": "Acquired By",
+  "sector": "construction",
+  "link": "https://blog.benchmarkcorporate.com/2016/11/04/benchmark-international-negotiated-the-sale-of-action-concrete-pumping-inc-to-brundage-bone-concrete-pumping-inc/",
+  "seller_logo": "assets/img/logos/action-concrete-3097f.png",
+  "buyer_logo": "assets/img/logos/brundage-bone-logo-27869.png"
+ },
+ {
+  "seller": "KMI Sports Construction, LLC",
+  "buyer": "Sundance Partners",
+  "verb": "Acquired By",
+  "sector": "construction",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-kmi-sports-construction-llc-and-sundance-partners/",
+  "seller_logo": "assets/img/logos/kmi-be5b1.png",
+  "buyer_logo": "assets/img/logos/sundance-partners-16c38.png"
+ },
+ {
+  "seller": "X Caliber Container, LLC",
+  "buyer": "Longwater Opportunities",
+  "verb": "Acquired By",
+  "sector": "consumer-food-retail",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-x-caliber-container-llc-and-longwater-opportunities/",
+  "image": "assets/img/tombstones/xcaliber-container-longwater-opportunities.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Skillets, Inc",
+  "buyer": "Rosser Capital Partners",
+  "verb": "Acquired By",
+  "sector": "consumer-food-retail",
+  "link": "",
+  "seller_logo": "assets/img/logos/skillets-logo-592b1.png",
+  "buyer_logo": "assets/img/logos/rosser-capital-aa3fd.png"
+ },
+ {
+  "seller": "Sunny Morning Foods, Inc.",
+  "buyer": "Burris Logistics",
+  "verb": "Acquired By",
+  "sector": "consumer-food-retail",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-a-transaction-between-sunny-morning-foods-inc-and-burris-logistics/",
+  "seller_logo": "assets/img/logos/screen-shot-2023-07-07-at-10-47-26-am-17073.png",
+  "buyer_logo": "assets/img/logos/screen-shot-2023-07-07-at-10-37-12-am-67346.png"
+ },
+ {
+  "seller": "Gene Larew Lures, LLC",
+  "buyer": "Pradco Outdoor Brands",
+  "verb": "Acquired By",
+  "sector": "consumer-food-retail",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-facilitated-the-transaction-of-gene-larew-lures-llc-to-pradco-outdoor-brands/",
+  "seller_logo": "assets/img/logos/gene-larew-logo-14526.png",
+  "buyer_logo": "assets/img/logos/pradco-13826.png"
+ },
+ {
+  "seller": "Yakgear Inc.",
+  "buyer": "TH Marine Supplies, LLC & Nautical Group International Holdings Limited",
+  "verb": "Acquired By",
+  "sector": "consumer-food-retail",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-yakgear-inc-and-t-h-marine-supplies-llc-and-nautical-group-international-holdings-limited/",
+  "seller_logo": "assets/img/logos/benchmark-international-deal-completion-yakgear-company-logo-cbadb.png",
+  "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-t-h-marine-ngh-company-logo-7c19e.png"
+ },
+ {
+  "seller": "Bagel King Wholesale Inc.",
+  "buyer": "Austin Circle Partners",
+  "verb": "Acquired By",
+  "sector": "consumer-food-retail",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-bagel-king-wholesale-inc-and-austin-circle-partners/",
+  "seller_logo": "assets/img/logos/bagel-king-9d72e.png",
+  "buyer_logo": "assets/img/logos/screen-shot-2023-03-13-at-12-02-32-pm-8ca58.png"
+ },
+ {
+  "seller": "Palm Coast Sales, Inc.",
+  "buyer": "Fourshore Partners",
+  "verb": "Acquired By",
+  "sector": "consumer-food-retail",
+  "link": "https://www.benchmarkintl.com/insights/featured-content/benchmark-international-successfully-facilitated-the-transaction-between-palm-coast-sales-inc-and-fourshore-partners/",
+  "seller_logo": "assets/img/logos/palm-sales-coast-4fac4.png",
+  "buyer_logo": "assets/img/logos/fourshore-partners-logo-9ef48.png"
+ },
+ {
+  "seller": "Espresso Parts, LLC",
+  "buyer": "Diversified Foodservice Supply, LLC",
+  "verb": "Acquired By",
+  "sector": "consumer-food-retail",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-espresso-parts-llc-and-diversified-foodservice-supply-llc/",
+  "seller_logo": "assets/img/logos/espresso-parts-d06cb.png",
+  "buyer_logo": "assets/img/logos/diversified-318c8.png"
+ },
+ {
+  "seller": "Dental Holdings LLC",
+  "buyer": "Solmetex",
+  "verb": "Acquired By",
+  "sector": "consumer-food-retail",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitated-the-transaction-of-dental-holdings-llc-and-solmetex-llc/",
+  "seller_logo": "assets/img/logos/dental-holdings-logo-ecc48.png",
+  "buyer_logo": "assets/img/logos/logo-solmetex-3c10b.png"
+ },
+ {
+  "seller": "Wilnat, Inc, DBA KGM",
+  "buyer": "Compass Group Equity Partners",
+  "verb": "Acquired By",
+  "sector": "energy-utilities",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-wilnat-inc-doing-business-as-kgm-and-st-louisbased-private-equity-firm-compass-group-equity-partners/",
+  "image": "assets/img/tombstones/wilnat-dba-kgm-compass-group-equity-partners.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "IEM Energy Consultants, LLC",
+  "buyer": "White Wolf Capital",
+  "verb": "Acquired By",
+  "sector": "energy-utilities",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-has-successfully-facilitated-a-transaction-between-iem-energy-consultants-to-white-wolf-capital/",
+  "seller_logo": "assets/img/logos/iem-energy-consultants-llc-3a97d.png",
+  "buyer_logo": "assets/img/logos/white-wolf-capital-8ef5a.png"
+ },
+ {
+  "seller": "Storm Guardian Generators, LP",
+  "buyer": "Liberty Service Partners",
+  "verb": "Acquired By",
+  "sector": "energy-utilities",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-storm-guardian-generators-lp-and-northcurrent-partners-llc/",
+  "seller_logo": "assets/img/logos/storm-guardian-generators-logo-64516.png",
+  "buyer_logo": "assets/img/logos/liberty-service-partners-logo-92c90.png"
+ },
+ {
+  "seller": "Micro-Precision Technologies, Inc.",
+  "buyer": "Great River Capital Partners",
+  "verb": "Acquired By",
+  "sector": "energy-utilities",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-microprecision-technologies-inc-and-great-river-capital-partners/",
+  "seller_logo": "assets/img/logos/micro-precision-c0c5e.png",
+  "buyer_logo": "assets/img/logos/greatriver-d2db3.png"
+ },
+ {
+  "seller": "Deluxe Plumbing & Heating",
+  "buyer": "HomeX Services Group",
+  "verb": "Acquired By",
+  "sector": "energy-utilities",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitated-the-transaction-of-deluxe-plumbing-heating-to-homex-services-group/",
+  "seller_logo": "assets/img/logos/deluxe-plumbing-heating-7c9ab.png",
+  "buyer_logo": "assets/img/logos/homex-72d8c.png"
+ },
+ {
+  "seller": "WESCO Chemicals, Inc.",
+  "buyer": "Apex Water and Process Inc.",
+  "verb": "Acquired By",
+  "sector": "energy-utilities",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-wesco-chemicals-inc-and-apex-water-and-process-inc/",
+  "seller_logo": "assets/img/logos/wesco-chemicals-logo-8525b.png",
+  "buyer_logo": "assets/img/logos/apex-water-process-logo-1e54c.png"
+ },
+ {
+  "seller": "Adkins Electric Inc.",
+  "buyer": "Pacific Power & Systems",
+  "verb": "Acquired By",
+  "sector": "energy-utilities",
+  "link": "https://www.benchmarkintl.com/de/blog/benchmark-international-successfully-facilitated-the-transaction-between-adkins-electric-inc-and-pacific-power-systems-inc/",
+  "seller_logo": "assets/img/logos/benchmark-international-deal-completion-adkins-electric-company-logo-6068d.png",
+  "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-pacific-power-systems-company-logo-7b59a.png"
+ },
+ {
+  "seller": "D E I Projects (Pty) Ltd",
+  "buyer": "BUTEC",
+  "verb": "Acquired By",
+  "sector": "energy-utilities",
+  "link": "https://www.benchmarkintl.com/za/insights/completed-transactions/benchmark-international-successfully-facilitated-the-acquisition-of-d-e-i-projects-pty-ltd-by-butec/",
+  "seller_logo": "assets/img/logos/d-e-i-b543f.png",
+  "buyer_logo": "assets/img/logos/butec-resized-fc542.png"
+ },
+ {
+  "seller": "Curie Environmental Services, LLC",
+  "buyer": "Tradebe Environmental Services, LLC",
+  "verb": "Acquired By",
+  "sector": "environmental-recycling",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-has-successfully-facilitated-the-transaction-between-curie-environmental-services-llc-and-tradebe-environmental-services-llc/",
+  "seller_logo": "assets/img/logos/curie-environmetal-c1990.png",
+  "buyer_logo": "assets/img/logos/tradebe-13dcd.png"
+ },
+ {
+  "seller": "Intracoastal Environmental, LLC",
+  "buyer": "Ambipar Group",
+  "verb": "Acquired By",
+  "sector": "environmental-recycling",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-intracoastal-environmental-llc-and-the-ambipar-group/",
+  "seller_logo": "assets/img/logos/benchmark-international-deal-completion-intracoastal-environmental-company-logo-559ad.png",
+  "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-ambipar-group-company-logo-8a324.png"
+ },
+ {
+  "seller": "Biochemica UK Ltd",
+  "buyer": "Veolia Water Technologies UK",
+  "verb": "Acquired By",
+  "sector": "environmental-recycling",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-has-successfully-facilitated-the-sale-between-veolia-water-technologies-uk-and-biochemica-water-ltd/",
+  "seller_logo": "assets/img/logos/biochemica-uk-limited-8d088.png",
+  "buyer_logo": "assets/img/logos/veolia-water-technologies-uk-27cbf.png"
+ },
+ {
+  "seller": "Premier Grease Recycling & Services LLC",
+  "buyer": "Texas Feed Fat Co., Inc.",
+  "verb": "Acquired By",
+  "sector": "environmental-recycling",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-premier-grease-recycling-services-llc-and-texas-feed-fat-co-inc/",
+  "seller_logo": "assets/img/logos/premier-grease-2d8eb.png",
+  "buyer_logo": "assets/img/logos/texas-feed-fat-co-inc-b53ed.png"
+ },
+ {
+  "seller": "Plastic Revolutions, Inc",
+  "buyer": "Industrial Container Services",
+  "verb": "Acquired By",
+  "sector": "environmental-recycling",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-acquisition-of-plastic-revolutions-inc.-to-industrial-container-service/",
+  "seller_logo": "assets/img/logos/plastic-revolutions-5c4c0.png",
+  "buyer_logo": "assets/img/logos/icsh-parent-1a78c.png"
+ },
+ {
+  "seller": "Catastrophe Cleaning and Restoration Company, Inc.",
+  "buyer": "Interstate Restoration",
+  "verb": "Acquired By",
+  "sector": "environmental-recycling",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-facilitated-the-transaction-between-catastrophe-cleaning-restoration-company-catco-and-interstate-restoration/",
+  "seller_logo": "assets/img/logos/catco-logo-b5fa4.png",
+  "buyer_logo": "assets/img/logos/interstate-logo-3bf82.png"
+ },
+ {
+  "seller": "Cornelsen Umwelttechnologie GmbH",
+  "buyer": "Rivus Capital",
+  "verb": "Acquired By",
+  "sector": "environmental-recycling",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-cornelsen-group-and-rivus-capital/",
+  "seller_logo": "assets/img/logos/screenshot-2025-01-02-at-3-18-30-pm-13985.png",
+  "buyer_logo": "assets/img/logos/rivus-capital-bb0ea.png"
+ },
+ {
+  "seller": "Waste Check Limited",
+  "buyer": "Reconomy Limited",
+  "verb": "Acquired By",
+  "sector": "environmental-recycling",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-advises-on-the-sale-of-waste-check-limited-to-reconomy-limited/",
+  "seller_logo": "assets/img/logos/waste-check-limited-0a6bd.png",
+  "buyer_logo": "assets/img/logos/reconomy-limited-53f49.png"
+ },
+ {
+  "seller": "Silexx Financial Systems",
+  "buyer": "Chicago Board Options Exchange (CBOE)",
+  "verb": "Acquired By",
+  "sector": "financial-services",
+  "link": "",
+  "seller_logo": "assets/img/logos/silexx-financia-9d357.png",
+  "buyer_logo": "assets/img/logos/chicago-board-options-b2287.png"
+ },
+ {
+  "seller": "Integrity 1st, Inc.",
+  "buyer": "OneDigital",
+  "verb": "Acquired By",
+  "sector": "financial-services",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitated-the-transaction-between-integrity-1st-inc-and-onedigital/",
+  "seller_logo": "assets/img/logos/integrity-first-insurance-6c152.png",
+  "buyer_logo": "assets/img/logos/screen-shot-2023-05-12-at-4-05-07-pm-62c6c.png"
+ },
+ {
+  "seller": "A to Z Insurance",
+  "buyer": "Acrisure",
+  "verb": "Acquired By",
+  "sector": "financial-services",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-a-to-z-insurance-and-acrisure/",
+  "seller_logo": "assets/img/logos/a-to-z-logo-c1e2e.png",
+  "buyer_logo": "assets/img/logos/acrisure-logo-448b9.png"
+ },
+ {
+  "seller": "Johnson Claim Service, Inc.",
+  "buyer": "Davies",
+  "verb": "Acquired By",
+  "sector": "financial-services",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-johnson-claim-service-inc.-and-davies/",
+  "seller_logo": "assets/img/logos/johnson-claim-service-fb3f9.png",
+  "buyer_logo": "assets/img/logos/davies-rgb-56220.png"
+ },
+ {
+  "seller": "Janus AMC, LLC",
+  "buyer": "Class Valuation",
+  "verb": "Acquired By",
+  "sector": "financial-services",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-has-successfully-facilitated-the-acquisition-of-janus-valuation-compliance-by-class-valuation/",
+  "seller_logo": "assets/img/logos/janus-4f6fd.png",
+  "buyer_logo": "assets/img/logos/class-valuation-c9a42.png"
+ },
+ {
+  "seller": "Watterson Financial Planning",
+  "buyer": "Connectus Wealth Advisers",
+  "verb": "Acquired By",
+  "sector": "financial-services",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-watterson-financial-planning-and-connectus-wealth-advisers/",
+  "seller_logo": "assets/img/logos/watterson-financial-planning-0cc9d.png",
+  "buyer_logo": "assets/img/logos/connectus-wealth-advisers-463d3.png"
+ },
+ {
+  "seller": "George W. Evans & Associates, Inc.",
+  "buyer": "Nationwide Brokerage Solutions Insurance Agency, Inc.",
+  "verb": "Acquired By",
+  "sector": "financial-services",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-george-w-evans-associates-inc-and-nationwide-brokerage-solutions-insurance-agency-inc/",
+  "seller_logo": "assets/img/logos/george-w-evans-21da9.png",
+  "buyer_logo": "assets/img/logos/nationwide-brokerage-solutions-dcf59.png"
+ },
+ {
+  "seller": "Prostar Adjusting LLC",
+  "buyer": "Team One Insurance Services",
+  "verb": "Acquired By",
+  "sector": "financial-services",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-has-successfully-facilitated-the-transaction-between-prostar-adjusting-llc-and-team-one-insurance-services/",
+  "seller_logo": "assets/img/logos/prostar-adjusting-9efcc.png",
+  "buyer_logo": "assets/img/logos/team-one-b74ea.png"
+ },
+ {
+  "seller": "Atlanta Biologicals, Inc",
+  "buyer": "Bio-Techne Corporation",
+  "verb": "Acquired By",
+  "sector": "healthcare",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-advises-on-the-sale-of-atlanta-biologicals-inc-to-biotechne-corporation/",
+  "image": "assets/img/tombstones/atlantabiologists-biotechne.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Paramount Urgent Care, Inc.",
+  "buyer": "HCA Healthcare",
+  "verb": "Acquired By",
+  "sector": "healthcare",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-a-transaction-between-paramount-urgent-care-inc-and-hca-healthcare/",
+  "image": "assets/img/tombstones/paramount-urgent0-care-hca.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Solution Matrix Inc.",
+  "buyer": "Broadview Group Holdings LLC",
+  "verb": "Acquired By",
+  "sector": "healthcare",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-solution-matrix-inc-exi-investment-partners-and-broadview-group-holdings-llc/",
+  "image": "assets/img/tombstones/solution-matrix-broadview-group.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Perfusion.com, Inc.",
+  "buyer": "Epic Healthcare Travel Staffing, Inc",
+  "verb": "Acquired By",
+  "sector": "healthcare",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-perfusioncom-inc-and-epic-healthcare-travel-staffing-inc/",
+  "image": "assets/img/tombstones/perfusion-com-inc-epic-healthcare-staffing.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Advanced Renal Care, Inc",
+  "buyer": "Fresenius Medical Care North America",
+  "verb": "Acquired By",
+  "sector": "healthcare",
+  "link": "https://blog.benchmarkcorporate.com/2017/04/14/benchmark-international-advises-on-the-sale-of-advanced-renal-care-inc-to-fresenius-medical-care-of-north-america/",
+  "seller_logo": "assets/img/logos/arc-742a5.png",
+  "buyer_logo": "assets/img/logos/fresenius-medical-care-e864b.png"
+ },
+ {
+  "seller": "Ultra Clean Systems, Inc.",
+  "buyer": "Getinge AB",
+  "verb": "Acquired By",
+  "sector": "healthcare",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitated-the-transaction-between-ultra-clean-systems-inc-and-getinge-ab/",
+  "seller_logo": "assets/img/logos/ultra-clean-systems-a9c63.png",
+  "buyer_logo": "assets/img/logos/getinge-ab-3abb3.png"
+ },
+ {
+  "seller": "Bowen Eye Associates",
+  "buyer": "MyEyeDr.",
+  "verb": "Acquired By",
+  "sector": "healthcare",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-has-successfully-facilitated-the-transaction-between-bowen-eye-associates-and-myeyedr/",
+  "seller_logo": "assets/img/logos/bowen-eye-ea7e3.png",
+  "buyer_logo": "assets/img/logos/myeyedr-728ee.png"
+ },
+ {
+  "seller": "Central Emergency Medical Services Inc",
+  "buyer": "Priority Ambulance owned by Enhanced Equity Funds",
+  "verb": "Acquired By",
+  "sector": "healthcare",
+  "link": "",
+  "seller_logo": "assets/img/logos/central-ems-afc5e.png",
+  "buyer_logo": "assets/img/logos/priority-ambulance-262ff.png"
+ },
+ {
+  "seller": "Metaphase Design Group, Inc.",
+  "buyer": "Aptar Pharma",
+  "verb": "Acquired By",
+  "sector": "healthcare",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-has-successfully-facilitated-the-transaction-between-metaphase-design-group-inc.-and-aptar-pharma/",
+  "seller_logo": "assets/img/logos/metaphase-logo-fe45f.png",
+  "buyer_logo": "assets/img/logos/aptar-logo-hq-69b90.png"
+ },
+ {
+  "seller": "Hillcrest Urgent Care of Alabama, PC",
+  "buyer": "Carbon Health",
+  "verb": "Acquired By",
+  "sector": "healthcare",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-hillcrest-urgent-care-of-alabama-pc-and-carbon-health/",
+  "seller_logo": "assets/img/logos/hillcrest-logo-9762e.png",
+  "buyer_logo": "assets/img/logos/carbon-health-logo-3b489.png"
+ },
+ {
+  "seller": "Gasco Affiliates, LLC",
+  "buyer": "Tech Air, CI Capital Partners Company",
+  "verb": "Acquired By",
+  "sector": "industrial",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-negotiates-sale-of-gasco-affiliates-llc-to-tech-air-a-ci-capital-partners-company/",
+  "image": "assets/img/tombstones/gasco-affiliates-tech-air.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Ranews Companies",
+  "buyer": "ALJ Regional Holdings, Inc.",
+  "verb": "Acquired By",
+  "sector": "industrial",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-ranews-companies-and-alj-regional-holdings-inc-united-global-development/",
+  "image": "assets/img/tombstones/ranewsco-alj-regional.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "MaxVac Inc.",
+  "buyer": "DXP Enterprises, Inc.",
+  "verb": "Acquired By",
+  "sector": "industrial",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-maxvac-inc-and-dxp-enterprises-inc/",
+  "seller_logo": "assets/img/logos/maxvac-logo-8c76d.png",
+  "buyer_logo": "assets/img/logos/dxp-enterprises-logo-80009.png"
+ },
+ {
+  "seller": "Trinity Industrial Services, LLC",
+  "buyer": "Aecon",
+  "verb": "Acquired By",
+  "sector": "industrial",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitated-the-transaction-of-trinity-industrial-services-llc-and-aecon-group-inc/",
+  "seller_logo": "assets/img/logos/trinity-logo-1fd8c.png",
+  "buyer_logo": "assets/img/logos/aecon-logo-4f734.png"
+ },
+ {
+  "seller": "Talema Group, LLC",
+  "buyer": "KAMIC Group AB",
+  "verb": "Acquired By",
+  "sector": "industrial",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-talema-group-llc-and-kamic-group-ab/",
+  "seller_logo": "assets/img/logos/talema-group-e0adf.png",
+  "buyer_logo": "assets/img/logos/kamic-group-ab-ed106.png"
+ },
+ {
+  "seller": "Access Truck Parts, Inc",
+  "buyer": "Summit Hydraulics, backed by North Branch Capital",
+  "verb": "Acquired By",
+  "sector": "industrial",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-facilitated-the-transaction-between-access-truck-parts-and-summit-hydraulics/",
+  "seller_logo": "assets/img/logos/access-truck-parts-37342.png",
+  "buyer_logo": "assets/img/logos/summit-hydraulics-9f588.png"
+ },
+ {
+  "seller": "G.W. Schultz Tool",
+  "buyer": "Addison Capital Partners",
+  "verb": "Acquired By",
+  "sector": "industrial",
+  "link": "https://blog.benchmarkcorporate.com/2016/02/26/benchmark-international-represented-g-w-schultz-tool-in-recapitalization/",
+  "seller_logo": "assets/img/logos/benchmark-international-deal-completion-g-w-schultz-tool-company-logo-3bff5.png",
+  "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-addison-captial-partners-company-logo-62e89.png"
+ },
+ {
+  "seller": "Vooner Flogard Corporation",
+  "buyer": "Aerzen USA",
+  "verb": "Acquired By",
+  "sector": "industrial",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-has-successfully-facilitated-a-transaction-between-vooner-flogard-corporation-and-aerzen-usa/",
+  "seller_logo": "assets/img/logos/vooner-logo-ef382.png",
+  "buyer_logo": "assets/img/logos/aerzen-logo-2d197.png"
+ },
+ {
+  "seller": "Square One Coating Systems, LLC",
+  "buyer": "Lionheart Industrial Group",
+  "verb": "Acquired By",
+  "sector": "industrial",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-has-successfully-facilitated-the-transaction-between-square-one-coating-systems-llc-and-lionheart-industrial-group/",
+  "seller_logo": "assets/img/logos/square-one-coating-systems-logo-4d536.png",
+  "buyer_logo": "assets/img/logos/screenshot-2025-01-08-at-3-18-31-pm-1a8bb.png"
+ },
+ {
+  "seller": "Pinnacle Fire Systems, Inc.",
+  "buyer": "The Hiller Companies, LLC",
+  "verb": "Acquired By",
+  "sector": "industrial",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-pinnacle-fire-systems-inc-and-the-hiller-companies-llc/",
+  "seller_logo": "assets/img/logos/pinnacle-fire-systems-b3cd1.png",
+  "buyer_logo": "assets/img/logos/hiller-companies-14d2f.png"
+ },
+ {
+  "seller": "Transaction Data Systems (RX30)",
+  "buyer": "GTCR",
+  "verb": "Acquired By",
+  "sector": "software",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitates-the-transaction-of-rx30-to-gtcr/",
+  "image": "assets/img/tombstones/transaction-data-systems-rx30-gtcr-jpg.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Warkentine, Inc, DBA Computer RX",
+  "buyer": "Transaction Data Systems (Rx30)",
+  "verb": "Acquired By",
+  "sector": "software",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitates-the-transaction-between-computer-rx-and-rx30/",
+  "image": "assets/img/tombstones/warkentine-computer-rx-transaction-data-systems.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Pruvan, Inc.",
+  "buyer": "Verisk Analytics",
+  "verb": "Acquired By",
+  "sector": "software",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-pruvan-inc.-and-verisk-analytics/",
+  "seller_logo": "assets/img/logos/benchmark-international-deal-completion-pruvan-company-logo-c7ab3.png",
+  "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-verisk-company-logo-1dabb.png"
+ },
+ {
+  "seller": "Asolva, Inc.",
+  "buyer": "Harris Computer Systems",
+  "verb": "Acquired By",
+  "sector": "software",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-asolva-inc-and-harris-computer-systems/",
+  "seller_logo": "assets/img/logos/asolva-0e9d3.png",
+  "buyer_logo": "assets/img/logos/harris-logo-16bd2.png"
+ },
+ {
+  "seller": "Push Technologies SL",
+  "buyer": "Cendyn Group LLC (backed by Accel-KKR)",
+  "verb": "Acquired By",
+  "sector": "software",
+  "link": "",
+  "seller_logo": "assets/img/logos/push-technologies-7fc91.png",
+  "buyer_logo": "assets/img/logos/cendyn-0db38.png"
+ },
+ {
+  "seller": "Credex Systems, Inc",
+  "buyer": "Valsoft Corporation, Inc",
+  "verb": "Acquired By",
+  "sector": "software",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-has-successfully-facilitated-the-acquisition-of-credex-systems-inc.-by-valsoft-corporation-inc/",
+  "seller_logo": "assets/img/logos/credex-systems-62526.png",
+  "buyer_logo": "assets/img/logos/valsoft-6027e.png"
+ },
+ {
+  "seller": "South Florida Shopworks",
+  "buyer": "Fullsteam, LLC",
+  "verb": "Acquired By",
+  "sector": "software",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-south-florida-shopworks-inc.-and-fullsteam-llc/",
+  "seller_logo": "assets/img/logos/benchmark-international-deal-completion-shopworks-business-software-company-logo-ab4b5.png",
+  "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-fullstream-company-logo-303f2.png"
+ },
+ {
+  "seller": "Mission Data, LLC",
+  "buyer": "Growth Acceleration Partners",
+  "verb": "Acquired By",
+  "sector": "software",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-mission-data-llc-and-growth-acceleration-partners/",
+  "seller_logo": "assets/img/logos/mission-data-69fc2.png",
+  "buyer_logo": "assets/img/logos/growth-acceleration-partners-052b4.png"
+ },
+ {
+  "seller": "Xink ApS",
+  "buyer": "Omnidocs",
+  "verb": "Acquired By",
+  "sector": "software",
+  "link": "https://www.benchmarkintl.com/eu/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-xink-aps-and-omnidocs-as/",
+  "seller_logo": "assets/img/logos/xink-2e84c.png",
+  "buyer_logo": "assets/img/logos/omnidocs-d4272.png"
+ },
+ {
+  "seller": "PolicyPak Software, Inc",
+  "buyer": "Netwrix Corporation",
+  "verb": "Acquired By",
+  "sector": "technology",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-of-policypak-software-inc.-and-netwrix/",
+  "seller_logo": "assets/img/logos/benchmark-international-deal-completion-policypak-software-d9571.png",
+  "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-netwrix-corporation-bf9c9.png"
+ },
+ {
+  "seller": "Conarc, Inc",
+  "buyer": "Swiftcurrent Holdings, Inc., an Affiliate of ESW Capital, LLC",
+  "verb": "Acquired By",
+  "sector": "technology",
+  "link": "",
+  "seller_logo": "assets/img/logos/conarc-3da71.png",
+  "buyer_logo": "assets/img/logos/swiftcurrent-89588.png"
+ },
+ {
+  "seller": "Modus high-tech electronics GmbH",
+  "buyer": "Mycronic AB",
+  "verb": "Acquired By",
+  "sector": "technology",
+  "link": "https://www.benchmarkintl.com/eu/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-modus-hightech-electronics-gmbh-and-mycronic-ab/",
+  "seller_logo": "assets/img/logos/modus-high-tech-electronics-gmbh-logo-f1069.png",
+  "buyer_logo": "assets/img/logos/mycronic-ab-20210715074951-1c92c.png"
+ },
+ {
+  "seller": "Advantone Inc",
+  "buyer": "IntelePeer Holdings Inc",
+  "verb": "Acquired By",
+  "sector": "technology",
+  "link": "https://blog.benchmarkcorporate.com/2015/10/22/benchmark-international-completes-sale-of-advantone-inc-to-intelepeer-holdings-inc/",
+  "seller_logo": "assets/img/logos/advantone-e4754.png",
+  "buyer_logo": "assets/img/logos/intelepeer-07923.png"
+ },
+ {
+  "seller": "BobCAD Cam",
+  "buyer": "Harris Computer Corporation",
+  "verb": "Acquired By",
+  "sector": "technology",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-has-facilitated-the-transaction-of-bobcad-cam-inc.-to-harris-computer-corporation/",
+  "seller_logo": "assets/img/logos/bobcad-cam-logo-5f8d7.png",
+  "buyer_logo": "assets/img/logos/harris-logo-16bd2.png"
+ },
+ {
+  "seller": "WinValue GmbH",
+  "buyer": "GSG GENII Software Group (Portfolio Company of Bregal Unternehmerkapital)",
+  "verb": "Acquired By",
+  "sector": "technology",
+  "link": "https://www.benchmarkintl.com/eu/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-winvalue-gmbh-and-gsg-genii-software-group-portfolio-company-of-bregal-unternehmerkapital/",
+  "seller_logo": "assets/img/logos/winvalue-logo-735ec.png",
+  "buyer_logo": "assets/img/logos/bregal-unternehmerkapital-genii-d87f4.png"
+ },
+ {
+  "seller": "Jardon & Howard Technologies, Inc.",
+  "buyer": "Precise Systems, Inc.",
+  "verb": "Acquired By",
+  "sector": "technology",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-jardon-howard-technologies-and-precise-systems/",
+  "seller_logo": "assets/img/logos/jardon-howard-technologies-b20e8.png",
+  "buyer_logo": "assets/img/logos/precise-systems-46c02.png"
+ },
+ {
+  "seller": "H3 Solutions, Inc.",
+  "buyer": "Auctus Technologies",
+  "verb": "Acquired By",
+  "sector": "technology",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-h3-solutions-inc-and-auctus-technologies/",
+  "seller_logo": "assets/img/logos/h3solutions-full-dark-9e687.png",
+  "buyer_logo": "assets/img/logos/auctuswhite-c9dc7.png"
+ },
+ {
+  "seller": "HireVergence, LLC",
+  "buyer": "Job.com",
+  "verb": "Acquired By",
+  "sector": "technology",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-hirevergence-llc-and-job.com/",
+  "seller_logo": "assets/img/logos/hire-vergence-07570.png",
+  "buyer_logo": "assets/img/logos/job-com-e7ca8.png"
+ },
+ {
+  "seller": "Nationwide Express Logistics, LLC",
+  "buyer": "Jones Logistics",
+  "verb": "Acquired By",
+  "sector": "transportation",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-of-nationwide-express-to-jones-logistics/",
+  "image": "assets/img/tombstones/nationwide-express-jones-capital-jones-logistics.jpg",
+  "mmt": true
+ },
+ {
+  "seller": "Carmi Logistics",
+  "buyer": "Main Street Capital ,Akazia Capital",
+  "verb": "Acquired By",
+  "sector": "transportation",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-the-carmi-companies-and-the-nearshore-company/",
+  "seller_logo": "assets/img/logos/carmi-logistics-038aa.png",
+  "buyer_logo": "assets/img/logos/the-nearshore-logo-c0a36.png"
+ },
+ {
+  "seller": "Wilmac Enterprises",
+  "buyer": "RoadOne IntermodaLogistics",
+  "verb": "Acquired By",
+  "sector": "transportation",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-wilmac-enterprises-and-roadone-intermodalogistics/",
+  "seller_logo": "assets/img/logos/benchmark-international-deal-completion-wilmac-company-logo-ef08a.png",
+  "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-road-one-company-logo-5f590.png"
+ },
+ {
+  "seller": "Morgan Wood Products, Inc.",
+  "buyer": "EP Group",
+  "verb": "Acquired By",
+  "sector": "transportation",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitated-the-sale-of-morgan-wood-products-inc-to-the-ep-group/",
+  "seller_logo": "assets/img/logos/morgan-wood-products-inc-8c72b.png",
+  "buyer_logo": "assets/img/logos/ep-group-c0e5b.png"
+ },
+ {
+  "seller": "Houston Crating, Inc.",
+  "buyer": "MEI Rigging & Crating",
+  "verb": "Acquired By",
+  "sector": "transportation",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-houston-crating-inc.-and-mei-rigging-crating/",
+  "seller_logo": "assets/img/logos/houston-crating-inc-91725.png",
+  "buyer_logo": "assets/img/logos/mei-rigging-crating-ee033.png"
+ },
+ {
+  "seller": "Triton Submarines, LLC",
+  "buyer": "Ray Dalio Trust",
+  "verb": "Acquired By",
+  "sector": "transportation",
+  "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-triton-submarines-and-the-ray-dalio-trust/",
+  "seller_logo": "assets/img/logos/triton-submaries-01aca.png",
+  "buyer_logo": "assets/img/logos/ray-dalio-trust-af51c.png"
+ },
+ {
+  "seller": "Dealtop Limited (ta Dartline Coaches)",
+  "buyer": "Go-Ahead Group plc",
+  "verb": "Acquired By",
+  "sector": "transportation",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-dealtop-limited-and-the-go-ahead-group-plc/",
+  "seller_logo": "assets/img/logos/dartline-coaches-0f346.png",
+  "buyer_logo": "assets/img/logos/go-ahead-group-dc4de.png"
+ },
+ {
+  "seller": "Parcel Ninja (Pty) Ltd",
+  "buyer": "Imperial Holdings Limited",
+  "verb": "Acquired By",
+  "sector": "transportation",
+  "link": "https://blog.benchmarkcorporate.com/benchmark-international-successfully-facilitated-the-transaction-between-parcelninja-pty-ltd-and-imperial-holdings-ltd/",
+  "seller_logo": "assets/img/logos/parcelninja-logo-cebe4.png",
+  "buyer_logo": "assets/img/logos/imperial-logistics-logo-94bda.png"
+ },
+ {
+  "seller": "Echo Power and Engineering",
+  "buyer": "High Net Worth Individual",
+  "verb": "Acquired By",
+  "sector": "energy-utilities",
+  "link": "",
+  "image": "assets/img/tombstones/echo-power-and-engineering-high-net-worth-individual.jpg",
+  "mmt": true
+ }
+]
