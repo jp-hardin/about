@@ -1,5 +1,4 @@
-/* Benchmark International — Middle Market Team
-   Brand tokens mirror vault.benchmarkcorporate.com/mmt */
+/* Benchmark International — Mid-Market Practice */
 :root {
   --ink: #231f20;
   --charcoal: #2a2a2a;
@@ -232,7 +231,7 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .search:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
 .result-count { font-size: 0.8rem; color: var(--muted); margin-bottom: 22px; }
 
-/* ── Marquee of MMT tombstones ── */
+/* ── Marquee of featured tombstones ── */
 .marquee { overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
 .marquee-track { display: flex; gap: 18px; width: max-content; animation: scroll 70s linear infinite; }
 .marquee:hover .marquee-track { animation-play-state: paused; }
