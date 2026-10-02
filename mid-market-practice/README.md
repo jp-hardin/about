@@ -1,6 +1,6 @@
-# Benchmark International — Mid-Market Practice
+# Benchmark Capital Markets
 
-A standalone site for Benchmark International's Mid-Market Practice: firm overview, industry coverage
+A standalone site for Benchmark Capital Markets: firm overview, industry coverage
 across twelve sectors, and selected transactions (tombstones) organized by sector.
 
 ## Pages

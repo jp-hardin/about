@@ -1,4 +1,4 @@
-/* Benchmark International — Mid-Market Practice */
+/* Benchmark Capital Markets */
 :root {
   --ink: #231f20;
   --charcoal: #2a2a2a;
@@ -88,13 +88,13 @@ h1, h2, h3, h4 { margin: 0 0 16px; line-height: 1.2; }
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 24px; }
-.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--white); }
-.brand img { height: 26px; width: auto; }
+.brand { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; flex-shrink: 0; text-decoration: none; color: var(--white); }
+.brand img { height: 24px; width: auto; }
 .brand-tag {
-  font-size: 0.66rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--gold); border-left: 1px solid rgba(255,255,255,0.25); padding-left: 14px; white-space: nowrap;
+  font-size: 0.58rem; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; line-height: 1;
+  color: var(--gold); white-space: nowrap; padding-top: 7px; border-top: 1px solid rgba(255,255,255,0.18);
 }
-.nav { display: flex; align-items: center; gap: 24px; }
+.nav { display: flex; align-items: center; gap: 26px; }
 .nav a { white-space: nowrap; }
 .nav a {
   font-size: 0.74rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
@@ -329,7 +329,7 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 }
 
 /* ── Responsive ── */
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .nav .nav-phone { display: none; }
 }
 @media (max-width: 1080px) {
@@ -338,7 +338,7 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
   .fit { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 960px) {
+@media (max-width: 1080px) {
   .nav .nav-phone { display: block; }
   .nav-toggle { display: block; }
   .nav {
@@ -348,6 +348,8 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
   .nav.is-open { visibility: visible; opacity: 1; transform: none; }
   .nav a { padding: 16px 0; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 0.85rem; }
   .nav .btn { margin-top: 20px; justify-content: center; }
+}
+@media (max-width: 960px) {
   .ind-grid, .coverage { grid-template-columns: repeat(2, 1fr); }
   .split { grid-template-columns: 1fr; gap: 40px; }
   .pillars, .library { grid-template-columns: 1fr; }
@@ -360,7 +362,7 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
   .wrap { padding: 0 16px; }
   .section { padding: 68px 0; }
   .hero { padding: 80px 0 72px; }
-  .brand-tag { display: none; }
+  .brand-tag { font-size: 0.52rem; letter-spacing: 0.2em; }
   .ind-grid, .coverage, .fit { grid-template-columns: 1fr; }
   .ind-card { min-height: 0; }
   .team-lead { grid-template-columns: 1fr; }
