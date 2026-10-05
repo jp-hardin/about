@@ -33,6 +33,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 img { max-width: 100%; height: auto; display: block; }
+[hidden] { display: none !important; }
 a { color: inherit; }
 ::selection { background: var(--gold); color: var(--white); }
 
@@ -373,3 +374,97 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
   .footer-grid { grid-template-columns: 1fr; }
   .quote-card { padding: 30px 24px; }
 }
+
+/* ── Five-industry layout ── */
+.ind-card--cta { background: var(--ink); color: var(--white); }
+.ind-card--cta h3 { color: var(--white); }
+.ind-card--cta p { color: var(--sand); }
+.ind-card--cta .ind-count { color: var(--sand); }
+.ind-card--cta:hover { background: var(--charcoal); }
+
+.jump { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.jump a { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); text-decoration: none; padding: 9px 16px; border: 1px solid rgba(255,255,255,0.3); border-radius: 30px; transition: .2s; }
+.jump a:hover { border-color: var(--gold); color: var(--gold); }
+
+.ind-rows { display: grid; gap: 0; }
+.ind-row { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; padding: 64px 0; border-top: 1px solid var(--line); scroll-margin-top: 90px; }
+.ind-row:first-child { border-top: 0; padding-top: 0; }
+.ind-row-main p { color: var(--graphite); }
+.ind-row-main .lead { color: var(--ink); font-family: var(--font-serif); font-size: 1.25rem; line-height: 1.5; }
+.ind-row-main .h3 { margin-top: 26px; font-size: 0.8rem; color: var(--muted); }
+.seg-links { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+.seg-links li { border-bottom: 1px solid var(--line); }
+.seg-links a { display: block; padding: 10px 0; font-size: 0.9rem; font-weight: 600; color: var(--ink); text-decoration: none; }
+.seg-links a:hover { color: var(--gold); }
+.ind-row-deals { align-content: start; }
+.tomb-grid--compact { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.tomb-grid--compact .tomb-desc { display: none; }
+
+.sector-tabs { position: sticky; top: 76px; z-index: 40; background: var(--white); border-bottom: 1px solid var(--line); }
+.sector-tabs .wrap { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.sector-tabs .wrap::-webkit-scrollbar { display: none; }
+.sector-tabs a { flex: 0 0 auto; padding: 16px 14px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); text-decoration: none; border-bottom: 2px solid transparent; }
+.sector-tabs a:hover { color: var(--ink); }
+.sector-tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--gold); }
+
+.split--top { align-items: start; }
+.glance { background: var(--paper); border-top: 3px solid var(--gold); padding: 34px; }
+.glance h3 { font-family: var(--font-serif); font-weight: 400; font-size: 1.5rem; }
+.glance ul { list-style: none; margin: 0 0 26px; padding: 0; }
+.glance li { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 0.92rem; }
+.glance li a { color: var(--ink); font-weight: 600; text-decoration: none; }
+.glance li a:hover { color: var(--gold); }
+.glance li span { color: var(--muted); font-size: 0.8rem; font-weight: 700; }
+
+.segments { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.segment { display: grid; grid-template-columns: 90px 1fr; gap: 24px; background: var(--white); padding: 34px 34px 30px; scroll-margin-top: 140px; }
+.segment-num { font-family: var(--font-serif); font-size: 2.4rem; color: var(--sand); line-height: 1; }
+.segment h3 { font-family: var(--font-serif); font-weight: 400; font-size: 1.5rem; margin-bottom: 8px; }
+.segment p { color: var(--graphite); margin: 0 0 16px; max-width: 760px; }
+.segment .ind-tags { margin-bottom: 14px; }
+.seg-jump { background: none; border: 0; padding: 0; cursor: pointer; font-family: var(--font-sans); }
+
+.chip span { display: inline-block; min-width: 20px; margin-left: 4px; padding: 1px 6px; border-radius: 10px; background: var(--paper); color: var(--muted); font-size: 0.66rem; }
+.chip[aria-pressed="true"] span { background: rgba(255,255,255,0.15); color: var(--white); }
+
+.tomb-grid--detail { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.tomb-desc { margin: 8px 0 0; font-size: 0.74rem; line-height: 1.5; color: var(--graphite); }
+.tomb-cap { display: flex; flex-direction: column; flex: 1; }
+.tomb-cap .tomb-sector { margin-top: auto; padding-top: 10px; }
+.show-more { margin-top: 34px; }
+
+.themes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.theme { padding: 30px 26px; border: 1px solid rgba(255,255,255,0.14); border-top: 3px solid var(--gold); }
+.theme-num { display: block; font-family: var(--font-serif); font-size: 1.6rem; color: var(--gold); margin-bottom: 14px; }
+.theme h3 { font-family: var(--font-serif); font-weight: 400; font-size: 1.25rem; color: var(--white); line-height: 1.3; }
+.theme p { color: var(--sand); font-size: 0.9rem; margin: 0; }
+
+.buyer-list { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+.buyer-list li { padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 0.88rem; font-weight: 600; }
+.split .value-list { margin-top: 28px; }
+
+.services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.service { background: var(--white); padding: 32px 28px; border-top: 3px solid var(--gold); box-shadow: var(--shadow); }
+.service h3 { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+.service p { color: var(--graphite); font-size: 0.9rem; margin: 0; }
+
+@media (max-width: 1080px) {
+  .themes, .services { grid-template-columns: repeat(2, 1fr); }
+  .ind-row { grid-template-columns: 1fr; gap: 36px; }
+}
+@media (max-width: 960px) {
+  .sector-tabs { top: 76px; }
+}
+@media (max-width: 640px) {
+  .themes, .services, .seg-links, .buyer-list { grid-template-columns: 1fr; }
+  .segment { grid-template-columns: 1fr; gap: 6px; padding: 26px 20px; }
+  .segment-num { font-size: 1.6rem; }
+  .tomb-grid--compact { grid-template-columns: repeat(2, 1fr); }
+  .tomb-grid--compact > :nth-child(3) { display: none; }
+  .tomb-grid--detail { grid-template-columns: 1fr 1fr; }
+  .tomb-desc { display: none; }
+  .glance { padding: 26px 20px; }
+  .ind-row { padding: 48px 0; }
+}
+.ind-go, .ind-count { white-space: nowrap; }
+.ind-meta { flex-wrap: wrap; row-gap: 6px; }

@@ -35,35 +35,46 @@
     });
   });
 
-  // Transaction filters
+  // Transaction filters (sector chips on the transactions page, segment chips on sector pages)
   var grid = document.querySelector('[data-tomb-filter]');
   if (grid) {
-    var chips = document.querySelectorAll('.chip[data-sector]');
+    var key = grid.dataset.filterKey || 'sector';
+    var limit = parseInt(grid.dataset.limit || '0', 10);
+    var chips = document.querySelectorAll('.chip[data-filter]');
     var search = document.querySelector('.search');
     var count = document.querySelector('.result-count');
+    var more = document.querySelector('.show-more');
     var items = grid.querySelectorAll('.tomb');
     var active = 'all';
-    var hash = location.hash.replace('#', '');
-    if (hash && document.querySelector('.chip[data-sector="' + hash + '"]')) active = hash;
+    var expanded = !limit;
+    var hash = decodeURIComponent(location.hash.replace('#', ''));
+    chips.forEach(function (c) { if (hash && c.dataset.filter === hash) active = hash; });
 
     function apply() {
       var q = (search && search.value || '').trim().toLowerCase();
-      var shown = 0;
+      var matched = 0, shown = 0;
       items.forEach(function (el) {
-        var ok = (active === 'all' || el.dataset.sector === active) && (!q || el.dataset.text.indexOf(q) !== -1);
-        el.hidden = !ok;
-        if (ok) shown++;
+        var ok = (active === 'all' || el.dataset[key] === active) && (!q || el.dataset.text.indexOf(q) !== -1);
+        if (ok) matched++;
+        var visible = ok && (expanded || active !== 'all' || q || matched <= limit);
+        el.hidden = !visible;
+        if (visible) shown++;
       });
-      chips.forEach(function (c) { c.setAttribute('aria-pressed', c.dataset.sector === active ? 'true' : 'false'); });
-      if (count) count.textContent = shown + (shown === 1 ? ' transaction' : ' transactions');
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', c.dataset.filter === active ? 'true' : 'false'); });
+      if (count) count.textContent = shown < matched ? ('Showing ' + shown + ' of ' + matched + ' transactions') : (matched + (matched === 1 ? ' transaction' : ' transactions'));
+      if (more) more.hidden = shown >= matched;
     }
-    chips.forEach(function (c) {
-      c.addEventListener('click', function () {
-        active = c.dataset.sector;
-        history.replaceState(null, '', active === 'all' ? location.pathname : '#' + active);
-        apply();
-      });
+    function select(v, scroll) {
+      active = v;
+      if (key === 'sector') history.replaceState(null, '', v === 'all' ? location.pathname : '#' + v);
+      apply();
+      if (scroll) grid.parentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    chips.forEach(function (c) { c.addEventListener('click', function () { select(c.dataset.filter); }); });
+    document.querySelectorAll('.seg-jump').forEach(function (b) {
+      b.addEventListener('click', function () { select(b.dataset.segment, true); });
     });
+    if (more) more.addEventListener('click', function () { expanded = true; apply(); });
     if (search) search.addEventListener('input', apply);
     apply();
   }
