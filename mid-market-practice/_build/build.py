@@ -425,10 +425,7 @@ def tombstone(t, root, show_sector=False):
                 f'<img src="{root}{t["buyer_logo"]}" alt="{e(t["buyer"])}" loading="lazy"></div>')
     badge = '<span class="tomb-badge">Featured</span>' if t.get("featured") else ""
     desc = f'<p class="tomb-desc">{e(t["desc"])}</p>' if t.get("desc") else ""
-    meta_bits = [t["sector_name"] if show_sector else t.get("segment", "")]
-    if t.get("year"):
-        meta_bits.append(t["year"])
-    meta = f'<span class="tomb-sector">{e(" · ".join(b for b in meta_bits if b))}</span>'
+    meta = f'<span class="tomb-sector">{e(t["sector_name"] if show_sector else t.get("segment", ""))}</span>'
     cap = f'<div class="tomb-cap"><strong>{e(t["seller"])}</strong><span>{e(t["verb"].lower())} {e(t["buyer"])}</span>{desc}{meta}</div>'
     attrs = f'data-sector="{t["sector"]}" data-segment="{e(t.get("segment", ""))}" data-text="{text}"'
     if t.get("link"):
