@@ -18,7 +18,7 @@ A standalone site for Benchmark International's Mid-Market team: firm overview, 
 The pages are generated. Don't hand-edit the HTML; edit the sources and rebuild:
 
 - **Copy, sectors, team, stories:** `_build/build.py`
-- **Tombstones:** `_build/tombstones.json` (`seller`, `buyer`, `sector`, `link`, plus either `image` or `seller_logo` + `buyer_logo`; `segment`, `desc`, `year` (used only for newest-first ordering, not displayed); `"featured": true` marks signature deals). Old 12-sector URLs redirect to the new sector pages (see `LEGACY` in `build.py`).
+- **Tombstones:** `_build/tombstones.json` (`seller`, `buyer`, `sector`, `link`, plus either `image` or `seller_logo` + `buyer_logo`; `segment`, `desc`, `year` (used only for newest-first ordering, not displayed); `"featured": true` marks signature deals; `"also": [{"sector", "segment"}]` lists a deal in a second industry too). Old 12-sector URLs redirect to the new sector pages (see `LEGACY` in `build.py`).
 - **Styles / behavior:** `assets/css/style.css`, `assets/js/main.js`
 
 ```bash

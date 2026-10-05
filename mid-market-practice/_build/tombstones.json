@@ -1365,7 +1365,13 @@
   "image": "assets/img/tombstones/perfusion-com-inc-epic-healthcare-staffing.jpg",
   "featured": true,
   "desc": "Leading provider of staffing and services to the U.S. perfusion industry.",
-  "year": "2022"
+  "year": "2022",
+  "also": [
+   {
+    "sector": "business-services",
+    "segment": "Staffing & Human Capital"
+   }
+  ]
  },
  {
   "seller": "Gem Drugs, Inc.",
@@ -1701,7 +1707,13 @@
   "seller_logo": "assets/img/logos/hire-vergence-07570.png",
   "buyer_logo": "assets/img/logos/job-com-e7ca8.png",
   "desc": "Specialized cybersecurity and IT staffing firm.",
-  "year": "2020"
+  "year": "2020",
+  "also": [
+   {
+    "sector": "business-services",
+    "segment": "Staffing & Human Capital"
+   }
+  ]
  },
  {
   "seller": "Echo Power and Engineering",

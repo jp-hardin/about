@@ -428,9 +428,11 @@ def tombstone(t, root, show_sector=False):
                 f'<img src="{root}{t["buyer_logo"]}" alt="{e(t["buyer"])}" loading="lazy"></div>')
     badge = '<span class="tomb-badge">Featured</span>' if t.get("featured") else ""
     desc = f'<p class="tomb-desc">{e(t["desc"])}</p>' if t.get("desc") else ""
-    meta = f'<span class="tomb-sector">{e(t["sector_name"] if show_sector else t.get("segment", ""))}</span>'
+    names = [t["sector_name"]] + [SECTOR_BY_SLUG[x["sector"]]["name"] for x in t.get("also", [])]
+    meta = f'<span class="tomb-sector">{e(" · ".join(names) if show_sector else t.get("segment", ""))}</span>'
     cap = f'<div class="tomb-cap"><strong>{e(t["seller"])}</strong><span>{e(t["verb"].lower())} {e(t["buyer"])}</span>{desc}{meta}</div>'
-    attrs = f'data-sector="{t["sector"]}" data-segment="{e(t.get("segment", ""))}" data-text="{text}"'
+    sectors = " ".join([t["sector"]] + [x["sector"] for x in t.get("also", [])])
+    attrs = f'data-sector="{sectors}" data-segment="{e(t.get("segment", ""))}" data-text="{text}"'
     if t.get("link"):
         return f'<a class="tomb" href="{e(t["link"])}" target="_blank" rel="noopener" {attrs}>{badge}{face}{cap}</a>'
     return f'<div class="tomb" {attrs}>{badge}{face}{cap}</div>'
@@ -447,7 +449,16 @@ def yt(vid, title):
 
 
 def deals_in(slug):
-    return [t for t in TOMBSTONES if t["sector"] == slug]
+    """Deals for one industry. A deal listed under `also` appears in that industry
+    too, shown with the segment it has there."""
+    out = []
+    for t in TOMBSTONES:
+        if t["sector"] == slug:
+            out.append(t)
+        for extra in t.get("also", []):
+            if extra["sector"] == slug:
+                out.append(dict(t, sector=slug, segment=extra["segment"], sector_name=SECTOR_BY_SLUG[slug]["name"]))
+    return out
 
 
 def industry_card(s, root):
