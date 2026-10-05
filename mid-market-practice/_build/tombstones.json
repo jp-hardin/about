@@ -81,7 +81,13 @@
   "seller_logo": "assets/img/logos/invocon-logo-788c4.png",
   "buyer_logo": "assets/img/logos/cemtrex-c8ade.png",
   "desc": "Designer and manufacturer of instrumentation, wireless sensing and telemetry systems for satellites, launch vehicles and missile-defense programs.",
-  "year": "2026"
+  "year": "2026",
+  "also": [
+   {
+    "sector": "technology",
+    "segment": "Communications & Hardware"
+   }
+  ]
  },
  {
   "seller": "Technical Metals Inc",
@@ -165,7 +171,13 @@
   "seller_logo": "assets/img/logos/pinnacle-fire-systems-b3cd1.png",
   "buyer_logo": "assets/img/logos/hiller-companies-14d2f.png",
   "desc": "Provider of fire alarm and life-safety systems to commercial and industrial customers across the Southeast.",
-  "year": "2024"
+  "year": "2024",
+  "also": [
+   {
+    "sector": "business-services",
+    "segment": "Commercial & Facility Services"
+   }
+  ]
  },
  {
   "seller": "Central Hydraulics, Inc.",
@@ -297,7 +309,13 @@
   "seller_logo": "assets/img/logos/cfa-00b81.png",
   "buyer_logo": "assets/img/logos/bowman-website-31601.png",
   "desc": "Civil engineering firm providing design, land planning, surveying, permitting and construction administration services.",
-  "year": "2023"
+  "year": "2023",
+  "also": [
+   {
+    "sector": "business-services",
+    "segment": "Engineering, Architecture & Consulting"
+   }
+  ]
  },
  {
   "seller": "Wilnat, Inc, DBA KGM",
@@ -321,7 +339,13 @@
   "seller_logo": "assets/img/logos/iem-energy-consultants-llc-3a97d.png",
   "buyer_logo": "assets/img/logos/white-wolf-capital-8ef5a.png",
   "desc": "Independent consultancy supporting operations, maintenance and asset management in power generation and process facilities.",
-  "year": "2023"
+  "year": "2023",
+  "also": [
+   {
+    "sector": "business-services",
+    "segment": "Engineering, Architecture & Consulting"
+   }
+  ]
  },
  {
   "seller": "Storm Guardian Generators, LP",
@@ -345,7 +369,13 @@
   "seller_logo": "assets/img/logos/micro-precision-c0c5e.png",
   "buyer_logo": "assets/img/logos/greatriver-d2db3.png",
   "desc": "Designer and manufacturer of high-reliability microelectronics, including thick-film ceramic substrates and hybrid circuits.",
-  "year": "2024"
+  "year": "2024",
+  "also": [
+   {
+    "sector": "technology",
+    "segment": "Communications & Hardware"
+   }
+  ]
  },
  {
   "seller": "WESCO Chemicals, Inc.",
@@ -501,7 +531,13 @@
   "seller_logo": "assets/img/logos/fps-logo-c9318.png",
   "buyer_logo": "assets/img/logos/357-3579950-30548e4923-cintas-corporation-logo-5465e.png",
   "desc": "Oklahoma City provider of fire protection and safety systems design, installation, maintenance and 24/7 emergency service.",
-  "year": "2025"
+  "year": "2025",
+  "also": [
+   {
+    "sector": "industrial",
+    "segment": "Industrial Distribution & Services"
+   }
+  ]
  },
  {
   "seller": "Power Maintenance Services, Inc.",
@@ -549,7 +585,13 @@
   "seller_logo": "assets/img/logos/fire-saftey-systems-7824c.png",
   "buyer_logo": "assets/img/logos/ai-fire-logo-62870.png",
   "desc": "Arkansas full-service fire sprinkler contractor providing installation, inspection, maintenance and renovation.",
-  "year": "2025"
+  "year": "2025",
+  "also": [
+   {
+    "sector": "industrial",
+    "segment": "Industrial Distribution & Services"
+   }
+  ]
  },
  {
   "seller": "Telmark Sales Solution, Inc",
@@ -561,7 +603,13 @@
   "seller_logo": "assets/img/logos/telmark-c2c3b.png",
   "buyer_logo": "assets/img/logos/sentinel-capital-partners-logo-c05fb.png",
   "desc": "Sales, marketing and order-processing brokerage serving consumer packaged goods brands across retail channels.",
-  "year": "2026"
+  "year": "2026",
+  "also": [
+   {
+    "sector": "consumer",
+    "segment": "Foodservice & Distribution"
+   }
+  ]
  },
  {
   "seller": "Infinity Communications & Consulting, Inc.",
@@ -573,7 +621,13 @@
   "seller_logo": "assets/img/logos/infinity-communications-consulting-inc-eb367.png",
   "buyer_logo": "assets/img/logos/skylight-equity-1c9d9.png",
   "desc": "Technology consultancy specializing in E-Rate consulting, low-voltage design and project management for schools and libraries.",
-  "year": "2025"
+  "year": "2025",
+  "also": [
+   {
+    "sector": "technology",
+    "segment": "IT & Managed Services"
+   }
+  ]
  },
  {
   "seller": "Inspirant Group Inc.",
@@ -585,7 +639,13 @@
   "seller_logo": "assets/img/logos/inspirant-5059e.png",
   "buyer_logo": "assets/img/logos/10-pearls-1a543.png",
   "desc": "Award-winning transformation and automation consulting firm focused on people, process and technology.",
-  "year": "2023"
+  "year": "2023",
+  "also": [
+   {
+    "sector": "technology",
+    "segment": "IT & Managed Services"
+   }
+  ]
  },
  {
   "seller": "Digital Prism Advisors, Inc.",
@@ -597,7 +657,13 @@
   "seller_logo": "assets/img/logos/dprism-logo-735dc.png",
   "buyer_logo": "assets/img/logos/facebook-modop-logo-4eebc.png",
   "desc": "Management consulting firm specializing in digital strategy and technology-driven transformation.",
-  "year": "2024"
+  "year": "2024",
+  "also": [
+   {
+    "sector": "technology",
+    "segment": "IT & Managed Services"
+   }
+  ]
  },
  {
   "seller": "Total Sales & Marketing, Inc.",
@@ -741,7 +807,13 @@
   "seller_logo": "assets/img/logos/silexx-financia-9d357.png",
   "buyer_logo": "assets/img/logos/chicago-board-options-b2287.png",
   "desc": "Provider of advanced analytics and execution tools for professional traders.",
-  "year": ""
+  "year": "",
+  "also": [
+   {
+    "sector": "technology",
+    "segment": "Vertical Software"
+   }
+  ]
  },
  {
   "seller": "Integrity 1st, Inc.",
@@ -981,7 +1053,13 @@
   "seller_logo": "assets/img/logos/benchmark-international-deal-completion-national-capital-flag-company-logo-47d21.png",
   "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-henotic-company-logo-e70da.png",
   "desc": "Manufacturer of custom embroidered and printed flags for the Department of Defense and commercial customers.",
-  "year": "2021"
+  "year": "2021",
+  "also": [
+   {
+    "sector": "industrial",
+    "segment": "Manufacturing & Industrial Technology"
+   }
+  ]
  },
  {
   "seller": "Yuni Beauty, LLC",
@@ -1005,7 +1083,13 @@
   "image": "assets/img/tombstones/xcaliber-container-longwater-opportunities.jpg",
   "featured": true,
   "desc": "Texas provider of steel shipping and storage containers with custom fabrication capabilities.",
-  "year": "2021"
+  "year": "2021",
+  "also": [
+   {
+    "sector": "industrial",
+    "segment": "Manufacturing & Industrial Technology"
+   }
+  ]
  },
  {
   "seller": "GloveIt, LLC",
@@ -1077,7 +1161,13 @@
   "seller_logo": "assets/img/logos/313salesgroup-3c640.png",
   "buyer_logo": "assets/img/logos/gladhaven-capital-1bf5b.png",
   "desc": "Outsourced B2B sales and account management partner to consumer packaged goods companies.",
-  "year": "2024"
+  "year": "2024",
+  "also": [
+   {
+    "sector": "business-services",
+    "segment": "Marketing, Sales & Tech-Enabled Services"
+   }
+  ]
  },
  {
   "seller": "Lovett & Tharpe, Inc",
@@ -1089,7 +1179,13 @@
   "seller_logo": "assets/img/logos/lovett-tharpe-logo-10a80.png",
   "buyer_logo": "assets/img/logos/screenshot-2024-12-30-at-12-21-52-pm-3b74b.png",
   "desc": "Distributor serving 500+ farm equipment dealers across the Southeast for more than 85 years.",
-  "year": "2019"
+  "year": "2019",
+  "also": [
+   {
+    "sector": "industrial",
+    "segment": "Industrial Distribution & Services"
+   }
+  ]
  },
  {
   "seller": "Classic Emporium, LLC., dba Rain Tunnel Car Spa",
@@ -1113,7 +1209,13 @@
   "seller_logo": "assets/img/logos/benchmark-international-deal-completion-loundon-county-rentals-company-logo-68a3c.png",
   "buyer_logo": "assets/img/logos/screenshot-2025-01-08-at-3-37-13-pm-2673e.png",
   "desc": "East Tennessee equipment rental and mini-storage business with a 28-year operating history.",
-  "year": "2021"
+  "year": "2021",
+  "also": [
+   {
+    "sector": "industrial",
+    "segment": "Industrial Distribution & Services"
+   }
+  ]
  },
  {
   "seller": "Stepfar Investments LLC",
@@ -1281,7 +1383,13 @@
   "seller_logo": "assets/img/logos/metaphase-logo-fe45f.png",
   "buyer_logo": "assets/img/logos/aptar-logo-hq-69b90.png",
   "desc": "Leader in human-factors engineering and user-centered medical product design.",
-  "year": "2022"
+  "year": "2022",
+  "also": [
+   {
+    "sector": "business-services",
+    "segment": "Engineering, Architecture & Consulting"
+   }
+  ]
  },
  {
   "seller": "Ultra Clean Systems, Inc.",
@@ -1329,7 +1437,13 @@
   "seller_logo": "assets/img/logos/dental-holdings-logo-ecc48.png",
   "buyer_logo": "assets/img/logos/logo-solmetex-3c10b.png",
   "desc": "Patent-holding dental device brand behind ReLeaf® aerosol-reduction evacuator attachments.",
-  "year": "2026"
+  "year": "2026",
+  "also": [
+   {
+    "sector": "consumer",
+    "segment": "Consumer Brands & Products"
+   }
+  ]
  },
  {
   "seller": "Rochester Electro-Medical, Inc",
@@ -1407,7 +1521,13 @@
   "seller_logo": "assets/img/logos/mideast-delivery-logo-8f4ec.png",
   "buyer_logo": "assets/img/logos/sps-health-logo-15922.png",
   "desc": "Ohio provider of secure pharmaceutical and healthcare supply delivery to long-term care pharmacies.",
-  "year": "2024"
+  "year": "2024",
+  "also": [
+   {
+    "sector": "industrial",
+    "segment": "Transportation & Logistics"
+   }
+  ]
  },
  {
   "seller": "Transaction Data Systems (RX30)",
@@ -1419,7 +1539,13 @@
   "image": "assets/img/tombstones/transaction-data-systems-rx30-gtcr-jpg.jpg",
   "featured": true,
   "desc": "Rx30, a leading developer of pharmacy management software; strategic equity investment from GTCR.",
-  "year": "2015"
+  "year": "2015",
+  "also": [
+   {
+    "sector": "healthcare",
+    "segment": "Pharmacy & Healthcare Services"
+   }
+  ]
  },
  {
   "seller": "Warkentine, Inc, DBA Computer RX",
@@ -1431,7 +1557,13 @@
   "image": "assets/img/tombstones/warkentine-computer-rx-transaction-data-systems.jpg",
   "featured": true,
   "desc": "Computer-Rx, a pharmacy software platform for community pharmacies; merged with Rx30.",
-  "year": "2016"
+  "year": "2016",
+  "also": [
+   {
+    "sector": "healthcare",
+    "segment": "Pharmacy & Healthcare Services"
+   }
+  ]
  },
  {
   "seller": "Pruvan, Inc.",
@@ -1455,7 +1587,13 @@
   "seller_logo": "assets/img/logos/asolva-0e9d3.png",
   "buyer_logo": "assets/img/logos/harris-logo-16bd2.png",
   "desc": "Clinical SaaS provider of the MEDICI® platform supporting hospital antimicrobial stewardship.",
-  "year": "2023"
+  "year": "2023",
+  "also": [
+   {
+    "sector": "healthcare",
+    "segment": "Pharmacy & Healthcare Services"
+   }
+  ]
  },
  {
   "seller": "Credex Systems, Inc",
@@ -1467,7 +1605,13 @@
   "seller_logo": "assets/img/logos/credex-systems-62526.png",
   "buyer_logo": "assets/img/logos/valsoft-6027e.png",
   "desc": "Vertical software provider of loan origination and servicing solutions.",
-  "year": "2019"
+  "year": "2019",
+  "also": [
+   {
+    "sector": "business-services",
+    "segment": "Financial & Insurance Services"
+   }
+  ]
  },
  {
   "seller": "South Florida Shopworks",
@@ -1623,7 +1767,13 @@
   "seller_logo": "assets/img/logos/ils-f93d9.png",
   "buyer_logo": "assets/img/logos/nxtsoft-ef499.png",
   "desc": "Image and data conversion and migration technology for the financial services industry.",
-  "year": "2019"
+  "year": "2019",
+  "also": [
+   {
+    "sector": "business-services",
+    "segment": "Financial & Insurance Services"
+   }
+  ]
  },
  {
   "seller": "Mission Data, LLC",
@@ -1695,7 +1845,13 @@
   "seller_logo": "assets/img/logos/modus-high-tech-electronics-gmbh-logo-f1069.png",
   "buyer_logo": "assets/img/logos/mycronic-ab-20210715074951-1c92c.png",
   "desc": "German developer of automatic optical inspection systems for electronics manufacturing.",
-  "year": "2024"
+  "year": "2024",
+  "also": [
+   {
+    "sector": "industrial",
+    "segment": "Manufacturing & Industrial Technology"
+   }
+  ]
  },
  {
   "seller": "HireVergence, LLC",

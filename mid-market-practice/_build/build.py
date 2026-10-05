@@ -457,7 +457,7 @@ def deals_in(slug):
             out.append(t)
         for extra in t.get("also", []):
             if extra["sector"] == slug:
-                out.append(dict(t, sector=slug, segment=extra["segment"], sector_name=SECTOR_BY_SLUG[slug]["name"]))
+                out.append(dict(t, sector=slug, segment=extra["segment"], sector_name=SECTOR_BY_SLUG[slug]["name"], cross=True))
     return out
 
 
@@ -691,7 +691,8 @@ def page_industries():
     rows = ""
     for i, s in enumerate(SECTORS):
         deals = deals_in(s["slug"])
-        picks = [t for t in deals if t.get("featured")][:3]
+        deals = [t for t in deals if not t.get("cross")] + [t for t in deals if t.get("cross")]
+        picks = [t for t in deals if t.get("featured") and not t.get("cross")][:3]
         picks += [t for t in deals if t not in picks and t.get("desc")][:3 - len(picks)]
         minis = "".join(tombstone(t, root) for t in picks)
         segs = "".join(f'<li><a href="{s["slug"]}.html#seg-{k + 1}">{e(seg[0])}</a></li>' for k, seg in enumerate(s["segments"]))
@@ -746,7 +747,7 @@ def page_industries():
 def page_sector(i, s):
     root = "../"
     deals = deals_in(s["slug"])
-    deals.sort(key=lambda t: (not t.get("featured"), not t.get("desc"), -int(t.get("year") or 0)))
+    deals.sort(key=lambda t: (bool(t.get("cross")), not t.get("featured"), not t.get("desc"), -int(t.get("year") or 0)))
     tombs = "".join(tombstone(t, root) for t in deals)
     seg_counts = {seg[0]: sum(1 for t in deals if t.get("segment") == seg[0]) for seg in s["segments"]}
     chips = '<button class="chip" data-filter="all" aria-pressed="true">All Segments</button>' + "".join(
