@@ -105,10 +105,10 @@ SECTORS = [
         "name": "Business Services",
         "count": 230,
         "tagline": "Advising owners of commercial, professional and tech-enabled service businesses with recurring revenue and loyal clients.",
-        "short": "Commercial and facility services, marketing and tech-enabled services, engineering and consulting, and financial and insurance services.",
+        "short": "Commercial and facility services, marketing and tech-enabled services, engineering and consulting, financial and insurance services, and staffing and human capital.",
         "overview": [
             "Business services is one of the most active and diverse areas of middle-market M&A. Buyers look for recurring or repeat revenue, a diversified client base, scalable delivery and a management team that can support growth. Those qualities attract strategic consolidators and private equity firms building platforms through acquisition.",
-            "Our Business Services group represents commercial and facility services providers, marketing and tech-enabled service firms, engineering and consulting practices, and financial and insurance services businesses. We frame contracts, retention, utilization and margin profile the way buyers evaluate them, and we know which consolidators and sponsors are active in each niche.",
+            "Our Business Services group represents commercial and facility services providers, marketing and tech-enabled service firms, engineering and consulting practices, financial and insurance services businesses, and staffing and human capital firms. We frame contracts, retention, utilization and margin profile the way buyers evaluate them, and we know which consolidators and sponsors are active in each niche.",
         ],
         "segments": [
             ("Commercial & Facility Services", "Route-based, compliance-driven and contracted services where recurring revenue and density create value.",
@@ -119,6 +119,8 @@ SECTORS = [
              ["Civil & transportation engineering", "Architecture", "Surveying & geospatial", "Forensic engineering", "BIM & reality capture"]),
             ("Financial & Insurance Services", "Fee-based financial businesses with recurring commissions, renewals and high client retention.",
              ["Insurance brokerage & MGAs", "Claims adjusting", "Appraisal management", "Wealth & financial planning", "Trading technology"]),
+            ("Staffing & Human Capital", "Staffing, search and workforce solutions firms with repeat client relationships, deep candidate networks and recurring placement revenue.",
+             ["Commercial & light industrial staffing", "Professional & technical staffing", "Executive search", "Recruitment process outsourcing", "Talent development & HR consulting"]),
         ],
         "themes": [
             ("Consolidation by sponsor-backed platforms", "National platforms in fire and life safety, engineering, insurance and facility services continue to acquire founder-owned firms to add density and capabilities."),
@@ -236,7 +238,7 @@ SECTOR_BY_SLUG = {s["slug"]: s for s in SECTORS}
 # ─────────────────────────────────────────────────────────────────────────────
 TEAM_LEAD = [
     ("Jordan Houtz", "Managing Director", "jordan-houtz",
-     ["As Head of Mid-Market, Jordan represents clients with revenues ranging from $100 million to $500 million across the United States. He is a seasoned investment banking and capital raising professional with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
+     ["As Head of Mid-Market, Jordan represents clients with revenues ranging from $75 million to $500 million across the United States. He is a seasoned investment banking and capital raising professional with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
       "His deep experience on both the buy and sell sides of M&A transactions gives his clients a unique advantage in understanding deal dynamics and achieving their objectives. By leading full-cycle processes from idea and thesis generation through valuation, diligence, and negotiation, he is intimately involved in accomplishing his clients’ objectives. Jordan prides himself on building deep client relationships while achieving desired outcomes for stakeholders."]),
     ("Jared Hardin", "Managing Director", "jared-hardin",
      ["Mr. Hardin was raised in a military family, spending his early years traveling through Utah, Missouri, Ohio, Korea, Idaho, and Hong Kong. He ultimately landed in Texas where he has resided for the last two decades. His scholastic journey spanned a wide spectrum of learning, from Fine Arts to International Business to Management of Information Systems. He was driven to attain his MBA because he genuinely enjoys helping others learn and grow, but he also has a competitive nature that drives him toward success. His career has been quite diverse, having held the titles of Owner, COO, CIO, and CMO, and starting small businesses that gave him a role in everything from sales to HR and from IT to manufacturing. For these reasons, he understands and appreciates the intricacies of many different businesses.",
@@ -325,6 +327,7 @@ def header(root, current=""):
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
     <nav class="nav" id="site-nav" aria-label="Primary">
+      <a href="{root}index.html#clients"{cur('clients')}>Clients</a>
       <a href="{root}industries/index.html"{cur('industries')}>Industries</a>
       <a href="{root}transactions.html"{cur('transactions')}>Transactions</a>
       <a href="{root}index.html#team"{cur('team')}>Team</a>
@@ -425,9 +428,11 @@ def tombstone(t, root, show_sector=False):
                 f'<img src="{root}{t["buyer_logo"]}" alt="{e(t["buyer"])}" loading="lazy"></div>')
     badge = '<span class="tomb-badge">Featured</span>' if t.get("featured") else ""
     desc = f'<p class="tomb-desc">{e(t["desc"])}</p>' if t.get("desc") else ""
-    meta = f'<span class="tomb-sector">{e(t["sector_name"] if show_sector else t.get("segment", ""))}</span>'
+    names = [t["sector_name"]] + [SECTOR_BY_SLUG[x["sector"]]["name"] for x in t.get("also", [])]
+    meta = f'<span class="tomb-sector">{e(" · ".join(names) if show_sector else t.get("segment", ""))}</span>'
     cap = f'<div class="tomb-cap"><strong>{e(t["seller"])}</strong><span>{e(t["verb"].lower())} {e(t["buyer"])}</span>{desc}{meta}</div>'
-    attrs = f'data-sector="{t["sector"]}" data-segment="{e(t.get("segment", ""))}" data-text="{text}"'
+    sectors = " ".join([t["sector"]] + [x["sector"] for x in t.get("also", [])])
+    attrs = f'data-sector="{sectors}" data-segment="{e(t.get("segment", ""))}" data-text="{text}"'
     if t.get("link"):
         return f'<a class="tomb" href="{e(t["link"])}" target="_blank" rel="noopener" {attrs}>{badge}{face}{cap}</a>'
     return f'<div class="tomb" {attrs}>{badge}{face}{cap}</div>'
@@ -444,7 +449,16 @@ def yt(vid, title):
 
 
 def deals_in(slug):
-    return [t for t in TOMBSTONES if t["sector"] == slug]
+    """Deals for one industry. A deal listed under `also` appears in that industry
+    too, shown with the segment it has there."""
+    out = []
+    for t in TOMBSTONES:
+        if t["sector"] == slug:
+            out.append(t)
+        for extra in t.get("also", []):
+            if extra["sector"] == slug:
+                out.append(dict(t, sector=slug, segment=extra["segment"], sector_name=SECTOR_BY_SLUG[slug]["name"], cross=True))
+    return out
 
 
 def industry_card(s, root):
@@ -518,7 +532,7 @@ def page_home():
     awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="Benchmark International award" loading="lazy" width="520" height="300">' for i in range(1, 5))
 
     html = head("Mid-Market | Benchmark International",
-                "Benchmark International's Mid-Market team advises owners of privately held companies with $100M–$500M in revenue on sales, recapitalizations and growth partnerships across Industrial, Business Services, Consumer, Healthcare and Technology.", root)
+                "Benchmark International's Mid-Market team advises owners of privately held companies with $75M–$500M in revenue on sales, recapitalizations and growth partnerships across Industrial, Business Services, Consumer, Healthcare and Technology.", root)
     html += header(root)
     html += f"""
 <section class="hero">
@@ -537,12 +551,16 @@ def page_home():
   <div class="wrap">
     <div class="stats">
       <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Privately owned sell-side M&amp;A advisor worldwide<sup>*</sup></div></div>
-      <div class="stat"><div class="stat-num">$100M–$500M</div><div class="stat-label">Client revenue range we serve</div></div>
+      <div class="stat"><div class="stat-num">$75M–$500M</div><div class="stat-label">Client revenue range we serve</div></div>
       <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused industry groups with dedicated sector expertise</div></div>
       <div class="stat"><div class="stat-num">15</div><div class="stat-label">Global offices across the Americas, Europe &amp; Africa</div></div>
     </div>
     <p class="note">* Based on PitchBook’s Q2 2026 Global League Tables.</p>
   </div>
+</section>
+
+<section class="section section--tight awards-band" id="recognition">
+  <div class="wrap"><div class="awards reveal">{awards}</div></div>
 </section>
 
 <section class="section">
@@ -551,7 +569,7 @@ def page_home():
       <p class="eyebrow">You Built an Extraordinary Company</p>
       <h2 class="h2">Let's Talk About What's Next.</h2>
       <hr class="rule">
-      <p>Most business owners only sell once in a lifetime. The stakes couldn’t be higher. Yet many don’t realize that an exit can take many forms — from a minority recapitalization to a full sale. Each option comes with different implications for your wealth, your family, and your company’s future.</p>
+      <p>Most business owners only sell once in a lifetime. The stakes couldn’t be higher. Yet many don’t realize that an exit can take many forms, from a minority recapitalization to a full sale. Each option comes with different implications for your wealth, your family, and your company’s future.</p>
       <p>Benchmark International helps you explore these options with clarity, discretion, and a global network of qualified buyers.</p>
       <p>Whether you’re exploring a full exit, a partial sale, or simply preparing for the future, the right strategy ensures you maximize value, protect your legacy, and stay in control.</p>
     </div>
@@ -575,6 +593,31 @@ def page_home():
       <div class="pillar reveal"><div class="pillar-num">02</div><h3 class="h3">Be Positioned for Maximum Value</h3><p>We'll help you to see your company through the eyes of buyers and investors so you can position your company to maximize the value.</p></div>
       <div class="pillar reveal"><div class="pillar-num">03</div><h3 class="h3">Execute with Confidence</h3><p>As you understand your options and position yourself to meet your goals, our highly experienced team works as your partner to navigate a discreet process that secures the right deal on your terms.</p></div>
     </div>
+  </div>
+</section>
+
+<section class="section section--dark" id="who-we-help">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Who We Help</p>
+      <h2 class="h2" style="color:#fff">Perfect for Business Owners Who Are</h2>
+    </div>
+    <div class="fit">
+      <div class="fit-item reveal"><h3>Looking to retire</h3><p>Looking to sell your business for retirement or move on to other business ventures.</p></div>
+      <div class="fit-item reveal"><h3>Approached by a buyer</h3><p>Approached by a buyer and want to ensure you receive a fair offer on your deal.</p></div>
+      <div class="fit-item reveal"><h3>Looking for a partner</h3><p>In need of a strategic partner or additional capital to grow your business and fit your needs.</p></div>
+      <div class="fit-item reveal"><h3>Want to learn more</h3><p>Interested in learning the value of your company in order to plan for the future.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream" id="clients">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow">In Their Words</p>
+      <h2 class="h2">We Have Been Working With Clients Around the World</h2>
+    </div>
+    <div class="testimonials">{testimonials}</div>
   </div>
 </section>
 
@@ -626,16 +669,6 @@ def page_home():
   </div>
 </section>
 
-<section class="section section--cream">
-  <div class="wrap">
-    <div class="section-head center reveal">
-      <p class="eyebrow">In Their Words</p>
-      <h2 class="h2">We Have Been Working With Clients Around the World</h2>
-    </div>
-    <div class="testimonials">{testimonials}</div>
-  </div>
-</section>
-
 <section class="section" id="library">
   <div class="wrap">
     <div class="section-head center reveal">
@@ -646,24 +679,6 @@ def page_home():
   </div>
 </section>
 
-<section class="section section--dark">
-  <div class="wrap">
-    <div class="section-head center reveal">
-      <p class="eyebrow">Who We Help</p>
-      <h2 class="h2" style="color:#fff">Perfect for Business Owners Who Are</h2>
-    </div>
-    <div class="fit">
-      <div class="fit-item reveal"><h3>Looking to retire</h3><p>Looking to sell your business for retirement or move on to other business ventures.</p></div>
-      <div class="fit-item reveal"><h3>Approached by a buyer</h3><p>Approached by a buyer and want to ensure you receive a fair offer on your deal.</p></div>
-      <div class="fit-item reveal"><h3>Looking for a partner</h3><p>In need of a strategic partner or additional capital to grow your business and fit your needs.</p></div>
-      <div class="fit-item reveal"><h3>Want to learn more</h3><p>Interested in learning the value of your company in order to plan for the future.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--tight">
-  <div class="wrap"><div class="awards reveal">{awards}</div></div>
-</section>
 """
     html += cta(root, form=True)
     html += footer(root)
@@ -676,7 +691,8 @@ def page_industries():
     rows = ""
     for i, s in enumerate(SECTORS):
         deals = deals_in(s["slug"])
-        picks = [t for t in deals if t.get("featured")][:3]
+        deals = [t for t in deals if not t.get("cross")] + [t for t in deals if t.get("cross")]
+        picks = [t for t in deals if t.get("featured") and not t.get("cross")][:3]
         picks += [t for t in deals if t not in picks and t.get("desc")][:3 - len(picks)]
         minis = "".join(tombstone(t, root) for t in picks)
         segs = "".join(f'<li><a href="{s["slug"]}.html#seg-{k + 1}">{e(seg[0])}</a></li>' for k, seg in enumerate(s["segments"]))
@@ -731,7 +747,7 @@ def page_industries():
 def page_sector(i, s):
     root = "../"
     deals = deals_in(s["slug"])
-    deals.sort(key=lambda t: (not t.get("featured"), not t.get("desc"), -int(t.get("year") or 0)))
+    deals.sort(key=lambda t: (bool(t.get("cross")), not t.get("featured"), not t.get("desc"), -int(t.get("year") or 0)))
     tombs = "".join(tombstone(t, root) for t in deals)
     seg_counts = {seg[0]: sum(1 for t in deals if t.get("segment") == seg[0]) for seg in s["segments"]}
     chips = '<button class="chip" data-filter="all" aria-pressed="true">All Segments</button>' + "".join(

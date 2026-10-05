@@ -54,7 +54,7 @@
       var q = (search && search.value || '').trim().toLowerCase();
       var matched = 0, shown = 0;
       items.forEach(function (el) {
-        var ok = (active === 'all' || el.dataset[key] === active) && (!q || el.dataset.text.indexOf(q) !== -1);
+        var ok = (active === 'all' || (key === 'sector' ? el.dataset.sector.split(' ').indexOf(active) !== -1 : el.dataset[key] === active)) && (!q || el.dataset.text.indexOf(q) !== -1);
         if (ok) matched++;
         var visible = ok && (expanded || active !== 'all' || q || matched <= limit);
         el.hidden = !visible;
