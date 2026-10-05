@@ -1,6 +1,6 @@
-# Benchmark Capital Markets
+# Benchmark International — Mid-Market
 
-A standalone site for Benchmark Capital Markets: firm overview, five focused industries
+A standalone site for Benchmark International's Mid-Market team: firm overview, five focused industries
 (Industrial, Business Services, Consumer, Healthcare, Technology), and selected transactions
 (tombstones) organized by industry and segment.
 
