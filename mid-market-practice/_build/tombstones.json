@@ -828,6 +828,54 @@
   "year": "2024"
  },
  {
+  "seller": "Talent Framework, LLC",
+  "buyer": "Savard Labor and Marine Personnel",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "segment": "Staffing & Human Capital",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-talent-framework-llc-and-savard-labor-and-marine-personnel/",
+  "seller_logo": "assets/img/logos/talent-framework-logo-007bc.png",
+  "buyer_logo": "assets/img/logos/savard-web-asset-logo-c09a7.png",
+  "desc": "Full-service staffing agency placing temporary and permanent hourly personnel in industrial, professional and medical roles.",
+  "year": "2024"
+ },
+ {
+  "seller": "McKee-Burke & Associates",
+  "buyer": "PDQ Staffing",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "segment": "Staffing & Human Capital",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-betweenmckeeburke-associates-and-pdq-staffing/",
+  "seller_logo": "assets/img/logos/benchmark-international-deal-completion-complete-mckee-burke-associates-company-logo-b4ea3.png",
+  "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-pdq-staffing-company-logo-95ec6.png",
+  "desc": "Houston talent and HR solutions firm covering recruiting, executive search, talent development and career transition.",
+  "year": "2022"
+ },
+ {
+  "seller": "OneSource Professional Search, LLC",
+  "buyer": "Xenspire Group Inc.",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "segment": "Staffing & Human Capital",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-onesource-professional-search-llc-and-xenspire-group-inc/",
+  "seller_logo": "assets/img/logos/onesource-porfessional-search-logo-d1374.png",
+  "buyer_logo": "assets/img/logos/xenspire-group-logo-c0690.png",
+  "desc": "Technical and financial search and staffing firm placing engineering, geoscience, accounting and finance professionals.",
+  "year": "2024"
+ },
+ {
+  "seller": "Endevis, LLC",
+  "buyer": "Job.com",
+  "verb": "Acquired By",
+  "sector": "business-services",
+  "segment": "Staffing & Human Capital",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-endevis-and-jobcom/",
+  "seller_logo": "assets/img/logos/benchmark-international-deal-completion-endevis-company-logo-4c923.png",
+  "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-job-com-company-logo-1d57d.png",
+  "desc": "Professional contract staffing, direct placement and recruitment process outsourcing firm operating across the U.S.",
+  "year": "2021"
+ },
+ {
   "seller": "Skillets, Inc",
   "buyer": "Rosser Capital Partners",
   "verb": "Acquired By",

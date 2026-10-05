@@ -105,10 +105,10 @@ SECTORS = [
         "name": "Business Services",
         "count": 230,
         "tagline": "Advising owners of commercial, professional and tech-enabled service businesses with recurring revenue and loyal clients.",
-        "short": "Commercial and facility services, marketing and tech-enabled services, engineering and consulting, and financial and insurance services.",
+        "short": "Commercial and facility services, marketing and tech-enabled services, engineering and consulting, financial and insurance services, and staffing and human capital.",
         "overview": [
             "Business services is one of the most active and diverse areas of middle-market M&A. Buyers look for recurring or repeat revenue, a diversified client base, scalable delivery and a management team that can support growth. Those qualities attract strategic consolidators and private equity firms building platforms through acquisition.",
-            "Our Business Services group represents commercial and facility services providers, marketing and tech-enabled service firms, engineering and consulting practices, and financial and insurance services businesses. We frame contracts, retention, utilization and margin profile the way buyers evaluate them, and we know which consolidators and sponsors are active in each niche.",
+            "Our Business Services group represents commercial and facility services providers, marketing and tech-enabled service firms, engineering and consulting practices, financial and insurance services businesses, and staffing and human capital firms. We frame contracts, retention, utilization and margin profile the way buyers evaluate them, and we know which consolidators and sponsors are active in each niche.",
         ],
         "segments": [
             ("Commercial & Facility Services", "Route-based, compliance-driven and contracted services where recurring revenue and density create value.",
@@ -119,6 +119,8 @@ SECTORS = [
              ["Civil & transportation engineering", "Architecture", "Surveying & geospatial", "Forensic engineering", "BIM & reality capture"]),
             ("Financial & Insurance Services", "Fee-based financial businesses with recurring commissions, renewals and high client retention.",
              ["Insurance brokerage & MGAs", "Claims adjusting", "Appraisal management", "Wealth & financial planning", "Trading technology"]),
+            ("Staffing & Human Capital", "Staffing, search and workforce solutions firms with repeat client relationships, deep candidate networks and recurring placement revenue.",
+             ["Commercial & light industrial staffing", "Professional & technical staffing", "Executive search", "Recruitment process outsourcing", "Talent development & HR consulting"]),
         ],
         "themes": [
             ("Consolidation by sponsor-backed platforms", "National platforms in fire and life safety, engineering, insurance and facility services continue to acquire founder-owned firms to add density and capabilities."),
