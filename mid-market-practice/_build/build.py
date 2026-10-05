@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Static site generator for the Benchmark Capital Markets site.
+"""Static site generator for the Benchmark International Mid-Market site.
 
 Edit content in this file (sectors, team, stories) or in tombstones.json, then run:
 
@@ -236,13 +236,13 @@ SECTOR_BY_SLUG = {s["slug"]: s for s in SECTORS}
 # ─────────────────────────────────────────────────────────────────────────────
 TEAM_LEAD = [
     ("Jordan Houtz", "Managing Director", "jordan-houtz",
-     ["As Head of Benchmark Capital Markets, Jordan represents clients with revenues ranging from $100 million to $500 million across the United States. He is a seasoned investment banking and capital raising professional with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
+     ["As Head of Mid-Market, Jordan represents clients with revenues ranging from $100 million to $500 million across the United States. He is a seasoned investment banking and capital raising professional with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
       "His deep experience on both the buy and sell sides of M&A transactions gives his clients a unique advantage in understanding deal dynamics and achieving their objectives. By leading full-cycle processes from idea and thesis generation through valuation, diligence, and negotiation, he is intimately involved in accomplishing his clients’ objectives. Jordan prides himself on building deep client relationships while achieving desired outcomes for stakeholders."]),
     ("Jared Hardin", "Managing Director", "jared-hardin",
      ["Mr. Hardin was raised in a military family, spending his early years traveling through Utah, Missouri, Ohio, Korea, Idaho, and Hong Kong. He ultimately landed in Texas where he has resided for the last two decades. His scholastic journey spanned a wide spectrum of learning, from Fine Arts to International Business to Management of Information Systems. He was driven to attain his MBA because he genuinely enjoys helping others learn and grow, but he also has a competitive nature that drives him toward success. His career has been quite diverse, having held the titles of Owner, COO, CIO, and CMO, and starting small businesses that gave him a role in everything from sales to HR and from IT to manufacturing. For these reasons, he understands and appreciates the intricacies of many different businesses.",
       "Jared’s role at Benchmark is about creating opportunities. In addition to his love for learning about businesses and introducing their owners to the distinctive tools and expertise that we offer, he is able to leverage his experience in deeply meaningful ways for our clients. He is driven to deliver results and get business owners truly excited about what is possible for the future."]),
     ("Alex Zykov", "Transaction Director", "alex-zykov",
-     ["As a Transaction Director at Benchmark Capital Markets, Alex leads the execution of our clients’ transactions from onboarding through signing and closing. He oversees every aspect of the process for middle-market clients across the industrial, consumer, business services, healthcare, and technology sectors. He makes sure clients understand each step and feel confident along the way, supporting them and our team through due diligence, evaluating competing offers, and leading negotiations through to the finish line.",
+     ["As a Transaction Director in Mid-Market, Alex leads the execution of our clients’ transactions from onboarding through signing and closing. He oversees every aspect of the process for middle-market clients across the industrial, consumer, business services, healthcare, and technology sectors. He makes sure clients understand each step and feel confident along the way, supporting them and our team through due diligence, evaluating competing offers, and leading negotiations through to the finish line.",
       "Alex’s career spans corporate development, executing transactions on Wall Street, and cofounding and running boutique advisory firms serving small and mid-sized businesses. Each step was deliberate: building the breadth of knowledge and experience needed to give his clients the best possible advice and help them achieve their goals. He discovered his passion for corporate finance at MIT, where he earned dual degrees in Economics and Management Science, and later earned his MBA from the University of Virginia’s Darden School of Business."]),
     ("Shannon Hess", "Client Engagement Director", "shannon-hess",
      ["Ms. Hess grew up in a military family, living on Army bases until she was nine years old. She enjoyed living in Germany and Hawaii, and traveling to many wonderful places. Because she is from a military family, her youth was a disciplined way of life with importance placed on punctuality, respect and loyalty.",
@@ -319,9 +319,9 @@ def header(root, current=""):
         return ' aria-current="page"' if k == current else ""
     return f"""<header class="site-header">
   <div class="wrap">
-    <a class="brand" href="{root}index.html" aria-label="Benchmark Capital Markets home">
+    <a class="brand" href="{root}index.html" aria-label="Benchmark International Mid-Market home">
       <img src="{root}assets/img/brand/benchmark-logo-white.png" alt="Benchmark International" width="138" height="26">
-      <span class="brand-tag">Benchmark Capital Markets</span>
+      <span class="brand-tag">Mid-Market</span>
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
     <nav class="nav" id="site-nav" aria-label="Primary">
@@ -361,12 +361,12 @@ def footer(root):
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="{root}assets/img/brand/benchmark-logo-white.png" alt="Benchmark International" width="138" height="26">
-        <p>Benchmark Capital Markets represents privately held companies across the United States in sell-side M&amp;A, recapitalizations and growth partnerships.</p>
+        <p>Mid-Market represents privately held companies across the United States in sell-side M&amp;A, recapitalizations and growth partnerships.</p>
         <p><a href="{PHONE_HREF}">{PHONE}</a><br><a href="mailto:{EMAIL}">{EMAIL}</a></p>
         <div class="social">{social}</div>
       </div>
       <div><h4>Industries</h4><ul>{sectors}</ul></div>
-      <div><h4>Benchmark Capital Markets</h4><ul>{pages}</ul></div>
+      <div><h4>Mid-Market</h4><ul>{pages}</ul></div>
       <div><h4>Benchmark International</h4><ul>
         <li><a href="https://www.benchmarkintl.com/about/">About</a></li>
         <li><a href="https://www.benchmarkintl.com/about/our-success/">Our Success</a></li>
@@ -517,13 +517,13 @@ def page_home():
     cards = "".join(industry_card(s, root) for s in SECTORS) + cta_card(root)
     awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="Benchmark International award" loading="lazy" width="520" height="300">' for i in range(1, 5))
 
-    html = head("Benchmark Capital Markets | Benchmark International",
-                "Benchmark Capital Markets advises owners of privately held companies with $100M–$500M in revenue on sales, recapitalizations and growth partnerships across Industrial, Business Services, Consumer, Healthcare and Technology.", root)
+    html = head("Mid-Market | Benchmark International",
+                "Benchmark International's Mid-Market team advises owners of privately held companies with $100M–$500M in revenue on sales, recapitalizations and growth partnerships across Industrial, Business Services, Consumer, Healthcare and Technology.", root)
     html += header(root)
     html += f"""
 <section class="hero">
   <div class="wrap">
-    <p class="eyebrow">Benchmark Capital Markets</p>
+    <p class="eyebrow">Benchmark International · <span class="nowrap">Mid-Market</span></p>
     <h1 class="display">Selling a Business Isn't the End, <em>It’s a Beginning.</em></h1>
     <p class="lead">Maximize your company's value and achieve your goals with the world's #1 privately owned sell-side M&amp;A advisor.</p>
     <div class="btn-row">
@@ -608,7 +608,7 @@ def page_home():
 <section class="section" id="team">
   <div class="wrap">
     <div class="section-head center reveal">
-      <p class="eyebrow">Benchmark Capital Markets</p>
+      <p class="eyebrow">Mid-Market</p>
       <h2 class="h2">Meet Your Team</h2>
     </div>
     {team_html(root)}
@@ -693,13 +693,13 @@ def page_industries():
   </div>
   <div class="ind-row-deals tomb-grid tomb-grid--compact">{minis}</div>
 </article>"""
-    html = head("Industries | Benchmark Capital Markets",
-                "Benchmark Capital Markets focuses on five industries: Industrial, Business Services, Consumer, Healthcare and Technology.", root)
+    html = head("Industries | Mid-Market | Benchmark International",
+                "Benchmark International's Mid-Market team focuses on five industries: Industrial, Business Services, Consumer, Healthcare and Technology.", root)
     html += header(root, "industries")
     html += f"""
 <section class="hero hero--page">
   <div class="wrap">
-    <div class="crumbs"><a href="{root}index.html">Benchmark Capital Markets</a> / Industries</div>
+    <div class="crumbs"><a href="{root}index.html">Mid-Market</a> / Industries</div>
     <p class="eyebrow">Industry Expertise</p>
     <h1 class="display">Five Industries. Deep Expertise.</h1>
     <p class="lead">We focus on five industries where we have deep transaction experience and long relationships with the most active strategic and financial buyers. Sector focus means we know what drives value, who is buying, and how to run a process that gets you the best outcome.</p>
@@ -783,13 +783,13 @@ def page_sector(i, s):
     cur = ' aria-current="page"'
     tabs = "".join(f'<a href="{x["slug"]}.html"{cur if x is s else ""}>{e(x["name"])}</a>' for x in SECTORS)
 
-    html = head(f"{s['name']} | Benchmark Capital Markets",
-                f"{s['name']} M&A advisory from Benchmark Capital Markets. {s['tagline']}", root)
+    html = head(f"{s['name']} | Mid-Market | Benchmark International",
+                f"{s['name']} M&A advisory from Benchmark International's Mid-Market team. {s['tagline']}", root)
     html += header(root, "industries")
     html += f"""
 <section class="hero hero--page">
   <div class="wrap">
-    <div class="crumbs"><a href="{root}index.html">Benchmark Capital Markets</a> / <a href="index.html">Industries</a> / {e(s['name'])}</div>
+    <div class="crumbs"><a href="{root}index.html">Mid-Market</a> / <a href="index.html">Industries</a> / {e(s['name'])}</div>
     <div class="ind-icon" style="color:var(--gold)">{icon(s['slug'])}</div>
     <h1 class="display">{e(s['name'])}</h1>
     <p class="lead">{e(s['tagline'])}</p>
@@ -817,7 +817,7 @@ def page_sector(i, s):
       <h2 class="h2">{e(s['name'])} M&amp;A Advisory</h2>
       <hr class="rule">
       {''.join(f'<p>{e(p)}</p>' for p in s['overview'])}
-      <p>Every engagement is led by Benchmark Capital Markets and backed by Benchmark International's global network of strategic acquirers, private equity groups, family offices and independent sponsors.</p>
+      <p>Every engagement is led by our Mid-Market team and backed by Benchmark International's global network of strategic acquirers, private equity groups, family offices and independent sponsors.</p>
     </div>
     <aside class="glance reveal">
       <p class="eyebrow">At a Glance</p>
@@ -931,16 +931,16 @@ def page_transactions():
     order = {s["slug"]: k for k, s in enumerate(SECTORS)}
     items = sorted(TOMBSTONES, key=lambda t: (order[t["sector"]], not t.get("featured"), -int(t.get("year") or 0)))
     tombs = "".join(tombstone(t, root, show_sector=True) for t in items)
-    html = head("Transactions | Benchmark Capital Markets",
+    html = head("Transactions | Mid-Market | Benchmark International",
                 "Selected completed transactions advised by Benchmark International across Industrial, Business Services, Consumer, Healthcare and Technology.", root)
     html += header(root, "transactions")
     html += f"""
 <section class="hero hero--page">
   <div class="wrap">
-    <div class="crumbs"><a href="index.html">Benchmark Capital Markets</a> / Transactions</div>
+    <div class="crumbs"><a href="index.html">Mid-Market</a> / Transactions</div>
     <p class="eyebrow">Our Success</p>
     <h1 class="display">Selected Transactions</h1>
-    <p class="lead">A curated selection of completed transactions across our five industries. Tombstones marked <strong style="color:var(--gold)">Featured</strong> are signature transactions of Benchmark Capital Markets.</p>
+    <p class="lead">A curated selection of completed transactions across our five industries. Tombstones marked <strong style="color:var(--gold)">Featured</strong> are signature Mid-Market transactions.</p>
   </div>
 </section>
 

@@ -1,4 +1,4 @@
-/* Benchmark Capital Markets */
+/* Benchmark International — Mid-Market */
 :root {
   --ink: #231f20;
   --charcoal: #2a2a2a;
@@ -468,3 +468,4 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 }
 .ind-go, .ind-count { white-space: nowrap; }
 .ind-meta { flex-wrap: wrap; row-gap: 6px; }
+.nowrap { white-space: nowrap; }
