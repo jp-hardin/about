@@ -1,23 +1,24 @@
 # Benchmark Capital Markets
 
-A standalone site for Benchmark Capital Markets: firm overview, industry coverage
-across twelve sectors, and selected transactions (tombstones) organized by sector.
+A standalone site for Benchmark Capital Markets: firm overview, five focused industries
+(Industrial, Business Services, Consumer, Healthcare, Technology), and selected transactions
+(tombstones) organized by industry and segment.
 
 ## Pages
 
 | Page | What it is |
 |---|---|
 | `index.html` | Home page: hero, journey, industries grid, featured transactions, team, client stories, testimonials, CEO library, HubSpot contact form |
-| `industries/index.html` | Industries landing page (12 sector groups) |
-| `industries/<sector>.html` | Sector page: overview, sub-sector coverage, what buyers value, sector tombstones, client story, deal team |
-| `transactions.html` | All 107 curated tombstones, filterable by sector and searchable |
+| `industries/index.html` | Industries landing page (5 industries) |
+| `industries/<sector>.html` | Sector page: overview, segments and sub-sectors, filterable tombstones with deal descriptions, market themes, what buyers value, active acquirers, services, client story, deal team |
+| `transactions.html` | All curated tombstones, filterable by sector and searchable |
 
 ## Editing
 
 The pages are generated. Don't hand-edit the HTML; edit the sources and rebuild:
 
 - **Copy, sectors, team, stories:** `_build/build.py`
-- **Tombstones:** `_build/tombstones.json` (`seller`, `buyer`, `sector`, `link`, plus either `image` or `seller_logo` + `buyer_logo`; `"featured": true` marks signature deals)
+- **Tombstones:** `_build/tombstones.json` (`seller`, `buyer`, `sector`, `link`, plus either `image` or `seller_logo` + `buyer_logo`; `segment`, `desc`, `year`; `"featured": true` marks signature deals). Old 12-sector URLs redirect to the new sector pages (see `LEGACY` in `build.py`).
 - **Styles / behavior:** `assets/css/style.css`, `assets/js/main.js`
 
 ```bash
