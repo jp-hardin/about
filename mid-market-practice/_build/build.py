@@ -68,6 +68,7 @@ LEGACY = {
 SECTORS = [
     {
         "slug": "industrial",
+        "report": ("Q4 2026 Sector Report", "reports/industrial-q4-2026.html"),
         "name": "Industrial",
         "count": 290,
         "tagline": "Advising founder-led manufacturers, distributors and industrial service companies on sales, recapitalizations and partnerships.",

@@ -119,3 +119,48 @@
 }
 .report .eyebrow + .rh3 { margin-top: 0; }
 .report .fine.rcap { margin: 0 0 22px; }
+
+/* Blocks added with the Industrial report; available to every report page. */
+.rh3-num { display: inline-block; font-family: var(--font-sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; color: var(--gold); margin-right: 14px; vertical-align: middle; }
+.report .rtag { font-family: var(--font-serif); font-style: italic; font-size: 1.08rem; color: var(--charcoal); margin: -8px 0 18px; }
+.rh4--sub { margin-top: 38px; color: var(--gold-deep); }
+.rsub { border-top: 1px solid var(--line); padding: 22px 0 4px; }
+.rsub .rh4 { margin: 0 0 10px; }
+.rsub:first-of-type { margin-top: 30px; }
+.rlist { margin: 0 0 22px; padding: 0; list-style: none; max-width: 780px; }
+.rlist li { position: relative; padding: 0 0 12px 22px; color: var(--graphite); }
+.rlist li::before { content: ""; position: absolute; left: 0; top: 0.72em; width: 8px; height: 2px; background: var(--gold); }
+.rlist li strong { color: var(--ink); }
+.rnote { margin: 34px 0 0; padding: 26px 30px 12px; background: var(--paper); border-top: 3px solid var(--gold); }
+.rnote p { max-width: none; }
+.rtable .rtotal > * { font-weight: 700; color: var(--ink); border-bottom: 2px solid var(--gold); }
+.rtable--dark tbody td:first-child { padding-left: 16px; }
+.rsec--sources .rlist li { padding-left: 0; }
+.rsec--sources .rlist li::before { display: none; }
+
+.report .rquote--sp { margin: 30px 0; }
+.report .rchart { margin: 26px 0 30px; }
+.rchart { padding: 28px 30px 18px; background: var(--paper); border-top: 3px solid var(--gold); }
+.rchart figcaption strong { display: block; font-family: var(--font-serif); font-weight: 400; font-size: 1.25rem; line-height: 1.35; color: var(--ink); }
+.rchart figcaption span { display: block; font-size: 0.82rem; color: var(--muted); margin: 4px 0 10px; }
+.rchart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.rchart .cgrid { stroke: var(--line); stroke-width: 1; }
+.rchart .cref { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 4; }
+.rchart .cline { fill: none; stroke: var(--gold-deep); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.rchart .cdot { fill: var(--gold-deep); stroke: var(--paper); stroke-width: 2; }
+.rchart .chit { fill: transparent; }
+.rchart g:hover .cdot { fill: var(--ink); }
+.rchart .caxis { font-family: var(--font-sans); font-size: 11.5px; fill: var(--muted); }
+.rchart .cval { font-family: var(--font-sans); font-size: 12.5px; font-weight: 700; fill: var(--ink); }
+.rdata { margin-top: 10px; font-size: 0.8rem; color: var(--muted); }
+.rdata summary { cursor: pointer; font-weight: 600; color: var(--gold-deep); }
+.rdata table { margin-top: 10px; border-collapse: collapse; }
+.rdata th, .rdata td { text-align: left; padding: 4px 28px 4px 0; border-bottom: 1px solid var(--line); font-weight: 400; }
+@media (max-width: 760px) {
+  .rchart { padding: 22px 14px 14px; }
+  .rchart .caxis { font-size: 22px; }
+  .rchart .cval { font-size: 24px; }
+  .rtable--dark tbody td:first-child { padding-left: 0; }
+  .rchart svg text.caxis[text-anchor="middle"]:nth-of-type(even) { display: none; }
+  .rnote { padding: 22px 20px 8px; }
+}
