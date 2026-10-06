@@ -168,6 +168,7 @@ SECTORS = [
     },
     {
         "slug": "healthcare",
+        "report": ("Q4 2026 Sector Report", "reports/healthcare-q4-2026.html"),
         "name": "Healthcare",
         "count": 55,
         "tagline": "Advising healthcare providers, life sciences and medical products companies, and pharmacy and healthcare services businesses.",
@@ -799,6 +800,7 @@ def page_sector(i, s):
     cur = ' aria-current="page"'
     tabs = "".join(f'<a href="{x["slug"]}.html"{cur if x is s else ""}>{e(x["name"])}</a>' for x in SECTORS)
 
+    report_btn = f'<a class="btn btn--light" href="{root}{s["report"][1]}">{e(s["report"][0])}</a>' if s.get("report") else ""
     html = head(f"{s['name']} | Mid-Market | Benchmark International",
                 f"{s['name']} M&A advisory from Benchmark International's Mid-Market team. {s['tagline']}", root)
     html += header(root, "industries")
@@ -809,7 +811,7 @@ def page_sector(i, s):
     <div class="ind-icon" style="color:var(--gold)">{icon(s['slug'])}</div>
     <h1 class="display">{e(s['name'])}</h1>
     <p class="lead">{e(s['tagline'])}</p>
-    <div class="btn-row"><a class="btn" href="#deals">Selected Transactions</a><a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a></div>
+    <div class="btn-row"><a class="btn" href="#deals">Selected Transactions</a><a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a>{report_btn}</div>
   </div>
 </section>
 <nav class="sector-tabs" aria-label="Industries"><div class="wrap">{tabs}</div></nav>
