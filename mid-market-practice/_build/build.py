@@ -540,10 +540,38 @@ def deals_in(slug):
     return out
 
 
+def photo(slug, name, root):
+    """Path to an industry photo from the Mid-Market image library (assets/img/industries/<slug>/)."""
+    return f"{root}assets/img/industries/{slug}/{name}.jpg"
+
+
+def photo_hero(slug, root):
+    """Opening tag of a page hero backed by the industry's hero photo."""
+    return f'<section class="hero hero--page hero--photo"><div class="hero-media" aria-hidden="true"><img src="{photo(slug, "hero", root)}" alt="" width="1920" height="1000" fetchpriority="high"></div>'
+
+
+def photo_strip(slug, root, n=4):
+    imgs = "".join(f'<figure class="photo-strip-item"><img src="{photo(slug, f"g{k}", root)}" alt="" loading="lazy" width="900" height="675"></figure>' for k in range(1, n + 1))
+    return f'<div class="photo-strip reveal" aria-hidden="true">{imgs}</div>'
+
+
+def report_visuals(page, slug, root):
+    """Adds the industry photos to a sector report page: a photo hero, plus photo breaks after report sections 2 and 5."""
+    page = page.replace('<section class="hero hero--page">', photo_hero(slug, root), 1)
+    page = page.replace('assets/css/report.css">', f'assets/css/report.css?v={_asset_version("assets/css/report.css")}">', 1)
+    sep = '\n<section class="rsec'
+    parts = page.split(sep)
+    for k, g in ((2, (1, 2)), (5, (3, 4))):
+        if len(parts) > k + 1:
+            imgs = "".join(f'<img src="{photo(slug, f"g{x}", root)}" alt="" loading="lazy" width="900" height="675">' for x in g)
+            parts[k] += f'\n<figure class="rphoto reveal" aria-hidden="true">{imgs}</figure>'
+    return sep.join(parts)
+
+
 def industry_card(s, root):
     tags = "".join(f"<li>{e(seg[0])}</li>" for seg in s["segments"])
-    return f"""<a class="ind-card" href="{root}industries/{s['slug']}.html">
-  <div class="ind-icon">{icon(s['slug'])}</div>
+    return f"""<a class="ind-card ind-card--photo" href="{root}industries/{s['slug']}.html">
+  <div class="ind-photo"><img src="{photo(s['slug'], 'card', root)}" alt="" loading="lazy" width="900" height="560"><span class="ind-icon">{icon(s['slug'])}</span></div>
   <h3>{e(s['name'])}</h3>
   <p>{e(s['short'])}</p>
   <ul class="ind-tags">{tags}</ul>
@@ -786,7 +814,10 @@ def page_industries():
     <ul class="seg-links">{segs}</ul>
     <div class="btn-row"><a class="btn" href="{s['slug']}.html">Explore {e(s['name'])}</a><a class="btn btn--ghost" href="{root}transactions.html#{s['slug']}">{len(deals)} Selected Transactions</a></div>
   </div>
-  <div class="ind-row-deals tomb-grid tomb-grid--compact">{minis}</div>
+  <div class="ind-row-side">
+    <a class="ind-row-photo" href="{s['slug']}.html" tabindex="-1" aria-hidden="true"><img src="{photo(s['slug'], 'card', root)}" alt="" loading="lazy" width="900" height="560"></a>
+    <div class="ind-row-deals tomb-grid tomb-grid--compact">{minis}</div>
+  </div>
 </article>"""
     html = head("Industries | Mid-Market | Benchmark International",
                 "Benchmark International's Mid-Market team focuses on five industries: Industrial, Business Services, Consumer, Healthcare and Technology.", root)
@@ -883,7 +914,7 @@ def page_sector(i, s):
                 f"{s['name']} M&A advisory from Benchmark International's Mid-Market team. {s['tagline']}", root)
     html += header(root, "industries")
     html += f"""
-<section class="hero hero--page">
+{photo_hero(s['slug'], root)}
   <div class="wrap">
     <div class="crumbs"><a href="{root}index.html">Mid-Market</a> / <a href="index.html">Industries</a> / {e(s['name'])}</div>
     <div class="ind-icon" style="color:var(--gold)">{icon(s['slug'])}</div>
@@ -924,6 +955,8 @@ def page_sector(i, s):
   </div>
 </section>
 
+{photo_strip(s['slug'], root)}
+
 <section class="section section--paper">
   <div class="wrap">
     <div class="section-head reveal">
@@ -951,7 +984,8 @@ def page_sector(i, s):
   </div>
 </section>
 
-<section class="section section--dark">
+<section class="section section--dark section--photo">
+  <div class="section-media" aria-hidden="true"><img src="{photo(s['slug'], 'hero', root)}" alt="" loading="lazy" width="1920" height="1000"></div>
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">Market Perspective</p>
@@ -1060,7 +1094,7 @@ def insight_card(i, root, current):
     text = e(f'{i["title"]} {sec["name"]} {i["period"]} {i["summary"]}'.lower())
     badge = '<span class="insight-badge">Current</span>' if current else '<span class="insight-badge insight-badge--archive">Archive</span>'
     return f"""<article class="insight-card{' insight-card--current' if current else ''}" data-sector="{i['sector']}" data-text="{text}">
-  <a class="insight-cover" href="{root}{i['url']}" aria-label="{e(i['title'])}">
+  <a class="insight-cover" href="{root}{i['url']}" aria-label="{e(i['title'])}" style="background-image:url('{photo(i['sector'], 'card', root)}')">
     <span class="insight-cover-icon">{icon(i['sector'])}</span>
     <span class="insight-cover-period">{e(i['period'])}</span>
     <span class="insight-cover-sector">{e(sec['name'])}</span>

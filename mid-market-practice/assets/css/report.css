@@ -180,3 +180,9 @@
   .brow { grid-template-columns: 1fr; gap: 0; }
   .brow + .brow { margin-top: 6px; }
 }
+
+/* Photo breaks between report sections (industry image library) */
+.rphoto { display: grid; grid-template-columns: 3fr 2fr; gap: 6px; margin: 8px 0 48px; }
+.rphoto img { width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+.rphoto img:first-child { aspect-ratio: auto; max-height: 300px; }
+@media (max-width: 700px) { .rphoto { grid-template-columns: 1fr 1fr; } .rphoto img, .rphoto img:first-child { aspect-ratio: 4 / 3; max-height: none; } }

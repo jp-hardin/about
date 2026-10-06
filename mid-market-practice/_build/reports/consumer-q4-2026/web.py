@@ -131,6 +131,7 @@ page += f'''
 '''
 page += site.cta(root)
 page += site.footer(root)
+page = site.report_visuals(page, 'consumer', root)
 for bad in ('{{', '**', '](http'):
     i = page.find(bad)
     assert i < 0, page[max(0, i - 200):i + 200]
