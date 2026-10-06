@@ -4,7 +4,9 @@ import re, os, asyncio
 from playwright.async_api import async_playwright
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.normpath(os.path.join(ROOT, '..', '..', '..'))
-OUT = os.path.join(SITE, 'reports', 'healthcare-q4-2026.pdf')
+SLUG = 'healthcare-q4-2026'
+PUBLIC = SLUG.rsplit('-', 2)[0] + '-industry-report-' + '-'.join(SLUG.rsplit('-', 2)[1:])
+OUT = os.path.join(SITE, 'insights', f'{PUBLIC}.pdf')
 h = open(os.path.join(ROOT, 'preview.html')).read()
 i = h.find('<div class="pg" data-fn="ONEPAGER"')
 if i >= 0: h = h[:i] + '</body></html>'

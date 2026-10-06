@@ -4,8 +4,8 @@ One content file produces two outputs. Edit the source here and rebuild; do not 
 
 | Output | Where | Built by |
 | --- | --- | --- |
-| Site page (native HTML, site styles) | `mid-market-practice/reports/industrial-q4-2026.html` | `web.py` |
-| Downloadable PDF (Letter print layout) | `mid-market-practice/reports/industrial-q4-2026.pdf` | `pdf.py` |
+| Site page (native HTML, site styles) | `mid-market-practice/insights/industrial-industry-report-q4-2026.html` | `web.py` |
+| Downloadable PDF (Letter print layout) | `mid-market-practice/insights/industrial-industry-report-q4-2026.pdf` | `pdf.py` |
 
 ## Rebuild
 ```

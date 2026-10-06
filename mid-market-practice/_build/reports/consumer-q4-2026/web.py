@@ -78,7 +78,8 @@ for i, s in enumerate(R.sections(), 1):
     toc.append(f'<li><a href="#{s["id"]}"><span>{i:02d}</span>{t}</a></li>')
 
 root = '../'
-PDF = f'{R.SLUG}.pdf'
+PUBLIC = R.SLUG.rsplit('-', 2)[0] + '-industry-report-' + '-'.join(R.SLUG.rsplit('-', 2)[1:])  # e.g. healthcare-industry-report-q4-2026
+PDF = f'{PUBLIC}.pdf'
 C = R.CONTACT
 dl = ('<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
       'stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>')
@@ -133,6 +134,6 @@ page += site.footer(root)
 for bad in ('{{', '**', '](http'):
     i = page.find(bad)
     assert i < 0, page[max(0, i - 200):i + 200]
-out = os.path.join(SITE, 'reports', f'{R.SLUG}.html')
+out = os.path.join(SITE, 'insights', f'{PUBLIC}.html')
 open(out, 'w', encoding='utf-8').write(page)
 print('wrote', os.path.relpath(out, SITE), round(len(page) / 1024), 'KB', len(secs), 'sections')

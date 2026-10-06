@@ -5,7 +5,8 @@ import os, re, asyncio
 from playwright.async_api import async_playwright
 from render import ROOT, SLUG, AS_OF, FIGS, SEGMENTS, groups, esc
 SITE = os.path.normpath(os.path.join(ROOT, '..', '..', '..'))
-OUT = os.path.join(SITE, 'reports', f'{SLUG}.pdf')
+PUBLIC = SLUG.rsplit('-', 2)[0] + '-industry-report-' + '-'.join(SLUG.rsplit('-', 2)[1:])
+OUT = os.path.join(SITE, 'insights', f'{PUBLIC}.pdf')
 IMG = os.path.relpath(os.path.join(SITE, 'assets', 'img'), ROOT)
 
 F = [('Cinzel', 'cinzel', 400, 'normal'), ('Cinzel', 'cinzel', 500, 'normal')]

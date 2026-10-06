@@ -44,7 +44,7 @@
     var search = document.querySelector('.search');
     var count = document.querySelector('.result-count');
     var more = document.querySelector('.show-more');
-    var items = grid.querySelectorAll('.tomb');
+    var items = grid.querySelectorAll('[data-sector]');
     var active = 'all';
     var expanded = !limit;
     var hash = decodeURIComponent(location.hash.replace('#', ''));

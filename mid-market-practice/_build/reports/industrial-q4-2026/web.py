@@ -12,7 +12,8 @@ for i, (aid, title, inner) in enumerate(groups(), 1):
     toc.append(f'<li><a href="#{aid}"><span>{i:02d}</span>{esc(title)}</a></li>')
 
 root = '../'
-PDF = f'{SLUG}.pdf'
+PUBLIC = SLUG.rsplit('-', 2)[0] + '-industry-report-' + '-'.join(SLUG.rsplit('-', 2)[1:])  # e.g. healthcare-industry-report-q4-2026
+PDF = f'{PUBLIC}.pdf'
 dl = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>'
 stats = ''.join(f'<div class="stat"><div class="stat-num">{esc(a)}</div><div class="stat-label">{esc(b)}</div></div>' for a, b in FIGS)
 desc = 'Q4 2026 M&A sector report for manufacturing and industrial technology, industrial distribution and services, building products and construction services, energy, power and environmental services, and transportation and logistics, from the Benchmark International Mid-Market team.'
@@ -64,6 +65,6 @@ page += site.footer(root)
 for bad in ('{{', '@@', '—', '**'):
     i = page.find(bad)
     assert i < 0, (bad, page[max(0, i - 200):i + 200])
-out = os.path.join(SITE, 'reports', f'{SLUG}.html')
+out = os.path.join(SITE, 'insights', f'{PUBLIC}.html')
 open(out, 'w', encoding='utf-8').write(page)
 print('wrote', os.path.relpath(out, SITE), round(len(page) / 1024), 'KB', len(secs), 'sections')

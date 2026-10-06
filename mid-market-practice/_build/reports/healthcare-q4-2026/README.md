@@ -4,8 +4,8 @@ One set of content produces three outputs. Edit the source here and rebuild; do 
 
 | Output | Where | Built by |
 | --- | --- | --- |
-| Site page (native HTML, site styles) | `mid-market-practice/reports/healthcare-q4-2026.html` | `web.py` |
-| Downloadable PDF (24-page print layout) | `mid-market-practice/reports/healthcare-q4-2026.pdf` | `pdf.py` |
+| Site page (native HTML, site styles) | `mid-market-practice/insights/healthcare-industry-report-q4-2026.html` | `web.py` |
+| Downloadable PDF (24-page print layout) | `mid-market-practice/insights/healthcare-industry-report-q4-2026.pdf` | `pdf.py` |
 | Print layout pages for the design canvas | `root/` and `preview.html` (not committed) | `gen.py` |
 
 ## Rebuild
