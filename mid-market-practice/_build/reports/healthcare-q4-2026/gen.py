@@ -2,6 +2,7 @@
 import re, os, json, statistics
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'root', 'project')
+WEB = globals().get('WEB', False)  # web.py sets this to build the site-native page from the same content
 os.makedirs(OUT, exist_ok=True)
 
 KNOT='/_blob/0ec74a82d64ca48c5a0589fe8fbe222d'; LOGO='/_blob/4dd1bb932520e4f56865210abba6a736'
@@ -204,6 +205,8 @@ def band(stats, icon, alt):
     return f'<div style="margin: 4px 0; display: flex; align-items: center; background: #2E2E2E; color: #FFFFFF"><div style="flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 18px; padding: 0 8px 0 20px">{cells}</div><img src="{ICON[icon]}" alt="{alt}" style="display: block; width: 236px; height: 112px"></div>'
 def quote(q, who):
     return f'<div style="break-inside: avoid; display: flex; flex-direction: column; margin: 6px 0 20px; padding: 16px 0 14px; border-top: 1px solid #B68757; border-bottom: 1px solid #B68757; text-align: left"><div style="{SERIF}; font-style: italic; font-weight: 500; font-size: 15.5px; line-height: 24px; letter-spacing: 0; color: #333333">&ldquo;{q}&rdquo;</div><div style="margin-top: 6px; font-size: 10.5px; line-height: 15px; letter-spacing: 0.3px">{who}</div></div>'
+def XREF(pid, pre, webpre, anchor, label, cap=False):
+    return f'{webpre} <a href="#{anchor}">{label}</a>' if WEB else f'{pre} @@PG:{pid}@@'
 def cols2(inner): return f'<div style="column-count: 2; column-gap: 32px; text-align: justify">{inner}</div>'
 
 pages=[]  # (file, title, body_html, kind)
@@ -220,7 +223,10 @@ def page(fn, title, inner, n, h=890):
 
 # ---------- 01 cover ----------
 exec(open(os.path.join(ROOT,'extra.py')).read())
+if WEB: exec(open(os.path.join(ROOT,'webhelpers.py')).read())
 def fig(a,b): return f'<div style="display: flex; flex-direction: column; gap: 4px"><div style="{SERIF}; font-weight: 600; font-size: 30px; line-height: 34px; letter-spacing: 0; color: #B68757">{a}</div><div style="font-size: 11px; line-height: 15px; letter-spacing: 0.3px">{b}</div></div>'
+BRIEF='Healthcare enters the fourth quarter of 2026 with health systems, distributors and public strategic buyers setting the pace, and with private equity completing fewer and more carefully underwritten transactions. Private equity closed roughly 337 healthcare services deals in the first half, a pace that would make 2026 the slowest year since 2017, while medtech deal value reached $36.5 billion over the same six months and pharma and life sciences recorded its strongest quarter since 2020. Demand underneath the deal market is steady, with national health spending running 6.8% above last year in July and projected to reach nearly $9.0 trillion by 2034.'
+FIGS=[('6.8%', 'Growth in national health spending in the year to July 2026'), ('337', 'Private equity healthcare services deals in the first half, the slowest pace since 2017'), ('$36.5B', 'Medtech deal value in the first half of 2026'), ('13.6x', 'Median EBITDA multiple private equity paid for healthcare services companies in 2025, weighted toward larger platforms')]
 cover=f'''<img src="{KNOT}" alt="" style="position: absolute; left: 310px; top: 600px; width: 506px; height: 718px; opacity: 0.3">
 <img src="{COVER}" alt="Four line illustrations: a clinic, laboratory glassware, a patient monitor and a pharmacy bottle with a capsule" style="position: absolute; left: 0; top: 0; width: 816px; height: 590px">
 <img src="{LOGO}" alt="Benchmark International" style="position: absolute; left: 293px; top: 42px; width: 230px; height: 108px">
@@ -235,9 +241,9 @@ cover=f'''<img src="{KNOT}" alt="" style="position: absolute; left: 310px; top: 
 <div data-fit="392" style="position: absolute; left: 48px; top: 606px; width: 720px; height: 392px; display: flex; flex-direction: column; gap: 10px">
 <div style="font-weight: 700; font-size: 9.5px; line-height: 14px; letter-spacing: 2px; text-transform: uppercase">October 2026 - Jared Hardin | Managing Director | Benchmark International</div>
 <h2 style="margin: 0; {SERIF}; font-weight: 600; font-size: 21px; line-height: 27px; letter-spacing: 0; color: #B68757">The quarter in brief</h2>
-<p style="margin: 0; text-align: justify">Healthcare enters the fourth quarter of 2026 with health systems, distributors and public strategic buyers setting the pace, and with private equity completing fewer and more carefully underwritten transactions. Private equity closed roughly 337 healthcare services deals in the first half, a pace that would make 2026 the slowest year since 2017, while medtech deal value reached $36.5 billion over the same six months and pharma and life sciences recorded its strongest quarter since 2020. Demand underneath the deal market is steady, with national health spending running 6.8% above last year in July and projected to reach nearly $9.0 trillion by 2034.</p>
+<p style="margin: 0; text-align: justify">{BRIEF}</p>
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); column-gap: 22px; padding: 13px 0 14px; border-top: 1px solid #B68757; border-bottom: 1px solid #B68757">
-{fig('6.8%','Growth in national health spending in the year to July 2026')}{fig('337','Private equity healthcare services deals in the first half, the slowest pace since 2017')}{fig('$36.5B','Medtech deal value in the first half of 2026')}{fig('13.6x','Median EBITDA multiple private equity paid for healthcare services companies in 2025, weighted toward larger platforms')}
+{''.join(fig(a,b) for a,b in FIGS)}
 </div>
 <div style="font-size: 10px; line-height: 14px; letter-spacing: 0.2px">Information as of October 5, 2026. Public-company and larger-platform multiples are reference points, and a private company&#39;s price depends on the business itself.</div>
 </div>
@@ -321,7 +327,7 @@ PC(f'Medicare payment is the open question for laboratory owners, because fee cu
 PC(f'Outsourced research has recovered from two slow years, with IQVIA\'s net bookings up 19% ({L("IQVIA",U["iqv"])}), ICON reporting a 22% sequential rise in requests for proposal ({L("ICON",U["icon"])}), Medpace growing revenue 17.2% ({L("Medpace",U["medp"])}) and Charles River posting its best organic growth since 2023 ({L("Charles River Laboratories",U["crl"])}). Biotech venture funding reached at least $9.1 billion in the first half ({L("BioPharma Dive",U["bio"])}), and Thermo Fisher described the US academic and government market as stabilizing ({L("Thermo Fisher call summary",U["tmo"])}). Congress has kept the 15% cap on NIH indirect costs blocked, although the fiscal 2027 budget request proposes it again ({L("Congressional Research Service",U["nih"])}).')+
 quote('Biopharma spending and activity are picking up thanks to increasing specialty therapeutics demand, greater funding, and more drug approvals.', f'Harris Williams, {L("Outsourced Pharma Services",U["hwph"])}, September 24, 2026')+
 PC(f'Private equity sponsors continue to lead the consolidation of clinical research sites. Headlands Research, owned by THL, bought the two-site Clinical Trials Research in California in June ({L("Headlands Research",U["head"])}), and Summit Clinical Research added Dallas Research Institute to its Pinnacle network in September ({L("Summit Clinical Research",U["summit"])}).')+
-PC(f'Trade policy changes manufacturing economics by product, origin and company agreement, and buyers verify tariff eligibility, pass-through and change-of-control terms ({L("White House proclamation",U["whp"])}; detail on page @@PG:X-policy@@). The BIOSECURE Act became law in December 2025 ({L("Akin",U["biosec"])}), and Medicare moved skin substitutes to a flat rate of about $127 per square centimeter in 2026, a change CMS expects to reduce spending by $19.6 billion ({L("Polsinelli",U["skin"])}).'))
+PC(f'Trade policy changes manufacturing economics by product, origin and company agreement, and buyers verify tariff eligibility, pass-through and change-of-control terms ({L("White House proclamation",U["whp"])}; detail {XREF('X-policy','on page','under','policy','Policy and price')}). The BIOSECURE Act became law in December 2025 ({L("Akin",U["biosec"])}), and Medicare moved skin substitutes to a flat rate of about $127 per square centimeter in 2026, a change CMS expects to reduce spending by $19.6 billion ({L("Polsinelli",U["skin"])}).'))
 page('P07.dc.html','Life Sciences & Diagnostics',p7,7)
 
 txpage('P08.dc.html','Life Sciences & Diagnostics transactions','Life Sciences & Diagnostics: announced transactions','Strategic buyers paid for consumables, data and laboratory volume',
@@ -419,9 +425,10 @@ for i,(name,cs) in enumerate(grp):
     xm2=X0+med*PX
     ch.append(f'<div style="position: absolute; left: {xm2-2:.0f}px; top: {y-5}px; width: 4px; height: 26px; background: #B68757"></div><div style="position: absolute; left: {xm2-30:.0f}px; top: {y-23}px; width: 60px; text-align: center; font-weight: 700">{med:.1f}x</div>')
 ch.append('</div>')
+if WEB: ch=['@@CHART@@']
 m=MED
 lst=''.join(f'<div style="break-inside: avoid; margin: 0 0 7px"><span style="font-weight: 700">{name}:</span> '+'; '.join(f'{L(c[0],SA%c[1])} {c[2]:.1f}x' for c in cs)+'</div>' for name,cs in grp)
-p13=EYE('Public-market valuation reference')+H2('Public multiples show relative standing, and private prices are set business by business')+f'<figure style="margin: 0; display: flex; flex-direction: column; gap: 6px"><div style="font-size: 11px; line-height: 15px; letter-spacing: 0.3px">Enterprise value to trailing twelve-month EBITDA, listed companies by focus area; each dot is one company and the gold bar marks the median</div>{"".join(ch)}</figure>'+P(f'These are enterprise values of public companies relative to reported trailing EBITDA. Differences in sub-sector, size, growth, earnings adjustments and business mix mean the chart cannot be discounted directly to a founder-owned company. The 13.6x median that private equity paid for healthcare services companies in 2025 ({L("PitchBook via Becker&#39;s ASC Review",U["pbasc"])}), the 7.0x all-industry average for the second quarter of 2026 ({L("GF Data via ACG",U["gf"])}) and the 5.8x median for transactions of $5 million to $50 million ({L("IBBA and M&A Source Market Pulse",U["ibba"])}) each describe a different sample and period, so they serve as separate reference points. Page @@PG:X-bridge@@ sets out how public trading, strategic control transactions, sponsor platforms and private add-ons relate to the value of a private company.')+f'<div style="column-count: 2; column-gap: 32px; font-size: 11.5px; line-height: 17px; letter-spacing: 0.2px">{lst}</div>'+f'<div style="font-size: 10.5px; line-height: 15px; letter-spacing: 0.2px">Multiples are enterprise value to trailing EBITDA as published by StockAnalysis and retrieved on October 5, 2026; they use reported EBITDA, which is lower than the adjusted EBITDA companies present, and an unusually low EBITDA can inflate a ratio. Select Medical, Cross Country Healthcare and NeoGenomics are excluded because the first two were acquired during 2026 and the third has minimal trailing EBITDA.</div>'
+p13=EYE('Public-market valuation reference')+H2('Public multiples show relative standing, and private prices are set business by business')+f'<figure style="margin: 0; display: flex; flex-direction: column; gap: 6px"><div style="font-size: 11px; line-height: 15px; letter-spacing: 0.3px">Enterprise value to trailing twelve-month EBITDA, listed companies by focus area; each dot is one company and the gold bar marks the median</div>{"".join(ch)}</figure>'+P(f'These are enterprise values of public companies relative to reported trailing EBITDA. Differences in sub-sector, size, growth, earnings adjustments and business mix mean the chart cannot be discounted directly to a founder-owned company. The 13.6x median that private equity paid for healthcare services companies in 2025 ({L("PitchBook via Becker&#39;s ASC Review",U["pbasc"])}), the 7.0x all-industry average for the second quarter of 2026 ({L("GF Data via ACG",U["gf"])}) and the 5.8x median for transactions of $5 million to $50 million ({L("IBBA and M&A Source Market Pulse",U["ibba"])}) each describe a different sample and period, so they serve as separate reference points. {XREF('X-bridge','Page','The','valuation','valuation bridge',cap=True)} sets out how public trading, strategic control transactions, sponsor platforms and private add-ons relate to the value of a private company.')+f'<div style="column-count: 2; column-gap: 32px; font-size: 11.5px; line-height: 17px; letter-spacing: 0.2px">{lst}</div>'+f'<div style="font-size: 10.5px; line-height: 15px; letter-spacing: 0.2px">Multiples are enterprise value to trailing EBITDA as published by StockAnalysis and retrieved on October 5, 2026; they use reported EBITDA, which is lower than the adjusted EBITDA companies present, and an unusually low EBITDA can inflate a ratio. Select Medical, Cross Country Healthcare and NeoGenomics are excluded because the first two were acquired during 2026 and the third has minimal trailing EBITDA.</div>'
 page('P13.dc.html','Public-market valuation',p13,13)
 add_bridge()
 
@@ -463,11 +470,12 @@ def srcblock(title, fns, skip=('stockanalysis.com','benchmarkintl.com')):
         for t,u in links(bodies[fn]):
             if any(s in u for s in skip) or u in seen: continue
             seen.add(u); ls.append(L(t,u))
+    if WEB: return f'<h4>{title}</h4><ul>'+''.join(f'<li>{x}</li>' for x in ls)+'</ul>'
     return f'<div style="margin: 0 0 6px; font-weight: 700; font-size: 9.5px; line-height: 14px; letter-spacing: 1.6px; text-transform: uppercase; break-after: avoid">{title}</div><p style="margin: 0 0 14px">'+'; '.join(ls)+'</p>'
 SS='column-count: 2; column-gap: 32px; font-size: 10.5px; line-height: 15px; letter-spacing: 0.15px; text-align: left'
 s1=H2('Sources')+f'<div style="{SS}">'+srcblock('Deal market, demand, policy and regulation',['P02.dc.html','P03.dc.html','P04.dc.html','X-policy'])+srcblock('Provider Services',['P05.dc.html','P06.dc.html','X-prov'])+'</div>'
 
-s2=srcblock('Life Sciences & Diagnostics',['P07.dc.html','P08.dc.html','X-ls'])+srcblock('Medical Products & Distribution',['P09.dc.html','P10.dc.html','X-mp'])+srcblock('Pharmacy & Healthcare Services',['P11.dc.html','P12.dc.html','X-ph'])+srcblock('Valuation and seller preparation',['P13.dc.html','P15.dc.html'])+f'<div style="margin: 0 0 6px; font-weight: 700; font-size: 9.5px; line-height: 14px; letter-spacing: 1.6px; text-transform: uppercase; break-after: avoid">Benchmark International</div><p style="margin: 0 0 14px">Transaction records and the engagement portfolio as of October 1, 2026; announced transactions as published at '+L('benchmarkintl.com/insights','https://www.benchmarkintl.com/insights/completed-transactions/')+' and linked in the table on page @@PG:P14.dc.html@@; listed-company multiples from '+L('StockAnalysis','https://stockanalysis.com/')+', each linked on page @@PG:P13.dc.html@@</p></div>'
+s2=srcblock('Life Sciences & Diagnostics',['P07.dc.html','P08.dc.html','X-ls'])+srcblock('Medical Products & Distribution',['P09.dc.html','P10.dc.html','X-mp'])+srcblock('Pharmacy & Healthcare Services',['P11.dc.html','P12.dc.html','X-ph'])+srcblock('Valuation and seller preparation',['P13.dc.html','P15.dc.html'])+f'<div style="margin: 0 0 6px; font-weight: 700; font-size: 9.5px; line-height: 14px; letter-spacing: 1.6px; text-transform: uppercase; break-after: avoid">Benchmark International</div><p style="margin: 0 0 14px">Transaction records and the engagement portfolio as of October 1, 2026; announced transactions as published at '+L('benchmarkintl.com/insights','https://www.benchmarkintl.com/insights/completed-transactions/')+' and linked in the table '+XREF('P14.dc.html','on page','under','benchmark','Benchmark International activity')+'; listed-company multiples from '+L('StockAnalysis','https://stockanalysis.com/')+', each linked '+XREF('P13.dc.html','on page','under','valuation','Valuation')+'</p></div>'
 s1=s1[:-6]+s2
 SRC=s1
 
@@ -523,7 +531,7 @@ back=f'''<img src="{KNOT}" alt="" style="position: absolute; left: 310px; top: 6
 </div>'''
 pages.append(('P16.dc.html','Contact',back))
 PN={fn:i+1 for i,(fn,_,_) in enumerate(pages)}
-prim='<div style="margin: 0 0 6px; font-weight: 700; font-size: 9.5px; line-height: 14px; letter-spacing: 1.6px; text-transform: uppercase; break-after: avoid">Primary references</div><p style="margin: 0 0 14px">'+'; '.join(L(t,U[k]) for t,k in PRIMARY)+'</p>'
+prim=('<h4>Primary references</h4><ul>'+''.join(f'<li>{L(t,U[k])}</li>' for t,k in PRIMARY)+'</ul>') if WEB else '<div style="margin: 0 0 6px; font-weight: 700; font-size: 9.5px; line-height: 14px; letter-spacing: 1.6px; text-transform: uppercase; break-after: avoid">Primary references</div><p style="margin: 0 0 14px">'+'; '.join(L(t,U[k]) for t,k in PRIMARY)+'</p>'
 SRC=SRC[:-6]+prim+'</div>'
 page('P17.dc.html','Sources',SRC,17)
 
@@ -533,6 +541,7 @@ ONEP='''<div data-fit="738" style="position: absolute; left: 48px; top: 76px; wi
 <div style="column-count: 2; column-gap: 32px; font-size: 11px; line-height: 16px; letter-spacing: 0.15px">{pwl}</div>
 '''
 # ---------- emit ----------
+# web.py runs everything above this line with WEB set and stops here.
 FONT='<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500;1,6..72,600&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet">'
 CSS='body{margin:0}\na{color:#8C6239;text-decoration-thickness:.5px;text-underline-offset:2px}a:hover{color:#5E4126}'
 ROOTSTYLE="position: relative; width: 816px; height: 1056px; box-sizing: border-box; overflow: hidden; background: #FFFFFF; font-family: 'Quicksand', 'Avenir Next', 'Segoe UI', sans-serif; font-size: 12.5px; line-height: 21px; letter-spacing: 0.4px; color: #333333"
