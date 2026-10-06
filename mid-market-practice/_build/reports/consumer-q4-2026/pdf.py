@@ -61,7 +61,9 @@ li::before { content: ''; position: absolute; left: 0; top: 7px; width: 6px; hei
 .band { display: flex; align-items: center; margin: 4px 0 16px; background: #2E2E2E; color: #FFFFFF; break-inside: avoid; }
 .band .cells { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 18px; padding: 0 8px 0 20px; }
 .band .fig span { color: #FFFFFF; }
-.band img { display: block; width: 236px; height: 112px; }
+.band .ph { position: relative; flex: none; width: 236px; height: 112px; }
+.band .ph img { display: block; width: 236px; height: 112px; object-fit: cover; }
+.band .ph::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #2E2E2E 0%, rgba(46,46,46,0) 22%), rgba(35,31,32,0.15); }
 
 table { width: 100%; border-collapse: collapse; table-layout: fixed; margin: 6px 0 16px; font-size: 10.4px; line-height: 14.6px; letter-spacing: 0.15px; }
 thead th { text-align: left; vertical-align: bottom; padding: 0 12px 6px 0; border-bottom: 2px solid #B68757; font-weight: 700; font-size: 8.2px; line-height: 12px; letter-spacing: 1.4px; text-transform: uppercase; }
@@ -115,7 +117,8 @@ def figs(items):
 
 def band(sid):
     icon, alt, items = R.BANDS[sid]
-    return f'<div class="band"><div class="cells">{figs(items)}</div><img src="art/{icon}.svg" alt="{alt}"></div>'
+    return (f'<div class="band"><div class="cells">{figs(items)}</div>'
+            f'<div class="ph"><img src="{AST}/industries/consumer/{icon}.jpg" alt="{alt}"></div></div>')
 
 
 def render(sec):
@@ -155,7 +158,8 @@ def render(sec):
 C = R.CONTACT
 cover = f'''<div class="full">
 <img class="knot" src="art/knot.png" alt="">
-<img src="art/cover.svg" alt="Four line illustrations: a bottle and an ear of wheat, a shopping bag, a delivery truck and a storefront" style="position: absolute; left: 0; top: 0; width: 816px; height: 590px">
+<img src="{AST}/industries/consumer/rpt-arcade.jpg" alt="A glass-roofed shopping arcade lined with shops on several floors" style="position: absolute; left: 0; top: 0; width: 816px; height: 590px; object-fit: cover">
+<div style="position: absolute; left: 0; top: 0; width: 816px; height: 590px; background: linear-gradient(180deg, rgba(35,31,32,0.78) 0%, rgba(35,31,32,0.6) 32%, rgba(35,31,32,0.68) 56%, rgba(35,31,32,0.88) 100%)"></div>
 <img src="{AST}/brand/benchmark-logo-white.png" alt="Benchmark International" style="position: absolute; left: 293px; top: 42px; width: 230px">
 <div style="position: absolute; left: 48px; top: 334px; width: 720px; display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; color: #FFFFFF; font-weight: 700; font-size: 8px; line-height: 14px; letter-spacing: 2px; text-transform: uppercase">
 <div>Food &amp;<br>Beverage</div><div>Consumer Brands<br>&amp; Products</div><div>Foodservice &amp;<br>Distribution</div><div>Consumer Services<br>&amp; Retail</div>

@@ -64,13 +64,8 @@ FIGS = [('$6.37T', 'Forecast worldwide IT spending in 2026, up 14.2% on 2025'),
 
 def cover():
     section('Cover')
-    names = ['cloud', 'shield', 'tower', 'integrate', 'chip', 'gov']
-    grid = ''.join('<path d="M%d 0V590" stroke="#383838" stroke-width="1"></path>' % x for x in range(0, 817, 51))
-    trace = ''.join(
-        '<path d="M%d 262h10M%d 262h10" fill="none" stroke="#4A4338" stroke-width="2"></path><rect x="%d" y="258" width="8" height="8" fill="#2E2E2E" stroke="#B68757" stroke-width="1.5"></rect>' % (i * 136 - 16, i * 136 + 6, i * 136 - 4) for i in range(1, 6))
-    icons = ''.join(icon_group(n, 9 + 136 * i, 192, 0.74) for i, n in enumerate(names))
-    art = ('<svg role="img" aria-label="Six line illustrations: a cloud over servers, a shield with a lock, a transmission tower, a connected network, a microchip and a government building" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 816 590" width="816" height="590" style="position: absolute; left: 0; top: 0; width: 816px; height: 590px">'
-           '<rect width="816" height="590" fill="#2E2E2E"></rect>' + grid + trace + icons + '</svg>')
+    art = ('<img src="%s" alt="Server racks in a data center with streaks of light" style="position: absolute; left: 0; top: 0; width: 816px; height: 590px; object-fit: cover">'
+           '<div style="position: absolute; left: 0; top: 0; width: 816px; height: 590px; background: linear-gradient(180deg, rgba(35,31,32,0.78) 0%%, rgba(35,31,32,0.6) 45%%, rgba(35,31,32,0.78) 100%%)"></div>\n') % COVER_PHOTO
     labels = ['Managed IT<br>&amp; Cloud Services', 'Cybersecurity', 'Telecom<br>&amp; UCaaS', 'Systems<br>Integration', 'Electronics<br>&amp; Hardware', 'Government<br>Technology']
     brief, stats = BRIEF, FIGS
     body = (HEAD % {'title': 'Technology Q4 2026: Cover', 'wm': WATERMARK} + art +

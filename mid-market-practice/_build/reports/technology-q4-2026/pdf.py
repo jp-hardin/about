@@ -15,9 +15,20 @@ IMG = {
     'a4e9bce348ee211dfa63f50c5b5de181': 'art/logo.png',
     '91834fbbbc00b31f5c36c7319ad1e129': 'art/knot.png',
     'a4627b44afa321c0e5263a218e5cb43d': f'{AST}/team/jared-hardin.jpg',
-    'b641387ad8b11c9fb645cb0345a01723': 'art/checklist.svg',
-    '23a72c95665d08641203d0333db6e463': 'art/agreement.svg',
 }
+# Photographs from the approved library, prepared for this report in assets/img/industries/technology.
+PH = f'{AST}/industries/technology'
+IMG.update({
+    '151e0ff33db32361cea2a3f8a833e3e9': f'{PH}/rpt-cover-datacenter.jpg',
+    'cddf308fc92bfee28a88f35f8cf7ca67': f'{PH}/rpt-server-racks.jpg',
+    '643493205d756d338b787cd3b5150ce7': f'{PH}/rpt-keyboard.jpg',
+    'a2ae072ce129acce7f045e44978fe69e': f'{PH}/rpt-telecom-masts.jpg',
+    'e5a9e07bcb6a0f7f6dfde3725f5af1c7': f'{PH}/rpt-network-cables.jpg',
+    'c2db878093ab396ade901a47de706d38': f'{PH}/rpt-circuit-board.jpg',
+    '7c2230130aa40114760060efc60c52a4': f'{PH}/rpt-satellite-dish.jpg',
+    'c8d2f2cd3c854c01714578371dfe2936': f'{PH}/rpt-laptop-repair.jpg',
+    'c32355433303fcff161324c3a5b9388d': f'{PH}/rpt-team-laptops.jpg',
+})
 
 F = [('Cinzel', 'cinzel', 400, 'normal'), ('Cinzel', 'cinzel', 500, 'normal')]
 F += [('Newsreader', 'newsreader', w, s) for w in (500, 600) for s in ('normal', 'italic')]
