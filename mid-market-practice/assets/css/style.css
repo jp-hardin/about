@@ -625,3 +625,23 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .legal { max-width: 860px; }
 .legal p { color: var(--graphite); font-size: 0.95rem; line-height: 1.75; margin: 0 0 20px; }
 .legal-links { margin-top: 36px !important; padding-top: 24px; border-top: 1px solid var(--line); }
+
+/* ── Home and transactions photography ── */
+.section--photo-soft::after { background: linear-gradient(180deg, rgba(35,31,32,.88), rgba(35,31,32,.78)); }
+.pillar--photo { padding-top: 0; display: flex; flex-direction: column; }
+.pillar-photo { margin: 0 -34px 26px; aspect-ratio: 3 / 2; overflow: hidden; background: var(--ink); }
+.pillar-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.pillar--photo:hover .pillar-photo img { transform: scale(1.06); }
+.fit-split { display: grid; grid-template-columns: 5fr 7fr; gap: 56px; align-items: center; }
+.fit-split .fit { grid-template-columns: repeat(2, 1fr); }
+.fit-photo { margin: 0; aspect-ratio: 9 / 11; overflow: hidden; position: relative; }
+.fit-photo::after { content: ''; position: absolute; inset: 0; box-shadow: inset 0 0 0 1px rgba(188,145,99,.35); }
+.fit-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 900px) {
+  .fit-split { grid-template-columns: 1fr; gap: 36px; }
+  .fit-photo { aspect-ratio: 16 / 10; }
+}
+@media (max-width: 600px) {
+  .fit-split .fit { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { .pillar-photo img { transition: none; } }
