@@ -400,24 +400,58 @@ def footer(root):
 
 
 def cta(root, title="It All Starts With a Conversation", form=False):
-    form_html = ""
-    if form:
-        form_html = f"""
-    <div class="form-wrap" id="form">
-      <script charset="utf-8" src="https://js.hsforms.net/forms/embed/v2.js"></script>
-      <script>
-        if (window.hbspt) {{ hbspt.forms.create({{ region: "{HUBSPOT['region']}", portalId: "{HUBSPOT['portalId']}", formId: "{HUBSPOT['formId']}" }}); }}
-        else {{ document.currentScript.insertAdjacentHTML('afterend', '<p>Call <a href="{PHONE_HREF}">{PHONE}</a> or email <a href="mailto:{EMAIL}">{EMAIL}</a> to start the conversation.</p>'); }}
-      </script>
-    </div>"""
-    button = "" if form else f'<div class="btn-row"><a class="btn" href="{root}index.html#form">Start the Conversation</a><a class="btn btn--light" href="{PHONE_HREF}">Call {PHONE}</a></div>'
-    return f"""<section class="section section--knot cta" id="contact">
+    if not form:
+        return f"""<section class="section section--knot cta" id="contact">
   <div class="wrap center reveal">
     <p class="eyebrow">Confidential. No pressure. No commitments.</p>
     <h2 class="display">{e(title)}</h2>
     <p class="lead">Our first step is always a confidential conversation exploring your goals, your company, and your options.</p>
-    {button}
-    <p class="contact-line">Call to speak with an M&amp;A expert at <a href="{PHONE_HREF}">{PHONE}</a></p>{form_html}
+    <div class="btn-row"><a class="btn" href="{root}index.html#form">Start the Conversation</a><a class="btn btn--light" href="{PHONE_HREF}">Call {PHONE}</a></div>
+    <p class="contact-line">Call to speak with an M&amp;A expert at <a href="{PHONE_HREF}">{PHONE}</a></p>
+  </div>
+</section>
+"""
+    steps = [
+        ("Share a few details", "Tell us about your company and what you are considering. Everything you share is held in strict confidence."),
+        ("Talk with a Managing Director", "A senior member of our Mid-Market team will set up a private conversation at a time that suits you."),
+        ("See your options clearly", "Understand the paths available, from a partial recapitalization to a full sale, and what each could mean for you."),
+    ]
+    step_html = "".join(f'<li><span class="contact-step-num">{k + 1:02d}</span><div><h3>{e(h)}</h3><p>{e(p)}</p></div></li>'
+                        for k, (h, p) in enumerate(steps))
+    icon_phone = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>'
+    icon_mail = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>'
+    icon_lock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>'
+    return f"""<section class="section section--knot contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <p class="eyebrow">Confidential. No pressure. No commitments.</p>
+      <h2 class="display">{e(title)}</h2>
+      <p class="lead">Our first step is always a confidential conversation exploring your goals, your company, and your options.</p>
+      <ol class="contact-steps">{step_html}</ol>
+      <div class="contact-direct">
+        <a href="{PHONE_HREF}">{icon_phone}<span><small>Speak with an M&amp;A expert</small>{PHONE}</span></a>
+        <a href="mailto:{EMAIL}">{icon_mail}<span><small>Email the team</small>{EMAIL}</span></a>
+      </div>
+    </div>
+    <div class="contact-card reveal" id="form">
+      <p class="eyebrow">Start the Conversation</p>
+      <h3 class="contact-card-title">Tell Us About Your Business</h3>
+      <p class="contact-card-sub">A member of our team will follow up with you personally.</p>
+      <div id="hs-form" class="hs-form-host">
+        <noscript><p>Call <a href="{PHONE_HREF}">{PHONE}</a> or email <a href="mailto:{EMAIL}">{EMAIL}</a> to start the conversation.</p></noscript>
+      </div>
+      <script charset="utf-8" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+      <script>
+        (function () {{
+          var host = document.getElementById('hs-form');
+          function fallback() {{ host.innerHTML = '<p class="hs-fallback">Call <a href="{PHONE_HREF}">{PHONE}</a> or email <a href="mailto:{EMAIL}">{EMAIL}</a> to start the conversation.</p>'; }}
+          if (window.hbspt) {{
+            hbspt.forms.create({{ region: "{HUBSPOT['region']}", portalId: "{HUBSPOT['portalId']}", formId: "{HUBSPOT['formId']}", target: "#hs-form", css: "", submitButtonClass: "btn hs-submit" }});
+          }} else {{ fallback(); }}
+        }})();
+      </script>
+      <p class="contact-privacy">{icon_lock}<span>Your information is kept strictly confidential.</span></p>
+    </div>
   </div>
 </section>
 """

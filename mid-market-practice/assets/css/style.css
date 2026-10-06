@@ -472,3 +472,68 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .brand { align-items: center; }
 .brand-tag { align-self: stretch; text-align: center; }
 .awards-band { border-bottom: 1px solid var(--line); }
+
+/* ── Contact (home page form) ── */
+.contact { color: var(--white); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 64px; align-items: start; }
+.contact-info .display { color: var(--white); font-size: clamp(2rem, 3.6vw, 2.9rem); }
+.contact-info .lead { color: var(--sand); }
+.contact-steps { list-style: none; margin: 36px 0 0; padding: 0; display: grid; gap: 22px; }
+.contact-steps li { display: grid; grid-template-columns: 48px 1fr; gap: 14px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.12); }
+.contact-step-num { font-family: var(--font-serif); font-size: 1.6rem; color: var(--gold); line-height: 1.1; }
+.contact-steps h3 { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); margin-bottom: 6px; }
+.contact-steps p { margin: 0; color: var(--sand); font-size: 0.92rem; }
+.contact-direct { display: grid; gap: 12px; margin-top: 36px; }
+.contact-direct a { display: flex; align-items: center; gap: 16px; padding: 16px 18px; border: 1px solid rgba(255,255,255,0.14); color: var(--white); text-decoration: none; font-weight: 700; letter-spacing: 0.02em; transition: border-color .2s, background .2s; }
+.contact-direct a:hover { border-color: var(--gold); background: rgba(188,145,99,0.08); }
+.contact-direct svg { width: 22px; height: 22px; color: var(--gold); flex-shrink: 0; }
+.contact-direct small { display: block; font-size: 0.64rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--taupe); margin-bottom: 2px; }
+.contact-direct span { overflow-wrap: anywhere; }
+
+.contact-card { background: var(--white); color: var(--ink); padding: 44px 44px 34px; border-top: 4px solid var(--gold); box-shadow: 0 30px 60px rgba(0,0,0,0.35); }
+.contact-card-title { font-family: var(--font-serif); font-weight: 400; font-size: 1.85rem; line-height: 1.2; margin-bottom: 8px; }
+.contact-card-sub { color: var(--graphite); font-size: 0.92rem; margin: 0 0 26px; }
+.contact-privacy { display: flex; gap: 10px; align-items: center; margin: 22px 0 0; padding-top: 18px; border-top: 1px solid var(--line); font-size: 0.78rem; color: var(--muted); }
+.contact-privacy svg { width: 16px; height: 16px; color: var(--gold); flex-shrink: 0; }
+.hs-fallback a { color: var(--gold-deep); font-weight: 700; }
+
+/* HubSpot form, unstyled embed (css: "") restyled to the brand */
+.hs-form-host form { display: grid; gap: 18px; font-family: var(--font-sans); }
+.hs-form-host fieldset { max-width: none !important; border: 0; margin: 0; padding: 0; display: grid; gap: 18px; }
+.hs-form-host fieldset.form-columns-2 { grid-template-columns: 1fr 1fr; }
+.hs-form-host fieldset .hs-form-field { width: auto !important; float: none !important; padding: 0 !important; }
+.hs-form-host .input { margin: 0 !important; }
+.hs-form-host label:not(.hs-form-booleancheckbox-display):not(.hs-form-radio-display):not(.hs-error-msg) { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--graphite); margin-bottom: 8px; }
+.hs-form-host .hs-form-required { color: var(--gold); margin-left: 3px; }
+.hs-form-host .hs-input:not([type="checkbox"]):not([type="radio"]) {
+  width: 100% !important; box-sizing: border-box; font: inherit; font-size: 0.95rem; color: var(--ink);
+  background: var(--paper); border: 1px solid var(--line); border-bottom: 2px solid var(--sand); border-radius: 0;
+  padding: 13px 14px; transition: border-color .2s, background .2s; -webkit-appearance: none; appearance: none;
+}
+.hs-form-host select.hs-input { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23bc9163' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; background-size: 16px; padding-right: 40px; }
+.hs-form-host textarea.hs-input { min-height: 110px; resize: vertical; }
+.hs-form-host .hs-input:focus { outline: none; background: var(--white); border-color: var(--gold); border-bottom-color: var(--gold); }
+.hs-form-host .hs-input.invalid, .hs-form-host .hs-input.error { border-bottom-color: #b5482f; }
+.hs-form-host .hs-error-msgs { list-style: none; margin: 6px 0 0; padding: 0; }
+.hs-form-host .hs-error-msg, .hs-form-host .hs-main-font-element { display: block; font-size: 0.74rem; font-weight: 600; color: #b5482f; text-transform: none; letter-spacing: 0; margin: 0; }
+.hs-form-host .hs-richtext, .hs-form-host .legal-consent-container { font-size: 0.74rem; line-height: 1.55; color: var(--muted); }
+.hs-form-host .legal-consent-container p { margin: 0 0 8px; }
+.hs-form-host .inputs-list { list-style: none; margin: 0; padding: 0; }
+.hs-form-host .hs-form-booleancheckbox-display, .hs-form-host .hs-form-checkbox-display { display: flex; gap: 10px; align-items: flex-start; font-size: 0.78rem; color: var(--graphite); text-transform: none; letter-spacing: 0; }
+.hs-form-host input[type="checkbox"] { accent-color: var(--gold); margin-top: 3px; }
+.hs-form-host .hs_submit { margin-top: 6px; }
+.hs-form-host .hs_submit .actions { margin: 0; padding: 0; }
+.hs-form-host input[type="submit"], .hs-form-host .hs-button {
+  width: 100%; justify-content: center; font-family: var(--font-sans); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+  padding: 17px 30px; background: var(--gold); color: var(--white); border: 2px solid var(--gold); border-radius: var(--radius); cursor: pointer; transition: background .25s, border-color .25s;
+}
+.hs-form-host input[type="submit"]:hover, .hs-form-host .hs-button:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+.hs-form-host .submitted-message { font-family: var(--font-serif); font-size: 1.2rem; color: var(--ink); padding: 24px 0; }
+
+@media (max-width: 960px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 44px; }
+}
+@media (max-width: 640px) {
+  .contact-card { padding: 30px 20px 24px; }
+  .hs-form-host fieldset.form-columns-2 { grid-template-columns: 1fr; }
+}
