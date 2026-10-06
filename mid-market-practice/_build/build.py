@@ -204,6 +204,7 @@ SECTORS = [
     },
     {
         "slug": "technology",
+        "report": ("Q4 2026 Sector Report", "reports/technology-q4-2026.html"),
         "name": "Technology",
         "count": 105,
         "tagline": "Advising founders of software, IT services and technology businesses with recurring revenue and mission-critical products.",
