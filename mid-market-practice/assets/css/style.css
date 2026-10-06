@@ -537,3 +537,5 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
   .contact-card { padding: 30px 20px 24px; }
   .hs-form-host fieldset.form-columns-2 { grid-template-columns: 1fr; }
 }
+.hs-form-host img { max-width: 100%; height: auto; max-height: 72px; width: auto; }
+.hs-form-host .hs-richtext img { display: block; margin: 0 0 12px; }

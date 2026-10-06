@@ -17,6 +17,12 @@ SITE = os.path.dirname(HERE)
 PHONE = "813-771-6675"
 PHONE_HREF = "tel:8137716675"
 EMAIL = "Tampa@Benchmarkintl.com"
+def _asset_version(rel):
+    import hashlib
+    with open(os.path.join(SITE, rel), "rb") as f:
+        return hashlib.md5(f.read()).hexdigest()[:8]
+
+
 HUBSPOT = {"region": "na1", "portalId": "4039078", "formId": "902fb6ab-81fb-42c4-abf8-5355537a8abb"}
 AS_OF = "October 2026"
 
@@ -33,7 +39,7 @@ ICONS = {
 
 
 def icon(slug):
-    return ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" '
+    return ('<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" '
             'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS[slug] + "</svg>")
 
 
@@ -314,7 +320,7 @@ def head(title, desc, root, canonical=""):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{root}assets/css/style.css">
+<link rel="stylesheet" href="{root}assets/css/style.css?v={_asset_version('assets/css/style.css')}">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -357,7 +363,7 @@ SOCIAL = {
 def footer(root):
     ext = ' target="_blank" rel="noopener"'
     social = "".join(
-        f'<a href="{href}" aria-label="{name}"{"" if name == "Email" else ext}><svg viewBox="0 0 24 24" aria-hidden="true">{path}</svg></a>'
+        f'<a href="{href}" aria-label="{name}"{"" if name == "Email" else ext}><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">{path}</svg></a>'
         for name, (href, path) in SOCIAL.items())
     sectors = "".join(f'<li><a href="{root}industries/{s["slug"]}.html">{e(s["name"])}</a></li>' for s in SECTORS)
     sectors += f'<li><a href="{root}industries/index.html">All Industries</a></li>'
@@ -393,7 +399,7 @@ def footer(root):
     </div>
   </div>
 </footer>
-<script src="{root}assets/js/main.js" defer></script>
+<script src="{root}assets/js/main.js?v={_asset_version('assets/js/main.js')}" defer></script>
 </body>
 </html>
 """
@@ -418,9 +424,9 @@ def cta(root, title="It All Starts With a Conversation", form=False):
     ]
     step_html = "".join(f'<li><span class="contact-step-num">{k + 1:02d}</span><div><h3>{e(h)}</h3><p>{e(p)}</p></div></li>'
                         for k, (h, p) in enumerate(steps))
-    icon_phone = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>'
-    icon_mail = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>'
-    icon_lock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>'
+    icon_phone = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>'
+    icon_mail = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>'
+    icon_lock = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>'
     return f"""<section class="section section--knot contact" id="contact">
   <div class="wrap contact-grid">
     <div class="contact-info reveal">
