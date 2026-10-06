@@ -32,3 +32,7 @@ Then preview with `python3 -m http.server -d mid-market-practice` and open http:
 - Sector "recent transactions" counts are the number of deals tagged to each industry on Benchmark's success page as of October 2026. Update `count` in `build.py` as needed.
 - The contact form is Benchmark International's HubSpot form (portal 4039078).
 - Published with the rest of this repo on GitHub Pages at `/mid-market-practice/`.
+
+## Publishing
+
+Merging to `main` triggers GitHub Pages' "pages build and deployment" run. If a run gets stuck in "queued" (for example during a GitHub Actions outage), push any small commit to `main` to start a fresh build.
