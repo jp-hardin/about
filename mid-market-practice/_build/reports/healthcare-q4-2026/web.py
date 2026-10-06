@@ -73,8 +73,7 @@ stats = ''.join(f'<div class="stat"><div class="stat-num">{a}</div><div class="s
 desc = 'Q4 2026 M&A sector report for healthcare providers, life sciences and diagnostics, medical products and distribution, and pharmacy and healthcare services, from the Benchmark International Mid-Market team.'
 page = site.head('Healthcare Q4 2026 M&A Sector Report', desc, root).replace('</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n</head>')
 page += site.header(root, 'industries')
-page += f'''<main id="main">
-
+page += f'''
 <section class="hero hero--page">
   <div class="wrap">
     <div class="crumbs"><a href="{root}index.html">Mid-Market</a> / <a href="{root}industries/index.html">Industries</a> / <a href="{root}industries/healthcare.html">Healthcare</a> / Q4 2026 Sector Report</div>
