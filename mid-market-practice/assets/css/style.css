@@ -620,3 +620,8 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
   .hero-media img { animation: none; }
   .ind-photo img, .ind-row-photo img, .photo-strip-item img, .insight-cover::before { transition: none; }
 }
+
+/* ── Important Disclosures ── */
+.legal { max-width: 860px; }
+.legal p { color: var(--graphite); font-size: 0.95rem; line-height: 1.75; margin: 0 0 20px; }
+.legal-links { margin-top: 36px !important; padding-top: 24px; border-top: 1px solid var(--line); }

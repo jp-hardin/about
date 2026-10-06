@@ -26,6 +26,18 @@ def _asset_version(rel):
 HUBSPOT = {"region": "na1", "portalId": "4039078", "formId": "902fb6ab-81fb-42c4-abf8-5355537a8abb"}
 AS_OF = "October 2026"
 
+# Important Disclosures: shown on disclosures.html and printed as the last page of every sector report PDF
+# (_build/reports/disclosures.py). Adapted from a peer firm's report disclosures; have Compliance confirm any
+# change, and add Benchmark International's own regulatory status here if Compliance wants it stated.
+DISCLOSURES = [
+    "\u201cBenchmark International\u201d refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Mid-Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.",
+    "Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.",
+    "The distribution of this material in certain jurisdictions may be restricted by law, and accordingly, recipients of this material represent that they are able to receive it without contravention of any registration requirement or other legal restrictions in the jurisdictions in which they reside or in which they conduct business.",
+    "This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide accounting, tax, investment, regulatory or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness or completeness of the information, opinions or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.",
+    "Company names, logos and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.",
+    "This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the \u201cOrder\u201d); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as \u201cRelevant Persons\u201d). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.",
+]
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Icons (24x24, stroke = currentColor)
 # ─────────────────────────────────────────────────────────────────────────────
@@ -429,7 +441,7 @@ def footer(root):
     </div>
     <div class="footer-base">
       <span>&copy; 2026 Benchmark International. All rights reserved.</span>
-      <span><a href="https://www.benchmarkintl.com/terms/">Terms</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/privacy-policy/">Privacy Policy</a></span>
+      <span><a href="{root}disclosures.html">Important Disclosures</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/terms/">Terms</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/privacy-policy/">Privacy Policy</a></span>
     </div>
   </div>
 </footer>
@@ -555,8 +567,9 @@ def photo_strip(slug, root, n=4):
     return f'<div class="photo-strip reveal" aria-hidden="true">{imgs}</div>'
 
 
-def report_visuals(page, slug, root):
-    """Adds the industry photos to a sector report page: a photo hero, plus photo breaks after report sections 2 and 5."""
+def report_extras(page, slug, root):
+    """Finishes a sector report page: the industry photo hero, photo breaks after report sections 2 and 5,
+    and the Important Disclosures link at the end of the report."""
     page = page.replace('<section class="hero hero--page">', photo_hero(slug, root), 1)
     page = page.replace('assets/css/report.css">', f'assets/css/report.css?v={_asset_version("assets/css/report.css")}">', 1)
     sep = '\n<section class="rsec'
@@ -565,7 +578,12 @@ def report_visuals(page, slug, root):
         if len(parts) > k + 1:
             imgs = "".join(f'<img src="{photo(slug, f"g{x}", root)}" alt="" loading="lazy" width="900" height="675">' for x in g)
             parts[k] += f'\n<figure class="rphoto reveal" aria-hidden="true">{imgs}</figure>'
-    return sep.join(parts)
+    page = sep.join(parts)
+    note = (f'<aside class="rdisclosure"><p class="eyebrow">Important Disclosures</p><p>This report is for informational purposes only and is not advice '
+            f'or an offer or solicitation. Information is as of the date stated and has not been independently verified. '
+            f'<a class="link-arrow" href="{root}disclosures.html">Read the Important Disclosures</a></p></aside>\n  </article>')
+    assert page.count("</article>") == 1, "report page should have one <article>"
+    return page.replace("</article>", note, 1)
 
 
 def industry_card(s, root):
@@ -1168,6 +1186,34 @@ def page_insights():
     write("insights/index.html", html)
 
 
+def page_disclosures():
+    root = ""
+    html = head("Important Disclosures | Mid-Market | Benchmark International",
+                "Important disclosures for Benchmark International's Mid-Market sector reports and website.", root)
+    html += header(root)
+    paras = "".join(f"<p>{e(p)}</p>" for p in DISCLOSURES)
+    html += f"""
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="crumbs"><a href="{root}index.html">Mid-Market</a> / Important Disclosures</div>
+    <p class="eyebrow">Legal</p>
+    <h1 class="display">Important Disclosures</h1>
+    <p class="lead">These disclosures apply to the Mid-Market sector reports and to the content of this website.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <article class="legal">{paras}
+      <p class="legal-links"><a class="link-arrow" href="{root}insights/index.html">Back to Insights</a></p>
+    </article>
+  </div>
+</section>
+"""
+    html += footer(root)
+    write("disclosures.html", html)
+
+
 def page_report_redirects():
     for i in INSIGHTS:
         if not i.get("legacy"):
@@ -1192,3 +1238,4 @@ if __name__ == "__main__":
     page_transactions()
     page_insights()
     page_report_redirects()
+    page_disclosures()

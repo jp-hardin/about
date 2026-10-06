@@ -22,7 +22,7 @@ The pages are generated. Don't hand-edit the HTML; edit the sources and rebuild:
 - **Copy, sectors, team, stories:** `_build/build.py`
 - **Tombstones:** `_build/tombstones.json` (`seller`, `buyer`, `sector`, `link`, plus either `image` or `seller_logo` + `buyer_logo`; `segment`, `desc`, `year` (used only for newest-first ordering, not displayed); `"featured": true` marks signature deals; `"also": [{"sector", "segment"}]` lists a deal in a second industry too). Old 12-sector URLs redirect to the new sector pages (see `LEGACY` in `build.py`).
 - **Styles / behavior:** `assets/css/style.css`, `assets/js/main.js`
-- **Photography:** `assets/img/industries/<sector>/` holds images chosen from the Mid-Market approved image library (Box): `hero.jpg` (1920x1000, sector page and report heroes), `card.jpg` (900x560, industry cards and Insights covers) and `g1.jpg` to `g4.jpg` (900x675, sector photo strip and report photo breaks). Replace a file with the same name and size to swap a photo; no code change needed. Report pages pick these up through `report_visuals()` in `build.py`.
+- **Photography:** `assets/img/industries/<sector>/` holds images chosen from the Mid-Market approved image library (Box): `hero.jpg` (1920x1000, sector page and report heroes), `card.jpg` (900x560, industry cards and Insights covers) and `g1.jpg` to `g4.jpg` (900x675, sector photo strip and report photo breaks). Replace a file with the same name and size to swap a photo; no code change needed. Report pages pick these up through `report_extras()` in `build.py`.
 
 ```bash
 python3 mid-market-practice/_build/build.py

@@ -61,3 +61,7 @@ async def main():
         print('pages', len(pgs), '| fonts loaded', fonts, '| wrote', os.path.relpath(OUT, SITE), round(os.path.getsize(OUT) / 1024), 'KB')
 asyncio.run(main())
 if not os.environ.get('KEEP'): os.remove(tmp)
+
+# Last page: Important Disclosures (text in _build/build.py, page in ../disclosures.py)
+import sys; sys.path.insert(0, os.path.dirname(ROOT)); import disclosures
+disclosures.append(OUT, 'Technology', 'Q4 2026')

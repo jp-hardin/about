@@ -70,3 +70,7 @@ async def main():
         for fn, spare in over: print(f'OVER: {fn} runs {-spare}px past its text frame')
         print('pages', len(pgs), '| fonts loaded', fonts, '| wrote', os.path.relpath(OUT, SITE), round(os.path.getsize(OUT) / 1024), 'KB')
 asyncio.run(main()); os.remove(tmp)
+
+# Last page: Important Disclosures (text in _build/build.py, page in ../disclosures.py)
+import sys; sys.path.insert(0, os.path.dirname(ROOT)); import disclosures
+disclosures.append(OUT, 'Business Services', 'Q4 2026')
