@@ -544,7 +544,7 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .insight-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 10px; }
 .insight-card { display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--line); transition: transform .25s ease, box-shadow .25s ease, border-color .25s; }
 .insight-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--gold); }
-.insight-cover { position: relative; display: grid; grid-template-rows: auto 1fr auto; gap: 10px; aspect-ratio: 16 / 9; padding: 24px 26px; text-decoration: none; color: var(--white); overflow: hidden;
+.insight-cover { position: relative; display: grid; grid-template-rows: 1fr auto; gap: 10px; aspect-ratio: 16 / 9; padding: 24px 26px; text-decoration: none; color: var(--white); overflow: hidden;
   background: var(--ink) url('../img/brand/knot-dark.jpg') center/cover no-repeat; }
 .insight-cover::after { content: ''; position: absolute; inset: 0; background: linear-gradient(160deg, rgba(20,18,18,0.35), rgba(20,18,18,0.85)); }
 .insight-cover > * { position: relative; z-index: 1; }

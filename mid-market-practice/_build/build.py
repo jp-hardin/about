@@ -38,21 +38,7 @@ DISCLOSURES = [
     "This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the \u201cOrder\u201d); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as \u201cRelevant Persons\u201d). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.",
 ]
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Icons (24x24, stroke = currentColor)
-# ─────────────────────────────────────────────────────────────────────────────
-ICONS = {
-    "industrial": '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>',
-    "business-services": '<rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2M3 13h18"/>',
-    "consumer": '<path d="M4 7h16l-1.5 12.5a1 1 0 0 1-1 .5h-11a1 1 0 0 1-1-.5L4 7zM9 7V5a3 3 0 0 1 6 0v2"/>',
-    "healthcare": '<path d="M12 21s-7.5-4.6-9.3-9.5C1.5 8.2 3.6 4.5 7.2 4.5c2 0 3.5 1 4.8 2.7 1.3-1.7 2.8-2.7 4.8-2.7 3.6 0 5.7 3.7 4.5 7-1.8 4.9-9.3 9.5-9.3 9.5zM8 12h2.5l1-2 2 4 1-2H16"/>',
-    "technology": '<rect x="5" y="5" width="14" height="14" rx="1"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/>',
-}
 
-
-def icon(slug):
-    return ('<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" '
-            'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS[slug] + "</svg>")
 
 
 # Services offered on every sector page
@@ -295,7 +281,7 @@ for _s in SECTORS:
 # ─────────────────────────────────────────────────────────────────────────────
 TEAM_LEAD = [
     ("Jordan Houtz", "Managing Director", "jordan-houtz",
-     ["As Head of Mid-Market, Jordan represents clients with revenues ranging from $75 million to $500 million across the United States. He is a seasoned investment banking and capital raising professional with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
+     ["As Head of Mid-Market, Jordan represents clients with total enterprise values (TEV) ranging from $50 million to $500 million across the United States. He is a seasoned investment banking and capital raising professional with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
       "His deep experience on both the buy and sell sides of M&A transactions gives his clients a unique advantage in understanding deal dynamics and achieving their objectives. By leading full-cycle processes from idea and thesis generation through valuation, diligence, and negotiation, he is intimately involved in accomplishing his clients’ objectives. Jordan prides himself on building deep client relationships while achieving desired outcomes for stakeholders."]),
     ("Jared Hardin", "Managing Director", "jared-hardin",
      ["Mr. Hardin was raised in a military family, spending his early years traveling through Utah, Missouri, Ohio, Korea, Idaho, and Hong Kong. He ultimately landed in Texas where he has resided for the last two decades. His scholastic journey spanned a wide spectrum of learning, from Fine Arts to International Business to Management of Information Systems. He was driven to attain his MBA because he genuinely enjoys helping others learn and grow, but he also has a competitive nature that drives him toward success. His career has been quite diverse, having held the titles of Owner, COO, CIO, and CMO, and starting small businesses that gave him a role in everything from sales to HR and from IT to manufacturing. For these reasons, he understands and appreciates the intricacies of many different businesses.",
@@ -589,7 +575,7 @@ def report_extras(page, slug, root):
 def industry_card(s, root):
     tags = "".join(f"<li>{e(seg[0])}</li>" for seg in s["segments"])
     return f"""<a class="ind-card ind-card--photo" href="{root}industries/{s['slug']}.html">
-  <div class="ind-photo"><img src="{photo(s['slug'], 'card', root)}" alt="" loading="lazy" width="900" height="560"><span class="ind-icon">{icon(s['slug'])}</span></div>
+  <div class="ind-photo"><img src="{photo(s['slug'], 'card', root)}" alt="" loading="lazy" width="900" height="560"></div>
   <h3>{e(s['name'])}</h3>
   <p>{e(s['short'])}</p>
   <ul class="ind-tags">{tags}</ul>
@@ -657,7 +643,7 @@ def page_home():
     awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="Benchmark International award" loading="lazy" width="520" height="300">' for i in range(1, 5))
 
     html = head("Mid-Market | Benchmark International",
-                "Benchmark International's Mid-Market team advises owners of privately held companies with $75M–$500M in revenue on sales, recapitalizations and growth partnerships across Industrial, Business Services, Consumer, Healthcare and Technology.", root)
+                "Benchmark International's Mid-Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on sales, recapitalizations and growth partnerships across Industrial, Business Services, Consumer, Healthcare and Technology.", root)
     html += header(root)
     html += f"""
 <section class="hero">
@@ -676,7 +662,7 @@ def page_home():
   <div class="wrap">
     <div class="stats">
       <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Privately owned sell-side M&amp;A advisor worldwide<sup>*</sup></div></div>
-      <div class="stat"><div class="stat-num">$75M–$500M</div><div class="stat-label">Client revenue range we serve</div></div>
+      <div class="stat"><div class="stat-num">$50M–$500M</div><div class="stat-label">Total Enterprise Value (TEV) range we serve</div></div>
       <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused industry groups with dedicated sector expertise</div></div>
       <div class="stat"><div class="stat-num">15</div><div class="stat-label">Global offices across the Americas, Europe &amp; Africa</div></div>
     </div>
@@ -823,7 +809,6 @@ def page_industries():
         segs = "".join(f'<li><a href="{s["slug"]}.html#seg-{k + 1}">{e(seg[0])}</a></li>' for k, seg in enumerate(s["segments"]))
         rows += f"""<article class="ind-row reveal" id="{s['slug']}">
   <div class="ind-row-main">
-    <div class="ind-icon">{icon(s['slug'])}</div>
     <p class="eyebrow">{s['count']}+ completed transactions<sup>†</sup></p>
     <h2 class="h2">{e(s['name'])}</h2>
     <p class="lead">{e(s['tagline'])}</p>
@@ -935,7 +920,6 @@ def page_sector(i, s):
 {photo_hero(s['slug'], root)}
   <div class="wrap">
     <div class="crumbs"><a href="{root}index.html">Mid-Market</a> / <a href="index.html">Industries</a> / {e(s['name'])}</div>
-    <div class="ind-icon" style="color:var(--gold)">{icon(s['slug'])}</div>
     <h1 class="display">{e(s['name'])}</h1>
     <p class="lead">{e(s['tagline'])}</p>
     <div class="btn-row"><a class="btn" href="#deals">Selected Transactions</a><a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a>{report_btn}</div>
@@ -1113,7 +1097,6 @@ def insight_card(i, root, current):
     badge = '<span class="insight-badge">Current</span>' if current else '<span class="insight-badge insight-badge--archive">Archive</span>'
     return f"""<article class="insight-card{' insight-card--current' if current else ''}" data-sector="{i['sector']}" data-text="{text}">
   <a class="insight-cover" href="{root}{i['url']}" aria-label="{e(i['title'])}" style="background-image:url('{photo(i['sector'], 'card', root)}')">
-    <span class="insight-cover-icon">{icon(i['sector'])}</span>
     <span class="insight-cover-period">{e(i['period'])}</span>
     <span class="insight-cover-sector">{e(sec['name'])}</span>
   </a>
