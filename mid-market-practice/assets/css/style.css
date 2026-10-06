@@ -578,3 +578,45 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
   .insight-grid { grid-template-columns: 1fr; }
   .archive-row { grid-template-columns: 1fr; gap: 4px; }
 }
+
+/* ── Photography (Mid-Market image library) ── */
+@keyframes kenburns { from { transform: scale(1.12) translate3d(0, 0, 0); } to { transform: scale(1) translate3d(0, 0, 0); } }
+.hero--photo { background: var(--ink); }
+.hero-media { position: absolute; inset: 0; overflow: hidden; }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; display: block; transform-origin: 70% 40%; animation: kenburns 18s ease-out both; }
+.hero--photo::after { background: linear-gradient(90deg, rgba(20,18,18,.92) 0%, rgba(20,18,18,.7) 45%, rgba(20,18,18,.35) 100%), linear-gradient(0deg, rgba(20,18,18,.55), transparent 45%); }
+.hero--photo .ind-icon { filter: drop-shadow(0 2px 8px rgba(0,0,0,.4)); }
+
+.ind-card--photo { padding-top: 0; }
+.ind-photo { position: relative; margin: 0 -32px 24px; aspect-ratio: 16 / 9; overflow: hidden; background: var(--ink); }
+.ind-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .8s cubic-bezier(.2,.7,.2,1), opacity .4s; }
+.ind-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(20,18,18,.75), rgba(20,18,18,0) 60%); }
+.ind-photo .ind-icon { position: absolute; left: 24px; bottom: 16px; width: 38px; height: 38px; margin: 0; z-index: 1; }
+.ind-card--photo:hover .ind-photo img { transform: scale(1.07); }
+
+.ind-row-side { display: grid; gap: 22px; align-content: start; }
+.ind-row-photo { display: block; aspect-ratio: 16 / 8; overflow: hidden; background: var(--ink); }
+.ind-row-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.ind-row:hover .ind-row-photo img { transform: scale(1.05); }
+
+.photo-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; background: var(--ink); }
+.photo-strip-item { margin: 0; aspect-ratio: 4 / 3; overflow: hidden; }
+.photo-strip-item img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.9); transition: transform 1s cubic-bezier(.2,.7,.2,1), filter .5s; }
+.photo-strip-item:hover img { transform: scale(1.08); filter: saturate(1.05); }
+
+.section--photo { position: relative; isolation: isolate; overflow: hidden; }
+.section-media { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
+.section-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.section--photo::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(35,31,32,.94), rgba(35,31,32,.86)); }
+
+.insight-cover::before { content: ''; position: absolute; inset: 0; background: inherit; background-size: cover; background-position: center; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.insight-card:hover .insight-cover::before { transform: scale(1.06); }
+.insight-cover::after { background: linear-gradient(160deg, rgba(20,18,18,0.45), rgba(20,18,18,0.88)); }
+
+@media (max-width: 900px) {
+  .photo-strip { grid-template-columns: repeat(2, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-media img { animation: none; }
+  .ind-photo img, .ind-row-photo img, .photo-strip-item img, .insight-cover::before { transition: none; }
+}

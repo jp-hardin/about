@@ -62,6 +62,7 @@ page += f'''
 '''
 page += site.cta(root)
 page += site.footer(root)
+page = site.report_visuals(page, 'industrial', root)
 for bad in ('{{', '@@', '—', '**'):
     i = page.find(bad)
     assert i < 0, (bad, page[max(0, i - 200):i + 200])
