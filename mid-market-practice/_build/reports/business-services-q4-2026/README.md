@@ -28,6 +28,6 @@ This runs `pdf.py` and `web.py`. `pdf.py` needs Playwright with Chromium (`pip i
 
 ## Content rules
 - Benchmark transactions: names only where the tombstone is public and the seller is cleared to market; buyers flagged not shareable appear as undisclosed or individual buyers; no deal values; the live portfolio in aggregate only.
-- Benchmark counts are stated since January 2025.
+- Benchmark transactions and counts cover the trailing 24 months only (closed October 2024 through September 2026), and no Benchmark transaction carries a date, to match the Healthcare report.
 - No other investment bank cited as a source.
 - Copy follows the house voice: full sentences, no em dashes, no arrows.
