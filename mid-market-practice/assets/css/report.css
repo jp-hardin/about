@@ -186,3 +186,9 @@
 .rphoto img { width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
 .rphoto img:first-child { aspect-ratio: auto; max-height: 300px; }
 @media (max-width: 700px) { .rphoto { grid-template-columns: 1fr 1fr; } .rphoto img, .rphoto img:first-child { aspect-ratio: 4 / 3; max-height: none; } }
+
+/* Important Disclosures note at the end of each report */
+.rdisclosure { margin-top: 40px; padding: 22px 26px; border: 1px solid var(--line); border-left: 3px solid var(--gold); background: var(--white); }
+.rdisclosure .eyebrow { margin-bottom: 8px; }
+.rdisclosure p:last-child { margin: 0; font-size: 0.86rem; color: var(--graphite); line-height: 1.65; }
+.rdisclosure .link-arrow { display: inline-block; margin-top: 6px; }

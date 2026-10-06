@@ -27,7 +27,8 @@ a { color: var(--gold-deep); text-decoration: none; }
 p { margin: 0 0 8pt; }
 strong { color: var(--ink); font-weight: 700; }
 .cover { page: cover; break-after: page; height: 11in; background: var(--ink); color: #fff; padding: 0.9in 0.85in; display: flex; flex-direction: column; position: relative; overflow: hidden; }
-.cover::after { content: ""; position: absolute; right: -1.6in; top: 1.2in; width: 6.4in; height: 6.4in; background: url('IMG/brand/knot-dark.jpg') center/cover; opacity: 0.55; border-radius: 50%; }
+.cover::before { content: ""; position: absolute; inset: 0; background: url('IMG/industries/industrial/hero.jpg') 50% 50%/cover no-repeat; }
+.cover::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(35,31,32,0.72) 0%, rgba(35,31,32,0.5) 30%, rgba(35,31,32,0.78) 55%, rgba(35,31,32,0.94) 78%, rgba(35,31,32,0.97) 100%); }
 .cover > * { position: relative; z-index: 1; }
 .cover img.logo { width: 2.1in; }
 .cover .tag { font: 600 7.5pt 'Quicksand'; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-top: 8pt; }
@@ -146,3 +147,7 @@ async def main():
         print('fonts loaded', fonts, '| wrote', os.path.relpath(OUT, SITE), round(os.path.getsize(OUT) / 1024), 'KB')
 asyncio.run(main())
 if not os.environ.get('KEEP_HTML'): os.remove(tmp)
+
+# Last page: Important Disclosures (text in _build/build.py, page in ../disclosures.py)
+import sys; sys.path.insert(0, os.path.dirname(ROOT)); import disclosures
+disclosures.append(OUT, 'Industrial', 'Q4 2026')

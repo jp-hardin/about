@@ -23,7 +23,7 @@ This runs `gen.py`, `pdf.py` and `web.py` in order. `pdf.py` needs Playwright wi
 - `gen.py`: writes the print pages and `canvas.json` to `root/project/`, the same files the design canvas holds.
 - `pdf.py`: joins the print pages into one document and prints it. Fonts come from `../healthcare-q4-2026/fonts`. The `IMG` table maps the design canvas's uploaded images to the copies in `art/` and in the site's `assets/img/`.
 - `web.py`: groups the same content into the thirteen site sections (`GROUPS`) and wraps it in the site header, footer and call to action from `_build/build.py`. Styles are in `mid-market-practice/assets/css/report.css`, shared with the other reports.
-- `art/`: the logo lockup, the watermark and the two line illustrations used by the print layout.
+- `art/`: the logo lockup and the watermark used by the print layout. The photographs (cover, stat bands, the preparation and contact pages) are `rpt-*.jpg` in `mid-market-practice/assets/img/industries/technology/`, mapped in `IMG`.
 
 ## Where to make common edits
 - Text, figures, table rows, links: the `pages_*.py` file that holds them. Both outputs pick the change up. Keep each print page inside its 890px text frame; `pdf.py` reports any that run over.

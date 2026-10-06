@@ -11,7 +11,7 @@ def p05():
     b = band([('9.6%', 'Revenue growth at managed service providers in 2025, with adjusted EBITDA up 17.1%'),
               ('64', 'Managed service provider acquisitions announced worldwide in the first quarter of 2026'),
               ('19%+', 'Adjusted EBITDA margin at best-in-class IT solution providers for a sixth consecutive year')],
-             'cloud', 'Line illustration of a cloud connected to two servers')
+             'cloud', 'Rows of servers in a data center')
     parts = [
         colp("Managed service providers came into 2026 with their strongest operating results in several years. Revenue grew 9.6% in 2025 against 7.1% in 2024 and adjusted EBITDA grew 17.1%, the best-in-class providers earned adjusted EBITDA margins above 19% for a sixth consecutive year, and the enterprise value of the average IT solution provider rose about 15% ([[ConnectWise Service Leadership Index, June 23, 2026|" + SLI + "]])."),
         colp("Growth is harder to find at the level of the individual provider. In Kaseya's survey of more than 1,000 providers, 71% named winning new customers as their main challenge, 24% reported clients cutting IT budgets, and 16% reported difficulty hiring technicians against 9% a year earlier. Almost half ranked artificial intelligence and automation as their clients' leading need, yet 13% earn meaningful revenue from it ([[Kaseya 2026 State of the MSP Report|" + KASEYA + "]])."),
@@ -61,7 +61,7 @@ def p07():
     b = band([('$20.9B', 'Cybercrime losses reported to the FBI in 2025, up 26% on 2024'),
               ('$240B', 'Forecast worldwide information security spending in 2026, up 12.5%'),
               ('48%', 'Share of breaches that involved a third party, up from 30% a year earlier')],
-             'shield', 'Line illustration of a shield with a padlock')
+             'shield', 'Hands typing on a backlit keyboard')
     parts = [
         colp("Spending on security is growing faster than IT services as a whole. Gartner forecasts worldwide information security spending of $240 billion in 2026, 12.5% above 2025 ([[Gartner|" + GSEC + "]]), against 5.3% growth for IT services ([[Gartner|" + GARTNER + "]])."),
         colp("The loss data explain the budgets. The FBI received more than one million complaints in 2025 with reported losses of $20.9 billion, 26% more than in 2024 ([[FBI Internet Crime Complaint Center|" + IC3 + "]]). Verizon found ransomware present in 48% of breaches and a third party involved in 48%, up from 30% ([[Verizon 2026 DBIR via TechRepublic|" + DBIR + "]]), and IBM put the average cost of a breach in the United States at $11.5 million ([[IBM via eSecurity Planet|" + IBM + "]])."),
@@ -121,7 +121,7 @@ def p09():
     b = band([('5.9%', 'Revenue growth at RingCentral in the second quarter of 2026'),
               ('26M', 'Microsoft Teams Phone users with public network calling, up 30% in 20 months'),
               ('$16.6B', 'Billings through technology services distributors in 2024, up 14.5%')],
-             'tower', 'Line illustration of a transmission tower with signal arcs')
+             'tower', 'Telecommunication masts against the sky')
     parts = [
         colp("Cloud voice has become a steady, mid-single-digit growth business. RingCentral grew revenue 5.9% to $657 million in the second quarter ([[RingCentral|" + RNG + "]]), Zoom grew 4.9% with enterprise revenue up 7.8% ([[Zoom|" + ZM + "]]), and 8x8 grew 5% ([[8x8|" + EGHT + "]]). Microsoft's Teams Phone passed 26 million users with public network calling in late 2025 ([[UC Today|https://www.uctoday.com/microsoft-teams-phone-pstn-users-surges-to-26-million-up-30-in-20-months]])."),
         colp("Growth for the vendors now comes from artificial intelligence features sold to existing customers. RingCentral reported that 13% of its recurring revenue comes from customers using a paid AI product, double the share a year earlier ([[RingCentral|" + RNG + "]]). For resellers and regional providers the consequence is that customer relationships and support quality carry the value, since the underlying platforms are increasingly alike."),
@@ -180,7 +180,7 @@ def p11():
     b = band([('62.5%', 'Forecast growth in worldwide data center systems spending in 2026'),
               ('$81.5B', 'US data center construction starts in the first half of 2026, above all of 2025'),
               ('$402B', 'Forecast professional audiovisual revenue in 2030, from $332 billion in 2025')],
-             'integrate', 'Line illustration of a monitor showing a connected network above three equipment racks')
+             'integrate', 'Network cables connected to a switch')
     parts = [
         colp("Data center construction is the fastest-growing source of work for integrators. Gartner expects spending on data center systems to rise 62.5% to $822 billion in 2026 ([[Gartner|" + GARTNER + "]]), and Dell'Oro Group has raised its outlook for worldwide data center capital spending above $1 trillion ([[Dell'Oro Group|" + DELLORO + "]]). In the United States, data center construction starts totaled $81.5 billion in the first six months of the year against $72.5 billion in all of 2025 ([[ConstructConnect|" + CCONNECT + "]])."),
         colp("That work reaches cabling, low-voltage, security and network integrators as well as electrical contractors. Census figures show office construction, the category that includes data centers, running 24.6% above a year earlier in August while total construction spending was 1.7% lower ([[US Census Bureau|" + CENSUS + "]])."),

@@ -27,7 +27,7 @@ def p13():
     b = band([('1.39', 'Orders booked for each dollar shipped by North American EMS firms in the three months to August 2026'),
               ('53.5%', 'Growth in North American EMS bookings in August against a year earlier'),
               ('1.46', 'Orders booked for each dollar shipped by North American circuit board makers in July')],
-             'chip', 'Line illustration of a microchip')
+             'chip', 'Close view of a printed circuit board')
     parts = [
         colp("Orders at North American electronics manufacturers are running well ahead of shipments. Bookings at electronics manufacturing services (EMS) firms were 53.5% above the prior year in August while shipments were 1.0% higher, and the three-month book-to-bill ratio stands at 1.39 ([[Global Electronics Association, October 1, 2026|" + EMS_AUG + "]]). Printed circuit board makers reported bookings up 62.0% and shipments up 14.5% in July, a ratio of 1.46 ([[Global Electronics Association|" + PCB_JUL + "]])."),
         colp("Artificial intelligence infrastructure accounts for much of the order growth at the largest contract manufacturers. Jabil grew revenue 21% to $36.0 billion in its fiscal 2026 and guided to $44.5 billion for fiscal 2027 ([[Jabil|" + JABIL + "]]). Celestica grew second-quarter revenue 62% and raised its 2026 outlook to $20.5 billion ([[Celestica|" + CELESTICA + "]]), and Sanmina grew revenue about 70% in its June quarter ([[Sanmina|" + SANMINA + "]]). Worldwide semiconductor sales reached $403.3 billion in the second quarter ([[Semiconductor Industry Association|" + SIA_SEMI + "]])."),
@@ -97,7 +97,7 @@ def p15():
     b = band([('$75.7B', 'Civilian agency IT in the fiscal 2027 budget request, up from $67.9 billion'),
               ('$20.5B', 'Cyberspace activities in the fiscal 2027 defense budget request'),
               ('98%', 'States with an enterprise AI policy in 2026, up from 76% a year earlier')],
-             'gov', 'Line illustration of a government building with a circuit trace')
+             'gov', 'A satellite dish antenna')
     parts = [
         colp("Federal technology budgets are rising. The fiscal 2027 request holds $75.7 billion for civilian agency IT against $67.9 billion in fiscal 2026, led by Veterans Affairs at $12.2 billion and Homeland Security at $11.7 billion ([[FedScoop|" + FEDSCOOP + "]]). The defense request totals $1.5 trillion, of which $350 billion is mandatory funding, and includes $20.5 billion for cyberspace activities and $58.5 billion for artificial intelligence ([[Washington Technology|" + WASHTECH + "]])."),
         colp("The timing of that money is less certain. The government is operating under a continuing resolution through December 11 ([[SpacePolicyOnline|" + SPACEPOLICY + "]]), and the Senate Appropriations Committee had reported none of the twelve fiscal 2027 bills when the resolution passed ([[Akin|" + AKIN + "]]). New program starts wait for full-year appropriations, which delays awards for contractors of every size."),
@@ -257,7 +257,7 @@ def p19():
     prep = ("Sellers who prepare early capture more of the competition that the survey data describe. In the second quarter of 2026, 87% of transactions above $5 million attracted three or more offers, and sales in the lower middle market took 11 to 12 months to close ([[IBBA and M&A Source Market Pulse|" + IBBA_PR + "]]). "
             "A technology sale also carries steps that other industries do not have, because buyers will test contract assignability, software and data ownership, security practices and, for government work, the effect of a change in size status. An owner who expects to sell within three years should therefore have reviewed financial statements, a schedule of recurring revenue by contract and renewal date, and a second layer of management in place before the first buyer conversation.")
     lower = ('<div style="margin-top: 6px; display: flex; gap: 32px"><div style="width: 448px; display: flex; flex-direction: column; gap: 14px; text-align: justify">' + p(prep) + '</div>'
-             '<div style="width: 240px; position: relative"><img src="' + CHECKLIST + '" alt="Line illustration of a checklist on a clipboard under a magnifying glass" style="position: absolute; left: 0; top: 4px; width: 240px; height: calc(100% - 22px); object-fit: cover"><div style="position: absolute; left: 0; bottom: 0; width: 240px; height: 18px; background: ' + GOLD + '"></div></div></div>')
+             '<div style="width: 240px; position: relative"><img src="' + PREP_PHOTO + '" alt="A technician working inside a laptop" style="position: absolute; left: 0; top: 4px; width: 240px; height: calc(100% - 22px); object-fit: cover"><div style="position: absolute; left: 0; bottom: 0; width: 240px; height: 18px; background: ' + GOLD + '"></div></div></div>')
     if lib.WEB:
         lower = p(prep)
     body = '\n'.join([h2('What buyers reward and what they discount'), p(intro), t, lower])
@@ -277,7 +277,7 @@ def p20():
             p('Our first step is always a confidential conversation exploring your goals, your company and your options.') + '\n'
             '<div style="margin-top: 10px; display: flex; gap: 32px; align-items: center">\n'
             '<div style="width: 344px; display: flex; flex-direction: column">\n'
-            '<img src="' + AGREEMENT + '" alt="Line illustration of a signed agreement with a pen and a seal" style="display: block; width: 344px; height: 178px">\n'
+            '<img src="' + CONTACT_PHOTO + '" alt="A team working together at laptops around a table" style="display: block; width: 344px; height: 178px; object-fit: cover">\n'
             '<div style="height: 18px; background: ' + GOLD + '"></div>\n</div>\n'
             '<div style="width: 344px; display: flex; align-items: center; gap: 20px">\n'
             '<img src="' + HEADSHOT + '" alt="Jared Hardin" style="display: block; width: 84px; height: 84px; border-radius: 50%">\n'

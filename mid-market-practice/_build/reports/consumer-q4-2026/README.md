@@ -19,7 +19,7 @@ This runs `web.py` and `pdf.py`. `pdf.py` needs Playwright with Chromium (`pip i
 - `web.py`: renders the sections as the site page and wraps them in the site header, footer and call to action from `_build/build.py`. Styles are in `mid-market-practice/assets/css/report.css`.
 - `pdf.py`: lays the same sections out for print (cover, running header and page numbers, contact page, then the sources as the final pages) and prints the PDF. `python3 pdf.py --keep` leaves the intermediate `_pdf.html` in this folder for inspection.
 - `fonts/`: Cinzel, Newsreader and Quicksand (SIL Open Font License) for the PDF.
-- `art/` and `mkart.py`: the cover and segment illustrations and the watermark used by the PDF.
+- `art/knot.png`: the watermark used by the PDF. The cover and stat-band photos are `rpt-*.jpg` in `mid-market-practice/assets/img/industries/consumer/`, set in `pdf.py` (cover) and `BANDS` in `report.py` (bands).
 
 ## Where to make common edits
 - Text, table rows, links: `content.md`. Both outputs pick the change up. Headings must keep their names, because `SECTION_IDS` in `report.py` maps each heading to a section.

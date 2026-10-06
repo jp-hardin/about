@@ -11,8 +11,6 @@ WEB = False  # web.py sets lib.WEB = True before building the pages
 LOGO = '/_blob/a4e9bce348ee211dfa63f50c5b5de181'
 WATERMARK = '/_blob/91834fbbbc00b31f5c36c7319ad1e129'
 HEADSHOT = '/_blob/a4627b44afa321c0e5263a218e5cb43d'
-CHECKLIST = '/_blob/b641387ad8b11c9fb645cb0345a01723'
-AGREEMENT = '/_blob/23a72c95665d08641203d0333db6e463'
 
 SERIF = "'Newsreader', 'Le Monde Livre Std', Georgia, serif"
 CINZEL = "'Cinzel', 'Trajan Pro', Georgia, serif"
@@ -186,48 +184,25 @@ def stat(num, label):
             '<div style="font-size: 11px; line-height: 15px; letter-spacing: 0.3px">%s</div></div>') % (SERIF, GOLD, html.escape(num), md(label))
 
 
-# ---------- line illustrations (160 x 160 design box) ----------
-L = '#D9D3CA'
-ICONS = {
- 'cloud': ('<path d="M50 80a20 20 0 0 1 2-40 28 28 0 0 1 54 4 18 18 0 0 1 4 36z" stroke="%(L)s"></path>'
-           '<path d="M80 80v12" stroke="%(G)s"></path>'
-           '<rect x="40" y="92" width="80" height="18" rx="3" stroke="%(L)s"></rect><rect x="40" y="118" width="80" height="18" rx="3" stroke="%(L)s"></rect>'
-           '<circle cx="52" cy="101" r="3" stroke="%(G)s"></circle><circle cx="52" cy="127" r="3" stroke="%(G)s"></circle>'
-           '<path d="M64 101h44M64 127h44" stroke="%(G)s"></path>'),
- 'shield': ('<path d="M80 18l46 16v36c0 34-22 56-46 66-24-10-46-32-46-66V34z" stroke="%(L)s"></path>'
-            '<rect x="62" y="70" width="36" height="30" rx="4" stroke="%(G)s"></rect>'
-            '<path d="M68 70V60a12 12 0 0 1 24 0v10" stroke="%(G)s"></path>'
-            '<path d="M80 80v10" stroke="%(G)s" stroke-width="4"></path>'),
- 'tower': ('<path d="M80 42L56 138M80 42l24 96M71 78h18M65 104h30M59 126h42" stroke="%(L)s"></path>'
-           '<circle cx="80" cy="34" r="6" stroke="%(G)s"></circle>'
-           '<path d="M60 20a26 26 0 0 0 0 28M100 20a26 26 0 0 1 0 28M46 10a44 44 0 0 0 0 48M114 10a44 44 0 0 1 0 48" stroke="%(G)s"></path>'),
- 'integrate': ('<rect x="30" y="22" width="100" height="62" rx="5" stroke="%(L)s"></rect>'
-               '<path d="M70 84v12M90 84v12M58 98h44" stroke="%(L)s"></path>'
-               '<circle cx="56" cy="54" r="5" stroke="%(G)s"></circle><circle cx="80" cy="40" r="5" stroke="%(G)s"></circle><circle cx="104" cy="54" r="5" stroke="%(G)s"></circle><circle cx="80" cy="68" r="5" stroke="%(G)s"></circle>'
-               '<path d="M60 51l16-9M84 42l16 9M100 57l-16 9M76 66l-16-9" stroke="%(G)s"></path>'
-               '<path d="M44 122v-10h72v10M80 112v-14" stroke="%(L)s"></path>'
-               '<rect x="34" y="122" width="20" height="18" rx="2" stroke="%(L)s"></rect><rect x="70" y="122" width="20" height="18" rx="2" stroke="%(L)s"></rect><rect x="106" y="122" width="20" height="18" rx="2" stroke="%(L)s"></rect>'),
- 'chip': ('<rect x="46" y="46" width="68" height="68" rx="6" stroke="%(L)s"></rect>'
-          '<rect x="64" y="64" width="32" height="32" rx="3" stroke="%(G)s"></rect>'
-          '<path d="M58 46V30M73 46V30M87 46V30M102 46V30M58 114v16M73 114v16M87 114v16M102 114v16M46 58H30M46 73H30M46 87H30M46 102H30M114 58h16M114 73h16M114 87h16M114 102h16" stroke="%(L)s"></path>'
-          '<path d="M72 80h16M80 72v16" stroke="%(G)s"></path>'),
- 'gov': ('<path d="M24 62L80 26l56 36z" stroke="%(L)s"></path>'
-         '<path d="M30 70h100M42 72v44M62 72v44M98 72v44M118 72v44M26 122h108M18 136h124" stroke="%(L)s"></path>'
-         '<circle cx="80" cy="46" r="5" stroke="%(G)s"></circle>'
-         '<path d="M80 78v32" stroke="%(G)s"></path><circle cx="80" cy="78" r="3" stroke="%(G)s"></circle><circle cx="80" cy="110" r="3" stroke="%(G)s"></circle>'
-         '<path d="M70 94h20" stroke="%(G)s"></path>'),
+# ---------- photographs (approved library copies in assets/img/industries/technology) ----------
+COVER_PHOTO = '/_blob/151e0ff33db32361cea2a3f8a833e3e9'      # rpt-cover-datacenter.jpg
+PREP_PHOTO = '/_blob/c8d2f2cd3c854c01714578371dfe2936'       # rpt-laptop-repair.jpg
+CONTACT_PHOTO = '/_blob/c32355433303fcff161324c3a5b9388d'    # rpt-team-laptops.jpg
+# Photo shown at the right of each segment's dark stat band.
+BAND_PHOTOS = {
+    'cloud': '/_blob/cddf308fc92bfee28a88f35f8cf7ca67',      # rpt-server-racks.jpg
+    'shield': '/_blob/643493205d756d338b787cd3b5150ce7',     # rpt-keyboard.jpg
+    'tower': '/_blob/a2ae072ce129acce7f045e44978fe69e',      # rpt-telecom-masts.jpg
+    'integrate': '/_blob/e5a9e07bcb6a0f7f6dfde3725f5af1c7',  # rpt-network-cables.jpg
+    'chip': '/_blob/c2db878093ab396ade901a47de706d38',       # rpt-circuit-board.jpg
+    'gov': '/_blob/7c2230130aa40114760060efc60c52a4',        # rpt-satellite-dish.jpg
 }
 
 
-def icon_group(name, x, y, scale):
-    return ('<g transform="translate(%s,%s) scale(%s)" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' % (x, y, scale)
-            + ICONS[name] % {'L': L, 'G': GOLD} + '</g>')
-
-
 def band_icon(name, alt):
-    return ('<svg role="img" aria-label="%s" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 112" width="236" height="112" style="display: block; width: 236px; height: 112px">'
-            '<rect width="236" height="112" fill="#2E2E2E"></rect>%s'
-            '<path d="M14 92h46M176 92h46" stroke="%s" stroke-width="1.5"></path></svg>') % (html.escape(alt), icon_group(name, 68, 6, 0.62), GOLD)
+    return ('<div style="position: relative; flex: none; width: 236px; height: 112px">'
+            '<img src="%s" alt="%s" style="display: block; width: 236px; height: 112px; object-fit: cover">'
+            '<div style="position: absolute; inset: 0; background: linear-gradient(90deg, #2E2E2E 0%%, rgba(46,46,46,0) 22%%)"></div></div>') % (BAND_PHOTOS[name], html.escape(alt))
 
 
 def band(stats, icon, alt):

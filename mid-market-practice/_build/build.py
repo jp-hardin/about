@@ -26,21 +26,19 @@ def _asset_version(rel):
 HUBSPOT = {"region": "na1", "portalId": "4039078", "formId": "902fb6ab-81fb-42c4-abf8-5355537a8abb"}
 AS_OF = "October 2026"
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Icons (24x24, stroke = currentColor)
-# ─────────────────────────────────────────────────────────────────────────────
-ICONS = {
-    "industrial": '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>',
-    "business-services": '<rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2M3 13h18"/>',
-    "consumer": '<path d="M4 7h16l-1.5 12.5a1 1 0 0 1-1 .5h-11a1 1 0 0 1-1-.5L4 7zM9 7V5a3 3 0 0 1 6 0v2"/>',
-    "healthcare": '<path d="M12 21s-7.5-4.6-9.3-9.5C1.5 8.2 3.6 4.5 7.2 4.5c2 0 3.5 1 4.8 2.7 1.3-1.7 2.8-2.7 4.8-2.7 3.6 0 5.7 3.7 4.5 7-1.8 4.9-9.3 9.5-9.3 9.5zM8 12h2.5l1-2 2 4 1-2H16"/>',
-    "technology": '<rect x="5" y="5" width="14" height="14" rx="1"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/>',
-}
+# Important Disclosures: shown on disclosures.html and printed as the last page of every sector report PDF
+# (_build/reports/disclosures.py). Adapted from a peer firm's report disclosures; have Compliance confirm any
+# change, and add Benchmark International's own regulatory status here if Compliance wants it stated.
+DISCLOSURES = [
+    "\u201cBenchmark International\u201d refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Mid-Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.",
+    "Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.",
+    "The distribution of this material in certain jurisdictions may be restricted by law, and accordingly, recipients of this material represent that they are able to receive it without contravention of any registration requirement or other legal restrictions in the jurisdictions in which they reside or in which they conduct business.",
+    "This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide accounting, tax, investment, regulatory or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness or completeness of the information, opinions or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.",
+    "Company names, logos and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.",
+    "This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the \u201cOrder\u201d); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as \u201cRelevant Persons\u201d). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.",
+]
 
 
-def icon(slug):
-    return ('<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" '
-            'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS[slug] + "</svg>")
 
 
 # Services offered on every sector page
@@ -283,7 +281,7 @@ for _s in SECTORS:
 # ─────────────────────────────────────────────────────────────────────────────
 TEAM_LEAD = [
     ("Jordan Houtz", "Managing Director", "jordan-houtz",
-     ["As Head of Mid-Market, Jordan represents clients with revenues ranging from $75 million to $500 million across the United States. He is a seasoned investment banking and capital raising professional with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
+     ["As Head of Mid-Market, Jordan represents clients with total enterprise values (TEV) ranging from $50 million to $500 million across the United States. He is a seasoned investment banking and capital raising professional with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
       "His deep experience on both the buy and sell sides of M&A transactions gives his clients a unique advantage in understanding deal dynamics and achieving their objectives. By leading full-cycle processes from idea and thesis generation through valuation, diligence, and negotiation, he is intimately involved in accomplishing his clients’ objectives. Jordan prides himself on building deep client relationships while achieving desired outcomes for stakeholders."]),
     ("Jared Hardin", "Managing Director", "jared-hardin",
      ["Mr. Hardin was raised in a military family, spending his early years traveling through Utah, Missouri, Ohio, Korea, Idaho, and Hong Kong. He ultimately landed in Texas where he has resided for the last two decades. His scholastic journey spanned a wide spectrum of learning, from Fine Arts to International Business to Management of Information Systems. He was driven to attain his MBA because he genuinely enjoys helping others learn and grow, but he also has a competitive nature that drives him toward success. His career has been quite diverse, having held the titles of Owner, COO, CIO, and CMO, and starting small businesses that gave him a role in everything from sales to HR and from IT to manufacturing. For these reasons, he understands and appreciates the intricacies of many different businesses.",
@@ -429,7 +427,7 @@ def footer(root):
     </div>
     <div class="footer-base">
       <span>&copy; 2026 Benchmark International. All rights reserved.</span>
-      <span><a href="https://www.benchmarkintl.com/terms/">Terms</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/privacy-policy/">Privacy Policy</a></span>
+      <span><a href="{root}disclosures.html">Important Disclosures</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/terms/">Terms</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/privacy-policy/">Privacy Policy</a></span>
     </div>
   </div>
 </footer>
@@ -555,8 +553,9 @@ def photo_strip(slug, root, n=4):
     return f'<div class="photo-strip reveal" aria-hidden="true">{imgs}</div>'
 
 
-def report_visuals(page, slug, root):
-    """Adds the industry photos to a sector report page: a photo hero, plus photo breaks after report sections 2 and 5."""
+def report_extras(page, slug, root):
+    """Finishes a sector report page: the industry photo hero, photo breaks after report sections 2 and 5,
+    and the Important Disclosures link at the end of the report."""
     page = page.replace('<section class="hero hero--page">', photo_hero(slug, root), 1)
     page = page.replace('assets/css/report.css">', f'assets/css/report.css?v={_asset_version("assets/css/report.css")}">', 1)
     sep = '\n<section class="rsec'
@@ -565,13 +564,18 @@ def report_visuals(page, slug, root):
         if len(parts) > k + 1:
             imgs = "".join(f'<img src="{photo(slug, f"g{x}", root)}" alt="" loading="lazy" width="900" height="675">' for x in g)
             parts[k] += f'\n<figure class="rphoto reveal" aria-hidden="true">{imgs}</figure>'
-    return sep.join(parts)
+    page = sep.join(parts)
+    note = (f'<aside class="rdisclosure"><p class="eyebrow">Important Disclosures</p><p>This report is for informational purposes only and is not advice '
+            f'or an offer or solicitation. Information is as of the date stated and has not been independently verified. '
+            f'<a class="link-arrow" href="{root}disclosures.html">Read the Important Disclosures</a></p></aside>\n  </article>')
+    assert page.count("</article>") == 1, "report page should have one <article>"
+    return page.replace("</article>", note, 1)
 
 
 def industry_card(s, root):
     tags = "".join(f"<li>{e(seg[0])}</li>" for seg in s["segments"])
     return f"""<a class="ind-card ind-card--photo" href="{root}industries/{s['slug']}.html">
-  <div class="ind-photo"><img src="{photo(s['slug'], 'card', root)}" alt="" loading="lazy" width="900" height="560"><span class="ind-icon">{icon(s['slug'])}</span></div>
+  <div class="ind-photo"><img src="{photo(s['slug'], 'card', root)}" alt="" loading="lazy" width="900" height="560"></div>
   <h3>{e(s['name'])}</h3>
   <p>{e(s['short'])}</p>
   <ul class="ind-tags">{tags}</ul>
@@ -639,7 +643,7 @@ def page_home():
     awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="Benchmark International award" loading="lazy" width="520" height="300">' for i in range(1, 5))
 
     html = head("Mid-Market | Benchmark International",
-                "Benchmark International's Mid-Market team advises owners of privately held companies with $75M–$500M in revenue on sales, recapitalizations and growth partnerships across Industrial, Business Services, Consumer, Healthcare and Technology.", root)
+                "Benchmark International's Mid-Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on sales, recapitalizations and growth partnerships across Industrial, Business Services, Consumer, Healthcare and Technology.", root)
     html += header(root)
     html += f"""
 <section class="hero">
@@ -658,7 +662,7 @@ def page_home():
   <div class="wrap">
     <div class="stats">
       <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Privately owned sell-side M&amp;A advisor worldwide<sup>*</sup></div></div>
-      <div class="stat"><div class="stat-num">$75M–$500M</div><div class="stat-label">Client revenue range we serve</div></div>
+      <div class="stat"><div class="stat-num">$50M–$500M</div><div class="stat-label">Total Enterprise Value (TEV) range we serve</div></div>
       <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused industry groups with dedicated sector expertise</div></div>
       <div class="stat"><div class="stat-num">15</div><div class="stat-label">Global offices across the Americas, Europe &amp; Africa</div></div>
     </div>
@@ -805,7 +809,6 @@ def page_industries():
         segs = "".join(f'<li><a href="{s["slug"]}.html#seg-{k + 1}">{e(seg[0])}</a></li>' for k, seg in enumerate(s["segments"]))
         rows += f"""<article class="ind-row reveal" id="{s['slug']}">
   <div class="ind-row-main">
-    <div class="ind-icon">{icon(s['slug'])}</div>
     <p class="eyebrow">{s['count']}+ completed transactions<sup>†</sup></p>
     <h2 class="h2">{e(s['name'])}</h2>
     <p class="lead">{e(s['tagline'])}</p>
@@ -917,7 +920,6 @@ def page_sector(i, s):
 {photo_hero(s['slug'], root)}
   <div class="wrap">
     <div class="crumbs"><a href="{root}index.html">Mid-Market</a> / <a href="index.html">Industries</a> / {e(s['name'])}</div>
-    <div class="ind-icon" style="color:var(--gold)">{icon(s['slug'])}</div>
     <h1 class="display">{e(s['name'])}</h1>
     <p class="lead">{e(s['tagline'])}</p>
     <div class="btn-row"><a class="btn" href="#deals">Selected Transactions</a><a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a>{report_btn}</div>
@@ -1095,7 +1097,6 @@ def insight_card(i, root, current):
     badge = '<span class="insight-badge">Current</span>' if current else '<span class="insight-badge insight-badge--archive">Archive</span>'
     return f"""<article class="insight-card{' insight-card--current' if current else ''}" data-sector="{i['sector']}" data-text="{text}">
   <a class="insight-cover" href="{root}{i['url']}" aria-label="{e(i['title'])}" style="background-image:url('{photo(i['sector'], 'card', root)}')">
-    <span class="insight-cover-icon">{icon(i['sector'])}</span>
     <span class="insight-cover-period">{e(i['period'])}</span>
     <span class="insight-cover-sector">{e(sec['name'])}</span>
   </a>
@@ -1168,6 +1169,34 @@ def page_insights():
     write("insights/index.html", html)
 
 
+def page_disclosures():
+    root = ""
+    html = head("Important Disclosures | Mid-Market | Benchmark International",
+                "Important disclosures for Benchmark International's Mid-Market sector reports and website.", root)
+    html += header(root)
+    paras = "".join(f"<p>{e(p)}</p>" for p in DISCLOSURES)
+    html += f"""
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="crumbs"><a href="{root}index.html">Mid-Market</a> / Important Disclosures</div>
+    <p class="eyebrow">Legal</p>
+    <h1 class="display">Important Disclosures</h1>
+    <p class="lead">These disclosures apply to the Mid-Market sector reports and to the content of this website.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <article class="legal">{paras}
+      <p class="legal-links"><a class="link-arrow" href="{root}insights/index.html">Back to Insights</a></p>
+    </article>
+  </div>
+</section>
+"""
+    html += footer(root)
+    write("disclosures.html", html)
+
+
 def page_report_redirects():
     for i in INSIGHTS:
         if not i.get("legacy"):
@@ -1192,3 +1221,4 @@ if __name__ == "__main__":
     page_transactions()
     page_insights()
     page_report_redirects()
+    page_disclosures()

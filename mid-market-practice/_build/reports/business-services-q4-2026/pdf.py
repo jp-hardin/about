@@ -14,20 +14,20 @@ IMG = {
     '4aa1fb4e371d7b1d36d8bd5008f28cd9': 'art/knot.png',
     '92cd28b11f6cc05be2f329fdddf8bb67': f'{AST}/brand/benchmark-logo-white.png',
     'de9567aa819b281813dcb69f7fd19f18': f'{AST}/team/jared-hardin.jpg',
-    '4702e4e68e821c3cd441c036b4ca508f': 'art/cover5.svg',
-    'bc86f994d13c874e1996a1d9f68954ea': 'art/band-cf.svg',
-    '1cc74672419c59e59e27d6596abefb0f': 'art/band-marketing.svg',
-    'a941a71230b9de51bebd7ac520ef7f54': 'art/band-en.svg',
-    'd2e39f928b0881c55c7a8d16cbdbdfb3': 'art/band-fi.svg',
-    '622e0f3812b574359062417c12eb7668': 'art/band-staffing.svg',
-    'e5f57fbb67abaa53e65d06126f905958': 'art/banner-fi.svg',
-    '21a0e8f569577bf92e18bab5e93a328c': 'art/banner-cf.svg',
-    '1cf208339fad8f016ff8b1994c05e6ea': 'art/banner-mk.svg',
-    '6497b34887331289c5f58585076bbc90': 'art/banner-en.svg',
-    '83bfbba9fadda216554fa95403c0f0d0': 'art/banner-st.svg',
-    'f10823ce49a2687d39adebc578baa822': 'art/plate-deal.svg',
-    '8c294e80f84889a59fa606544143456e': 'art/plate-prep.svg',
-    'dc11db870a3b6c0df7bc69c785fbf766': 'art/plate-close.svg',
+    '4702e4e68e821c3cd441c036b4ca508f': f'{AST}/industries/business-services/rpt-cover.jpg',
+    'bc86f994d13c874e1996a1d9f68954ea': f'{AST}/industries/business-services/rpt-facade-cleaning.jpg',
+    '1cc74672419c59e59e27d6596abefb0f': f'{AST}/industries/business-services/rpt-marketing-strategy.jpg',
+    'a941a71230b9de51bebd7ac520ef7f54': f'{AST}/industries/business-services/rpt-drafting-plans.jpg',
+    'd2e39f928b0881c55c7a8d16cbdbdfb3': f'{AST}/industries/business-services/rpt-financial-review.jpg',
+    '622e0f3812b574359062417c12eb7668': f'{AST}/industries/business-services/rpt-team-office.jpg',
+    'e5f57fbb67abaa53e65d06126f905958': f'{AST}/industries/business-services/rpt-document-review.jpg',
+    '21a0e8f569577bf92e18bab5e93a328c': f'{AST}/industries/business-services/rpt-front-desk.jpg',
+    '1cf208339fad8f016ff8b1994c05e6ea': f'{AST}/industries/business-services/rpt-campaign-meeting.jpg',
+    '6497b34887331289c5f58585076bbc90': f'{AST}/industries/business-services/rpt-consulting-meeting.jpg',
+    '83bfbba9fadda216554fa95403c0f0d0': f'{AST}/industries/business-services/rpt-staff-headsets.jpg',
+    'f10823ce49a2687d39adebc578baa822': f'{AST}/industries/business-services/rpt-deal-city.jpg',
+    '8c294e80f84889a59fa606544143456e': f'{AST}/industries/business-services/rpt-sale-prep.jpg',
+    'dc11db870a3b6c0df7bc69c785fbf766': f'{AST}/industries/business-services/rpt-signing.jpg',
 }
 
 def order():
@@ -70,3 +70,7 @@ async def main():
         for fn, spare in over: print(f'OVER: {fn} runs {-spare}px past its text frame')
         print('pages', len(pgs), '| fonts loaded', fonts, '| wrote', os.path.relpath(OUT, SITE), round(os.path.getsize(OUT) / 1024), 'KB')
 asyncio.run(main()); os.remove(tmp)
+
+# Last page: Important Disclosures (text in _build/build.py, page in ../disclosures.py)
+import sys; sys.path.insert(0, os.path.dirname(ROOT)); import disclosures
+disclosures.append(OUT, 'Business Services', 'Q4 2026')

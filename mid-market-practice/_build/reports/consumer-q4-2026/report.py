@@ -36,19 +36,19 @@ SECTION_IDS = {
 }
 SEGMENTS = ['food-beverage', 'consumer-brands', 'foodservice', 'consumer-services']
 BANDS = {
-    'food-beverage': ('food', 'Line illustration of a bottle and an ear of wheat', [
+    'food-beverage': ('rpt-bread', 'Loaves of rye bread stacked on wooden trays', [
         ('42,708', 'Food and beverage processing establishments in the United States'),
         ('21.3%', 'Private label share of dollar sales in 2025'),
         ('14.6x', 'Multiple of operating income Sysco stated for Jetro Restaurant Depot')]),
-    'consumer-brands': ('brands', 'Line illustration of a shopping bag and a price tag', [
+    'consumer-brands': ('rpt-beauty', 'Pressed powder compacts on display in a cosmetics store', [
         ('7%', 'Growth in both prestige and mass beauty sales in the first half of 2026'),
         ('17.1%', 'E-commerce share of retail sales in the second quarter of 2026'),
         ('12.5%', 'Section 301 tariff on goods from China and Vietnam since July 24')]),
-    'foodservice': ('service', 'Line illustration of a delivery truck', [
+    'foodservice': ('rpt-bar', 'Wine glasses hanging from a rack above a bar', [
         ('$1.55T', 'Restaurant and foodservice sales forecast for 2026'),
         ('2.0%', 'Growth in equipment and supplies sales through manufacturers&#39; agents in the second quarter'),
         ('91%', 'Equipment manufacturers reporting negative effects from tariffs')]),
-    'consumer-services': ('store', 'Line illustration of a storefront with an awning', [
+    'consumer-services': ('rpt-payment', 'A customer paying by phone at a card terminal', [
         ('$3.1B', 'Enterprise value of the Mister Car Wash take-private'),
         ('23.1%', 'Record share of collision claims declared total losses'),
         ('$83.5B', 'US equipment rental revenue forecast for 2026')]),

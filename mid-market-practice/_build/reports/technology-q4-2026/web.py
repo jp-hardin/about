@@ -101,7 +101,7 @@ page += f'''
 '''
 page += site.cta(root)
 page += site.footer(root)
-page = site.report_visuals(page, 'technology', root)
+page = site.report_extras(page, 'technology', root)
 for bad in ('style="position', '/_blob/', 'text-align: justify', 'font-size: 1', '[[', ']]'):
     i = page.find(bad)
     assert i < 0, (bad, page[max(0, i - 200):i + 200])

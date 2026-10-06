@@ -36,3 +36,7 @@ async def main():
         for fn, got, fit in over: print(f'note: {fn} runs {got - fit}px past its text frame (about 40px of clearance exists above the footer)')
         print('fonts loaded', fonts, '| wrote', os.path.relpath(OUT, SITE), round(os.path.getsize(OUT) / 1024), 'KB')
 asyncio.run(main()); os.remove(tmp)
+
+# Last page: Important Disclosures (text in _build/build.py, page in ../disclosures.py)
+import sys; sys.path.insert(0, os.path.dirname(ROOT)); import disclosures
+disclosures.append(OUT, 'Healthcare', 'Q4 2026')
