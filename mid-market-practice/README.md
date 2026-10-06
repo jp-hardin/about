@@ -12,6 +12,8 @@ A standalone site for Benchmark International's Mid-Market team: firm overview, 
 | `industries/index.html` | Industries landing page (5 industries) |
 | `industries/<sector>.html` | Sector page: overview, segments and sub-sectors, filterable tombstones with deal descriptions, market themes, what buyers value, active acquirers, services, client story, deal team |
 | `transactions.html` | All curated tombstones, filterable by sector and searchable |
+| `insights/index.html` | Insights: current quarterly sector report per industry plus an archive of earlier editions (from `INSIGHTS` in `build.py`) |
+| `insights/<industry>-industry-report-q<N>-<year>.html` | Sector report pages and PDFs, generated from `_build/reports/<report>/` |
 
 ## Editing
 
