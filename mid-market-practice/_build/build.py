@@ -16,7 +16,7 @@ SITE = os.path.dirname(HERE)
 
 PHONE = "813-771-6675"
 PHONE_HREF = "tel:8137716675"
-EMAIL = "Tampa@Benchmarkintl.com"
+EMAIL = "mmt@benchmarkintl.com"
 def _asset_version(rel):
     import hashlib
     with open(os.path.join(SITE, rel), "rb") as f:
