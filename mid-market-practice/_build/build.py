@@ -459,7 +459,8 @@ def cta(root, title="It All Starts With a Conversation", form=False):
     icon_phone = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>'
     icon_mail = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>'
     icon_lock = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>'
-    return f"""<section class="section section--knot contact" id="contact">
+    return f"""<section class="section section--knot section--photo section--photo-soft contact" id="contact">
+  <div class="section-media" aria-hidden="true"><img src="{root}assets/img/site/contact-bg.jpg" alt="" loading="lazy" width="1920" height="1100"></div>
   <div class="wrap contact-grid">
     <div class="contact-info reveal">
       <p class="eyebrow">Confidential. No pressure. No commitments.</p>
@@ -658,7 +659,8 @@ def page_home():
   </div>
 </section>
 
-<section class="section--dark section--tight">
+<section class="section--dark section--tight section--photo section--photo-soft">
+  <div class="section-media" aria-hidden="true"><img src="assets/img/site/stats-bg.jpg" alt="" width="1920" height="900"></div>
   <div class="wrap">
     <div class="stats">
       <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Privately owned sell-side M&amp;A advisor worldwide<sup>*</sup></div></div>
@@ -700,16 +702,18 @@ def page_home():
       <p class="lead">We focus on serving Presidents, CEOs, Founders and business owners of privately held companies across Industrial, Business Services, Consumer, Healthcare and Technology. As you consider the next step in your legacy most business owners want three things:</p>
     </div>
     <div class="pillars">
-      <div class="pillar reveal"><div class="pillar-num">01</div><h3 class="h3">Understand Every Option</h3><p>We'll make it possible for you to explore a full, partial, or partnership path. From local to global - we have you covered.</p></div>
-      <div class="pillar reveal"><div class="pillar-num">02</div><h3 class="h3">Be Positioned for Maximum Value</h3><p>We'll help you to see your company through the eyes of buyers and investors so you can position your company to maximize the value.</p></div>
-      <div class="pillar reveal"><div class="pillar-num">03</div><h3 class="h3">Execute with Confidence</h3><p>As you understand your options and position yourself to meet your goals, our highly experienced team works as your partner to navigate a discreet process that secures the right deal on your terms.</p></div>
+      <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-1.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">01</div><h3 class="h3">Understand Every Option</h3><p>We'll make it possible for you to explore a full, partial, or partnership path. From local to global - we have you covered.</p></div>
+      <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-2.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">02</div><h3 class="h3">Be Positioned for Maximum Value</h3><p>We'll help you to see your company through the eyes of buyers and investors so you can position your company to maximize the value.</p></div>
+      <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-3.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">03</div><h3 class="h3">Execute with Confidence</h3><p>As you understand your options and position yourself to meet your goals, our highly experienced team works as your partner to navigate a discreet process that secures the right deal on your terms.</p></div>
     </div>
   </div>
 </section>
 
 <section class="section section--dark" id="who-we-help">
-  <div class="wrap">
-    <div class="section-head center reveal">
+  <div class="wrap fit-split">
+    <figure class="fit-photo reveal" aria-hidden="true"><img src="assets/img/site/who-we-help.jpg" alt="" loading="lazy" width="900" height="1100"></figure>
+    <div>
+    <div class="section-head reveal">
       <p class="eyebrow">Who We Help</p>
       <h2 class="h2" style="color:#fff">Perfect for Business Owners Who Are</h2>
     </div>
@@ -718,6 +722,7 @@ def page_home():
       <div class="fit-item reveal"><h3>Approached by a buyer</h3><p>Approached by a buyer and want to ensure you receive a fair offer on your deal.</p></div>
       <div class="fit-item reveal"><h3>Looking for a partner</h3><p>In need of a strategic partner or additional capital to grow your business and fit your needs.</p></div>
       <div class="fit-item reveal"><h3>Want to learn more</h3><p>Interested in learning the value of your company in order to plan for the future.</p></div>
+    </div>
     </div>
   </div>
 </section>
@@ -1067,7 +1072,7 @@ def page_transactions():
                 "Selected completed transactions advised by Benchmark International across Industrial, Business Services, Consumer, Healthcare and Technology.", root)
     html += header(root, "transactions")
     html += f"""
-<section class="hero hero--page">
+<section class="hero hero--page hero--photo"><div class="hero-media" aria-hidden="true"><img src="assets/img/site/transactions-hero.jpg" alt="" width="1920" height="1000" fetchpriority="high"></div>
   <div class="wrap">
     <div class="crumbs"><a href="index.html">Mid-Market</a> / Transactions</div>
     <p class="eyebrow">Our Success</p>
