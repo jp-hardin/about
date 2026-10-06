@@ -138,6 +138,7 @@ SECTORS = [
     },
     {
         "slug": "consumer",
+        "report": ("Q4 2026 Sector Report", "reports/consumer-q4-2026.html"),
         "name": "Consumer",
         "count": 80,
         "tagline": "Advising founders of food, consumer brand, foodservice and consumer services businesses.",

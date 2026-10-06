@@ -164,3 +164,19 @@
   .rchart svg text.caxis[text-anchor="middle"]:nth-of-type(even) { display: none; }
   .rnote { padding: 22px 20px 8px; }
 }
+
+/* Horizontal bar chart added with the Consumer report; available to every report page. */
+.report .bchart { margin: 26px 0 32px; padding: 30px 30px 22px; background: var(--paper); border-top: 3px solid var(--gold); }
+.brow { display: grid; grid-template-columns: 210px 1fr; align-items: center; gap: 12px; }
+.blabel { font-size: 0.84rem; font-weight: 700; }
+.btrack { position: relative; height: 38px; margin-right: 56px; }
+.btrack i { position: absolute; display: block; }
+.btrack .bbar { left: 0; top: 10px; height: 18px; background: var(--gold); }
+.btrack .bref { top: 0; bottom: 0; border-left: 1px dashed var(--muted); }
+.btrack b { position: absolute; z-index: 1; top: 8px; padding: 0 6px 0 8px; background: var(--paper); font-size: 0.8rem; font-weight: 700; white-space: nowrap; }
+.bchart figcaption { margin-top: 10px; }
+@media (max-width: 760px) {
+  .bchart { padding: 22px 16px 16px; }
+  .brow { grid-template-columns: 1fr; gap: 0; }
+  .brow + .brow { margin-top: 6px; }
+}
