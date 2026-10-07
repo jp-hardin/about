@@ -12,7 +12,7 @@ AST = os.path.relpath(os.path.join(SITE, 'assets', 'img'), ROOT)
 # Images the design canvas stores as uploads, mapped to the copies kept in this repo.
 IMG = {
     '4aa1fb4e371d7b1d36d8bd5008f28cd9': 'art/knot.png',
-    '92cd28b11f6cc05be2f329fdddf8bb67': f'{AST}/brand/benchmark-logo-white.png',
+    '92cd28b11f6cc05be2f329fdddf8bb67': f'{AST}/brand/benchmark-logo-white-stacked.png',
     'de9567aa819b281813dcb69f7fd19f18': f'{AST}/team/jared-hardin.jpg',
     '4702e4e68e821c3cd441c036b4ca508f': f'{AST}/industries/business-services/rpt-cover.jpg',
     'bc86f994d13c874e1996a1d9f68954ea': f'{AST}/industries/business-services/rpt-facade-cleaning.jpg',

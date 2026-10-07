@@ -16,7 +16,7 @@ F += [('Quicksand', 'quicksand', w, 'normal') for w in (400, 500, 600, 700)]
 face = ''.join(f"@font-face{{font-family:'{n}';font-weight:{w};font-style:{s};src:url('fonts/{f}-latin-{w}-{s}.woff2') format('woff2')}}" for n, f, w, s in F)
 h, n = re.subn(r'<link href="https://fonts\.googleapis\.com[^>]*>', f'<style>{face}</style>', h); assert n == 1
 img = 'art'; ast = os.path.relpath(os.path.join(SITE, 'assets', 'img'), ROOT)
-for k, v in {'/_blob/0ec74a82d64ca48c5a0589fe8fbe222d': f'{img}/knot.png', '/_blob/4dd1bb932520e4f56865210abba6a736': f'{ast}/brand/benchmark-logo-white.png',
+for k, v in {'/_blob/0ec74a82d64ca48c5a0589fe8fbe222d': f'{img}/knot.png', '/_blob/4dd1bb932520e4f56865210abba6a736': f'{ast}/brand/benchmark-logo-white-stacked.png',
              '/_blob/70432026c2e1430aa486f0faff90dbbc': f'{ast}/team/jared-hardin.jpg'}.items(): h = h.replace(k, v)
 # The checklist and signed-agreement illustrations exist only in the design canvas, so these two blocks close up without them.
 h, n1 = re.subn(r'<div style="width: 280px; position: relative"><img src="/_blob/1d7f[^>]*><div[^>]*></div></div>', '', h)
