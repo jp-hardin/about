@@ -625,7 +625,7 @@ The table summarizes published federal rules as of October 2026 and is a startin
 
 ## Your Deal Team
 
-Benchmark International's industrial coverage is led from the firm's Mid-Market Practice.
+Benchmark International's industrial coverage is led by Benchmark Capital Markets (BCM).
 
 | Name | Role |
 | --- | --- |
@@ -636,7 +636,7 @@ Benchmark International's industrial coverage is led from the firm's Mid-Market 
 
 ## Considering a Transaction in Industrial?
 
-The first step is a confidential conversation about your goals, your company and your options, with no pressure and no commitment. Jared Hardin, Managing Director in the Mid-Market Practice, can be reached at 813-771-6675 or <j.hardin@benchmarkintl.com>.
+The first step is a confidential conversation about your goals, your company and your options, with no pressure and no commitment. Jared Hardin, Managing Director at Benchmark Capital Markets (BCM), can be reached at 813-771-6675 or <j.hardin@benchmarkintl.com>.
 
 ## Sources
 

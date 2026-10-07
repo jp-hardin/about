@@ -55,13 +55,13 @@ PUBLIC = SLUG.rsplit('-', 2)[0] + '-industry-report-' + '-'.join(SLUG.rsplit('-'
 PDF = f'{PUBLIC}.pdf'
 dl = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>'
 stats = ''.join(f'<div class="stat"><div class="stat-num">{esc(a)}</div><div class="stat-label">{esc(b)}</div></div>' for a, b in FIGS)
-desc = 'Q4 2026 M&A sector report for managed IT and cloud services, cybersecurity, telecom and UCaaS, systems integration, electronics and hardware, and government technology, from the Benchmark International Mid-Market team.'
+desc = 'Q4 2026 M&A sector report for managed IT and cloud services, cybersecurity, telecom and UCaaS, systems integration, electronics and hardware, and government technology, from Benchmark Capital Markets (BCM).'
 page = site.head('Technology Q4 2026 M&A Sector Report', desc, root).replace('</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n</head>')
 page += site.header(root, 'industries')
 page += f'''
 <section class="hero hero--page">
   <div class="wrap">
-    <div class="crumbs"><a href="{root}index.html">Mid-Market</a> / <a href="{root}industries/index.html">Industries</a> / <a href="{root}industries/technology.html">Technology</a> / Q4 2026 Sector Report</div>
+    <div class="crumbs"><a href="{root}index.html">BCM</a> / <a href="{root}industries/index.html">Industries</a> / <a href="{root}industries/technology.html">Technology</a> / Q4 2026 Sector Report</div>
     <p class="eyebrow">M&amp;A Sector Report &nbsp;|&nbsp; October 2026</p>
     <h1 class="display">Technology <em>Q4 2026</em></h1>
     <p class="lead">Managed IT and cloud services, cybersecurity, telecom and UCaaS, systems integration, electronics and hardware, and government technology: the deal market, the policy calendar and what buyers are paying for.</p>

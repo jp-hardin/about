@@ -191,7 +191,7 @@ contact = f'''<div class="full" style="break-before: page">
 <div style="position: absolute; left: 0; top: 40px; width: 432px; height: 1px; background: #6D7681"></div>
 <div class="cinzel" style="position: absolute; right: 48px; top: 30px; font-size: 12px; line-height: 20px; letter-spacing: 0.8px; color: #6D7681">CONSUMER &middot; Q4 2026</div>
 <div style="position: absolute; left: 48px; top: 250px; width: 720px; display: flex; flex-direction: column; gap: 20px">
-<div class="eye">Benchmark International Mid-Market</div>
+<div class="eye">Benchmark Capital Markets (BCM)</div>
 <h2>Considering a transaction in consumer?</h2>
 <p style="margin: 0; max-width: 560px">Our first step is always a confidential conversation exploring your goals, your company and your options.</p>
 <div style="margin-top: 14px; display: flex; align-items: center; gap: 22px; padding: 22px 0; border-top: 1px solid #B68757; border-bottom: 1px solid #B68757">

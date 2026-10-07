@@ -16,13 +16,13 @@ PUBLIC = SLUG.rsplit('-', 2)[0] + '-industry-report-' + '-'.join(SLUG.rsplit('-'
 PDF = f'{PUBLIC}.pdf'
 dl = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>'
 stats = ''.join(f'<div class="stat"><div class="stat-num">{esc(a)}</div><div class="stat-label">{esc(b)}</div></div>' for a, b in FIGS)
-desc = 'Q4 2026 M&A sector report for manufacturing and industrial technology, industrial distribution and services, building products and construction services, energy, power and environmental services, and transportation and logistics, from the Benchmark International Mid-Market team.'
+desc = 'Q4 2026 M&A sector report for manufacturing and industrial technology, industrial distribution and services, building products and construction services, energy, power and environmental services, and transportation and logistics, from Benchmark Capital Markets (BCM).'
 page = site.head('Industrial Q4 2026 M&A Sector Report', desc, root).replace('</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n</head>')
 page += site.header(root, 'industries')
 page += f'''
 <section class="hero hero--page">
   <div class="wrap">
-    <div class="crumbs"><a href="{root}index.html">Mid-Market</a> / <a href="{root}industries/index.html">Industries</a> / <a href="{root}industries/industrial.html">Industrial</a> / Q4 2026 Sector Report</div>
+    <div class="crumbs"><a href="{root}index.html">BCM</a> / <a href="{root}industries/index.html">Industries</a> / <a href="{root}industries/industrial.html">Industrial</a> / Q4 2026 Sector Report</div>
     <p class="eyebrow">M&amp;A Sector Report &nbsp;|&nbsp; October 2026</p>
     <h1 class="display">Industrial <em>Q4 2026</em></h1>
     <p class="lead">Manufacturing and industrial technology, distribution and services, building products and construction services, energy, power and environmental services, and transportation and logistics: the order books, the deal market and what acquirers are paying for.</p>
