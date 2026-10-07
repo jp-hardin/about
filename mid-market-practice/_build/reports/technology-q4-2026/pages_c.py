@@ -272,7 +272,7 @@ def p20():
                 '<a href="mailto:' + mail + '" style="margin-top: 4px; color: #C99A68; font-weight: 700; font-size: 8.5px; letter-spacing: 2px">' + mail + '</a></div>')
     body = (HEAD % {'title': 'Technology Q4 2026: Contact', 'wm': WATERMARK} + RUN +
             '<div data-fit="560" style="position: absolute; left: 48px; top: 230px; width: 720px; display: flex; flex-direction: column; gap: 22px">\n'
-            '<div style="font-weight: 700; font-size: 10.5px; line-height: 16px; letter-spacing: 2.6px; text-transform: uppercase">Benchmark International Mid-Market</div>\n' +
+            '<div style="font-weight: 700; font-size: 10.5px; line-height: 16px; letter-spacing: 2.6px; text-transform: uppercase">Benchmark Capital Markets (BCM)</div>\n' +
             h2('Considering a transaction in technology?') + '\n' +
             p('Our first step is always a confidential conversation exploring your goals, your company and your options.') + '\n'
             '<div style="margin-top: 10px; display: flex; gap: 32px; align-items: center">\n'

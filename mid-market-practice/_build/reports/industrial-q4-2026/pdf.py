@@ -120,14 +120,14 @@ for g in order:
 <p class="rlead">The first step is a confidential conversation about your goals, your company and your options, with no pressure and no commitment.</p>
 <div class="card"><img src="{IMG}/team/jared-hardin.jpg" alt="Jared Hardin"><div><h3>Jared Hardin</h3><p class="role">Managing Director, Benchmark International</p>
 <p><a href="tel:8137716675">813-771-6675</a> &nbsp;|&nbsp; <a href="mailto:j.hardin@benchmarkintl.com">j.hardin@benchmarkintl.com</a></p>
-<p style="margin-top:6pt"><a href="https://jp-hardin.github.io/about/mid-market-practice/industries/industrial.html">Benchmark International Mid-Market, Industrial</a></p></div></div></section>''')
+<p style="margin-top:6pt"><a href="https://jp-hardin.github.io/about/mid-market-practice/industries/industrial.html">Benchmark Capital Markets, Industrial</a></p></div></div></section>''')
         continue
     aid, title, inner = g
     toc.append(f'<li><span>{n:02d}</span><a href="#{aid}">{esc(title)}</a></li>')
     secs.append(f'<section class="rsec rsec--{aid}" id="{aid}"><div class="rsec-head"><span class="rsec-num">{n:02d}</span><h2>{esc(title)}</h2></div>\n{inner}\n</section>')
 figs = ''.join(f'<div class="fig"><b>{esc(a)}</b><span>{esc(b)}</span></div>' for a, b in FIGS)
 doc = f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Industrial Q4 2026 M&amp;A Sector Report | Benchmark International</title><style>{CSS}</style></head><body>
-<section class="cover"><img class="logo" src="{IMG}/brand/benchmark-logo-white.png" alt="Benchmark International"><p class="tag">Mid-Market</p>
+<section class="cover"><img class="logo" src="{IMG}/brand/benchmark-logo-white.png" alt="Benchmark International"><p class="tag">Benchmark Capital Markets</p>
 <div class="mid"><p class="eyebrow">M&amp;A Sector Report &nbsp;|&nbsp; October 2026</p><h1>Industrial<em>Q4 2026</em></h1>
 <p class="lead">{' &middot; '.join(esc(t) for _, t in SEGMENTS)}</p><p class="by">Jared Hardin, Managing Director, Benchmark International</p>
 <div class="figs">{figs}</div><p class="asof">Information as of {AS_OF}. Multiples from public companies and larger transactions are reference points, and a private company&#39;s price depends on the business itself.</p></div></section>

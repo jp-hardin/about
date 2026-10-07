@@ -502,7 +502,7 @@ back=f'''<img src="{KNOT}" alt="" style="position: absolute; left: 310px; top: 6
 <div style="position: absolute; left: 0; top: 40px; width: 432px; height: 1px; background: #6D7681"></div>
 <div style="position: absolute; right: 48px; top: 30px; {CINZEL}; font-size: 12px; line-height: 20px; letter-spacing: 0.8px; color: #6D7681">{RUN}</div>
 <div data-fit="560" style="position: absolute; left: 48px; top: 230px; width: 720px; display: flex; flex-direction: column; gap: 22px">
-{EYE('Benchmark International Mid-Market')}
+{EYE('Benchmark Capital Markets (BCM)')}
 {H2('Considering a transaction in healthcare?')}
 {P('Our first step is always a confidential conversation exploring your goals, your company and your options.')}
 <div style="margin-top: 10px; display: flex; gap: 32px; align-items: center">
