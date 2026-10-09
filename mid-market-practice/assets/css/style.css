@@ -92,7 +92,7 @@ h1, h2, h3, h4 { margin: 0 0 16px; line-height: 1.2; }
 .brand { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; flex-shrink: 0; text-decoration: none; color: var(--white); }
 .brand img { height: 24px; width: auto; }
 .brand-tag {
-  font-size: 0.5rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; line-height: 1;
+  font-size: 0.58rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; line-height: 1;
   color: var(--gold); white-space: nowrap; padding-top: 7px; border-top: 1px solid rgba(255,255,255,0.18);
 }
 .nav { display: flex; align-items: center; gap: 26px; }
@@ -363,7 +363,7 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
   .wrap { padding: 0 16px; }
   .section { padding: 68px 0; }
   .hero { padding: 80px 0 72px; }
-  .brand-tag { font-size: 0.48rem; letter-spacing: 0.14em; }
+  .brand-tag { font-size: 0.52rem; letter-spacing: 0.2em; }
   .ind-grid, .coverage, .fit { grid-template-columns: 1fr; }
   .ind-card { min-height: 0; }
   .team-lead { grid-template-columns: 1fr; }
