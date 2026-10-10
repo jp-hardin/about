@@ -297,7 +297,12 @@ TEAM_LEAD = [
 TEAM_CONTACT = {
     "jared-hardin": ("813-771-6675", "j.hardin@benchmarkintl.com"),
 }
+# Personal LinkedIn profile URLs, keyed like TEAM_CONTACT. Anyone not listed shows a placeholder.
+TEAM_LINKEDIN = {
+    # "jared-hardin": "https://www.linkedin.com/in/...",
+}
 PHONE_PLACEHOLDER = "XXX-XXX-XXXX"
+LINKEDIN_PLACEHOLDER = "linkedin.com/in/your-profile"
 EMAIL_PLACEHOLDER = "name@benchmarkintl.com"
 
 # Team filter groups, in display order
@@ -620,6 +625,9 @@ def team_dialog(m, root):
                   else f'<span class="placeholder">{PHONE_PLACEHOLDER}</span>')
     email_html = (f'<a href="mailto:{email}">{e(email)}</a>' if email
                   else f'<span class="placeholder">{EMAIL_PLACEHOLDER}</span>')
+    li = TEAM_LINKEDIN.get(m["img"])
+    li_html = (f'<a href="{e(li)}" target="_blank" rel="noopener">Connect on LinkedIn</a>' if li
+               else f'<span class="placeholder">{LINKEDIN_PLACEHOLDER}</span>')
     bio = "".join(f"<p>{e(x)}</p>" for x in m["bio"]) or f'<p>{e(m["name"].split()[0])} is part of the Benchmark International Middle Market team.</p>'
     return f"""<dialog class="team-dialog" id="{did}" aria-labelledby="{did}-name">
   <button type="button" class="team-close" aria-label="Close">&times;</button>
@@ -630,6 +638,7 @@ def team_dialog(m, root):
       <ul class="team-contact">
         <li><small>Phone</small>{phone_html}</li>
         <li><small>Email</small>{email_html}</li>
+        <li><small>LinkedIn</small>{li_html}</li>
       </ul>
     </div>
     <div class="team-dialog-right">{bio}</div>
