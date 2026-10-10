@@ -716,3 +716,8 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .team-support .member-name { font-size: 1.05rem; }
 .team-support .member-open:hover .member-name { color: var(--gold-deep); }
 .member-open:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+
+/* Profile window close button: round */
+.team-close { top: 16px; right: 16px; width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 50%; background: var(--white); color: var(--ink); font-size: 0; line-height: 0; -webkit-appearance: none; appearance: none; transition: background .2s, color .2s, border-color .2s; }
+.team-close svg { width: 16px; height: 16px; display: block; }
+.team-close:hover, .team-close:focus-visible { background: var(--ink); color: var(--white); border-color: var(--ink); outline: none; }
