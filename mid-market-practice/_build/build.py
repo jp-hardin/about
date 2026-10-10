@@ -496,7 +496,7 @@ def cta(root, title="It All Starts With a Conversation", form=False):
           var host = document.getElementById('hs-form');
           function fallback() {{ host.innerHTML = '<p class="hs-fallback">Call <a href="{PHONE_HREF}">{PHONE}</a> or email <a href="mailto:{EMAIL}">{EMAIL}</a> to start the conversation.</p>'; }}
           if (window.hbspt) {{
-            hbspt.forms.create({{ region: "{HUBSPOT['region']}", portalId: "{HUBSPOT['portalId']}", formId: "{HUBSPOT['formId']}", target: "#hs-form", css: "", submitButtonClass: "btn hs-submit" }});
+            hbspt.forms.create({{ region: "{HUBSPOT['region']}", portalId: "{HUBSPOT['portalId']}", formId: "{HUBSPOT['formId']}", target: "#hs-form", css: "", submitButtonClass: "btn hs-submit", submitText: "Start the Conversation" }});
           }} else {{ fallback(); }}
         }})();
       </script>
@@ -612,31 +612,16 @@ def team_members(lead_only=False):
     return people
 
 
-def team_html(root, lead_only=False):
-    """Team grid in the style of a firm team page: filter tabs, portrait cards, and a profile window per person."""
-    people = team_members(lead_only)
-    filters = ""
-    if not lead_only:
-        tabs = [("all", "All")] + TEAM_GROUPS
-        filters = '<div class="team-filters" role="group" aria-label="Filter team">' + "".join(
-            f'<button type="button" class="team-filter" data-team-filter="{k}" aria-pressed="{"true" if k == "all" else "false"}">{e(v)}</button>'
-            for k, v in tabs) + "</div>"
-    cards = dialogs = ""
-    for m in people:
-        did = f"tm-{m['img']}"
-        phone, email = TEAM_CONTACT.get(m["img"], (None, None))
-        phone_html = (f'<a href="tel:{phone.replace("-", "")}">{e(phone)}</a>' if phone
-                      else f'<span class="placeholder">{PHONE_PLACEHOLDER}</span>')
-        email_html = (f'<a href="mailto:{email}">{e(email)}</a>' if email
-                      else f'<span class="placeholder">{EMAIL_PLACEHOLDER}</span>')
-        bio = "".join(f"<p>{e(x)}</p>" for x in m["bio"])
-        cards += f"""<button type="button" class="team-card reveal" data-group="{m['group']}" data-dialog="{did}" aria-haspopup="dialog">
-  <span class="team-photo"><img src="{root}assets/img/team/{m['img']}.jpg" alt="{e(m['name'])}" loading="lazy" width="480" height="480"></span>
-  <span class="team-name">{e(m['name'])}</span>
-  <span class="team-title">{e(m['role'])}</span>
-  <span class="team-more">View Profile</span>
-</button>"""
-        dialogs += f"""<dialog class="team-dialog" id="{did}" aria-labelledby="{did}-name">
+def team_dialog(m, root):
+    """Profile window for one team member (opened by clicking their card)."""
+    did = f"tm-{m['img']}"
+    phone, email = TEAM_CONTACT.get(m["img"], (None, None))
+    phone_html = (f'<a href="tel:{phone.replace("-", "")}">{e(phone)}</a>' if phone
+                  else f'<span class="placeholder">{PHONE_PLACEHOLDER}</span>')
+    email_html = (f'<a href="mailto:{email}">{e(email)}</a>' if email
+                  else f'<span class="placeholder">{EMAIL_PLACEHOLDER}</span>')
+    bio = "".join(f"<p>{e(x)}</p>" for x in m["bio"]) or f'<p>{e(m["name"].split()[0])} is part of the Benchmark International Middle Market team.</p>'
+    return f"""<dialog class="team-dialog" id="{did}" aria-labelledby="{did}-name">
   <button type="button" class="team-close" aria-label="Close">&times;</button>
   <div class="team-dialog-head"><h3 id="{did}-name">{e(m['name'])}</h3><p class="team-title">{e(m['role'])}</p></div>
   <div class="team-dialog-body">
@@ -647,10 +632,24 @@ def team_html(root, lead_only=False):
         <li><small>Email</small>{email_html}</li>
       </ul>
     </div>
-    <div class="team-dialog-right">{bio or f'<p>{e(m["name"].split()[0])} is part of the Benchmark International Middle Market team.</p>'}</div>
+    <div class="team-dialog-right">{bio}</div>
   </div>
 </dialog>"""
-    return f'{filters}<div class="team-grid{" team-grid--lead" if lead_only else ""}">{cards}</div>{dialogs}'
+
+
+def team_html(root, lead_only=False):
+    """Leadership cards and the support-team row; clicking anyone opens their profile window."""
+    people = team_members(lead_only)
+    lead = "".join(f"""<button type="button" class="member member-open reveal" data-dialog="tm-{m['img']}" aria-haspopup="dialog">
+  <img src="{root}assets/img/team/{m['img']}.jpg" alt="{e(m['name'])}" loading="lazy" width="480" height="480">
+  <span class="member-body"><span class="member-name">{e(m['name'])}</span><span class="role">{e(m['role'])}</span><span class="member-link">View Profile</span></span>
+</button>""" for m in people if m["group"] == "leadership")
+    support = "".join(f"""<button type="button" class="member member-open" data-dialog="tm-{m['img']}" aria-haspopup="dialog">
+  <img src="{root}assets/img/team/{m['img']}.jpg" alt="{e(m['name'])}" loading="lazy" width="120" height="120">
+  <span class="member-body"><span class="member-name">{e(m['name'])}</span><span class="role">{e(m['role'])}</span></span>
+</button>""" for m in people if m["group"] != "leadership")
+    dialogs = "".join(team_dialog(m, root) for m in people)
+    return f'<div class="team-lead">{lead}</div>' + (f'<div class="team-support">{support}</div>' if support else "") + dialogs
 
 
 

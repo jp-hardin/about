@@ -243,7 +243,7 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 /* ── Team ── */
 .team-lead { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
 .member { background: var(--white); }
-.member img { aspect-ratio: 1/1; object-fit: cover; width: 100%; filter: grayscale(15%); }
+.member img { aspect-ratio: 1/1; object-fit: cover; width: 100%; }
 .member-body { padding: 20px 4px 0; }
 .member h3 { font-family: var(--font-serif); font-weight: 400; font-size: 1.35rem; margin-bottom: 2px; }
 .member .role { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
@@ -654,8 +654,8 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 36px 28px; }
 .team-card { display: flex; flex-direction: column; align-items: flex-start; text-align: left; background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; }
 .team-photo { display: block; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; background: var(--paper); margin-bottom: 16px; }
-.team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; filter: grayscale(100%); transition: filter .5s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
-.team-card:hover .team-photo img, .team-card:focus-visible .team-photo img { filter: none; transform: scale(1.04); }
+.team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.team-card:hover .team-photo img, .team-card:focus-visible .team-photo img { transform: scale(1.04); }
 .team-name { font-family: var(--font-serif); font-size: 1.3rem; line-height: 1.2; color: var(--ink); }
 .team-title { display: block; margin-top: 4px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-deep); }
 .team-more { margin-top: 12px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
@@ -687,3 +687,32 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .team-dialog-body > *, .team-dialog-left > * { min-width: 0; }
 .team-contact .placeholder { overflow-wrap: anywhere; }
 @media (max-width: 760px) { .team-dialog-body { grid-template-columns: minmax(0, 1fr); } .team-dialog-left { grid-template-columns: 120px minmax(0, 1fr); } }
+
+/* Contact: keep the HubSpot form from widening the column on phones */
+.contact-grid > * { min-width: 0; }
+.contact-card, .hs-form-host, .hs-form-host form, .hs-form-host fieldset, .hs-form-host .hs-form-field, .hs-form-host .input { min-width: 0; max-width: 100%; }
+.hs-form-host .hs-input:not([type="checkbox"]):not([type="radio"]) { width: 100% !important; max-width: 100%; box-sizing: border-box; }
+.hs-form-host iframe { max-width: 100%; }
+@media (max-width: 960px) { .contact-grid { grid-template-columns: minmax(0, 1fr); } }
+.hs-form-host fieldset { min-inline-size: 0; }
+.hs-form-host fieldset.form-columns-2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+@media (max-width: 640px) { .hs-form-host fieldset.form-columns-2 { grid-template-columns: minmax(0, 1fr); } }
+.hs-form-host form { grid-template-columns: minmax(0, 1fr); }
+.hs-form-host form > *, .hs-form-host fieldset > * { min-width: 0; }
+.hs-form-host input[type="submit"], .hs-form-host .hs-button { max-width: 100%; white-space: normal; }
+@media (max-width: 640px) { .hs-form-host input[type="submit"], .hs-form-host .hs-button { width: 100%; letter-spacing: 0.1em; padding-left: 14px; padding-right: 14px; line-height: 1.4; } }
+
+/* Team cards as buttons that open the profile window (original layout) */
+.member-open { display: block; width: 100%; padding: 0; border: 0; background: var(--white); font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.member-open img { display: block; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.team-lead .member-open { overflow: hidden; }
+.team-lead .member-open:hover img { transform: scale(1.03); }
+.member-name { display: block; font-family: var(--font-serif); font-weight: 400; font-size: 1.35rem; margin-bottom: 2px; color: var(--ink); }
+.member .role { display: block; }
+.member-link { display: inline-block; margin-top: 12px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); }
+.member-link::after { content: ' +'; color: var(--gold); }
+.member-open:hover .member-link { color: var(--gold-deep); }
+.team-support .member-open { background: transparent; text-align: center; }
+.team-support .member-name { font-size: 1.05rem; }
+.team-support .member-open:hover .member-name { color: var(--gold-deep); }
+.member-open:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
