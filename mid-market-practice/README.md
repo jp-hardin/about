@@ -1,6 +1,6 @@
-# Benchmark Capital Markets (BCM), Benchmark International
+# Middle Market, Benchmark International
 
-A standalone site for Benchmark Capital Markets (BCM), part of Benchmark International: firm overview, five focused industries
+A standalone site for Benchmark International's Middle Market team: firm overview, five focused industries
 (Industrial, Business Services, Consumer, Healthcare, Technology), and selected transactions
 (tombstones) organized by industry and segment.
 
