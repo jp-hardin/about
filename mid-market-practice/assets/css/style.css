@@ -243,7 +243,7 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 /* ── Team ── */
 .team-lead { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
 .member { background: var(--white); }
-.member img { aspect-ratio: 1/1; object-fit: cover; width: 100%; filter: grayscale(15%); }
+.member img { aspect-ratio: 1/1; object-fit: cover; width: 100%; }
 .member-body { padding: 20px 4px 0; }
 .member h3 { font-family: var(--font-serif); font-weight: 400; font-size: 1.35rem; margin-bottom: 2px; }
 .member .role { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
@@ -654,8 +654,8 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 36px 28px; }
 .team-card { display: flex; flex-direction: column; align-items: flex-start; text-align: left; background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; }
 .team-photo { display: block; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; background: var(--paper); margin-bottom: 16px; }
-.team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; filter: grayscale(100%); transition: filter .5s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
-.team-card:hover .team-photo img, .team-card:focus-visible .team-photo img { filter: none; transform: scale(1.04); }
+.team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.team-card:hover .team-photo img, .team-card:focus-visible .team-photo img { transform: scale(1.04); }
 .team-name { font-family: var(--font-serif); font-size: 1.3rem; line-height: 1.2; color: var(--ink); }
 .team-title { display: block; margin-top: 4px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-deep); }
 .team-more { margin-top: 12px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
