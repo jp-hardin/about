@@ -281,18 +281,29 @@ for _s in SECTORS:
 # ─────────────────────────────────────────────────────────────────────────────
 TEAM_LEAD = [
     ("Jordan Houtz", "Managing Director", "jordan-houtz",
-     ["As Head of Middle Market, Jordan represents clients with total enterprise values (TEV) ranging from $50 million to $500 million across the United States. He is a seasoned investment banking and capital raising professional with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
+     ["As a Managing Director, Jordan represents clients with total enterprise values (TEV) ranging from $50 million to $500 million across the United States. He is a seasoned investment banking and capital raising professional with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
       "His deep experience on both the buy and sell sides of M&A transactions gives his clients a unique advantage in understanding deal dynamics and achieving their objectives. By leading full-cycle processes from idea and thesis generation through valuation, diligence, and negotiation, he is intimately involved in accomplishing his clients’ objectives. Jordan prides himself on building deep client relationships while achieving desired outcomes for stakeholders."]),
     ("Jared Hardin", "Managing Director", "jared-hardin",
      ["Mr. Hardin was raised in a military family, spending his early years traveling through Utah, Missouri, Ohio, Korea, Idaho, and Hong Kong. He ultimately landed in Texas where he has resided for the last two decades. His scholastic journey spanned a wide spectrum of learning, from Fine Arts to International Business to Management of Information Systems. He was driven to attain his MBA because he genuinely enjoys helping others learn and grow, but he also has a competitive nature that drives him toward success. His career has been quite diverse, having held the titles of Owner, COO, CIO, and CMO, and starting small businesses that gave him a role in everything from sales to HR and from IT to manufacturing. For these reasons, he understands and appreciates the intricacies of many different businesses.",
       "Jared’s role at Benchmark is about creating opportunities. In addition to his love for learning about businesses and introducing their owners to the distinctive tools and expertise that we offer, he is able to leverage his experience in deeply meaningful ways for our clients. He is driven to deliver results and get business owners truly excited about what is possible for the future."]),
     ("Alex Zykov", "Transaction Director", "alex-zykov",
-     ["As a Transaction Director in Middle Market, Alex leads the execution of our clients’ transactions from onboarding through signing and closing. He oversees every aspect of the process for middle-market clients across the industrial, consumer, business services, healthcare, and technology sectors. He makes sure clients understand each step and feel confident along the way, supporting them and our team through due diligence, evaluating competing offers, and leading negotiations through to the finish line.",
+     ["As a Transaction Director, Alex leads the execution of our clients’ transactions from onboarding through signing and closing. He oversees every aspect of the process for middle-market clients across the industrial, consumer, business services, healthcare, and technology sectors. He makes sure clients understand each step and feel confident along the way, supporting them and our team through due diligence, evaluating competing offers, and leading negotiations through to the finish line.",
       "Alex’s career spans corporate development, executing transactions on Wall Street, and cofounding and running boutique advisory firms serving small and mid-sized businesses. Each step was deliberate: building the breadth of knowledge and experience needed to give his clients the best possible advice and help them achieve their goals. He discovered his passion for corporate finance at MIT, where he earned dual degrees in Economics and Management Science, and later earned his MBA from the University of Virginia’s Darden School of Business."]),
     ("Shannon Hess", "Client Engagement Director", "shannon-hess",
      ["Ms. Hess grew up in a military family, living on Army bases until she was nine years old. She enjoyed living in Germany and Hawaii, and traveling to many wonderful places. Because she is from a military family, her youth was a disciplined way of life with importance placed on punctuality, respect and loyalty.",
       "Shannon’s role at Benchmark International involves working with our Field Directors and clients we have met with that have had an interest in engaging our services, but have yet to do so. She is an additional internal point of contact for clients when they wish to speak with someone with the same or a different perspective when they need someone to discuss their fears or challenges. She has been with Benchmark International long enough to see many deals through from start to finish, and she conveys her valuable insights to address any questions clients may have."]),
 ]
+# Team contact details (phone, email). Anyone not listed shows placeholders until filled in here.
+TEAM_CONTACT = {
+    "jared-hardin": ("813-771-6675", "j.hardin@benchmarkintl.com"),
+}
+PHONE_PLACEHOLDER = "XXX-XXX-XXXX"
+EMAIL_PLACEHOLDER = "name@benchmarkintl.com"
+
+# Team filter groups, in display order
+TEAM_GROUPS = [("leadership", "Leadership"), ("deal-team", "Deal Team"), ("transaction-support", "Transaction Support")]
+TEAM_GROUP_OF = {"alexandra-barr": "transaction-support", "josiah-warren": "transaction-support"}
+
 TEAM_SUPPORT = [
     ("Sunny Garten", "Senior Deal Associate", "sunny-garten"),
     ("Michael Wynn", "Senior Deal Associate", "michael-wynn"),
@@ -593,19 +604,54 @@ def cta_card(root):
 </a>"""
 
 
-def team_html(root):
-    lead = ""
-    for name, role, img, bio in TEAM_LEAD:
-        paras = "".join(f"<p>{e(p)}</p>" for p in bio)
-        lead += f"""<article class="member reveal">
-  <img src="{root}assets/img/team/{img}.jpg" alt="{e(name)}" loading="lazy" width="480" height="480">
-  <div class="member-body"><h3>{e(name)}</h3><div class="role">{e(role)}</div>
-  <details><summary>Read Bio</summary>{paras}</details></div>
-</article>"""
-    support = "".join(
-        f'<div class="member"><img src="{root}assets/img/team/{img}.jpg" alt="{e(n)}" loading="lazy" width="120" height="120"><div class="member-body"><h3>{e(n)}</h3><div class="role">{e(r)}</div></div></div>'
-        for n, r, img in TEAM_SUPPORT)
-    return f'<div class="team-lead">{lead}</div><div class="team-support">{support}</div>'
+def team_members(lead_only=False):
+    """All team members as dicts, leadership first."""
+    people = [dict(name=n, role=r, img=i, bio=b, group="leadership") for n, r, i, b in TEAM_LEAD]
+    if not lead_only:
+        people += [dict(name=n, role=r, img=i, bio=[], group=TEAM_GROUP_OF.get(i, "deal-team")) for n, r, i in TEAM_SUPPORT]
+    return people
+
+
+def team_html(root, lead_only=False):
+    """Team grid in the style of a firm team page: filter tabs, portrait cards, and a profile window per person."""
+    people = team_members(lead_only)
+    filters = ""
+    if not lead_only:
+        tabs = [("all", "All")] + TEAM_GROUPS
+        filters = '<div class="team-filters" role="group" aria-label="Filter team">' + "".join(
+            f'<button type="button" class="team-filter" data-team-filter="{k}" aria-pressed="{"true" if k == "all" else "false"}">{e(v)}</button>'
+            for k, v in tabs) + "</div>"
+    cards = dialogs = ""
+    for m in people:
+        did = f"tm-{m['img']}"
+        phone, email = TEAM_CONTACT.get(m["img"], (None, None))
+        phone_html = (f'<a href="tel:{phone.replace("-", "")}">{e(phone)}</a>' if phone
+                      else f'<span class="placeholder">{PHONE_PLACEHOLDER}</span>')
+        email_html = (f'<a href="mailto:{email}">{e(email)}</a>' if email
+                      else f'<span class="placeholder">{EMAIL_PLACEHOLDER}</span>')
+        bio = "".join(f"<p>{e(x)}</p>" for x in m["bio"])
+        cards += f"""<button type="button" class="team-card reveal" data-group="{m['group']}" data-dialog="{did}" aria-haspopup="dialog">
+  <span class="team-photo"><img src="{root}assets/img/team/{m['img']}.jpg" alt="{e(m['name'])}" loading="lazy" width="480" height="480"></span>
+  <span class="team-name">{e(m['name'])}</span>
+  <span class="team-title">{e(m['role'])}</span>
+  <span class="team-more">View Profile</span>
+</button>"""
+        dialogs += f"""<dialog class="team-dialog" id="{did}" aria-labelledby="{did}-name">
+  <button type="button" class="team-close" aria-label="Close">&times;</button>
+  <div class="team-dialog-head"><h3 id="{did}-name">{e(m['name'])}</h3><p class="team-title">{e(m['role'])}</p></div>
+  <div class="team-dialog-body">
+    <div class="team-dialog-left">
+      <img src="{root}assets/img/team/{m['img']}.jpg" alt="{e(m['name'])}" loading="lazy" width="480" height="480">
+      <ul class="team-contact">
+        <li><small>Phone</small>{phone_html}</li>
+        <li><small>Email</small>{email_html}</li>
+      </ul>
+    </div>
+    <div class="team-dialog-right">{bio or f'<p>{e(m["name"].split()[0])} is part of the Benchmark International Middle Market team.</p>'}</div>
+  </div>
+</dialog>"""
+    return f'{filters}<div class="team-grid{" team-grid--lead" if lead_only else ""}">{cards}</div>{dialogs}'
+
 
 
 def write(rel, html):
@@ -910,10 +956,7 @@ def page_sector(i, s):
 </section>"""
     prev_s = SECTORS[i - 1]
     next_s = SECTORS[(i + 1) % len(SECTORS)]
-    team_cards = "".join(f"""<article class="member reveal">
-  <img src="{root}assets/img/team/{img}.jpg" alt="{e(name)}" loading="lazy" width="480" height="480">
-  <div class="member-body"><h3>{e(name)}</h3><div class="role">{e(role)}</div></div>
-</article>""" for name, role, img, _ in TEAM_LEAD)
+    team_cards = team_html(root, lead_only=True)
     cur = ' aria-current="page"'
     tabs = "".join(f'<a href="{x["slug"]}.html"{cur if x is s else ""}>{e(x["name"])}</a>' for x in SECTORS)
 
@@ -1034,7 +1077,7 @@ def page_sector(i, s):
 <section class="section">
   <div class="wrap">
     <div class="section-head center reveal"><p class="eyebrow">Your Deal Team</p><h2 class="h2">Leadership Team</h2></div>
-    <div class="team-lead">{team_cards}</div>
+    {team_cards}
     <div class="center" style="margin-top:36px"><a class="link-arrow" href="{root}index.html#team">Meet the full team</a></div>
   </div>
 </section>
