@@ -645,3 +645,45 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
   .fit-split .fit { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { .pillar-photo img { transition: none; } }
+
+/* ── Team (filterable grid with profile windows) ── */
+.team-filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 28px; margin: 0 0 36px; border-bottom: 1px solid var(--line); }
+.team-filter { background: none; border: 0; padding: 0 0 14px; margin-bottom: -1px; font: inherit; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; }
+.team-filter:hover { color: var(--ink); }
+.team-filter[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--gold); }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 36px 28px; }
+.team-card { display: flex; flex-direction: column; align-items: flex-start; text-align: left; background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; }
+.team-photo { display: block; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; background: var(--paper); margin-bottom: 16px; }
+.team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; filter: grayscale(100%); transition: filter .5s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+.team-card:hover .team-photo img, .team-card:focus-visible .team-photo img { filter: none; transform: scale(1.04); }
+.team-name { font-family: var(--font-serif); font-size: 1.3rem; line-height: 1.2; color: var(--ink); }
+.team-title { display: block; margin-top: 4px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-deep); }
+.team-more { margin-top: 12px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
+.team-card:focus-visible { outline: 2px solid var(--gold); outline-offset: 6px; }
+.team-dialog { box-sizing: border-box; width: min(920px, calc(100vw - 32px)); max-width: none; max-height: calc(100vh - 48px); padding: 48px 52px 44px; border: 0; border-top: 4px solid var(--gold); background: var(--white); color: var(--ink); box-shadow: 0 30px 80px rgba(0,0,0,.4); }
+.team-dialog::backdrop { background: rgba(20,18,18,.72); }
+.team-close { position: absolute; top: 14px; right: 18px; background: none; border: 0; font-size: 2rem; line-height: 1; color: var(--muted); cursor: pointer; }
+.team-close:hover { color: var(--ink); }
+.team-dialog-head { margin-bottom: 26px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.team-dialog-head h3 { font-family: var(--font-serif); font-weight: 400; font-size: 2rem; line-height: 1.15; margin: 0; }
+.team-dialog-body { display: grid; grid-template-columns: 260px 1fr; gap: 40px; align-items: start; }
+.team-dialog-left img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; display: block; }
+.team-contact { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 12px; }
+.team-contact small { display: block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+.team-contact a { color: var(--ink); font-weight: 700; text-decoration: none; overflow-wrap: anywhere; }
+.team-contact a:hover { color: var(--gold-deep); }
+.team-contact .placeholder { color: var(--taupe); font-weight: 600; }
+.team-dialog-right p { color: var(--graphite); font-size: 0.95rem; line-height: 1.75; margin: 0 0 16px; }
+@media (max-width: 1080px) { .team-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 760px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
+  .team-dialog { padding: 40px 22px 28px; }
+  .team-dialog-body { grid-template-columns: 1fr; gap: 24px; }
+  .team-dialog-left { display: grid; grid-template-columns: 120px 1fr; gap: 18px; align-items: start; }
+  .team-contact { margin-top: 0; }
+  .team-name { font-size: 1.1rem; }
+}
+@media (prefers-reduced-motion: reduce) { .team-photo img { transition: none; } }
+.team-dialog-body > *, .team-dialog-left > * { min-width: 0; }
+.team-contact .placeholder { overflow-wrap: anywhere; }
+@media (max-width: 760px) { .team-dialog-body { grid-template-columns: minmax(0, 1fr); } .team-dialog-left { grid-template-columns: 120px minmax(0, 1fr); } }

@@ -78,4 +78,28 @@
     if (search) search.addEventListener('input', apply);
     apply();
   }
+
+  // Team: filter tabs and profile windows
+  var teamTabs = document.querySelectorAll('.team-filter');
+  teamTabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      var g = t.dataset.teamFilter;
+      teamTabs.forEach(function (x) { x.setAttribute('aria-pressed', x === t ? 'true' : 'false'); });
+      document.querySelectorAll('.team-card').forEach(function (c) { c.hidden = g !== 'all' && c.dataset.group !== g; });
+    });
+  });
+  document.querySelectorAll('.team-card[data-dialog]').forEach(function (c) {
+    c.addEventListener('click', function () {
+      var d = document.getElementById(c.dataset.dialog);
+      if (d && d.showModal) { d.showModal(); }
+    });
+  });
+  document.querySelectorAll('.team-dialog').forEach(function (d) {
+    d.querySelector('.team-close').addEventListener('click', function () { d.close(); });
+    d.addEventListener('click', function (ev) {
+      if (ev.target !== d) return;
+      var r = d.getBoundingClientRect();
+      if (ev.clientX < r.left || ev.clientX > r.right || ev.clientY < r.top || ev.clientY > r.bottom) d.close();
+    });
+  });
 })();
