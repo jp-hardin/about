@@ -88,7 +88,7 @@
       document.querySelectorAll('.team-card').forEach(function (c) { c.hidden = g !== 'all' && c.dataset.group !== g; });
     });
   });
-  document.querySelectorAll('.team-card[data-dialog]').forEach(function (c) {
+  document.querySelectorAll('[data-dialog]').forEach(function (c) {
     c.addEventListener('click', function () {
       var d = document.getElementById(c.dataset.dialog);
       if (d && d.showModal) { d.showModal(); }
