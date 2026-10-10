@@ -423,7 +423,7 @@ def footer(root):
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="{root}assets/img/brand/benchmark-logo-white.png" alt="Benchmark International" width="138" height="26">
-        <p>Middle Market represents privately held companies across the United States in sell-side M&amp;A, recapitalizations and growth partnerships.</p>
+        <p>Benchmark International’s Middle Market team represents privately held companies across the United States in sell-side M&amp;A, recapitalizations and growth partnerships.</p>
         <p><a href="{PHONE_HREF}">{PHONE}</a><br><a href="mailto:{EMAIL}">{EMAIL}</a></p>
         <div class="social">{social}</div>
       </div>
