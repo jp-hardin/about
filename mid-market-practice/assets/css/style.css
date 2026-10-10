@@ -687,3 +687,17 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .team-dialog-body > *, .team-dialog-left > * { min-width: 0; }
 .team-contact .placeholder { overflow-wrap: anywhere; }
 @media (max-width: 760px) { .team-dialog-body { grid-template-columns: minmax(0, 1fr); } .team-dialog-left { grid-template-columns: 120px minmax(0, 1fr); } }
+
+/* Contact: keep the HubSpot form from widening the column on phones */
+.contact-grid > * { min-width: 0; }
+.contact-card, .hs-form-host, .hs-form-host form, .hs-form-host fieldset, .hs-form-host .hs-form-field, .hs-form-host .input { min-width: 0; max-width: 100%; }
+.hs-form-host .hs-input:not([type="checkbox"]):not([type="radio"]) { width: 100% !important; max-width: 100%; box-sizing: border-box; }
+.hs-form-host iframe { max-width: 100%; }
+@media (max-width: 960px) { .contact-grid { grid-template-columns: minmax(0, 1fr); } }
+.hs-form-host fieldset { min-inline-size: 0; }
+.hs-form-host fieldset.form-columns-2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+@media (max-width: 640px) { .hs-form-host fieldset.form-columns-2 { grid-template-columns: minmax(0, 1fr); } }
+.hs-form-host form { grid-template-columns: minmax(0, 1fr); }
+.hs-form-host form > *, .hs-form-host fieldset > * { min-width: 0; }
+.hs-form-host input[type="submit"], .hs-form-host .hs-button { max-width: 100%; white-space: normal; }
+@media (max-width: 640px) { .hs-form-host input[type="submit"], .hs-form-host .hs-button { width: 100%; letter-spacing: 0.1em; padding-left: 14px; padding-right: 14px; line-height: 1.4; } }
