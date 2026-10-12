@@ -303,13 +303,28 @@ TEAM_LEAD = [
      ["Ms. Hess grew up in a military family, living on Army bases until she was nine years old. She enjoyed living in Germany and Hawaii, and traveling to many wonderful places. Because she is from a military family, her youth was a disciplined way of life with importance placed on punctuality, respect and loyalty.",
       "Shannon’s role at Benchmark International involves working with our Field Directors and clients we have met with that have had an interest in engaging our services, but have yet to do so. She is an additional internal point of contact for clients when they wish to speak with someone with the same or a different perspective when they need someone to discuss their fears or challenges. She has been with Benchmark International long enough to see many deals through from start to finish, and she conveys her valuable insights to address any questions clients may have."]),
 ]
-# Team contact details (phone, email). Anyone not listed shows placeholders until filled in here.
+# Team contact details (phone, email); use None for a missing value. Anything missing shows the team line or team email.
 TEAM_CONTACT = {
+    "jordan-houtz": (None, "jhoutz@benchmarkintl.com"),
     "jared-hardin": ("813-771-6675", "j.hardin@benchmarkintl.com"),
+    "alex-zykov": ("813-898-2372", "azykov@benchmarkintl.com"),
+    "shannon-hess": ("813-898-2397", "hess@benchmarkintl.com"),
+    "sunny-garten": ("813-898-2357", "garten@benchmarkintl.com"),
+    "michael-wynn": ("813-384-4972", "mwynn@benchmarkintl.com"),
+    "alexandra-barr": ("813-387-6046", "abarr@benchmarkintl.com"),
+    "josiah-warren": ("813-898-2398", "jwarren@benchmarkintl.com"),
+    "luke-ernst": ("813-771-6318", "lernst@benchmarkintl.com"),
 }
-# Personal LinkedIn profile URLs, keyed like TEAM_CONTACT. Anyone not listed shows a placeholder.
+# Personal LinkedIn profile URLs, keyed like TEAM_CONTACT. Anyone not listed has no LinkedIn row.
 TEAM_LINKEDIN = {
-    # "jared-hardin": "https://www.linkedin.com/in/...",
+    "jordan-houtz": "https://www.linkedin.com/in/jordanhoutz",
+    "jared-hardin": "https://www.linkedin.com/in/jared-p-hardin",
+    "alex-zykov": "https://www.linkedin.com/in/alex-zykov-787646b",
+    "shannon-hess": "https://www.linkedin.com/in/shannon-l-hess",
+    "sunny-garten": "https://www.linkedin.com/in/sunny-yang-garten-28a11010",
+    "alexandra-barr": "https://www.linkedin.com/in/alexandra-barr-400531104",
+    "josiah-warren": "https://www.linkedin.com/in/josiah-warren",
+    "luke-ernst": "https://www.linkedin.com/in/lukesernst",
 }
 PHONE_PLACEHOLDER = "XXX-XXX-XXXX"
 LINKEDIN_PLACEHOLDER = "linkedin.com/in/your-profile"
