@@ -373,9 +373,9 @@ TESTIMONIALS = [
 ]
 
 LIBRARY = [
-    ("VDeyO2atUAU", "Seller Motivation", "What Goes Into the Decision to Sell?", "Deciding to sell your business is one of the most significant decisions you'll ever make. While maximizing proceeds is crucial, it's not the only factor that should influence your decision."),
-    ("3oH70E1oJdQ", "Growth & Exit Strategy", "Taking Control of Your Growth and Exit", "Managing Director Jared Hardin discusses taking control of your growth and exit strategy. Learn more about various considerations and the right time to be on market."),
-    ("wmGj-xUypSs", "Webinar", "The Process of Selling Your Business", "Are you considering selling your business but unsure where to start? This webinar will guide you through the entire process of selling your business, from preparation to negotiation."),
+    ("kp0gV6Dj0_0", "Sell-Side Process", "Before the Sale: What a Sell-Side M&A Process Really Looks Like", "Managing Director Jordan Houtz walks through what a successful sell-side process looks like, how buyers evaluate a business, what drives a premium valuation and what owners should do before going to market."),
+    ("X8a04-Ok6j4", "Growth & Exit Strategy", "Taking Control of Your Growth and Exit Strategy", "Managing Director Jared Hardin discusses taking control of your growth and exit strategy, including the key considerations and the right time to be on market."),
+    ("8giQ5YAiCIA", "Webinar", "Selling for Maximum Value", "An M&A expert\u2019s guide to preparation and process: how owners can position their company to achieve the highest value in a sale."),
 ]
 
 TOMBSTONES = json.load(open(os.path.join(HERE, "tombstones.json"), encoding="utf-8"))
