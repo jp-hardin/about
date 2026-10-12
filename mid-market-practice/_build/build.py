@@ -378,6 +378,20 @@ LIBRARY = [
     ("8giQ5YAiCIA", "Webinar", "Selling for Maximum Value", "An M&A expert\u2019s guide to preparation and process: how owners can position their company to achieve the highest value in a sale."),
 ]
 
+# Closing Remarks, the Benchmark International podcast hosted by Dara Shareef.
+# A short, hand-picked set of episodes shown beneath the CEO Library videos:
+# (YouTube id, label, title, description).
+PODCAST = [
+    ("08LRm0acEhs", "Owner Story", "Thomas Frey on Selling a Business", "The founder of Silexx Financial Systems describes building his trading software company and selling it to Cboe Global Markets with Benchmark International, and how he decided what he wanted from life after the sale."),
+    ("W92GtOXmD90", "Owner Story", "Keith Marshall on Opportunity and M&A", "The founder of Solution Matrix traces the company from a home-based start to a manufacturing business, the role his family played along the way, and the sale through Benchmark International to a buyer who could carry it forward."),
+    ("JgZd56mMlmQ", "Deal Terms", "Doug Starcher on Simplifying M&A Legal Terms", "A managing partner at Nelson Mullins with more than 35 years in M&A explains the terms every owner will meet in a sale, including letters of intent, representations and warranties, indemnification and working capital."),
+]
+PODCAST_LINKS = [
+    ("Spotify", "https://open.spotify.com/show/4tH5twLR8zllxpeQqS9vgR"),
+    ("Apple Podcasts", "https://podcasts.apple.com/us/podcast/closing-remarks/id1896060877"),
+    ("YouTube", "https://www.youtube.com/playlist?list=PLY23_cDjMExKHyUNVI5rD8B24wzgK5RnC"),
+]
+
 TOMBSTONES = json.load(open(os.path.join(HERE, "tombstones.json"), encoding="utf-8"))
 for t in TOMBSTONES:
     t["sector_name"] = SECTOR_BY_SLUG[t["sector"]]["name"]
@@ -867,6 +881,11 @@ def page_home():
   <div class="story-media">{yt(vid, title)}</div>
   <div class="story-body"><p class="eyebrow">{e(label)}</p><h3>{e(title)}</h3><p>{e(desc)}</p></div>
 </article>""" for vid, label, title, desc in LIBRARY)
+    podcast = "".join(f"""<article class="story reveal">
+  <div class="story-media">{yt(vid, title)}</div>
+  <div class="story-body"><p class="eyebrow">{e(label)}</p><h3>{e(title)}</h3><p>{e(desc)}</p></div>
+</article>""" for vid, label, title, desc in PODCAST)
+    podcast_links = "".join(f'<a href="{url}" target="_blank" rel="noopener">{e(name)}</a>' for name, url in PODCAST_LINKS)
     cards = "".join(industry_card(s, root) for s in SECTORS) + cta_card(root)
     awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="Benchmark International award" loading="lazy" width="520" height="300">' for i in range(1, 5))
 
@@ -1019,6 +1038,13 @@ def page_home():
       <h2 class="h2">Insight for Owners Considering What's Next</h2>
     </div>
     <div class="library">{library}</div>
+    <div class="podcast-head reveal">
+      <p class="eyebrow">Closing Remarks Podcast</p>
+      <h3>Owners and Advisors on Selling a Business and What Comes After</h3>
+      <p>Closing Remarks is the Benchmark International podcast hosted by Dara Shareef. Each episode is a conversation with an owner who has sold a company or an advisor who works on these transactions, told in plain language.</p>
+    </div>
+    <div class="library">{podcast}</div>
+    <p class="podcast-links reveal"><span>Listen to every episode on</span>{podcast_links}</p>
   </div>
 </section>
 

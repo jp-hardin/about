@@ -297,6 +297,11 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .library .story { border: 1px solid var(--line); }
 .library .story-body p { font-family: var(--font-sans); font-size: 0.9rem; color: var(--graphite); line-height: 1.6; }
 .library .story-body h3 { font-family: var(--font-serif); font-weight: 400; font-size: 1.25rem; margin-bottom: 8px; }
+.podcast-head { max-width: 760px; margin: 72px auto 32px; padding-top: 56px; border-top: 1px solid var(--line); text-align: center; }
+.podcast-head h3 { font-family: var(--font-serif); font-weight: 400; font-size: 1.7rem; line-height: 1.25; margin: 0 0 14px; }
+.podcast-head p:not(.eyebrow) { margin: 0; color: var(--graphite); line-height: 1.65; }
+.podcast-links { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px 22px; margin: 32px 0 0; font-size: 0.9rem; color: var(--graphite); }
+.podcast-links a { font-weight: 600; text-underline-offset: 4px; }
 
 /* ── CTA ── */
 .cta { text-align: center; }
