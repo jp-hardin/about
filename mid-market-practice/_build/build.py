@@ -346,6 +346,16 @@ TEAM_SUPPORT = [
     ("Luke Ernst", "Deal Analyst", "luke-ernst"),
 ]
 
+# Profile window bios for the support team, keyed by image slug.
+TEAM_SUPPORT_BIO = {
+    "sunny-garten": ["Sunny runs the daily work of a client’s sale alongside the Transaction Director, beginning the day the company goes to market and continuing through closing. That means being the person owners call with questions, scheduling and preparing management meetings with interested buyers, and keeping offers and due diligence requests on a timeline the client has agreed to."],
+    "michael-wynn": ["As a Senior Deal Associate, Michael works with business owners and the Transaction Director from market launch to a signed purchase agreement. He handles the conversations with buyers, lays competing offers side by side so clients can weigh price against structure and terms, and stays with them through due diligence and final negotiations. He also directs the analysts assigned to each of his transactions."],
+    "jason-lisiak": ["Jason identifies the buyers and investors for each Middle Market client. He researches the strategic acquirers, private equity firms and family offices with a reason to own the business, reviews what each has bought before and what they look for in an acquisition, and follows recent transactions in the client’s sector. His research determines who receives the opportunity and why each of those buyers belongs on the list."],
+    "alexandra-barr": ["Alexandra prepares clients to go to market. She works with owners and their finance teams to collect and analyze financial statements, customer contracts and operating data, and she uses that analysis to build the valuation work and the confidential materials buyers receive. Along the way she flags the issues a buyer is likely to raise in due diligence, which gives the client time to resolve them before the first conversation takes place."],
+    "josiah-warren": ["As a Transaction Support Associate, Josiah conducts the financial and operational review that precedes a client’s launch. He analyzes several years of historical performance, adjusts earnings for one-time and owner-related items, evaluates working capital, and pinpoints what makes the business valuable to an acquirer. He stays in close contact with the owner throughout, and his findings become the financial foundation of the materials presented to buyers."],
+    "luke-ernst": ["Luke supports the deal team on every transaction in process. He contacts prospective buyers, manages confidentiality agreements, controls what information is released and when, and maintains the data room. He also prepares the offer comparisons and status tracking the team uses to keep several buyers moving on the same schedule through due diligence and closing."],
+}
+
 # Client video stories (Vimeo IDs) → sector
 STORIES = [
     ("158933030", "Software", "technology", "How pharmacy software leader Rx30 secured a strategic investment from PE giant GTCR to accelerate growth and innovation"),
@@ -651,7 +661,7 @@ def team_members(lead_only=False):
     """All team members as dicts, leadership first."""
     people = [dict(name=n, role=r, img=i, bio=b, group="leadership") for n, r, i, b in TEAM_LEAD]
     if not lead_only:
-        people += [dict(name=n, role=r, img=i, bio=[], group=TEAM_GROUP_OF.get(i, "deal-team")) for n, r, i in TEAM_SUPPORT]
+        people += [dict(name=n, role=r, img=i, bio=TEAM_SUPPORT_BIO.get(i, []), group=TEAM_GROUP_OF.get(i, "deal-team")) for n, r, i in TEAM_SUPPORT]
     return people
 
 
