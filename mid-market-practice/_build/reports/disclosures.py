@@ -59,6 +59,14 @@ def append(pdf_path, sector, period):
     assert len(extra.pages) == 1, 'disclosures should fit on one page'
     w = PdfWriter(clone_from=reader)
     w.add_page(extra.pages[0])
+    # Document properties read by search engines and AI tools that index PDFs
+    w.add_metadata({
+        '/Title': f'{sector} {period} M&A Sector Report | Benchmark International Middle Market',
+        '/Author': 'Jared Hardin, Benchmark International',
+        '/Subject': f'{sector} mergers and acquisitions: deal activity, valuations and what buyers are paying for, {period}',
+        '/Keywords': f'{sector} M&A, {sector} mergers and acquisitions, middle market, sell-side M&A, valuation multiples, {period}, Benchmark International',
+        '/Creator': 'Benchmark International Middle Market',
+    })
     with open(pdf_path, 'wb') as f:
         w.write(f)
     print('appended Important Disclosures as page', number)

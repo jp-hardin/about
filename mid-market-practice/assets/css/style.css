@@ -321,10 +321,10 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .note { font-size: 0.75rem; color: var(--muted); margin-top: 18px; }
 
 /* ── Reveal ── */
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
-.reveal.is-in { opacity: 1; transform: none; }
+.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.js .reveal.is-in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
   .marquee-track { animation: none; }
   html { scroll-behavior: auto; }
 }
@@ -721,3 +721,26 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .team-close { top: 16px; right: 16px; width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 50%; background: var(--white); color: var(--ink); font-size: 0; line-height: 0; -webkit-appearance: none; appearance: none; transition: background .2s, color .2s, border-color .2s; }
 .team-close svg { width: 16px; height: 16px; display: block; }
 .team-close:hover, .team-close:focus-visible { background: var(--ink); color: var(--white); border-color: var(--ink); outline: none; }
+
+/* ── FAQ (answer-first content for search and AI assistants) ── */
+.faq-wrap { max-width: 920px; }
+.faq { border-top: 1px solid var(--line); }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary h3 { font-family: var(--font-serif); font-weight: 400; font-size: 1.2rem; line-height: 1.35; margin: 0; color: var(--ink); }
+.faq-item summary::after { content: '+'; flex-shrink: 0; width: 32px; height: 32px; border: 1px solid var(--line); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold-deep); font-size: 1.1rem; transition: transform .25s; }
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p { margin: 0 0 24px; color: var(--graphite); max-width: 760px; line-height: 1.75; }
+
+/* ── About (fact sheet) ── */
+.about-wrap { max-width: 920px; }
+.about-wrap .h2 { margin: 48px 0 18px; }
+.about-wrap .h2:first-child { margin-top: 0; }
+.facts { width: 100%; border-collapse: collapse; border-top: 2px solid var(--gold); }
+.facts th, .facts td { text-align: left; vertical-align: top; padding: 14px 16px 14px 0; border-bottom: 1px solid var(--line); }
+.facts th { width: 30%; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.facts td { color: var(--ink); }
+.about-list { padding-left: 18px; color: var(--graphite); line-height: 1.8; }
+.about-list a { color: var(--ink); font-weight: 700; }
+@media (max-width: 640px) { .facts th, .facts td { display: block; width: 100%; padding: 4px 0; } .facts th { padding-top: 14px; border-bottom: 0; } }

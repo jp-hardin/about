@@ -9,6 +9,8 @@ Pages are written to mid-market-practice/. No dependencies beyond the Python sta
 """
 import json
 import os
+import re
+from urllib.parse import urlparse
 from html import escape
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -25,6 +27,14 @@ def _asset_version(rel):
 
 HUBSPOT = {"region": "na1", "portalId": "4039078", "formId": "902fb6ab-81fb-42c4-abf8-5355537a8abb"}
 AS_OF = "October 2026"
+
+# Search and AI discovery. SITE_URL is the one place to change when the site moves (for example to HubSpot);
+# canonical links, sitemap.xml, robots.txt, llms.txt, social previews and structured data all build from it.
+SITE_URL = "https://jp-hardin.github.io/about/mid-market-practice/"
+SITE_UPDATED = "2026-10-12"   # date stamp for sitemap.xml; update when content changes
+ORG_NAME = "Benchmark International Middle Market"
+PARENT_ORG = {"@type": "Organization", "name": "Benchmark International", "url": "https://www.benchmarkintl.com/"}
+REPORT_DATE = "2026-10"       # publication month of the current sector reports (ISO 8601)
 
 # Important Disclosures: shown on disclosures.html and printed as the last page of every sector report PDF
 # (_build/reports/disclosures.py). Adapted from a peer firm's report disclosures; have Compliance confirm any
@@ -364,6 +374,7 @@ def head(title, desc, root, canonical=""):
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#231f20">
+<script>document.documentElement.classList.add('js')</script>
 <link rel="icon" href="{root}assets/img/brand/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -415,7 +426,7 @@ def footer(root):
         for name, (href, path) in SOCIAL.items())
     sectors = "".join(f'<li><a href="{root}industries/{s["slug"]}.html">{e(s["name"])}</a></li>' for s in SECTORS)
     sectors += f'<li><a href="{root}industries/index.html">All Industries</a></li>'
-    pages = (f'<li><a href="{root}transactions.html">Transactions</a></li><li><a href="{root}index.html#team">Team</a></li>'
+    pages = (f'<li><a href="{root}about.html">About</a></li><li><a href="{root}transactions.html">Transactions</a></li><li><a href="{root}index.html#team">Team</a></li>'
              f'<li><a href="{root}insights/index.html">Insights</a></li><li><a href="{root}index.html#library">CEO Library</a></li><li><a href="{root}index.html#form">Contact</a></li>')
     return f"""</main>
 <footer class="site-footer">
@@ -586,7 +597,16 @@ def report_extras(page, slug, root):
             f'or an offer or solicitation. Information is as of the date stated and has not been independently verified. '
             f'<a class="link-arrow" href="{root}disclosures.html">Read the Important Disclosures</a></p></aside>\n  </article>')
     assert page.count("</article>") == 1, "report page should have one <article>"
-    return page.replace("</article>", note, 1)
+    page = page.replace("</article>", note, 1)
+    rpt, sec = current_report(slug), SECTOR_BY_SLUG[slug]
+    author = next(({"@type": "Person", "name": n, "jobTitle": r, "worksFor": {"@id": SITE_URL + "#org"}} for n, r, i, _ in TEAM_LEAD if i == "jared-hardin"), None)
+    article = {"@type": "Report", "headline": rpt["title"], "name": rpt["title"], "description": rpt["summary"],
+               "datePublished": REPORT_DATE, "dateModified": REPORT_DATE, "inLanguage": "en-US", "url": abs_url(rpt["url"]),
+               "author": author, "publisher": {"@id": SITE_URL + "#org"}, "about": f"{sec['name']} mergers and acquisitions",
+               "image": SITE_URL + f"assets/img/social/{slug}-report.jpg",
+               "associatedMedia": {"@type": "MediaObject", "contentUrl": abs_url(rpt["pdf"]), "encodingFormat": "application/pdf"}}
+    return finalize(page, rpt["url"], crumbs=[("Middle Market", ""), ("Insights", "insights/index.html"), (rpt["title"], rpt["url"])],
+                    schema=[article], image=f"assets/img/social/{slug}-report.jpg")
 
 
 def industry_card(s, root):
@@ -621,13 +641,11 @@ def team_dialog(m, root):
     """Profile window for one team member (opened by clicking their card)."""
     did = f"tm-{m['img']}"
     phone, email = TEAM_CONTACT.get(m["img"], (None, None))
-    phone_html = (f'<a href="tel:{phone.replace("-", "")}">{e(phone)}</a>' if phone
-                  else f'<span class="placeholder">{PHONE_PLACEHOLDER}</span>')
-    email_html = (f'<a href="mailto:{email}">{e(email)}</a>' if email
-                  else f'<span class="placeholder">{EMAIL_PLACEHOLDER}</span>')
+    # Only real details are shown; anyone without them shows the team's main line instead of a placeholder.
+    phone_html = f'<a href="tel:{phone.replace("-", "")}">{e(phone)}</a>' if phone else f'<a href="{PHONE_HREF}">{e(PHONE)}</a>'
+    email_html = f'<a href="mailto:{email}">{e(email)}</a>' if email else f'<a href="mailto:{EMAIL}">{e(EMAIL)}</a>'
     li = TEAM_LINKEDIN.get(m["img"])
-    li_html = (f'<a href="{e(li)}" target="_blank" rel="noopener">Connect on LinkedIn</a>' if li
-               else f'<span class="placeholder">{LINKEDIN_PLACEHOLDER}</span>')
+    li_row = f'<li><small>LinkedIn</small><a href="{e(li)}" target="_blank" rel="noopener">Connect on LinkedIn</a></li>' if li else ""
     bio = "".join(f"<p>{e(x)}</p>" for x in m["bio"]) or f'<p>{e(m["name"].split()[0])} is part of the Benchmark International Middle Market team.</p>'
     return f"""<dialog class="team-dialog" id="{did}" aria-labelledby="{did}-name">
   <button type="button" class="team-close" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
@@ -636,9 +654,9 @@ def team_dialog(m, root):
     <div class="team-dialog-left">
       <img src="{root}assets/img/team/{m['img']}.jpg" alt="{e(m['name'])}" loading="lazy" width="480" height="480">
       <ul class="team-contact">
-        <li><small>Phone</small>{phone_html}</li>
-        <li><small>Email</small>{email_html}</li>
-        <li><small>LinkedIn</small>{li_html}</li>
+        <li><small>{"Phone" if phone else "Team Phone"}</small>{phone_html}</li>
+        <li><small>{"Email" if email else "Team Email"}</small>{email_html}</li>
+        {li_row}
       </ul>
     </div>
     <div class="team-dialog-right">{bio}</div>
@@ -662,7 +680,134 @@ def team_html(root, lead_only=False):
 
 
 
-def write(rel, html):
+def abs_url(rel):
+    """Absolute URL for a site-relative path ("" or "index.html" is the home page)."""
+    rel = "" if rel in ("", "index.html") else rel
+    return SITE_URL + rel
+
+
+def jsonld(obj):
+    return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + "</script>"
+
+
+def org_schema():
+    return {
+        "@type": ["Organization", "ProfessionalService"], "@id": SITE_URL + "#org", "name": ORG_NAME,
+        "alternateName": ["Benchmark International Middle Market team", "Middle Market team"],
+        "url": SITE_URL, "logo": SITE_URL + "assets/img/brand/benchmark-logo-black.svg",
+        "description": "Benchmark International's Middle Market team represents privately held companies across the United States "
+                       "with $50M to $500M in total enterprise value (TEV) in sell-side M&A, recapitalizations and growth partnerships.",
+        "parentOrganization": PARENT_ORG, "telephone": "+1-" + PHONE, "email": EMAIL,
+        "areaServed": {"@type": "Country", "name": "United States"},
+        "knowsAbout": ["Sell-side M&A", "Mergers and acquisitions advisory", "Recapitalizations", "Growth capital"] + [x["name"] for x in SECTORS],
+        "sameAs": [v[0] for k, v in SOCIAL.items() if k != "Email"],
+    }
+
+
+def breadcrumb_schema(crumbs):
+    return {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": n + 1, "name": name, "item": abs_url(rel)} for n, (name, rel) in enumerate(crumbs)]}
+
+
+def faq_schema(faqs):
+    return {"@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}
+
+
+def faq_html(faqs, title="Frequently Asked Questions", eyebrow="Questions Owners Ask"):
+    items = "".join(f'<details class="faq-item"><summary><h3>{e(q)}</h3></summary><p>{e(a)}</p></details>' for q, a in faqs)
+    return f"""<section class="section section--paper" id="faq">
+  <div class="wrap faq-wrap">
+    <div class="section-head reveal"><p class="eyebrow">{e(eyebrow)}</p><h2 class="h2">{e(title)}</h2></div>
+    <div class="faq">{items}</div>
+  </div>
+</section>
+"""
+
+
+def home_faqs():
+    svc = ", ".join(n.lower() for n, _ in SERVICES)
+    return [
+        ("What does Benchmark International's Middle Market team do?",
+         "Benchmark International's Middle Market team represents privately held companies across the United States in sell-side M&A, "
+         "recapitalizations and growth partnerships."),
+        ("What size companies does the Middle Market team advise?",
+         "The team serves privately held companies with a total enterprise value (TEV) of $50 million to $500 million."),
+        ("Which industries does the Middle Market team focus on?",
+         "Five industry groups: " + ", ".join(x["name"] for x in SECTORS[:-1]) + " and " + SECTORS[-1]["name"] + "."),
+        ("What services does the Middle Market team provide?", "Services include " + svc + "."),
+        ("How does working with Benchmark International start?",
+         "The first step is always a confidential conversation about your goals, your company and your options. A senior member of the "
+         "Middle Market team sets up a private conversation, then walks you through the paths available, from a partial recapitalization to a full sale."),
+        ("How large is Benchmark International?",
+         "Benchmark International is the #1 privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables, "
+         "with 15 offices across the Americas, Europe and Africa."),
+        ("How do I contact the Middle Market team?", f"Call {PHONE} or email {EMAIL}."),
+    ]
+
+
+def sector_faqs(s, buyers):
+    n = s["name"]
+    segs = [x[0] for x in s["segments"]]
+    faqs = [
+        (f"What types of {n.lower()} companies does Benchmark International advise?",
+         f"The Middle Market team advises {n.lower()} companies across {len(segs)} segments: " + ", ".join(segs[:-1]) + " and " + segs[-1] + "."),
+        (f"What do buyers value in a {n.lower()} business?",
+         " ".join(f"{h}: {d}" for h, d in s["value"])),
+        (f"How many {n.lower()} transactions has Benchmark International completed?",
+         f"Benchmark International lists {s['count']}+ completed transactions tagged to {n.lower()} industries on benchmarkintl.com, as of {AS_OF}."),
+    ]
+    if buyers:
+        faqs.append((f"Who is acquiring {n.lower()} companies?",
+                     f"Acquirers and investors in Benchmark International's selected {n.lower()} transactions include " + ", ".join(buyers[:8]) + "."))
+    if s.get("report"):
+        faqs.append((f"Is there a current {n.lower()} M&A market report?",
+                     f"Yes. The {s['report'][0]} covers deal activity, valuations and what buyers are paying for, and is free to read online or download as a PDF."))
+    return faqs
+
+
+def person_schema(m, root_abs=SITE_URL):
+    phone, email = TEAM_CONTACT.get(m["img"], (None, None))
+    p = {"@type": "Person", "name": m["name"], "jobTitle": m["role"], "worksFor": {"@id": SITE_URL + "#org"},
+         "image": f"{SITE_URL}assets/img/team/{m['img']}.jpg"}
+    if phone:
+        p["telephone"] = "+1-" + phone
+    if email:
+        p["email"] = email
+    if TEAM_LINKEDIN.get(m["img"]):
+        p["sameAs"] = [TEAM_LINKEDIN[m["img"]]]
+    return p
+
+
+def finalize(html, rel, crumbs=None, schema=None, image="assets/img/social/default.jpg"):
+    """Adds the canonical link, social preview tags and JSON-LD structured data to a finished page."""
+    url = abs_url(rel)
+    title = re.search(r"<title>(.*?)</title>", html, re.S).group(1)
+    desc = re.search(r'<meta name="description" content="([^"]*)"', html).group(1)
+    graph = [org_schema(), {"@type": "WebPage", "@id": url, "url": url, "name": title, "description": desc,
+                            "isPartOf": {"@type": "WebSite", "name": ORG_NAME, "url": SITE_URL},
+                            "publisher": {"@id": SITE_URL + "#org"}, "inLanguage": "en-US"}]
+    if crumbs:
+        graph.append(breadcrumb_schema(crumbs))
+    graph += schema or []
+    tags = (f'<link rel="canonical" href="{url}">\n<meta property="og:url" content="{url}">\n'
+            f'<meta property="og:site_name" content="{ORG_NAME}">\n'
+            f'<meta property="og:image" content="{SITE_URL}{image}">\n<meta property="og:image:width" content="1200">\n'
+            f'<meta property="og:image:height" content="630">\n<meta name="twitter:card" content="summary_large_image">\n'
+            f'<meta name="twitter:title" content="{title}">\n<meta name="twitter:description" content="{desc}">\n'
+            f'<meta name="twitter:image" content="{SITE_URL}{image}">\n'
+            + jsonld({"@context": "https://schema.org", "@graph": graph}) + "\n</head>")
+    assert html.count("</head>") == 1
+    return html.replace("</head>", tags, 1)
+
+
+SITEMAP = []   # (rel, priority) of every indexable page written this build
+
+
+def write(rel, html, crumbs=None, schema=None, image="assets/img/social/default.jpg", index=True):
+    if index:
+        html = finalize(html, rel, crumbs, schema, image)
+        SITEMAP.append(rel)
     path = os.path.join(SITE, rel)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
@@ -850,9 +995,12 @@ def page_home():
 </section>
 
 """
+    faqs = home_faqs()
+    html += faq_html(faqs)
     html += cta(root, form=True)
     html += footer(root)
-    write("index.html", html)
+    team = [person_schema(m) for m in team_members()]
+    write("index.html", html, crumbs=[("Middle Market", "")], schema=[faq_schema(faqs)] + team)
 
 
 def page_industries():
@@ -913,7 +1061,9 @@ def page_industries():
 """
     html += cta(root)
     html += footer(root)
-    write("industries/index.html", html)
+    items = {"@type": "ItemList", "name": "Middle Market industry groups", "itemListElement": [
+        {"@type": "ListItem", "position": k + 1, "name": x["name"], "url": abs_url(f"industries/{x['slug']}.html")} for k, x in enumerate(SECTORS)]}
+    write("industries/index.html", html, crumbs=[("Middle Market", ""), ("Industries", "industries/index.html")], schema=[items])
 
 
 def page_sector(i, s):
@@ -1082,6 +1232,7 @@ def page_sector(i, s):
 
 {feature}
 
+{{SECTOR_FAQ}}
 <section class="section">
   <div class="wrap">
     <div class="section-head center reveal"><p class="eyebrow">Your Deal Team</p><h2 class="h2">Leadership Team</h2></div>
@@ -1097,16 +1248,23 @@ def page_sector(i, s):
   </div>
 </section>
 """
+    faqs = sector_faqs(s, buyers)
+    html = html.replace("{SECTOR_FAQ}", faq_html(faqs, f"{s['name']} M&A: Common Questions"))
     html += cta(root, f"Considering a Transaction in {s['name']}?")
     html += footer(root)
-    write(f"industries/{s['slug']}.html", html)
+    service = {"@type": "Service", "name": f"{s['name']} M&A advisory", "serviceType": "Sell-side M&A advisory",
+               "provider": {"@id": SITE_URL + "#org"}, "areaServed": {"@type": "Country", "name": "United States"},
+               "description": s["tagline"]}
+    write(f"industries/{s['slug']}.html", html,
+          crumbs=[("Middle Market", ""), ("Industries", "industries/index.html"), (s["name"], f"industries/{s['slug']}.html")],
+          schema=[faq_schema(faqs), service], image=f"assets/img/social/{s['slug']}.jpg")
 
 
 def page_legacy(old, new):
-    write(f"industries/{old}.html", f"""<!DOCTYPE html>
+    write(f"industries/{old}.html", index=False, html=f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><title>Redirecting…</title>
 <meta name="robots" content="noindex">
-<link rel="canonical" href="{new}.html">
+<link rel="canonical" href="{abs_url(f'industries/{new}.html')}">
 <meta http-equiv="refresh" content="0; url={new}.html">
 </head><body><p>This page has moved to <a href="{new}.html">{e(SECTOR_BY_SLUG[new]['name'])}</a>.</p></body></html>
 """)
@@ -1144,7 +1302,7 @@ def page_transactions():
 """
     html += cta(root)
     html += footer(root)
-    write("transactions.html", html)
+    write("transactions.html", html, crumbs=[("Middle Market", ""), ("Transactions", "transactions.html")])
 
 
 def insight_card(i, root, current):
@@ -1222,7 +1380,9 @@ def page_insights():
 """
     html += cta(root, "Want to Talk Through What This Means for Your Business?")
     html += footer(root)
-    write("insights/index.html", html)
+    reports = {"@type": "ItemList", "name": "Middle Market sector reports", "itemListElement": [
+        {"@type": "ListItem", "position": k + 1, "name": i["title"], "url": abs_url(i["url"])} for k, i in enumerate(INSIGHTS)]}
+    write("insights/index.html", html, crumbs=[("Middle Market", ""), ("Insights", "insights/index.html")], schema=[reports])
 
 
 def page_disclosures():
@@ -1250,7 +1410,101 @@ def page_disclosures():
 </section>
 """
     html += footer(root)
-    write("disclosures.html", html)
+    write("disclosures.html", html, crumbs=[("Middle Market", ""), ("Important Disclosures", "disclosures.html")])
+
+
+def page_about():
+    """A single, plain fact sheet: the page AI assistants and search engines can cite for who the team is."""
+    root = ""
+    lead = ", ".join(f"{n} ({r})" for n, r, _, _ in TEAM_LEAD)
+    support = ", ".join(f"{n} ({r})" for n, r, _ in TEAM_SUPPORT)
+    facts = [
+        ("Who we are", "Benchmark International's Middle Market team, part of Benchmark International."),
+        ("What we do", "Represent privately held companies across the United States in sell-side M&A, recapitalizations and growth partnerships."),
+        ("Company size served", "$50 million to $500 million in total enterprise value (TEV)."),
+        ("Industries", ", ".join(x["name"] for x in SECTORS) + "."),
+        ("Services", ", ".join(n for n, _ in SERVICES) + "."),
+        ("Firm", "Benchmark International is the #1 privately owned sell-side M&A advisor worldwide (PitchBook Q2 2026 Global League Tables), with 15 offices across the Americas, Europe and Africa."),
+        ("Leadership", lead + "."),
+        ("Deal team", support + "."),
+        ("Research", "Quarterly M&A sector reports for each industry, published on the Insights page."),
+        ("Contact", f"{PHONE} | {EMAIL}"),
+    ]
+    rows = "".join(f"<tr><th scope=\"row\">{e(k)}</th><td>{e(v)}</td></tr>" for k, v in facts)
+    sector_links = "".join(f'<li><a href="industries/{x["slug"]}.html">{e(x["name"])}</a>: {e(x["short"])}</li>' for x in SECTORS)
+    report_links = "".join(f'<li><a href="{i["url"]}">{e(i["title"])}</a></li>' for i in INSIGHTS)
+    faqs = home_faqs()
+    html = head("About | Middle Market | Benchmark International",
+                "Facts about Benchmark International's Middle Market team: who we serve, the $50M to $500M TEV range, five industries, services, team and contact details.", root)
+    html += header(root)
+    html += f"""
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Middle Market</a> / About</div>
+    <p class="eyebrow">At a Glance</p>
+    <h1 class="display">About the Middle Market Team</h1>
+    <p class="lead">Benchmark International's Middle Market team represents privately held companies across the United States with $50M to $500M in total enterprise value in sell-side M&amp;A, recapitalizations and growth partnerships.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap about-wrap">
+    <h2 class="h2">Key Facts</h2>
+    <table class="facts">{rows}</table>
+    <h2 class="h2">Industries We Cover</h2>
+    <ul class="about-list">{sector_links}</ul>
+    <h2 class="h2">Current Sector Reports</h2>
+    <ul class="about-list">{report_links}</ul>
+    <p class="note">Information as of {AS_OF}. See the <a href="disclosures.html">Important Disclosures</a>.</p>
+  </div>
+</section>
+"""
+    html += faq_html(faqs)
+    html += cta(root)
+    html += footer(root)
+    write("about.html", html, crumbs=[("Middle Market", ""), ("About", "about.html")], schema=[faq_schema(faqs)])
+
+
+def write_discovery_files():
+    """sitemap.xml, robots.txt and llms.txt for search engines and AI assistants (absolute URLs from SITE_URL)."""
+    pages = list(dict.fromkeys(SITEMAP + [i["url"] for i in INSIGHTS]))
+    prio = lambda r: "1.0" if r == "index.html" else "0.8" if r.startswith(("industries/", "insights/")) or r == "about.html" else "0.6"
+    urls = "".join(f"  <url><loc>{abs_url(r)}</loc><lastmod>{SITE_UPDATED}</lastmod><priority>{prio(r)}</priority></url>\n" for r in pages)
+    sitemap = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n'
+    robots = ("# Search engines and AI assistants are welcome to read and cite this site.\n"
+              "User-agent: *\nAllow: /\nDisallow: " + urlparse(SITE_URL).path + "_build/\n\n"
+              + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "PerplexityBot", "Google-Extended", "Applebot-Extended", "Bingbot"))
+              + f"Sitemap: {SITE_URL}sitemap.xml\n")
+    sec = "\n".join(f"- [{x['name']}]({abs_url('industries/' + x['slug'] + '.html')}): {x['short']}" for x in SECTORS)
+    rep = "\n".join(f"- [{i['title']}]({abs_url(i['url'])}) ([PDF]({abs_url(i['pdf'])})): {i['summary']}" for i in INSIGHTS)
+    faqs = "\n".join(f"- **{q}** {a}" for q, a in home_faqs())
+    llms = f"""# {ORG_NAME}
+
+> Benchmark International's Middle Market team represents privately held companies across the United States with $50M to $500M in total enterprise value (TEV) in sell-side M&A, recapitalizations and growth partnerships, across five industries: {", ".join(x["name"] for x in SECTORS)}.
+
+Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark International (https://www.benchmarkintl.com/).
+
+## Key pages
+- [Home]({SITE_URL}): overview, team, client stories and contact form
+- [About]({abs_url('about.html')}): key facts about the Middle Market team
+- [Industries]({abs_url('industries/index.html')}): the five industry groups
+- [Transactions]({abs_url('transactions.html')}): selected completed transactions
+- [Insights]({abs_url('insights/index.html')}): quarterly M&A sector reports
+- [Important Disclosures]({abs_url('disclosures.html')})
+
+## Industries
+{sec}
+
+## Sector reports
+{rep}
+
+## Common questions
+{faqs}
+"""
+    for name, body in (("sitemap.xml", sitemap), ("robots.txt", robots), ("llms.txt", llms)):
+        with open(os.path.join(SITE, name), "w", encoding="utf-8") as f:
+            f.write(body)
+        print("wrote", name)
 
 
 def page_report_redirects():
@@ -1258,10 +1512,10 @@ def page_report_redirects():
         if not i.get("legacy"):
             continue
         target = f"../{i['url']}"
-        write(f"reports/{i['legacy']}.html", f"""<!DOCTYPE html>
+        write(f"reports/{i['legacy']}.html", index=False, html=f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><title>Redirecting…</title>
 <meta name="robots" content="noindex">
-<link rel="canonical" href="{target}">
+<link rel="canonical" href="{abs_url(i['url'])}">
 <meta http-equiv="refresh" content="0; url={target}">
 </head><body><p>This report has moved to <a href="{target}">{e(i['title'])}</a>.</p></body></html>
 """)
@@ -1278,3 +1532,5 @@ if __name__ == "__main__":
     page_insights()
     page_report_redirects()
     page_disclosures()
+    page_about()
+    write_discovery_files()
