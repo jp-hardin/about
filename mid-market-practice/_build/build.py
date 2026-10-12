@@ -305,12 +305,13 @@ TEAM_LEAD = [
 ]
 # Team contact details (phone, email); use None for a missing value. Anything missing shows the team line or team email.
 TEAM_CONTACT = {
-    "jordan-houtz": (None, "jhoutz@benchmarkintl.com"),
+    "jordan-houtz": ("813-771-6675", "jhoutz@benchmarkintl.com"),
     "jared-hardin": ("813-771-6675", "j.hardin@benchmarkintl.com"),
     "alex-zykov": ("813-898-2372", "azykov@benchmarkintl.com"),
     "shannon-hess": ("813-898-2397", "hess@benchmarkintl.com"),
     "sunny-garten": ("813-898-2357", "garten@benchmarkintl.com"),
     "michael-wynn": ("813-384-4972", "mwynn@benchmarkintl.com"),
+    "jason-lisiak": (None, "jlisiak@benchmarkintl.com"),
     "alexandra-barr": ("813-387-6046", "abarr@benchmarkintl.com"),
     "josiah-warren": ("813-898-2398", "jwarren@benchmarkintl.com"),
     "luke-ernst": ("813-771-6318", "lernst@benchmarkintl.com"),
@@ -322,6 +323,8 @@ TEAM_LINKEDIN = {
     "alex-zykov": "https://www.linkedin.com/in/alex-zykov-787646b",
     "shannon-hess": "https://www.linkedin.com/in/shannon-l-hess",
     "sunny-garten": "https://www.linkedin.com/in/sunny-yang-garten-28a11010",
+    "michael-wynn": "https://www.linkedin.com/in/michael-wynn-009",
+    "jason-lisiak": "https://www.linkedin.com/in/jplisiak",
     "alexandra-barr": "https://www.linkedin.com/in/alexandra-barr-400531104",
     "josiah-warren": "https://www.linkedin.com/in/josiah-warren",
     "luke-ernst": "https://www.linkedin.com/in/lukesernst",
