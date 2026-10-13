@@ -25,7 +25,7 @@ def chart():
     axis = ''.join(f'<span style="left:{pc(v)}">{v}x</span>' for v in (0, 10, 20, 30, 40))
     return ('<div class="mchart" role="img" aria-label="Enterprise value to trailing EBITDA for listed companies in each focus area, with the median marked">'
             + ''.join(rows) + f'<div class="mrow mrow--axis"><div class="mlabel"></div><div class="mtrack maxis">{axis}</div></div>'
-            '<p class="mkey"><span><i class="dot"></i> One listed company</span><span><i class="kmed"></i> Median</span><span><i class="kavg"></i> Private mid-market average, all industries, 7.0x</span></p></div>')
+            '<p class="mkey"><span><i class="dot"></i> One listed company</span><span><i class="kmed"></i> Median</span><span><i class="kavg"></i> Private middle-market average, all industries, 7.0x</span></p></div>')
 
 def clean(h):
     h = re.sub(r'<img\b[^>]*>', '', h)

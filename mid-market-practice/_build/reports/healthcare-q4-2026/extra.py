@@ -31,7 +31,7 @@ def NOTE(t):
 IMPL = '150px 1fr 1fr'
 
 def add_policy():
-    b = EYE('Policy and price') + H2('How reimbursement and trade policy reach the value of an individual business') + P(
+    b = EYE('Policy and Price') + H2('How reimbursement and trade policy reach the value of an individual business') + P(
         'Program-wide payment updates are the starting point for a buyer&#39;s analysis. Buyers then model the company&#39;s own payer contracts, billing codes, service mix and geography, because a Medicare Advantage plan payment update reaches providers only through their individual contracts and an aggregate home health estimate differs from the rate change at any one agency.'
     ) + dtable(IMPL, ['Exposure', 'How buyers model it', 'What an owner can prepare'], [
         ['Physician services', 'Buyers model the proposed conversion-factor change together with code-level relative value units, site-of-service rules and commercial contracts, and they apply the higher factor only to clinicians who qualify under an advanced alternative payment model', 'A revenue bridge by code and payer that shows reimbursement, volume and wage sensitivities separately'],
@@ -41,12 +41,12 @@ def add_policy():
     ]) + H3('Pharmaceutical tariffs in detail') + P(
         f'The April 2 proclamation sets a 100% default rate on covered patented products and ingredients, effective July 31 for the companies named in Annex III and September 29 for others. Approved onshoring treatment carries a 20% rate that rises to 100% on April 2, 2030. Specified products from the European Union, Japan, South Korea, Switzerland and Liechtenstein receive 15% unless a lower rate applies, and the United Kingdom framework starts at 10%, with any reduction contingent on a further agreement and notice. Companies with qualifying most-favored-nation pricing and onshoring arrangements pay zero through January 20, 2029, and further conditional product exclusions apply. Generics, including biosimilars, remain excluded ({L("White House proclamation, clauses 3 to 6", U["whp"])}).'
     ) + P('In an acquisition, the importer&#39;s eligibility and agreement terms, including any change-of-control provisions, determine whether a reduced rate carries over to the new owner, and buyers will ask to see the agreement itself.'
-    ) + NOTE('Proposed rules remain proposed as of October 5, 2026.')
-    page('X-policy', 'Policy and price', b, 0)
+    ) + NOTE('Rules described as proposed had not been finalized as of October 5, 2026.')
+    page('X-policy', 'Policy and Price', b, 0)
 
 def add_prov_impl():
     b = EYE('Provider Services: what this means for buyers and owners') + H2('Each care model is valued on different evidence') + dtable(IMPL, ['Care model', 'What supports a premium', 'What buyers test, and who is buying'], [
-        ['Physician practice management and eye care', 'Clinician retention, organic visit growth, ancillary earnings, transferable contracts and a compliant ownership structure', 'Earnings and compensation by provider after closing, referral concentration and state ownership restrictions. Buyers include specialty platforms and MyEyeDr.'],
+        ['Physician practice management and eye care', 'Clinician retention, organic visit growth, ancillary earnings, transferable contracts and a compliant ownership structure', 'Earnings and compensation by provider after closing, referral concentration and state ownership restrictions. Buyers include MyEyeDr. and specialty platforms'],
         ['Surgery centers', 'Case mix, surgeon commitment, block utilization, payer rates and repeatable local density', 'Surgeon and referral concentration, facility investment and ownership economics. Buyers include health systems and specialist surgery center operators'],
         ['Urgent and occupational care', 'Site-level contribution, density of access points, employer contracts and same-site demand', 'The ramp of new sites, staffing coverage, seasonality and episodic volumes. Buyers include HCA, Concentra and regional operators'],
         ['Behavioral health and applied behavior analysis', 'Documented outcomes, authorized capacity, clinician retention and disciplined utilization', 'Medical necessity, coding, authorization denials and Medicaid exposure. Buyers include specialist strategic and sponsor-backed platforms'],
@@ -55,8 +55,8 @@ def add_prov_impl():
         ['Hospice', 'Clinical quality, referral breadth and stable operating leadership', 'Eligibility documentation, length of stay, cap exposure and survey history. Buyers include specialist hospice and home care platforms'],
         ['Personal care', 'Contract durability, caregiver capacity, density and alignment of wages with rates', 'State Medicaid rates, authorizations and labor availability. Buyers include Addus and regional care platforms'],
     ]) + H3('What this means for owners') + P(
-        'A practice with $4 million of EBITDA, diversified referrals, durable clinician coverage and proven economics at new sites can attract interest as a platform. The same EBITDA produced largely by the founder, or resting on one fragile reimbursement stream, is more likely to be valued as an add-on or to carry contingent consideration. Owners who assemble provider, site, payer and referral schedules before setting price expectations enter those conversations better prepared, and a commercially insured patient mix supports value when realized rates, collections and retention support the earnings.'
-    ) + NOTE('The buyers named are examples drawn from the results and transactions on the preceding pages.')
+        'A practice with $4 million of EBITDA, diversified referrals, durable clinician coverage and proven economics at new sites can attract interest as a platform. The same EBITDA produced largely by the founder, or resting on one fragile reimbursement stream, is more likely to be valued as an add-on or to carry contingent consideration. Owners who assemble provider, site, payer and referral schedules before setting price expectations enter those conversations better prepared. A commercially insured patient mix adds value when realized rates, collections and retention bear out the earnings.'
+    ) + NOTE('The buyers named are examples drawn from the results and transactions described above.')
     page('X-prov', 'Provider Services: buyers and owners', b, 0)
 
 def add_ls_impl():
@@ -71,7 +71,7 @@ def add_ls_impl():
         'A recurring consumables company earns its premium by demonstrating repeat orders, customer qualification and durable gross margin. A research business demonstrates executable backlog and continuity of investigators or technical staff, and a laboratory bridges billed revenue to cash by code and payer. Presenting the business on the evidence that fits its model serves an owner better than a single life sciences median, which conceals the reason a buyer would pay a premium.'
     ) + H3('Exposures to resolve before going to market') + P(
         f'Laboratory owners can model the scheduled 2027 reductions to the Clinical Laboratory Fee Schedule test by test, which gives a more accurate result than a 15% cut applied to total revenue ({L("CMS proposed rule", U["pfsf"])}). Research businesses can distinguish funded awards from proposals and cancellable work. Manufacturers can quantify the investment needed to fulfill committed production, because buyers value contracted earnings and give little credit for unused capacity.'
-    ) + NOTE('The buyers named are examples drawn from the results and transactions on the preceding pages.')
+    ) + NOTE('The buyers named are examples drawn from the results and transactions described above.')
     page('X-ls', 'Life Sciences & Diagnostics: buyers and owners', b, 0)
 
 def add_mp_impl():
@@ -85,8 +85,8 @@ def add_mp_impl():
     ]) + H3('What this means for owners') + P(
         'A manufacturer substantiates its regulatory status, quality history and the durability of customer qualification. A distributor shows contractual access, retention and cash conversion after inventory investment. Both benefit from identifying tariff exposure and presenting sustainable earnings after one-time refunds or reversals, because buyers will discount high recurring revenue when margins, working capital or customer access are fragile.'
     ) + H3('Reading the Owens & Minor transaction') + P(
-        f'The $375 million cash payment was accompanied by a 5% retained interest and preferred equity economics, and the seller also kept specified tax assets ({L("Owens & Minor announcement", U["omipr"])}). A comparison across sub-sectors therefore requires the full consideration, comparable EBITDA, debt, the scope acquired and normalized cash conversion.'
-    ) + NOTE('The buyers named are examples drawn from the results and transactions on the preceding pages.')
+        f'As the Owens & Minor terms show, a comparison across sub-sectors requires the full consideration, comparable EBITDA, debt, the scope acquired and normalized cash conversion.'
+    ) + NOTE('The buyers named are examples drawn from the results and transactions described above.')
     page('X-mp', 'Medical Products & Distribution: buyers and owners', b, 0)
 
 def add_ph_impl():
@@ -101,7 +101,7 @@ def add_ph_impl():
         'Pharmacy revenue growth can reflect drug prices or an expensive therapy mix without producing equivalent gross profit or cash, and staffing revenue can recover while wage spreads remain weak. Owners in these businesses are best served by leading with a bridge from revenue to gross profit, EBITDA and cash, by showing contract retention, reimbursement lag and working capital needs, and by separating recurring specialist demand from strike, crisis and pandemic activity.'
     ) + H3('Physician alignment is part of the price') + P(
         f'The Specialty Alliance acquired Solaris Health in November 2025 for approximately $1.9 billion in cash, and Cardinal Health owned approximately 76% of the alliance after closing. The alliance also issued units to physicians and management, and Cardinal&#39;s filing accounts for part of that value as compensation after the combination, so the units cannot simply be added to the cash price to estimate enterprise value ({L("Cardinal Health Form 10-K, Note 2", U["cah10k"])}).'
-    ) + NOTE('The buyers named are examples drawn from the results and transactions on the preceding pages.')
+    ) + NOTE('The buyers named are examples drawn from the results and transactions described above.')
     page('X-ph', 'Pharmacy & Healthcare Services: buyers and owners', b, 0)
 
 def add_bridge():
