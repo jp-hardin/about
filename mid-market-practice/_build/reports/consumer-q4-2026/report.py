@@ -7,7 +7,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 SLUG = 'consumer-q4-2026'
 TITLE = 'Consumer Q4 2026 M&A Sector Report'
 AS_OF = 'October 5, 2026'
-BYLINE = 'October 2026 - Jared Hardin | Managing Director | Benchmark International'
+BYLINE = 'October 2026 | Jared Hardin | Managing Director | Benchmark International'
 NOTE = (f'Information as of {AS_OF}. Public-company multiples are reference points, '
         'and a private company&#39;s price depends on the business itself.')
 
@@ -28,7 +28,7 @@ SECTION_IDS = {
     'Foodservice & Distribution': 'foodservice',
     'Consumer Services & Retail': 'consumer-services',
     'Selected Transactions': 'transactions',
-    "What We're Seeing in Consumer": 'market',
+    "What We're Seeing in the Consumer Sector": 'market',
     'What Buyers Value': 'value',
     'Who Is Buying': 'buyers',
     'For Owners and Their Advisors': 'owners',
@@ -38,7 +38,7 @@ SEGMENTS = ['food-beverage', 'consumer-brands', 'foodservice', 'consumer-service
 BANDS = {
     'food-beverage': ('rpt-bread', 'Loaves of rye bread stacked on wooden trays', [
         ('42,708', 'Food and beverage processing establishments in the United States'),
-        ('21.3%', 'Private label share of dollar sales in 2025'),
+        ('21.3%', 'Private-label share of dollar sales in 2025'),
         ('14.6x', 'Multiple of operating income Sysco stated for Jetro Restaurant Depot')]),
     'consumer-brands': ('rpt-beauty', 'Pressed powder compacts on display in a cosmetics store', [
         ('7%', 'Growth in both prestige and mass beauty sales in the first half of 2026'),

@@ -192,7 +192,7 @@ contact = f'''<div class="full" style="break-before: page">
 <div class="cinzel" style="position: absolute; right: 48px; top: 30px; font-size: 12px; line-height: 20px; letter-spacing: 0.8px; color: #6D7681">CONSUMER &middot; Q4 2026</div>
 <div style="position: absolute; left: 48px; top: 250px; width: 720px; display: flex; flex-direction: column; gap: 20px">
 <div class="eye">Benchmark International Middle Market</div>
-<h2>Considering a transaction in consumer?</h2>
+<h2>Considering a transaction in the consumer sector?</h2>
 <p style="margin: 0; max-width: 560px">Our first step is always a confidential conversation exploring your goals, your company and your options.</p>
 <div style="margin-top: 14px; display: flex; align-items: center; gap: 22px; padding: 22px 0; border-top: 1px solid #B68757; border-bottom: 1px solid #B68757">
 <img src="{AST}/team/jared-hardin.jpg" alt="{C["name"]}" style="display: block; width: 92px; height: 92px; border-radius: 50%; object-fit: cover">

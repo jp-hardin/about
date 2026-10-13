@@ -85,7 +85,7 @@ dl = ('<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="curre
       'stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>')
 stat_html = ''.join(f'<div class="stat"><div class="stat-num">{a}</div><div class="stat-label">{b}</div></div>' for a, b in R.FIGS)
 desc = ('Q4 2026 M&A sector report for food and beverage, consumer brands and products, foodservice and distribution, '
-        'and consumer services and retail, from the Benchmark International Middle Market team.')
+        'and consumer services and retail, from Benchmark International\'s Middle Market team.')
 page = site.head(R.TITLE, desc, root).replace('</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n</head>')
 page += site.header(root, 'industries')
 page += f'''
@@ -118,7 +118,7 @@ page += f'''
     <aside class="rauthor">
       <img src="{root}assets/img/team/jared-hardin.jpg" alt="{C["name"]}" width="120" height="120" loading="lazy">
       <div>
-        <p class="eyebrow">Considering a transaction in consumer?</p>
+        <p class="eyebrow">Considering a transaction in the consumer sector?</p>
         <h3>{C["name"]}</h3>
         <p class="role">{C["role"]}, {C["firm"]}</p>
         <p><a href="tel:{C["tel"]}">{C["phone"]}</a> &nbsp;|&nbsp; <a href="mailto:{C["email"]}">{C["email"]}</a></p>
