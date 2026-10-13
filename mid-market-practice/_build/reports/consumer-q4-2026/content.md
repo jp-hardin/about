@@ -39,10 +39,10 @@ Benchmark International's consumer practice covers four segments, and its record
 
 | Segment | What it covers | Benchmark International: closed since January 2025 | Live engagements |
 | --- | --- | --- | --- |
-| Food & Beverage | Producers and distributors of food and beverage products, including bakery, dairy, seafood, supplements and confectionery | 4 | 27 |
+| Food & Beverage | Producers and distributors of food and beverage products, including bakery, dairy, seafood, supplements and confectionery, together with restaurant and catering groups | 5 | 36 |
 | Consumer Brands & Products | Branded products sold through several channels, including outdoor and recreation, beauty and wellness, sporting goods and specialty manufacturing | 2 | 12 |
-| Foodservice & Distribution | Equipment, parts and supply distributors serving restaurants, hospitality and retail, together with sales agencies for consumer packaged goods | 6 | 5 |
-| Consumer Services & Retail | Multi-site and route-based consumer services such as car wash, collision repair, equipment rental and home services, together with restaurant and retail operators | 20 | 66 |
+| Foodservice & Distribution | Restaurant equipment, parts, supplies and service providers, distributors serving restaurants, hospitality and retail, and sales agencies for consumer packaged goods | 6 | 5 |
+| Consumer Services & Retail | Multi-site and route-based consumer services such as car wash, collision repair, equipment rental and home services, together with retail operators | 19 | 57 |
 | Total |  | 32 | 110 |
 
 ### Food & Beverage
@@ -88,10 +88,13 @@ Sysco agreed on March 30 to acquire Jetro Restaurant Depot for an enterprise val
 | Jan 28 | Western Smokehouse Partners (platform) | [Junior's Smokehouse](https://www.foodbusinessnews.net/articles/29695-western-smokehouse-buys-juniors-smokehouse) | Jerky and sausage; El Campo, TX | Private |
 | Jan 27 | Rich Products (family-owned strategic) | [Great Kitchens Food Co.](https://www.foodbusinessnews.net/articles/29678-rich-products-acquires-great-kitchens-food-co) | Take-and-bake pizza; IL and MA | Brynwood Partners |
 | Jan 21 | Highlander Partners (private equity) | [Tapatio](https://www.foodbusinessnews.net/articles/29649-highlander-partners-spices-up-portfolio-with-tapatio) | Hot sauce | Saavedra family, retains a minority |
+| Jan 16 (closed) | TriArtisan, Treville and Yadav Enterprises (private equity) | [Denny's](https://www.ad-hoc-news.de/boerse/news/nebenwerte/denny-s-stock-stays-private-after-620-million-deal/70038285) | Family dining chain | $620 million take-private |
 
 Founder-owned food companies are drawing bids from family-owned strategics such as Rich Products, Sargento and C.H. Guenther, bakery consolidators such as Rise and Sweetmore, private equity firms building platforms in sauces, snacks, ingredients and confectionery, European strategics using acquisitions to enter the United States, and distributors adding geography and product categories.
 
-Benchmark International has closed four transactions in its Food & Beverage segment since January 2025 and has 27 live engagements there. The live engagements include meat, dairy, produce and seafood processors, bakeries and snack producers, coffee roasters, wineries, breweries and a cidery, food and wine distributors, and nutrition and supplement brands.
+**Restaurants.** Denny's was [taken private for $620 million](https://www.ad-hoc-news.de/boerse/news/nebenwerte/denny-s-stock-stays-private-after-620-million-deal/70038285) in January, and franchisee bankruptcies have continued through the year.
+
+Benchmark International has closed five transactions in its Food & Beverage segment since January 2025 and has 36 live engagements there. The live engagements include meat, dairy, produce and seafood processors, bakeries and snack producers, coffee roasters, wineries, breweries and a cidery, food and wine distributors, nutrition and supplement brands, and nine restaurant and catering groups.
 
 ### Consumer Brands & Products
 
@@ -188,7 +191,7 @@ Multi-site and route-based consumer services drew multi-billion-dollar financial
 
 Residential demand softened through the summer: Rentokil cited weaker residential lead flow late in the second quarter and into July, Harvard's Joint Center for Housing Studies projects [growth in home improvement and repair spending slowing to 0.5% by the second quarter of 2027](https://www.jchs.harvard.edu/press-releases/remodeling-spending-poised-further-slowdown), and existing-home sales are running near 4 million a year with the 30-year mortgage rate at 7.28%. Wrench Group moved $1.3 billion of debt to private credit lenders in September 2025 at a spread that [priced 75 basis points wider](https://www.privateequitywire.co.uk/blue-owl-and-oak-hill-lead-wrench-group-1-3bn-private-credit-deal/) than the loan it replaced.
 
-**Restaurants and retail.** Denny's was [taken private for $620 million](https://www.ad-hoc-news.de/boerse/news/nebenwerte/denny-s-stock-stays-private-after-620-million-deal/70038285) in January, and franchisee bankruptcies have continued through the year. Retail bankruptcies in 2026 include [Saks Global, Francesca's, QVC Group and the North American operator of Eddie Bauer](https://finance.yahoo.com/markets/stocks/articles/6-major-retail-bankruptcy-cases-181549307.html), and [Sleep Number filed in June](https://www.hometextilestoday.com/financial/sleep-number-files-chapter-11-enters-agreement-to-sell-company-to-sleep-country-canada/). Store closures are running well below 2025 levels, with Coresight counting [3,321 announced closures through mid-year against 5,941](https://www.retailtouchpoints.com/?p=621322) a year earlier, and sales continue to move online, where nonstore retailers grew 9.9% year over year in August against 4.3% for clothing stores.
+**Retail.** Retail bankruptcies in 2026 include [Saks Global, Francesca's, QVC Group and the North American operator of Eddie Bauer](https://finance.yahoo.com/markets/stocks/articles/6-major-retail-bankruptcy-cases-181549307.html), and [Sleep Number filed in June](https://www.hometextilestoday.com/financial/sleep-number-files-chapter-11-enters-agreement-to-sell-company-to-sleep-country-canada/). Store closures are running well below 2025 levels, with Coresight counting [3,321 announced closures through mid-year against 5,941](https://www.retailtouchpoints.com/?p=621322) a year earlier, and sales continue to move online, where nonstore retailers grew 9.9% year over year in August against 4.3% for clothing stores.
 
 | Date | Buyer (type) | Target | Business | Terms |
 | --- | --- | --- | --- | --- |
@@ -205,12 +208,11 @@ Residential demand softened through the summer: Rentokil cited weaker residentia
 | Feb 18, 2026 | Blackstone (private equity) | [Champions Group](https://finance.yahoo.com/news/blackstone-expands-essential-home-services-221544542.html) | Residential HVAC and plumbing platform | About $2.5 billion |
 | Feb 17, 2026 | Apex Tent and Party (strategic) | [On Call Event Rentals](https://intentsmag.com/2026/02/17/apex-acquires-on-call-event/) | Event rental; Orange County, CA | Not disclosed |
 | Jan 23, 2026 | SPS PoolCare (Storr Group) | [Pool Troopers](https://www.prnewswire.com/news-releases/nations-largest-pool-service-company-sps-poolcare-acquires-leading-pe-backed-competitor-302669059.html) | Residential pool service | Not disclosed; 191st acquisition since 2021 |
-| Jan 16, 2026 (closed) | TriArtisan, Treville and Yadav Enterprises | [Denny's](https://www.ad-hoc-news.de/boerse/news/nebenwerte/denny-s-stock-stays-private-after-620-million-deal/70038285) | Family dining chain | $620 million take-private |
 | Jan 9, 2026 (closed) | Boyd Group (public strategic) | [Joe Hudson's Collision Center](https://www.sec.gov/Archives/edgar/data/2091467/000119312526008673/d56555dex991.htm) | 258 collision centers; Southeast | About US$1.3 billion |
 | Jan 2026 | The Riverside Company (private equity) | [Certified Collision Group](https://www.autobodynews.com/news/riverside-company-acquires-certified-collision-group-from-incline-equity-partners) | Network of independent collision shops | From Incline Equity Partners |
 | Dec 8, 2025 | Classic Collision (strategic) | [Kendrick Paint & Body](https://www.fenderbender.com/news/latest-news/news/55336744/classic-collision-kendrick-paint-body-bought-by-classic-collision) | Nine collision centers; GA and SC; family-owned since 1952 | Not disclosed |
 
-Benchmark International has closed 20 transactions in its Consumer Services & Retail segment since January 2025 and has 66 live engagements there. The live engagements comprise 35 home services contractors, 12 specialty retailers and 9 restaurant and catering groups, with fitness studios, event rental companies, an auto body shop and a pet urgent care business making up the remainder.
+Benchmark International has closed 19 transactions in its Consumer Services & Retail segment since January 2025 and has 57 live engagements there. The live engagements comprise 35 home services contractors and 12 specialty retailers, with fitness studios, event rental companies, an auto body shop and a pet urgent care business making up the remainder.
 
 ## Selected Transactions
 
@@ -230,7 +232,7 @@ Seventeen of the 32 consumer transactions Benchmark International has closed sin
 | Dec 2025 | [Arocam](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-arocam-inc-and-innova-capital/) | Customized youth sports apparel; Taunton, MA | Innova Capital, a private equity firm based in Warsaw | Consumer Brands & Products |
 | Dec 2025 | [Stirling Food Systems](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-a-transaction-between-stirling-food-systems-inc-and-greasecycle-llc/) | Bulk cooking oil distribution and collection; Ocala, FL | GreaseCycle, a strategic acquirer | Foodservice & Distribution |
 | Jul 2025 | [Affordable Garage Door](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-affordable-garage-doors-inc-and-asap-garage-door-repair/) | Garage door sales, installation and repair; Indiana and Illinois | A.S.A.P. Garage Door Repair, a Centerfield Capital Partners portfolio company | Consumer Services & Retail |
-| Jun 2025 | [GSM Wings](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-gsm-wings-llc-and-gpc-investments/) (BreWingZ) | Sports bar and grill restaurant group; Texas | GPC Investments, a private holding company | Consumer Services & Retail |
+| Jun 2025 | [GSM Wings](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-gsm-wings-llc-and-gpc-investments/) (BreWingZ) | Sports bar and grill restaurant group; Texas | GPC Investments, a private holding company | Food & Beverage |
 | Jun 2025 | [Southern Pool Designs](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-southern-pool-designs-inc-and-an-individual-investor/) | Custom pool design and construction; Central Florida | An individual investor | Consumer Services & Retail |
 | Jun 2025 | [Smart Buffet Ware](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-smart-buffet-ware-llc-and-front-of-house-worldwide/) | Commercial buffet and food presentation equipment; Daphne, AL | Front of House Worldwide, a strategic acquirer | Foodservice & Distribution |
 | Mar 2025 | [Nova Seafood](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-nova-seafood-ltd-and-highwood-harbor-llc/) | Seafood importer, processor and distributor; Portland, ME | Highwood Harbor, led by a seafood industry entrepreneur | Food & Beverage |
