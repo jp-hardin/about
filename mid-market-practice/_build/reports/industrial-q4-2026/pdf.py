@@ -115,8 +115,8 @@ secs, toc, n = [], [], 0
 for g in order:
     n += 1
     if g == 'contact':
-        toc.append(f'<li><span>{n:02d}</span><a href="#contact">Considering a Transaction in Industrial?</a></li>')
-        secs.append(f'''<section class="rsec contact" id="contact"><div class="rsec-head"><span class="rsec-num">{n:02d}</span><h2>Considering a Transaction in Industrial?</h2></div>
+        toc.append(f'<li><span>{n:02d}</span><a href="#contact">Considering a Transaction in the Industrial Sector?</a></li>')
+        secs.append(f'''<section class="rsec contact" id="contact"><div class="rsec-head"><span class="rsec-num">{n:02d}</span><h2>Considering a Transaction in the Industrial Sector?</h2></div>
 <p class="rlead">The first step is a confidential conversation about your goals, your company and your options, with no pressure and no commitment.</p>
 <div class="card"><img src="{IMG}/team/jared-hardin.jpg" alt="Jared Hardin"><div><h3>Jared Hardin</h3><p class="role">Managing Director, Benchmark International</p>
 <p><a href="tel:8137716675">813-771-6675</a> &nbsp;|&nbsp; <a href="mailto:j.hardin@benchmarkintl.com">j.hardin@benchmarkintl.com</a></p>
