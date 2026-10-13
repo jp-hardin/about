@@ -78,7 +78,7 @@ for i, s in enumerate(R.sections(), 1):
     toc.append(f'<li><a href="#{s["id"]}"><span>{i:02d}</span>{t}</a></li>')
 
 root = '../'
-PUBLIC = R.SLUG.rsplit('-', 2)[0] + '-industry-report-' + '-'.join(R.SLUG.rsplit('-', 2)[1:])  # e.g. healthcare-industry-report-q4-2026
+PUBLIC = R.SLUG.rsplit('-', 2)[0] + '-sector-report-' + '-'.join(R.SLUG.rsplit('-', 2)[1:])  # e.g. healthcare-sector-report-q4-2026
 PDF = f'{PUBLIC}.pdf'
 C = R.CONTACT
 dl = ('<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
@@ -91,7 +91,7 @@ page += site.header(root, 'industries')
 page += f'''
 <section class="hero hero--page">
   <div class="wrap">
-    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}industries/index.html">Industries</a> / <a href="{root}industries/consumer.html">Consumer</a> / Q4 2026 Sector Report</div>
+    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}sectors/index.html">Sectors</a> / <a href="{root}sectors/consumer.html">Consumer</a> / Q4 2026 Sector Report</div>
     <p class="eyebrow">M&amp;A Sector Report &nbsp;|&nbsp; October 2026</p>
     <h1 class="display">Consumer <em>Q4 2026</em></h1>
     <p class="lead">Food and beverage (including restaurants), consumer brands and products, foodservice and distribution, and consumer services and retail: who is buying, what they are paying for and what an owner can prepare.</p>
