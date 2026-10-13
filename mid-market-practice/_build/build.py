@@ -269,19 +269,19 @@ SECTOR_BY_SLUG = {s["slug"]: s for s in SECTORS}
 # `legacy` is the report's old reports/ filename, kept as a redirect.
 # ─────────────────────────────────────────────────────────────────────────────
 INSIGHTS = [
-    {"sector": "industrial", "quarter": 4, "year": 2026, "slug": "industrial-industry-report-q4-2026", "legacy": "industrial-q4-2026",
+    {"sector": "industrial", "quarter": 4, "year": 2026, "slug": "industrial-sector-report-q4-2026", "legacy": "industrial-q4-2026",
      "title": "Industrial Q4 2026 M&A Sector Report",
      "summary": "Manufacturing and industrial technology; distribution and services; building products and construction services; energy, power and environmental services; and transportation and logistics: the order books, the deal market and what acquirers are paying for."},
-    {"sector": "business-services", "quarter": 4, "year": 2026, "slug": "business-services-industry-report-q4-2026", "legacy": "business-services-q4-2026",
+    {"sector": "business-services", "quarter": 4, "year": 2026, "slug": "business-services-sector-report-q4-2026", "legacy": "business-services-q4-2026",
      "title": "Business Services Q4 2026 M&A Sector Report",
      "summary": "Commercial and facility services; marketing, sales and tech-enabled services; engineering, architecture and consulting; financial and insurance services; and staffing and human capital: the deal market, public-market valuations and what buyers are paying for."},
-    {"sector": "consumer", "quarter": 4, "year": 2026, "slug": "consumer-industry-report-q4-2026", "legacy": "consumer-q4-2026",
+    {"sector": "consumer", "quarter": 4, "year": 2026, "slug": "consumer-sector-report-q4-2026", "legacy": "consumer-q4-2026",
      "title": "Consumer Q4 2026 M&A Sector Report",
      "summary": "Food and beverage (including restaurants), consumer brands and products, foodservice and distribution, and consumer services and retail: who is buying, what they are paying for and what an owner can prepare."},
-    {"sector": "healthcare", "quarter": 4, "year": 2026, "slug": "healthcare-industry-report-q4-2026", "legacy": "healthcare-q4-2026",
+    {"sector": "healthcare", "quarter": 4, "year": 2026, "slug": "healthcare-sector-report-q4-2026", "legacy": "healthcare-q4-2026",
      "title": "Healthcare Q4 2026 M&A Sector Report",
      "summary": "Provider services, life sciences and diagnostics, medical products and distribution, and pharmacy and healthcare services: the deal market, the policy calendar and what buyers are paying for."},
-    {"sector": "technology", "quarter": 4, "year": 2026, "slug": "technology-industry-report-q4-2026", "legacy": "technology-q4-2026",
+    {"sector": "technology", "quarter": 4, "year": 2026, "slug": "technology-sector-report-q4-2026", "legacy": "technology-q4-2026",
      "title": "Technology Q4 2026 M&A Sector Report",
      "summary": "Managed IT and cloud services, cybersecurity, telecom and UCaaS, systems integration, electronics and hardware, and government technology: the deal market, the policy calendar and what buyers are paying for."},
 ]
@@ -460,7 +460,7 @@ def header(root, current=""):
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
     <nav class="nav" id="site-nav" aria-label="Primary">
-      <a href="{root}industries/index.html"{cur('industries')}>Sectors</a>
+      <a href="{root}sectors/index.html"{cur('industries')}>Sectors</a>
       <a href="{root}transactions.html"{cur('transactions')}>Transactions</a>
       <a href="{root}index.html#team"{cur('team')}>Team</a>
       <a href="{root}insights/index.html"{cur('insights')}>Insights</a>
@@ -487,8 +487,8 @@ def footer(root):
     social = "".join(
         f'<a href="{href}" aria-label="{name}"{"" if name == "Email" else ext}><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">{path}</svg></a>'
         for name, (href, path) in SOCIAL.items())
-    sectors = "".join(f'<li><a href="{root}industries/{s["slug"]}.html">{e(s["name"])}</a></li>' for s in SECTORS)
-    sectors += f'<li><a href="{root}industries/index.html">All Sectors</a></li>'
+    sectors = "".join(f'<li><a href="{root}sectors/{s["slug"]}.html">{e(s["name"])}</a></li>' for s in SECTORS)
+    sectors += f'<li><a href="{root}sectors/index.html">All Sectors</a></li>'
     pages = (f'<li><a href="{root}about.html">About</a></li><li><a href="{root}transactions.html">Transactions</a></li><li><a href="{root}index.html#team">Team</a></li>'
              f'<li><a href="{root}insights/index.html">Insights</a></li><li><a href="{root}index.html#library">CEO Library</a></li><li><a href="{root}index.html#form">Contact</a></li>')
     return f"""</main>
@@ -674,7 +674,7 @@ def report_extras(page, slug, root):
 
 def industry_card(s, root):
     tags = "".join(f"<li>{e(seg[0])}</li>" for seg in s["segments"])
-    return f"""<a class="ind-card ind-card--photo" href="{root}industries/{s['slug']}.html">
+    return f"""<a class="ind-card ind-card--photo" href="{root}sectors/{s['slug']}.html">
   <div class="ind-photo"><img src="{photo(s['slug'], 'card', root)}" alt="" loading="lazy" width="900" height="560"></div>
   <h3>{e(s['name'])}</h3>
   <p>{e(s['short'])}</p>
@@ -902,7 +902,7 @@ def page_home():
         for t in featured)
     stories = "".join(f"""<article class="story reveal">
   <div class="story-media">{vimeo(vid, title)}</div>
-  <div class="story-body"><p class="eyebrow"><a href="industries/{slug}.html" style="text-decoration:none">{e(label)}</a></p><p>{e(title)}</p></div>
+  <div class="story-body"><p class="eyebrow"><a href="sectors/{slug}.html" style="text-decoration:none">{e(label)}</a></p><p>{e(title)}</p></div>
 </article>""" for vid, label, slug, title in STORIES[:4])
     testimonials = "".join(f"""<figure class="testimonial reveal">
   <p class="eyebrow">{e(k)}</p>
@@ -932,7 +932,7 @@ def page_home():
     <p class="lead">Maximize your company's value and achieve your goals with the world's #1 privately owned sell-side M&amp;A advisor.</p>
     <div class="btn-row">
       <a class="btn" href="#form">Start the Conversation</a>
-      <a class="btn btn--light" href="industries/index.html">Explore Our Sectors</a>
+      <a class="btn btn--light" href="sectors/index.html">Explore Our Sectors</a>
     </div>
   </div>
 </section>
@@ -1023,7 +1023,7 @@ def page_home():
         <h2 class="h2">Five Sectors. Deep Expertise.</h2>
         <p class="lead">Sector knowledge matters. We focus on five sectors where we know the buyers, the valuation drivers and the questions that will come up in diligence.</p>
       </div>
-      <a class="link-arrow" href="industries/index.html">View all sectors</a>
+      <a class="link-arrow" href="sectors/index.html">View all sectors</a>
     </div>
     <div class="ind-grid reveal">{cards}</div>
   </div>
@@ -1148,8 +1148,8 @@ def page_industries():
     html += cta(root)
     html += footer(root)
     items = {"@type": "ItemList", "name": "Middle Market sectors", "itemListElement": [
-        {"@type": "ListItem", "position": k + 1, "name": x["name"], "url": abs_url(f"industries/{x['slug']}.html")} for k, x in enumerate(SECTORS)]}
-    write("industries/index.html", html, crumbs=[("Middle Market", ""), ("Sectors", "industries/index.html")], schema=[items])
+        {"@type": "ListItem", "position": k + 1, "name": x["name"], "url": abs_url(f"sectors/{x['slug']}.html")} for k, x in enumerate(SECTORS)]}
+    write("sectors/index.html", html, crumbs=[("Middle Market", ""), ("Sectors", "sectors/index.html")], schema=[items])
 
 
 def page_sector(i, s):
@@ -1341,18 +1341,21 @@ def page_sector(i, s):
     service = {"@type": "Service", "name": f"{s['name']} M&A advisory", "serviceType": "Sell-side M&A advisory",
                "provider": {"@id": SITE_URL + "#org"}, "areaServed": {"@type": "Country", "name": "United States"},
                "description": s["tagline"]}
-    write(f"industries/{s['slug']}.html", html,
-          crumbs=[("Middle Market", ""), ("Sectors", "industries/index.html"), (s["name"], f"industries/{s['slug']}.html")],
+    write(f"sectors/{s['slug']}.html", html,
+          crumbs=[("Middle Market", ""), ("Sectors", "sectors/index.html"), (s["name"], f"sectors/{s['slug']}.html")],
           schema=[faq_schema(faqs), service], image=f"assets/img/social/{s['slug']}.jpg")
 
 
 def page_legacy(old, new):
+    """Redirect stub at industries/<old>.html (the sector pages' old folder) to sectors/<new>.html."""
+    target = "index" if new == "index" else new
+    label = "Sectors" if new == "index" else SECTOR_BY_SLUG[new]["name"]
     write(f"industries/{old}.html", index=False, html=f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><title>Redirecting…</title>
 <meta name="robots" content="noindex">
-<link rel="canonical" href="{abs_url(f'industries/{new}.html')}">
-<meta http-equiv="refresh" content="0; url={new}.html">
-</head><body><p>This page has moved to <a href="{new}.html">{e(SECTOR_BY_SLUG[new]['name'])}</a>.</p></body></html>
+<link rel="canonical" href="{abs_url(f'sectors/{target}.html')}">
+<meta http-equiv="refresh" content="0; url=../sectors/{target}.html">
+</head><body><p>This page has moved to <a href="../sectors/{target}.html">{e(label)}</a>.</p></body></html>
 """)
 
 
@@ -1517,7 +1520,7 @@ def page_about():
         ("Contact", f"{PHONE} | {EMAIL}"),
     ]
     rows = "".join(f"<tr><th scope=\"row\">{e(k)}</th><td>{e(v)}</td></tr>" for k, v in facts)
-    sector_links = "".join(f'<li><a href="industries/{x["slug"]}.html">{e(x["name"])}</a>: {e(x["short"])}</li>' for x in SECTORS)
+    sector_links = "".join(f'<li><a href="sectors/{x["slug"]}.html">{e(x["name"])}</a>: {e(x["short"])}</li>' for x in SECTORS)
     report_links = "".join(f'<li><a href="{i["url"]}">{e(i["title"])}</a></li>' for i in INSIGHTS)
     faqs = home_faqs()
     html = head("About | Middle Market | Benchmark International",
@@ -1554,14 +1557,14 @@ def page_about():
 def write_discovery_files():
     """sitemap.xml, robots.txt and llms.txt for search engines and AI assistants (absolute URLs from SITE_URL)."""
     pages = list(dict.fromkeys(SITEMAP + [i["url"] for i in INSIGHTS]))
-    prio = lambda r: "1.0" if r == "index.html" else "0.8" if r.startswith(("industries/", "insights/")) or r == "about.html" else "0.6"
+    prio = lambda r: "1.0" if r == "index.html" else "0.8" if r.startswith(("sectors/", "insights/")) or r == "about.html" else "0.6"
     urls = "".join(f"  <url><loc>{abs_url(r)}</loc><lastmod>{SITE_UPDATED}</lastmod><priority>{prio(r)}</priority></url>\n" for r in pages)
     sitemap = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n'
     robots = ("# Search engines and AI assistants are welcome to read and cite this site.\n"
               "User-agent: *\nAllow: /\nDisallow: " + urlparse(SITE_URL).path + "_build/\n\n"
               + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "PerplexityBot", "Google-Extended", "Applebot-Extended", "Bingbot"))
               + f"Sitemap: {SITE_URL}sitemap.xml\n")
-    sec = "\n".join(f"- [{x['name']}]({abs_url('industries/' + x['slug'] + '.html')}): {x['short']}" for x in SECTORS)
+    sec = "\n".join(f"- [{x['name']}]({abs_url('sectors/' + x['slug'] + '.html')}): {x['short']}" for x in SECTORS)
     rep = "\n".join(f"- [{i['title']}]({abs_url(i['url'])}) ([PDF]({abs_url(i['pdf'])})): {i['summary']}" for i in INSIGHTS)
     faqs = "\n".join(f"- **{q}** {a}" for q, a in home_faqs())
     llms = f"""# {ORG_NAME}
@@ -1573,7 +1576,7 @@ Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark Int
 ## Key pages
 - [Home]({SITE_URL}): overview, team, client stories and contact form
 - [About]({abs_url('about.html')}): key facts about the Middle Market team
-- [Sectors]({abs_url('industries/index.html')}): the five sectors
+- [Sectors]({abs_url('sectors/index.html')}): the five sectors
 - [Transactions]({abs_url('transactions.html')}): selected completed transactions
 - [Insights]({abs_url('insights/index.html')}): quarterly M&A sector reports
 - [Important Disclosures]({abs_url('disclosures.html')})
@@ -1605,6 +1608,16 @@ def page_report_redirects():
 <meta http-equiv="refresh" content="0; url={target}">
 </head><body><p>This report has moved to <a href="{target}">{e(i['title'])}</a>.</p></body></html>
 """)
+        # Reports were published as insights/<sector>-industry-report-...; they are now -sector-report-.
+        old = i["slug"].replace("-sector-report-", "-industry-report-")
+        if old != i["slug"]:
+            write(f"insights/{old}.html", index=False, html=f"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Redirecting…</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{abs_url(i['url'])}">
+<meta http-equiv="refresh" content="0; url={i['slug']}.html">
+</head><body><p>This report has moved to <a href="{i['slug']}.html">{e(i['title'])}</a>.</p></body></html>
+""")
 
 
 if __name__ == "__main__":
@@ -1614,6 +1627,10 @@ if __name__ == "__main__":
         page_sector(i, s)
     for old, new in LEGACY.items():
         page_legacy(old, new)
+    # Sector pages moved from industries/ to sectors/; keep the old addresses working.
+    page_legacy("index", "index")
+    for s in SECTORS:
+        page_legacy(s["slug"], s["slug"])
     page_transactions()
     page_insights()
     page_report_redirects()

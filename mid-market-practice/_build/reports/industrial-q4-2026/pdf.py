@@ -5,7 +5,7 @@ import os, re, asyncio
 from playwright.async_api import async_playwright
 from render import ROOT, SLUG, AS_OF, FIGS, SEGMENTS, groups, esc
 SITE = os.path.normpath(os.path.join(ROOT, '..', '..', '..'))
-PUBLIC = SLUG.rsplit('-', 2)[0] + '-industry-report-' + '-'.join(SLUG.rsplit('-', 2)[1:])
+PUBLIC = SLUG.rsplit('-', 2)[0] + '-sector-report-' + '-'.join(SLUG.rsplit('-', 2)[1:])
 OUT = os.path.join(SITE, 'insights', f'{PUBLIC}.pdf')
 IMG = os.path.relpath(os.path.join(SITE, 'assets', 'img'), ROOT)
 
@@ -120,7 +120,7 @@ for g in order:
 <p class="rlead">The first step is a confidential conversation about your goals, your company and your options, with no pressure and no commitment.</p>
 <div class="card"><img src="{IMG}/team/jared-hardin.jpg" alt="Jared Hardin"><div><h3>Jared Hardin</h3><p class="role">Managing Director, Benchmark International</p>
 <p><a href="tel:8137716675">813-771-6675</a> &nbsp;|&nbsp; <a href="mailto:j.hardin@benchmarkintl.com">j.hardin@benchmarkintl.com</a></p>
-<p style="margin-top:6pt"><a href="https://jp-hardin.github.io/about/mid-market-practice/industries/industrial.html">Benchmark International Middle Market, Industrial</a></p></div></div></section>''')
+<p style="margin-top:6pt"><a href="https://jp-hardin.github.io/about/mid-market-practice/sectors/industrial.html">Benchmark International Middle Market, Industrial</a></p></div></div></section>''')
         continue
     aid, title, inner = g
     toc.append(f'<li><span>{n:02d}</span><a href="#{aid}">{esc(title)}</a></li>')

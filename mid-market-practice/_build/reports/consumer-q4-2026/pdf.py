@@ -8,7 +8,7 @@ SITE = os.path.normpath(os.path.join(ROOT, '..', '..', '..'))
 sys.path.insert(0, ROOT)
 import report as R
 
-PUBLIC = R.SLUG.rsplit('-', 2)[0] + '-industry-report-' + '-'.join(R.SLUG.rsplit('-', 2)[1:])
+PUBLIC = R.SLUG.rsplit('-', 2)[0] + '-sector-report-' + '-'.join(R.SLUG.rsplit('-', 2)[1:])
 OUT = os.path.join(SITE, 'insights', f'{PUBLIC}.pdf')
 AST = os.path.relpath(os.path.join(SITE, 'assets', 'img'), ROOT)
 RUN = 'CONSUMER \\00B7  Q4 2026'
