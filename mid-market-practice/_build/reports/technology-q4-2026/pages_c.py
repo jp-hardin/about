@@ -19,7 +19,6 @@ PRIV_MFG = 'https://www.privsource.com/acquisitions/activity/add-on/manufacturin
 NAVITAS = 'https://circuitsassembly.com/ca/editorial/menu-news/43633-navitas-to-acquire-claros.html'
 SILVUS = 'https://www.govconwire.com/articles/motorola-solutions-silvus-technologies-acquisition'
 DFEND = 'https://www.govconwire.com/articles/motorola-solutions-d-fend-counter-drone-acquisition'
-AACB = 'https://www.aacb.com/trade-tariff-news/section-122-is-out-section-301-is-in'
 
 
 def p13():
@@ -31,7 +30,7 @@ def p13():
     parts = [
         colp("Orders at North American electronics manufacturers are running well ahead of shipments. Bookings at electronics manufacturing services (EMS) firms were 53.5% above the prior year in August while shipments were 1.0% higher, and the three-month book-to-bill ratio stands at 1.39 ([[Global Electronics Association, October 1, 2026|" + EMS_AUG + "]]). Printed circuit board makers reported bookings up 62.0% and shipments up 14.5% in July, a ratio of 1.46 ([[Global Electronics Association|" + PCB_JUL + "]])."),
         colp("Artificial intelligence infrastructure accounts for much of the order growth at the largest contract manufacturers. Jabil grew revenue 21% to $36.0 billion in its fiscal 2026 and guided to $44.5 billion for fiscal 2027 ([[Jabil|" + JABIL + "]]). Celestica grew second-quarter revenue 62% and raised its 2026 outlook to $20.5 billion ([[Celestica|" + CELESTICA + "]]), and Sanmina grew revenue about 70% in its June quarter ([[Sanmina|" + SANMINA + "]]). Worldwide semiconductor sales reached $403.3 billion in the second quarter ([[Semiconductor Industry Association|" + SIA_SEMI + "]])."),
-        colp("Shipments across the wider North American EMS industry were 1.0% above the prior year in August, well below the growth of the largest firms ([[Global Electronics Association|" + EMS_AUG + "]]). A full order book is valuable to an acquirer when it converts to shipments, so buyers examine component availability, labor and capacity closely."),
+        colp("That 1.0% rise in shipments across the wider North American EMS industry is well below the growth of the largest firms ([[Global Electronics Association|" + EMS_AUG + "]]). A full order book is valuable to an acquirer when it converts to shipments, so buyers examine component availability, labor and capacity closely."),
         quote('Buyers continued to prioritize localized manufacturing capacity and exposure to resilient, specification-driven end markets.',
               'Lincoln International, [[Q2 2026 EMS Quarterly Review|' + LINCOLN_EMS + ']]'),
         colp("Acquirers have been buying domestic capacity and specialized capability. Transom Capital agreed to take SigmaTron International private at an enterprise value of about $83 million, a 134% premium to the prior share price ([[Transom Capital and SigmaTron|" + SIGMATRON + "]]). Qualitel bought Fusion EMS of Oregon to add to its plants in Washington and Mexicali ([[Circuits Assembly|" + QUALITEL + "]]), and StenTech, backed by Align Capital Partners, made its fifth add-on with Pentagon EMS ([[StenTech|" + STENTECH + "]])."),
@@ -45,7 +44,7 @@ def p13():
 
 def p14():
     section('Electronics & Hardware: announced transactions and indicators')
-    intro = ("Sales of contract manufacturers slowed in the second quarter. Lincoln International recorded three EMS transactions in the second quarter against eight in the first ([[Lincoln International|" + LINCOLN_EMS + "]]). The buyers that are active want domestic or near-shore capacity, certifications for aerospace, defense and medical work, and engineering content that customers specify by name.")
+    intro = ("Acquisitions of contract manufacturers slowed in the second quarter. Lincoln International recorded three EMS transactions in that quarter against eight in the first ([[Lincoln International|" + LINCOLN_EMS + "]]). The buyers that are active want domestic or near-shore capacity, certifications for aerospace, defense and medical work, and engineering content that customers specify by name.")
     rows = [
         ('Sep 2026', '[[Fusion EMS|' + QUALITEL + ']]', 'Qualitel', 'EMS provider in Hillsboro, Oregon; undisclosed'),
         ('Aug 2026', '[[D-Fend Solutions|' + DFEND + ']]', 'Motorola Solutions', 'Counter-drone radio frequency technology; $1.5 billion'),
@@ -101,7 +100,7 @@ def p15():
     parts = [
         colp("Federal technology budgets are rising. The fiscal 2027 request holds $75.7 billion for civilian agency IT against $67.9 billion in fiscal 2026, led by Veterans Affairs at $12.2 billion and Homeland Security at $11.7 billion ([[FedScoop|" + FEDSCOOP + "]]). The defense request totals $1.5 trillion, of which $350 billion is mandatory funding, and includes $20.5 billion for cyberspace activities and $58.5 billion for artificial intelligence ([[Washington Technology|" + WASHTECH + "]])."),
         colp("The timing of that money is less certain. The government is operating under a continuing resolution through December 11 ([[SpacePolicyOnline|" + SPACEPOLICY + "]]), and the Senate Appropriations Committee had reported none of the twelve fiscal 2027 bills when the resolution passed ([[Akin|" + AKIN + "]]). New program starts wait for full-year appropriations, which delays awards for contractors of every size."),
-        colp("Results at the large contractors show the effect. Leidos grew revenue 7% in the second quarter and raised the lower end of its guidance ([[GovCon Wire|" + LDOS + "]]) and CACI grew 10.9% in its fiscal 2026 ([[GovCon Wire|" + CACI_R + "]]). Booz Allen's revenue fell 4.2% in its June quarter even as it booked $1.50 of new work for each dollar of revenue ([[GovCon Wire|" + BAH + "]]), and SAIC attributed a book-to-bill ratio of 0.6 to a large recompete that slipped on procurement delays ([[GovCon Wire|" + SAIC_R + "]])."),
+        colp("Results at the large contractors show the effect. Leidos grew revenue 7% in the second quarter and raised the lower end of its guidance ([[GovCon Wire|" + LDOS + "]]), and CACI grew 10.9% in its fiscal 2026 ([[GovCon Wire|" + CACI_R + "]]). Booz Allen's revenue fell 4.2% in its June quarter even as it booked $1.50 of new work for each dollar of revenue ([[GovCon Wire|" + BAH + "]]), and SAIC attributed a book-to-bill ratio of 0.6 to a large recompete that slipped on procurement delays ([[GovCon Wire|" + SAIC_R + "]])."),
         quote('Defense tech firms have corrected from the valuation highs of Q1, while investors continue to be cautious about the potential AI impact on traditional government services business models, resulting in multiple compression despite healthy earnings and improving forecasts.',
               'Lincoln International, [[Q3 2026 Defense Technology & Government Services Report|' + LINCOLN_GOV + ']]'),
         colp("Procurement rules are changing at the same time. GSA proposed on September 22 to move schedule ordering procedures out of the Federal Acquisition Regulation as part of a wider rewrite ([[Federal Register|" + FR_GSAR + "]]), and a final rule effective September 10 removed the presumption of social disadvantage for individually owned 8(a) applicants ([[Federal Register|" + FR_8A + "]]). A contractor that no longer qualifies as small after a sale cannot receive new set-aside orders under multiple-award contracts ([[Federal Register|" + FR_RECERT + "]]), so the buyer's size affects how much revenue carries forward."),
@@ -114,7 +113,7 @@ def p15():
 
 def p16():
     section('Government Technology: announced transactions')
-    intro = ("The large contractors are buying software, cyber and signals capability at disclosed prices, and sponsor-backed platforms are buying founder-owned firms with positions at defense, intelligence and homeland security agencies. Transaction volume has slowed: Raymond James reported that government technology transaction volume fell 68% from the first quarter to the second, with strategic volume 61% below the second quarter of 2025 ([[Raymond James, Q2 2026 Market Update|" + RJ_GOV + "]]).")
+    intro = ("The large contractors are buying software, cyber and signals capability at disclosed prices, and sponsor-backed platforms are buying founder-owned firms with positions at defense, intelligence and homeland security agencies. Activity has slowed: Raymond James reported that government technology transaction volume fell 68% from the first quarter to the second, with strategic volume 61% below the second quarter of 2025 ([[Raymond James, Q2 2026 Market Update|" + RJ_GOV + "]]).")
     rows = [
         ('Sep 2026', '[[Athenix Solutions Group|' + ATHENIX + ']]', 'Detroit Defense, backed by Proteus Enterprises and Gladstone Investment', 'Mission software and engineering for defense and intelligence customers; undisclosed'),
         ('Sep 2026', '[[Intelligent Waves|' + IWAVES + ']]', 'B&A, backed by DFW Capital Partners', 'Cyber, secure communications and tactical edge services; undisclosed'),
@@ -218,7 +217,7 @@ def p17():
 def p18():
     section('Benchmark International')
     intro = ("Benchmark International has closed 13 transactions in these six focus areas over the trailing 24 months and is working on 38 further engagements as of October 1, 2026. Electronics and hardware is the largest group among the closed transactions, with five, followed by systems integration with four. "
-             "Managed IT and cloud services and systems integration lead the live engagements with 11 each. Across all six, 19 engagements are on the market, eight are in preparation, eight are in legal documentation and three are in discussion with a buyer.")
+             "Managed IT and cloud services and systems integration each lead the live engagements, with 11 apiece. Across all six, 19 engagements are on the market, eight are in preparation, eight are in legal documentation and three are in discussion with a buyer.")
     buyers = ("Operating companies were the buyers in most of the announced transactions. Of the eleven listed below, seven were sold to a company in the seller's own or an adjacent field, including one owned by a private equity firm, and four were sold to investment firms that back founder-owned companies. "
               "Benchmark International is ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables ([[Benchmark International|https://www.benchmarkintl.com/about/our-success/]]).")
     def u(slug):
@@ -254,8 +253,8 @@ def p19():
         ('Government Technology', 'Prime positions won in full and open competition; cleared staff; owned software and data rights; funded backlog with years remaining', 'Revenue under a set-aside status the buyer cannot keep; recompetes due within a year; subcontract positions controlled by another prime'),
     ]
     t = table('112px 1fr 1fr', ['Focus area', 'Buyers reward', 'Buyers discount'], rows, pad=4)
-    prep = ("Sellers who prepare early capture more of the competition that the survey data describe. In the second quarter of 2026, 87% of transactions above $5 million attracted three or more offers, and sales in the lower middle market took 11 to 12 months to close ([[IBBA and M&A Source Market Pulse|" + IBBA_PR + "]]). "
-            "A technology sale also carries steps that other industries do not have, because buyers will test contract assignability, software and data ownership, security practices and, for government work, the effect of a change in size status. An owner who expects to sell within three years should therefore have reviewed financial statements, a schedule of recurring revenue by contract and renewal date, and a second layer of management in place before the first buyer conversation.")
+    prep = ("Sellers who prepare early are best placed to benefit from the buyer competition that the survey data show. In the second quarter of 2026, 87% of transactions above $5 million attracted three or more offers, and sales in the lower middle market took 11 to 12 months to close ([[IBBA and M&A Source Market Pulse|" + IBBA_PR + "]]). "
+            "A technology sale also involves checks that sales in other industries do not, because buyers will test contract assignability, software and data ownership, security practices and, for government work, the effect of a change in size status. An owner who expects to sell within three years should therefore have reviewed financial statements, a schedule of recurring revenue by contract and renewal date, and a second layer of management in place before the first buyer conversation.")
     lower = ('<div style="margin-top: 6px; display: flex; gap: 32px"><div style="width: 448px; display: flex; flex-direction: column; gap: 14px; text-align: justify">' + p(prep) + '</div>'
              '<div style="width: 240px; position: relative"><img src="' + PREP_PHOTO + '" alt="A technician working inside a laptop" style="position: absolute; left: 0; top: 4px; width: 240px; height: calc(100% - 22px); object-fit: cover"><div style="position: absolute; left: 0; bottom: 0; width: 240px; height: 18px; background: ' + GOLD + '"></div></div></div>')
     if lib.WEB:
@@ -273,7 +272,7 @@ def p20():
     body = (HEAD % {'title': 'Technology Q4 2026: Contact', 'wm': WATERMARK} + RUN +
             '<div data-fit="560" style="position: absolute; left: 48px; top: 230px; width: 720px; display: flex; flex-direction: column; gap: 22px">\n'
             '<div style="font-weight: 700; font-size: 10.5px; line-height: 16px; letter-spacing: 2.6px; text-transform: uppercase">Benchmark International Middle Market</div>\n' +
-            h2('Considering a transaction in technology?') + '\n' +
+            h2('Considering a transaction in the technology sector?') + '\n' +
             p('Our first step is always a confidential conversation exploring your goals, your company and your options.') + '\n'
             '<div style="margin-top: 10px; display: flex; gap: 32px; align-items: center">\n'
             '<div style="width: 344px; display: flex; flex-direction: column">\n'

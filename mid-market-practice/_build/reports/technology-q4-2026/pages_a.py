@@ -31,6 +31,7 @@ LINCOLN_GOV = 'https://lincolninternational.com/wp-content/uploads/Q3_2026-Defen
 RJ_GOV = 'https://www.raymondjames.com/-/media/rj/dotcom/files/corporations-and-institutions/investment-banking/industry-insight/government-technology-solutions-quarterly.pdf'
 BAIRD_AI4 = 'https://www.rwbaird.com/corporations-and-institutions/investment-banking/insights/2026/08/ai4-2026-recap-the-handoff-economy/'
 WILEY = 'https://www.wiley.law/alert-New-Forced-Labor-Tariffs-Imposed-on-60-US-Trading-Partners'
+AACB = 'https://www.aacb.com/trade-tariff-news/section-122-is-out-section-301-is-in'
 SNELL = 'https://www.swlaw.com/publication/the-continued-utilization-of-tariffs-to-control-the-semiconductor-industry/'
 CMMC = 'https://dodcio.defense.gov/CMMC/About/'
 MCGUIRE = 'https://www.passwordprotectedlaw.com/2026/07/dow-suspends-cmmc-phase-ii-requirements-launches-60-day-review/'
@@ -96,7 +97,7 @@ def p02():
         ('Cybersecurity',
          'Reported cybercrime losses reached $20.9 billion in 2025; the Department of War suspended the third-party certification phase of CMMC in July 2026',
          'LevelBlue, CyberMaxx, A-LIGN and Accenture in services; Palo Alto Networks, Google and ServiceNow in software',
-         'None closed, 3 live'),
+         '0 closed, 3 live'),
         ('Telecom & UCaaS',
          'RingCentral, Zoom and 8x8 are each growing revenue about 5%; AT&T plans to retire most of its copper outside California by the end of 2029; all 50 state broadband plans are approved',
          'Verizon, AT&T and T-Mobile with KKR and EQT in fiber; Point Broadband, Ezee Fiber, Vero Fiber, Rightfiber and TDS Telecom regionally; AppDirect in the channel',
@@ -139,7 +140,7 @@ def p03():
     fin = ("Financing became more expensive during the third quarter. The Federal Reserve raised its target range by a quarter point to 3.75% to 4.00% on September 16 ([[Federal Reserve|" + FED + "]]), "
            "the 10-year Treasury yielded 5.24% on October 1 ([[US Treasury|" + TREASURY + "]]), and a small sample of recent buyout loans from direct lenders priced at an average of 509 basis points over the benchmark rate, against 474 in the first quarter ([[PitchBook|" + PITCHBOOK + "]]). "
            "Lenders also reduced leverage, and total debt on platform acquisitions in the GF Data sample fell to 2.9x EBITDA from 3.4x ([[GF Data via ACG|" + GFDATA + "]]). "
-           "Buyers respond to dearer debt by favoring companies whose cash flow is contracted.")
+           "Buyers respond to costlier debt by favoring companies whose cash flow is under contract.")
     q = quote('M&A activity stayed robust, driven by sector consolidation and continued strong interest from financial investors.',
               'Houlihan Lokey, [[December 2025 IT Services Market Update|' + HL_IT + ']]')
     dem = ("Gartner's July forecast puts worldwide IT spending at $6.37 trillion in 2026, with data center systems rising 62.5% to $822 billion, software rising 15.5% and IT services rising 5.3% to $1.57 trillion ([[Gartner|" + GARTNER + "]]). "
@@ -154,11 +155,11 @@ def p03():
 def p04():
     section('Policy, trade and tax')
     rows = [
-        ('Import tariffs', 'Section 301 duties took effect on July 24, 2026 in place of the expired 10% Section 122 surcharge, at 10% for Canada, Mexico, the United Kingdom and India and 12.5% for China and Vietnam; certain semiconductor manufacturing equipment is exempt', '[[Wiley Rein, July 27, 2026|' + WILEY + ']]'),
+        ('Import tariffs', 'Section 301 duties took effect on July 24, 2026, in place of the expired 10% Section 122 surcharge, at 10% for Canada, Mexico, the United Kingdom and India and 12.5% for China and Vietnam; semiconductors and certain semiconductor manufacturing equipment are exempt', '[[Wiley Rein, July 27, 2026|' + WILEY + ']]; [[A&A Customs Brokers|' + AACB + ']]'),
         ('Semiconductor tariffs', 'A 25% Section 232 tariff has applied to specified advanced computing chips since January 2026, with exemptions that include chips destined for US data centers', '[[Snell & Wilmer|' + SNELL + ']]'),
-        ('CMMC for defense suppliers', 'Phase 1 self-assessments have applied since November 10, 2025; the Department of War suspended Phase II, the move to third-party certification, on July 13, 2026 and set up a reform task force', '[[DoD Chief Information Officer|' + CMMC + ']]; [[McGuireWoods|' + MCGUIRE + ']]'),
+        ('CMMC for defense suppliers', 'Phase 1 self-assessments have applied since November 10, 2025; the Department of War suspended Phase 2, the move to third-party certification, on July 13, 2026, and set up a reform task force', '[[DoD Chief Information Officer|' + CMMC + ']]; [[McGuireWoods|' + MCGUIRE + ']]'),
         ('Federal funding', 'A continuing resolution signed on September 2 funds the government through December 11, 2026; the fiscal 2027 request holds $75.7 billion for civilian IT', '[[SpacePolicyOnline|' + SPACEPOLICY + ']]; [[FedScoop|' + FEDSCOOP + ']]'),
-        ('SBA 8(a) program', 'A final rule effective September 10, 2026 removes the presumption of social disadvantage for individually owned applicants; firms owned by tribes and Alaska Native corporations are exempt', '[[Federal Register|' + FR_8A + ']]'),
+        ('SBA 8(a) program', 'A final rule effective September 10, 2026, removes the presumption of social disadvantage for individually owned applicants; firms owned by tribes and Alaska Native corporations are exempt', '[[Federal Register|' + FR_8A + ']]'),
         ('Copper retirement', 'The FCC streamlined its copper retirement rules in March 2026; AT&T plans to retire most of its copper outside California by the end of 2029', '[[Telecompetitor|' + FCC_IP + ']]; [[Broadband Breakfast|' + ATT_COPPER + ']]'),
         ('Rural broadband funding', 'All 50 state plans under the $42.45 billion BEAD program are approved and the program is moving into construction', '[[Broadband Breakfast|' + BEAD + ']]; [[NTIA|' + NTIA + ']]'),
     ]

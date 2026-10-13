@@ -81,7 +81,7 @@ def chart(fig, lists):
     axis = ''.join(f'<span style="left:{pc(v)}">{v}x</span>' for v in (0, 10, 20, 30))
     return ('<div class="mchart" role="img" aria-label="Enterprise value to trailing EBITDA for listed companies in each segment, with the median marked">'
             + ''.join(rows) + f'<div class="mrow mrow--axis"><div class="mlabel"></div><div class="mtrack maxis">{axis}</div></div>'
-            f'<p class="mkey"><span><i class="dot"></i> One listed company</span><span><i class="kmed"></i> Median</span><span><i class="kavg"></i> Private mid-market average, all industries, {avg:.1f}x</span></p></div>')
+            f'<p class="mkey"><span><i class="dot"></i> One listed company</span><span><i class="kmed"></i> Median</span><span><i class="kavg"></i> Private middle-market average, all industries, {avg:.1f}x</span></p></div>')
 
 def company_lists(el):
     groups, cur = {}, None
@@ -172,7 +172,7 @@ PUBLIC = SLUG.rsplit('-', 2)[0] + '-industry-report-' + '-'.join(SLUG.rsplit('-'
 PDF = f'{PUBLIC}.pdf'
 dl = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>'
 stats = ''.join(f'<div class="stat"><div class="stat-num">{a}</div><div class="stat-label">{b}</div></div>' for a, b in FIGS)
-desc = 'Q4 2026 M&A sector report for commercial and facility services, marketing, sales and tech-enabled services, engineering, architecture and consulting, financial and insurance services, and staffing and human capital, from the Benchmark International Middle Market team.'
+desc = 'Q4 2026 M&A sector report for commercial and facility services; marketing, sales and tech-enabled services; engineering, architecture and consulting; financial and insurance services; and staffing and human capital, from the Benchmark International Middle Market team.'
 page = site.head('Business Services Q4 2026 M&A Sector Report', desc, root).replace('</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n</head>')
 page += site.header(root, 'industries')
 page += f'''
@@ -181,7 +181,7 @@ page += f'''
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}industries/index.html">Industries</a> / <a href="{root}industries/business-services.html">Business Services</a> / Q4 2026 Sector Report</div>
     <p class="eyebrow">M&amp;A Sector Report &nbsp;|&nbsp; October 2026</p>
     <h1 class="display">Business Services <em>Q4 2026</em></h1>
-    <p class="lead">Commercial and facility services, marketing, sales and tech-enabled services, engineering, architecture and consulting, financial and insurance services, and staffing and human capital: the deal market, public-market valuations and what buyers are paying for.</p>
+    <p class="lead">Commercial and facility services; marketing, sales and tech-enabled services; engineering, architecture and consulting; financial and insurance services; and staffing and human capital: the deal market, public-market valuations and what buyers are paying for.</p>
     <p class="rbyline">Jared Hardin, Managing Director, Benchmark International</p>
     <div class="btn-row"><a class="btn" href="{PDF}" download>{dl} Download the PDF</a><a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a></div>
   </div>

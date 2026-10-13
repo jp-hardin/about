@@ -16,7 +16,7 @@ PUBLIC = SLUG.rsplit('-', 2)[0] + '-industry-report-' + '-'.join(SLUG.rsplit('-'
 PDF = f'{PUBLIC}.pdf'
 dl = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>'
 stats = ''.join(f'<div class="stat"><div class="stat-num">{esc(a)}</div><div class="stat-label">{esc(b)}</div></div>' for a, b in FIGS)
-desc = 'Q4 2026 M&A sector report for manufacturing and industrial technology, industrial distribution and services, building products and construction services, energy, power and environmental services, and transportation and logistics, from the Benchmark International Middle Market team.'
+desc = 'Q4 2026 M&A sector report for manufacturing and industrial technology, industrial distribution and services, building products and construction services, energy, power and environmental services, and transportation and logistics, from Benchmark International\'s Middle Market team.'
 page = site.head('Industrial Q4 2026 M&A Sector Report', desc, root).replace('</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n</head>')
 page += site.header(root, 'industries')
 page += f'''
@@ -42,14 +42,14 @@ page += f'''
   <aside class="rtoc" aria-label="Report contents">
     <p class="eyebrow">Contents</p>
     <ol>{''.join(toc)}</ol>
-    <a class="btn" href="{PDF}" download>{dl} Download PDF</a>
+    <a class="btn" href="{PDF}" download>{dl} Download the PDF</a>
   </aside>
   <article class="report">
 {chr(10).join(secs)}
     <aside class="rauthor">
       <img src="{root}assets/img/team/jared-hardin.jpg" alt="Jared Hardin" width="120" height="120" loading="lazy">
       <div>
-        <p class="eyebrow">Considering a transaction in industrial?</p>
+        <p class="eyebrow">Considering a transaction in the industrial sector?</p>
         <h3>Jared Hardin</h3>
         <p class="role">Managing Director, Benchmark International</p>
         <p><a href="tel:8137716675">813-771-6675</a> &nbsp;|&nbsp; <a href="mailto:j.hardin@benchmarkintl.com">j.hardin@benchmarkintl.com</a></p>

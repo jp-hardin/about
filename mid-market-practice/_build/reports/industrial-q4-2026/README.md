@@ -25,7 +25,7 @@ This runs `web.py` and `pdf.py`. `pdf.py` needs Playwright with Chromium (`pip i
 - Each `###` heading under `## Where We Focus` becomes its own section. Bullets that open with a bold label become titled sub-sector blocks, and the paragraph that opens with "Benchmark International in this segment." becomes the highlighted note.
 - A line that starts with `>` is a quotation, written as `> "Quoted sentence." ([Source name, publication](link))`.
 - `{{chart:ism}}` places the ISM chart.
-- `## Your Deal Team` is appended to the Advisory section, and `## Considering a Transaction in Industrial?` is replaced by the contact block on the site and the contact page in the PDF.
+- `## Your Deal Team` is appended to the Advisory section, and `## Considering a Transaction in the Industrial Sector?` is replaced by the contact block on the site and the contact page in the PDF.
 
 ## Where to make common edits
 - Text, figures, table rows, links: `report.md`. Both outputs pick the change up.

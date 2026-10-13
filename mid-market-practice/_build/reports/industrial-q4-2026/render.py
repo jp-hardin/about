@@ -16,7 +16,7 @@ SEGMENTS = [('manufacturing', 'Manufacturing & Industrial Technology'),
 FIGS = [('54.5', 'ISM Manufacturing PMI in September, the ninth consecutive month of expansion'),
         ('$993B', 'Global M&A value in the third quarter, 41% below the second quarter'),
         ('7.0x', 'Average middle-market purchase multiple in the second quarter, on trailing adjusted EBITDA'),
-        ('85', 'Industrial transactions Benchmark International closed in the 24 months to September 30, 2026')]
+        ('85', 'Transactions Benchmark International closed for industrial-sector companies in the 24 months to September 30, 2026')]
 
 # Three headline figures shown as a band at the top of each segment. Each one is stated and sourced in that segment's text.
 BANDS = {
@@ -29,7 +29,7 @@ BANDS = {
     'building': [('$2.20T', 'Annual rate of construction spending in August, 1.7% below a year earlier'),
                  ('8.5 months', 'Contractor backlog in August, with one in six contractors doing data center work'),
                  ('3.1%', 'Construction unemployment in August, the lowest on record')],
-    'energy': [('224 GW', 'Growth in summer peak demand in the latest 10-year forecast, up from 132'),
+    'energy': [('224 GW', 'Growth in summer peak demand in the latest 10-year forecast, up from 132 GW'),
                ('160 weeks', 'Lead time for generator step-up transformers in the first quarter'),
                ('9.8x', 'Projected 2026 EBITDA after synergies that Veolia paid for Clean Earth')],
     'transportation': [('11.3%', 'Rise in the Cass truckload linehaul index in August from a year earlier'),
@@ -181,7 +181,7 @@ def groups():
     out = [('brief', 'The Quarter in Brief', brief)]
     out += [(a, t, band(BANDS[a]) + '\n' + render(focus[t], 'segment')) for a, t in SEGMENTS]
     out += [('engagements', 'Recent Industrial Engagements', render(secs['Recent Industrial Engagements'])),
-            ('themes', "What We're Seeing in Industrial", render(secs["What We're Seeing in Industrial"])),
+            ('themes', "What We're Seeing in the Industrial Sector", render(secs["What We're Seeing in the Industrial Sector"])),
             ('buyers', "Seeing Your Company Through a Buyer's Eyes", render(secs["Seeing Your Company Through a Buyer's Eyes"])),
             ('acquirers', 'Who Is Buying', render(secs['Who Is Buying'])),
             ('advisory', 'Advisory Built Around Your Goals', render(secs['Advisory Built Around Your Goals']) + '\n' + team),

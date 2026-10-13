@@ -326,7 +326,7 @@
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-wilnat-inc-doing-business-as-kgm-and-st-louisbased-private-equity-firm-compass-group-equity-partners/",
   "image": "assets/img/tombstones/wilnat-dba-kgm-compass-group-equity-partners.jpg",
   "featured": true,
-  "desc": "Energy-sector business (KGM) sold to St. Louis-based private equity firm Compass Group Equity Partners.",
+  "desc": "Energy-sector business (KGM).",
   "year": "2022"
  },
  {
@@ -458,7 +458,7 @@
   "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-the-carmi-companies-and-the-nearshore-company/",
   "seller_logo": "assets/img/logos/carmi-logistics-038aa.png",
   "buyer_logo": "assets/img/logos/the-nearshore-logo-c0a36.png",
-  "desc": "Laredo-based single-source logistics provider offering transportation, logistics and customs clearance worldwide.",
+  "desc": "Laredo-based single-source provider of transportation, logistics and customs clearance services worldwide.",
   "year": "2026"
  },
  {
@@ -506,7 +506,7 @@
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitated-the-sale-of-morgan-wood-products-inc-to-the-ep-group/",
   "seller_logo": "assets/img/logos/morgan-wood-products-inc-8c72b.png",
   "buyer_logo": "assets/img/logos/ep-group-c0e5b.png",
-  "desc": "Columbus, Ohio-based pallet broker serving customers across 41 states and provinces.",
+  "desc": "Columbus, Ohio, pallet broker serving customers across 41 states and provinces.",
   "year": "2023"
  },
  {
@@ -620,7 +620,7 @@
   "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-infinity-communications-consulting-inc-and-skylight-equity/",
   "seller_logo": "assets/img/logos/infinity-communications-consulting-inc-eb367.png",
   "buyer_logo": "assets/img/logos/skylight-equity-1c9d9.png",
-  "desc": "Technology consultancy specializing in E-Rate consulting, low-voltage design and project management for schools and libraries.",
+  "desc": "Technology firm specializing in E-Rate consulting, low-voltage design and project management for schools and libraries.",
   "year": "2025",
   "also": [
    {
@@ -698,7 +698,7 @@
   "link": "https://www.benchmarkintl.com/insights/pbk-architects-inc-received-strategic-investment-from-dc-capital-partners/",
   "image": "assets/img/tombstones/pbk-architects-dc-capital-partners.jpg",
   "featured": true,
-  "desc": "One of the largest US-based architecture firms, with 500+ architects, engineers and professionals.",
+  "desc": "One of the largest U.S.-based architecture firms, with 500+ architects, engineers and other professionals.",
   "year": "2020"
  },
  {
@@ -884,7 +884,7 @@
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-george-w-evans-associates-inc-and-nationwide-brokerage-solutions-insurance-agency-inc/",
   "seller_logo": "assets/img/logos/george-w-evans-21da9.png",
   "buyer_logo": "assets/img/logos/nationwide-brokerage-solutions-dcf59.png",
-  "desc": "Managing General Agent and insurance wholesale agency supporting independent agents and brokers.",
+  "desc": "Managing general agent (MGA) and wholesale insurance agency supporting independent agents and brokers.",
   "year": "2024"
  },
  {
@@ -956,7 +956,7 @@
   "link": "",
   "seller_logo": "assets/img/logos/skillets-logo-592b1.png",
   "buyer_logo": "assets/img/logos/rosser-capital-aa3fd.png",
-  "desc": "Consumer food business acquired by Rosser Capital Partners.",
+  "desc": "Consumer food business.",
   "year": ""
  },
  {
@@ -1226,7 +1226,7 @@
   "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-stepfar-investments-llc-and-classic-collision-llc/",
   "seller_logo": "assets/img/logos/stepfar-investments-logo-a34db.png",
   "buyer_logo": "assets/img/logos/classic-collision-c94f9.png",
-  "desc": "Permian Basin collision repair centers (Platinum Collision and Pat Gray Collision).",
+  "desc": "Operator of Permian Basin collision repair centers (Platinum Collision and Pat Gray Collision).",
   "year": "2026"
  },
  {
@@ -1274,7 +1274,7 @@
   "link": "",
   "seller_logo": "assets/img/logos/central-ems-afc5e.png",
   "buyer_logo": "assets/img/logos/priority-ambulance-262ff.png",
-  "desc": "Emergency medical services provider acquired by Priority Ambulance, backed by Enhanced Equity Funds.",
+  "desc": "Emergency medical services provider.",
   "year": ""
  },
  {
@@ -1466,7 +1466,7 @@
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-solution-matrix-inc-exi-investment-partners-and-broadview-group-holdings-llc/",
   "image": "assets/img/tombstones/solution-matrix-broadview-group.jpg",
   "featured": true,
-  "desc": "Orthopedic manufacturer of cold-therapy gel packs and compression wraps supplying 340+ hospitals.",
+  "desc": "Manufacturer of orthopedic cold-therapy gel packs and compression wraps supplying 340+ hospitals.",
   "year": "2021"
  },
  {
@@ -1532,13 +1532,13 @@
  {
   "seller": "Transaction Data Systems (RX30)",
   "buyer": "GTCR",
-  "verb": "Acquired By",
+  "verb": "Investment From",
   "sector": "technology",
   "segment": "Vertical Software",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitates-the-transaction-of-rx30-to-gtcr/",
   "image": "assets/img/tombstones/transaction-data-systems-rx30-gtcr-jpg.jpg",
   "featured": true,
-  "desc": "Rx30, a leading developer of pharmacy management software; strategic equity investment from GTCR.",
+  "desc": "Leading developer of pharmacy management software (Rx30) that received a strategic equity investment from GTCR.",
   "year": "2015",
   "also": [
    {
@@ -1556,7 +1556,7 @@
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitates-the-transaction-between-computer-rx-and-rx30/",
   "image": "assets/img/tombstones/warkentine-computer-rx-transaction-data-systems.jpg",
   "featured": true,
-  "desc": "Computer-Rx, a pharmacy software platform for community pharmacies; merged with Rx30.",
+  "desc": "Pharmacy software platform for community pharmacies (Computer-Rx), merged with Rx30.",
   "year": "2016",
   "also": [
    {
@@ -1670,7 +1670,7 @@
   "link": "",
   "seller_logo": "assets/img/logos/conarc-3da71.png",
   "buyer_logo": "assets/img/logos/swiftcurrent-89588.png",
-  "desc": "Software company acquired by Swiftcurrent Holdings, an affiliate of ESW Capital.",
+  "desc": "Software company.",
   "year": ""
  },
  {
@@ -1682,7 +1682,7 @@
   "link": "",
   "seller_logo": "assets/img/logos/push-technologies-7fc91.png",
   "buyer_logo": "assets/img/logos/cendyn-0db38.png",
-  "desc": "Spanish software company acquired by Cendyn, backed by Accel-KKR.",
+  "desc": "Spanish software company.",
   "year": ""
  },
  {
@@ -1718,7 +1718,7 @@
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-computer-systems-integrators-inc-and-acture-solutions/",
   "seller_logo": "assets/img/logos/csi-00850.png",
   "buyer_logo": "assets/img/logos/acture-solutions-website-asset-66e95.png",
-  "desc": "Hybrid IT services partner to K-12 schools with high recurring revenue.",
+  "desc": "Hybrid IT services partner to K-12 schools, with high recurring revenue.",
   "year": "2024"
  },
  {
@@ -1820,7 +1820,7 @@
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-d-tel-telecommunications-inc-and-responsive-technology-partners/",
   "seller_logo": "assets/img/logos/d-tel-logo-1147b.png",
   "buyer_logo": "assets/img/logos/responsive-technologies-logo-04c0c.png",
-  "desc": "Telecommunications provider acquired by Responsive Technology Partners.",
+  "desc": "Telecommunications provider.",
   "year": ""
  },
  {

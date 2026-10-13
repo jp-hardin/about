@@ -43,7 +43,7 @@ DISCLOSURES = [
     "\u201cBenchmark International\u201d refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.",
     "Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.",
     "The distribution of this material in certain jurisdictions may be restricted by law, and accordingly, recipients of this material represent that they are able to receive it without contravention of any registration requirement or other legal restrictions in the jurisdictions in which they reside or in which they conduct business.",
-    "This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide accounting, tax, investment, regulatory or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness or completeness of the information, opinions or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.",
+    "This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide accounting, tax, investment, regulatory or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples and other figures are as publicly reported, and the value of any private company depends on its own circumstances. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness or completeness of the information, opinions or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.",
     "Company names, logos and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.",
     "This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the \u201cOrder\u201d); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as \u201cRelevant Persons\u201d). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.",
 ]
@@ -56,7 +56,7 @@ SERVICES = [
     ("Sell-Side M&A", "A full sale to the right strategic acquirer or financial sponsor, run as a confidential, competitive process from positioning through closing."),
     ("Recapitalizations & Partial Sales", "Take chips off the table while keeping a stake in the upside, through majority or minority recapitalizations with private equity and family offices."),
     ("Strategic Partnerships & Growth Capital", "Find a partner that brings capital, capabilities or market access to accelerate the next phase of growth."),
-    ("Exit Planning & Valuation", "Understand what your company is worth today, what drives value in your sector, and the steps that will maximize it before you go to market."),
+    ("Exit Planning & Valuation", "Understand what your company is worth today, what drives value in your sector and the steps that will maximize it before you go to market."),
 ]
 
 # Old 12-sector URLs → new sector (redirect stubs keep any shared links working)
@@ -83,6 +83,9 @@ SECTORS = [
     {
         "slug": "industrial",
         "name": "Industrial",
+        "prose": "the industrial sector",        # running-prose name ("valuation in the industrial sector")
+        "title_in": "the Industrial Sector",     # Title Case heading form ("What We're Seeing in the Industrial Sector")
+        "adj": "industrial-sector",              # adjective before "transactions"
         "count": 290,
         "tagline": "Advising founder-led manufacturers, distributors and industrial service companies on sales, recapitalizations and partnerships.",
         "short": "Manufacturing, industrial distribution, building products, energy and environmental services, and transportation.",
@@ -95,11 +98,11 @@ SECTORS = [
              ["Precision machining & fabrication", "Aerospace & defense components", "Electronics & microelectronics", "Plastics & molding", "Coatings & metal finishing", "Pumps, vacuum & flow control"]),
             ("Industrial Distribution & Services", "Value-added distributors and field-service providers with recurring maintenance revenue and dense local relationships.",
              ["Gases & specialty supplies", "Hydraulics & fluid power", "MRO & parts distribution", "Fire & life safety", "Industrial maintenance & turnarounds", "Material handling"]),
-            ("Building Products & Construction Services", "Specialty trades, infrastructure contractors and building-products businesses benefiting from infrastructure spending and residential demand.",
+            ("Building Products & Construction Services", "Specialty trades, infrastructure contractors and building-products businesses benefiting from infrastructure spending and non-residential construction.",
              ["Mechanical, electrical & plumbing", "Roofing & exteriors", "Infrastructure & marine construction", "Crane & equipment services", "Building products distribution", "Testing & inspection"]),
             ("Energy, Power & Environmental Services", "Businesses serving power generation, water, energy transition and regulated environmental markets with non-discretionary demand.",
              ["Power generation & backup power", "Energy consulting", "Water treatment & chemicals", "Environmental & emergency response", "Recycling & waste services"]),
-            ("Transportation & Logistics", "Carriers, 3PLs and specialized logistics providers with diversified shippers and capabilities buyers can't easily replicate.",
+            ("Transportation & Logistics", "Carriers, 3PLs and specialized logistics providers with diversified shippers and capabilities buyers cannot easily replicate.",
              ["Dedicated & intermodal trucking", "3PL & customs brokerage", "Export crating & rigging", "Pallets & packaging logistics", "Marine & subsea"]),
         ],
         "themes": [
@@ -117,6 +120,9 @@ SECTORS = [
     {
         "slug": "business-services",
         "name": "Business Services",
+        "prose": "business services",
+        "title_in": "Business Services",
+        "adj": "business services",
         "count": 230,
         "tagline": "Advising owners of commercial, professional and tech-enabled service businesses with recurring revenue and loyal clients.",
         "short": "Commercial and facility services, marketing and tech-enabled services, engineering and consulting, financial and insurance services, and staffing and human capital.",
@@ -151,11 +157,14 @@ SECTORS = [
     {
         "slug": "consumer",
         "name": "Consumer",
+        "prose": "the consumer sector",
+        "title_in": "the Consumer Sector",
+        "adj": "consumer",
         "count": 80,
         "tagline": "Advising founders of food, consumer brand, foodservice and consumer services businesses.",
         "short": "Food and beverage, consumer brands and products, foodservice and distribution, and consumer services.",
         "overview": [
-            "Consumer buyers look for brands with pricing power, loyal customers, channel diversity and room to grow distribution. Strategic acquirers use acquisitions to add brands, categories and capabilities. Consumer-focused private equity firms and family offices back founders who have built a differentiated product and want a partner to scale it.",
+            "Buyers of consumer businesses look for brands with pricing power, loyal customers, channel diversity and room to grow distribution. Strategic acquirers use acquisitions to add brands, categories and capabilities. Consumer-focused private equity firms and family offices back founders who have built a differentiated product and want a partner to scale it.",
             "Our Consumer group represents food and beverage producers, consumer brand owners, foodservice suppliers and distributors, and multi-site consumer services businesses. We present the brand's story, unit economics and growth runway in the way buyers underwrite them.",
         ],
         "segments": [
@@ -183,6 +192,9 @@ SECTORS = [
     {
         "slug": "healthcare",
         "name": "Healthcare",
+        "prose": "healthcare",
+        "title_in": "Healthcare",
+        "adj": "healthcare",
         "count": 55,
         "tagline": "Advising healthcare providers, life sciences and medical products companies, and pharmacy and healthcare services businesses.",
         "short": "Provider services, life sciences and diagnostics, medical products and distribution, and pharmacy and healthcare services.",
@@ -201,7 +213,7 @@ SECTORS = [
              ["Specialty & mail-order pharmacy", "Home infusion", "Pharmaceutical delivery", "Clinical staffing"]),
         ],
         "themes": [
-            ("Health system and payer consolidation", "Hospital systems and national operators keep adding outpatient and urgent care sites to capture patients closer to home."),
+            ("Health system consolidation", "Hospital systems and national operators keep adding outpatient and urgent care sites to capture patients closer to home."),
             ("Outsourcing and specialization", "Providers and pharma companies increasingly outsource labs, research, staffing and logistics to specialists."),
             ("Strategic interest in med-tech niches", "Public strategics acquire focused device and product companies to add patented technology and clinical relationships."),
             ("Care moving to the home", "Home infusion, home care and delivery services benefit as care shifts away from inpatient settings."),
@@ -215,6 +227,9 @@ SECTORS = [
     {
         "slug": "technology",
         "name": "Technology",
+        "prose": "technology",
+        "title_in": "Technology",
+        "adj": "technology",
         "count": 105,
         "tagline": "Advising founders of software, IT services and technology businesses with recurring revenue and mission-critical products.",
         "short": "Vertical software, enterprise and infrastructure software, IT and managed services, and communications and hardware.",
@@ -256,10 +271,10 @@ SECTOR_BY_SLUG = {s["slug"]: s for s in SECTORS}
 INSIGHTS = [
     {"sector": "industrial", "quarter": 4, "year": 2026, "slug": "industrial-industry-report-q4-2026", "legacy": "industrial-q4-2026",
      "title": "Industrial Q4 2026 M&A Sector Report",
-     "summary": "Manufacturing and industrial technology, distribution and services, building products and construction services, energy, power and environmental services, and transportation and logistics: the order books, the deal market and what acquirers are paying for."},
+     "summary": "Manufacturing and industrial technology; distribution and services; building products and construction services; energy, power and environmental services; and transportation and logistics: the order books, the deal market and what acquirers are paying for."},
     {"sector": "business-services", "quarter": 4, "year": 2026, "slug": "business-services-industry-report-q4-2026", "legacy": "business-services-q4-2026",
      "title": "Business Services Q4 2026 M&A Sector Report",
-     "summary": "Commercial and facility services, marketing, sales and tech-enabled services, engineering, architecture and consulting, financial and insurance services, and staffing and human capital: the deal market, public-market valuations and what buyers are paying for."},
+     "summary": "Commercial and facility services; marketing, sales and tech-enabled services; engineering, architecture and consulting; financial and insurance services; and staffing and human capital: the deal market, public-market valuations and what buyers are paying for."},
     {"sector": "consumer", "quarter": 4, "year": 2026, "slug": "consumer-industry-report-q4-2026", "legacy": "consumer-q4-2026",
      "title": "Consumer Q4 2026 M&A Sector Report",
      "summary": "Food and beverage, consumer brands and products, foodservice and distribution, and consumer services and retail: who is buying, what they are paying for and what an owner can prepare."},
@@ -291,17 +306,17 @@ for _s in SECTORS:
 # ─────────────────────────────────────────────────────────────────────────────
 TEAM_LEAD = [
     ("Jordan Houtz", "Managing Director", "jordan-houtz",
-     ["As a Managing Director, Jordan represents clients with total enterprise values (TEV) ranging from $50 million to $500 million across the United States. He is a seasoned investment banking and capital raising professional with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
-      "His deep experience on both the buy and sell sides of M&A transactions gives his clients a unique advantage in understanding deal dynamics and achieving their objectives. By leading full-cycle processes from idea and thesis generation through valuation, diligence, and negotiation, he is intimately involved in accomplishing his clients’ objectives. Jordan prides himself on building deep client relationships while achieving desired outcomes for stakeholders."]),
+     ["As a Managing Director, Jordan represents clients with total enterprise values (TEV) ranging from $50 million to $500 million across the United States. He is a seasoned investment banking and capital-raising professional with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
+      "His deep experience on both the buy and sell sides of M&A transactions gives his clients a unique advantage in understanding deal dynamics and achieving their objectives. By leading full-cycle processes from idea and thesis generation through valuation, diligence and negotiation, he stays closely involved in every stage of his clients’ transactions. Jordan prides himself on building deep client relationships while achieving desired outcomes for stakeholders."]),
     ("Jared Hardin", "Managing Director", "jared-hardin",
-     ["Mr. Hardin was raised in a military family, spending his early years traveling through Utah, Missouri, Ohio, Korea, Idaho, and Hong Kong. He ultimately landed in Texas where he has resided for the last two decades. His scholastic journey spanned a wide spectrum of learning, from Fine Arts to International Business to Management of Information Systems. He was driven to attain his MBA because he genuinely enjoys helping others learn and grow, but he also has a competitive nature that drives him toward success. His career has been quite diverse, having held the titles of Owner, COO, CIO, and CMO, and starting small businesses that gave him a role in everything from sales to HR and from IT to manufacturing. For these reasons, he understands and appreciates the intricacies of many different businesses.",
+     ["Jared was raised in a military family, spending his early years traveling through Utah, Missouri, Ohio, Korea, Idaho and Hong Kong. He ultimately landed in Texas, where he has lived for the last two decades. His studies spanned a wide range, from fine arts to international business to management information systems. He was driven to attain his MBA because he genuinely enjoys helping others learn and grow, but he also has a competitive nature that drives him toward success. He has had a diverse career, holding the titles of owner, COO, CIO and CMO and starting small businesses that gave him a role in everything from sales to HR and from IT to manufacturing. For these reasons, he understands and appreciates the intricacies of many different businesses.",
       "Jared’s role at Benchmark is about creating opportunities. In addition to his love for learning about businesses and introducing their owners to the distinctive tools and expertise that we offer, he is able to leverage his experience in deeply meaningful ways for our clients. He is driven to deliver results and get business owners truly excited about what is possible for the future."]),
     ("Alex Zykov", "Transaction Director", "alex-zykov",
-     ["As a Transaction Director, Alex leads the execution of our clients’ transactions from onboarding through signing and closing. He oversees every aspect of the process for middle-market clients across the industrial, consumer, business services, healthcare, and technology sectors. He makes sure clients understand each step and feel confident along the way, supporting them and our team through due diligence, evaluating competing offers, and leading negotiations through to the finish line.",
+     ["As a Transaction Director, Alex leads the execution of our clients’ transactions from onboarding through signing and closing. He oversees every aspect of the process for middle-market clients across the industrial, consumer, business services, healthcare and technology sectors. He makes sure clients understand each step and feel confident along the way, supporting them and our team through due diligence, evaluating competing offers and leading negotiations through to the finish line.",
       "Alex’s career spans corporate development, executing transactions on Wall Street, and cofounding and running boutique advisory firms serving small and mid-sized businesses. Each step was deliberate: building the breadth of knowledge and experience needed to give his clients the best possible advice and help them achieve their goals. He discovered his passion for corporate finance at MIT, where he earned dual degrees in Economics and Management Science, and later earned his MBA from the University of Virginia’s Darden School of Business."]),
     ("Shannon Hess", "Client Engagement Director", "shannon-hess",
-     ["Ms. Hess grew up in a military family, living on Army bases until she was nine years old. She enjoyed living in Germany and Hawaii, and traveling to many wonderful places. Because she is from a military family, her youth was a disciplined way of life with importance placed on punctuality, respect and loyalty.",
-      "Shannon’s role at Benchmark International involves working with our Field Directors and clients we have met with that have had an interest in engaging our services, but have yet to do so. She is an additional internal point of contact for clients when they wish to speak with someone with the same or a different perspective when they need someone to discuss their fears or challenges. She has been with Benchmark International long enough to see many deals through from start to finish, and she conveys her valuable insights to address any questions clients may have."]),
+     ["Shannon grew up in a military family, living on Army bases until she was nine years old. She enjoyed living in Germany and Hawaii, and traveling to many wonderful places. Growing up in a military family meant a disciplined way of life, with importance placed on punctuality, respect and loyalty.",
+      "Shannon works with our Field Directors and with owners we have met who are interested in engaging our services but have not yet done so. She is an additional point of contact for clients who want another perspective or someone to talk through their concerns. She has been with Benchmark International long enough to see many deals through from start to finish, and she conveys her valuable insights to address any questions clients may have."]),
 ]
 # Team contact details (phone, email); use None for a missing value. Anything missing shows the team line or team email.
 TEAM_CONTACT = {
@@ -348,7 +363,7 @@ TEAM_SUPPORT = [
 
 # Profile window bios for the support team, keyed by image slug.
 TEAM_SUPPORT_BIO = {
-    "sunny-garten": ["Sunny runs the daily work of a client\u2019s sale alongside the Transaction Director, from market launch through closing. She is the person owners call with questions, prepares management meetings with buyers and keeps offers and due diligence on schedule. A native of Beijing, she holds a BA in Business Administration from the University of International Relations and an MS from the Illinois Institute of Technology, and brings experience in financial analysis, negotiation and cross-border investment."],
+    "sunny-garten": ["Sunny runs the daily work of a client\u2019s sale alongside the Transaction Director, from market launch through closing. She is the person owners call with questions; she also prepares management meetings with buyers and keeps offers and due diligence on schedule. A native of Beijing, she holds a BA in Business Administration from the University of International Relations and an MS from the Illinois Institute of Technology, and brings experience in financial analysis, negotiation and cross-border investment."],
     "michael-wynn": ["As a Senior Deal Associate, Michael works with business owners and the Transaction Director from market launch to a signed purchase agreement, managing buyer conversations and competing offers through due diligence and final negotiations. He has worked on more than 220 transactions in corporate M&A at Confie and PCF Insurance Services, due diligence at Forvis Mazars and integration at AssuredPartners. He holds a BS in Accounting from Florida State University and has passed the CPA exam."],
     "jason-lisiak": ["Jason identifies the buyers and investors for each Middle Market client, researching the strategic acquirers, private equity firms and family offices with a reason to own the business and following recent transactions in the client\u2019s sector. He spent two decades at Manning & Napier, where he rose to senior analyst and co-managed the firm\u2019s Small Cap and Real Estate Series. A CFA charterholder, he holds a BA from SUNY Geneseo and completed executive education in M&A at Columbia Business School."],
     "alexandra-barr": ["Alexandra prepares clients to go to market. She works with owners and their finance teams to analyze financial statements, contracts and operating data, builds the valuation work and buyer materials, and flags the issues a buyer is likely to raise in due diligence. She joined Benchmark after seven years at Volkswagen of America, where she rose from pricing analyst to pricing lead and product controller for markets across the Americas. She studied industrial engineering at West Virginia University."],
@@ -374,7 +389,7 @@ TESTIMONIALS = [
 
 LIBRARY = [
     ("kp0gV6Dj0_0", "Sell-Side Process", "Before the Sale: What a Sell-Side M&A Process Really Looks Like", "Managing Director Jordan Houtz walks through what a successful sell-side process looks like, how buyers evaluate a business, what drives a premium valuation and what owners should do before going to market."),
-    ("X8a04-Ok6j4", "Growth & Exit Strategy", "Taking Control of Your Growth and Exit Strategy", "Managing Director Jared Hardin discusses taking control of your growth and exit strategy, including the key considerations and the right time to be on market."),
+    ("X8a04-Ok6j4", "Growth & Exit Strategy", "Taking Control of Your Growth and Exit Strategy", "Managing Director Jared Hardin discusses taking control of your growth and exit strategy, including the key considerations and the right time to go to market."),
     ("8giQ5YAiCIA", "Webinar", "Selling for Maximum Value", "An M&A expert\u2019s guide to preparation and process: how owners can position their company to achieve the highest value in a sale."),
 ]
 
@@ -402,6 +417,12 @@ for t in TOMBSTONES:
 # ─────────────────────────────────────────────────────────────────────────────
 def e(s):
     return escape(s, quote=True)
+
+
+def number_word(k):
+    """Spells out small counts in running prose ("five segments")."""
+    words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+    return words[k] if 0 <= k < len(words) else str(k)
 
 
 def head(title, desc, root, canonical=""):
@@ -512,7 +533,7 @@ def cta(root, title="It All Starts With a Conversation", form=False):
   <div class="wrap center reveal">
     <p class="eyebrow">Confidential. No pressure. No commitments.</p>
     <h2 class="display">{e(title)}</h2>
-    <p class="lead">Our first step is always a confidential conversation exploring your goals, your company, and your options.</p>
+    <p class="lead">Our first step is always a confidential conversation exploring your goals, your company and your options.</p>
     <div class="btn-row"><a class="btn" href="{root}index.html#form">Start the Conversation</a><a class="btn btn--light" href="{PHONE_HREF}">Call {PHONE}</a></div>
     <p class="contact-line">Call to speak with an M&amp;A expert at <a href="{PHONE_HREF}">{PHONE}</a></p>
   </div>
@@ -534,7 +555,7 @@ def cta(root, title="It All Starts With a Conversation", form=False):
     <div class="contact-info reveal">
       <p class="eyebrow">Confidential. No pressure. No commitments.</p>
       <h2 class="display">{e(title)}</h2>
-      <p class="lead">Our first step is always a confidential conversation exploring your goals, your company, and your options.</p>
+      <p class="lead">Our first step is always a confidential conversation exploring your goals, your company and your options.</p>
       <ol class="contact-steps">{step_html}</ol>
       <div class="contact-direct">
         <a href="{PHONE_HREF}">{icon_phone}<span><small>Speak with an M&amp;A expert</small>{PHONE}</span></a>
@@ -738,7 +759,7 @@ def org_schema():
         "alternateName": ["Benchmark International Middle Market team", "Middle Market team"],
         "url": SITE_URL, "logo": SITE_URL + "assets/img/brand/benchmark-logo-black.svg",
         "description": "Benchmark International's Middle Market team represents privately held companies across the United States "
-                       "with $50M to $500M in total enterprise value (TEV) in sell-side M&A, recapitalizations and growth partnerships.",
+                       "with $50M–$500M in total enterprise value (TEV) in sell-side M&A, recapitalizations and growth partnerships.",
         "parentOrganization": PARENT_ORG, "telephone": "+1-" + PHONE, "email": EMAIL,
         "areaServed": {"@type": "Country", "name": "United States"},
         "knowsAbout": ["Sell-side M&A", "Mergers and acquisitions advisory", "Recapitalizations", "Growth capital"] + [x["name"] for x in SECTORS],
@@ -768,7 +789,8 @@ def faq_html(faqs, title="Frequently Asked Questions", eyebrow="Questions Owners
 
 
 def home_faqs():
-    svc = ", ".join(n.lower() for n, _ in SERVICES)
+    # Prose names of SERVICES; the serial comma stays because each item contains "and".
+    svc = "sell-side M&A, recapitalizations and partial sales, strategic partnerships and growth capital, and exit planning and valuation"
     return [
         ("What does Benchmark International's Middle Market team do?",
          "Benchmark International's Middle Market team represents privately held companies across the United States in sell-side M&A, "
@@ -788,23 +810,33 @@ def home_faqs():
     ]
 
 
+def semi_list(items):
+    """Joins list items that contain their own commas or "and": "A; B; and C"."""
+    items = list(items)
+    if len(items) < 2:
+        return "".join(items)
+    if len(items) == 2:
+        return items[0] + " and " + items[1]
+    return "; ".join(items[:-1]) + "; and " + items[-1]
+
+
 def sector_faqs(s, buyers):
     n = s["name"]
     segs = [x[0] for x in s["segments"]]
     faqs = [
         (f"What types of {n.lower()} companies does Benchmark International advise?",
-         f"The Middle Market team advises {n.lower()} companies across {len(segs)} segments: " + ", ".join(segs[:-1]) + " and " + segs[-1] + "."),
-        (f"What do buyers value in a {n.lower()} business?",
+         f"The Middle Market team advises {n.lower()} companies across {number_word(len(segs))} segments: " + semi_list(segs) + "."),
+        (f"What do buyers value in {n.lower()} companies?",
          " ".join(f"{h}: {d}" for h, d in s["value"])),
         (f"How many {n.lower()} transactions has Benchmark International completed?",
-         f"Benchmark International lists {s['count']}+ completed transactions tagged to {n.lower()} industries on benchmarkintl.com, as of {AS_OF}."),
+         f"Benchmark International lists {s['count']}+ completed transactions tagged to the categories that make up our {n} group on benchmarkintl.com, as of {AS_OF}."),
     ]
     if buyers:
         faqs.append((f"Who is acquiring {n.lower()} companies?",
-                     f"Acquirers and investors in Benchmark International's selected {n.lower()} transactions include " + ", ".join(buyers[:8]) + "."))
+                     f"Acquirers and investors in Benchmark International's selected {s['adj']} transactions include " + semi_list(buyers[:8]) + "."))
     if s.get("report"):
         faqs.append((f"Is there a current {n.lower()} M&A market report?",
-                     f"Yes. The {s['report'][0]} covers deal activity, valuations and what buyers are paying for, and is free to read online or download as a PDF."))
+                     f"Yes. The {current_report(s['slug'])['title']} covers deal activity, valuations and what buyers are paying for, and is free to read online or download as a PDF."))
     return faqs
 
 
@@ -890,13 +922,13 @@ def page_home():
     awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="Benchmark International award" loading="lazy" width="520" height="300">' for i in range(1, 5))
 
     html = head("Middle Market | Benchmark International",
-                "Benchmark International's Middle Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on sales, recapitalizations and growth partnerships across Industrial, Business Services, Consumer, Healthcare and Technology.", root)
+                "Benchmark International's Middle Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on sales, recapitalizations and growth partnerships in the industrial, business services, consumer, healthcare and technology sectors.", root)
     html += header(root)
     html += f"""
 <section class="hero">
   <div class="wrap">
     <p class="eyebrow">Benchmark International · <span class="nowrap">Middle Market</span></p>
-    <h1 class="display">Selling a Business Isn't the End, <em>It’s a Beginning.</em></h1>
+    <h1 class="display">Selling a Business Isn’t the End, <em>It’s a Beginning.</em></h1>
     <p class="lead">Maximize your company's value and achieve your goals with the world's #1 privately owned sell-side M&amp;A advisor.</p>
     <div class="btn-row">
       <a class="btn" href="#form">Start the Conversation</a>
@@ -928,9 +960,9 @@ def page_home():
       <p class="eyebrow">You Built an Extraordinary Company</p>
       <h2 class="h2">Let's Talk About What's Next.</h2>
       <hr class="rule">
-      <p>Most business owners only sell once in a lifetime. The stakes couldn’t be higher. Yet many don’t realize that an exit can take many forms, from a minority recapitalization to a full sale. Each option comes with different implications for your wealth, your family, and your company’s future.</p>
-      <p>Benchmark International helps you explore these options with clarity, discretion, and a global network of qualified buyers.</p>
-      <p>Whether you’re exploring a full exit, a partial sale, or simply preparing for the future, the right strategy ensures you maximize value, protect your legacy, and stay in control.</p>
+      <p>Most business owners only sell once in a lifetime. The stakes couldn’t be higher. Yet many don’t realize that an exit can take many forms, from a minority recapitalization to a full sale. Each option comes with different implications for your wealth, your family and your company’s future.</p>
+      <p>Benchmark International helps you explore these options with clarity, discretion and a global network of qualified buyers.</p>
+      <p>Whether you’re exploring a full exit, a partial sale or simply preparing for the future, the right strategy ensures you maximize value, protect your legacy and stay in control.</p>
     </div>
     <div class="quote-card reveal">
       It all starts with a conversation.
@@ -945,11 +977,11 @@ def page_home():
     <div class="section-head center reveal">
       <p class="eyebrow">Peace of Mind for Business Owners</p>
       <h2 class="h2">Your Benchmark Journey</h2>
-      <p class="lead">We focus on serving Presidents, CEOs, Founders and business owners of privately held companies across Industrial, Business Services, Consumer, Healthcare and Technology. As you consider the next step in your legacy most business owners want three things:</p>
+      <p class="lead">We focus on serving presidents, CEOs, founders and owners of privately held companies in the industrial, business services, consumer, healthcare and technology sectors. As you consider the next step in your legacy, most business owners want three things:</p>
     </div>
     <div class="pillars">
-      <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-1.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">01</div><h3 class="h3">Understand Every Option</h3><p>We'll make it possible for you to explore a full, partial, or partnership path. From local to global - we have you covered.</p></div>
-      <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-2.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">02</div><h3 class="h3">Be Positioned for Maximum Value</h3><p>We'll help you to see your company through the eyes of buyers and investors so you can position your company to maximize the value.</p></div>
+      <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-1.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">01</div><h3 class="h3">Understand Every Option</h3><p>We'll make it possible for you to explore a full, partial or partnership path. From local to global, we have you covered.</p></div>
+      <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-2.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">02</div><h3 class="h3">Be Positioned for Maximum Value</h3><p>We'll help you see your company through the eyes of buyers and investors so you can position it for maximum value.</p></div>
       <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-3.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">03</div><h3 class="h3">Execute with Confidence</h3><p>As you understand your options and position yourself to meet your goals, our highly experienced team works as your partner to navigate a discreet process that secures the right deal on your terms.</p></div>
     </div>
   </div>
@@ -964,10 +996,10 @@ def page_home():
       <h2 class="h2" style="color:#fff">Perfect for Business Owners Who Are</h2>
     </div>
     <div class="fit">
-      <div class="fit-item reveal"><h3>Looking to retire</h3><p>Looking to sell your business for retirement or move on to other business ventures.</p></div>
-      <div class="fit-item reveal"><h3>Approached by a buyer</h3><p>Approached by a buyer and want to ensure you receive a fair offer on your deal.</p></div>
-      <div class="fit-item reveal"><h3>Looking for a partner</h3><p>In need of a strategic partner or additional capital to grow your business and fit your needs.</p></div>
-      <div class="fit-item reveal"><h3>Want to learn more</h3><p>Interested in learning the value of your company in order to plan for the future.</p></div>
+      <div class="fit-item reveal"><h3>Looking to retire</h3><p>Looking to sell your business so you can retire or move on to other ventures.</p></div>
+      <div class="fit-item reveal"><h3>Approached by a buyer</h3><p>Approached by a buyer and wanting to make sure the offer is fair.</p></div>
+      <div class="fit-item reveal"><h3>Looking for a partner</h3><p>In need of a strategic partner or additional capital to grow your business.</p></div>
+      <div class="fit-item reveal"><h3>Ready to learn more</h3><p>Interested in learning what your company is worth so you can plan for the future.</p></div>
     </div>
     </div>
   </div>
@@ -977,7 +1009,7 @@ def page_home():
   <div class="wrap">
     <div class="section-head center reveal">
       <p class="eyebrow">In Their Words</p>
-      <h2 class="h2">We Have Been Working With Clients Around the World</h2>
+      <h2 class="h2">Working With Clients Around the World</h2>
     </div>
     <div class="testimonials">{testimonials}</div>
   </div>
@@ -1041,7 +1073,7 @@ def page_home():
     <div class="podcast-head reveal">
       <p class="eyebrow">Closing Remarks Podcast</p>
       <h3>Owners and Advisors on Selling a Business and What Comes After</h3>
-      <p>Closing Remarks is the Benchmark International podcast hosted by Dara Shareef. Each episode is a conversation with an owner who has sold a company or an advisor who works on these transactions, told in plain language.</p>
+      <p>Closing Remarks is the Benchmark International podcast hosted by Dara Shareef. Each episode is a plain-language conversation with an owner who has sold a company or an advisor who works on these transactions.</p>
     </div>
     <div class="library">{podcast}</div>
     <p class="podcast-links reveal"><span>Listen to every episode on</span>{podcast_links}</p>
@@ -1092,7 +1124,7 @@ def page_industries():
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Industries</div>
     <p class="eyebrow">Industry Expertise</p>
     <h1 class="display">Five Industries. Deep Expertise.</h1>
-    <p class="lead">We focus on five industries where we have deep transaction experience and long relationships with the most active strategic and financial buyers. Sector focus means we know what drives value, who is buying, and how to run a process that gets you the best outcome.</p>
+    <p class="lead">We focus on five industries where we have deep transaction experience and long relationships with the most active strategic and financial buyers. Sector focus means we know what drives value, who is buying and how to run a process that gets you the best outcome.</p>
     <nav class="jump" aria-label="Industries">{''.join(f'<a href="#{s["slug"]}">{e(s["name"])}</a>' for s in SECTORS)}</nav>
   </div>
 </section>
@@ -1103,7 +1135,7 @@ def page_industries():
       <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused industry groups</div></div>
       <div class="stat"><div class="stat-num">{total}+</div><div class="stat-label">Completed transactions across these industries<sup>†</sup></div></div>
       <div class="stat"><div class="stat-num">{len(TOMBSTONES)}</div><div class="stat-label">Selected transactions featured on this site</div></div>
-      <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Privately owned sell-side M&amp;A advisor<sup>*</sup></div></div>
+      <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Privately owned sell-side M&amp;A advisor worldwide<sup>*</sup></div></div>
     </div>
     <p class="note">† Completed transactions tagged to these industries on benchmarkintl.com/about/our-success, as of {AS_OF}. * PitchBook Q2 2026 Global League Tables.</p>
   </div>
@@ -1195,7 +1227,7 @@ def page_sector(i, s):
       <div class="stat"><div class="stat-num">{len(deals)}</div><div class="stat-label">Selected transactions below</div></div>
       <div class="stat"><div class="stat-num">{len(buyers)}</div><div class="stat-label">Distinct acquirers in those deals</div></div>
     </div>
-    <p class="note">† Completed transactions tagged to {e(s['name'].lower())} industries on benchmarkintl.com/about/our-success, as of {AS_OF}.</p>
+    <p class="note">† Completed transactions tagged to the categories that make up our {e(s['name'])} group on benchmarkintl.com/about/our-success, as of {AS_OF}.</p>
   </div>
 </section>
 
@@ -1224,7 +1256,7 @@ def page_sector(i, s):
     <div class="section-head reveal">
       <p class="eyebrow">Sector Coverage</p>
       <h2 class="h2">Where We Focus</h2>
-      <p class="lead">We advise companies across {len(s['segments'])} segments of {e(s['name'].lower())}, including the sub-sectors listed below.</p>
+      <p class="lead">We advise companies across {number_word(len(s['segments']))} segments of {e(s['prose'])}, including the sub-sectors listed below.</p>
     </div>
     <div class="segments">{segments}</div>
   </div>
@@ -1251,7 +1283,7 @@ def page_sector(i, s):
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">Market Perspective</p>
-      <h2 class="h2" style="color:#fff">What We're Seeing in {e(s['name'])}</h2>
+      <h2 class="h2" style="color:#fff">What We're Seeing in {e(s['title_in'])}</h2>
     </div>
     <div class="themes">{themes}</div>
   </div>
@@ -1262,7 +1294,7 @@ def page_sector(i, s):
     <div class="reveal">
       <p class="eyebrow">What Buyers Value</p>
       <h2 class="h2">Seeing Your Company Through a Buyer's Eyes</h2>
-      <p class="lead">We build the story around the factors that drive valuation in {e(s['name'].lower())}, so qualified buyers compete on your terms.</p>
+      <p class="lead">We build the story around the factors that drive valuation in {e(s['prose'])}, so qualified buyers compete on your terms.</p>
       <ul class="value-list">{value}</ul>
     </div>
     <div class="reveal">
@@ -1278,7 +1310,7 @@ def page_sector(i, s):
     <div class="section-head center reveal">
       <p class="eyebrow">How We Help</p>
       <h2 class="h2">Advisory Built Around Your Goals</h2>
-      <p class="lead">An exit can take many forms. We help {e(s['name'].lower())} owners choose the path that fits their wealth, family and company goals.</p>
+      <p class="lead">An exit can take many forms. We help owners of {e(s['name'].lower())} companies choose the path that fits their wealth, family and company goals.</p>
     </div>
     <div class="services">{services}</div>
   </div>
@@ -1304,7 +1336,7 @@ def page_sector(i, s):
 """
     faqs = sector_faqs(s, buyers)
     html = html.replace("{SECTOR_FAQ}", faq_html(faqs, f"{s['name']} M&A: Common Questions"))
-    html += cta(root, f"Considering a Transaction in {s['name']}?")
+    html += cta(root, f"Considering a Transaction in {s['title_in']}?")
     html += footer(root)
     service = {"@type": "Service", "name": f"{s['name']} M&A advisory", "serviceType": "Sell-side M&A advisory",
                "provider": {"@id": SITE_URL + "#org"}, "areaServed": {"@type": "Country", "name": "United States"},
@@ -1332,7 +1364,7 @@ def page_transactions():
     items = sorted(TOMBSTONES, key=lambda t: (order[t["sector"]], not t.get("featured"), -int(t.get("year") or 0)))
     tombs = "".join(tombstone(t, root, show_sector=True) for t in items)
     html = head("Transactions | Middle Market | Benchmark International",
-                "Selected completed transactions advised by Benchmark International across Industrial, Business Services, Consumer, Healthcare and Technology.", root)
+                "Selected completed transactions advised by Benchmark International in the industrial, business services, consumer, healthcare and technology sectors.", root)
     html += header(root, "transactions")
     html += f"""
 <section class="hero hero--page hero--photo"><div class="hero-media" aria-hidden="true"><img src="assets/img/site/transactions-hero.jpg" alt="" width="1920" height="1000" fetchpriority="high"></div>
@@ -1401,7 +1433,7 @@ def page_insights():
         archive_html = '<p class="archive-empty">Earlier editions will be archived here as each new quarterly report is published.</p>'
     latest = max(current, key=lambda i: (i["year"], i["quarter"]))["period"] if current else ""
     html = head("Insights | Middle Market | Benchmark International",
-                "Quarterly M&A sector reports from Benchmark International's Middle Market team covering Industrial, Business Services, Consumer, Healthcare and Technology.", root)
+                "Quarterly M&A sector reports from Benchmark International's Middle Market team covering the industrial, business services, consumer, healthcare and technology sectors.", root)
     html += header(root, "insights")
     html += f"""
 <section class="hero hero--page">
@@ -1473,7 +1505,7 @@ def page_about():
     lead = ", ".join(f"{n} ({r})" for n, r, _, _ in TEAM_LEAD)
     support = ", ".join(f"{n} ({r})" for n, r, _ in TEAM_SUPPORT)
     facts = [
-        ("Who we are", "Benchmark International's Middle Market team, part of Benchmark International."),
+        ("Who we are", "The Middle Market team of Benchmark International, serving owners of companies with $50M–$500M in total enterprise value (TEV)."),
         ("What we do", "Represent privately held companies across the United States in sell-side M&A, recapitalizations and growth partnerships."),
         ("Company size served", "$50 million to $500 million in total enterprise value (TEV)."),
         ("Industries", ", ".join(x["name"] for x in SECTORS) + "."),
@@ -1489,15 +1521,15 @@ def page_about():
     report_links = "".join(f'<li><a href="{i["url"]}">{e(i["title"])}</a></li>' for i in INSIGHTS)
     faqs = home_faqs()
     html = head("About | Middle Market | Benchmark International",
-                "Facts about Benchmark International's Middle Market team: who we serve, the $50M to $500M TEV range, five industries, services, team and contact details.", root)
+                "Facts about Benchmark International's Middle Market team: who we serve, the $50M–$500M total enterprise value (TEV) range, five industries, services, team and contact details.", root)
     html += header(root)
     html += f"""
 <section class="hero hero--page">
   <div class="wrap">
     <div class="crumbs"><a href="index.html">Middle Market</a> / About</div>
     <p class="eyebrow">At a Glance</p>
-    <h1 class="display">About the Middle Market Team</h1>
-    <p class="lead">Benchmark International's Middle Market team represents privately held companies across the United States with $50M to $500M in total enterprise value in sell-side M&amp;A, recapitalizations and growth partnerships.</p>
+    <h1 class="display">About Our Middle Market Practice</h1>
+    <p class="lead">Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV) in sell-side M&amp;A, recapitalizations and growth partnerships.</p>
   </div>
 </section>
 
@@ -1534,7 +1566,7 @@ def write_discovery_files():
     faqs = "\n".join(f"- **{q}** {a}" for q, a in home_faqs())
     llms = f"""# {ORG_NAME}
 
-> Benchmark International's Middle Market team represents privately held companies across the United States with $50M to $500M in total enterprise value (TEV) in sell-side M&A, recapitalizations and growth partnerships, across five industries: {", ".join(x["name"] for x in SECTORS)}.
+> Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV) in sell-side M&A, recapitalizations and growth partnerships, across five industries: {", ".join(x["name"] for x in SECTORS)}.
 
 Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark International (https://www.benchmarkintl.com/).
 

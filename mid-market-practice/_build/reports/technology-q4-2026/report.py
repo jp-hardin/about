@@ -41,7 +41,19 @@ MERGE = [
 ]
 
 # Link text that reads clearly in a sentence but not on its own in the sources list.
-RELABEL = {'release': 'IBBA and M&A Source Market Pulse, press release'}
+RELABEL = {
+    'release': 'IBBA and M&A Source Market Pulse, press release',
+    'December 2025 IT Services Market Update': 'Houlihan Lokey, December 2025 IT Services Market Update',
+    'Q2 2026 Cybersecurity Quarterly Update': 'Houlihan Lokey, Q2 2026 Cybersecurity Quarterly Update',
+    'Q1 2026 Digital Infrastructure Industry Update': 'Houlihan Lokey, Q1 2026 Digital Infrastructure Industry Update',
+    'Q2 2026 Security and Safety Solutions Market Update': 'Houlihan Lokey, Q2 2026 Security and Safety Solutions Market Update',
+    'Q2 2026 EMS Quarterly Review': 'Lincoln International, Q2 2026 EMS Quarterly Review',
+    'Q3 2026 Defense Technology & Government Services Report': 'Lincoln International, Q3 2026 Defense Technology & Government Services Report',
+    'January 2026': 'Channel Insider, January 2026',
+    'January': 'Global Electronics Association, January 2026',
+    'July': 'Global Electronics Association, July 2026',
+    'August': 'Global Electronics Association, August 2026',
+}
 
 
 def source_groups():
