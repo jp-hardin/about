@@ -41,7 +41,7 @@ def main():
                              '$50M to $500M TEV &nbsp;·&nbsp; Industrial, Business Services, Consumer, Healthcare and Technology'))]
     for s in site.SECTORS:
         hero = img(f"assets/img/industries/{s['slug']}/hero.jpg")
-        jobs.append((s['slug'], card(hero, 'Industry Expertise', f"{s['name']} M&amp;A Advisory", site.e(s['tagline']))))
+        jobs.append((s['slug'], card(hero, 'Sector Expertise', f"{s['name']} M&amp;A Advisory", site.e(s['tagline']))))
         rpt = site.current_report(s['slug'])
         if rpt:
             jobs.append((f"{s['slug']}-report", card(hero, f"{rpt['period']} &nbsp;·&nbsp; M&amp;A Sector Report", f"{s['name']} {rpt['period']}",

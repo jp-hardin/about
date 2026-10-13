@@ -91,7 +91,7 @@ page += site.header(root, 'industries')
 page += f'''
 <section class="hero hero--page">
   <div class="wrap">
-    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}industries/index.html">Industries</a> / <a href="{root}industries/consumer.html">Consumer</a> / Q4 2026 Sector Report</div>
+    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}industries/index.html">Sectors</a> / <a href="{root}industries/consumer.html">Consumer</a> / Q4 2026 Sector Report</div>
     <p class="eyebrow">M&amp;A Sector Report &nbsp;|&nbsp; October 2026</p>
     <h1 class="display">Consumer <em>Q4 2026</em></h1>
     <p class="lead">Food and beverage (including restaurants), consumer brands and products, foodservice and distribution, and consumer services and retail: who is buying, what they are paying for and what an owner can prepare.</p>

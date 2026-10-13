@@ -1,18 +1,18 @@
 # Benchmark International Middle Market
 
-> Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV) in sell-side M&A, recapitalizations and growth partnerships, across five industries: Industrial, Business Services, Consumer, Healthcare, Technology.
+> Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV) in sell-side M&A, recapitalizations and growth partnerships, across five sectors: Industrial, Business Services, Consumer, Healthcare, Technology.
 
 Information as of October 2026. Contact: 813-771-6675, mmt@benchmarkintl.com. Parent firm: Benchmark International (https://www.benchmarkintl.com/).
 
 ## Key pages
 - [Home](https://jp-hardin.github.io/about/mid-market-practice/): overview, team, client stories and contact form
 - [About](https://jp-hardin.github.io/about/mid-market-practice/about.html): key facts about the Middle Market team
-- [Industries](https://jp-hardin.github.io/about/mid-market-practice/industries/index.html): the five industry groups
+- [Sectors](https://jp-hardin.github.io/about/mid-market-practice/industries/index.html): the five sectors
 - [Transactions](https://jp-hardin.github.io/about/mid-market-practice/transactions.html): selected completed transactions
 - [Insights](https://jp-hardin.github.io/about/mid-market-practice/insights/index.html): quarterly M&A sector reports
 - [Important Disclosures](https://jp-hardin.github.io/about/mid-market-practice/disclosures.html)
 
-## Industries
+## Sectors
 - [Industrial](https://jp-hardin.github.io/about/mid-market-practice/industries/industrial.html): Manufacturing, industrial distribution, building products, energy and environmental services, and transportation.
 - [Business Services](https://jp-hardin.github.io/about/mid-market-practice/industries/business-services.html): Commercial and facility services, marketing and tech-enabled services, engineering and consulting, financial and insurance services, and staffing and human capital.
 - [Consumer](https://jp-hardin.github.io/about/mid-market-practice/industries/consumer.html): Food and beverage (including restaurants), consumer brands and products, foodservice and distribution, and consumer services.
@@ -29,7 +29,7 @@ Information as of October 2026. Contact: 813-771-6675, mmt@benchmarkintl.com. Pa
 ## Common questions
 - **What does Benchmark International's Middle Market team do?** Benchmark International's Middle Market team represents privately held companies across the United States in sell-side M&A, recapitalizations and growth partnerships.
 - **What size companies does the Middle Market team advise?** The team serves privately held companies with a total enterprise value (TEV) of $50 million to $500 million.
-- **Which industries does the Middle Market team focus on?** Five industry groups: Industrial, Business Services, Consumer, Healthcare and Technology.
+- **Which sectors does the Middle Market team focus on?** Five sectors: Industrial, Business Services, Consumer, Healthcare and Technology.
 - **What services does the Middle Market team provide?** Services include sell-side M&A, recapitalizations and partial sales, strategic partnerships and growth capital, and exit planning and valuation.
 - **How does working with Benchmark International start?** The first step is always a confidential conversation about your goals, your company and your options. A senior member of the Middle Market team sets up a private conversation, then walks you through the paths available, from a partial recapitalization to a full sale.
 - **How large is Benchmark International?** Benchmark International is the #1 privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables, with 15 offices across the Americas, Europe and Africa.

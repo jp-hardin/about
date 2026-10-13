@@ -22,7 +22,7 @@ page += site.header(root, 'industries')
 page += f'''
 <section class="hero hero--page">
   <div class="wrap">
-    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}industries/index.html">Industries</a> / <a href="{root}industries/industrial.html">Industrial</a> / Q4 2026 Sector Report</div>
+    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}industries/index.html">Sectors</a> / <a href="{root}industries/industrial.html">Industrial</a> / Q4 2026 Sector Report</div>
     <p class="eyebrow">M&amp;A Sector Report &nbsp;|&nbsp; October 2026</p>
     <h1 class="display">Industrial <em>Q4 2026</em></h1>
     <p class="lead">Manufacturing and industrial technology, distribution and services, building products and construction services, energy, power and environmental services, and transportation and logistics: the order books, the deal market and what acquirers are paying for.</p>
