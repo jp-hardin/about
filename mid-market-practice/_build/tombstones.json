@@ -41,10 +41,10 @@
   "verb": "Acquired By",
   "sector": "industrial",
   "segment": "Manufacturing & Industrial Technology",
-  "link": "",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-represented-gw-schultz-tool-in-recapitalization/",
   "seller_logo": "assets/img/logos/benchmark-international-deal-completion-g-w-schultz-tool-company-logo-3bff5.png",
   "buyer_logo": "assets/img/logos/benchmark-international-deal-completion-addison-captial-partners-company-logo-62e89.png",
-  "desc": "",
+  "desc": "Tavares, Florida, designer and manufacturer of custom, standard and modified carbide cutting tools and end mills.",
   "year": ""
  },
  {
@@ -281,10 +281,10 @@
   "verb": "Acquired By",
   "sector": "industrial",
   "segment": "Building Products & Construction Services",
-  "link": "",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-facilitated-the-transaction-between-action-concrete-pumping-inc-and-brundagebone-concrete-pumping-inc/",
   "seller_logo": "assets/img/logos/action-concrete-3097f.png",
   "buyer_logo": "assets/img/logos/brundage-bone-logo-27869.png",
-  "desc": "",
+  "desc": "Greenville, South Carolina, concrete pumping contractor operating a fleet of 21 pump trucks.",
   "year": ""
  },
  {
@@ -353,10 +353,10 @@
   "verb": "Acquired By",
   "sector": "industrial",
   "segment": "Energy, Power & Environmental Services",
-  "link": "",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-storm-guardian-generators-lp-and-liberty-service-partners/",
   "seller_logo": "assets/img/logos/storm-guardian-generators-logo-64516.png",
   "buyer_logo": "assets/img/logos/liberty-service-partners-logo-92c90.png",
-  "desc": "",
+  "desc": "Texas provider of residential and commercial generator sales, installation and maintenance, plus electrical and plumbing services.",
   "year": ""
  },
  {
@@ -515,10 +515,10 @@
   "verb": "Acquired By",
   "sector": "business-services",
   "segment": "Commercial & Facility Services",
-  "link": "",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitates-the-transaction-between-ubeo-business-services-and-sentinel-capital-partners/",
   "image": "assets/img/tombstones/ubeo-sentinel-capital.jpg",
   "featured": true,
-  "desc": "",
+  "desc": "San Antonio provider of copier, printer and document management equipment and services to about 6,000 customers.",
   "year": ""
  },
  {
@@ -1295,10 +1295,10 @@
   "verb": "Acquired By",
   "sector": "healthcare",
   "segment": "Provider Services",
-  "link": "",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-advises-on-the-sale-of-advanced-renal-care-inc-to-fresenius-medical-care-of-north-america/",
   "seller_logo": "assets/img/logos/arc-742a5.png",
   "buyer_logo": "assets/img/logos/fresenius-medical-care-e864b.png",
-  "desc": "",
+  "desc": "Tampa, Florida, provider of dialysis services.",
   "year": ""
  },
  {
@@ -1319,10 +1319,10 @@
   "verb": "Acquired By",
   "sector": "healthcare",
   "segment": "Provider Services",
-  "link": "",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-negotiates-sale-of-carolina-physical-therapy-associates-inc-to-cora-health-services-inc/",
   "seller_logo": "assets/img/logos/carolina-physical-therapy-919bd.png",
   "buyer_logo": "assets/img/logos/cora-health-f4655.png",
-  "desc": "",
+  "desc": "Rocky Mount, North Carolina, physical therapy practice with seven outpatient clinics and home health services.",
   "year": ""
  },
  {
@@ -1346,7 +1346,7 @@
   "link": "",
   "image": "assets/img/tombstones/atlantabiologists-biotechne.jpg",
   "featured": true,
-  "desc": "",
+  "desc": "Flowery Branch, Georgia, supplier of cell culture sera, media and reagents for life science research.",
   "year": ""
  },
  {
@@ -1451,10 +1451,10 @@
   "verb": "Acquired By",
   "sector": "healthcare",
   "segment": "Medical Products & Distribution",
-  "link": "",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-advises-on-the-sale-of-rochester-electromedical-to-advantage-medical-cables/",
   "seller_logo": "assets/img/logos/rochester-electro-medical-1a8e4.png",
   "buyer_logo": "assets/img/logos/healthedge-l-59594.png",
-  "desc": "",
+  "desc": "Family-owned manufacturer and distributor of reusable and disposable supplies for neurodiagnostic and neuromonitoring procedures.",
   "year": ""
  },
  {
@@ -1805,10 +1805,10 @@
   "verb": "Acquired By",
   "sector": "technology",
   "segment": "Communications & Hardware",
-  "link": "",
+  "link": "https://www.benchmarkintl.com/insights/benchmark-international-completes-sale-of-advantone-inc-to-intelepeer-holdings-inc/",
   "seller_logo": "assets/img/logos/advantone-e4754.png",
   "buyer_logo": "assets/img/logos/intelepeer-07923.png",
-  "desc": "",
+  "desc": "Plantation, Florida, cloud contact center platform provider offering IVR, call routing and predictive dialing.",
   "year": ""
  },
  {
@@ -1832,7 +1832,7 @@
   "link": "",
   "seller_logo": "assets/img/logos/t3-tech-17b50.png",
   "buyer_logo": "assets/img/logos/bluestone-3200b.png",
-  "desc": "",
+  "desc": "Service-disabled veteran-owned government contractor providing project management, analytics and supply chain services.",
   "year": ""
  },
  {
