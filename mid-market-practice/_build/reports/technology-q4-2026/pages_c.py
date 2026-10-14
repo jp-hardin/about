@@ -138,7 +138,7 @@ COMPS = {
  'Managed IT & Cloud Services': [('CDW','cdw',11.30),('Insight Enterprises','nsit',9.72),('ePlus','plus',11.08),('PC Connection','cnxn',14.28),('Kyndryl','kd',4.08),('DXC Technology','dxc',2.87),('Accenture','acn',8.30),('Cognizant','ctsh',6.79),('EPAM Systems','epam',6.46)],
  'Cybersecurity': [('Fortinet','ftnt',50.58),('Qualys','qlys',23.67),('Check Point','chkp',13.05)],
  'Telecom & UCaaS': [('RingCentral','rng',18.57),('8x8','eght',13.57),('Zoom','zm',15.12),('Five9','fivn',18.89),('Ooma','ooma',24.78),('Crexendo','cxdo',19.26),('Shenandoah Telecommunications','shen',11.52),('Telephone and Data Systems','tds',9.71)],
- 'Systems Integration': [('Wesco','wcc',15.43),('ScanSource','scsc',9.39),('Climb Global Solutions','clmb',14.92),('Comfort Systems USA','fix',29.31),('EMCOR','eme',17.24),('IES Holdings','iesc',23.96),('ADT','adt',4.74)],
+ 'Systems Integration': [('Wesco','wcc',15.43),('ScanSource','scsc',9.39),('Climb Global Solutions','clmb',14.92),('TD SYNNEX','snx',11.01),('Unisys','uis',6.46),('Napco Security','nssc',18.30),('Computacenter','quote/lon/ccc',13.75),('Bechtle','quote/etr/bc8',9.77),('ADT','adt',4.74)],
  'Electronics & Hardware': [('Jabil','jbl',13.58),('Flex','flex',21.93),('Celestica','cls',28.78),('Sanmina','sanm',14.86),('Plexus','plxs',23.75),('Benchmark Electronics','bhe',21.07),('Kimball Electronics','ke',7.70),('TTM Technologies','ttmi',30.67),('Keysight','keys',38.66)],
  'Government Technology': [('Booz Allen Hamilton','bah',9.49),('CACI','caci',16.05),('SAIC','saic',10.50),('Leidos','ldos',8.72),('Parsons','psn',12.68),('ICF','icfi',10.29),('Tyler Technologies','tyl',30.15)],
 }
@@ -198,14 +198,14 @@ def p17():
         fig = ('<figure><div class="fine">Enterprise value to trailing twelve-month EBITDA, listed companies by focus area; each dot is one company and the gold bar marks the median</div>' + web_chart() + '</figure>')
     lists = []
     for name, rows in COMPS.items():
-        items = '; '.join('[[%s|https://stockanalysis.com/stocks/%s/statistics/]] %s' % (n, t, fmt(v)) for n, t, v in rows)
+        items = '; '.join('[[%s|https://stockanalysis.com/%s/statistics/]] %s' % (n, t if '/' in t else 'stocks/' + t, fmt(v)) for n, t, v in rows)
         if lib.WEB:
             lists.append('<div><strong>%s:</strong> %s</div>' % (html.escape(name), md(items)))
         else:
             lists.append('<div style="break-inside: avoid; margin: 0 0 6px"><span style="font-weight: 700">%s:</span> %s</div>' % (html.escape(name), md(items)))
     comp = '<div class="fine cols">' + ''.join(lists) + '</div>' if lib.WEB else '<div style="column-count: 2; column-gap: 32px; font-size: 11px; line-height: 16px; letter-spacing: 0.2px">' + ''.join(lists) + '</div>'
     foot = note(
-        "Multiples are enterprise value to trailing EBITDA as published by [[StockAnalysis|https://stockanalysis.com/]] and retrieved on October 5, 2026; they use reported EBITDA, which is lower than the adjusted EBITDA companies present. "
+        "Multiples are enterprise value to trailing EBITDA as published by [[StockAnalysis|https://stockanalysis.com/]] and retrieved on October 5, 2026, or October 14, 2026 for TD SYNNEX, Unisys, Napco Security, Computacenter and Bechtle; they use reported EBITDA, which is lower than the adjusted EBITDA companies present. "
         "Multiples above 60x are omitted as not meaningful, which removes CrowdStrike, Palo Alto Networks, Zscaler, Okta, Tenable and Bandwidth and leaves three security software companies; those three are a guide to software and say little about the price of a security services firm.")
     body = '\n'.join([kicker('Public-market valuation reference'),
                       h2('Listed medians run from ' + fmt(MED['Managed IT & Cloud Services']) + ' EBITDA for IT services to ' + fmt(MED['Electronics & Hardware']) + ' for electronics manufacturers, with security software higher still'),
