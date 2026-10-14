@@ -9,26 +9,27 @@
 #
 # What it writes:
 #   insights/<sector>-sector-report-q<N>-<year>.pdf    the deck, converted by LibreOffice
-#   insights/<sector>-sector-report-q<N>-<year>.html   the site page: every page of the deck as an image with its
-#                                                      links live, plus the page's full text, tables and chart data
-#   assets/img/reports/<sector>-sector-report-q<N>-<year>/p01.webp ...   the page images
+#   insights/<sector>-sector-report-q<N>-<year>.html   the site page: one report section per deck page, with the
+#                                                      deck's words, links, tables and logos in the site's report
+#                                                      styles and its charts redrawn as SVG from the chart data
+#   insights/<sector>-sector-report-q<N>-<year>.md     the same content as Markdown, for AI tools (linked from the
+#                                                      page and from llms.txt)
+#   assets/img/reports/<sector>-sector-report-q<N>-<year>/   logos and pictures used on the page
 #
-# Needs LibreOffice (soffice) with Impress, poppler-utils (pdftoppm) and pip packages python-pptx, pypdf, Pillow.
+# Needs LibreOffice (soffice) with Impress, poppler-utils (pdffonts) and pip packages python-pptx, pypdf, Pillow.
 # The deck fonts (Calibri and Cambria stand-ins, Quicksand, Newsreader, Cinzel) are in brief-fonts/ and are
 # loaded for the conversion only, so nothing needs installing system-wide.
-from decimal import Decimal, ROUND_HALF_UP
-from datetime import date, timedelta
-import html, io, json, os, re, shutil, subprocess, sys, tempfile
+import html, json, os, re, shutil, subprocess, sys, tempfile
 from pptx import Presentation
-from pptx.enum.shapes import MSO_SHAPE_TYPE, PP_PLACEHOLDER
-from pptx.util import Emu
+from pptx.enum.shapes import MSO_SHAPE_TYPE
 from pypdf import PdfReader, PdfWriter
-from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.normpath(os.path.join(HERE, '..', '..'))
 sys.path.insert(0, os.path.join(SITE, '_build'))
+sys.path.insert(0, HERE)
 import build as site  # noqa: E402
+from webdeck import WebDeck, plain  # noqa: E402
 
 FOLDER = os.path.join(HERE, sys.argv[1].strip('/'))
 SLUG = os.path.basename(FOLDER)                                   # industrial-q4-2026
@@ -121,372 +122,207 @@ def write_pdf(src):
     return r
 
 
-def page_links(reader):
-    """Link areas on each PDF page as (left %, top %, width %, height %, url)."""
-    out = []
-    for p in reader.pages:
-        W, H = float(p.mediabox.width), float(p.mediabox.height)
-        links = []
-        for a in p.get('/Annots') or []:
-            a = a.get_object()
-            act = a.get('/A')
-            url = act.get('/URI') if act else None
-            if not url:
-                continue
-            x1, y1, x2, y2 = (float(v) for v in a['/Rect'])
-            links.append((min(x1, x2) / W * 100, (H - max(y1, y2)) / H * 100, abs(x2 - x1) / W * 100, abs(y2 - y1) / H * 100, str(url)))
-        out.append(links)
-    return out
+# ─── 3. Site page ────────────────────────────────────────────────────────────
+DL = ('<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
+      'stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>')
 
 
-def write_images(pdf, tmp, n):
-    dst = os.path.join(SITE, IMG_DIR)
-    shutil.rmtree(dst, ignore_errors=True)
-    os.makedirs(dst)
-    subprocess.run(['pdftoppm', '-r', '160', '-png', pdf, os.path.join(tmp, 'pg')], check=True)
-    pngs = sorted(f for f in os.listdir(tmp) if f.startswith('pg') and f.endswith('.png'))
-    assert len(pngs) == n, (len(pngs), n)
-    size = None
-    for i, f in enumerate(pngs, 1):
-        im = Image.open(os.path.join(tmp, f)).convert('RGB')
-        im = im.resize((1600, round(im.height * 1600 / im.width)), Image.LANCZOS)
-        size = im.size
-        im.save(os.path.join(dst, f'p{i:02d}.webp'), 'WEBP', quality=80, method=6)
-        im.resize((800, round(im.height * 800 / im.width)), Image.LANCZOS).save(os.path.join(dst, f'p{i:02d}-800.webp'), 'WEBP', quality=78, method=6)
-    total = sum(os.path.getsize(os.path.join(dst, f)) for f in os.listdir(dst))
-    print('wrote', n * 2, 'page images to', IMG_DIR, round(total / 1024), 'KB')
-    return size
+def norm(t):
+    return re.sub(r'\s+', ' ', html.unescape(t).replace('\xa0', ' ')).strip()
 
 
-# ─── 3. Text of each page ────────────────────────────────────────────────────
-def link(url, inner):
-    return f'<a href="{esc(url)}" target="_blank" rel="noopener">{inner}</a>' if url.startswith('http') else f'<a href="{esc(url)}">{inner}</a>'
+def title_case(t):
+    t = norm(t)
+    return t.title().replace("'S ", "'s ").replace('’S ', '’s ') if t.isupper() else t
 
 
-A = '{http://schemas.openxmlformats.org/drawingml/2006/main}'
+def cover(prs):
+    """Byline and segment names from the cover; checks that brief.json's lead is the cover sentence."""
+    texts = []
+    for sh in all_shapes(prs.slides[0].shapes):
+        if sh.has_text_frame and sh.text_frame.text.strip():
+            texts.append([p for p in (par.text for par in sh.text_frame.paragraphs) if p.strip()])
+    flat = norm(' '.join(' '.join(t) for t in texts))
+    assert norm(CONF['lead']) in flat, 'brief.json "lead" must be copied from the cover'
+    m = re.search(r'October \d{4}\s*\|\s*Jared Hardin, Managing Director', flat, re.I)
+    assert m, 'cover byline not found'
+    # Segment names, in cover order, as the site names them
+    known = {norm(x[0]).lower().replace(' and ', ' & '): x[0] for x in site.SECTOR_BY_SLUG[SECTOR]['segments']}
+    segs = []
+    for t in texts:
+        for p in t:
+            for x in re.split(r'\s*[·\x0b\n]\s*', p):
+                k = norm(x).lower().replace(' and ', ' & ')
+                if k in known and known[k] not in segs:
+                    segs.append(known[k])
+    # What's included: part number -> description
+    seq = [norm(p) for t in texts for p in t]
+    parts = {}
+    for i, x in enumerate(seq):
+        if re.fullmatch(r'0[1-9]', x) and i + 2 < len(seq):
+            parts[x] = seq[i + 2]
+    byline = m.group(0)
+    if byline.isupper():
+        byline = 'October ' + byline.split(' ', 1)[1].title().replace(' | ', ' | ')
+    return byline, segs, parts
 
 
-def runs_html(par):
-    """A paragraph's runs as HTML, keeping bold, italics, links and line breaks."""
-    out = []
-    runs = {id(r._r): r for r in par.runs}
-    for el in par._p:
-        if el.tag == A + 'br':
-            out.append('<br>')
-            continue
-        if el.tag == A + 'fld':
-            t = el.findtext(A + 't') or ''
-            out.append(esc(t))
-            continue
-        r = runs.get(id(el))
-        if r is None:
-            continue
-        t = esc(r.text).replace('\x0b', '<br>')
-        if not t:
-            continue
-        if r.font.bold and t.strip():
-            t = f'<strong>{t}</strong>'
-        if r.font.italic and t.strip():
-            t = f'<em>{t}</em>'
-        url = r.hyperlink.address if r.hyperlink and r.hyperlink.address else None
-        out.append(link(url, t) if url else t)
-    h = ''.join(out)
-    h = re.sub(r'</strong>(\s*)<strong>', r'\1', h)
-    return re.sub(r'^(<br>)+|(<br>)+$', '', h.strip()).strip()
+def stats_band(pages):
+    """The figures from the page on Benchmark International's own transactions, shown under the hero."""
+    for pg in pages:
+        if pg['title'].startswith('Benchmark International') and 'Transactions' in pg['title']:
+            pairs = re.findall(r'<p class="dnum">(.*?)</p>\s*<p>(.*?)</p>', pg['body'])[:3]
+            label = re.search(r'<p class="dlabel">([^<]*)</p>\s*<p class="dnum">', pg['body'])
+            if len(pairs) >= 2:
+                return pairs, (label.group(1) if label else ''), pg['num']
+    return None, '', None
 
 
-def is_label(text):
-    letters = [c for c in text if c.isalpha()]
-    return text == text.upper() and len(text) < 90 and len(letters) > 2
+def inline_md(h):
+    h = re.sub(r'<br>', ' ', h)
+    h = re.sub(r'<a href="([^"]+)"[^>]*>(.*?)</a>', lambda m: f'[{plain(m.group(2))}]({m.group(1)})', h, flags=re.S)
+    h = re.sub(r'</?strong>', '**', h)
+    h = re.sub(r'</?em>', '*', h)
+    h = re.sub(r'<[^>]+>', '', h)
+    return html.unescape(h).replace('****', '').strip()
 
 
-def size_of(par):
-    for r in par.runs:
-        if r.font.size:
-            return r.font.size.pt
-    return None
-
-
-def tf_html(tf, title=False):
-    out = []
-    for p in tf.paragraphs:
-        text = ''.join(r.text for r in p.runs).strip()
-        if not text:
-            continue
-        inner = runs_html(p)
-        if is_label(text):
-            out.append(f'<p class="bk-label">{inner}</p>')
-        elif (size_of(p) or 0) >= 15 and len(text) < 140 and not title:
-            out.append(f'<h3 class="bk-h">{inner}</h3>')
-        elif p.level and p.level > 0 or (p._p.pPr is not None and p._p.pPr.find('{http://schemas.openxmlformats.org/drawingml/2006/main}buChar') is not None):
-            out.append(f'<li>{inner}</li>')
-        else:
-            out.append(f'<p>{inner}</p>')
-    h = '\n'.join(out)
-    return re.sub(r'((?:<li>.*?</li>\n?)+)', lambda m: '<ul>' + m.group(1).strip() + '</ul>', h)
-
-
-def table_html(tbl):
-    rows = []
-    for i, row in enumerate(tbl.rows):
-        cells = []
-        for c in row.cells:
-            if c.is_spanned:
-                continue
-            inner = '<br>'.join(runs_html(p) for p in c.text_frame.paragraphs if p.runs and ''.join(r.text for r in p.runs).strip())
-            tag = 'th' if i == 0 else 'td'
-            span = f' colspan="{c.span_width}"' if c.span_width > 1 else ''
-            cells.append(f'<{tag}{span}>{inner}</{tag}>')
-        if any(re.sub(r'<[^>]+>', '', x) for x in cells):
-            rows.append('<tr>' + ''.join(cells) + '</tr>')
+def table_md(t):
+    rows = [[plain(c) for c in re.findall(r'<t[hd][^>]*>(.*?)</t[hd]>', r, re.S)] for r in re.findall(r'<tr>(.*?)</tr>', t, re.S)]
     if not rows:
         return ''
-    return f'<div class="bk-table"><table><thead>{rows[0]}</thead><tbody>{"".join(rows[1:])}</tbody></table></div>'
+    w = max(len(r) for r in rows)
+    rows = [r + [''] * (w - len(r)) for r in rows]
+    return '\n'.join(['| ' + ' | '.join(rows[0]) + ' |', '|' + ' --- |' * w] + ['| ' + ' | '.join(r) + ' |' for r in rows[1:]])
 
 
-NS = {'c': 'http://schemas.openxmlformats.org/drawingml/2006/chart'}
+def body_md(h):
+    h = re.sub(r'<figure class="dchart"[^>]*>.*?<table>(.*?)</table>.*?</figure>', lambda m: '\n\nChart data:\n\n' + table_md(m.group(1)) + '\n\n', h, flags=re.S)
+    h = re.sub(r'<div class="rtable-wrap"><table[^>]*>(.*?)</table></div>', lambda m: '\n\n' + table_md(m.group(1)) + '\n\n', h, flags=re.S)
+    h = re.sub(r'<div class="dline">(.*?)</div></div>', lambda m: '\n- ' + ' '.join(plain(c) for c in re.findall(r'<div class="dline-c[^"]*">(.*?)</div>', m.group(1) + '</div>', re.S)), h, flags=re.S)
+    h = re.sub(r'<div class="dbar"><span class="dbar-l">(.*?)</span>.*?<span class="dbar-v">(.*?)</span></div>', lambda m: f'\n- {plain(m.group(1))}: {plain(m.group(2))}', h, flags=re.S)
+    h = re.sub(r'<div class="dgrid-wrap"><table[^>]*>(.*?)</table></div>', lambda m: '\n\n' + table_md(m.group(1)) + '\n\n', h, flags=re.S)
+    h = re.sub(r'<h3[^>]*>(.*?)</h3>', lambda m: f'\n\n### {plain(m.group(1))}\n\n', h, flags=re.S)
+    h = re.sub(r'<li>(.*?)</li>', lambda m: f'\n- {inline_md(m.group(1))}', h, flags=re.S)
+    h = re.sub(r'<blockquote[^>]*>(.*?)</blockquote>', lambda m: f'\n\n> {inline_md(m.group(1))}\n\n', h, flags=re.S)
+    h = re.sub(r'<p class="dlabel">(.*?)</p>', lambda m: f'\n\n**{plain(m.group(1))}**\n\n', h, flags=re.S)
+    h = re.sub(r'<p[^>]*>(.*?)</p>', lambda m: f'\n\n{inline_md(m.group(1))}\n\n', h, flags=re.S)
+    h = re.sub(r'<img [^>]*alt="([^"]+)"[^>]*>', r'\n\n\1\n\n', h)
+    h = re.sub(r'<(?!https?:)[^>]+>', '', h)
+    h = html.unescape(h)
+    return re.sub(r'\n{3,}', '\n\n', h).strip()
 
 
-def fmt(v, code):
-    """Formats a chart value with its Excel number format (the common cases used in the decks)."""
-    if v is None:
-        return ''
-    secs = (code or 'General').split(';')
-    sec = secs[0]
-    neg = ''
-    if v < 0:
-        if len(secs) > 1:
-            sec, v = secs[1], -v
+def to_markdown(pages, lead, byline, segs):
+    url = site.abs_url(f'insights/{PUBLIC}.html')
+    out = [f'# {NAME} {PERIOD} M&A Sector Report', '', f"Benchmark International's Middle Market team. {byline}.", '',
+           lead, '', f'Web version: {url}  ', f'PDF: {site.abs_url(f"insights/{PUBLIC}.pdf")}', '']
+    if segs:
+        out += ['Segments: ' + '; '.join(segs), '']
+    for pg in pages[1:]:
+        out += [f'## {pg["num"]}. {title_case(pg["title"])}', '']
+        if pg['subtitle']:
+            out += [inline_md(pg['subtitle']), '']
+        out += [body_md(pg['body']), '']
+        if pg['foot']:
+            out += [body_md(pg['foot']), '']
+    return '\n'.join(out).strip() + '\n'
+
+
+def build_page(prs):
+    media = os.path.join(SITE, IMG_DIR)
+    shutil.rmtree(media, ignore_errors=True)
+    root, pdf, md_name = '../', f'{PUBLIC}.pdf', f'{PUBLIC}.md'
+    wd = WebDeck(prs, media, f'{root}{IMG_DIR}')
+    pages = [wd.page(s, i) for i, s in enumerate(prs.slides, 1)]
+    byline, segs, included = cover(prs)
+    lead = CONF['lead']
+
+    # Contents: every page after the cover; the deck's three parts (01, 02, 03) are marked.
+    toc = []
+    for pg in pages[1:]:
+        t = title_case(pg['title'])
+        if pg['part']:
+            toc.append(f'<li class="rtoc-part"><a href="#p{pg["num"]:02d}"><span>{pg["part"]}</span>{esc(t)}</a></li>')
         else:
-            neg = '-'
-            v = -v
-    m = re.match(r'^((?:"[^"]*"|\\.|[$€£+−-])*)(.*?)((?:"[^"]*"|\\.|[%xX ])*)$', sec)
-    pre, core, post = (m.group(1), m.group(2), m.group(3)) if m else ('', sec, '')
-    pct = '%' in re.sub(r'"[^"]*"', '', post)
-    unq = lambda t: re.sub(r'"([^"]*)"', r'\1', t).replace('\\', '')
-    pre, post = unq(pre), unq(post)
-    dec = len(core.split('.')[1].rstrip('#').replace(',', '')) if '.' in core else 0
-    if core in ('General', ''):
-        dec = 0 if float(v).is_integer() else min(2, len(repr(float(v)).split('.')[1]))
-    scale = len(core) - len(core.rstrip(','))          # each trailing comma divides by 1,000
-    core = core.rstrip(',')
-    x = v * 100 if pct else v / 1000 ** scale
-    # Excel rounds half up on the value as displayed to 15 significant digits
-    x = float(Decimal(f'{x:.15g}').quantize(Decimal(1).scaleb(-dec), ROUND_HALF_UP))
-    num = f'{x:,.{dec}f}' if ',' in core or abs(x) >= 10000 else f'{x:.{dec}f}'
-    return neg + pre + num + post
-
-
-def excel_date(serial, code):
-    d = date(1899, 12, 30) + timedelta(days=int(serial))
-    code = re.sub(r'"[^"]*"|\\.', '', code.split(';')[0]).lower()
-    if 'mmm' in code:
-        return d.strftime('%b %Y' if 'yyyy' in code else "%b '%y" if 'yy' in code else '%b')
-    if 'yy' in code and 'm' not in code:
-        return d.strftime('%Y')
-    return d.strftime('%m/%Y')
-
-
-def chart_html(ch):
-    try:
-        plot = ch.plots[0]
-    except IndexError:
-        return ''
-    cats = [str(c) for c in plot.categories]
-    cat_code = (ch._chartSpace.xpath('.//c:dateAx/c:numFmt/@formatCode | .//c:catAx/c:numFmt/@formatCode')
-                or [c.text for c in plot._element.xpath('./c:ser[1]/c:cat//c:formatCode')])
-    cat_code = next((c for c in cat_code if c and c != 'General'), '')
-    if cats and re.search(r'[ym]', cat_code or '') and all(re.fullmatch(r'\d+(\.0)?', c) for c in cats):
-        cats = [excel_date(float(c), cat_code) for c in cats]
-    series = []
-    for p in ch.plots:
-        for s in p.series:
-            # the format the chart shows: data labels first, then the value axis, then the source cells
-            codes = [c for c in (s._element.xpath('./c:dLbls/c:numFmt/@formatCode') + p._element.xpath('./c:dLbls/c:numFmt/@formatCode')
-                                 + s._element.xpath('./c:dLbls/c:dLbl/c:numFmt/@formatCode') + ch._chartSpace.xpath('.//c:valAx/c:numFmt/@formatCode')
-                                 + [c.text for c in s._element.xpath('./c:val//c:formatCode')]) if c and c != 'General'] or ['General']
-            pts = {int(pt.get('idx')): pt.find('c:v', NS).text for pt in s._element.xpath('./c:val//c:pt')}
-            vals = [float(pts[i]) if pts.get(i) not in (None, '') else None for i in range(len(cats))]
-            series.append((s.name or '', vals, codes[0] if codes else 'General'))
-    if not cats or not series:
-        return ''
-    title = ''
-    if ch.has_title and ch.chart_title.has_text_frame:
-        title = esc(ch.chart_title.text_frame.text.strip())
-    many = len(cats) > 14 and len(series) <= 3   # long time series read better down the page than across it
-    head = '<tr><th>' + ('' if len(series) > 1 or not series[0][0] else '') + '</th>' + ''.join(f'<th>{esc(n)}</th>' for n, _, _ in series) + '</tr>'
-    body = ''.join('<tr><th>' + esc(c) + '</th>' + ''.join(f'<td>{fmt(vals[i] if i < len(vals) else None, code)}</td>' for _, vals, code in series) + '</tr>'
-                   for i, c in enumerate(cats))
-    cap = f'<caption>Chart data{": " + title if title else ""}</caption>'
-    tbl = f'<div class="bk-table bk-chart{" bk-chart--long" if many else ""}"><table>{cap}<thead>{head}</thead><tbody>{body}</tbody></table></div>'
-    if many:
-        return f'<details class="bk-more"><summary>Chart data{": " + title if title else ""} ({len(cats)} values)</summary>{tbl}</details>'
-    return tbl
-
-
-SKIP_ALT = {'Benchmark International'} | {m[0] for m in site.TEAM_LEAD + site.TEAM_SUPPORT}
-
-
-def logo_name(pic):
-    """The company name on a logo image, from its alt text. Photos (described in a sentence), file names and the
-    Benchmark International mark are left out."""
-    alt = (pic._element.xpath('./p:nvPicPr/p:cNvPr')[0].get('descr') or '').strip()
-    if not alt or '/' in alt or re.search(r'\.(png|jpe?g|svg)$', alt, re.I) or alt in SKIP_ALT:
-        return ''
-    words = re.findall(r"[A-Za-z][\w'’]*", alt)
-    return alt if words and all(w[0].isupper() for w in words) and len(alt) <= 48 else ''
-
-
-def slide_parts(slide, H, cover=False):
-    """(title, subtitle, body html, footnote html) for one slide, in the order the deck reads."""
-    title = subtitle = ''
-    body, foot, part = [], [], []
-
-    def visit(shapes):
-        nonlocal title, subtitle
-        for sh in shapes:
-            if sh.shape_type == MSO_SHAPE_TYPE.GROUP:
-                visit(sh.shapes)
-                continue
-            top = sh.top or 0
-            if sh.is_placeholder and sh.placeholder_format.type in (PP_PLACEHOLDER.SLIDE_NUMBER, PP_PLACEHOLDER.DATE, PP_PLACEHOLDER.FOOTER):
-                continue
-            if getattr(sh, 'has_chart', False) and sh.has_chart:
-                body.append(chart_html(sh.chart))
-                continue
-            if getattr(sh, 'has_table', False) and sh.has_table:
-                body.append(table_html(sh.table))
-                continue
-            if sh.shape_type == MSO_SHAPE_TYPE.PICTURE:
-                alt = logo_name(sh)
-                if alt:
-                    body.append(f'<p class="bk-logo">{esc(alt)}</p>')
-                continue
-            if not sh.has_text_frame:
-                continue
-            text = sh.text_frame.text.strip()
-            if not text:
-                continue
-            if not cover and top < Emu(914400 * 0.5) and (is_label(text) or re.fullmatch(r'Q\d \d{4}', text)):
-                continue                                   # running header
-            if re.fullmatch(r'\d{1,2}', text) and top > H * 0.9:
-                continue                                   # page number
-            if re.fullmatch(r'0\d', text):
-                part.append(text)                          # the large 01, 02, 03 on a part's opening page
-                continue
-            if not cover and not title and (top < H * 0.25 or part) and not is_label(text) and len(text) < 120:
-                title = text
-                continue
-            if not cover and title and not subtitle and not body and not part and top < H * 0.25 and not is_label(text):
-                subtitle = runs_html(sh.text_frame.paragraphs[0]) if len(sh.text_frame.paragraphs) == 1 else tf_html(sh.text_frame, True)
-                continue
-            h = tf_html(sh.text_frame)
-            dst = foot if top > H * 0.9 else body
-            if not dst or dst[-1] != h:
-                dst.append(h)
-
-    visit(slide.shapes)
-    return title, subtitle, '\n'.join(x for x in body if x), '\n'.join(foot), (part[0] if part else None)
-
-
-# ─── 4. Site page ────────────────────────────────────────────────────────────
-def plain(h):
-    return html.unescape(re.sub(r'<[^>]+>', '', h))
-
-
-def build_page(prs, links, img_size):
-    H = prs.slide_height
-    slides = [slide_parts(s, H, cover=(n == 0)) for n, s in enumerate(prs.slides)]
-    deck_text = ' '.join(plain(t + ' ' + s + ' ' + b + ' ' + f) for t, s, b, f, _ in slides)
-    norm = lambda t: re.sub(r'\s+', ' ', t.replace('\xa0', ' '))
-    assert norm(CONF['lead']) in norm(deck_text), 'brief.json "lead" must be copied from the cover'
-    byline = next((m.group(0) for m in [re.search(r'October \d{4}\s*\|\s*Jared Hardin, Managing Director', norm(deck_text), re.I)] if m), None)
-    assert byline, 'cover byline not found'
-    root, pdf = '../', f'{PUBLIC}.pdf'
-    w, h = img_size
-    dl = ('<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
-          'stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>')
-
-    # Contents: the deck's three parts (the pages that carry a large 01, 02, 03) and the pages under each.
-    groups, cur = [], None
-    for i, (t, s, b, f, part) in enumerate(slides, 1):
-        if i == 1:
-            continue
-        if part:
-            cur = [i, norm(t).title() if t.isupper() else norm(t), []]
-            groups.append(cur)
-        elif cur:
-            cur[2].append((i, norm(t).title() if t.isupper() else norm(t)))
-    toc = ''.join(f'<li class="btoc-part"><a href="#p{a:02d}"><span>{n + 1:02d}</span>{esc(t)}</a><ol>'
-                  + ''.join(f'<li><a href="#p{j:02d}"><span>{j}</span>{esc(x)}</a></li>' for j, x in items) + '</ol></li>'
-                  for n, (a, t, items) in enumerate(groups))
+            toc.append(f'<li><a href="#p{pg["num"]:02d}"><span>{pg["num"]:02d}</span>{esc(t)}</a></li>')
 
     secs = []
-    for i, (t, s, b, f, part) in enumerate(slides, 1):
-        ttl = norm(t).title() if t.isupper() else norm(t)
-        if i == 1:
-            ttl = f'{NAME} {PERIOD} Sector Brief: Cover'
-        overlay = ''.join(f'<a class="bslide-link" href="{esc(u)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" title="{esc(u)}" '
-                          f'style="left:{x:.2f}%;top:{y:.2f}%;width:{ww:.2f}%;height:{hh:.2f}%"></a>'
-                          for x, y, ww, hh, u in links[i - 1])
-        sub = f'<p class="bslide-sub">{s}</p>' if s and not s.startswith('<') else s
-        secs.append(f'''<section class="bslide" id="p{i:02d}" aria-labelledby="p{i:02d}-t">
-<div class="bslide-head"><span class="bslide-num">{i:02d}</span><h2 class="bslide-title" id="p{i:02d}-t">{esc(ttl)}</h2><a class="bslide-pdf" href="{pdf}#page={i}">Page {i} in the PDF</a></div>
-<div class="bslide-img"><img src="{root}{IMG_DIR}/p{i:02d}.webp" srcset="{root}{IMG_DIR}/p{i:02d}-800.webp 800w, {root}{IMG_DIR}/p{i:02d}.webp 1600w" sizes="(max-width: 1080px) 100vw, 900px" alt="Page {i} of the {NAME} {PERIOD} sector brief: {esc(ttl)}. The full text follows." width="{w}" height="{h}"{' loading="lazy"' if i > 2 else ''}>{overlay}</div>
-<details class="bslide-text"><summary>Read the text of this page</summary>
-<div class="bslide-body">{sub}
-{b}
-{f'<div class="bk-foot">{f}</div>' if f else ''}</div>
-</details>
-</section>''')
+    for pg in pages[1:]:
+        t = title_case(pg['title']) if pg['title'].isupper() else (pg['title_html'] or esc(pg['title']))
+        num = pg['part'] if pg['part'] else f'{pg["num"]:02d}'
+        sub = f'<p class="rlead">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
+        if pg['part'] and included.get(pg['part']):
+            sub = f'<p class="rpart-desc">{esc(included[pg["part"]])}</p>' + sub
+        foot = f'<div class="fine rfoot">{pg["foot"]}</div>' if pg['foot'] else ''
+        kind = ' rsec--part' if pg['part'] else ''
+        secs.append(f'<section class="rsec{kind}" id="p{pg["num"]:02d}">\n<div class="rsec-head"><span class="rsec-num">{num}</span>'
+                    f'<h2 class="h2">{t}</h2></div>\n<div class="rblock dblock">{sub}\n{pg["body"]}\n{foot}'
+                    f'<p class="rpage"><a href="{pdf}#page={pg["num"]}">Page {pg["num"]} of the PDF</a></p></div>\n</section>')
 
-    lead = CONF['lead']
-    desc = f'{NAME} {PERIOD} M&A sector brief from Benchmark International: {lead}'
-    page = site.head(f'{NAME} {PERIOD} M&A Sector Report', desc[:300], root).replace('</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n</head>')
+    pairs, band_label, _ = stats_band(pages)
+    band = ''
+    if pairs:
+        stat_html = ''.join(f'<div class="stat"><div class="stat-num">{a}</div><div class="stat-label">{b}</div></div>' for a, b in pairs)
+        eyebrow = f'<p class="eyebrow">{band_label}</p>' if band_label else ''
+        band = (f'\n<section class="section--dark section--tight">\n  <div class="wrap">\n    {eyebrow}\n'
+                f'    <div class="stats rhero-stats">{stat_html}</div>\n  </div>\n</section>\n')
+    seg_html = f'<p class="rsegs">{" &nbsp;·&nbsp; ".join(esc(x) for x in segs)}</p>' if segs else ''
+    desc = f"{NAME} {PERIOD} M&A sector report from Benchmark International's Middle Market team: {lead}"
+    page = site.head(f'{NAME} {PERIOD} M&A Sector Report', desc[:300], root).replace(
+        '</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n'
+                   f'<link rel="alternate" type="text/markdown" href="{md_name}" title="{esc(NAME)} {PERIOD} M&amp;A Sector Report (Markdown)">\n</head>')
     page += site.header(root, 'industries')
-    page += f'''
-<section class="hero hero--page">
-  <div class="wrap">
-    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}sectors/index.html">Sectors</a> / <a href="{root}sectors/{SECTOR}.html">{esc(NAME)}</a> / {PERIOD} Sector Report</div>
-    <p class="eyebrow">Quarterly Sector Brief &nbsp;|&nbsp; {PERIOD}</p>
-    <h1 class="display">{esc(NAME)} <em>{PERIOD}</em></h1>
-    <p class="lead">{esc(lead)}</p>
-    <p class="rbyline">{esc(byline.replace("  ", " "))}</p>
-    <div class="btn-row"><a class="btn" href="{pdf}" download>{dl} Download the PDF</a><a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a></div>
-  </div>
-</section>
-
-<div class="wrap rlayout blayout">
-  <aside class="rtoc btoc" aria-label="Report contents">
-    <p class="eyebrow">Contents</p>
-    <ol><li><a href="#p01"><span></span>Cover</a></li>{toc}</ol>
-    <a class="btn" href="{pdf}" download>{dl} Download PDF</a>
-  </aside>
-  <article class="report brief">
-    <p class="bnote">This is the {esc(NAME)} {PERIOD} sector brief, page by page, exactly as it appears in the <a href="{pdf}" download>PDF</a>. Links on each page open their sources, and the text of every page, with its tables and chart data, is below each page.</p>
-{chr(10).join(secs)}
-  </article>
-</div>
-<script>if (matchMedia('(max-width: 700px)').matches) document.querySelectorAll('.bslide-text').forEach(d => d.open = true);</script>
-'''
+    author = (f'<aside class="rauthor">\n      <img src="{root}assets/img/team/jared-hardin.jpg" alt="Jared Hardin" width="120" height="120" loading="lazy">\n'
+              f'      <div>\n        <p class="eyebrow">Considering a transaction in the {esc(NAME.lower())} sector?</p>\n        <h3>Jared Hardin</h3>\n'
+              f'        <p class="role">Managing Director, Benchmark International</p>\n'
+              f'        <p><a href="tel:+18137716675">813-771-6675</a> &nbsp;|&nbsp; <a href="mailto:j.hardin@benchmarkintl.com">j.hardin@benchmarkintl.com</a></p>\n'
+              f'        <div class="btn-row"><a class="btn" href="{root}index.html#form">Start the Conversation</a><a class="btn btn--ghost" href="{pdf}" download>{DL} Download the PDF</a></div>\n'
+              f'      </div>\n    </aside>')
+    page += (f'\n<section class="hero hero--page">\n  <div class="wrap">\n'
+             f'    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}sectors/index.html">Sectors</a> / '
+             f'<a href="{root}sectors/{SECTOR}.html">{esc(NAME)}</a> / {PERIOD} Sector Report</div>\n'
+             f'    <p class="eyebrow">Quarterly Sector Brief &nbsp;|&nbsp; {PERIOD}</p>\n'
+             f'    <h1 class="display">{esc(NAME)} <em>{PERIOD}</em></h1>\n'
+             f'    <p class="lead">{esc(lead)}</p>\n    {seg_html}\n'
+             f'    <p class="rbyline">{esc(norm(byline))}</p>\n'
+             f'    <div class="btn-row"><a class="btn" href="{pdf}" download>{DL} Download the PDF</a>'
+             f'<a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a></div>\n  </div>\n</section>\n'
+             f'{band}\n<div class="wrap rlayout">\n  <aside class="rtoc" aria-label="Report contents">\n    <p class="eyebrow">Contents</p>\n'
+             f'    <ol>{"".join(toc)}</ol>\n    <a class="btn" href="{pdf}" download>{DL} Download the PDF</a>\n  </aside>\n'
+             f'  <article class="report">\n{chr(10).join(secs)}\n    {author}\n  </article>\n</div>\n\n')
     page += site.cta(root)
     page += site.footer(root)
-    page = site.report_extras(page, SECTOR, root)
-    assert '—' not in page, 'em dash on the page'
+    extra = {
+        'abstract': lead,
+        'keywords': ', '.join([f'{NAME} M&A', f'{NAME} mergers and acquisitions', 'middle market', 'valuation multiples', 'sell-side M&A'] + segs),
+        'encoding': [{'@type': 'MediaObject', 'contentUrl': site.abs_url(f'insights/{md_name}'), 'encodingFormat': 'text/markdown'}],
+        'hasPart': [dict({'@type': 'WebPageElement', 'name': title_case(pg['title']), 'url': site.abs_url(f'insights/{PUBLIC}.html') + f'#p{pg["num"]:02d}'},
+                         **({'description': plain(pg['subtitle'])} if pg['subtitle'] else {})) for pg in pages[1:]],
+    }
+    page = site.report_extras(page, SECTOR, root, extra)
+    for bad, why in (('—', 'em dash'), ('Capital Markets', 'old team name'), ('BCM', 'old team name')):
+        assert bad not in page, f'{why} on the page'
     assert not re.search(r'\bMMT\b|Middle Market Team', page), 'MMT on the page'
     out = os.path.join(SITE, 'insights', f'{PUBLIC}.html')
     open(out, 'w', encoding='utf-8').write(page)
-    print('wrote', os.path.relpath(out, SITE), round(len(page) / 1024), 'KB', len(slides), 'pages')
+    md = to_markdown(pages, lead, norm(byline), segs)
+    open(os.path.join(SITE, 'insights', md_name), 'w', encoding='utf-8').write(md)
+    for f in os.listdir(media) if os.path.isdir(media) else []:
+        if f'{IMG_DIR}/{f}' not in page:
+            os.remove(os.path.join(media, f))     # pictures the page leaves out (decoration and photos)
+    n_media = len(os.listdir(media)) if os.path.isdir(media) else 0
+    print('wrote', os.path.relpath(out, SITE), round(len(page) / 1024), 'KB,', len(pages) - 1, 'sections,', n_media, 'images, and', md_name)
+    return pages
 
 
 def main():
     with tempfile.TemporaryDirectory() as tmp:
         work = os.path.join(tmp, f'{PUBLIC}.pptx')
         prs = corrected_deck(work)
-        src = convert(work, tmp)
-        reader = write_pdf(src)
-        size = write_images(src, tmp, len(reader.pages))
-        build_page(prs, page_links(reader), size)
+        if '--page-only' not in sys.argv:
+            write_pdf(convert(work, tmp))
+        build_page(prs)
 
 
 if __name__ == '__main__':

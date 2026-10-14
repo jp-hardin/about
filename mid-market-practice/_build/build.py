@@ -648,7 +648,7 @@ def photo_strip(slug, root, n=4):
     return f'<div class="photo-strip reveal" aria-hidden="true">{imgs}</div>'
 
 
-def report_extras(page, slug, root):
+def report_extras(page, slug, root, extra=None):
     """Finishes a sector report page: the industry photo hero, photo breaks after report sections 2 and 5,
     and the Important Disclosures link at the end of the report."""
     page = page.replace('<section class="hero hero--page">', photo_hero(slug, root), 1)
@@ -672,6 +672,7 @@ def report_extras(page, slug, root):
                "author": author, "publisher": {"@id": SITE_URL + "#org"}, "about": f"{sec['name']} mergers and acquisitions",
                "image": SITE_URL + f"assets/img/social/{slug}-report.jpg",
                "associatedMedia": {"@type": "MediaObject", "contentUrl": abs_url(rpt["pdf"]), "encodingFormat": "application/pdf"}}
+    article.update(extra or {})
     return finalize(page, rpt["url"], crumbs=[("Middle Market", ""), ("Insights", "insights/index.html"), (rpt["title"], rpt["url"])],
                     schema=[article], image=f"assets/img/social/{slug}-report.jpg")
 
@@ -1569,7 +1570,10 @@ def write_discovery_files():
               + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "PerplexityBot", "Google-Extended", "Applebot-Extended", "Bingbot"))
               + f"Sitemap: {SITE_URL}sitemap.xml\n")
     sec = "\n".join(f"- [{x['name']}]({abs_url('sectors/' + x['slug'] + '.html')}): {x['short']}" for x in SECTORS)
-    rep = "\n".join(f"- [{i['title']}]({abs_url(i['url'])}) ([PDF]({abs_url(i['pdf'])})): {i['summary']}" for i in INSIGHTS)
+    def md_link(i):
+        md = i['url'][:-5] + '.md'
+        return f", [Markdown]({abs_url(md)})" if os.path.exists(os.path.join(SITE, md)) else ""
+    rep = "\n".join(f"- [{i['title']}]({abs_url(i['url'])}) ([PDF]({abs_url(i['pdf'])}){md_link(i)}): {i['summary']}" for i in INSIGHTS)
     faqs = "\n".join(f"- **{q}** {a}" for q, a in home_faqs())
     llms = f"""# {ORG_NAME}
 
