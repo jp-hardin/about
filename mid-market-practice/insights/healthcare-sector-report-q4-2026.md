@@ -2,7 +2,7 @@
 
 Benchmark International's Middle Market team. October 2026 | Jared Hardin, Managing Director.
 
-Mergers and acquisitions across provider services, life sciences, medical products and pharmacy services
+Mergers and acquisitions across provider services, life sciences, medical products and pharmacy services.
 
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-sector-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-sector-report-q4-2026.pdf
@@ -720,7 +720,7 @@ The listed reference companies in each focus area and the private platforms, spo
 
 **Elite365**
 
-Listed companies are the reference set for the valuation pages and each links to its data page. Private participants are buyers named in 2026 transactions covered in the full report. The list is a selection.
+Listed companies are the reference set for the valuation pages and each links to its data page. Private participants are buyers named in 2026 transactions. The list is a selection.
 
 ## 12. Select Recent Healthcare M&A Transactions
 
@@ -810,7 +810,7 @@ Knox Lane paid $437 million, or $13.25 a share, after Aya Healthcare ended an ag
 
 **KNOX LANE**
 
-Terms are as disclosed by the parties or reported by the linked source. Benchmark International did not advise on these transactions. A fuller list for each focus area is in the Healthcare Q4 2026 report.
+Terms are as disclosed by the parties or reported by the linked source. Benchmark International did not advise on these transactions.
 
 ## 13. Benchmark International's Healthcare Transactions
 
@@ -1362,7 +1362,7 @@ Jared Hardin
 
 **SCHEDULE A CONVERSATION**
 
-**READ THE FULL Q4 2026 REPORT**
+**READ THE REPORT ONLINE**
 
 **UPCOMING EVENT**
 
@@ -1657,4 +1657,4 @@ The sources linked on each page, listed by page with the link text used.
 
 [StockAnalysis](https://stockanalysis.com/)
 
-Listed-company data pages at [StockAnalysis](https://stockanalysis.com/) are linked from each company name in the landscape and appendix pages. The full Healthcare Q4 2026 report carries the complete source list for the transactions and policy items summarized here.
+Listed-company data pages at [StockAnalysis](https://stockanalysis.com/) are linked from each company name in the landscape and appendix pages.

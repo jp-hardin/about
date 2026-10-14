@@ -1322,7 +1322,7 @@ Understand the paths available, from a partial recapitalization to a full sale, 
 
 **SCHEDULE A CONVERSATION**
 
-**READ THE FULL Q4 2026 INDUSTRIAL REPORT**
+**READ THE REPORT ONLINE**
 
 **MIDDLE MARKET**
 
@@ -1536,4 +1536,4 @@ Every figure in this brief links to the page it came from, and the same links ar
 
 **How the figures were gathered. **Listed-company figures are from StockAnalysis and use reported results. Economic series are from FRED. Benchmark International figures are from the firm’s transaction records as of October 1, 2026. Subscription and registration sources that would add depth, including GF Data, PitchBook and S&P Capital IQ, are listed in a separate one-page companion.
 
-Figures were gathered from these sources between October 2 and October 7, 2026. The full Q4 2026 Industrial report carries the longer source list behind the five segment chapters.
+Figures were gathered from these sources between October 2 and October 7, 2026.
