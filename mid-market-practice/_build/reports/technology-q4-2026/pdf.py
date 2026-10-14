@@ -1,5 +1,5 @@
 # Builds the downloadable PDF from the print pages in root/project (run gen.py first).
-# Fonts come from ../healthcare-q4-2026/fonts (SIL Open Font License), so the build needs no network access.
+# Fonts come from ../fonts (SIL Open Font License), so the build needs no network access.
 import re, os, json, asyncio
 from playwright.async_api import async_playwright
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -8,7 +8,7 @@ PROJ = os.path.join(ROOT, 'root', 'project')
 SLUG = 'technology-q4-2026'
 PUBLIC = SLUG.rsplit('-', 2)[0] + '-sector-report-' + '-'.join(SLUG.rsplit('-', 2)[1:])
 OUT = os.path.join(SITE, 'insights', f'{PUBLIC}.pdf')
-FONTS = '../healthcare-q4-2026/fonts'
+FONTS = '../fonts'
 AST = os.path.relpath(os.path.join(SITE, 'assets', 'img'), ROOT)
 # Images the design canvas stores as uploads, mapped to the copies kept in this repo.
 IMG = {

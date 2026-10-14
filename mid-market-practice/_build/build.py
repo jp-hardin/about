@@ -286,6 +286,10 @@ INSIGHTS = [
      "summary": "Managed IT and cloud services, cybersecurity, telecom and UCaaS, systems integration, electronics and hardware, and government technology: the deal market, the policy calendar and what buyers are paying for."},
 ]
 for _i in INSIGHTS:
+    # A report built from a PowerPoint sector brief (reports/<folder>/brief.pptx) is summarized by its cover sentence.
+    _brief = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", f"{_i['sector']}-q{_i['quarter']}-{_i['year']}", "brief.json")
+    if os.path.exists(_brief):
+        _i["summary"] = json.load(open(_brief, encoding="utf-8"))["lead"]
     _i["period"] = f"Q{_i['quarter']} {_i['year']}"
     _i["url"] = f"insights/{_i['slug']}.html"
     _i["pdf"] = f"insights/{_i['slug']}.pdf"

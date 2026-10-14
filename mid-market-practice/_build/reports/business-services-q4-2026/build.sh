@@ -1,6 +1,5 @@
 #!/bin/sh
-# Rebuilds the downloadable PDF and the site page from the print pages in pages/.
+# Rebuilds the site page, page images and downloadable PDF from brief.pptx. See README.md.
 set -e
-cd "$(dirname "$0")"
-python3 pdf.py
-python3 web.py
+cd "$(dirname "$0")/.."
+python3 brief.py "$(basename "$(dirname "$0")")"

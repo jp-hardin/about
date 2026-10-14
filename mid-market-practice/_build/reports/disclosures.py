@@ -11,7 +11,7 @@ SITE = os.path.normpath(os.path.join(HERE, '..', '..'))
 sys.path.insert(0, os.path.join(SITE, '_build'))
 import build as site  # noqa: E402
 
-FONTS = 'healthcare-q4-2026/fonts'  # relative to the temporary page written in this folder
+FONTS = 'fonts'  # relative to the temporary page written in this folder
 F = [('Newsreader', 'newsreader', 500, 'normal'), ('Quicksand', 'quicksand', 500, 'normal'), ('Quicksand', 'quicksand', 700, 'normal')]
 FACE = ''.join(f"@font-face{{font-family:'{n}';font-weight:{w};font-style:{s};src:url('{FONTS}/{f}-latin-{w}-{s}.woff2') format('woff2')}}" for n, f, w, s in F)
 

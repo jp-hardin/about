@@ -1,40 +1,21 @@
-# Industrial Q4 2026 sector report: source
+# Industrial Q4 2026 sector report
 
-One content file produces two outputs. Edit the source here and rebuild; do not hand-edit the outputs.
+The source is `brief.pptx`, the Industrial Q4 2026 Sector Brief deck. It is the authoritative document: the downloadable PDF and the site page are both built from it, so they always say the same thing.
 
-| Output | Where | Built by |
-| --- | --- | --- |
-| Site page (native HTML, site styles) | `mid-market-practice/insights/industrial-sector-report-q4-2026.html` | `web.py` |
-| Downloadable PDF (Letter print layout) | `mid-market-practice/insights/industrial-sector-report-q4-2026.pdf` | `pdf.py` |
+To change the report, edit the deck in PowerPoint, save it here as `brief.pptx` and rebuild:
 
-## Rebuild
 ```
-./build.sh
+sh build.sh
 ```
-This runs `web.py` and `pdf.py`. `pdf.py` needs Playwright with Chromium (`pip install playwright && playwright install chromium`). To change only the site page, `python3 web.py` is enough. Commit the regenerated outputs with the source change. Merging to `main` publishes the site.
 
-## Files
-- `report.md`: all report text, tables, quotations and links, in Markdown. It mirrors the report document Jared edits, so a change made there is pasted or re-exported here.
-- `render.py`: reads `report.md` and renders it as the HTML blocks both outputs share. It also holds the hero figures (`FIGS`), the three-figure band at the top of each segment (`BANDS`), the ISM chart data (`ISM`) and the as-of date (`AS_OF`).
-- `web.py`: wraps the twelve sections in the site header, footer and call to action from `_build/build.py`. Styles are in `mid-market-practice/assets/css/report.css`.
-- `pdf.py`: lays the same sections out for print, with a cover, a contents page, the contact page and the sources as the final section, and prints the PDF.
-- `fonts/`: Cinzel, Newsreader and Quicksand (SIL Open Font License) for the PDF.
+This runs `../brief.py`, which writes:
 
-## How report.md maps to the page
-- `## Overview` and `## At a Glance` become section 01, The Quarter in Brief.
-- Each `###` heading under `## Where We Focus` becomes its own section. Bullets that open with a bold label become titled sub-sector blocks, and the paragraph that opens with "Benchmark International in this segment." becomes the highlighted note.
-- A line that starts with `>` is a quotation, written as `> "Quoted sentence." ([Source name, publication](link))`.
-- `{{chart:ism}}` places the ISM chart.
-- `## Your Deal Team` is appended to the Advisory section, and `## Considering a Transaction in the Industrial Sector?` is replaced by the contact block on the site and the contact page in the PDF.
+- `insights/industrial-sector-report-q4-2026.pdf`: the deck converted to PDF (the download).
+- `insights/industrial-sector-report-q4-2026.html`: the site page. Each page of the deck is shown as an image with its links live, followed by the page's full text, tables and chart data.
+- `assets/img/reports/industrial-sector-report-q4-2026/`: the page images.
 
-## Where to make common edits
-- Text, figures, table rows, links: `report.md`. Both outputs pick the change up.
-- Hero figures, segment bands, chart data, as-of date: the constants at the top of `render.py`. Keep each figure consistent with the text.
-- Site section order or titles: `groups()` in `render.py`.
-- Site styling: `assets/css/report.css`. Print styling: the `CSS` block in `pdf.py`.
-- Button on the Industrial page: the `"report"` entry on the industrial sector in `_build/build.py`, then `python3 build.py` from `_build/`.
+`brief.json` holds the cover's summary sentence, which is the page lead and the summary on the Insights page. Copy it from the cover if the cover changes; the build checks that it matches.
 
-## Content rules
-- Benchmark transactions: trailing 24 months only, no dates, names only where the tombstone is public and the deal is cleared to market.
-- No investment bank used as a source of data. Direct quotations from the leading mid-market banks are attributed and linked; Capstone Partners is not cited.
-- Copy follows the house voice: full sentences, no em dashes, no arrows.
+The build fixes two things in a working copy without changing `brief.pptx`: em dashes (site style) and links to the old `-industry-report-` and `/industries/` addresses. Anything else must be changed in the deck.
+
+Requirements: LibreOffice with Impress (`soffice`), poppler-utils (`pdftoppm`, `pdffonts`) and `pip install python-pptx pypdf Pillow`. The deck fonts are in `../brief-fonts/` (Carlito and Caladea stand in for Calibri and Cambria with the same metrics), so nothing needs installing system-wide.

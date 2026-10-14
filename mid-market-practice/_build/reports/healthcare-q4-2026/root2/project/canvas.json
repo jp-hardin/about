@@ -1,0 +1,27 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-05T21:05:00Z"
+ },
+ "title": "Healthcare Q4 2026 Subscription Sources",
+ "launch": {
+  "view": "focused",
+  "file": "Main.dc.html"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "Subscription and gated sources"
+  }
+ },
+ "order": [
+  "Main.dc.html"
+ ],
+ "notes": {},
+ "designSystems": []
+}

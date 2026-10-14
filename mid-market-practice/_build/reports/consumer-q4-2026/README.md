@@ -1,35 +1,21 @@
-# Consumer Q4 2026 sector report: source
+# Consumer Q4 2026 sector report
 
-One content file produces two outputs. Edit the source here and rebuild; do not hand-edit the outputs.
+The source is `brief.pptx`, the Consumer Q4 2026 Sector Brief deck. It is the authoritative document: the downloadable PDF and the site page are both built from it, so they always say the same thing.
 
-| Output | Where | Built by |
-| --- | --- | --- |
-| Site page (native HTML, site styles) | `mid-market-practice/insights/consumer-sector-report-q4-2026.html` | `web.py` |
-| Downloadable PDF (22-page print layout) | `mid-market-practice/insights/consumer-sector-report-q4-2026.pdf` | `pdf.py` |
+To change the report, edit the deck in PowerPoint, save it here as `brief.pptx` and rebuild:
 
-## Rebuild
 ```
-./build.sh
+sh build.sh
 ```
-This runs `web.py` and `pdf.py`. `pdf.py` needs Playwright with Chromium (`pip install playwright && playwright install chromium`). To change only the site page, `python3 web.py` is enough. Commit the regenerated outputs with the source change. Merging to `main` publishes the site.
 
-## Files
-- `content.md`: the whole report as Markdown, with every source linked inline. It is an export of the working document "Consumer: Q4 2026 M&A Sector Report", with the title and byline lines removed and the chart replaced by a `{{chart}}` line.
-- `report.py`: reads `content.md` into the twelve sections and holds everything that is not prose: the four headline figures (`FIGS`), the stat bands for the four segments (`BANDS`), the chart data (`CHART`) and the contact details (`CONTACT`).
-- `web.py`: renders the sections as the site page and wraps them in the site header, footer and call to action from `_build/build.py`. Styles are in `mid-market-practice/assets/css/report.css`.
-- `pdf.py`: lays the same sections out for print (cover, running header and page numbers, contact page, then the sources as the final pages) and prints the PDF. `python3 pdf.py --keep` leaves the intermediate `_pdf.html` in this folder for inspection.
-- `fonts/`: Cinzel, Newsreader and Quicksand (SIL Open Font License) for the PDF.
-- `art/knot.png`: the watermark used by the PDF. The cover and stat-band photos are `rpt-*.jpg` in `mid-market-practice/assets/img/industries/consumer/`, set in `pdf.py` (cover) and `BANDS` in `report.py` (bands).
+This runs `../brief.py`, which writes:
 
-## Where to make common edits
-- Text, table rows, links: `content.md`. Both outputs pick the change up. Headings must keep their names, because `SECTION_IDS` in `report.py` maps each heading to a section.
-- A figure that appears in a stat band, on the cover or in the chart: change it in `content.md` and in `report.py`, so the two agree.
-- Which sections start a new page in the PDF: `FLOW_ON` in `pdf.py`.
-- Site styling: `assets/css/report.css`.
-- Button on the Consumer page: the `"report"` entry on the consumer sector in `_build/build.py`, then `python3 build.py` from `_build/`.
+- `insights/consumer-sector-report-q4-2026.pdf`: the deck converted to PDF (the download).
+- `insights/consumer-sector-report-q4-2026.html`: the site page. Each page of the deck is shown as an image with its links live, followed by the page's full text, tables and chart data.
+- `assets/img/reports/consumer-sector-report-q4-2026/`: the page images.
 
-## Content rules
-- Benchmark transactions: closed since January 2025, shown by announcement date, with names only where the tombstone is public. The public tombstone governs who the client was.
-- No other investment bank cited as a source.
-- The contact page closes the report and the sources follow it as the final pages. The list of subscription sources is a separate document and stays out of the report.
-- Copy follows the house voice: full sentences, no em dashes, no arrows.
+`brief.json` holds the cover's summary sentence, which is the page lead and the summary on the Insights page. Copy it from the cover if the cover changes; the build checks that it matches.
+
+The build fixes two things in a working copy without changing `brief.pptx`: em dashes (site style) and links to the old `-industry-report-` and `/industries/` addresses. Anything else must be changed in the deck.
+
+Requirements: LibreOffice with Impress (`soffice`), poppler-utils (`pdftoppm`, `pdffonts`) and `pip install python-pptx pypdf Pillow`. The deck fonts are in `../brief-fonts/` (Carlito and Caladea stand in for Calibri and Cambria with the same metrics), so nothing needs installing system-wide.

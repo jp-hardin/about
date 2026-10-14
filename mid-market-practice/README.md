@@ -13,7 +13,7 @@ A standalone site for Benchmark International's Middle Market team: firm overvie
 | `sectors/<sector>.html` | Sector page: overview, segments and sub-sectors, filterable tombstones with deal descriptions, market themes, what buyers value, active acquirers, services, client story, deal team |
 | `transactions.html` | All curated tombstones, filterable by sector and searchable |
 | `insights/index.html` | Insights: current quarterly sector report per industry plus an archive of earlier editions (from `INSIGHTS` in `build.py`) |
-| `insights/<sector>-sector-report-q<N>-<year>.html` | Sector report pages and PDFs, generated from `_build/reports/<report>/` |
+| `insights/<sector>-sector-report-q<N>-<year>.html` | Sector report pages and PDFs, generated from `_build/reports/<report>/` (Industrial, Business Services, Consumer and Healthcare from the PowerPoint deck `brief.pptx` via `_build/reports/brief.py`) |
 
 ## Editing
 
@@ -42,7 +42,7 @@ Merging to `main` triggers GitHub Pages' "pages build and deployment" run. If a 
 
 ## Search and AI discovery (SEO, AEO, GEO)
 
-- **One setting for the address:** `SITE_URL` in `_build/build.py`. Canonical links, `sitemap.xml`, `robots.txt`, `llms.txt`, social previews and JSON-LD structured data all build from it. Change it when the site moves (for example to HubSpot), rebuild, then rerun each report's `web.py`.
+- **One setting for the address:** `SITE_URL` in `_build/build.py`. Canonical links, `sitemap.xml`, `robots.txt`, `llms.txt`, social previews and JSON-LD structured data all build from it. Change it when the site moves (for example to HubSpot), rebuild, then rerun each report's `build.sh`.
 - **Structured data (JSON-LD) on every page:** Organization (parent: Benchmark International), WebPage, BreadcrumbList; plus FAQPage (home, About, industry pages), Person (team), Service (industry pages), ItemList (Industries, Insights) and Report (sector reports).
 - **FAQs** are built from existing site copy in `home_faqs()` and `sector_faqs()`. Have Compliance review any change.
 - **About page** (`about.html`) is the plain fact sheet for search engines and AI assistants to cite.
