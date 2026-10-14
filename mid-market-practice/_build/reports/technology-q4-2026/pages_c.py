@@ -264,13 +264,43 @@ def p19():
 
 
 # ============ CONTACT ============
+TEAM10 = [
+    ('Jordan Houtz', 'Managing Director', '813-771-6675 (team line)', 'jhoutz', 'jordanhoutz'),
+    ('Jared Hardin', 'Managing Director', '813-771-6675', 'j.hardin', 'jared-p-hardin'),
+    ('Alex Zykov', 'Transaction Director', '813-898-2372', 'azykov', 'alex-zykov-787646b'),
+    ('Shannon Hess', 'Client Engagement Director', '813-898-2397', 'hess', 'shannon-l-hess'),
+    ('Sunny Garten', 'Senior Deal Associate', '813-898-2357', 'garten', 'sunny-yang-garten-28a11010'),
+    ('Michael Wynn', 'Senior Deal Associate', '813-384-4972', 'mwynn', None),
+    ('Jason Lisiak', 'Research Associate', '813-771-6675 (team line)', 'mmt', None),
+    ('Alexandra Barr', 'Transaction Support Associate', '813-387-6046', 'abarr', 'alexandra-barr-400531104'),
+    ('Josiah Warren', 'Transaction Support Associate', '813-898-2398', 'jwarren', 'josiah-warren'),
+    ('Luke Ernst', 'Deal Analyst', '813-771-6318', 'lernst', 'lukesernst'),
+]
+
+
+def team_grid():
+    cells = []
+    for name, title, phone, em, li in TEAM10:
+        slug = name.lower().replace(' ', '-')
+        tel = phone.split(' (')[0].replace('-', '')
+        lk = ('<a href="https://www.linkedin.com/in/' + li + '" style="font-size: 7.5px; line-height: 11px">LinkedIn</a>') if li else ''
+        cells.append('<div style="display: flex; flex-direction: column; align-items: center; text-align: center">'
+                     '<img src="/_blob/team-' + slug + '" alt="' + name + '" style="display: block; width: 44px; height: 44px; border-radius: 50%; margin-bottom: 4px">'
+                     '<div style="font-weight: 700; font-size: 9px; line-height: 12px">' + name + '</div>'
+                     '<div style="font-size: 7.5px; line-height: 11px; color: #6F6A66">' + title + '</div>'
+                     '<a href="tel:' + tel + '" style="font-size: 7.5px; line-height: 11px">' + phone + '</a>'
+                     '<a href="mailto:' + em + '@benchmarkintl.com" style="font-size: 7.5px; line-height: 11px">' + em + '@benchmarkintl.com</a>' + lk + '</div>')
+    return ('<div style="position: absolute; left: 48px; top: 548px; width: 720px; font-weight: 700; font-size: 9.5px; line-height: 14px; letter-spacing: 3px; text-transform: uppercase; color: ' + GOLD + '">The Middle Market team</div>'
+            '<div style="position: absolute; left: 48px; top: 574px; width: 720px; display: grid; grid-template-columns: repeat(5, 1fr); column-gap: 8px; row-gap: 14px">' + ''.join(cells) + '</div>')
+
+
 def p20():
     def office(name, l1, l2, tel, mail):
         return ('<div style="display: flex; flex-direction: column; align-items: center"><div style="font-family: ' + CINZEL + '; font-size: 23px; line-height: 34px; letter-spacing: 4px; margin-bottom: 6px">' + name + '</div>'
                 '<div>' + l1 + '</div><div>' + l2 + '</div><div>' + tel + '</div>'
                 '<a href="mailto:' + mail + '" style="margin-top: 4px; color: #C99A68; font-weight: 700; font-size: 8.5px; letter-spacing: 2px">' + mail + '</a></div>')
     body = (HEAD % {'title': 'Technology Q4 2026: Contact', 'wm': WATERMARK} + RUN +
-            '<div data-fit="560" style="position: absolute; left: 48px; top: 230px; width: 720px; display: flex; flex-direction: column; gap: 22px">\n'
+            '<div data-fit="560" style="position: absolute; left: 48px; top: 190px; width: 720px; display: flex; flex-direction: column; gap: 22px">\n'
             '<div style="font-weight: 700; font-size: 10.5px; line-height: 16px; letter-spacing: 2.6px; text-transform: uppercase">Benchmark International Middle Market</div>\n' +
             h2('Considering a transaction in the technology sector?') + '\n' +
             p('Our first step is always a confidential conversation exploring your goals, your company and your options.') + '\n'
@@ -283,7 +313,7 @@ def p20():
             '<div style="display: flex; flex-direction: column; gap: 2px">\n'
             '<div style="font-weight: 700; font-size: 12px; line-height: 20px; letter-spacing: 2.6px">JARED HARDIN</div>\n'
             '<div>Managing Director</div>\n<div>Benchmark International</div>\n<div>813-771-6675</div>\n<div>j.hardin@benchmarkintl.com</div>\n'
-            '</div>\n</div>\n</div>\n</div>\n'
+            '</div>\n</div>\n</div>\n</div>\n' + team_grid() +
             '<div style="position: absolute; left: 0; top: 839px; width: 816px; height: 217px; background: #303030; color: #FFFFFF">\n'
             '<div style="position: absolute; left: 0; top: 26px; width: 816px; text-align: center; font-weight: 700; font-size: 10px; line-height: 14px; letter-spacing: 4px; color: ' + GOLD + '">HEADQUARTERS</div>\n'
             '<div style="position: absolute; left: 48px; top: 52px; width: 720px; height: 1px; background: ' + GOLD + '"></div>\n'

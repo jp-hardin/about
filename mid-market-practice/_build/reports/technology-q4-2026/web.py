@@ -91,7 +91,7 @@ page += f'''
         <p class="eyebrow">Considering a transaction in the technology sector?</p>
         <h3>Jared Hardin</h3>
         <p class="role">Managing Director, Benchmark International</p>
-        <p><a href="tel:8137716675">813-771-6675</a> &nbsp;|&nbsp; <a href="mailto:j.hardin@benchmarkintl.com">j.hardin@benchmarkintl.com</a></p>
+        <p><a href="tel:8137716675">813-771-6675</a> &nbsp;|&nbsp; <a href="mailto:j.hardin@benchmarkintl.com">j.hardin@benchmarkintl.com</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/jared-p-hardin" target="_blank" rel="noopener">LinkedIn</a></p>
         <div class="btn-row"><a class="btn" href="{root}index.html#form">Start the Conversation</a><a class="btn btn--ghost" href="{PDF}" download>{dl} Download the PDF</a></div>
       </div>
     </aside>

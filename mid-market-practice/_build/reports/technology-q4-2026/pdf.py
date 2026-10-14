@@ -16,6 +16,8 @@ IMG = {
     '91834fbbbc00b31f5c36c7319ad1e129': 'art/knot.png',
     'a4627b44afa321c0e5263a218e5cb43d': f'{AST}/team/jared-hardin.jpg',
 }
+for _n in ('jordan-houtz','jared-hardin','alex-zykov','shannon-hess','sunny-garten','michael-wynn','jason-lisiak','alexandra-barr','josiah-warren','luke-ernst'):
+    IMG['team-' + _n] = f'{AST}/team/{_n}.jpg'
 # Photographs from the approved library, prepared for this report in assets/img/industries/technology.
 PH = f'{AST}/industries/technology'
 IMG.update({

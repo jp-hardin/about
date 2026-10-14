@@ -1,4 +1,4 @@
-# Builds a sector report from its PowerPoint sector brief: the downloadable PDF and the site page come
+# Builds a sector report from its PowerPoint sector report: the downloadable PDF and the site page come
 # from the same .pptx, so the two always match.
 #
 # Usage: python3 brief.py <report-folder>     e.g. python3 brief.py industrial-q4-2026
@@ -425,14 +425,14 @@ def build_page(prs, links, img_size):
     for i, (t, s, b, f, part) in enumerate(slides, 1):
         ttl = norm(t).title() if t.isupper() else norm(t)
         if i == 1:
-            ttl = f'{NAME} {PERIOD} Sector Brief: Cover'
+            ttl = f'{NAME} {PERIOD} Sector Report: Cover'
         overlay = ''.join(f'<a class="bslide-link" href="{esc(u)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" title="{esc(u)}" '
                           f'style="left:{x:.2f}%;top:{y:.2f}%;width:{ww:.2f}%;height:{hh:.2f}%"></a>'
                           for x, y, ww, hh, u in links[i - 1])
         sub = f'<p class="bslide-sub">{s}</p>' if s and not s.startswith('<') else s
         secs.append(f'''<section class="bslide" id="p{i:02d}" aria-labelledby="p{i:02d}-t">
 <div class="bslide-head"><span class="bslide-num">{i:02d}</span><h2 class="bslide-title" id="p{i:02d}-t">{esc(ttl)}</h2><a class="bslide-pdf" href="{pdf}#page={i}">Page {i} in the PDF</a></div>
-<div class="bslide-img"><img src="{root}{IMG_DIR}/p{i:02d}.webp" srcset="{root}{IMG_DIR}/p{i:02d}-800.webp 800w, {root}{IMG_DIR}/p{i:02d}.webp 1600w" sizes="(max-width: 1080px) 100vw, 900px" alt="Page {i} of the {NAME} {PERIOD} sector brief: {esc(ttl)}. The full text follows." width="{w}" height="{h}"{' loading="lazy"' if i > 2 else ''}>{overlay}</div>
+<div class="bslide-img"><img src="{root}{IMG_DIR}/p{i:02d}.webp" srcset="{root}{IMG_DIR}/p{i:02d}-800.webp 800w, {root}{IMG_DIR}/p{i:02d}.webp 1600w" sizes="(max-width: 1080px) 100vw, 900px" alt="Page {i} of the {NAME} {PERIOD} sector report: {esc(ttl)}. The full text follows." width="{w}" height="{h}"{' loading="lazy"' if i > 2 else ''}>{overlay}</div>
 <details class="bslide-text"><summary>Read the text of this page</summary>
 <div class="bslide-body">{sub}
 {b}
@@ -441,14 +441,14 @@ def build_page(prs, links, img_size):
 </section>''')
 
     lead = CONF['lead']
-    desc = f'{NAME} {PERIOD} M&A sector brief from Benchmark International: {lead}'
+    desc = f'{NAME} {PERIOD} M&A sector report from Benchmark International: {lead}'
     page = site.head(f'{NAME} {PERIOD} M&A Sector Report', desc[:300], root).replace('</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n</head>')
     page += site.header(root, 'industries')
     page += f'''
 <section class="hero hero--page">
   <div class="wrap">
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}sectors/index.html">Sectors</a> / <a href="{root}sectors/{SECTOR}.html">{esc(NAME)}</a> / {PERIOD} Sector Report</div>
-    <p class="eyebrow">Quarterly Sector Brief &nbsp;|&nbsp; {PERIOD}</p>
+    <p class="eyebrow">{PERIOD} Sector Report</p>
     <h1 class="display">{esc(NAME)} <em>{PERIOD}</em></h1>
     <p class="lead">{esc(lead)}</p>
     <p class="rbyline">{esc(byline.replace("  ", " "))}</p>
@@ -463,7 +463,7 @@ def build_page(prs, links, img_size):
     <a class="btn" href="{pdf}" download>{dl} Download PDF</a>
   </aside>
   <article class="report brief">
-    <p class="bnote">This is the {esc(NAME)} {PERIOD} sector brief, page by page, exactly as it appears in the <a href="{pdf}" download>PDF</a>. Links on each page open their sources, and the text of every page, with its tables and chart data, is below each page.</p>
+    <p class="bnote">This is the {esc(NAME)} {PERIOD} sector report, page by page, exactly as it appears in the <a href="{pdf}" download>PDF</a>. Links on each page open their sources, and the text of every page, with its tables and chart data, is below each page.</p>
 {chr(10).join(secs)}
   </article>
 </div>
