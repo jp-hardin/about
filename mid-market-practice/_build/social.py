@@ -9,7 +9,7 @@ sys.path.insert(0, HERE)
 import build as site  # noqa: E402
 
 OUT = os.path.join(SITE, 'assets', 'img', 'social')
-FONTS = os.path.join(HERE, 'reports', 'healthcare-q4-2026', 'fonts')
+FONTS = os.path.join(HERE, 'reports', 'fonts')
 FACE = ''.join(f"@font-face{{font-family:'{n}';font-weight:{w};src:url('file://{FONTS}/{f}-latin-{w}-normal.woff2')}}"
                for n, f, w in [('Newsreader', 'newsreader', 500), ('Quicksand', 'quicksand', 600), ('Quicksand', 'quicksand', 700)])
 

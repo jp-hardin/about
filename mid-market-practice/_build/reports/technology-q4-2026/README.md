@@ -21,7 +21,7 @@ This runs `gen.py`, `pdf.py` and `web.py` in order. `pdf.py` needs Playwright wi
 - `pages_c.py`: Electronics & Hardware, Government Technology, the valuation page and its listed-company multiples (`COMPS`), Benchmark International's activity, what buyers reward and discount, the contact page and the sources list.
 - `report.py`: the page order (`PAGES`) and the grouping of links under the sources headings (`MERGE`).
 - `gen.py`: writes the print pages and `canvas.json` to `root/project/`, the same files the design canvas holds.
-- `pdf.py`: joins the print pages into one document and prints it. Fonts come from `../healthcare-q4-2026/fonts`. The `IMG` table maps the design canvas's uploaded images to the copies in `art/` and in the site's `assets/img/`.
+- `pdf.py`: joins the print pages into one document and prints it. Fonts come from `../fonts`. The `IMG` table maps the design canvas's uploaded images to the copies in `art/` and in the site's `assets/img/`.
 - `web.py`: groups the same content into the thirteen site sections (`GROUPS`) and wraps it in the site header, footer and call to action from `_build/build.py`. Styles are in `mid-market-practice/assets/css/report.css`, shared with the other reports.
 - `art/`: the logo lockup and the watermark used by the print layout. The photographs (cover, stat bands, the preparation and contact pages) are `rpt-*.jpg` in `mid-market-practice/assets/img/industries/technology/`, mapped in `IMG`.
 

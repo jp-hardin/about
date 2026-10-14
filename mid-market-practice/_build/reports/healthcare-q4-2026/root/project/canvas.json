@@ -1,0 +1,210 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-05T20:40:00Z"
+ },
+ "title": "Healthcare Q4 2026 M&A Sector Report",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "01 Cover"
+  },
+  "P02.dc.html": {
+   "x": 896,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "02 The four focus areas"
+  },
+  "P03.dc.html": {
+   "x": 1792,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "03 Deal market and demand"
+  },
+  "P04.dc.html": {
+   "x": 2688,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "04 Reimbursement, policy and deal regulation"
+  },
+  "P05.dc.html": {
+   "x": 3584,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "05 Policy and Price"
+  },
+  "P06.dc.html": {
+   "x": 4480,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "06 Provider Services"
+  },
+  "P07.dc.html": {
+   "x": 0,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "title": "07 Provider Services transactions"
+  },
+  "P08.dc.html": {
+   "x": 896,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "title": "08 Provider Services: buyers and owners"
+  },
+  "P09.dc.html": {
+   "x": 1792,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "title": "09 Life Sciences & Diagnostics"
+  },
+  "P10.dc.html": {
+   "x": 2688,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "title": "10 Life Sciences & Diagnostics transactions"
+  },
+  "P11.dc.html": {
+   "x": 3584,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "title": "11 Life Sciences & Diagnostics: buyers and owners"
+  },
+  "P12.dc.html": {
+   "x": 4480,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "title": "12 Medical Products & Distribution"
+  },
+  "P13.dc.html": {
+   "x": 0,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "title": "13 Medical Products & Distribution transactions"
+  },
+  "P14.dc.html": {
+   "x": 896,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "title": "14 Medical Products & Distribution: buyers and owners"
+  },
+  "P15.dc.html": {
+   "x": 1792,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "title": "15 Pharmacy & Healthcare Services"
+  },
+  "P16.dc.html": {
+   "x": 2688,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "title": "16 Pharmacy & Healthcare Services transactions"
+  },
+  "P17.dc.html": {
+   "x": 3584,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "title": "17 Pharmacy & Healthcare Services: buyers and owners"
+  },
+  "P18.dc.html": {
+   "x": 4480,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "title": "18 Public-market valuation"
+  },
+  "P19.dc.html": {
+   "x": 0,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "title": "19 Valuation bridge"
+  },
+  "P20.dc.html": {
+   "x": 896,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "title": "20 Benchmark International's Activity"
+  },
+  "P21.dc.html": {
+   "x": 1792,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "title": "21 What buyers reward and discount"
+  },
+  "P22.dc.html": {
+   "x": 2688,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "title": "22 Seller readiness"
+  },
+  "P23.dc.html": {
+   "x": 3584,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "title": "23 Contact"
+  },
+  "P24.dc.html": {
+   "x": 4480,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "title": "24 Sources"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "P02.dc.html",
+  "P03.dc.html",
+  "P04.dc.html",
+  "P05.dc.html",
+  "P06.dc.html",
+  "P07.dc.html",
+  "P08.dc.html",
+  "P09.dc.html",
+  "P10.dc.html",
+  "P11.dc.html",
+  "P12.dc.html",
+  "P13.dc.html",
+  "P14.dc.html",
+  "P15.dc.html",
+  "P16.dc.html",
+  "P17.dc.html",
+  "P18.dc.html",
+  "P19.dc.html",
+  "P20.dc.html",
+  "P21.dc.html",
+  "P22.dc.html",
+  "P23.dc.html",
+  "P24.dc.html"
+ ],
+ "notes": {},
+ "designSystems": []
+}
