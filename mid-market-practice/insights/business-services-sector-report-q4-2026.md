@@ -1617,7 +1617,7 @@ Jared Hardin
 
 ### Jared Hardin
 
-**MANAGING DIRECTOR, MIDDLE MARKET**
+**MANAGING DIRECTOR**
 
 [813-771-6675](tel:8137716675)
 
@@ -1626,12 +1626,6 @@ Jared Hardin
 **SCHEDULE A CONVERSATION**
 
 **READ THE REPORT ONLINE**
-
-**UPCOMING EVENT**
-
-### Event name, dates and location
-
-This panel is reserved for the next conference or event where the Middle Market team will be meeting business services owners.
 
 Benchmark International Middle Market, 4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607
 
@@ -1675,6 +1669,10 @@ Jordan Houtz
 
 **MANAGING DIRECTOR**
 
+[813-771-6675](tel:8137716675)
+
+[jhoutz@benchmarkintl.com](mailto:jhoutz@benchmarkintl.com)
+
 Jared Hardin
 
 ### Jared Hardin
@@ -1691,11 +1689,19 @@ Alex Zykov
 
 **TRANSACTION DIRECTOR**
 
+[813-898-2372](tel:8138982372)
+
+[azykov@benchmarkintl.com](mailto:azykov@benchmarkintl.com)
+
 Shannon Hess
 
 ### Shannon Hess
 
 **CLIENT ENGAGEMENT DIRECTOR**
+
+[813-898-2397](tel:8138982397)
+
+[hess@benchmarkintl.com](mailto:hess@benchmarkintl.com)
 
 Sunny Garten
 
@@ -1703,11 +1709,19 @@ Sunny Garten
 
 Senior Deal Associate
 
+[813-898-2357](tel:8138982357)
+
+[garten@benchmarkintl.com](mailto:garten@benchmarkintl.com)
+
 Michael Wynn
 
 ### Michael Wynn
 
 Senior Deal Associate
+
+[813-384-4972](tel:8133844972)
+
+[mwynn@benchmarkintl.com](mailto:mwynn@benchmarkintl.com)
 
 Jason Lisiak
 
@@ -1715,11 +1729,17 @@ Jason Lisiak
 
 Research Associate
 
+[jlisiak@benchmarkintl.com](mailto:jlisiak@benchmarkintl.com)
+
 Alexandra Barr
 
 ### Alexandra Barr
 
 Transaction Support Associate
+
+[813-387-6046](tel:8133876046)
+
+[abarr@benchmarkintl.com](mailto:abarr@benchmarkintl.com)
 
 Josiah Warren
 
@@ -1727,11 +1747,19 @@ Josiah Warren
 
 Transaction Support Associate
 
+[813-898-2398](tel:8138982398)
+
+[jwarren@benchmarkintl.com](mailto:jwarren@benchmarkintl.com)
+
 Luke Ernst
 
 ### Luke Ernst
 
 Deal Analyst
+
+[813-771-6318](tel:8137716318)
+
+[lernst@benchmarkintl.com](mailto:lernst@benchmarkintl.com)
 
 **BUSINESS SERVICES COVERAGE**
 
