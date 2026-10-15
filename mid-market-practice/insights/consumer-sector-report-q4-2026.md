@@ -939,7 +939,7 @@ Packaged food shares have fallen about a third in a year, and earnings rose most
 
 ### Median change in share price over 52 weeks
 
-Share prices dated October 2 to October 7, 2026, against a year earlier
+Share prices dated October 2 to October 14, 2026, against a year earlier
 
 **FOOD & BEVERAGE**
 
@@ -999,11 +999,11 @@ Reported EBITDA for the latest fiscal year against the year before
 
 **WHAT THE MARKET IS PRICING**
 
-34 of 57
+35 of 57
 
 listed consumer companies trade below their share price of a year ago
 
-11.5x
+11.4x
 
 median enterprise value to trailing EBITDA today, against 14.5x a year ago
 
@@ -1011,7 +1011,7 @@ median enterprise value to trailing EBITDA today, against 14.5x a year ago
 
 peer groups carry a lower median multiple of EBITDA than a year ago
 
-Medians of 57 listed companies in nine peer groups, shown on pages 15 to 17. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. EBITDA is as reported. The snacks median sits between Hershey, down 18%, and three smaller companies down 58% to 78%. Multiples cover the 55 companies with comparable readings on both dates.
+Medians of 57 listed companies in nine peer groups, shown on pages 15 to 17. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil. EBITDA is as reported. The snacks median sits between Hershey, down 18%, and three smaller companies down 58% to 78%. Multiples cover the 55 companies with comparable readings on both dates.
 
 ## 13. Revenue Growth Trends
 
@@ -1091,18 +1091,18 @@ Chart data:
 |  | Restaurants | Consumer services | Retail |
 | --- | --- | --- | --- |
 | Two years ago | 9.29 | 13.95 | 2.36 |
-| Prior year | 10.32 | 4.22 | 3.61 |
+| Prior year | 10.32 | 3.63 | 3.61 |
 | Latest fiscal year | 6.64 | 6.28 | 4.52 |
-| Current year est. | 6.51 | 8.66 | 4.72 |
-| Next year est. | 4.75 | 8.43 | 4.09 |
+| Current year est. | 6.51 | 7.7 | 4.72 |
+| Next year est. | 4.75 | 7.02 | 4.09 |
 
 | Two years ago | Prior year | Latest fiscal year | Current year est. | Next year est. |
 | --- | --- | --- | --- | --- |
 | +9.3% | +10.3% | +6.6% | +6.5% | +4.8% |
-| +14.0% | +4.2% | +6.3% | +8.7% | +8.4% |
+| +14.0% | +3.6% | +6.3% | +7.7% | +7.0% |
 | +2.4% | +3.6% | +4.5% | +4.7% | +4.1% |
 
-Medians of fiscal-year revenue growth, including acquisitions, with the number of companies in parentheses. Shaded years are analyst consensus, and the rows under each chart give the plotted values in the order of the key. Middleby is left out because its revenue was restated for a spin-off. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026.
+Medians of fiscal-year revenue growth, including acquisitions, with the number of companies in parentheses. Shaded years are analyst consensus, and the rows under each chart give the plotted values in the order of the key. Middleby is left out because its revenue was restated for a spin-off. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil.
 
 ## 14. Public Company Valuation Metrics
 
@@ -1134,7 +1134,7 @@ Trailing twelve months
 
 - Restaurants: 2.7x
 
-- Consumer services: 3.6x
+- Consumer services: 2.8x
 
 - Retail: 1.1x
 
@@ -1164,7 +1164,7 @@ Trailing twelve months
 
 - Restaurants: 14.6x
 
-- Consumer services: 11.8x
+- Consumer services: 11.5x
 
 - Retail: 11.8x
 
@@ -1194,7 +1194,7 @@ Share price to consensus earnings for the next year
 
 - Restaurants: 17.6x
 
-- Consumer services: 17.3x
+- Consumer services: 15.9x
 
 - Retail: 16.5x
 
@@ -1220,7 +1220,7 @@ EBITDA: Prestige for [Breathe Right and other brands](https://ir.prestigebrands.
 
 projected EBITDA: HF Foods for [Searay Foods](https://finance.yahoo.com/markets/stocks/articles/hf-foods-group-acquire-searay-123000612.html)
 
-Medians by peer group, which can move with one or two companies in a group of six. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Multiples use reported EBITDA. The year-ago multiple is the reading four quarter-ends earlier, between late August and November 2025. Deal multiples are as stated by each acquirer on its own basis.
+Medians by peer group, which can move with one or two companies in a group of six. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil. Multiples use reported EBITDA. The year-ago multiple is the reading four quarter-ends earlier, between late August and November 2025, and June 30, 2025 for Rentokil, which reports half-yearly. Deal multiples are as stated by each acquirer on its own basis.
 
 ## 15. Public Company Metrics: Food and Beverage
 
@@ -1308,11 +1308,11 @@ Rollins, Planet Fitness and Boyd Group shares have each fallen by about half in 
 | Rollins | ROL | 15.1 | 16.1 | −46.4% | 4.00x | 18.2x | 34.8x | 25.2x | +9.9% | 22.0% | +8.7% |
 | Frontdoor | FTDR | 5.4 | 5.9 | +15.5% | 2.75x | 11.5x | 11.4x | 15.9x | +9.2% | 24.0% | +5.1% |
 | Driven Brands | DRVN | 2.0 | 4.0 | −24.9% | 2.06x | 9.8x | 16.0x | 9.1x | +15.4% | 21.0% | +7.7% |
-| United Rentals | URI | 67.3 | 82.5 | +10.2% | 4.90x | 17.6x | 16.7x | 20.5x | +6.9% | 27.9% | +10.2% |
+| Rentokil Initial | RTO | 10.1 | 13.8 | −24.0% | 1.94x | 11.1x | 14.5x | 13.7x | +3.3% | 17.6% | +4.8% |
 | Planet Fitness | PLNT | 3.2 | 5.8 | −56.4% | 4.41x | 9.9x | 20.3x | 12.3x | +11.6% | 44.4% | +15.0% |
 | Service Corporation Intl | SCI | 10.5 | 15.5 | −8.3% | 3.57x | 11.8x | 12.5x | 17.3x | +2.9% | 30.3% | +3.6% |
 | Boyd Group Services | BGSI | 2.2 | 4.2 | −52.7% | 1.15x | 13.5x | 21.3x | 18.9x | +17.3% | 8.5% | +29.8% |
-| Median |  |  |  | −24.9% | 3.57x | 11.8x | 16.7x | 17.3x | +9.9% | 24.0% | +8.7% |
+| Median |  |  |  | −24.9% | 2.75x | 11.5x | 16.0x | 15.9x | +9.9% | 22.0% | +7.7% |
 | RETAIL |  |  |  |  |  |  |  |  |  |  |  |
 | Walmart | WMT | 858.3 | 921.9 | +5.4% | 1.25x | 20.9x | 20.2x | 35.7x | +6.2% | 6.0% | +5.6% |
 | Costco | COST | 419.0 | 406.2 | +3.7% | 1.33x | 28.1x | 30.0x | 41.1x | +10.1% | 4.7% | +8.4% |
@@ -1322,7 +1322,7 @@ Rollins, Planet Fitness and Boyd Group shares have each fallen by about half in 
 | Tractor Supply | TSCO | 17.0 | 23.3 | −40.0% | 1.48x | 12.1x | 17.9x | 16.4x | +4.0% | 12.3% | +2.8% |
 | Median |  |  |  | +4.5% | 1.10x | 11.8x | 14.9x | 16.5x | +4.4% | 7.0% | +4.7% |
 
-Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; share prices are dated October 2 to 7. Multiples and margins use reported trailing EBITDA. n.m. marks a figure that is not comparable and is left out of the median; n.a. is not available. Year-ago multiples are four quarter-ends earlier, and multiple medians use companies with both readings.
+Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; share prices are dated October 2 to 7, and October 14 for Rentokil. Multiples and margins use reported trailing EBITDA. n.m. marks a figure that is not comparable and is left out of the median; n.a. is not available. Year-ago multiples are four quarter-ends earlier (June 30, 2025 for Rentokil, which reports half-yearly), and multiple medians use companies with both readings.
 
 ## 18. Demand and Cost Indicators
 
@@ -2346,4 +2346,4 @@ hormelfoods.com
 
 **How the figures were gathered.** Listed-company figures are from StockAnalysis and use reported results. Index series are from FRED, the US Census Bureau and the University of Michigan. Benchmark International figures are from the firm’s transaction records as of October 1, 2026. No investment bank is used as a source. Subscription and registration sources that would add depth, including GF Data, PitchBook, S&P Capital IQ and Circana, are listed in a separate one-page companion.
 
-Figures were gathered from these sources between October 2 and October 7, 2026.
+Figures were gathered from these sources between October 2 and October 14, 2026.

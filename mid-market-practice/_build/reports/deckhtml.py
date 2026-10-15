@@ -920,6 +920,7 @@ class Chart:
         if horiz and bar is not None and all_vals and min(all_vals) < 0 and dl_props(sers[0])[0]:
             lw = max(est(fmt(v, dl_props(sers[0])[1]), dl_props(sers[0])[3][0]) for v in all_vals if v < 0) + 6
             if pw > lw * 2:
+                lo_axis = lo
                 lo = lo - (hi - lo) * lw / (pw - lw)
         # value -> position along the value axis
         def vpos(v):
@@ -945,8 +946,9 @@ class Chart:
                         step *= m
                         break
             import math
-            # Excel starts the axis at its minimum; an axis drawn only for phones starts at a round number
-            v = math.ceil(lo / step - 1e-9) * step if self.show_val else lo
+            # Excel starts the axis at its minimum; an axis drawn only for phones, or one widened for
+            # negative labels, starts on a round value
+            v = math.ceil(lo / step - 1e-9) * step if (self.show_val or 'lo_axis' in locals()) else lo
             while v <= hi + 1e-9 and len(ticks) < 40:
                 ticks.append(v)
                 v += step
