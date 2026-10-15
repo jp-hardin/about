@@ -236,19 +236,233 @@ def body_md(h):
     return re.sub(r'\n{3,}', '\n\n', h).strip()
 
 
+def join_tables(body):
+    """Two tables with the same columns, one after the other (a list split across deck pages), become one table;
+    a lead sentence that sat between them moves above it."""
+    from lxml import html as LH
+    root = LH.fragment_fromstring(body, create_parent='div')
+    head = lambda w: ' '.join(' '.join(w.xpath('.//thead')[0].itertext()).split()) if w.xpath('.//thead') else None
+    wraps = root.xpath('./div[contains(concat(" ", @class, " "), " rtable-wrap ")]')
+    for a, b in zip(wraps, wraps[1:]):
+        if a.getparent() is None or b.getparent() is None or head(a) is None or head(a) != head(b):
+            continue
+        between, cur = [], a.getnext()
+        while cur is not None and cur is not b:
+            between.append(cur)
+            cur = cur.getnext()
+        if cur is not b or any(x.tag != 'p' for x in between):
+            continue
+        for x in between:
+            x.tail = None
+            a.addprevious(x)
+        tb = a.xpath('.//tbody')[0]
+        for tr in b.xpath('.//tbody/tr'):
+            tb.append(tr)
+        b.getparent().remove(b)
+    return (root.text or '') + ''.join(LH.tostring(k, encoding='unicode') for k in root)
+
+
+def join_notes(foot):
+    """Footnotes of joined pages: each sentence once."""
+    sents, seen = [], set()
+    for m in re.findall(r'<p[^>]*>(.*?)</p>', foot, re.S):
+        for x in re.split(r'(?<=[.])\s+(?=[A-Z])', m.strip()):
+            k = re.sub(r'<[^>]+>|\s+', ' ', x).strip().lower()
+            if k and k not in seen:
+                seen.add(k)
+                sents.append(x.strip())
+    return f'<p class="fine">{" ".join(sents)}</p>' if sents else foot
+
+
+def merge_continued(pages):
+    """A deck page that continues the one before it (same title, or "(Continued)") joins it: online it is one section.
+    Returns the pages and a map from each folded page number to the page it joined."""
+    out, alias = [], {}
+    key = lambda t: re.sub(r'\s*\((?:continued|cont\.)\)\s*$', '', t or '', flags=re.I).strip().lower()
+    for pg in pages:
+        prev = out[-1] if out else None
+        if prev is not None and not pg['part'] and not prev['part'] and key(pg['title']) == key(prev['title']):
+            sub = f'<p class="rlead">{pg["subtitle"]}</p>\n' if pg['subtitle'] and pg['subtitle'] != prev['subtitle'] else ''
+            prev['body'] += '\n' + sub + pg['body']
+            if pg['foot'] and pg['foot'] not in prev['foot']:
+                prev['foot'] = (prev['foot'] + '\n' + pg['foot']).strip()
+            alias[pg['num']] = prev['num']
+            prev['body'] = join_tables(prev['body'])
+            prev['foot'] = join_notes(prev['foot'])
+            continue
+        for k in ('title', 'title_html'):
+            pg[k] = re.sub(r'\s*\((?:Continued|continued|CONTINUED)\)\s*$', '', pg[k] or '')
+        out.append(pg)
+    return out, alias
+
+
+def web_refs(pages, alias):
+    """Page references written for the PDF ("appear on page 10", "on the next page") point to sections online."""
+    kept = {pg['num']: pg for pg in pages[1:]}
+
+    def link(n):
+        n = alias.get(n, n)
+        pg = kept.get(n)
+        return (n, f'<a href="#p{n:02d}">{esc(web_title(pg))}</a>') if pg else None
+
+    def nums(spec):
+        out = []
+        for a, b in re.findall(r'(\d+)(?:\s*(?:to|–)\s*(\d+))?', spec):
+            out += list(range(int(a), int(b) + 1)) if b else [int(a)]
+        return out
+
+    def pages_ref(m):
+        seen, links = set(), []
+        targets = [link(n) for n in nums(m.group(2))]
+        if targets and all(t and t[0] == here for t in targets):
+            return ''          # the section itself: online it needs no pointer
+        for l in targets:
+            if l and l[0] not in seen:
+                seen.add(l[0])
+                links.append(l[1])
+        if not links:
+            return m.group(0)
+        text = links[0] if len(links) == 1 else ', '.join(links[:-1]) + ' and ' + links[-1]
+        return f'in {text}'
+
+    for i, pg in enumerate(pages[1:], 1):
+        here = pg['num']
+        nxt = pages[i + 1] if i + 1 < len(pages) else None
+        for k in ('body', 'foot', 'subtitle'):
+            h = pg[k] or ''
+            h = re.sub(r'\b(on|across|in) (pages? \d+(?:\s*(?:,|and|to|–)\s*\d+)*)', lambda m: pages_ref(m), h)
+            h = re.sub(r'\b(shown) (pages? \d+(?:\s*(?:,|and|to|–)\s*\d+)*)', lambda m: ('shown ' + pages_ref(m)).strip(), h)
+            h = re.sub(r' +([.,;])', r'\1', h)
+            h = re.sub(r'\s*\(PAGES? [^)]*\)', '', h)
+            if nxt is not None:
+                h = h.replace('on the next page', f'in <a href="#p{nxt["num"]:02d}">{esc(web_title(nxt))}</a>')
+            h = re.sub(r'\s*This page covers [^.<]*\.', '', h)
+            h = h.replace('on the valuation page of this brief', 'in the valuation section of this report')
+            h = h.replace('on the valuation pages', 'in the valuation sections')
+            h = h.replace('this brief', 'this report').replace('This brief', 'This report').replace('with the brief', 'with the report')
+            h = h.replace('linked on each page, listed by page', 'linked in each section, listed by section')
+            h = h.replace('appendix pages', 'appendix sections').replace('the valuation pages', 'the valuation sections')
+            if pg['title'].strip().lower() == 'sources':
+                h = re.sub(r'(<h4 class="rh4">(?:<strong>)?)\d{1,2} ', r'\1', h)
+            pg[k] = h
+    return pages
+
+
+# Shorter, plainer subsection titles for the web; the deck and PDF keep their own. Keys are lower case.
+WEB_TITLES = {
+    'market insights: q4 2026': 'The Quarter at a Glance',
+    'power demand: the buildout reaches every industrial sector': 'Power Demand Reaches Every Sector',
+    'featured engagement: the carmi companies': 'Featured Deal: The Carmi Companies',
+    'public company performance and trends: valuation history': 'Valuation History',
+    'public company performance and trends: operating metrics': 'Operating Metrics',
+    'public company performance and trends: valuation metrics': 'Valuation Multiples',
+    'key trends in business services': 'Key Trends',
+    'key trends in technology': 'Key Trends',
+    'perspectives on five sectors': 'Five Sectors',
+    'perspectives on six sectors': 'Six Sectors',
+    'perspectives on four sectors': 'Four Sectors',
+    'perspectives on four consumer sectors': 'Four Sectors',
+    'feature: fire and life safety': 'Fire and Life Safety',
+    'client spotlight: three fire and life safety sales': 'Three Fire and Life Safety Sales We Advised',
+    'select market participants': 'Who Is Buying',
+    'healthcare market: select participants': 'Who Is Buying',
+    'public companies: valuation': 'Valuation',
+    'public companies: operating and valuation metrics': 'Operating and Valuation Metrics',
+    'public companies: operating metrics': 'Operating Metrics',
+    'earnings and commentary': 'What Public Companies Said',
+    'happening in consumer right now': "What's Happening Now",
+    'tariffs, fuel and financing: three costs buyers are repricing': 'Tariffs, Fuel and Financing',
+    'public company market performance': 'Share Prices',
+    'revenue growth trends': 'Revenue Growth',
+    'public company valuation metrics': 'Valuation Multiples',
+    'public company metrics: food and beverage': 'Food and Beverage Companies',
+    'public company metrics: consumer brands and foodservice': 'Consumer Brands and Foodservice Companies',
+    'public company metrics: restaurants, services and retail': 'Restaurant, Services and Retail Companies',
+    'healthcare m&a: state of play': 'State of Play',
+    'historical market context': 'Historical Context',
+    'strong fundamentals support continued activity': 'Why Demand Holds Up',
+    'healthcare services deal volume has reset': 'Deal Volume Has Reset',
+    'valuation multiples have shifted by sector': 'Valuation Multiples by Sector',
+    'public company stock performance: past 12 months': 'Share Prices, Past 12 Months',
+    'public company operating and valuation metrics': 'Operating and Valuation Metrics',
+    'appendix: public market operating and valuation metrics': 'Appendix: Company-by-Company Metrics',
+    'key cost and demand indicators': 'Cost and Demand Indicators',
+}
+
+
+def web_title(pg):
+    t = re.sub(r'<[^>]+>', '', html.unescape(pg['title'])).replace('\u2019', "'").strip()
+    k = t.lower()
+    if k in WEB_TITLES:
+        return WEB_TITLES[k]
+    if re.match(r"select recent .*transactions$", k):
+        return 'Recent Transactions'
+    if re.match(r"benchmark international's .*transactions$", k):
+        return 'Our Transactions'
+    return title_case(t) if t.isupper() else t
+
+
+CHAPTERS = [  # (key, title, deck-page titles that belong to it); the first match wins, in this order
+    ('notes', 'Disclosures and Sources', r'disclosures|^sources$'),
+    ('about', 'About Benchmark International', r'^benchmark international$'),
+    ('reading', "What We're Reading", r'reading'),
+    ('indicators', 'Indicators to Watch', r'economic trends|indicators'),
+    ('valuations', 'Valuations and Public Markets', r'public compan|valuation|earnings|revenue growth|appendix|stock performance'),
+    ('deals', 'Deals and Buyers', r'transactions|engagement|spotlight|who is buying|participants'),
+    ('sectors', 'Sector by Sector', r'perspectives|feature:'),
+    ('market', 'Market Conditions', r'.'),
+]
+ORDER = ['short', 'market', 'sectors', 'deals', 'valuations', 'indicators', 'reading', 'about', 'notes']
+
+
+def chapters(pages):
+    """The web report's chapters: [(key, title, [pages])]. The first part divider (the key insights) is The Short
+    Version; the other part dividers are dropped."""
+    groups = {}
+    for pg in pages[1:]:
+        if pg['part']:
+            if pg['part'] == '01':
+                groups.setdefault('short', ('The Short Version', []))[1].append(pg)
+            continue
+        t = re.sub(r'<[^>]+>', '', pg['title']).strip().lower()
+        for key, title, pat in CHAPTERS:
+            if re.search(pat, t):
+                groups.setdefault(key, (title, []))[1].append(pg)
+                break
+    return [(k, groups[k][0], groups[k][1]) for k in ORDER if k in groups]
+
+
+def fold_tables(body):
+    """Long tables (more than 12 rows) show their first rows and fold the rest behind a button; every table of
+    eight rows or more gets a filter box."""
+    def fold(m):
+        html_ = m.group(0)
+        rows = html_.count('<tr')
+        if rows < 9:
+            return html_
+        box = '<div class="rfilter"><input type="search" placeholder="Filter this table" aria-label="Filter this table"></div>'
+        if rows <= 13:
+            return box + html_
+        return f'<details class="rfold rfold--table" open><summary>Table: {rows - 1} rows</summary>{box}{html_}</details>'
+    return re.sub(r'<div class="rtable-wrap">.*?</table></div>', fold, body, flags=re.S)
+
+
 def to_markdown(pages, lead, byline, segs):
     url = site.abs_url(f'insights/{PUBLIC}.html')
     out = [f'# {NAME} {PERIOD} M&A Industry Report', '', f"Benchmark International's Middle Market team. {byline}.", '',
            lead, '', f'Web version: {url}  ', f'PDF: {site.abs_url(f"insights/{PUBLIC}.pdf")}', '']
     if segs:
         out += ['Segments: ' + '; '.join(segs), '']
-    for pg in pages[1:]:
-        out += [f'## {pg["num"]}. {title_case(pg["title"])}', '']
-        if pg['subtitle']:
-            out += [inline_md(pg['subtitle']), '']
-        out += [body_md(pg['body']), '']
-        if pg['foot']:
-            out += [body_md(pg['foot']), '']
+    for k, (key, ctitle, pgs) in enumerate(chapters(pages), 1):
+        out += [f'## {k}. {ctitle}', '']
+        for pg in pgs:
+            if not pg['part'] and len([x for x in pgs if not x['part']]) > 1:
+                out += [f'### {web_title(pg)}', '']
+            if pg['subtitle']:
+                out += [inline_md(pg['subtitle']), '']
+            out += [body_md(pg['body']), '']
+            if pg['foot']:
+                out += [body_md(pg['foot']), '']
     return '\n'.join(out).strip() + '\n'
 
 
@@ -269,29 +483,14 @@ def build_page(prs):
             pg['part_label'], after_skip = 'About This Report', False
         pg['body'] = drop_team_cards(pg['body']) if pg['part'] else flow(drop_team_cards(pg['body']))
         web.append(pg)
-    pages = web
+    pages, alias = merge_continued(web)
+    pages = web_refs(pages, alias)
     byline, segs, included = cover(prs)
     lead = CONF['lead']
 
-    # Sections are numbered 01, 02, ... in reading order. The deck's part pages (01 Insights, 02 Sector Activity,
-    # 03 Connect With Us) are unnumbered part headings that carry the divider's own text (the Insights divider
-    # holds the brief's key insights).
-    seq, n = {}, 0
-    for pg in pages[1:]:
-        if not pg['part']:
-            n += 1
-            seq[pg['num']] = n
-
-    toc = []
-    for pg in pages[1:]:
-        t = title_case(pg['title'])
-        if pg['part']:
-            toc.append(f'<li class="rtoc-part"><a href="#p{pg["num"]:02d}"><span></span>{esc(t)}</a></li>')
-        else:
-            if pg.get('part_label'):
-                toc.append(f'<li class="rtoc-part"><a href="#p{pg["num"]:02d}"><span></span>{pg["part_label"]}</a></li>')
-            toc.append(f'<li><a href="#p{pg["num"]:02d}"><span>{seq[pg["num"]]:02d}</span>{esc(t)}</a></li>')
-
+    # Online the report is organized by what a reader comes for, not by deck page: chapters (The Short Version,
+    # Market Conditions, Sector by Sector, ...) hold the deck pages as subsections, in deck order within each chapter.
+    # Part dividers go; long tables, the disclosures and the sources fold away until opened.
     def key_list(body):
         """The divider's numbered key insights (a bold "NN  headline" line, then its sentence) as a list."""
         pat = r'<p(?: class="fine")?><strong>(\d\d)\s+(.*?)</strong></p>\s*<p(?: class="fine")?>(.*?)</p>'
@@ -304,18 +503,28 @@ def build_page(prs):
         body = body[:first.start()] + ol + re.sub(pat, '', body[first.start():], flags=re.S)
         return body
 
-    secs = []
-    for pg in pages[1:]:
-        t = title_case(pg['title']) if pg['title'].isupper() else (pg['title_html'] or esc(pg['title']))
-        foot = f'<div class="fine rfoot">{pg["foot"]}</div>' if pg['foot'] else ''
-        if pg['part']:
-            desc_ = f'<p class="rpart-desc">Part {int(pg["part"])}{" &nbsp;·&nbsp; " + esc(included[pg["part"]]) if included.get(pg["part"]) else ""}</p>'
-            secs.append(f'<section class="rsec rsec--part" id="p{pg["num"]:02d}">\n<div class="rsec-head"><span class="rsec-num"></span>'
-                        f'<h2 class="h2">{t}</h2></div>\n<div class="rblock dblock">{desc_}\n{key_list(pg["body"])}\n{foot}</div>\n</section>')
-            continue
-        sub = f'<p class="rlead">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
-        secs.append(f'<section class="rsec" id="p{pg["num"]:02d}">\n<div class="rsec-head"><span class="rsec-num">{seq[pg["num"]]:02d}</span>'
-                    f'<h2 class="h2">{t}</h2></div>\n<div class="rblock dblock">{sub}\n{pg["body"]}\n{foot}</div>\n</section>')
+    chaps = chapters(pages)
+    toc, secs = [], []
+    for k, (key, ctitle, pgs) in enumerate(chaps, 1):
+        subs = [pg for pg in pgs if not pg['part']]
+        sub_toc = ''.join(f'<li><a href="#p{pg["num"]:02d}">{esc(web_title(pg))}</a></li>' for pg in subs) if len(subs) > 1 and key != 'notes' else ''
+        toc.append(f'<li class="rtoc-ch"><a href="#ch-{key}"><span>{k:02d}</span>{esc(ctitle)}</a>' + (f'<ol class="rtoc-sub">{sub_toc}</ol>' if sub_toc else '') + '</li>')
+        inner = []
+        for pg in pgs:
+            foot = f'<div class="fine rfoot">{pg["foot"]}</div>' if pg['foot'] else ''
+            if pg['part']:
+                inner.append(flow(key_list(pg['body'])))
+                continue
+            t = esc(web_title(pg))
+            sub = f'<p class="rlead">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
+            body = fold_tables(pg['body'])
+            head = f'<h3 class="rh2">{t}</h3>\n' if len(subs) > 1 else ''
+            block = f'<section class="rpart" id="p{pg["num"]:02d}">\n{head}{sub}\n{body}\n{foot}\n</section>'
+            if key == 'notes':
+                block = (f'<details class="rfold" id="p{pg["num"]:02d}"><summary>{t}</summary>\n{sub}\n{body}\n{foot}\n</details>')
+            inner.append(block)
+        secs.append(f'<section class="rsec rchap" id="ch-{key}">\n<div class="rsec-head"><span class="rsec-num">{k:02d}</span>'
+                    f'<h2 class="h2">{esc(ctitle)}</h2></div>\n<div class="rblock dblock">\n{chr(10).join(inner)}\n</div>\n</section>')
 
     pairs, band_label, _ = stats_band(pages)
     band = ''
@@ -349,6 +558,9 @@ def build_page(prs):
              f'    <ol>{"".join(toc)}</ol>\n    <a class="btn" href="{pdf}" download>{DL} Download the PDF</a>\n  </aside>\n'
              f'  <article class="report">\n{chr(10).join(secs)}\n    {author}\n  </article>\n</div>\n\n')
     page += site.team_section(root) + '\n'
+    page += ("<script>document.querySelectorAll('.rfilter input').forEach(function(i){var t=i.closest('.rfilter').nextElementSibling;"
+             "i.addEventListener('input',function(){var q=i.value.toLowerCase();t.querySelectorAll('tbody tr').forEach(function(r){"
+             "r.style.display=r.textContent.toLowerCase().indexOf(q)>-1?'':'none';});});});</script>\n")
     page += site.cta(root)
     page += site.footer(root)
     extra = {

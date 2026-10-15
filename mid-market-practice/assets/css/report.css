@@ -319,14 +319,39 @@
 .report .rstats-wrap--light .rstat + .rstat { border-left-color: var(--line); }
 .report .rstats-wrap--light .rstat-label { color: var(--charcoal); }
 .report .rquote + .rquote { margin-top: -30px; padding-top: 4px; }
-.report .rblock > .rh4, .report .rblock > .rnote .rh4 { margin: 28px 0 8px; }
-.report .rblock > .rh4 + .rh3 { margin-top: 2px; }
-.report .rblock > .rh4 + .rh4 { margin-top: 14px; }
-.report .rblock > .rh3 { margin: 30px 0 10px; }
-.report .rblock > .rsub { margin: 26px 0 0; padding: 22px 0 0; border-top: 1px solid var(--line); }
-.report .rblock > .rsub > .rh4:first-child { margin-top: 0; }
+.report :is(.rblock, .rpart) > .rh4, .report :is(.rblock, .rpart) > .rnote .rh4 { margin: 28px 0 8px; }
+.report :is(.rblock, .rpart) > .rh4 + .rh3 { margin-top: 2px; }
+.report :is(.rblock, .rpart) > .rh4 + .rh4 { margin-top: 14px; }
+.report :is(.rblock, .rpart) > .rh3 { margin: 30px 0 10px; }
+.report :is(.rblock, .rpart) > .rsub { margin: 26px 0 0; padding: 22px 0 0; border-top: 1px solid var(--line); }
+.report :is(.rblock, .rpart) > .rsub > .rh4:first-child { margin-top: 0; }
 .report .rstats-wrap > p.rstats-fine { margin: 2px 26px 16px; font-size: 0.78rem; color: var(--sand); }
 .report .rtable--flow td { vertical-align: top; }
 .report .rtable--flow td p { margin: 0 0 4px; }
 .report .rtable--flow td .dlabel { margin: 0 0 4px; font-size: 0.68rem; }
 .report .rtable--flow td .fine { font-size: 0.74rem; color: var(--muted); }
+/* Web chapters: deck pages become subsections of reader-facing chapters */
+.report .rpart { scroll-margin-top: 90px; }
+.report .rpart + .rpart { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--line); }
+.report .rh2 { font-family: var(--font-serif); font-weight: 400; font-size: clamp(1.45rem, 2.4vw, 1.85rem); line-height: 1.25; margin: 0 0 14px; color: var(--ink); }
+.report .rpart > .rlead { margin-top: 0; }
+.report details.rfold { margin: 18px 0; border-top: 1px solid var(--line); }
+.report details.rfold > summary { cursor: pointer; list-style: none; padding: 16px 0; font-family: var(--font-serif); font-size: 1.3rem; color: var(--ink); display: flex; justify-content: space-between; align-items: center; }
+.report details.rfold > summary::-webkit-details-marker { display: none; }
+.report details.rfold > summary::after { content: "+"; font-family: var(--font-sans); font-size: 1.3rem; color: var(--gold); }
+.report details.rfold[open] > summary::after { content: "\2013"; }
+.report details.rfold--table { border-top: 0; margin: 8px 0 18px; }
+.report details.rfold--table > summary { font-family: var(--font-sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); padding: 6px 0; }
+.report .rfilter { margin: 6px 0 10px; }
+.report .rfilter input { width: 100%; max-width: 320px; padding: 9px 12px; border: 1px solid var(--line); background: #fff; font: inherit; font-size: 0.9rem; }
+.rtoc li.rtoc-ch > a { font-weight: 700; }
+.rtoc ol.rtoc-sub { list-style: none; margin: 2px 0 8px; padding: 0 0 0 30px; }
+.rtoc ol.rtoc-sub li a { display: block; padding: 3px 0; font-size: 0.78rem; color: var(--muted); grid-template-columns: none; }
+.rtoc ol.rtoc-sub li a:hover { color: var(--gold-deep, var(--gold)); }
+.report .rchap .rkey li { border-top-color: var(--line); }
+.report .rchap .rkey .rkey-t { color: var(--ink); }
+.report .rchap .rkey .rkey-d { color: var(--charcoal); }
+.report .rchap .dlabel { color: var(--gold-deep, var(--gold)) !important; }
+.report #ch-short .rblock > p:first-child, .report #ch-short .dtx > p:first-child { font-family: var(--font-serif); font-size: 1.15rem; line-height: 1.6; color: var(--ink); }
+.report .rpart > .rh2 { font-weight: 700; font-size: clamp(1.5rem, 2.6vw, 1.95rem); }
+.report .rpart .rh3 { font-size: clamp(1.1rem, 1.7vw, 1.25rem); margin-top: 30px; }

@@ -9,7 +9,7 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/business-ser
 
 Segments: Commercial & Facility Services; Marketing, Sales & Tech-Enabled Services; Engineering, Architecture & Consulting; Financial & Insurance Services; Staffing & Human Capital
 
-## 2. Insights
+## 1. The Short Version
 
 **KEY INSIGHTS**
 
@@ -29,7 +29,7 @@ Bernhard Capital agreed to buy Bowman at a 58% premium, and 88% of engineering f
 
 Completed middle-market deals averaged 7.0x EBITDA in the second quarter, and 87% of sales above $5 million drew three or more offers. Keep every client below a fifth of revenue.
 
-## 3. Key Trends in Business Services
+## 2. Market Conditions
 
 Six developments are shaping demand, pricing and deal activity across the five sectors as the fourth quarter begins.
 
@@ -88,7 +88,9 @@ Buyers pay most readily for revenue that repeats under contract. Completed middl
 
 Figures are the latest published as of October 7, 2026, and each is linked to its source. The 10-year Treasury figure is the monthly average for September 2026. EBITDA is earnings before interest, taxes, depreciation and amortization.
 
-## 4. Perspectives on Five Sectors
+## 3. Sector by Sector
+
+### Five Sectors
 
 Each sector has its own buyers and drivers, and the same five tests decide how a buyer values a business in any of them.
 
@@ -186,88 +188,7 @@ Specialty placements, gross margin held through the downturn and direct client r
 
 Active buyers are drawn from transactions announced between October 2025 and October 2026. Company names are the property of their owners and are shown for identification.
 
-## 5. What We're Reading
-
-Six primary sources and trade reports from the third quarter, with the reason each one matters to an owner.
-
-INDUSTRY READING
-ACEC RESEARCH INSTITUTE
-
-August 27, 2026
-
-### Engineering firms hold a year of work and expect a slower economy
-
-The third-quarter survey of engineering firms recorded a median backlog of 12 months, with the strongest sentiment in data centers and in water and wastewater. The same firms put the odds of a recession within six months at 41%, and 88% reported open positions.
-
-**Our read.** Backlog and a bench of licensed engineers are the first two facts a buyer will test.
-
-[READ HERE](https://engineeringinc.acec.org/blog/engineering-firms-remain-resilient-amid-growing-economic-uncertainty-new-acec-research-institute-study-finds/)
-
-STAFFING INDUSTRY ANALYSTS
-
-September 29, 2026
-
-### Staffing revenue grows 5% at the median, the best reading since 2022
-
-The August Pulse Survey of 128 staffing firms recorded median revenue growth of 5% from a year earlier. Engineering staffing led at 10% and industrial staffing followed at 8%, after three years in which industry revenue declined.
-
-**Our read.** The recovery is strongest in the skilled categories where this year's acquisitions are concentrated.
-
-[READ HERE](https://www.staffingindustry.com/editorial/it-staffing-report/it-staffing-revenue-up-5-at-the-median-in-pulse-survey)
-
-INSURANCE JOURNAL
-
-August 20, 2026
-
-### Commercial premiums fall 2% as property pricing softens
-
-The Council of Insurance Agents & Brokers recorded an average premium decline of 2% in the second quarter. Large accounts fell 3.7% and small accounts 0.5%. Commercial property fell 6.3% while umbrella and commercial auto continued to rise.
-
-**Our read.** Account size and line of business now explain most of the difference in agency growth.
-
-[READ HERE](https://www.insurancejournal.com/news/national/2026/08/20/882240.htm)
-
-ECONOMY AND DEAL MARKET
-
-**REUTERS**
-
-October 1, 2026
-
-### Global deal value falls 41% in the third quarter
-
-Announced global M&A fell to $993 billion in the third quarter, the first quarter under $1 trillion since mid-2025, after a record first half. The report attributes the decline to rising borrowing costs.
-
-**Our read.** The slowdown is concentrated in the largest transactions. Add-on purchases by existing platforms made up about three-quarters of second-quarter buyouts ([PitchBook](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf)).
-
-[READ HERE](https://www.investing.com/news/stock-market-news/global-ma-deal-rush-fades-in-third-quarter-as-rising-borrowing-costs-bite-4928161)
-
-FEDERAL RESERVE
-
-September 16, 2026
-
-### The Federal Open Market Committee raises its target range
-
-The committee raised the target range for the federal funds rate by 25 basis points to 3.75% to 4.00% and stated that inflation remains elevated. Senior debt on middle-market acquisitions was already priced at 7.8% in the second quarter.
-
-**Our read.** Lenders are advancing less debt against each dollar of earnings, at 2.9x EBITDA on platform deals ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)).
-
-[READ HERE](https://www.federalreserve.gov/monetarypolicy/files/monetary20260916a1.pdf)
-
-IBBA AND M&A SOURCE
-
-Market Pulse, second quarter 2026
-
-### Smaller transactions reach their highest multiple since early 2022
-
-The quarterly survey of business brokers and M&A advisors put the median multiple on sales of $5 million to $50 million at 5.8x EBITDA, up from 5.5x. Sellers received 83% to 92% of the price in cash at closing.
-
-**Our read.** Competition for well-prepared businesses is intact, with three or more offers on 87% of sales above $5 million ([survey release](https://www.webull.com/news/15462423712777216)).
-
-[READ HERE](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf)
-
-Each summary restates the source in our own words and links to it, and each heading is our own description of the piece.
-
-## 6. Feature: Fire and Life Safety
+### Fire and Life Safety
 
 Inspection and service revenue explains why fire protection and security companies have the most active acquirers in business services.
 
@@ -365,23 +286,9 @@ An owner in this field should expect to be asked what share of revenue comes fro
 
 Listed multiples were retrieved on October 7, 2026, and use reported EBITDA. Rollins is a pest control company and is included as a route-based comparison. Company names are the property of their owners.
 
-## 7. Industry Activity
+## 4. Deals and Buyers
 
--  Client spotlight
-
--  Select recent M&A transactions
-
--  Benchmark International transactions
-
-Public companies: valuation and operating metrics
-
--  Earnings and commentary
-
--  Economic trends
-
--  Select market participants
-
-## 8. Client Spotlight: Three Fire and Life Safety Sales
+### Three Fire and Life Safety Sales We Advised
 
 Benchmark International advised the owners of three fire protection businesses that were bought by operating companies already in the field.
 
@@ -472,7 +379,7 @@ Cintas and AI Fire both operate fire protection businesses, so each purchase ext
 
 Business descriptions are taken from the announcements published on benchmarkintl.com, which are linked from each card. Transaction values are not disclosed. Company names and marks are the property of their owners.
 
-## 9. Select Recent Business Services M&A Transactions
+### Recent Transactions
 
 One transaction from each sector and one with disclosed economics, announced between June and October 2026.
 
@@ -554,9 +461,9 @@ The enterprise value of £850 million, roughly $1.1 billion, compares with about
 
 **WHAT IT SHOWS** Long-term outsourcing contracts earned a multiple in line with the 10.8x median of far larger listed staffing companies.
 
-Transaction values are as reported by the linked source. The listed staffing median is on the valuation page of this brief. Company names are the property of their owners. Transactions advised by Benchmark International follow on the next page.
+Transaction values are as reported by the linked source. The listed staffing median is in the valuation section of this report. Company names are the property of their owners. Transactions advised by Benchmark International follow in [Our Transactions](#p10).
 
-## 10. Benchmark International's Business Services Transactions
+### Our Transactions
 
 Marketing and sales services lead with 23 closed transactions, commercial and facility services follow with 21, and most buyers were operating companies.
 
@@ -686,7 +593,223 @@ Retail Rex Capital
 
 Each tile links to the announcement on benchmarkintl.com. Twelve of the 44 named transactions are shown. Transactions closed in the 24 months to September 2026. Engagements in progress are shown in aggregate. Company names and marks are the property of their owners.
 
-## 11. Public Companies: Valuation
+### Who Is Buying
+
+The listed reference companies in each sector, and the platforms, sponsors and strategic buyers acquiring founder-owned businesses.
+
+COMMERCIAL & FACILITY SERVICES
+LISTED COMPANIES
+
+-  Cintas
+
+-  ABM Industries
+
+-  Rollins
+
+-  APi Group
+
+-  BrightView
+
+-  FirstService
+
+-  Mistras Group
+
+-  SGS
+
+-  Bureau Veritas
+
+-  Intertek
+
+-  Eurofins Scientific
+
+-  UL Solutions
+FIRE, SECURITY AND GUARDING
+
+- Pye-Barker Fire & Safety AI Fire
+
+Sciens Building Solutions
+
+Allied Universal
+
+FACILITY AND OFFICE TECHNOLOGY
+
+4M Building Solutions
+
+Landscape Workshop
+
+DEX Imaging
+
+UBEO Business Services
+
+Pacific Office Automation
+
+TESTING AND INSPECTION
+
+- Phenna Group Transcat EQTMARKETING, SALES & TECH-ENABLED SERVICES
+LISTED COMPANIES
+
+-  Dentsu Group
+
+-  Advantage Solutions
+
+-  Publicis Groupe
+
+-  Stagwell
+
+-  WPP
+
+-  Omnicom
+
+-  Accenture
+
+-  Cognizant
+
+-  4imprint
+
+-  Daktronics
+AGENCY PLATFORMS AND SPONSORS
+
+OneMagnify (Crestview)
+
+- Power Digital Wpromote (ZMC)
+
+Supreme Group (Trinity Hunt)
+
+OuterBox (WILsquare)
+
+Impact XM (Riverside)
+
+Platinum Equity
+
+PROMOTIONAL PRODUCTS
+
+HALO Branded Solutions
+
+IdentiBrands (Proforma)
+
+Zebra Marketing
+
+CONSULTING
+
+- Armanino WavestoneENGINEERING, ARCHITECTURE & CONSULTING
+LISTED COMPANIES
+
+-  AECOM
+
+-  Jacobs
+
+-  Tetra Tech
+
+-  Stantec
+
+-  Bowman Consulting
+
+-  Willdan Group
+
+-  TIC Solutions
+
+-  WSP Global
+PLATFORMS AND CONSOLIDATORS
+
+Bernhard Capital Partners
+
+Ardurra (Littlejohn & Co.)
+
+- Salas O'Brien SAM Companies
+
+- Pape-Dawson PRIME AE Group
+
+GHK Capital Partners
+
+Control Point Associates
+
+Blew & Associates
+
+FORENSIC ENGINEERING
+
+J.S. Held
+
+FINANCIAL & INSURANCE SERVICES
+LISTED COMPANIES
+
+-  Brown & Brown
+
+-  Crawford & Company
+
+-  WTW
+
+-  Ryan Specialty
+
+-  Aon
+
+-  Arthur J. Gallagher
+
+-  Marsh McLennan
+
+-  The Baldwin Group
+INSURANCE BROKERAGE
+
+Inszone Insurance Services
+
+World Insurance Associates
+
+EPIC Insurance Brokers & Consultants
+
+King Risk Partners
+
+Risk Placement Services
+
+WEALTH AND OTHER
+
+- Hightower Mercer Advisors
+
+- Class Valuation BroadridgeSTAFFING & HUMAN CAPITAL
+LISTED COMPANIES
+
+-  AMN Healthcare
+
+-  Korn Ferry
+
+-  Randstad
+
+-  Barrett Business Services
+
+-  TriNet
+
+-  Kforce
+
+-  ManpowerGroup
+
+-  TrueBlue
+
+-  Robert Half
+
+-  Insperity
+STAFFING FIRMS
+
+- Aerotek (Allegis) ALKU
+
+- CHG Healthcare Airswift
+
+VeriWorks
+
+HW Staffing Solutions
+
+- CTI Staffing Care Career
+
+Empire Workforce Solutions
+
+INVESTORS
+
+Concord Holdings
+
+Red Dog Equity
+
+Private participants are buyers in transactions announced between October 2025 and October 2026. The list is illustrative. Company names are the property of their owners and are shown for identification.
+
+## 5. Valuations and Public Markets
+
+### Valuation
 
 Listed multiples are lower than a year ago in all five sectors, and each sector trades below its three-year median.
 
@@ -748,7 +871,7 @@ STAFFING & HUMAN CAPITAL
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, with share prices dated September 15 to October 7. Multiples use reported EBITDA. The chart covers the 36 companies with a current multiple under 50x, a year-ago multiple and quarter-end history. The mark n/m identifies 9 companies whose multiple is above 50x, unavailable or inconsistent on the source.
 
-## 12. Public Companies: Operating and Valuation Metrics
+### Operating and Valuation Metrics
 
 Insurance brokers earn the widest margins and the highest revenue multiples, and staffing companies earn the narrowest.
 
@@ -818,7 +941,7 @@ Revenue multiples follow margin, which is why an owner should compare a business
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Medians cover every listed company in each sector with a published figure, between 7 and 12 companies a sector. Trailing periods end between December 2025 and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present.
 
-## 13. Earnings and Commentary
+### What Public Companies Said
 
 Engineering firms grew fastest, APi Group held double-digit growth, and four of the five staffing firms shown grew.
 
@@ -918,7 +1041,7 @@ Staffing demand is returning, and marketing clients are concentrating spend wher
 
 Figures are from each earnings release, linked from the company name. Commentary is summarized in our own words. Stantec and Willdan are on net revenue, Korn Ferry is on fee revenue, and Crawford is computed from stated revenue. Omnicom, Tetra Tech and Baldwin state no comparable change and are not charted.
 
-## 14. Economic Trends
+## 6. Indicators to Watch
 
 Growth is positive, hiring has slowed, long-term yields are higher than a year ago and engineering employment keeps rising.
 
@@ -1319,221 +1442,88 @@ Architecture and engineering employment is 14.6% above its September 2021 level,
 
 Each series runs from September 2021 to its latest month, September 2026, and GDP runs to the second quarter of 2026. Recent months are preliminary. FRED has no unemployment rate for October 2025, and the line bridges that month.
 
-## 15. Select Market Participants
+## 7. What We're Reading
 
-The listed reference companies in each sector, and the platforms, sponsors and strategic buyers acquiring founder-owned businesses.
+Six primary sources and trade reports from the third quarter, with the reason each one matters to an owner.
 
-COMMERCIAL & FACILITY SERVICES
-LISTED COMPANIES
+INDUSTRY READING
+ACEC RESEARCH INSTITUTE
 
--  Cintas
+August 27, 2026
 
--  ABM Industries
+### Engineering firms hold a year of work and expect a slower economy
 
--  Rollins
+The third-quarter survey of engineering firms recorded a median backlog of 12 months, with the strongest sentiment in data centers and in water and wastewater. The same firms put the odds of a recession within six months at 41%, and 88% reported open positions.
 
--  APi Group
+**Our read.** Backlog and a bench of licensed engineers are the first two facts a buyer will test.
 
--  BrightView
+[READ HERE](https://engineeringinc.acec.org/blog/engineering-firms-remain-resilient-amid-growing-economic-uncertainty-new-acec-research-institute-study-finds/)
 
--  FirstService
+STAFFING INDUSTRY ANALYSTS
 
--  Mistras Group
+September 29, 2026
 
--  SGS
+### Staffing revenue grows 5% at the median, the best reading since 2022
 
--  Bureau Veritas
+The August Pulse Survey of 128 staffing firms recorded median revenue growth of 5% from a year earlier. Engineering staffing led at 10% and industrial staffing followed at 8%, after three years in which industry revenue declined.
 
--  Intertek
+**Our read.** The recovery is strongest in the skilled categories where this year's acquisitions are concentrated.
 
--  Eurofins Scientific
+[READ HERE](https://www.staffingindustry.com/editorial/it-staffing-report/it-staffing-revenue-up-5-at-the-median-in-pulse-survey)
 
--  UL Solutions
-FIRE, SECURITY AND GUARDING
+INSURANCE JOURNAL
 
-- Pye-Barker Fire & Safety AI Fire
+August 20, 2026
 
-Sciens Building Solutions
+### Commercial premiums fall 2% as property pricing softens
 
-Allied Universal
+The Council of Insurance Agents & Brokers recorded an average premium decline of 2% in the second quarter. Large accounts fell 3.7% and small accounts 0.5%. Commercial property fell 6.3% while umbrella and commercial auto continued to rise.
 
-FACILITY AND OFFICE TECHNOLOGY
+**Our read.** Account size and line of business now explain most of the difference in agency growth.
 
-4M Building Solutions
+[READ HERE](https://www.insurancejournal.com/news/national/2026/08/20/882240.htm)
 
-Landscape Workshop
+ECONOMY AND DEAL MARKET
 
-DEX Imaging
+**REUTERS**
 
-UBEO Business Services
+October 1, 2026
 
-Pacific Office Automation
+### Global deal value falls 41% in the third quarter
 
-TESTING AND INSPECTION
+Announced global M&A fell to $993 billion in the third quarter, the first quarter under $1 trillion since mid-2025, after a record first half. The report attributes the decline to rising borrowing costs.
 
-- Phenna Group Transcat EQTMARKETING, SALES & TECH-ENABLED SERVICES
-LISTED COMPANIES
+**Our read.** The slowdown is concentrated in the largest transactions. Add-on purchases by existing platforms made up about three-quarters of second-quarter buyouts ([PitchBook](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf)).
 
--  Dentsu Group
+[READ HERE](https://www.investing.com/news/stock-market-news/global-ma-deal-rush-fades-in-third-quarter-as-rising-borrowing-costs-bite-4928161)
 
--  Advantage Solutions
+FEDERAL RESERVE
 
--  Publicis Groupe
+September 16, 2026
 
--  Stagwell
+### The Federal Open Market Committee raises its target range
 
--  WPP
+The committee raised the target range for the federal funds rate by 25 basis points to 3.75% to 4.00% and stated that inflation remains elevated. Senior debt on middle-market acquisitions was already priced at 7.8% in the second quarter.
 
--  Omnicom
+**Our read.** Lenders are advancing less debt against each dollar of earnings, at 2.9x EBITDA on platform deals ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)).
 
--  Accenture
+[READ HERE](https://www.federalreserve.gov/monetarypolicy/files/monetary20260916a1.pdf)
 
--  Cognizant
+IBBA AND M&A SOURCE
 
--  4imprint
+Market Pulse, second quarter 2026
 
--  Daktronics
-AGENCY PLATFORMS AND SPONSORS
+### Smaller transactions reach their highest multiple since early 2022
 
-OneMagnify (Crestview)
+The quarterly survey of business brokers and M&A advisors put the median multiple on sales of $5 million to $50 million at 5.8x EBITDA, up from 5.5x. Sellers received 83% to 92% of the price in cash at closing.
 
-- Power Digital Wpromote (ZMC)
+**Our read.** Competition for well-prepared businesses is intact, with three or more offers on 87% of sales above $5 million ([survey release](https://www.webull.com/news/15462423712777216)).
 
-Supreme Group (Trinity Hunt)
+[READ HERE](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf)
 
-OuterBox (WILsquare)
+Each summary restates the source in our own words and links to it, and each heading is our own description of the piece.
 
-Impact XM (Riverside)
-
-Platinum Equity
-
-PROMOTIONAL PRODUCTS
-
-HALO Branded Solutions
-
-IdentiBrands (Proforma)
-
-Zebra Marketing
-
-CONSULTING
-
-- Armanino WavestoneENGINEERING, ARCHITECTURE & CONSULTING
-LISTED COMPANIES
-
--  AECOM
-
--  Jacobs
-
--  Tetra Tech
-
--  Stantec
-
--  Bowman Consulting
-
--  Willdan Group
-
--  TIC Solutions
-
--  WSP Global
-PLATFORMS AND CONSOLIDATORS
-
-Bernhard Capital Partners
-
-Ardurra (Littlejohn & Co.)
-
-- Salas O'Brien SAM Companies
-
-- Pape-Dawson PRIME AE Group
-
-GHK Capital Partners
-
-Control Point Associates
-
-Blew & Associates
-
-FORENSIC ENGINEERING
-
-J.S. Held
-
-FINANCIAL & INSURANCE SERVICES
-LISTED COMPANIES
-
--  Brown & Brown
-
--  Crawford & Company
-
--  WTW
-
--  Ryan Specialty
-
--  Aon
-
--  Arthur J. Gallagher
-
--  Marsh McLennan
-
--  The Baldwin Group
-INSURANCE BROKERAGE
-
-Inszone Insurance Services
-
-World Insurance Associates
-
-EPIC Insurance Brokers & Consultants
-
-King Risk Partners
-
-Risk Placement Services
-
-WEALTH AND OTHER
-
-- Hightower Mercer Advisors
-
-- Class Valuation BroadridgeSTAFFING & HUMAN CAPITAL
-LISTED COMPANIES
-
--  AMN Healthcare
-
--  Korn Ferry
-
--  Randstad
-
--  Barrett Business Services
-
--  TriNet
-
--  Kforce
-
--  ManpowerGroup
-
--  TrueBlue
-
--  Robert Half
-
--  Insperity
-STAFFING FIRMS
-
-- Aerotek (Allegis) ALKU
-
-- CHG Healthcare Airswift
-
-VeriWorks
-
-HW Staffing Solutions
-
-- CTI Staffing Care Career
-
-Empire Workforce Solutions
-
-INVESTORS
-
-Concord Holdings
-
-Red Dog Equity
-
-Private participants are buyers in transactions announced between October 2025 and October 2026. The list is illustrative. Company names are the property of their owners and are shown for identification.
-
-## 19. Benchmark International
+## 8. About Benchmark International
 
 The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five industries.
 
@@ -1555,9 +1545,11 @@ FIVE INDUSTRY GROUPS
 
 Ranking based on PitchBook's Q2 2026 Global League Tables, as published at [benchmarkintl.com](https://www.benchmarkintl.com/about/our-success/). Awards as shown on the Middle Market site.
 
-## 20. Important Disclosures
+## 9. Disclosures and Sources
 
-Please read these notes together with the brief.
+### Important Disclosures
+
+Please read these notes together with the report.
 
 > “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
@@ -1575,9 +1567,9 @@ This material is only being distributed to, and only made available to, and dire
 
 Benchmark International | 4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607 | +1 813 898 2350 | [benchmarkintl.com](https://www.benchmarkintl.com/)
 
-## 21. Sources
+### Sources
 
-The sources linked on each page, listed by page with the link text used.
+The sources linked in each section, listed by section with the link text used.
 
 KEY TRENDS IN BUSINESS SERVICES
 
