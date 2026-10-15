@@ -9,7 +9,7 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-ind
 
 Segments: Food & Beverage; Consumer Brands & Products; Foodservice & Distribution; Consumer Services & Retail
 
-## 2. Insights
+## Insights
 
 Buyers of consumer businesses are paying for brands that have held price and volume, for companies that sell through more than one channel and for operators with room to add distribution or locations. They have stayed active while tariffs, fuel and interest rates have each changed what a buyer treats as normal earnings.
 
@@ -33,7 +33,7 @@ Diesel averaged $6.29 a gallon in September, and the federal funds target now si
 
 **MIDDLE MARKET**
 
-## 3. Happening in Consumer Right Now
+## 1. Happening in Consumer Right Now
 
 Four developments shaping the market, each with what a listed company’s management said about it in its latest results.
 
@@ -77,7 +77,7 @@ Brian Kaner, President & CEO, Boyd Group
 
 Company figures and quotations are from quarterly earnings releases filed between July 30 and October 1, 2026, and quotations are reproduced as published. Store brand share is Circana data for the six months to June 14, 2026. Platform location and acquisition counts are from the linked announcements.
 
-## 4. Tariffs, Fuel and Financing: Three Costs Buyers Are Repricing
+## 2. Tariffs, Fuel and Financing: Three Costs Buyers Are Repricing
 
 Tariffs, fuel and interest rates have each moved in the past year, and each changes what a buyer will treat as normal earnings.
 
@@ -119,7 +119,7 @@ THE REPRICING IN FOUR FIGURES
 
 Tariff rates are as described in the linked sources. Diesel is the monthly average US on-highway retail price published by the Energy Information Administration. Earn-out figures are from the SRS Acquiom 2026 deal terms study of 2025 transactions.
 
-## 5. Perspectives on Four Consumer Sectors
+## 3. Perspectives on Four Consumer Sectors
 
 What is moving demand, and who is buying, in each of the sectors the consumer practice covers.
 
@@ -213,7 +213,7 @@ BENCHMARK INTERNATIONAL
 
 Benchmark International counts are from the firm’s transaction records as of October 1, 2026. Store brand share is from the [Private Label Manufacturers Association](https://plma.com/article/store-brands-continue-gains-unit-sales-and-shares), the restaurant sales forecast from the [National Restaurant Association](https://restaurant.org/research-and-media/media/press-releases/persistent-cost-increases-and-enduring-demand-will-shape-the-restaurant-industry-in-2026/) and beauty sales from [Circana](https://www.circana.com/post/us-beauty-industry-posts-solid-first-half-growth-as-fragrance-and-skincare-lead-across-prestige-and).
 
-## 6. What We’re Reading
+## 4. What We’re Reading
 
 Primary sources and industry releases from the third quarter.
 
@@ -277,7 +277,7 @@ Natalie Martini, vice chair, Deloitte, and US retail and consumer products leade
 
 Quotations are reproduced as published. Store brand figures are Circana data for the six months ending June 14, 2026. The Deloitte forecast covers November 2026 through January 2027.
 
-## 7. Industry Activity
+## Industry Activity
 
 Strategic acquirers have committed more than $120 billion to three consumer transactions since November 2025, and sponsor-backed platforms are buying family-owned operators a few locations at a time. Listed consumer companies trade at lower multiples of earnings than a year ago in every peer group we track.
 
@@ -295,9 +295,11 @@ Benchmark International’s consumer transactions
 
 **MIDDLE MARKET**
 
-## 8. Select Recent Consumer Transactions
+## 5. Select Recent Consumer Transactions
 
 Acquirers disclosed a price in most of these transactions and a multiple of earnings in only a few.
+
+Buyers in foodservice and consumer services paid for store networks, subscription members and recurring customer contracts.
 
 | Announced | Target and acquirer | Business and terms | Stated value | Value to revenue | Value to earnings |
 | --- | --- | --- | --- | --- | --- |
@@ -306,15 +308,6 @@ Acquirers disclosed a price in most of these transactions and a multiple of earn
 | JULY 2026 FOOD & BEVERAGE | COPRA INC. ACQUIRED BY VITA COCO | Vita Coco acquired Copra, a privately held producer of frozen organic coconut water and coconut meat ( Vita Coco and Copra ). | $175M | Not disclosed | Not disclosed |
 | JAN 2026 CONSUMER BRANDS & PRODUCTS MAR 2026 CONSUMER BRANDS & PRODUCTS | GOJO INDUSTRIES ACQUIRED BY CLOROX BREATHE RIGHT, DIMETAPP AND ANBESOL ACQUIRED BY PRESTIGE CONSUMER HEALTHCARE | Clorox bought GOJO Industries, the maker of Purell, which had been family-led in Akron, Ohio, since its founding in 1946 ( Clorox and GOJO Industries ). Prestige agreed to buy Breathe Right and other over-the-counter health brands, described the model as asset-light and stated the price as a multiple of EBITDA ( Prestige Consumer Healthcare ). | $2.25B $1.045B | Not disclosed Not disclosed | 11.9x adjusted EBITDA net of anticipated tax benefits, as stated by Clorox 11.0x EBITDA, as stated by Prestige |
 | JAN 2026 CONSUMER BRANDS & PRODUCTS | MY MEDIC ACQUIRED BY ACME UNITED | Acme United bought My Medic, a maker of first-aid kits sold almost entirely direct to consumers, with about $19 million of revenue ( Acme United and My Medic ). | $18.7M | About 1.0x calculated from the stated figures | Not disclosed |
-
-Values and multiples are as stated by the acquirer or reported in the linked source. Value to revenue is our calculation where marked. Company names are the property of their owners and are used for identification. Transactions advised by Benchmark International appear on page 10.
-
-## 9. Select Recent Consumer Transactions (Continued)
-
-Buyers in foodservice and consumer services paid for store networks, subscription members and recurring customer contracts.
-
-| Announced | Target and acquirer | Business and terms | Stated value | Value to revenue | Value to earnings |
-| --- | --- | --- | --- | --- | --- |
 | MAR 2026 FOODSERVICE & DISTRIBUTION | JETRO RESTAURANT DEPOT ACQUIRED BY SYSCO | Sysco agreed to acquire Jetro Restaurant Depot and its 166 cash-and-carry warehouse stores, and it expects to close by the first calendar quarter of 2027, though members of Congress have asked the FTC to investigate ( Sysco and Jetro Restaurant Depot ). | About $29.1B enterprise value | Not disclosed | 14.6x 2025 operating income, as stated by Sysco |
 | MAR 2026 FOODSERVICE & DISTRIBUTION | FEDERAL INDUSTRIES ACQUIRED BY AERITEK Mill Point Capital | AeriTek bought Federal Industries, a Wisconsin maker of food display cases with $35.7 million of fiscal 2025 revenue, in a carve-out from Standex ( Standex on Federal Industries ). | About $70M enterprise value | About 2.0x calculated from the stated figures | Not disclosed |
 
@@ -386,9 +379,9 @@ PCT Top 100
 
 Not disclosed
 
-Values and multiples are as stated by the acquirer or reported in the linked source. Value to revenue is our calculation where marked. Three transactions are shown for each of the four sectors on pages 8 and 9.
+Values and multiples are as stated by the acquirer or reported in the linked source. Value to revenue is our calculation where marked. Company names are the property of their owners and are used for identification. Transactions advised by Benchmark International appear in [Benchmark International’s Consumer Transactions](#p10). Three transactions are shown for each of the four sectors.
 
-## 10. Benchmark International’s Consumer Transactions
+## 6. Benchmark International’s Consumer Transactions
 
 Consumer services and retail is the most active sector, and operating companies and platforms bought just over half of the named companies.
 
@@ -577,7 +570,7 @@ Private equity and private investment firms
 
 Each tile links to the announcement on benchmarkintl.com, and Benchmark International advised the seller in each. Counts are from Benchmark International’s transaction records for January 1, 2025 through September 30, 2026; engagements in progress are shown in aggregate only.
 
-## 11. Who Is Buying
+## 7. Who Is Buying
 
 Founder- and family-owned consumer businesses draw bids from operating companies, sponsor-backed platforms and first-time investors in a category.
 
@@ -727,7 +720,7 @@ The individual investor who acquired Southern Pool Designs
 
 Buyers listed as active are those named in the 2026 transactions covered in the Q4 2026 Consumer report. Acquirers of Benchmark International clients are from announcements on benchmarkintl.com, including earlier engagements. Private equity holds $1.3 trillion of uncommitted capital and about 32,000 unsold portfolio companies ([Bain](https://www.bain.com/insights/outlook-gaining-traction-global-private-equity-report-2026/)).
 
-## 12. Public Company Market Performance
+## 8. Public Company Market Performance
 
 Packaged food shares have fallen about a third in a year, and earnings rose most at foodservice distributors and consumer services companies.
 
@@ -789,9 +782,9 @@ WHAT THE MARKET IS PRICING
 
 35 of 57listed consumer companies trade below their share price of a year ago11.4xmedian enterprise value to trailing EBITDA today, against 14.5x a year ago9 of 9peer groups carry a lower median multiple of EBITDA than a year ago
 
-Medians of 57 listed companies in nine peer groups, shown on pages 15 to 17. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil. EBITDA is as reported. The snacks median sits between Hershey, down 18%, and three smaller companies down 58% to 78%. Multiples cover the 55 companies with comparable readings on both dates.
+Medians of 57 listed companies in nine peer groups, shown in [Public Company Metrics: Food and Beverage](#p15), [Public Company Metrics: Consumer Brands and Foodservice](#p16) and [Public Company Metrics: Restaurants, Services and Retail](#p17). Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil. EBITDA is as reported. The snacks median sits between Hershey, down 18%, and three smaller companies down 58% to 78%. Multiples cover the 55 companies with comparable readings on both dates.
 
-## 13. Revenue Growth Trends
+## 9. Revenue Growth Trends
 
 Snack, restaurant and consumer services companies grew fastest in their latest fiscal year, and packaged food revenue has declined three years running.
 
@@ -882,7 +875,7 @@ Chart data:
 
 Medians of fiscal-year revenue growth, including acquisitions, with the number of companies in parentheses. Shaded years are analyst consensus, and the rows under each chart give the plotted values in the order of the key. Middleby is left out because its revenue was restated for a spin-off. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil.
 
-## 14. Public Company Valuation Metrics
+## 10. Public Company Valuation Metrics
 
 The median multiple of EBITDA is lower than a year ago in every peer group, and packaged food companies trade near eight times.
 
@@ -972,7 +965,7 @@ DISCLOSED DEAL MULTIPLES SINCE 2025
 
 Medians by peer group, which can move with one or two companies in a group of six. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil. Multiples use reported EBITDA. The year-ago multiple is the reading four quarter-ends earlier, between late August and November 2025, and June 30, 2025 for Rentokil, which reports half-yearly. Deal multiples are as stated by each acquirer on its own basis.
 
-## 15. Public Company Metrics: Food and Beverage
+## 11. Public Company Metrics: Food and Beverage
 
 Packaged food companies trade at a median 8.2 times EBITDA. Keurig Dr Pepper’s figures include JDE Peet’s, and Utz has agreed to be acquired by Intersnack.
 
@@ -1007,7 +1000,7 @@ Packaged food companies trade at a median 8.2 times EBITDA. Keurig Dr Pepper’s
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; share prices are dated October 2 to 7. Multiples and margins use reported trailing EBITDA. n.m. marks a figure that is not comparable and is left out of the median; n.a. is not available. Year-ago multiples are four quarter-ends earlier, and multiple medians use companies with both readings.
 
-## 16. Public Company Metrics: Consumer Brands and Foodservice
+## 12. Public Company Metrics: Consumer Brands and Foodservice
 
 Household and personal care companies hold the highest multiples of the nine groups. Middleby’s figures reflect the July spin-off of its food processing business.
 
@@ -1040,7 +1033,7 @@ Household and personal care companies hold the highest multiples of the nine gro
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; share prices are dated October 2 to 7. Multiples and margins use reported trailing EBITDA. n.m. marks a figure that is not comparable and is left out of the median; n.a. is not available. Year-ago multiples are four quarter-ends earlier, and multiple medians use companies with both readings.
 
-## 17. Public Company Metrics: Restaurants, Services and Retail
+## 13. Public Company Metrics: Restaurants, Services and Retail
 
 Rollins, Planet Fitness and Boyd Group shares have each fallen by about half in a year while their revenue kept growing.
 
@@ -1074,7 +1067,7 @@ Rollins, Planet Fitness and Boyd Group shares have each fallen by about half in 
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; share prices are dated October 2 to 7, and October 14 for Rentokil. Multiples and margins use reported trailing EBITDA. n.m. marks a figure that is not comparable and is left out of the median; n.a. is not available. Year-ago multiples are four quarter-ends earlier (June 30, 2025 for Rentokil, which reports half-yearly), and multiple medians use companies with both readings.
 
-## 18. Demand and Cost Indicators
+## 14. Demand and Cost Indicators
 
 Spending is rising in dollars while sentiment falls, food manufacturers’ selling prices are flat and diesel costs two thirds more than a year ago.
 
@@ -1764,9 +1757,9 @@ Source: [FRED, series GASDESM](https://fred.stlouisfed.org/series/GASDESM)
 
 Each series runs from January 2021. August retail figures are the Census advance estimate, and September sentiment is from the Surveys of Consumers. The consumer price series have no October 2025 reading, and the unadjusted food-at-home increase reported for August is 2.2%.
 
-## 21. Important Disclosures
+## 15. Important Disclosures
 
-These disclosures apply to this brief and to the Middle Market industry reports.
+These disclosures apply to this report and to the Middle Market industry reports.
 
 > “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
@@ -1780,11 +1773,11 @@ Company names, logos and trademarks referenced in this material are the property
 
 This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the “Order”); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as “Relevant Persons”). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.
 
-Information in this brief is as of October 7, 2026 unless stated otherwise.
+Information in this report is as of October 7, 2026 unless stated otherwise.
 
-## 22. Sources
+## 16. Sources
 
-Every figure in this brief links to the page it came from, and the same links are collected here by section.
+Every figure in this report links to the page it came from, and the same links are collected here by section.
 
 [Hershey](https://www.sec.gov/Archives/edgar/data/0000047111/000162828026050769/exhibit991_2026xq2.htm) sec.gov
 

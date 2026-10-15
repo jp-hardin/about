@@ -9,7 +9,7 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-i
 
 Segments: Manufacturing & Industrial Technology; Industrial Distribution & Services; Building Products & Construction Services; Energy, Power & Environmental Services; Transportation & Logistics
 
-## 2. Insights
+## Insights
 
 American manufacturing has expanded for nine consecutive months, and acquirers in every industrial sector are buying capacity that already exists because skilled labor is scarce and new equipment takes a long time to arrive. Borrowing costs rose in September, and buyers have become more selective about what they pay for.
 
@@ -31,7 +31,7 @@ APi Group is working toward 60% of revenue from inspection and service. Buyers p
 
 The Federal Reserve raised its target range to 3.75% to 4.00% on September 16. GF Data's average multiple eased to 7.0 times trailing adjusted EBITDA, from 7.3 times.
 
-## 3. Market Insights: Q4 2026
+## 1. Market Insights: Q4 2026
 
 Demand is broad, buyers are organized around platforms and financing became more expensive in September.
 
@@ -69,7 +69,7 @@ $53.4BQuanta Services total backlog June 2026
 
 Figures are as reported by the linked sources. Middle-market multiple and debt figures are GF Data sponsor-reported averages for the first and second quarters of 2026.
 
-## 4. Power Demand: The Buildout Reaches Every Industrial Sector
+## 2. Power Demand: The Buildout Reaches Every Industrial Sector
 
 Electricity demand is growing about 2% a year, the equipment to meet it is sold out years ahead and acquirers are buying existing capacity.
 
@@ -118,7 +118,7 @@ THE BUILDOUT IN FOUR FIGURES
 
 Transaction values and multiples are as stated by the acquirer in the linked announcement. Backlog figures are from company second-quarter reports and the ABC member survey for August 2026.
 
-## 5. Featured Engagement: The Carmi Companies
+## 3. Featured Engagement: The Carmi Companies
 
 A Laredo logistics and customs brokerage group and a Mexico manufacturing services company have combined to form an end-to-end cross-border platform.
 
@@ -168,7 +168,7 @@ VIEW MORE TRANSACTIONS
 
 Company descriptions are from the announcement on benchmarkintl.com. Benchmark International counts are for the 24 months to September 30, 2026 and for engagements in progress as of October 1, 2026.
 
-## 6. Industry Activity
+## Industry Activity
 
 Acquirers announced transactions in every industrial sector during 2026, with sellers that ranged from founder-owned machine shops and customs brokers to companies bought by public acquirers for several billion dollars. Listed industrial companies trade at a median of 16.2 times EBITDA, and the indicators behind demand and financing are pointing in different directions.
 
@@ -182,9 +182,11 @@ Benchmark International’s industrial transactions
 
 - 13 Economic trends
 
-## 7. Select Recent Industrial Transactions
+## 4. Select Recent Industrial Transactions
 
 Public acquirers disclosed prices of about 6 to 10 times EBITDA, and sponsor-owned platforms bought family-owned companies on undisclosed terms.
+
+Buyers in power, environmental services and logistics paid for technicians, permits, equipment supply and border capability they did not already have.
 
 | ANNOUNCED | TARGET AND ACQUIRER | BUSINESS AND TERMS | WHAT IT SHOWS |
 | --- | --- | --- | --- |
@@ -193,24 +195,15 @@ Public acquirers disclosed prices of about 6 to 10 times EBITDA, and sponsor-own
 | JULY 2026 Distribution & Services | FLOWORKS acquired by FERGUSON | Ferguson agreed to buy FloWorks, a flow control distributor with about $1 billion of revenue, from Wynnchurch Capital for $1.6 billion and completed the purchase in August ( MDM ). | Ferguson described the price as about 10 times trailing adjusted EBITDA after including roughly $45 million of expected synergies ( MDM ). |
 | JULY 2026 Distribution & Services | METROPLEX WELDING SUPPLY acquired by MERITUS GAS PARTNERS AEA Investors | Meritus Gas Partners acquired Metroplex Welding Supply of Dallas, a family-owned distributor of industrial gases and welding supplies founded in 1975 with five locations ( MDM ). Terms were not disclosed. | Meritus has announced at least five acquisitions in 2026, four of them since July, and nearly every product line now has a specialist acquirer of this kind. |
 | SEPTEMBER 2026 Building Products & Construction | 1901 INC. acquired by LIMBACH HOLDINGS | Limbach acquired 1901 Inc., a mechanical, electrical and plumbing contractor in Madison, Wisconsin, that it expects to contribute about $140 million of revenue, for $63 million plus an earn-out of up to $6 million ( Pulse 2.0 ). | The upfront payment is about 5.7 times expected 2027 adjusted EBITDA, by our calculation, just below the 6 to 9 times at which project-based contractors have traded. |
-
-Transaction values and multiples are as reported by the linked source or calculated from the figures it gives. Company names are the property of their owners and are shown for identification. Transactions advised by Benchmark International appear on page 9.
-
-## 8. Select Recent Industrial Transactions (Continued)
-
-Buyers in power, environmental services and logistics paid for technicians, permits, equipment supply and border capability they did not already have.
-
-| ANNOUNCED | TARGET AND ACQUIRER | BUSINESS AND TERMS | WHAT IT SHOWS |
-| --- | --- | --- | --- |
 | AUGUST 2026 Building Products & Construction | CLARK RIGGING & RENTAL acquired by BAY CRANE | Bay Crane acquired Clark Rigging & Rental, a crane rental, rigging and heavy-haul company in upstate New York that had been family-owned since 1954 ( RER ). Terms were not disclosed. | Crane, rigging and pump rental each have an active acquirer buying family-owned regional operators. |
 | AUGUST 2026 Energy, Power & Environmental | ENVIROSERVE acquired by CLEAN HARBORS | Clean Harbors agreed to buy EnviroServe, a remediation, industrial cleaning and emergency response company with 40 locations, from One Rock Capital Partners for $470 million ( Waste Advantage ). | The agreement followed Clean Harbors’ $305 million deal for ES&H, which it described as 8.7 times EBITDA after synergies ( Clean Harbors ). |
 | JULY 2026 Energy, Power & Environmental | CORE TRANSFORMERS acquired by MISSION CRITICAL GROUP Emerald Lake Capital Management | Mission Critical Group acquired CORE Transformers, a founder-led supplier of new, made-to-order and remanufactured power transformers ( Distribution Strategy Group ). Terms were not disclosed. | It was the buyer’s second power equipment purchase in four months, after the Texas switchgear maker TxLa Systems. |
 | OCTOBER 2026 Transportation & Logistics | RXO acquired by C.H. ROBINSON | C.H. Robinson agreed on October 5 to acquire RXO, a truck brokerage, managed transportation and last-mile provider, at an implied value of $5.8 billion, a 29% premium to RXO’s last closing price ( C.H. Robinson and RXO ). | About $300 million of expected annual cost savings supports the price at the top of the brokerage market. |
 | MARCH 2026 Transportation & Logistics | EELCO acquired by REDWOOD LOGISTICS AEA Investors | Redwood Logistics acquired EELCO, a Laredo, Texas, customs brokerage with a foreign-trade-zone warehouse that had been founder-owned since 1991 ( FreightWaves ). Terms were not disclosed. | Logistics platforms are buying brokers at the border as trade with Mexico sets monthly records. |
 
-Transaction values and multiples are as reported by the linked source or calculated from the figures it gives. Company names are the property of their owners and are shown for identification. Two transactions are shown for each of the five industrial sectors across pages 7 and 8.
+Transaction values and multiples are as reported by the linked source or calculated from the figures it gives. Company names are the property of their owners and are shown for identification. Transactions advised by Benchmark International appear in [Benchmark International’s Industrial Transactions](#p09). Two transactions are shown for each of the five industrial sectors.
 
-## 9. Benchmark International’s Industrial Transactions
+## 5. Benchmark International’s Industrial Transactions
 
 Building products and construction services is the most active sector, and strategic acquirers were the buyers in more than half of the sales.
 
@@ -348,7 +341,7 @@ TRANSPORTATION
 
 Each tile links to the announcement on benchmarkintl.com. Counts are from Benchmark International’s transaction records for the 24 months to September 30, 2026; engagements in progress are shown in aggregate. Fifty-nine of the 85 closed transactions have been announced publicly.
 
-## 10. Public Company Performance and Trends: Valuation History
+## 6. Public Company Performance and Trends: Valuation History
 
 Manufacturing, distribution and transportation companies trade above every year-end multiple of the past five years.
 
@@ -475,7 +468,7 @@ Listed multiples describe companies many times larger than a founder-owned busin
 
 Median enterprise value to trailing EBITDA for 38 listed companies at each company’s fiscal year-end from 2021 to 2025 and today; the five-year high, low and median under each chart use the year-end values. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026, with share prices from September 28 to October 7, 2026. Multiples use reported EBITDA.
 
-## 11. Public Company Performance and Trends: Operating Metrics
+## 7. Public Company Performance and Trends: Operating Metrics
 
 Building products and construction companies are growing revenue about 22% a year, and manufacturers earn the highest margins.
 
@@ -535,9 +528,9 @@ Chart data:
 | Distribution & Services | 50% |
 | Manufacturing & Industrial Tech | 64% |
 
-Medians of the 38 listed companies shown on page 10, grouped by sector. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Trailing periods end between April and July 2026. EBITDA is as reported and is lower than the adjusted EBITDA that companies present. Forward estimates are not included.
+Medians of the 38 listed companies shown in [Public Company Performance and Trends: Valuation History](#p10), grouped by sector. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Trailing periods end between April and July 2026. EBITDA is as reported and is lower than the adjusted EBITDA that companies present. Forward estimates are not included.
 
-## 12. Public Company Performance and Trends: Valuation Metrics
+## 8. Public Company Performance and Trends: Valuation Metrics
 
 Transportation shares rose a median 43% in a year and still trade at the lowest multiple of EBITDA of the five sectors.
 
@@ -597,9 +590,9 @@ Chart data:
 | Energy & Env. | 2.1x |
 | Transport | 1.5x |
 
-Medians of the 38 listed companies shown on page 10, grouped by sector. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Year-end 2025 multiples stand in for the forward multiples that a licensed data service would provide. Three of the eight building products and construction companies hold more cash than debt.
+Medians of the 38 listed companies shown in [Public Company Performance and Trends: Valuation History](#p10), grouped by sector. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Year-end 2025 multiples stand in for the forward multiples that a licensed data service would provide. Three of the eight building products and construction companies hold more cash than debt.
 
-## 13. Economic Trends
+## 9. Economic Trends
 
 Capital goods orders are 14% above a year ago, diesel is up 68% and the 10-year Treasury yield averaged 4.99% in September.
 
@@ -1183,9 +1176,9 @@ Source: [FRED, series GS10](https://fred.stlouisfed.org/series/GS10)
 
 Each series runs monthly from October 2021 to its latest reading, which is August 2026 for all series except diesel and the Treasury yield (September 2026). Recent months are preliminary and subject to revision.
 
-## 17. Important Disclosures
+## 10. Important Disclosures
 
-These disclosures apply to this brief and to the Middle Market industry reports.
+These disclosures apply to this report and to the Middle Market industry reports.
 
 > “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
@@ -1199,13 +1192,13 @@ Company names, logos and trademarks referenced in this material are the property
 
 This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the “Order”); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as “Relevant Persons”). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.
 
-Information in this brief is as of October 7, 2026 unless stated otherwise.
+Information in this report is as of October 7, 2026 unless stated otherwise.
 
-## 18. Sources
+## 11. Sources
 
-Every figure in this brief links to the page it came from, and the same links are collected here by section.
+Every figure in this report links to the page it came from, and the same links are collected here by section.
 
-INSIGHTS (PAGES 3 TO 5)
+INSIGHTS
 
 [ISM](https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-5-september-2026-ism-manufacturing-pmi-report-302894520.html)  prnewswire.com
 
@@ -1277,7 +1270,7 @@ INSIGHTS (PAGES 3 TO 5)
 
 [Quanta Services](https://investors.quantaservices.com/_assets/_27cda7558592cc1119359235c3a11955/quantaservices/news/2026-07-30_QUANTA_SERVICES_REPORTS_SECOND_QUARTER_2026_402.pdf) quantaservices.com/
 
-TRANSACTIONS (PAGES 7 AND 8)
+TRANSACTIONS
 
 [Franklin Electric and Cat Pumps: Franklin Electric](https://www.franklin-electric.com/company/news/2026/franklin-electric-acquires-cat-pumps-expanding-commercial-and-industrial-flow-control-platform/)  franklin-electric.com
 
@@ -1299,7 +1292,7 @@ TRANSACTIONS (PAGES 7 AND 8)
 
 [C.H. Robinson and RXO](https://www.sec.gov/Archives/edgar/data/0001929561/000114036126038548/ef20083265_ex99-1.htm)  sec.gov
 
-BENCHMARK INTERNATIONAL (PAGES 5, 9 AND 15)
+BENCHMARK INTERNATIONAL
 
 [The Carmi Companies and The Nearshore Company](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-the-carmi-companies-and-the-nearshore-company/)  benchmarkintl.com
 
@@ -1331,7 +1324,7 @@ BENCHMARK INTERNATIONAL (PAGES 5, 9 AND 15)
 
 [Middle Market: Industrial Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html)  jp-hardin.github.io
 
-PUBLIC COMPANIES AND ECONOMIC TRENDS (PAGES 10 TO 13)
+PUBLIC COMPANIES AND ECONOMIC TRENDS
 
 [IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf)  ibba.org
 

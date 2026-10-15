@@ -236,14 +236,131 @@ def body_md(h):
     return re.sub(r'\n{3,}', '\n\n', h).strip()
 
 
+def join_tables(body):
+    """Two tables with the same columns, one after the other (a list split across deck pages), become one table;
+    a lead sentence that sat between them moves above it."""
+    from lxml import html as LH
+    root = LH.fragment_fromstring(body, create_parent='div')
+    head = lambda w: ' '.join(' '.join(w.xpath('.//thead')[0].itertext()).split()) if w.xpath('.//thead') else None
+    wraps = root.xpath('./div[contains(concat(" ", @class, " "), " rtable-wrap ")]')
+    for a, b in zip(wraps, wraps[1:]):
+        if a.getparent() is None or b.getparent() is None or head(a) is None or head(a) != head(b):
+            continue
+        between, cur = [], a.getnext()
+        while cur is not None and cur is not b:
+            between.append(cur)
+            cur = cur.getnext()
+        if cur is not b or any(x.tag != 'p' for x in between):
+            continue
+        for x in between:
+            x.tail = None
+            a.addprevious(x)
+        tb = a.xpath('.//tbody')[0]
+        for tr in b.xpath('.//tbody/tr'):
+            tb.append(tr)
+        b.getparent().remove(b)
+    return (root.text or '') + ''.join(LH.tostring(k, encoding='unicode') for k in root)
+
+
+def join_notes(foot):
+    """Footnotes of joined pages: each sentence once."""
+    sents, seen = [], set()
+    for m in re.findall(r'<p[^>]*>(.*?)</p>', foot, re.S):
+        for x in re.split(r'(?<=[.])\s+(?=[A-Z])', m.strip()):
+            k = re.sub(r'<[^>]+>|\s+', ' ', x).strip().lower()
+            if k and k not in seen:
+                seen.add(k)
+                sents.append(x.strip())
+    return f'<p class="fine">{" ".join(sents)}</p>' if sents else foot
+
+
+def merge_continued(pages):
+    """A deck page that continues the one before it (same title, or "(Continued)") joins it: online it is one section.
+    Returns the pages and a map from each folded page number to the page it joined."""
+    out, alias = [], {}
+    key = lambda t: re.sub(r'\s*\((?:continued|cont\.)\)\s*$', '', t or '', flags=re.I).strip().lower()
+    for pg in pages:
+        prev = out[-1] if out else None
+        if prev is not None and not pg['part'] and not prev['part'] and key(pg['title']) == key(prev['title']):
+            sub = f'<p class="rlead">{pg["subtitle"]}</p>\n' if pg['subtitle'] and pg['subtitle'] != prev['subtitle'] else ''
+            prev['body'] += '\n' + sub + pg['body']
+            if pg['foot'] and pg['foot'] not in prev['foot']:
+                prev['foot'] = (prev['foot'] + '\n' + pg['foot']).strip()
+            alias[pg['num']] = prev['num']
+            prev['body'] = join_tables(prev['body'])
+            prev['foot'] = join_notes(prev['foot'])
+            continue
+        for k in ('title', 'title_html'):
+            pg[k] = re.sub(r'\s*\((?:Continued|continued|CONTINUED)\)\s*$', '', pg[k] or '')
+        out.append(pg)
+    return out, alias
+
+
+def web_refs(pages, alias):
+    """Page references written for the PDF ("appear on page 10", "on the next page") point to sections online."""
+    kept = {pg['num']: pg for pg in pages[1:]}
+
+    def link(n):
+        n = alias.get(n, n)
+        pg = kept.get(n)
+        return (n, f'<a href="#p{n:02d}">{esc(title_case(pg["title"]) if pg["title"].isupper() else pg["title"])}</a>') if pg else None
+
+    def nums(spec):
+        out = []
+        for a, b in re.findall(r'(\d+)(?:\s*(?:to|–)\s*(\d+))?', spec):
+            out += list(range(int(a), int(b) + 1)) if b else [int(a)]
+        return out
+
+    def pages_ref(m):
+        seen, links = set(), []
+        targets = [link(n) for n in nums(m.group(2))]
+        if targets and all(t and t[0] == here for t in targets):
+            return ''          # the section itself: online it needs no pointer
+        for l in targets:
+            if l and l[0] not in seen:
+                seen.add(l[0])
+                links.append(l[1])
+        if not links:
+            return m.group(0)
+        text = links[0] if len(links) == 1 else ', '.join(links[:-1]) + ' and ' + links[-1]
+        return f'in {text}'
+
+    for i, pg in enumerate(pages[1:], 1):
+        here = pg['num']
+        nxt = pages[i + 1] if i + 1 < len(pages) else None
+        for k in ('body', 'foot', 'subtitle'):
+            h = pg[k] or ''
+            h = re.sub(r'\b(on|across|in) (pages? \d+(?:\s*(?:,|and|to|–)\s*\d+)*)', lambda m: pages_ref(m), h)
+            h = re.sub(r'\b(shown) (pages? \d+(?:\s*(?:,|and|to|–)\s*\d+)*)', lambda m: ('shown ' + pages_ref(m)).strip(), h)
+            h = re.sub(r' +([.,;])', r'\1', h)
+            h = re.sub(r'\s*\(PAGES? [^)]*\)', '', h)
+            if nxt is not None:
+                h = h.replace('on the next page', f'in the next section, <a href="#p{nxt["num"]:02d}">{esc(nxt["title"])}</a>')
+            h = re.sub(r'\s*This page covers [^.<]*\.', '', h)
+            h = h.replace('on the valuation page of this brief', 'in the valuation section of this report')
+            h = h.replace('on the valuation pages', 'in the valuation sections')
+            h = h.replace('this brief', 'this report').replace('This brief', 'This report').replace('with the brief', 'with the report')
+            h = h.replace('linked on each page, listed by page', 'linked in each section, listed by section')
+            h = h.replace('appendix pages', 'appendix sections').replace('the valuation pages', 'the valuation sections')
+            if pg['title'].strip().lower() == 'sources':
+                h = re.sub(r'(<h4 class="rh4">(?:<strong>)?)\d{1,2} ', r'\1', h)
+            pg[k] = h
+    return pages
+
+
 def to_markdown(pages, lead, byline, segs):
     url = site.abs_url(f'insights/{PUBLIC}.html')
     out = [f'# {NAME} {PERIOD} M&A Industry Report', '', f"Benchmark International's Middle Market team. {byline}.", '',
            lead, '', f'Web version: {url}  ', f'PDF: {site.abs_url(f"insights/{PUBLIC}.pdf")}', '']
     if segs:
         out += ['Segments: ' + '; '.join(segs), '']
+    n = 0
     for pg in pages[1:]:
-        out += [f'## {pg["num"]}. {title_case(pg["title"])}', '']
+        if pg['part']:
+            out += [f'## {title_case(pg["title"])}', '']
+        else:
+            n += 1
+            out += [f'## {n}. {title_case(pg["title"])}', '']
         if pg['subtitle']:
             out += [inline_md(pg['subtitle']), '']
         out += [body_md(pg['body']), '']
@@ -269,7 +386,8 @@ def build_page(prs):
             pg['part_label'], after_skip = 'About This Report', False
         pg['body'] = drop_team_cards(pg['body']) if pg['part'] else flow(drop_team_cards(pg['body']))
         web.append(pg)
-    pages = web
+    pages, alias = merge_continued(web)
+    pages = web_refs(pages, alias)
     byline, segs, included = cover(prs)
     lead = CONF['lead']
 

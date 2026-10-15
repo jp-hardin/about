@@ -9,7 +9,7 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/business-ser
 
 Segments: Commercial & Facility Services; Marketing, Sales & Tech-Enabled Services; Engineering, Architecture & Consulting; Financial & Insurance Services; Staffing & Human Capital
 
-## 2. Insights
+## Insights
 
 **KEY INSIGHTS**
 
@@ -29,7 +29,7 @@ Bernhard Capital agreed to buy Bowman at a 58% premium, and 88% of engineering f
 
 Completed middle-market deals averaged 7.0x EBITDA in the second quarter, and 87% of sales above $5 million drew three or more offers. Keep every client below a fifth of revenue.
 
-## 3. Key Trends in Business Services
+## 1. Key Trends in Business Services
 
 Six developments are shaping demand, pricing and deal activity across the five sectors as the fourth quarter begins.
 
@@ -88,7 +88,7 @@ Buyers pay most readily for revenue that repeats under contract. Completed middl
 
 Figures are the latest published as of October 7, 2026, and each is linked to its source. The 10-year Treasury figure is the monthly average for September 2026. EBITDA is earnings before interest, taxes, depreciation and amortization.
 
-## 4. Perspectives on Five Sectors
+## 2. Perspectives on Five Sectors
 
 Each sector has its own buyers and drivers, and the same five tests decide how a buyer values a business in any of them.
 
@@ -186,7 +186,7 @@ Specialty placements, gross margin held through the downturn and direct client r
 
 Active buyers are drawn from transactions announced between October 2025 and October 2026. Company names are the property of their owners and are shown for identification.
 
-## 5. What We're Reading
+## 3. What We're Reading
 
 Six primary sources and trade reports from the third quarter, with the reason each one matters to an owner.
 
@@ -267,7 +267,7 @@ The quarterly survey of business brokers and M&A advisors put the median multipl
 
 Each summary restates the source in our own words and links to it, and each heading is our own description of the piece.
 
-## 6. Feature: Fire and Life Safety
+## 4. Feature: Fire and Life Safety
 
 Inspection and service revenue explains why fire protection and security companies have the most active acquirers in business services.
 
@@ -365,7 +365,7 @@ An owner in this field should expect to be asked what share of revenue comes fro
 
 Listed multiples were retrieved on October 7, 2026, and use reported EBITDA. Rollins is a pest control company and is included as a route-based comparison. Company names are the property of their owners.
 
-## 7. Industry Activity
+## Industry Activity
 
 -  Client spotlight
 
@@ -381,7 +381,7 @@ Public companies: valuation and operating metrics
 
 -  Select market participants
 
-## 8. Client Spotlight: Three Fire and Life Safety Sales
+## 5. Client Spotlight: Three Fire and Life Safety Sales
 
 Benchmark International advised the owners of three fire protection businesses that were bought by operating companies already in the field.
 
@@ -472,7 +472,7 @@ Cintas and AI Fire both operate fire protection businesses, so each purchase ext
 
 Business descriptions are taken from the announcements published on benchmarkintl.com, which are linked from each card. Transaction values are not disclosed. Company names and marks are the property of their owners.
 
-## 9. Select Recent Business Services M&A Transactions
+## 6. Select Recent Business Services M&A Transactions
 
 One transaction from each sector and one with disclosed economics, announced between June and October 2026.
 
@@ -554,9 +554,9 @@ The enterprise value of £850 million, roughly $1.1 billion, compares with about
 
 **WHAT IT SHOWS** Long-term outsourcing contracts earned a multiple in line with the 10.8x median of far larger listed staffing companies.
 
-Transaction values are as reported by the linked source. The listed staffing median is on the valuation page of this brief. Company names are the property of their owners. Transactions advised by Benchmark International follow on the next page.
+Transaction values are as reported by the linked source. The listed staffing median is in the valuation section of this report. Company names are the property of their owners. Transactions advised by Benchmark International follow in the next section, [Benchmark International's Business Services Transactions](#p10).
 
-## 10. Benchmark International's Business Services Transactions
+## 7. Benchmark International's Business Services Transactions
 
 Marketing and sales services lead with 23 closed transactions, commercial and facility services follow with 21, and most buyers were operating companies.
 
@@ -686,7 +686,7 @@ Retail Rex Capital
 
 Each tile links to the announcement on benchmarkintl.com. Twelve of the 44 named transactions are shown. Transactions closed in the 24 months to September 2026. Engagements in progress are shown in aggregate. Company names and marks are the property of their owners.
 
-## 11. Public Companies: Valuation
+## 8. Public Companies: Valuation
 
 Listed multiples are lower than a year ago in all five sectors, and each sector trades below its three-year median.
 
@@ -748,7 +748,7 @@ STAFFING & HUMAN CAPITAL
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, with share prices dated September 15 to October 7. Multiples use reported EBITDA. The chart covers the 36 companies with a current multiple under 50x, a year-ago multiple and quarter-end history. The mark n/m identifies 9 companies whose multiple is above 50x, unavailable or inconsistent on the source.
 
-## 12. Public Companies: Operating and Valuation Metrics
+## 9. Public Companies: Operating and Valuation Metrics
 
 Insurance brokers earn the widest margins and the highest revenue multiples, and staffing companies earn the narrowest.
 
@@ -818,7 +818,7 @@ Revenue multiples follow margin, which is why an owner should compare a business
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Medians cover every listed company in each sector with a published figure, between 7 and 12 companies a sector. Trailing periods end between December 2025 and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present.
 
-## 13. Earnings and Commentary
+## 10. Earnings and Commentary
 
 Engineering firms grew fastest, APi Group held double-digit growth, and four of the five staffing firms shown grew.
 
@@ -918,7 +918,7 @@ Staffing demand is returning, and marketing clients are concentrating spend wher
 
 Figures are from each earnings release, linked from the company name. Commentary is summarized in our own words. Stantec and Willdan are on net revenue, Korn Ferry is on fee revenue, and Crawford is computed from stated revenue. Omnicom, Tetra Tech and Baldwin state no comparable change and are not charted.
 
-## 14. Economic Trends
+## 11. Economic Trends
 
 Growth is positive, hiring has slowed, long-term yields are higher than a year ago and engineering employment keeps rising.
 
@@ -1319,7 +1319,7 @@ Architecture and engineering employment is 14.6% above its September 2021 level,
 
 Each series runs from September 2021 to its latest month, September 2026, and GDP runs to the second quarter of 2026. Recent months are preliminary. FRED has no unemployment rate for October 2025, and the line bridges that month.
 
-## 15. Select Market Participants
+## 12. Select Market Participants
 
 The listed reference companies in each sector, and the platforms, sponsors and strategic buyers acquiring founder-owned businesses.
 
@@ -1533,7 +1533,7 @@ Red Dog Equity
 
 Private participants are buyers in transactions announced between October 2025 and October 2026. The list is illustrative. Company names are the property of their owners and are shown for identification.
 
-## 19. Benchmark International
+## 13. Benchmark International
 
 The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five industries.
 
@@ -1555,9 +1555,9 @@ FIVE INDUSTRY GROUPS
 
 Ranking based on PitchBook's Q2 2026 Global League Tables, as published at [benchmarkintl.com](https://www.benchmarkintl.com/about/our-success/). Awards as shown on the Middle Market site.
 
-## 20. Important Disclosures
+## 14. Important Disclosures
 
-Please read these notes together with the brief.
+Please read these notes together with the report.
 
 > “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
@@ -1575,9 +1575,9 @@ This material is only being distributed to, and only made available to, and dire
 
 Benchmark International | 4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607 | +1 813 898 2350 | [benchmarkintl.com](https://www.benchmarkintl.com/)
 
-## 21. Sources
+## 15. Sources
 
-The sources linked on each page, listed by page with the link text used.
+The sources linked in each section, listed by section with the link text used.
 
 KEY TRENDS IN BUSINESS SERVICES
 

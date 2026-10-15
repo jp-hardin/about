@@ -7,7 +7,7 @@ Data center demand is filling order books, consolidators keep paying for recurri
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.pdf
 
-## 2. Insights
+## Insights
 
 **KEY INSIGHTS**
 
@@ -27,7 +27,7 @@ Total debt on platform acquisitions fell to 2.9x EBITDA from 3.4x, and the Feder
 
 North American electronics manufacturing services bookings rose 53.5% in August, while shipments rose 1.0%. Show that backlog converts at steady margins. Expect questions on component supply.
 
-## 3. Key Trends in Technology
+## 1. Key Trends in Technology
 
 Six developments are shaping demand, pricing and deal activity across the six sectors as the fourth quarter begins.
 
@@ -81,9 +81,9 @@ Buyers pay most readily for contracted, recurring revenue and for capability tha
 
 Figures are the latest published as of October 5, 2026 and each is linked to its source. EMS is electronics manufacturing services. CMMC is the Cybersecurity Maturity Model Certification for defense suppliers.
 
-## 4. Perspectives on Six Sectors
+## 2. Perspectives on Six Sectors
 
-Each sector has its own buyers and drivers, and the listed companies shown are the reference set used for valuation later in this brief.
+Each sector has its own buyers and drivers, and the listed companies shown are the reference set used for valuation later in this report.
 
 MANAGED IT & CLOUD SERVICES
 
@@ -243,9 +243,9 @@ ICF
 
 Tyler Technologies
 
-Active buyers are drawn from transactions announced between January 2025 and October 2026 and cited on the transactions page and in the full report. Company marks are the property of their owners and are shown for identification.
+Active buyers are drawn from transactions announced between January 2025 and October 2026 and cited in this report. Company marks are the property of their owners and are shown for identification.
 
-## 5. What We're Reading
+## 3. What We're Reading
 
 Primary sources and trade reporting from the third quarter.
 
@@ -311,7 +311,7 @@ Department of War Chief Information Officer, CMMC program page
 
 Quotations are reproduced as published. ARR is annual recurring revenue. EMS is electronics manufacturing services. NIST 800-171 is the federal standard for protecting controlled unclassified information.
 
-## 6. Industry Activity
+## Industry Activity
 
 -  Select recent M&A transactions
 
@@ -325,7 +325,7 @@ Public companies: valuation and operating metrics
 
 -  Select market participants
 
-## 7. Select Recent Technology M&A Transactions
+## 4. Select Recent Technology M&A Transactions
 
 One transaction from each sector, chosen from those announced or completed between June and September 2026.
 
@@ -403,9 +403,9 @@ The business supplies defense software, encryption and edge computing. Large con
 
 **WHAT IT SHOWS  **Prime contractors are paying for software and cyber capability.
 
-Transaction values are as reported by the linked source. Company names and marks are the property of their owners and are shown for identification. Transactions advised by Benchmark International follow on the next page.
+Transaction values are as reported by the linked source. Company names and marks are the property of their owners and are shown for identification. Transactions advised by Benchmark International follow in the next section, [Benchmark International's Technology Transactions](#p08).
 
-## 8. Benchmark International's Technology Transactions
+## 5. Benchmark International's Technology Transactions
 
 Electronics and hardware leads with five closed transactions and systems integration follows with four, and most buyers were operating companies.
 
@@ -529,7 +529,7 @@ Two further closed transactions, in systems integration and government technolog
 
 Each tile links to the announcement on benchmarkintl.com. Transactions closed in the 24 months to September 2026. Engagements in progress are shown in aggregate. Company names and marks are the property of their owners.
 
-## 9. Public Companies: Valuation
+## 6. Public Companies: Valuation
 
 Electronics manufacturers re-rated from 12.1x to 21.8x EBITDA in a year, while IT services and government contractors trade below three-year medians.
 
@@ -682,7 +682,7 @@ Tyler Technologies
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5, 6 and 14, 2026, on reported EBITDA. The multiple chart covers the 38 companies with a multiple between zero and 60x at each point (faded marks are the 13 left out); share price change covers all 51. Year-ago multiples are at the quarter end nearest September 30, 2025, or June 30, 2025 for Computacenter, which reports half-yearly.
 
-## 10. Public Companies: Operating Metrics
+## 7. Public Companies: Operating Metrics
 
 Electronics manufacturers are growing about 20% a year, government contractors are flat, and security software converts the most revenue to cash.
 
@@ -750,7 +750,7 @@ Chart data:
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5, 6 and 14, 2026. Trailing periods end between June and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present, most visibly for security software. Medians cover all listed companies in each sector.
 
-## 11. Earnings and Commentary
+## 8. Earnings and Commentary
 
 Data center suppliers grew fastest, security vendors tied their outlook to AI adoption, and government contractors described a harder market.
 
@@ -856,7 +856,7 @@ Contractors describe a harder market even as bookings and backlog grow.
 
 Figures and quotations are from each company's earnings release, linked under the chart. Accenture growth is in US dollars, Palo Alto Networks includes acquired businesses, and the CACI quotation describes its full fiscal year. Jabil reported fourth-quarter revenue of $10.6 billion against $8.3 billion and is not charted because its release states no percentage.
 
-## 12. Key Cost and Demand Indicators
+## 9. Key Cost and Demand Indicators
 
 Component and copper prices turned up in 2026, data center construction is surging, and IT services employment keeps drifting lower.
 
@@ -1178,7 +1178,7 @@ Headcount at IT services firms has fallen 5% from its March 2023 peak even as te
 
 Each series is indexed to September 2021 and runs to its latest month: August 2026 for component prices and construction, July 2026 for copper, September 2026 for employment. Recent months are preliminary. The data center figures are from the [Census Bureau construction spending release of October 1, 2026](https://www.census.gov/construction/c30/pdf/privsa.pdf).
 
-## 13. Select Market Participants
+## 10. Select Market Participants
 
 The listed reference companies in each sector, and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
 
@@ -1482,9 +1482,9 @@ SPONSOR-BACKED PLATFORMS
 
 **Falfurrias Management Partners**
 
-Private participants are buyers in transactions announced between January 2025 and October 2026 and cited in the full report. The list is illustrative. Company names and marks are the property of their owners and are shown for identification.
+Private participants are buyers in transactions announced between January 2025 and October 2026 and cited in this report. The list is illustrative. Company names and marks are the property of their owners and are shown for identification.
 
-## 17. Benchmark International
+## 11. Benchmark International
 
 The world's leading privately owned sell-side M&A advisor, with a Middle Market team focused on five industries.
 
@@ -1524,9 +1524,9 @@ FIVE INDUSTRIES
 
 Ranking based on PitchBook's Q2 2026 Global League Tables, as published at [benchmarkintl.com](https://www.benchmarkintl.com/about/our-success/). Awards as shown on the Benchmark International Middle Market site.
 
-## 18. Important Disclosures
+## 12. Important Disclosures
 
-Please read these notes together with the brief.
+Please read these notes together with the report.
 
 > “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
@@ -1544,9 +1544,9 @@ This material is only being distributed to, and only made available to, and dire
 
 Benchmark International  |  4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607  |  +1 813 898 2350  |  [benchmarkintl.com](https://www.benchmarkintl.com/)
 
-## 19. Sources
+## 13. Sources
 
-The sources linked on each page, listed by page with the link text used.
+The sources linked in each section, listed by section with the link text used.
 
 KEY TRENDS
 
