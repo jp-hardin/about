@@ -1034,7 +1034,7 @@ def page_home():
   <div class="wrap">
     <div class="section-head section-head--split reveal">
       <div>
-        <p class="eyebrow">Industry Coverage</p>
+        <p class="eyebrow">Industry Expertise</p>
         <h2 class="h2">Five Industries. Deep Expertise.</h2>
         <p class="lead">Industry knowledge matters. We focus on five industries where we know the buyers, the valuation drivers and the questions that will come up in diligence.</p>
       </div>
@@ -1121,7 +1121,7 @@ def page_industries():
     <h2 class="h2">{e(s['name'])}</h2>
     <p class="lead">{e(s['tagline'])}</p>
     <p>{e(s['overview'][0])}</p>
-    <h3 class="h3">Sector Coverage</h3>
+    <h3 class="h3">Sectors</h3>
     <ul class="seg-links">{segs}</ul>
     <div class="btn-row"><a class="btn" href="{s['slug']}.html">Explore {e(s['name'])}</a><a class="btn btn--ghost" href="{root}transactions.html#{s['slug']}">{len(deals)} Selected Transactions</a></div>
   </div>
@@ -1137,7 +1137,7 @@ def page_industries():
 <section class="hero hero--page">
   <div class="wrap">
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Industries</div>
-    <p class="eyebrow">Industry Coverage</p>
+    <p class="eyebrow">Industry Expertise</p>
     <h1 class="display">Five Industries. Deep Expertise.</h1>
     <p class="lead">We focus on five industries where we have deep transaction experience and long relationships with the most active strategic and financial buyers. Industry focus means we know what drives value, who is buying and how to run a process that gets you the best outcome.</p>
     <nav class="jump" aria-label="Industries">{''.join(f'<a href="#{s["slug"]}">{e(s["name"])}</a>' for s in SECTORS)}</nav>
@@ -1181,7 +1181,7 @@ def page_sector(i, s):
   <div class="segment-body">
     <h3>{e(name)}</h3>
     <p>{e(desc)}</p>
-    <p class="eyebrow" style="margin:16px 0 8px">Subsector Coverage</p>
+    <p class="eyebrow" style="margin:16px 0 8px">Subsector Expertise</p>
     <ul class="ind-tags">{''.join(f'<li>{e(x)}</li>' for x in subs)}</ul>
     <button class="link-arrow seg-jump" data-segment="{e(name)}">{seg_counts[name]} selected transactions</button>
   </div>
@@ -1258,7 +1258,7 @@ def page_sector(i, s):
     </div>
     <aside class="glance reveal">
       <p class="eyebrow">At a Glance</p>
-      <h3>Sector Coverage</h3>
+      <h3>Sectors We Cover</h3>
       <ul>{glance}</ul>
       <a class="btn" href="#deals">View Transactions</a>
     </aside>
@@ -1270,7 +1270,7 @@ def page_sector(i, s):
 <section class="section section--paper">
   <div class="wrap">
     <div class="section-head reveal">
-      <p class="eyebrow">Sector Coverage</p>
+      <p class="eyebrow">Sector Expertise</p>
       <h2 class="h2">Where We Focus</h2>
       <p class="lead">We advise companies across {number_word(len(s['segments']))} sectors within {e(s['prose'])}, including the subsectors listed below.</p>
     </div>
