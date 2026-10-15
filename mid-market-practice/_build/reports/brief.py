@@ -167,6 +167,28 @@ def cover(prs):
     return byline, segs, parts
 
 
+WEB_SKIP = re.compile(r'(Connect With|Our Team$)', re.I)
+TEAM_NAMES = [t[0] for t in site.TEAM_LEAD] + [t[0] for t in site.TEAM_SUPPORT]
+
+
+def drop_team_cards(body):
+    """Removes cards that hold a team member's name and contact details (the page's author card and the site's
+    team section already carry them), with the label that introduces them."""
+    names = '|'.join(re.escape(x) for x in TEAM_NAMES)
+    while True:
+        m = re.search(r'<div class="dcard[^"]*"[^>]*><div class="dtx"><h3 class="dh"><strong>(?:' + names + r')</strong></h3>', body)
+        if not m:
+            break
+        depth, i = 0, m.start()
+        for t in re.finditer(r'<div\b|</div>', body[m.start():]):
+            depth += 1 if t.group(0) != '</div>' else -1
+            if depth == 0:
+                i = m.start() + t.end()
+                break
+        body = body[:m.start()] + body[i:].lstrip()
+    return re.sub(r'<div class="dtx"><p class="dlabel"><strong>TALK WITH THE TEAM</strong></p></div>\s*', '', body)
+
+
 def stats_band(pages):
     """The figures from the page on Benchmark International's own transactions, shown under the hero."""
     for pg in pages:
@@ -235,6 +257,18 @@ def build_page(prs):
     root, pdf, md_name = '../', f'{PUBLIC}.pdf', f'{PUBLIC}.md'
     wd = WebDeck(prs, media, f'{root}{IMG_DIR}')
     pages = [wd.page(s, i) for i, s in enumerate(prs.slides, 1)]
+    # The deck's contact and team pages (and the part divider that opens them) repeat what the web page already
+    # carries: the author card, the call to action and the site's team section. They stay in the PDF only.
+    web, after_skip = [pages[0]], False
+    for pg in pages[1:]:
+        if WEB_SKIP.match(pg['title']):
+            after_skip = after_skip or bool(pg['part'])
+            continue
+        if after_skip and not pg['part']:
+            pg['part_label'], after_skip = 'About This Report', False
+        pg['body'] = drop_team_cards(pg['body'])
+        web.append(pg)
+    pages = web
     byline, segs, included = cover(prs)
     lead = CONF['lead']
 
@@ -253,6 +287,8 @@ def build_page(prs):
         if pg['part']:
             toc.append(f'<li class="rtoc-part"><a href="#p{pg["num"]:02d}"><span></span>{esc(t)}</a></li>')
         else:
+            if pg.get('part_label'):
+                toc.append(f'<li class="rtoc-part"><a href="#p{pg["num"]:02d}"><span></span>{pg["part_label"]}</a></li>')
             toc.append(f'<li><a href="#p{pg["num"]:02d}"><span>{seq[pg["num"]]:02d}</span>{esc(t)}</a></li>')
 
     def key_list(body):

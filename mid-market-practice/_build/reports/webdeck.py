@@ -36,6 +36,7 @@ class WebDeck:
     # -- one page --------------------------------------------------------
     def page(self, slide, num):
         boxes = self.d.shapes(X1(slide._element, './p:cSld/p:spTree'), slide.part, num)
+        self.link_buttons(boxes)
         title = subtitle = None
         part = None
         foot = []
@@ -99,6 +100,29 @@ class WebDeck:
         f_html = ''.join(self.paras_html(b.paras, fine=True) for b in foot)
         text = ' '.join(plain(x) for x in (t_html, s_html, body, f_html))
         return dict(num=num, title=plain(t_html), title_html=t_html, subtitle=s_html, body=body, foot=f_html, part=part, text=text)
+
+    @staticmethod
+    def link_buttons(boxes):
+        """A link set on a whole shape (a button, or a clear shape laid over one) goes on the words it holds."""
+        def inside(t, b):
+            cx, cy = t.x + t.w / 2, t.y + t.h / 2
+            return b.x - 1 <= cx <= b.x + b.w + 1 and b.y - 1 <= cy <= b.y + b.h + 1
+        texts = [t for t in boxes if getattr(t, 'paras', None)]
+        for b in boxes:
+            href = getattr(b, 'href', None)
+            if not href or getattr(b, 'paras', None):
+                continue
+            for t in texts:
+                if not getattr(t, 'href', None) and inside(t, b) and t.w <= b.w + 2 and t.h <= b.h + 2:
+                    t.href = href
+        for t in texts:
+            href = getattr(t, 'href', None)
+            if not href:
+                continue
+            tgt = ' target="_blank" rel="noopener"' if href.startswith('http') else ''
+            for p in t.paras:
+                if not p['empty'] and '<a ' not in p['sem']:
+                    p['sem'] = f'<a href="{esc(href)}"{tgt}>{p["sem"]}</a>'
 
     @staticmethod
     def frames(boxes):

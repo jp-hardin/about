@@ -265,7 +265,7 @@ John-David Lovelock, Distinguished VP Analyst, Gartner
 
 **Our read.** Data center systems spending is forecast to rise 62.5% to $822 billion while IT services rise 5.3% to $1.57 trillion, so service firms tied to the infrastructure build-out are growing faster than the rest of the market.
 
-**READ HERE**
+[READ HERE](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion)
 
 **GLOBAL ELECTRONICS ASSOCIATION**
 
@@ -279,7 +279,7 @@ Dr. Shawn DuBravac, Chief Economist, Global Electronics Association
 
 **Our read.** Bookings rose 53.5% while shipments rose 1.0%. Buyers value backlog that converts to shipments, which makes component supply a diligence question.
 
-**READ HERE**
+[READ HERE](https://www.electronics.org/news-release/north-american-ems-orders-outpace-shipments-august-bookings-rise-535-year-over-year)
 
 **CHANNEL DIVE**
 
@@ -293,7 +293,7 @@ Jessica Davis, Principal Analyst, Omdia
 
 **Our read.** Acquisitions of managed service providers rose 73% to 64 in the first quarter, with 37 in North America. Predictable annual recurring revenue is what investors are paying for.
 
-**READ HERE**
+[READ HERE](https://www.channeldive.com/news/channel-acquistions-consolidation-managed-services-omdia/828297/)
 
 **DEPARTMENT OF WAR, CHIEF INFORMATION OFFICER**
 
@@ -307,7 +307,7 @@ Department of War Chief Information Officer, CMMC program page
 
 **Our read.** Third-party certification for defense suppliers is paused while a task force reviews the program. Self-assessment against NIST 800-171 still applies ([McGuireWoods analysis](https://www.passwordprotectedlaw.com/2026/07/dow-suspends-cmmc-phase-ii-requirements-launches-60-day-review/)).
 
-**READ HERE**
+[READ HERE](https://dodcio.defense.gov/CMMC/About/)
 
 Quotations are reproduced as published. ARR is annual recurring revenue. EMS is electronics manufacturing services. NIST 800-171 is the federal standard for protecting controlled unclassified information.
 
@@ -451,7 +451,7 @@ MartianCraft
 
 Walnut Capital Partners
 
-Software design and development for mobile, Mac and backend systems
+[Software design and development for mobile, Mac and backend systems](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-martiancraft-llc-and-walnut-capital-partners/)
 
 **MANAGED IT & CLOUD**
 
@@ -461,7 +461,7 @@ Software design and development for mobile, Mac and backend systems
 
 **TRM, A 424 CAPITAL COMPANY**
 
-Asset management consulting and risk software for power generators
+[Asset management consulting and risk software for power generators](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-sheffield-scientific-and-trm/)
 
 **SYSTEMS INTEGRATION**
 
@@ -471,7 +471,7 @@ Asset management consulting and risk software for power generators
 
 **BLUEROCK GLOBAL PRIVATE EQUITY**
 
-Precision optical components and coatings for laser systems
+[Precision optical components and coatings for laser systems](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-laser-lens-tek-inc-and-bluerock-global-private-equity/)
 
 **ELECTRONICS & HARDWARE**
 
@@ -481,7 +481,7 @@ Precision optical components and coatings for laser systems
 
 **CAPCON NETWORKS**
 
-Dedicated leased lit fiber for schools, hospitals and libraries
+[Dedicated leased lit fiber for schools, hospitals and libraries](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitated-the-transaction-of-em3-networks-llc-and-capcon-networks/)
 
 **TELECOM & UCAAS**
 
@@ -491,7 +491,7 @@ Dedicated leased lit fiber for schools, hospitals and libraries
 
 **BLUEROCK GLOBAL PRIVATE EQUITY**
 
-Build-to-print cables, harnesses and electro-mechanical assemblies
+[Build-to-print cables, harnesses and electro-mechanical assemblies](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-paragon-manufacturing-corp-and-bluerock-global-private-equity/)
 
 **ELECTRONICS & HARDWARE**
 
@@ -501,7 +501,7 @@ Build-to-print cables, harnesses and electro-mechanical assemblies
 
 **AMTECH DRIVES**
 
-Instrumentation, calibration and controls integration
+[Instrumentation, calibration and controls integration](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-complete-control-services-inc-and-amtech-drives-inc/)
 
 **ELECTRONICS & HARDWARE**
 
@@ -511,7 +511,7 @@ Instrumentation, calibration and controls integration
 
 **ZEUS FIRE AND SECURITY**
 
-Voice and data cabling, audiovisual and security systems
+[Voice and data cabling, audiovisual and security systems](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-clearline-networks-llc-and-zeus-fire-and-security/)
 
 **SYSTEMS INTEGRATION**
 
@@ -521,7 +521,7 @@ Boostr
 
 Balius Partners
 
-Indoor and outdoor display assemblies for school sports programs
+[Indoor and outdoor display assemblies for school sports programs](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-of-boostr-llc-and-balius-partners/)
 
 **ELECTRONICS & HARDWARE**
 
@@ -531,7 +531,7 @@ Invocon
 
 Cemtrex
 
-Instrumentation and wireless sensing for satellites and launch vehicles
+[Instrumentation and wireless sensing for satellites and launch vehicles](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-of-invocon-inc-and-cemtrex-inc/)
 
 **GOVERNMENT TECHNOLOGY**
 
@@ -541,7 +541,7 @@ Instrumentation and wireless sensing for satellites and launch vehicles
 
 AI Fire
 
-Fire alarm, security, access control and video surveillance systems
+[Fire alarm, security, access control and video surveillance systems](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-high-tech-solutions-systems-group-inc-and-ai-fire/)
 
 **SYSTEMS INTEGRATION**
 
@@ -551,7 +551,7 @@ Fire alarm, security, access control and video surveillance systems
 
 **ASSESSIMUS GROUP**
 
-Test equipment for electromagnetic compatibility laboratories
+[Test equipment for electromagnetic compatibility laboratories](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-at-parker-inc-and-assessimus-group-gmbh/)
 
 **ELECTRONICS & HARDWARE**
 
@@ -831,19 +831,19 @@ Earnings releases: [Celestica](https://www.sec.gov/Archives/edgar/data/000103089
 
 CDW
 
-Christine A. Leahy, Chair and Chief Executive Officer, CDW
+[Christine A. Leahy, Chair and Chief Executive Officer, CDW](https://www.sec.gov/Archives/edgar/data/0001402057/000140205726000062/cdw-2026630earningsrelease.htm)
 
 > *“CDW delivered strong second quarter results as customers advanced investments in infrastructure modernization, cloud, and AI-enabled technologies.”*
 
 Wesco
 
-John Engel, Chairman, President, and CEO, Wesco
+[John Engel, Chairman, President, and CEO, Wesco](https://www.sec.gov/Archives/edgar/data/0000929008/000092900826000021/wcc-2q2026earnings.htm)
 
 > *“We have now posted four consecutive quarters of double-digit sales growth fueled by data centers.”*
 
 Jabil
 
-Mike Dastoor, CEO, Jabil
+[Mike Dastoor, CEO, Jabil](https://www.sec.gov/Archives/edgar/data/0000898293/000162828026063890/jbl-20260930ex991.htm)
 
 > *“Our fiscal 2027 outlook reflects the strength of Jabil's diversified portfolio, with accelerating AI demand complemented by solid growth in automotive, healthcare, energy infrastructure, defense and aerospace, and warehouse and retail automation.”*
 
@@ -855,19 +855,19 @@ Demand tied to data center build-outs runs through IT solutions, distribution an
 
 CrowdStrike
 
-George Kurtz, Founder and Chief Executive Officer, CrowdStrike
+[George Kurtz, Founder and Chief Executive Officer, CrowdStrike](https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000029/crwd-20260826xex991.htm)
 
 > *“Every enterprise will run on AI, and securing it is the largest market opportunity in our history.”*
 
 Palo Alto Networks
 
-Nikesh Arora, Chairman and Chief Executive Officer, Palo Alto Networks
+[Nikesh Arora, Chairman and Chief Executive Officer, Palo Alto Networks](https://www.sec.gov/Archives/edgar/data/0001327567/000132756726000019/ex991q426earningsrelease.htm)
 
 > *“The latest advancements in AI are elevating cybersecurity to the top of the CIO priority list, and will serve as durable tailwinds as we progress towards our $20 billion FY30 NGS ARR target.”*
 
 RingCentral
 
-Vlad Shmunis, Founder, Chairman and CEO, RingCentral
+[Vlad Shmunis, Founder, Chairman and CEO, RingCentral](https://www.businesswire.com/news/home/20260723424331/en/)
 
 > *“Customers using at least one paid AI product now represent approximately 13% of ARR, having doubled year-over-year.”*
 
@@ -879,19 +879,19 @@ Security and communications vendors now tie their growth to how quickly customer
 
 Booz Allen Hamilton
 
-Horacio Rozanski, Chairman and CEO, Booz Allen Hamilton
+[Horacio Rozanski, Chairman and CEO, Booz Allen Hamilton](https://www.businesswire.com/news/home/20260724644070/en/Booz-Allen-Hamilton-Announces-First-Quarter-Fiscal-Year-2027-Results)
 
 > *“Booz Allen is on track with the expectations we set for the fiscal year amid challenging market dynamics.”*
 
 CACI
 
-John Mengucci, President and Chief Executive Officer, CACI
+[John Mengucci, President and Chief Executive Officer, CACI](https://www.sec.gov/Archives/edgar/data/0000016058/000162828026053448/fy26-q4caci20260805ex991.htm)
 
 > *“In a challenging environment, we grew free cash flow by 66%, delivered high-single digit organic revenue growth, expanded EBITDA margin to 12.3%, won $10 billion in contract awards, and grew both funded and total backlog.”*
 
 Tyler Technologies
 
-Lynn Moore, Executive Chair, President and Chief Executive Officer, Tyler Technologies
+[Lynn Moore, Executive Chair, President and Chief Executive Officer, Tyler Technologies](https://s201.q4cdn.com/385562537/files/doc_financials/2026/q2/99-1-Earnings-Release-6-30-2026-FINAL.pdf)
 
 > *“Public sector demand remains healthy, reflecting sustained modernization priorities for the public sector that translated into record SaaS and total bookings.”*
 
@@ -1540,156 +1540,6 @@ Tyler Technologies
 **Falfurrias Management Partners**
 
 Private participants are buyers in transactions announced between January 2025 and October 2026 and cited in the full report. The list is illustrative. Company names and marks are the property of their owners and are shown for identification.
-
-## 14. Connect With Us
-
--  Start a conversation
-
--  Our team
-
--  Benchmark International
-
--  Disclosures and sources
-
-## 15. Connect With Us
-
-A first conversation is confidential and carries no obligation.
-
-**CONFIDENTIAL. NO PRESSURE. NO COMMITMENTS.**
-
-### It all starts with a conversation.
-
-Our first step is always a confidential conversation exploring your goals, your company and your options. Owners considering a sale, a recapitalization or a growth partnership in any of the six focus areas, and the advisors who work with them, are welcome to call or write.
-
-Jared Hardin
-
-### Jared Hardin
-
-**MANAGING DIRECTOR, MIDDLE MARKET**
-
-[813-771-6675](tel:8137716675) [j.hardin@benchmarkintl.com](mailto:j.hardin@benchmarkintl.com)
-
-**SCHEDULE A CONVERSATION**
-
-**READ THE FULL Q4 2026 REPORT**
-
-**UPCOMING EVENT**
-
-### Event name, dates and location
-
-This panel is reserved for the next conference or event where the Middle Market team will be meeting technology owners.
-
-Benchmark International Middle Market, 4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607.
-
-## 16. Our Team
-
-The Middle Market team leads each engagement from the first conversation through signing and closing.
-
-### Middle Market
-
-The Middle Market team represents owners of privately held companies with $50 million to $500 million of total enterprise value in sales, recapitalizations and growth partnerships.
-
-**HEADQUARTERS**
-
-**AMERICAS**
-
-4030 West Boy Scout Blvd. Suite 500, Tampa, FL 33607 +1 813 898 2350
-
-**EUROPE**
-
-One New Bailey, 4 Stanley St. Manchester, M3 5JL +44 (0) 161 359 4400
-
-**AFRICA**
-
-Airport Office Park, Freight Rd. Cape Town Airport, 7525 +27 (0) 21 300 2055
-
-Jordan Houtz
-
-### Jordan Houtz
-
-**MANAGING DIRECTOR**
-
-[813-771-6675](tel:8137716675) [jhoutz@benchmarkintl.com](mailto:jhoutz@benchmarkintl.com)
-
-Jared Hardin
-
-### Jared Hardin
-
-**MANAGING DIRECTOR**
-
-[813-771-6675](tel:8137716675) [j.hardin@benchmarkintl.com](mailto:j.hardin@benchmarkintl.com)
-
-Alex Zykov
-
-### Alex Zykov
-
-**TRANSACTION DIRECTOR**
-
-[813-898-2372](tel:8138982372) [azykov@benchmarkintl.com](mailto:azykov@benchmarkintl.com)
-
-Shannon Hess
-
-### Shannon Hess
-
-**CLIENT ENGAGEMENT DIRECTOR**
-
-[813-898-2397](tel:8138982397) [hess@benchmarkintl.com](mailto:hess@benchmarkintl.com)
-
-Sunny Garten
-
-### Sunny Garten
-
-Senior Deal Associate
-
-[813-898-2357](tel:8138982357) [garten@benchmarkintl.com](mailto:garten@benchmarkintl.com)
-
-Michael Wynn
-
-### Michael Wynn
-
-Senior Deal Associate
-
-[813-384-4972](tel:8133844972) [mwynn@benchmarkintl.com](mailto:mwynn@benchmarkintl.com)
-
-Jason Lisiak
-
-### Jason Lisiak
-
-Research Associate
-
-[jlisiak@benchmarkintl.com](mailto:jlisiak@benchmarkintl.com)
-
-Alexandra Barr
-
-### Alexandra Barr
-
-Transaction Support Associate
-
-[813-387-6046](tel:8133876046) [abarr@benchmarkintl.com](mailto:abarr@benchmarkintl.com)
-
-Josiah Warren
-
-### Josiah Warren
-
-Transaction Support Associate
-
-[813-898-2398](tel:8138982398) [jwarren@benchmarkintl.com](mailto:jwarren@benchmarkintl.com)
-
-Luke Ernst
-
-### Luke Ernst
-
-Deal Analyst
-
-[813-771-6318](tel:8137716318) [lernst@benchmarkintl.com](mailto:lernst@benchmarkintl.com)
-
-**TECHNOLOGY COVERAGE**
-
-| Managed IT & Cloud Services | Cybersecurity | Telecom & UCaaS |
-| --- | --- | --- |
-| Systems Integration | Electronics & Hardware | Government Technology |
-
-Team as listed on the Benchmark International Middle Market site in October 2026.
 
 ## 17. Benchmark International
 

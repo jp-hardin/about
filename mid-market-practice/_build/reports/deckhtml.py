@@ -511,8 +511,24 @@ class Deck:
             sx = sy = 1 / EMU_PT
         else:
             sx, sy = xf.sx, xf.sy
+        rels_ = rels if rels is not None else part.rels
+        mark = None
+
+        def tag_links(mark):
+            if mark:
+                for b in out[mark[0]:]:
+                    if not getattr(b, 'href', None):
+                        b.href = mark[1]
         for el in spTree:
+            tag_links(mark)
+            mark = None
             tag = etree.QName(el).localname
+            if tag in ('sp', 'pic'):
+                # a link set on the whole shape (a button), not on its text
+                hl = X1(el, './*/p:cNvPr/a:hlinkClick')
+                rid = hl.get(R + 'id') if hl is not None else None
+                if rid and rid in rels_ and rels_[rid].is_external:
+                    mark = (len(out), self.link_map(rels_[rid].target_ref))
             if tag == 'grpSp':
                 g = X1(el, './p:grpSpPr/a:xfrm')
                 off, ext = X1(g, './a:off'), X1(g, './a:ext')
@@ -681,6 +697,7 @@ class Deck:
             b.ph = ph.get('type', 'body') if ph is not None else None
             b.geom = geom
             out.append(b)
+        tag_links(mark)
         return out
 
     def custom(self, sppr, w, h, fill):

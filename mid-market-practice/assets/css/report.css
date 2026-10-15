@@ -305,3 +305,5 @@
 .report .rkey .rkey-d { color: #e6e0d9; line-height: 1.6; margin: 0; }
 .rsec--part .dlabel { margin-top: 22px !important; color: var(--gold) !important; }
 .rtoc li.rtoc-part a { grid-template-columns: 0 1fr; margin-top: 8px; }
+.report .dchip a { color: inherit; text-decoration: none; }
+.report .dcard--dark .dcard:not(.dcard--dark) p, .report .dcard--dark .dcard:not(.dcard--dark) a { color: var(--ink); }

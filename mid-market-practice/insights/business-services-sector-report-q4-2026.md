@@ -205,7 +205,7 @@ The third-quarter survey of engineering firms recorded a median backlog of 12 mo
 
 **Our read.** Backlog and a bench of licensed engineers are the first two facts a buyer will test.
 
-**READ HERE**
+[READ HERE](https://engineeringinc.acec.org/blog/engineering-firms-remain-resilient-amid-growing-economic-uncertainty-new-acec-research-institute-study-finds/)
 
 **STAFFING INDUSTRY ANALYSTS**
 
@@ -217,7 +217,7 @@ The August Pulse Survey of 128 staffing firms recorded median revenue growth of 
 
 **Our read.** The recovery is strongest in the skilled categories where this year's acquisitions are concentrated.
 
-**READ HERE**
+[READ HERE](https://www.staffingindustry.com/editorial/it-staffing-report/it-staffing-revenue-up-5-at-the-median-in-pulse-survey)
 
 **INSURANCE JOURNAL**
 
@@ -229,7 +229,7 @@ The Council of Insurance Agents & Brokers recorded an average premium decline of
 
 **Our read.** Account size and line of business now explain most of the difference in agency growth.
 
-**READ HERE**
+[READ HERE](https://www.insurancejournal.com/news/national/2026/08/20/882240.htm)
 
 **ECONOMY AND DEAL MARKET**
 
@@ -243,7 +243,7 @@ Announced global M&A fell to $993 billion in the third quarter, the first quarte
 
 **Our read.** The slowdown is concentrated in the largest transactions. Add-on purchases by existing platforms made up about three-quarters of second-quarter buyouts ([PitchBook](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf)).
 
-**READ HERE**
+[READ HERE](https://www.investing.com/news/stock-market-news/global-ma-deal-rush-fades-in-third-quarter-as-rising-borrowing-costs-bite-4928161)
 
 **FEDERAL RESERVE**
 
@@ -255,7 +255,7 @@ The committee raised the target range for the federal funds rate by 25 basis poi
 
 **Our read.** Lenders are advancing less debt against each dollar of earnings, at 2.9x EBITDA on platform deals ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)).
 
-**READ HERE**
+[READ HERE](https://www.federalreserve.gov/monetarypolicy/files/monetary20260916a1.pdf)
 
 **IBBA AND M&A SOURCE**
 
@@ -267,7 +267,7 @@ The quarterly survey of business brokers and M&A advisors put the median multipl
 
 **Our read.** Competition for well-prepared businesses is intact, with three or more offers on 87% of sales above $5 million ([survey release](https://www.webull.com/news/15462423712777216)).
 
-**READ HERE**
+[READ HERE](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf)
 
 Each summary restates the source in our own words and links to it, and each heading is our own description of the piece.
 
@@ -612,7 +612,7 @@ FPS Technologies
 
 Cintas
 
-Fire protection and safety systems design, installation and service
+[Fire protection and safety systems design, installation and service](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-fps-technologies-inc-and-cintas-corporation/)
 
 **COMMERCIAL & FACILITY**
 
@@ -622,7 +622,7 @@ Telmark Sales Solutions
 
 Sentinel Capital Partners
 
-Consumer packaged goods sales brokerage, sold to Sentinel's Market Performance Group
+[Consumer packaged goods sales brokerage, sold to Sentinel's Market Performance Group](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-telmark-sales-solutions-inc-and-market-performance-group/)
 
 **MARKETING, SALES & TECH-ENABLED**
 
@@ -632,7 +632,7 @@ Consumer packaged goods sales brokerage, sold to Sentinel's Market Performance G
 
 **SURVEYING AND MAPPING (SAM)**
 
-Civil engineering firm, Baton Rouge, Louisiana
+[Civil engineering firm, Baton Rouge, Louisiana](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-sjb-group-llc-and-surveying-and-mapping-llc/)
 
 **ENGINEERING & ARCHITECTURE**
 
@@ -642,7 +642,7 @@ Fire Systems Technology
 
 AI Fire
 
-Full-service fire sprinkler contractor, Arkansas
+[Full-service fire sprinkler contractor, Arkansas](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-of-fire-systems-technology-incorporated-and-ai-fire-llc/)
 
 **COMMERCIAL & FACILITY**
 
@@ -652,7 +652,7 @@ MartianCraft
 
 Walnut Capital Partners
 
-Software design and development agency
+[Software design and development agency](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-martiancraft-llc-and-walnut-capital-partners/)
 
 **MARKETING, SALES & TECH-ENABLED**
 
@@ -662,7 +662,7 @@ Software design and development agency
 
 **RTM ENGINEERING CONSULTANTS**
 
-Mechanical, electrical and plumbing engineering, Northern Kentucky
+[Mechanical, electrical and plumbing engineering, Northern Kentucky](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-engineered-building-systems-and-rtm-engineering-consultants/)
 
 **ENGINEERING & ARCHITECTURE**
 
@@ -672,7 +672,7 @@ Pacific Green Protection
 
 Cresswell Ventures
 
-Armed and unarmed security services
+[Armed and unarmed security services](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-of-pacific-green-protection-inc-and-cresswell-ventures/)
 
 **COMMERCIAL & FACILITY**
 
@@ -682,7 +682,7 @@ SnailWorks
 
 Beacon Software
 
-Mail-tracking software for direct mailers
+[Mail-tracking software for direct mailers](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-a-transaction-between-snailworks-llc-and-beacon-software/)
 
 **MARKETING, SALES & TECH-ENABLED**
 
@@ -692,7 +692,7 @@ Mail-tracking software for direct mailers
 
 **CENTRI BUSINESS CONSULTING**
 
-Underwriting and claims review for insurers and reinsurers
+[Underwriting and claims review for insurers and reinsurers](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitates-the-sale-of-altair-associates-inc-to-centri-business-consulting/)
 
 **FINANCIAL & INSURANCE**
 
@@ -702,7 +702,7 @@ Underwriting and claims review for insurers and reinsurers
 
 **PHENNA GROUP**
 
-Inspection, testing and quality control engineering
+[Inspection, testing and quality control engineering](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-a-transaction-between-briggs-engineering-testing-and-phenna-group/)
 
 **COMMERCIAL & FACILITY**
 
@@ -710,7 +710,7 @@ Inspection, testing and quality control engineering
 
 Retail Rex Capital
 
-Promotional products and marketing services
+[Promotional products and marketing services](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-total-sales-marketing-inc-and-retail-rex-capital/)
 
 **MARKETING, SALES & TECH-ENABLED**
 
@@ -720,7 +720,7 @@ Promotional products and marketing services
 
 **HI-TEK**
 
-Aerospace engineering and technical contract staffing
+[Aerospace engineering and technical contract staffing](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-of-mokavia-aerospace-and-hitek-inc/)
 
 **STAFFING & HUMAN CAPITAL**
 
@@ -1602,188 +1602,6 @@ Concord Holdings
 Red Dog Equity
 
 Private participants are buyers in transactions announced between October 2025 and October 2026. The list is illustrative. Company names are the property of their owners and are shown for identification.
-
-## 16. Connect With Us
-
--  Start a conversation
-
--  Our team
-
--  Benchmark International
-
--  Disclosures and sources
-
-## 17. Connect With Us
-
-A first conversation is confidential and carries no obligation.
-
-**CONFIDENTIAL. NO PRESSURE. NO COMMITMENTS.**
-
-### It all starts with a conversation.
-
-Our first step is always a confidential conversation exploring your goals, your company and your options. Owners considering a sale, a recapitalization or a growth partnership in any of the five segments, and the accountants, attorneys and wealth advisors who work with them, are welcome to call or write.
-
-Jared Hardin
-
-### Jared Hardin
-
-**MANAGING DIRECTOR**
-
-[813-771-6675](tel:8137716675)
-
-[j.hardin@benchmarkintl.com](mailto:j.hardin@benchmarkintl.com)
-
-**SCHEDULE A CONVERSATION**
-
-**READ THE REPORT ONLINE**
-
-Benchmark International Middle Market, 4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607
-
-## 18. Our Team
-
-The Middle Market team leads each engagement from the first conversation through signing and closing.
-
-### Middle Market
-
-The team represents owners of privately held companies with $50 million to $500 million of total enterprise value in sales, recapitalizations and growth partnerships.
-
-**HEADQUARTERS**
-
-**AMERICAS**
-
-4030 West Boy Scout Blvd.
-
-Suite 500, Tampa, FL 33607
-
-+1 813 898 2350
-
-**EUROPE**
-
-One New Bailey, 4 Stanley St.
-
-Manchester, M3 5JL
-
-+44 (0) 161 359 4400
-
-**AFRICA**
-
-Airport Office Park, Freight Rd.
-
-Cape Town Airport, 7525
-
-+27 (0) 21 300 2055
-
-Jordan Houtz
-
-### Jordan Houtz
-
-**MANAGING DIRECTOR**
-
-[813-771-6675](tel:8137716675)
-
-[jhoutz@benchmarkintl.com](mailto:jhoutz@benchmarkintl.com)
-
-Jared Hardin
-
-### Jared Hardin
-
-**MANAGING DIRECTOR**
-
-[813-771-6675](tel:8137716675)
-
-[j.hardin@benchmarkintl.com](mailto:j.hardin@benchmarkintl.com)
-
-Alex Zykov
-
-### Alex Zykov
-
-**TRANSACTION DIRECTOR**
-
-[813-898-2372](tel:8138982372)
-
-[azykov@benchmarkintl.com](mailto:azykov@benchmarkintl.com)
-
-Shannon Hess
-
-### Shannon Hess
-
-**CLIENT ENGAGEMENT DIRECTOR**
-
-[813-898-2397](tel:8138982397)
-
-[hess@benchmarkintl.com](mailto:hess@benchmarkintl.com)
-
-Sunny Garten
-
-### Sunny Garten
-
-Senior Deal Associate
-
-[813-898-2357](tel:8138982357)
-
-[garten@benchmarkintl.com](mailto:garten@benchmarkintl.com)
-
-Michael Wynn
-
-### Michael Wynn
-
-Senior Deal Associate
-
-[813-384-4972](tel:8133844972)
-
-[mwynn@benchmarkintl.com](mailto:mwynn@benchmarkintl.com)
-
-Jason Lisiak
-
-### Jason Lisiak
-
-Research Associate
-
-[jlisiak@benchmarkintl.com](mailto:jlisiak@benchmarkintl.com)
-
-Alexandra Barr
-
-### Alexandra Barr
-
-Transaction Support Associate
-
-[813-387-6046](tel:8133876046)
-
-[abarr@benchmarkintl.com](mailto:abarr@benchmarkintl.com)
-
-Josiah Warren
-
-### Josiah Warren
-
-Transaction Support Associate
-
-[813-898-2398](tel:8138982398)
-
-[jwarren@benchmarkintl.com](mailto:jwarren@benchmarkintl.com)
-
-Luke Ernst
-
-### Luke Ernst
-
-Deal Analyst
-
-[813-771-6318](tel:8137716318)
-
-[lernst@benchmarkintl.com](mailto:lernst@benchmarkintl.com)
-
-**BUSINESS SERVICES COVERAGE**
-
-**Commercial & Facility Services**
-
-**Financial & Insurance Services**
-
-**Marketing, Sales & Tech-Enabled Services**
-
-**Staffing & Human Capital**
-
-**Engineering, Architecture & Consulting**
-
-Team as listed on the Middle Market site in October 2026.
 
 ## 19. Benchmark International
 
