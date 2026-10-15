@@ -1033,45 +1033,11 @@ Chart data:
 | Current year est. | -1.30 | 2.75 | 11.30 |
 | Next year est. | 0.26 | 1.81 | 5.64 |
 
-Two years ago
-
-Prior year
-
-**Latest fiscal year**
-
-Current year est.
-
-Next year est.
-
-**−0.3%**
-
-**−0.3%**
-
-**−0.7%**
-
-**−1.3%**
-
-**+0.3%**
-
-**+10.8%**
-
-**+4.2%**
-
-**+7.4%**
-
-**+2.8%**
-
-**+1.8%**
-
-**+6.1%**
-
-**+2.9%**
-
-**+5.2%**
-
-**+11.3%**
-
-**+5.6%**
+| Two years ago | Prior year | Latest fiscal year | Current year est. | Next year est. |
+| --- | --- | --- | --- | --- |
+| −0.3% | −0.3% | −0.7% | −1.3% | +0.3% |
+| +10.8% | +4.2% | +7.4% | +2.8% | +1.8% |
+| +6.1% | +2.9% | +5.2% | +11.3% | +5.6% |
 
 ### Consumer Brands & Products
 
@@ -1089,35 +1055,10 @@ Chart data:
 | Current year est. | 4.74 | 1.92 |
 | Next year est. | 3.69 | 2.90 |
 
-Two years ago
-
-Prior year
-
-**Latest fiscal year**
-
-Current year est.
-
-Next year est.
-
-**+5.4%**
-
-**−3.8%**
-
-**+1.8%**
-
-**−0.7%**
-
-**+2.4%**
-
-**−3.6%**
-
-**+4.7%**
-
-**+1.9%**
-
-**+3.7%**
-
-**+2.9%**
+| Two years ago | Prior year | Latest fiscal year | Current year est. | Next year est. |
+| --- | --- | --- | --- | --- |
+| +5.4% | +1.8% | +2.4% | +4.7% | +3.7% |
+| −3.8% | −0.7% | −3.6% | +1.9% | +2.9% |
 
 ### Foodservice & Distribution
 
@@ -1135,25 +1076,9 @@ Chart data:
 | Current year est. | 6.08 |
 | Next year est. | 2.79 |
 
-Two years ago
-
-Prior year
-
-**Latest fiscal year**
-
-Current year est.
-
-Next year est.
-
-**+3.3%**
-
-**+6.4%**
-
-**+4.1%**
-
-**+6.1%**
-
-**+2.8%**
+| Two years ago | Prior year | Latest fiscal year | Current year est. | Next year est. |
+| --- | --- | --- | --- | --- |
+| +3.3% | +6.4% | +4.1% | +6.1% | +2.8% |
 
 ### Consumer Services & Retail
 
@@ -1171,45 +1096,11 @@ Chart data:
 | Current year est. | 6.51 | 8.66 | 4.72 |
 | Next year est. | 4.75 | 8.43 | 4.09 |
 
-Two years ago
-
-Prior year
-
-**Latest fiscal year**
-
-Current year est.
-
-Next year est.
-
-**+9.3%**
-
-**+10.3%**
-
-**+6.6%**
-
-**+6.5%**
-
-**+4.8%**
-
-**+14.0%**
-
-**+4.2%**
-
-**+6.3%**
-
-**+8.7%**
-
-**+8.4%**
-
-**+2.4%**
-
-**+3.6%**
-
-**+4.5%**
-
-**+4.7%**
-
-**+4.1%**
+| Two years ago | Prior year | Latest fiscal year | Current year est. | Next year est. |
+| --- | --- | --- | --- | --- |
+| +9.3% | +10.3% | +6.6% | +6.5% | +4.8% |
+| +14.0% | +4.2% | +6.3% | +8.7% | +8.4% |
+| +2.4% | +3.6% | +4.5% | +4.7% | +4.1% |
 
 Medians of fiscal-year revenue growth, including acquisitions, with the number of companies in parentheses. Shaded years are analyst consensus, and the rows under each chart give the plotted values in the order of the key. Middleby is left out because its revenue was restated for a spin-off. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026.
 

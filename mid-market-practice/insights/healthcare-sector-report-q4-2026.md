@@ -950,63 +950,14 @@ Chart data:
 | Jun '26 | 11x | 19x | 14x | 12x |
 | Oct '26 | 11x | 22x | 13x | 14x |
 
-Provider Services
+Provider ServicesLife Sciences & DiagnosticsMedical Products & DistributionPharmacy & Healthcare Services
 
-Life Sciences & Diagnostics
-
-Medical Products & Distribution
-
-Pharmacy & Healthcare Services
-
-**THREE-YEAR MEDIAN**
-
-**MEDIAN EV TO TRAILING EBITDA**
-
-**A YEAR AGO**
-
-**TODAY**
-
-**COMPANIES**
-
-**Provider Services**
-
-11.2x
-
-**11.3x**
-
-12.9x
-
-8 of 11
-
-**Life Sciences & Diagnostics**
-
-14.5x
-
-**21.8x**
-
-15.7x
-
-9 of 9
-
-**Medical Products & Distribution**
-
-13.2x
-
-**12.7x**
-
-13.8x
-
-10 of 10
-
-**Pharmacy & Healthcare Services**
-
-13.8x
-
-**14.0x**
-
-12.7x
-
-7 of 8
+|  | MEDIAN EV TO TRAILING EBITDA | A YEAR AGO | TODAY | THREE-YEAR MEDIAN | COMPANIES |
+| --- | --- | --- | --- | --- | --- |
+|  | Provider Services | 11.2x | 11.3x | 12.9x | 8 of 11 |
+|  | Life Sciences & Diagnostics | 14.5x | 21.8x | 15.7x | 9 of 9 |
+|  | Medical Products & Distribution | 13.2x | 12.7x | 13.8x | 10 of 10 |
+|  | Pharmacy & Healthcare Services | 13.8x | 14.0x | 12.7x | 7 of 8 |
 
 **PRIVATE-MARKET REFERENCE POINTS**
 
@@ -1274,13 +1225,9 @@ Year over year, as stated in each earnings release; quarters ended June 2026
 
 - Option Care Health: +1.9%
 
-Provider Services
+-  Provider Services  Life Sciences & Diagnostics
 
-Life Sciences & Diagnostics
-
-Medical Products & Distribution
-
-Pharmacy & Healthcare Services
+-  Medical Products & Distribution  Pharmacy & Healthcare Services
 
 **PROVIDER SERVICES**
 

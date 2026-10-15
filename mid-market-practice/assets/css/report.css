@@ -231,14 +231,10 @@
 .dtable { font-size: 0.86rem; }
 .report .rfoot { margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--line); }
 .report .rfoot p { margin: 0 0 6px; }
-.report .rpage { margin-top: 18px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
-.report .rpage a { text-decoration: none; color: var(--muted); }
-.report .rpage a:hover { color: var(--gold-deep); }
 .hero .rsegs { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255, 255, 255, 0.78); margin: 18px 0 0; max-width: 900px; line-height: 1.9; }
 .rtoc li.rtoc-part a { font-weight: 700; color: var(--gold-deep); }
 .rsec--part .dblock { padding: 26px 28px; background: var(--ink); color: #f3eee8; }
 .rsec--part .dblock p, .rsec--part .dblock li { color: #f3eee8; }
-.rsec--part .dblock .rpage a { color: var(--sand); }
 @media (max-width: 760px) {
   .drow:not(.drow--tight) > .dcol { flex-basis: 100% !important; }
   .dcard { padding: 18px 18px; }
@@ -288,3 +284,17 @@
 .rsec--part .dline { border-bottom-color: rgba(255, 255, 255, 0.14); }
 .report .rsec--part .dline-c, .report .rsec--part .dh { color: #f3eee8; }
 .dline { flex-wrap: wrap; }
+.dchart .svg-m { display: none; }
+@media (max-width: 760px) {
+  .dchart .svg-d { display: none; }
+  .dchart .svg-m { display: block; max-width: 420px; }
+  .dchart { max-width: 100%; }
+}
+@media (max-width: 760px) {
+  .dgrid { font-size: 0.76rem; }
+  .dgrid th, .dgrid td { padding: 5px 5px; }
+  .dgrid .dgrid-n { white-space: normal; text-align: left; min-width: 7.5em; }
+}
+.dsw--line { height: 3px; width: 14px; margin-top: 0.65em; }
+.dgrid .dgrid-n { text-align: left; }
+.rdata { overflow-x: auto; max-width: 100%; }
