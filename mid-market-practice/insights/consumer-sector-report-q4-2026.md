@@ -249,7 +249,7 @@ USDA Economic Research Service, Food Price Outlook
 
 **Our read.** Food-at-home prices are forecast to rise 2.4% and food-away-from-home prices 3.5%, with beef and veal up 9.4% and eggs down 29.4%. Input costs are moving in different directions by category, which is why buyers ask for price and cost history by product line.
 
-**READ HERE**
+[READ HERE](https://www.ers.usda.gov/data-products/food-price-outlook/summary-findings)
 
 **NATIONAL RESTAURANT ASSOCIATION**
 
@@ -263,7 +263,7 @@ National Restaurant Association, Restaurant Performance Index
 
 **Our read.** The index stood at 100.6, with 51% of operators reporting higher same-store sales than a year earlier and 46% still reporting lower traffic. Distributors and equipment dealers that sell to restaurants are valued partly on the health of those customers.
 
-**READ HERE**
+[READ HERE](https://restaurant.org/NRA/media/Research/RPI/2024/RPI-August-2026.pdf)
 
 - PRIVATE LABEL MANUFACTURERS ASSOCIATION July 8, 2026
 
@@ -275,7 +275,7 @@ Peggy Davies, President, Private Label Manufacturers Association
 
 **Our read.** Store brand unit share reached a record 23.8% in the six months to mid-June, while store brand dollar sales were flat and national brand dollars rose 2.2%. Buyers pay for brands that hold unit volume while they raise price.
 
-**READ HERE**
+[READ HERE](https://plma.com/article/store-brands-continue-gains-unit-sales-and-shares)
 
 **DELOITTE**
 
@@ -289,7 +289,7 @@ Natalie Martini, vice chair, Deloitte, and US retail and consumer products leade
 
 **Our read.** Holiday sales are forecast to rise 4.0% to 4.8% and e-commerce sales 7.5% to 8.4%. Online sales growing at nearly twice the pace of the total keeps channel mix in front of every buyer of a consumer brand.
 
-**READ HERE**
+[READ HERE](https://www.deloitte.com/us/en/about/press-room/deloitte-forecasts-holiday-retail-sales.html)
 
 Quotations are reproduced as published. Store brand figures are Circana data for the six months ending June 14, 2026. The Deloitte forecast covers November 2026 through January 2027.
 
@@ -655,137 +655,137 @@ Private equity and private investment firms
 
 **GILCO RESTORATION**
 
-Fire and water damage restoration, Williamsburg, VA
+[Fire and water damage restoration, Williamsburg, VA](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-gilco-restoration-inc-and-thomasville-restoration/)
 
-ACQUIRED BY **Thomasville Restoration**
+[ACQUIRED BY Thomasville Restoration](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-gilco-restoration-inc-and-thomasville-restoration/)
 
 - SEPT 2026 CONSUMER SERVICES & RETAIL
 
 **EDISON MARTIAL ARTS**
 
-Six martial arts academies, New Jersey
+[Six martial arts academies, New Jersey](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-edison-martial-arts-llc-and-elevate-youth-development/)
 
-ACQUIRED BY **Elevate Youth Development**
+[ACQUIRED BY Elevate Youth Development](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-edison-martial-arts-llc-and-elevate-youth-development/)
 
 - JULY 2026 CONSUMER BRANDS & PRODUCTS
 
 **PROJECT ENERGY SAVERS**
 
-Educational and community outreach materials
+[Educational and community outreach materials](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-wrs-group-ltd-and-project-energy-savers-inc/)
 
-ACQUIRED BY **WRS Group**
+[ACQUIRED BY WRS Group](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-wrs-group-ltd-and-project-energy-savers-inc/)
 
 - JUNE 2026 CONSUMER SERVICES & RETAIL
 
 **KITTLESON LANDSCAPE**
 
-Landscape design and installation, Madison, WI area
+[Landscape design and installation, Madison, WI area](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-kittleson-landscape-inc-and-lancaster-group-llc/)
 
-ACQUIRED BY **Lancaster Group**
+[ACQUIRED BY Lancaster Group](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-kittleson-landscape-inc-and-lancaster-group-llc/)
 
 - JUNE 2026 CONSUMER SERVICES & RETAIL
 
 **JAGIMO CORPORATION**
 
-Landscape construction and maintenance, Fortuna, CA
+[Landscape construction and maintenance, Fortuna, CA](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-jagimo-corporation-inc-and-castleford-group/)
 
-ACQUIRED BY **Castleford Group**
+[ACQUIRED BY Castleford Group](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-jagimo-corporation-inc-and-castleford-group/)
 
 - MAR 2026 FOODSERVICE & DISTRIBUTION
 
 **TELMARK SALES SOLUTIONS**
 
-Sales and marketing brokerage for packaged goods
+[Sales and marketing brokerage for packaged goods](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-telmark-sales-solutions-inc-and-market-performance-group/)
 
-ACQUIRED BY **Market Performance Group**
+[ACQUIRED BY Market Performance Group](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-telmark-sales-solutions-inc-and-market-performance-group/)
 
 - MAR 2026 CONSUMER SERVICES & RETAIL
 
 **STEPFAR INVESTMENTS**
 
-Two collision repair centers, Permian Basin, TX
+[Two collision repair centers, Permian Basin, TX](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-stepfar-investments-llc-and-classic-collision-llc/)
 
-ACQUIRED BY **Classic Collision**
+[ACQUIRED BY Classic Collision](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-stepfar-investments-llc-and-classic-collision-llc/)
 
 - FEB 2026 CONSUMER SERVICES & RETAIL
 
 **M&M ROOFING**
 
-Family-owned residential roofing since 1983, Texas
+[Family-owned residential roofing since 1983, Texas](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-mm-roofing-co-and-allied-roofing-partners/)
 
-ACQUIRED BY **Allied Roofing Partners**
+[ACQUIRED BY Allied Roofing Partners](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-mm-roofing-co-and-allied-roofing-partners/)
 
 - JAN 2026 FOOD & BEVERAGE
 
 **FORMULATION TECHNOLOGY**
 
-Contract manufacturer of supplements, Oakdale, CA
+[Contract manufacturer of supplements, Oakdale, CA](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-formulation-technology-incorporated-and-aavin-private-equity/)
 
-ACQUIRED BY **AAVIN Private Equity**
+[ACQUIRED BY AAVIN Private Equity](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-formulation-technology-incorporated-and-aavin-private-equity/)
 
 - DEC 2025 CONSUMER BRANDS & PRODUCTS
 
 **AROCAM**
 
-Customized youth sports apparel, Taunton, MA
+[Customized youth sports apparel, Taunton, MA](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-arocam-inc-and-innova-capital/)
 
-ACQUIRED BY **Innova Capital**
+[ACQUIRED BY Innova Capital](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-arocam-inc-and-innova-capital/)
 
 - DEC 2025 FOODSERVICE & DISTRIBUTION
 
 **STIRLING FOOD SYSTEMS**
 
-Bulk cooking oil distribution and collection, Ocala, FL
+[Bulk cooking oil distribution and collection, Ocala, FL](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-a-transaction-between-stirling-food-systems-inc-and-greasecycle-llc/)
 
-ACQUIRED BY **GreaseCycle**
+[ACQUIRED BY GreaseCycle](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-a-transaction-between-stirling-food-systems-inc-and-greasecycle-llc/)
 
 - JULY 2025 CONSUMER SERVICES & RETAIL
 
 **AFFORDABLE GARAGE DOOR**
 
-Garage door sales, installation and repair, IN and IL
+[Garage door sales, installation and repair, IN and IL](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-affordable-garage-doors-inc-and-asap-garage-door-repair/)
 
-ACQUIRED BY **A.S.A.P. Garage Door Repair**
+[ACQUIRED BY A.S.A.P. Garage Door Repair](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-affordable-garage-doors-inc-and-asap-garage-door-repair/)
 
 - JUNE 2025 CONSUMER SERVICES & RETAIL
 
 **GSM WINGS**
 
-Sports bar and grill restaurant group, Texas
+[Sports bar and grill restaurant group, Texas](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-gsm-wings-llc-and-gpc-investments/)
 
-ACQUIRED BY **GPC Investments**
+[ACQUIRED BY GPC Investments](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-gsm-wings-llc-and-gpc-investments/)
 
 - JUNE 2025 CONSUMER SERVICES & RETAIL
 
 **SOUTHERN POOL DESIGNS**
 
-Custom pool design and construction, Central Florida
+[Custom pool design and construction, Central Florida](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-southern-pool-designs-inc-and-an-individual-investor/)
 
-ACQUIRED BY **an individual investor**
+[ACQUIRED BY an individual investor](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-southern-pool-designs-inc-and-an-individual-investor/)
 
 - JUNE 2025 FOODSERVICE & DISTRIBUTION
 
 **SMART BUFFET WARE**
 
-Buffet and food presentation equipment, Daphne, AL
+[Buffet and food presentation equipment, Daphne, AL](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-smart-buffet-ware-llc-and-front-of-house-worldwide/)
 
-ACQUIRED BY **Front of House Worldwide**
+[ACQUIRED BY Front of House Worldwide](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-smart-buffet-ware-llc-and-front-of-house-worldwide/)
 
 - MAR 2025 FOOD & BEVERAGE
 
 **NOVA SEAFOOD**
 
-Seafood importer, processor and distributor, Portland, ME
+[Seafood importer, processor and distributor, Portland, ME](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-nova-seafood-ltd-and-highwood-harbor-llc/)
 
-ACQUIRED BY **Highwood Harbor**
+[ACQUIRED BY Highwood Harbor](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-nova-seafood-ltd-and-highwood-harbor-llc/)
 
 - FEB 2025 FOODSERVICE & DISTRIBUTION
 
 **PALM COAST SALES**
 
-Distributor of premium grills and outdoor kitchens, Jupiter, FL
+[Distributor of premium grills and outdoor kitchens, Jupiter, FL](https://www.benchmarkintl.com/insights/featured-content/benchmark-international-successfully-facilitated-the-transaction-between-palm-coast-sales-inc-and-fourshore-partners/)
 
-ACQUIRED BY **Fourshore Partners**
+[ACQUIRED BY Fourshore Partners](https://www.benchmarkintl.com/insights/featured-content/benchmark-international-successfully-facilitated-the-transaction-between-palm-coast-sales-inc-and-fourshore-partners/)
 
 *Fifteen further consumer transactions closed in the period are not named.*
 
@@ -2021,120 +2021,6 @@ Chart data:
 Source: [FRED, series GASDESM](https://fred.stlouisfed.org/series/GASDESM)
 
 Each series runs from January 2021. August retail figures are the Census advance estimate, and September sentiment is from the Surveys of Consumers. The consumer price series have no October 2025 reading, and the unadjusted food-at-home increase reported for August is 2.2%.
-
-## 19. Connect With Us
-
-Benchmark International's Middle Market team represents owners of privately held companies with $50 million to $500 million of total enterprise value in sales, recapitalizations and growth partnerships. The first step is a confidential conversation about your goals, your company and your options, with no pressure and no commitment.
-
-- 20 Connect with our team
-
-- 21 Important disclosures
-
-- 22 Sources
-
-**MIDDLE MARKET**
-
-## 20. Connect With Our Team
-
-A first conversation is confidential and carries no obligation.
-
-**CONFIDENTIAL. NO PRESSURE. NO COMMITMENTS.**
-
-It all starts with a conversation.
-
-Owners considering a sale, a recapitalization or a growth partnership in any of the four consumer segments, and the accountants, attorneys and wealth advisors who work with them, are welcome to call or write. Every engagement is led by the Middle Market team and backed by Benchmark International’s global network of strategic acquirers, private equity groups, family offices and independent sponsors.
-
-Jared Hardin
-
-Jared Hardin
-
-**MANAGING DIRECTOR**
-
-[813-771-6675](tel:8137716675)
-
-[j.hardin@benchmarkintl.com](mailto:j.hardin@benchmarkintl.com)
-
-Jordan Houtz
-
-Jordan Houtz
-
-**MANAGING DIRECTOR**
-
-Alex Zykov
-
-Alex Zykov
-
-**TRANSACTION DIRECTOR**
-
-Leads execution from onboarding through signing and closing
-
-Shannon Hess
-
-Shannon Hess
-
-**CLIENT ENGAGEMENT DIRECTOR**
-
-An additional point of contact for owners considering an engagement
-
-01
-
-**Share a few details**
-
-Tell us about your company and what you are considering. Everything you share is held in strict confidence.
-
-02
-
-**Talk with a Managing Director**
-
-A senior member of the team will set up a private conversation at a time that suits you.
-
-03
-
-**See your options clearly**
-
-Understand the paths available, from a partial recapitalization to a full sale, and what each could mean for you.
-
-**SCHEDULE A CONVERSATION**
-
-**READ THE REPORT ONLINE**
-
-**MIDDLE MARKET**
-
-#1
-
-Privately owned sell-side M&A advisor worldwide
-
-15
-
-Global offices across the Americas, Europe and Africa
-
-$50M to $500M
-
-Total enterprise value range the team serves
-
-**CONSUMER COVERAGE**
-
-Food & Beverage
-
-Consumer Brands & Products
-
-Foodservice & Distribution
-
-Consumer Services & Retail
-
-**AMERICAS HEADQUARTERS**
-
-4030 West Boy Scout Blvd., Suite 500
-
-Tampa, FL 33607
-
-+1 813 898 2350
-
-**Europe**  One New Bailey, 4 Stanley St., Manchester, M3 5JL
-
-**Africa**  Airport Office Park, Freight Rd., Cape Town Airport, 7525
-
-Ranking based on PitchBook’s Q2 2026 Global League Tables, as published at [benchmarkintl.com](https://www.benchmarkintl.com/about/our-success/). Team as listed on the Middle Market site in October 2026.
 
 ## 21. Important Disclosures
 

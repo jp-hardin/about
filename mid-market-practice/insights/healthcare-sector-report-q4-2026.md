@@ -467,7 +467,7 @@ Brian Wright, lead research analyst of healthcare at PitchBook
 
 **Our read.** Private equity is on pace for 674 healthcare services transactions in 2026 after an estimated 337 in the first half. The analyst behind the count expects activity to return toward its longer-run level.
 
-**READ HERE**
+[READ HERE](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)
 
 **MEDTECH DIVE | MEDICAL PRODUCTS & DISTRIBUTION**
 
@@ -481,7 +481,7 @@ MedTech Dive
 
 **Our read.** PwC counted $36.5 billion of medtech acquisitions in the first half. The largest were Boston Scientific’s $14.5 billion purchase of Penumbra and Danaher’s $9.9 billion purchase of Masimo.
 
-**READ HERE**
+[READ HERE](https://www.medtechdive.com/news/top-10-medtech-deals-in-the-first-half-of-2026/824435/)
 
 - IQVIA | LIFE SCIENCES & DIAGNOSTICS July 8, 2026
 
@@ -493,7 +493,7 @@ IQVIA Global Thought Leadership
 
 **Our read.** The count covers acquisitions of $250 million or more, so it describes the largest buyers. Their spending supports demand for the research, laboratory and manufacturing services that founder-owned companies supply.
 
-**READ HERE**
+[READ HERE](https://www.iqvia.com/locations/emea/blogs/2026/07/biopharma-ma-mid-year-2026-update)
 
 **DRUG CHANNELS | PHARMACY & HEALTHCARE SERVICES**
 
@@ -507,7 +507,7 @@ Bryce Platt, PharmD, Drug Channels
 
 **Our read.** Prescription dispensing revenues reached a record $751 billion in 2025, up 10%, while the number of pharmacies fell. Scale, specialty mix and payer contracts decide which pharmacies remain attractive to a buyer.
 
-**READ HERE**
+[READ HERE](https://www.drugchannels.net/2026/08/the-k-shaped-pharmacy-shakeout.html)
 
 Quotations are reproduced as published. The Fierce Healthcare quotation joins two consecutive sentences spoken by the analyst. The IQVIA and MedTech Dive passages are the publications' own text.
 
@@ -842,7 +842,7 @@ Ranked the leading privately owned sell-side M&A advisor in the world in PitchBo
 
 **HAS BEEN ACQUIRED BY**
 
-Amniotic membrane allografts for wound care and sports medicine
+[Amniotic membrane allografts for wound care and sports medicine](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-precise-bioscience-llc-and-new-horizon-medical-solutions/)
 
 **LIFE SCIENCES & DIAGNOSTICS**
 
@@ -852,7 +852,7 @@ Amniotic membrane allografts for wound care and sports medicine
 
 **HAS BEEN ACQUIRED BY**
 
-Certification testing for pharmacy compounding spaces, laboratories and bio-containment facilities
+[Certification testing for pharmacy compounding spaces, laboratories and bio-containment facilities](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-critical-environments-professionals-and-scientific-safety-alliance/)
 
 **LIFE SCIENCES & DIAGNOSTICS**
 
@@ -862,7 +862,7 @@ Certification testing for pharmacy compounding spaces, laboratories and bio-cont
 
 **HAS BEEN ACQUIRED BY**
 
-Nurse staffing for healthcare facilities in northern Louisiana
+[Nurse staffing for healthcare facilities in northern Louisiana](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-medical-temps-inc-and-health-advocates-network/)
 
 **PHARMACY & HEALTHCARE SERVICES**
 
@@ -872,7 +872,7 @@ Nurse staffing for healthcare facilities in northern Louisiana
 
 **HAS BEEN ACQUIRED BY**
 
-Contract manufacturer of nutritional supplements
+[Contract manufacturer of nutritional supplements](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-formulation-technology-incorporated-and-aavin-private-equity/)
 
 **LIFE SCIENCES & DIAGNOSTICS**
 
@@ -882,7 +882,7 @@ Contract manufacturer of nutritional supplements
 
 **HAS BEEN ACQUIRED BY**
 
-Patent holder and brand owner of ReLeaf hands-free dental suction devices
+[Patent holder and brand owner of ReLeaf hands-free dental suction devices](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitated-the-transaction-of-dental-holdings-llc-and-solmetex-llc/)
 
 **MEDICAL PRODUCTS & DISTRIBUTION**
 
@@ -892,7 +892,7 @@ Solmetex
 
 **HAS BEEN ACQUIRED BY**
 
-Training, research and instructional design for pharmaceutical, biotech and device companies
+[Training, research and instructional design for pharmaceutical, biotech and device companies](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-the-brooks-group-and-private-investors/)
 
 **PHARMACY & HEALTHCARE SERVICES**
 
@@ -902,7 +902,7 @@ Training, research and instructional design for pharmaceutical, biotech and devi
 
 **HAS BEEN ACQUIRED BY**
 
-Mobile occupational health testing
+[Mobile occupational health testing](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-fast-response-onsite-testing-inc-and-relentless-health-inc/)
 
 **LIFE SCIENCES & DIAGNOSTICS**
 
@@ -912,7 +912,7 @@ Mobile occupational health testing
 
 **HAS BEEN ACQUIRED BY**
 
-In-home care for Ohio Medicaid waiver participants
+[In-home care for Ohio Medicaid waiver participants](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-fosterbridge-inc-and-amvie/)
 
 **PROVIDER SERVICES**
 
@@ -1286,154 +1286,6 @@ Year over year, as stated in each earnings release; quarters ended June 2026
 [Brian Scott, CFO](https://stockanalysis.com/stocks/amn/transcripts/662833-q2-2026/)[& COO, AMN Healthcare](https://stockanalysis.com/stocks/amn/transcripts/662833-q2-2026/)
 
 Growth is total revenue as reported, including acquisitions; company names link to the releases. Steris and McKesson figures are for fiscal first quarters and Cardinal Health for its fiscal fourth quarter, all ended June 30, 2026. Quotations are from the earnings releases.
-
-## 18. Connect With Us
-
--  Connect with Jared Hardin
-
--  The Middle Market team
-
--  Benchmark International
-
--  Important disclosures, appendix and sources
-
-## 19. Connect With Us
-
-A first conversation is confidential and carries no obligation.
-
-**CONFIDENTIAL. NO PRESSURE. NO COMMITMENTS.**
-
-### It all starts with a conversation.
-
-Our first step is always a confidential conversation exploring your goals, your company and your options. Owners considering a sale, a recapitalization or a growth partnership in any of the four focus areas, and the advisors who work with them, are welcome to call or write.
-
-Jared Hardin
-
-### Jared Hardin
-
-**MANAGING DIRECTOR**
-
-[813-771-6675](tel:8137716675) [j.hardin@benchmarkintl.com](mailto:j.hardin@benchmarkintl.com)
-
-**SCHEDULE A CONVERSATION**
-
-**READ THE REPORT ONLINE**
-
-Benchmark International Middle Market, 4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607.
-
-## 20. Our Team
-
-The Middle Market team leads each engagement from the first conversation through signing and closing.
-
-### Middle Market
-
-Benchmark International's Middle Market team represents owners of privately held companies with $50 million to $500 million of total enterprise value in sales, recapitalizations and growth partnerships.
-
-**HEADQUARTERS**
-
-**AMERICAS**
-
-4030 West Boy Scout Blvd. Suite 500, Tampa, FL 33607 +1 813 898 2350
-
-**EUROPE**
-
-One New Bailey, 4 Stanley St. Manchester, M3 5JL +44 (0) 161 359 4400
-
-**AFRICA**
-
-Airport Office Park, Freight Rd. Cape Town Airport, 7525 +27 (0) 21 300 2055
-
-Jordan Houtz
-
-### Jordan Houtz
-
-**MANAGING DIRECTOR**
-
-[813-771-6675](tel:8137716675) [jhoutz@benchmarkintl.com](mailto:jhoutz@benchmarkintl.com)
-
-Jared Hardin
-
-### Jared Hardin
-
-**MANAGING DIRECTOR**
-
-[813-771-6675](tel:8137716675) [j.hardin@benchmarkintl.com](mailto:j.hardin@benchmarkintl.com)
-
-Alex Zykov
-
-### Alex Zykov
-
-**TRANSACTION DIRECTOR**
-
-[813-898-2372](tel:8138982372) [azykov@benchmarkintl.com](mailto:azykov@benchmarkintl.com)
-
-Shannon Hess
-
-### Shannon Hess
-
-**CLIENT ENGAGEMENT DIRECTOR**
-
-[813-898-2397](tel:8138982397) [hess@benchmarkintl.com](mailto:hess@benchmarkintl.com)
-
-Sunny Garten
-
-### Sunny Garten
-
-Senior Deal Associate
-
-[813-898-2357](tel:8138982357) [garten@benchmarkintl.com](mailto:garten@benchmarkintl.com)
-
-Michael Wynn
-
-### Michael Wynn
-
-Senior Deal Associate
-
-[813-384-4972](tel:8133844972) [mwynn@benchmarkintl.com](mailto:mwynn@benchmarkintl.com)
-
-Jason Lisiak
-
-### Jason Lisiak
-
-Research Associate
-
-[jlisiak@benchmarkintl.com](mailto:jlisiak@benchmarkintl.com)
-
-Alexandra Barr
-
-### Alexandra Barr
-
-Transaction Support Associate
-
-[813-387-6046](tel:8133876046) [abarr@benchmarkintl.com](mailto:abarr@benchmarkintl.com)
-
-Josiah Warren
-
-### Josiah Warren
-
-Transaction Support Associate
-
-[813-898-2398](tel:8138982398) [jwarren@benchmarkintl.com](mailto:jwarren@benchmarkintl.com)
-
-Luke Ernst
-
-### Luke Ernst
-
-Deal Analyst
-
-[813-771-6318](tel:8137716318) [lernst@benchmarkintl.com](mailto:lernst@benchmarkintl.com)
-
-**HEALTHCARE COVERAGE**
-
-**Provider Services**
-
-**Life Sciences & Diagnostics**
-
-**Medical Products & Distribution**
-
-**Pharmacy & Healthcare Services**
-
-Team as listed on the Middle Market site in October 2026.
 
 ## 21. Benchmark International
 
