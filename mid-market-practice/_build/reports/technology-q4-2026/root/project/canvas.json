@@ -1,0 +1,186 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-10-06T02:30:00Z"
+ },
+ "title": "Technology Q4 2026 M&A Sector Report",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "01 Cover"
+  },
+  "P02.dc.html": {
+   "x": 896,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "02 The six focus areas"
+  },
+  "P03.dc.html": {
+   "x": 1792,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "03 Deal market, financing and demand"
+  },
+  "P04.dc.html": {
+   "x": 2688,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "04 Policy, trade and tax"
+  },
+  "P05.dc.html": {
+   "x": 3584,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "05 Managed IT & Cloud Services"
+  },
+  "P06.dc.html": {
+   "x": 4480,
+   "y": 0,
+   "w": 816,
+   "h": 1056,
+   "title": "06 Managed IT & Cloud Services transactions"
+  },
+  "P07.dc.html": {
+   "x": 0,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "title": "07 Cybersecurity"
+  },
+  "P08.dc.html": {
+   "x": 896,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "title": "08 Cybersecurity transactions"
+  },
+  "P09.dc.html": {
+   "x": 1792,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "title": "09 Telecom & UCaaS"
+  },
+  "P10.dc.html": {
+   "x": 2688,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "title": "10 Telecom & UCaaS transactions"
+  },
+  "P11.dc.html": {
+   "x": 3584,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "title": "11 Systems Integration"
+  },
+  "P12.dc.html": {
+   "x": 4480,
+   "y": 1176,
+   "w": 816,
+   "h": 1056,
+   "title": "12 Systems Integration transactions"
+  },
+  "P13.dc.html": {
+   "x": 0,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "title": "13 Electronics & Hardware"
+  },
+  "P14.dc.html": {
+   "x": 896,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "title": "14 Electronics & Hardware transactions"
+  },
+  "P15.dc.html": {
+   "x": 1792,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "title": "15 Government Technology"
+  },
+  "P16.dc.html": {
+   "x": 2688,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "title": "16 Government Technology transactions"
+  },
+  "P17.dc.html": {
+   "x": 3584,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "title": "17 Public-market valuation"
+  },
+  "P18.dc.html": {
+   "x": 4480,
+   "y": 2352,
+   "w": 816,
+   "h": 1056,
+   "title": "18 Benchmark International activity"
+  },
+  "P19.dc.html": {
+   "x": 0,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "title": "19 What buyers reward and discount"
+  },
+  "P20.dc.html": {
+   "x": 896,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "title": "20 Contact"
+  },
+  "P21.dc.html": {
+   "x": 1792,
+   "y": 3528,
+   "w": 816,
+   "h": 1056,
+   "title": "21 Sources"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "P02.dc.html",
+  "P03.dc.html",
+  "P04.dc.html",
+  "P05.dc.html",
+  "P06.dc.html",
+  "P07.dc.html",
+  "P08.dc.html",
+  "P09.dc.html",
+  "P10.dc.html",
+  "P11.dc.html",
+  "P12.dc.html",
+  "P13.dc.html",
+  "P14.dc.html",
+  "P15.dc.html",
+  "P16.dc.html",
+  "P17.dc.html",
+  "P18.dc.html",
+  "P19.dc.html",
+  "P20.dc.html",
+  "P21.dc.html"
+ ],
+ "notes": {},
+ "designSystems": []
+}

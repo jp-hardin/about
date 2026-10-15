@@ -1673,17 +1673,9 @@ Deal Analyst
 
 **TECHNOLOGY COVERAGE**
 
-**Managed IT & Cloud Services**
-
-**Cybersecurity**
-
-**Telecom & UCaaS**
-
-**Systems Integration**
-
-**Electronics & Hardware**
-
-**Government Technology**
+| Managed IT & Cloud Services | Cybersecurity | Telecom & UCaaS |
+| --- | --- | --- |
+| Systems Integration | Electronics & Hardware | Government Technology |
 
 Team as listed on the Benchmark International Middle Market site in October 2026.
 

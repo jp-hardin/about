@@ -81,8 +81,8 @@ class WebDeck:
                 continue
             if b.cls.startswith('pc') and not self.meaningful(b):
                 continue
-            if b.cls.startswith('sh') and not getattr(b, 'paras', None) and b.w <= 10 and b.h <= 10 and getattr(b, 'fill', None):
-                b.cls, b.container = 'sw', False          # a legend key
+            if b.cls.startswith('sh') and not getattr(b, 'paras', None) and b.w <= 16 and b.h <= 10 and getattr(b, 'fill', None):
+                b.cls, b.container = 'sw', False          # a legend key (a dot, a square or a short line)
                 items.append(b)
                 continue
             if b.cls.startswith('sh') and not getattr(b, 'paras', None) and not b.container:
@@ -155,7 +155,7 @@ class WebDeck:
             return boxes
         taken = set()
         for ch in charts:
-            extra, before = [], []
+            extra, before, labels = [], [], []
             minx = 0.0
             maxx = ch.w
             for b in boxes:
@@ -174,6 +174,7 @@ class WebDeck:
                     y = b.y + b.h / 2 - ch.y
                     minx = min(minx, b.x - ch.x)
                     maxx = max(maxx, b.x + b.w - ch.x)
+                    labels.append(txt)
                     extra.append(f'<text x="{n(x)}" y="{n(y)}" font-size="{n(p["size"])}" fill="{p["color"] or "#333"}" '
                                  f'text-anchor="{anchor}" dominant-baseline="middle">{esc(txt)}</text>')
                     taken.add(id(b))
@@ -188,6 +189,17 @@ class WebDeck:
                 if x1 - x0 > 2 and y1 - y0 > 2 and (x1 - x0) * (y1 - y0) >= 0.3 * b.w * b.h and b.w * b.h < 0.6 * ch.w * ch.h:
                     before.append(f'<rect x="{n(x0 - ch.x)}" y="{n(y0 - ch.y)}" width="{n(x1 - x0)}" height="{n(y1 - y0)}" fill="{b.fill}"/>')
                     taken.add(id(b))
+            if extra:
+                # the deck sets this chart's axis labels beside it; the phone drawing shows them on its own axis
+                from deckhtml import Chart
+                code = None
+                for lab in labels:
+                    m = re.match(r'^([^\d\-−]*)(-|−)?([\d,]+)(\.\d+)?(.*)$', lab)
+                    if m:
+                        dec = '.' + '0' * (len(m.group(4)) - 1) if m.group(4) else ''
+                        code = (f'"{m.group(1)}"' if m.group(1) else '') + '0' + dec + (f'"{m.group(5)}"' if m.group(5) else '')
+                        break
+                ch.html_m = Chart(self.d, ch.cs, ch.w, ch.h, mobile=True, show_val=True, val_code=code).svg()[0]
             if extra or before:
                 h = ch.html
                 h = re.sub(r'viewBox="0 0 ([\d.]+) ([\d.]+)"', lambda m: f'viewBox="{n(minx)} 0 {n(maxx - minx)} {m.group(2)}"', h, count=1)
@@ -283,14 +295,31 @@ class WebDeck:
             return ''
         if len(items) == 1:
             return self.render(items[0], scale)
-        srt = sorted(items, key=lambda b: (b.y, b.x))
+        # a legend key sits on its text line: compare by vertical center so it joins that line
+        def top(b):
+            return b.y + b.h / 2 - 5 if b.cls == 'sw' else b.y
+
+        def bottom(b):
+            return b.y + b.h / 2 + 5 if b.cls == 'sw' else b.y + b.h
+        srt = sorted(items, key=lambda b: (top(b), b.x))
         bands = []
         for b in srt:
-            if bands and b.y < bands[-1]['bottom'] - TOL:
+            if bands and top(b) < bands[-1]['bottom'] - TOL:
                 bands[-1]['items'].append(b)
-                bands[-1]['bottom'] = max(bands[-1]['bottom'], b.y + b.h)
+                bands[-1]['bottom'] = max(bands[-1]['bottom'], bottom(b))
             else:
-                bands.append({'items': [b], 'bottom': b.y + b.h})
+                bands.append({'items': [b], 'bottom': bottom(b)})
+        # A run of aligned grid rows (column headings and values) stays together as one band.
+        k = 0
+        while k < len(bands):
+            j = k
+            while j < len(bands) and self.grid_band(bands[j]['items']):
+                j += 1
+            if j - k >= 2 and self.aligned([bd['items'] for bd in bands[k:j]]):
+                bands[k:j] = [{'items': [x for bd in bands[k:j] for x in bd['items']], 'bottom': bands[j - 1]['bottom'], 'grid': [bd['items'] for bd in bands[k:j]]}]
+            k += 1
+        if len(bands) == 1 and bands[0].get('grid'):
+            return self.grid(bands[0]['grid'])
         # Cut along the widest white space first: across the page (rows) or down it (columns).
         hgap = max((min(x.y for x in bands[k + 1]['items']) - bands[k]['bottom'] for k in range(len(bands) - 1)), default=-1)
         xs = sorted(items, key=lambda b: b.x)
@@ -300,7 +329,8 @@ class WebDeck:
                 cols0.append(b.x - right)
             right = b.x + b.w if right is None else max(right, b.x + b.w)
         vgap = max(cols0, default=-1)
-        if len(bands) > 1 and vgap > 0 and vgap > hgap * 1.5 and vgap >= 8 and hgap < 10:
+        grid_rows = sum(1 for bd in bands if self.grid_band(bd['items'])) + sum(len(bd['grid']) for bd in bands if bd.get('grid'))
+        if len(bands) > 1 and vgap > 0 and vgap > hgap * 1.5 and vgap >= 8 and hgap < 10 and grid_rows < 3:
             bands = [{'items': items, 'bottom': max(b.y + b.h for b in items)}]
         elif len(bands) > 2:
             # cut only at the wider gaps here; the narrower ones are decided inside each part
@@ -324,6 +354,10 @@ class WebDeck:
         if len(bands) > 1:
             out, i = [], 0
             while i < len(bands):
+                if bands[i].get('grid'):
+                    out.append(self.grid(bands[i]['grid']))
+                    i += 1
+                    continue
                 j = i
                 while j < len(bands) and self.grid_band(bands[j]['items']):
                     j += 1
@@ -425,12 +459,12 @@ class WebDeck:
     @staticmethod
     def short(b, limit=22):
         paras = [p for p in (getattr(b, 'paras', None) or []) if not p['empty']]
-        return not b.container and len(paras) == 1 and len(paras[0]['text']) <= limit
+        return not b.container and 1 <= len(paras) <= 2 and len(' '.join(p['text'] for p in paras)) <= limit
 
     def grid_band(self, items):
-        """A row of three or more short cells (values, year labels, legend keys)."""
+        """A row of three or more short cells (values, year labels, column headings, legend keys)."""
         cells = [b for b in items if b.cls != 'sw']
-        return len(cells) >= 3 and all(self.short(b) for b in cells)
+        return len(cells) >= 3 and all(self.short(b, 34) for b in cells)
 
     @staticmethod
     def aligned(rows):
@@ -444,7 +478,7 @@ class WebDeck:
             for b in r:
                 if b.cls == 'sw':
                     continue
-                if min(abs(b.x + b.w / 2 - c) for c in cols) > 30:
+                if min(abs(b.x + b.w / 2 - c) for c in cols) > 45:
                     return False
         return True
 
@@ -465,7 +499,8 @@ class WebDeck:
             head = k == 0 and not any(re.search(r'\d', plain(c)) for c in cells)
             tag = 'th' if head else 'td'
             lead = f'<{tag} class="dgrid-k">{sw}</{tag}>' if has_sw else ''
-            html_rows.append('<tr>' + lead + ''.join(f'<{tag}>{c}</{tag}>' for c in cells) + '</tr>')
+            html_rows.append('<tr>' + lead + ''.join(
+                f'<{tag}{" class=" + chr(34) + "dgrid-n" + chr(34) if re.search(r"[A-Za-z]{3}", plain(c)) and not head else ""}>{c}</{tag}>' for c in cells) + '</tr>')
         return f'<div class="dgrid-wrap"><table class="dgrid"><tbody>{"".join(html_rows)}</tbody></table></div>'
 
     def chip(self, b):
@@ -531,12 +566,16 @@ class WebDeck:
                     f'<i style="left:{n(b.left, 2)}%;width:{n(max(b.width, 0.4), 2)}%;background:{b.fill}"></i></span>'
                     f'<span class="dbar-v">{b.value}</span></div>')
         if b.cls == 'sw':
-            shape = ' dsw--round' if b.geom == 'ellipse' else ' dsw--diamond' if b.geom == 'diamond' else ''
+            shape = ' dsw--round' if b.geom == 'ellipse' else ' dsw--diamond' if b.geom == 'diamond' else ' dsw--line' if b.h < 4 else ''
             return f'<span class="dsw{shape}" style="background:{b.fill}" aria-hidden="true"></span>'
         if b.cls == 'ch':
             data = f'<details class="rdata"><summary>Chart data</summary>{b.data_table}</details>' if getattr(b, 'data_table', '') else ''
             svg = re.sub(r'font-size="([\d.]+)"', lambda m: f'font-size="{n(float(m.group(1)) * 1.25, 2)}"', b.html)
-            return f'<figure class="dchart" style="--cw:{n(b.w * 1.9, 0)}px">{svg}{data}</figure>'
+            svg = svg.replace('<svg ', '<svg class="svg-d" ', 1)
+            mob = getattr(b, 'html_m', '')
+            if mob:
+                mob = mob.replace('<svg ', '<svg class="svg-m" aria-hidden="true" ', 1).replace(' role="img"', '', 1)
+            return f'<figure class="dchart" style="--cw:{n(b.w * 1.9, 0)}px">{svg}{mob}{data}</figure>'
         if b.cls == 'tb':
             return self.table(b)
         if b.cls.startswith('pc'):

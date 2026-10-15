@@ -257,8 +257,7 @@ def build_page(prs):
         foot = f'<div class="fine rfoot">{pg["foot"]}</div>' if pg['foot'] else ''
         kind = ' rsec--part' if pg['part'] else ''
         secs.append(f'<section class="rsec{kind}" id="p{pg["num"]:02d}">\n<div class="rsec-head"><span class="rsec-num">{num}</span>'
-                    f'<h2 class="h2">{t}</h2></div>\n<div class="rblock dblock">{sub}\n{pg["body"]}\n{foot}'
-                    f'<p class="rpage"><a href="{pdf}#page={pg["num"]}">Page {pg["num"]} of the PDF</a></p></div>\n</section>')
+                    f'<h2 class="h2">{t}</h2></div>\n<div class="rblock dblock">{sub}\n{pg["body"]}\n{foot}</div>\n</section>')
 
     pairs, band_label, _ = stats_band(pages)
     band = ''

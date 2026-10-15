@@ -558,9 +558,12 @@ class Deck:
                     cpart = part.related_part(rid)
                     chart = Chart(self, cpart.chart._chartSpace, w, h)
                     svg, label = chart.svg()
+                    svg_m, _ = Chart(self, cpart.chart._chartSpace, w, h, mobile=True).svg()
                     cb = Box(x, y, w, h, svg, 'ch', chrome=chrome, text=label)
                     cb.data_table = getattr(chart, 'data_table', '')
                     cb.series_data = getattr(chart, 'series_data', [])
+                    cb.html_m = svg_m
+                    cb.cs, cb.deck = cpart.chart._chartSpace, self
                     out.append(cb)
                 elif uri.endswith('/table'):
                     tb = Box(x, y, w, h, self.table(X1(gd, './a:tbl'), w, h, part, slide_no), 'tb', chrome=chrome)
@@ -755,14 +758,19 @@ class Deck:
 
 # ─── Charts ──────────────────────────────────────────────────────────────────
 class Chart:
-    def __init__(self, deck, cs, w, h):
+    def __init__(self, deck, cs, w, h, mobile=False, show_val=False, val_code=None):
+        self.val_code = val_code  # number format for a value axis drawn here that the deck labels with its own text
         self.d, self.cs, self.w, self.h = deck, cs, w, h
+        self.show_val = show_val  # draw the value axis even if the chart hides it (its labels sit beside the chart in the deck)
         self.t = deck.theme
+        self.mobile = mobile      # a phone-width drawing: 340 units wide (about a CSS pixel each), larger text
 
     def tx(self, el, default_sz=9, default_color='#333'):
         """(size pt, color, weight, family) for a chart text properties element."""
         d = X1(el, './c:txPr//a:defRPr') if el is not None else None
         sz = int(d.get('sz')) / 100 if d is not None and d.get('sz') else default_sz
+        if self.mobile:
+            sz = max(11, sz * 1.45)
         col = self.t.color(X1(d, './a:solidFill')) if d is not None else None
         b = d is not None and d.get('b') == '1'
         face = X1(d, './a:latin/@typeface') if d is not None else None
@@ -830,6 +838,17 @@ class Chart:
         val_rev = X1(val_ax, './c:scaling/c:orientation/@val') == 'maxMin'
         cat_del = X1(cat_ax, './c:delete/@val') == '1'
         val_del = X1(val_ax, './c:delete/@val') == '1'
+        if self.mobile:
+            nser = len(sers) if bar is not None else 1
+            W = 340.0
+            if horiz:
+                H = 20 + max(1, len(cats)) * max(26, 16 * nser + 10)
+            else:
+                H = 230.0
+            # Values that the deck shows as separate labels beside the chart are drawn on a value axis here.
+            shows_values = any(X1(s['el'], './c:dLbls/c:showVal/@val') == '1' for s in sers) or X1(plot, './c:dLbls/c:showVal/@val') == '1'
+            if val_del and not shows_values and self.show_val:
+                val_del = False
         cat_tx = self.tx(cat_ax, 8)
         val_tx = self.tx(val_ax, 8)
         cat_lbl_pos = X1(cat_ax, './c:tickLblPos/@val') or 'nextTo'
@@ -864,7 +883,7 @@ class Chart:
         # plot area
         man = X1(plot_area, './c:layout/c:manualLayout')
         est = lambda s, sz: len(s) * sz * 0.5
-        if man is not None and X1(man, './c:xMode/@val') != 'factor':
+        if man is not None and X1(man, './c:xMode/@val') != 'factor' and not self.mobile:
             px = float(X1(man, './c:x/@val') or 0) * W
             py = float(X1(man, './c:y/@val') or 0) * H
             pw = float(X1(man, './c:w/@val') or 1) * W
@@ -926,10 +945,10 @@ class Chart:
                     if span / (step * m) <= 6:
                         step *= m
                         break
-            v = lo
-            if 'lo_axis' in locals():   # lo was widened for negative labels: start the ticks on a round value
-                import math
-                v = math.ceil(lo / step - 1e-9) * step
+            import math
+            # Excel starts the axis at its minimum; an axis drawn only for phones, or one widened for
+            # negative labels, starts on a round value
+            v = math.ceil(lo / step - 1e-9) * step if (self.show_val or 'lo_axis' in locals()) else lo
             while v <= hi + 1e-9 and len(ticks) < 40:
                 ticks.append(v)
                 v += step
@@ -941,7 +960,9 @@ class Chart:
                     parts.append(f'<line x1="{n(p)}" y1="{n(py)}" x2="{n(p)}" y2="{n(py + ph)}" stroke="{gl[1]}" stroke-width="{n(gl[0])}"/>')
                 else:
                     parts.append(f'<line x1="{n(px)}" y1="{n(p)}" x2="{n(px + pw)}" y2="{n(p)}" stroke="{gl[1]}" stroke-width="{n(gl[0])}"/>')
-        if not val_del and X1(val_ax, './c:tickLblPos/@val') != 'none':
+        if self.val_code:
+            val_code = self.val_code
+        if not val_del and (X1(val_ax, './c:tickLblPos/@val') != 'none' or self.show_val):
             for v in ticks:
                 p = vpos(v)
                 s = fmt(v, val_code)
