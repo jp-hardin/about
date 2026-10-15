@@ -11,15 +11,23 @@ Segments: Provider Services; Life Sciences & Diagnostics; Medical Products & Dis
 
 ## 2. Insights
 
--  Healthcare M&A: state of play
+**KEY INSIGHTS**
 
--  Historical market context
+**01  Strategic buyers are setting the pace**
 
--  Fundamentals supporting activity
+Private equity is on pace for 674 healthcare services transactions, the slowest since 2017, while medtech deal value reached $36.5 billion in the first half, so strategic acquirers belong on every buyer list.
 
--  Perspectives on four focus areas
+**02  Higher borrowing costs make buyers more selective**
 
--  What we're reading
+Direct lenders widened buyout loan spreads to an average of 509 basis points in the second quarter from 474, which makes buyers more selective and rewards owners who present clean, defensible earnings.
+
+**03  Buyers pay most for recurring revenue**
+
+With a median private equity entry multiple of 13.6x EBITDA for healthcare services in 2025, the strongest prices go to revenue that recurs under contract or clinical necessity from a balanced payer mix.
+
+**04  Prepare early for reimbursement and notice rules**
+
+Medicare proposes physician conversion factor cuts of up to 1.68% for 2027 and Maine's 180-day notice and approval regime begins January 1, 2027, so owners should model rates and allow time for review.
 
 ## 3. Healthcare M&A: State of Play
 

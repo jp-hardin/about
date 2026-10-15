@@ -11,13 +11,23 @@ Segments: Commercial & Facility Services; Marketing, Sales & Tech-Enabled Servic
 
 ## 2. Insights
 
--  Key trends in business services
+**KEY INSIGHTS**
 
--  Perspectives on five segments
+**01  Inspection revenue draws the most buyers**
 
--  What we're reading
+Pye-Barker completed 22 acquisitions in the first half of 2026 after 57 in 2025, so owners with contracted inspection, monitoring and service work are meeting the deepest pool of acquirers.
 
--  Feature: fire and life safety
+**02  Costlier debt rewards documented earnings**
+
+The Federal Reserve raised its target range on September 16 and debt on platform acquisitions fell to 2.9x EBITDA from 3.4x, so buyers now pay most for documented earnings and contracted customers.
+
+**03  Licensed staff and backlog set engineering value**
+
+Bernhard Capital agreed to buy Bowman at a 58% premium while 88% of engineering firms report open positions, so a year of funded backlog and licensed staff drive the price.
+
+**04  Prepared sellers still draw several offers**
+
+Completed middle-market deals averaged 7.0x EBITDA in the second quarter and 87% of sales above $5 million drew three or more offers, so owners should keep every client below a fifth of revenue.
 
 ## 3. Key Trends in Business Services
 

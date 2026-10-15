@@ -298,3 +298,10 @@
 .dsw--line { height: 3px; width: 14px; margin-top: 0.65em; }
 .dgrid .dgrid-n { text-align: left; }
 .rdata { overflow-x: auto; max-width: 100%; }
+.rkey { list-style: none; margin: 10px 0 0; padding: 0; counter-reset: rkey; }
+.rkey li { position: relative; padding: 14px 0 14px 44px; border-top: 1px solid rgba(255, 255, 255, 0.14); counter-increment: rkey; }
+.rkey li::before { content: counter(rkey, decimal-leading-zero); position: absolute; left: 0; top: 14px; font-family: var(--font-serif); font-size: 1.15rem; color: var(--gold); }
+.report .rkey .rkey-t { font-family: inherit; font-size: 1.05rem; font-weight: 700; line-height: 1.35; color: #fff; margin: 0 0 4px; }
+.report .rkey .rkey-d { color: #e6e0d9; line-height: 1.6; margin: 0; }
+.rsec--part .dlabel { margin-top: 22px !important; color: var(--gold) !important; }
+.rtoc li.rtoc-part a { grid-template-columns: 0 1fr; margin-top: 8px; }

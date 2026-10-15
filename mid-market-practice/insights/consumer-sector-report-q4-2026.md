@@ -13,15 +13,23 @@ Segments: Food & Beverage; Consumer Brands & Products; Foodservice & Distributio
 
 Buyers of consumer businesses are paying for brands that have held price and volume, for companies that sell through more than one channel and for operators with room to add distribution or locations. They have stayed active while tariffs, fuel and interest rates have each changed what a buyer treats as normal earnings.
 
-- 03 Happening in consumer right now
+**KEY INSIGHTS**
 
-04
+**01  Buyers reward volume that holds with price**
 
-Tariffs, fuel and financing: three costs buyers are repricing
+Hershey’s organic sales rose 3.6% as volume fell 8 points while Church & Dwight grew 5.8% with volume up 4.3%, so owners should show price and unit volume by product line.
 
-- 05 Perspectives on four consumer segments
+**02  More than one channel drives growth**
 
-- 06 What we’re reading
+E-commerce reached 17.1% of retail sales in the second quarter and YETI grew wholesale 10% and direct-to-consumer 7%, so buyers are paying for brands that sell through several channels.
+
+**03  Platforms are buying operators location by location**
+
+Add-ons made up about 75% of US private equity buyouts in the second quarter and Boyd Group’s sales rose 29.9% mostly on new locations, so multi-site operators with room to expand draw buyers.
+
+**04  Buyers are repricing tariffs, fuel and rates**
+
+With diesel at $6.29 a gallon in September and the federal funds target raised to 3.75% to 4.00%, owners who show landed cost by period and fuel recovery by contract protect their earnings figure.
 
 **MIDDLE MARKET**
 

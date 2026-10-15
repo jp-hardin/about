@@ -9,11 +9,23 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-s
 
 ## 2. Insights
 
--  Key trends in technology
+**KEY INSIGHTS**
 
--  Perspectives on six focus areas
+**01  Data center demand outpaces IT services**
 
--  What we're reading
+Gartner expects data center systems spending to rise 62.5% in 2026 against 5.3% for IT services, so owners tied to data center build-outs can show buyers faster growth.
+
+**02  Recurring revenue draws several funded buyers**
+
+Buyers announced 64 acquisitions of managed service providers in the first quarter, 73% more than a year earlier, which means contracted managed revenue can put several funded bidders in a process.
+
+**03  Dearer debt rewards documented earnings**
+
+With the Federal Reserve raising its target range on September 16 and total debt on platform acquisitions down to 2.9x EBITDA from 3.4x, documented earnings and contracted customers carry more weight.
+
+**04  Backlog counts when it converts to shipments**
+
+North American electronics manufacturing services bookings rose 53.5% in August against 1.0% for shipments, so hardware owners should show that backlog converts at steady margins and expect questions on component supply.
 
 ## 3. Key Trends in Technology
 
