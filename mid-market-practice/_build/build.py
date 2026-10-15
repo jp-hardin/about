@@ -34,9 +34,9 @@ SITE_URL = "https://jp-hardin.github.io/about/mid-market-practice/"
 SITE_UPDATED = "2026-10-12"   # date stamp for sitemap.xml; update when content changes
 ORG_NAME = "Benchmark International Middle Market"
 PARENT_ORG = {"@type": "Organization", "name": "Benchmark International", "url": "https://www.benchmarkintl.com/"}
-REPORT_DATE = "2026-10"       # publication month of the current sector reports (ISO 8601)
+REPORT_DATE = "2026-10"       # publication month of the current industry reports (ISO 8601)
 
-# Important Disclosures: shown on disclosures.html and printed as the last page of every sector report PDF
+# Important Disclosures: shown on disclosures.html and printed as the last page of every industry report PDF
 # (_build/reports/disclosures.py). Adapted from a peer firm's report disclosures; have Compliance confirm any
 # change, and add Benchmark International's own regulatory status here if Compliance wants it stated.
 DISCLOSURES = [
@@ -56,10 +56,10 @@ SERVICES = [
     ("Sell-Side M&A", "A full sale to the right strategic acquirer or financial sponsor, run as a confidential, competitive process from positioning through closing."),
     ("Recapitalizations & Partial Sales", "Take chips off the table while keeping a stake in the upside, through majority or minority recapitalizations with private equity and family offices."),
     ("Strategic Partnerships & Growth Capital", "Find a partner that brings capital, capabilities or market access to accelerate the next phase of growth."),
-    ("Exit Planning & Valuation", "Understand what your company is worth today, what drives value in your sector and the steps that will maximize it before you go to market."),
+    ("Exit Planning & Valuation", "Understand what your company is worth today, what drives value in your industry and the steps that will maximize it before you go to market."),
 ]
 
-# Old 12-sector URLs → new sector (redirect stubs keep any shared links working)
+# Old 12-industry URLs → current industry page (redirect stubs keep any shared links working)
 LEGACY = {
     "architecture-engineering": "business-services",
     "financial-services": "business-services",
@@ -83,15 +83,15 @@ SECTORS = [
     {
         "slug": "industrial",
         "name": "Industrial",
-        "prose": "the industrial sector",        # running-prose name ("valuation in the industrial sector")
-        "title_in": "the Industrial Sector",     # Title Case heading form ("What We're Seeing in the Industrial Sector")
-        "adj": "industrial-sector",              # adjective before "transactions"
+        "prose": "industrial markets",           # running-prose name ("valuation in industrial markets")
+        "title_in": "Industrial Markets",        # Title Case heading form ("What We're Seeing in Industrial Markets")
+        "adj": "industrial",                     # adjective before "transactions"
         "count": 290,
         "tagline": "Advising founder-led manufacturers, distributors and industrial service companies on sales, recapitalizations and partnerships.",
         "short": "Manufacturing, industrial distribution, building products, energy and environmental services, and transportation.",
         "overview": [
             "Reshoring, automation, infrastructure investment and the push for supply-chain resilience have put middle-market industrial companies at the top of many buyers' lists. Strategic acquirers want capabilities and capacity they can't build quickly. Private equity platforms want founder-built businesses with engineering know-how, sticky customers and room to grow through add-ons.",
-            "Our Industrial group advises owners of manufacturers, fabricators, distributors and industrial service providers across five segments. We translate machine capability, certifications, installed base and customer relationships into the terms buyers use to value them, then run a competitive process that puts those qualities in front of the right strategic and financial partners.",
+            "Our Industrial group advises owners of manufacturers, fabricators, distributors and industrial service providers across five sectors. We translate machine capability, certifications, installed base and customer relationships into the terms buyers use to value them, then run a competitive process that puts those qualities in front of the right strategic and financial partners.",
         ],
         "segments": [
             ("Manufacturing & Industrial Technology", "Engineered products and precision manufacturing where proprietary processes, certifications and approved-vendor status create durable advantages.",
@@ -157,8 +157,8 @@ SECTORS = [
     {
         "slug": "consumer",
         "name": "Consumer",
-        "prose": "the consumer sector",
-        "title_in": "the Consumer Sector",
+        "prose": "consumer markets",
+        "title_in": "Consumer Markets",
         "adj": "consumer",
         "count": 80,
         "tagline": "Advising founders of food, restaurant, consumer brand, foodservice and consumer services businesses.",
@@ -263,30 +263,30 @@ SECTORS = [
 SECTOR_BY_SLUG = {s["slug"]: s for s in SECTORS}
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Insights: quarterly sector reports. Add a new entry each quarter; the newest
+# Insights: quarterly industry reports. Add a new entry each quarter; the newest
 # report per industry becomes "Current" and older ones move to the archive.
 # Report pages and PDFs are generated by _build/reports/<folder>/ into insights/.
 # `legacy` is the report's old reports/ filename, kept as a redirect.
 # ─────────────────────────────────────────────────────────────────────────────
 INSIGHTS = [
-    {"sector": "industrial", "quarter": 4, "year": 2026, "slug": "industrial-sector-report-q4-2026", "legacy": "industrial-q4-2026",
-     "title": "Industrial Q4 2026 M&A Sector Report",
+    {"sector": "industrial", "quarter": 4, "year": 2026, "slug": "industrial-industry-report-q4-2026", "legacy": "industrial-q4-2026",
+     "title": "Industrial Q4 2026 M&A Industry Report",
      "summary": "Manufacturing and industrial technology; distribution and services; building products and construction services; energy, power and environmental services; and transportation and logistics: the order books, the deal market and what acquirers are paying for."},
-    {"sector": "business-services", "quarter": 4, "year": 2026, "slug": "business-services-sector-report-q4-2026", "legacy": "business-services-q4-2026",
-     "title": "Business Services Q4 2026 M&A Sector Report",
+    {"sector": "business-services", "quarter": 4, "year": 2026, "slug": "business-services-industry-report-q4-2026", "legacy": "business-services-q4-2026",
+     "title": "Business Services Q4 2026 M&A Industry Report",
      "summary": "Commercial and facility services; marketing, sales and tech-enabled services; engineering, architecture and consulting; financial and insurance services; and staffing and human capital: the deal market, public-market valuations and what buyers are paying for."},
-    {"sector": "consumer", "quarter": 4, "year": 2026, "slug": "consumer-sector-report-q4-2026", "legacy": "consumer-q4-2026",
-     "title": "Consumer Q4 2026 M&A Sector Report",
+    {"sector": "consumer", "quarter": 4, "year": 2026, "slug": "consumer-industry-report-q4-2026", "legacy": "consumer-q4-2026",
+     "title": "Consumer Q4 2026 M&A Industry Report",
      "summary": "Food and beverage (including restaurants), consumer brands and products, foodservice and distribution, and consumer services and retail: who is buying, what they are paying for and what an owner can prepare."},
-    {"sector": "healthcare", "quarter": 4, "year": 2026, "slug": "healthcare-sector-report-q4-2026", "legacy": "healthcare-q4-2026",
-     "title": "Healthcare Q4 2026 M&A Sector Report",
+    {"sector": "healthcare", "quarter": 4, "year": 2026, "slug": "healthcare-industry-report-q4-2026", "legacy": "healthcare-q4-2026",
+     "title": "Healthcare Q4 2026 M&A Industry Report",
      "summary": "Provider services, life sciences and diagnostics, medical products and distribution, and pharmacy and healthcare services: the deal market, the policy calendar and what buyers are paying for."},
-    {"sector": "technology", "quarter": 4, "year": 2026, "slug": "technology-sector-report-q4-2026", "legacy": "technology-q4-2026",
-     "title": "Technology Q4 2026 M&A Sector Report",
+    {"sector": "technology", "quarter": 4, "year": 2026, "slug": "technology-industry-report-q4-2026", "legacy": "technology-q4-2026",
+     "title": "Technology Q4 2026 M&A Industry Report",
      "summary": "Managed IT and cloud services, cybersecurity, telecom and UCaaS, systems integration, electronics and hardware, and government technology: the deal market, the policy calendar and what buyers are paying for."},
 ]
 for _i in INSIGHTS:
-    # A report built from a PowerPoint sector brief (reports/<folder>/brief.pptx) is summarized by its cover sentence.
+    # A report built from a PowerPoint industry report deck (reports/<folder>/brief.pptx) is summarized by its cover sentence.
     _brief = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", f"{_i['sector']}-q{_i['quarter']}-{_i['year']}", "brief.json")
     if os.path.exists(_brief):
         _i["summary"] = json.load(open(_brief, encoding="utf-8"))["lead"]
@@ -303,7 +303,7 @@ def current_report(slug):
 for _s in SECTORS:
     _cur = current_report(_s["slug"])
     if _cur:
-        _s["report"] = (f"{_cur['period']} Sector Report", _cur["url"])
+        _s["report"] = (f"{_cur['period']} Industry Report", _cur["url"])
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Team
@@ -316,7 +316,7 @@ TEAM_LEAD = [
      ["Jared was raised in a military family, spending his early years traveling through Utah, Missouri, Ohio, Korea, Idaho and Hong Kong. He ultimately landed in Texas, where he has lived for the last two decades. His studies spanned a wide range, from fine arts to international business to management information systems. He was driven to attain his MBA because he genuinely enjoys helping others learn and grow, but he also has a competitive nature that drives him toward success. He has had a diverse career, holding the titles of owner, COO, CIO and CMO and starting small businesses that gave him a role in everything from sales to HR and from IT to manufacturing. For these reasons, he understands and appreciates the intricacies of many different businesses.",
       "Jared’s role at Benchmark is about creating opportunities. In addition to his love for learning about businesses and introducing their owners to the distinctive tools and expertise that we offer, he is able to leverage his experience in deeply meaningful ways for our clients. He is driven to deliver results and get business owners truly excited about what is possible for the future."]),
     ("Alex Zykov", "Transaction Director", "alex-zykov",
-     ["As a Transaction Director, Alex leads the execution of our clients’ transactions from onboarding through signing and closing. He oversees every aspect of the process for middle-market clients across the industrial, consumer, business services, healthcare and technology sectors. He makes sure clients understand each step and feel confident along the way, supporting them and our team through due diligence, evaluating competing offers and leading negotiations through to the finish line.",
+     ["As a Transaction Director, Alex leads the execution of our clients’ transactions from onboarding through signing and closing. He oversees every aspect of the process for middle-market clients across the industrial, consumer, business services, healthcare and technology industries. He makes sure clients understand each step and feel confident along the way, supporting them and our team through due diligence, evaluating competing offers and leading negotiations through to the finish line.",
       "Alex’s career spans corporate development, executing transactions on Wall Street, and cofounding and running boutique advisory firms serving small and mid-sized businesses. Each step was deliberate: building the breadth of knowledge and experience needed to give his clients the best possible advice and help them achieve their goals. He discovered his passion for corporate finance at MIT, where he earned dual degrees in Economics and Management Science, and later earned his MBA from the University of Virginia’s Darden School of Business."]),
     ("Shannon Hess", "Client Engagement Director", "shannon-hess",
      ["Shannon grew up in a military family, living on Army bases until she was nine years old. She enjoyed living in Germany and Hawaii, and traveling to many wonderful places. Growing up in a military family meant a disciplined way of life, with importance placed on punctuality, respect and loyalty.",
@@ -424,7 +424,7 @@ def e(s):
 
 
 def number_word(k):
-    """Spells out small counts in running prose ("five segments")."""
+    """Spells out small counts in running prose ("five sectors")."""
     words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
     return words[k] if 0 <= k < len(words) else str(k)
 
@@ -464,7 +464,7 @@ def header(root, current=""):
     </a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
     <nav class="nav" id="site-nav" aria-label="Primary">
-      <a href="{root}sectors/index.html"{cur('industries')}>Sectors</a>
+      <a href="{root}industries/index.html"{cur('industries')}>Industries</a>
       <a href="{root}transactions.html"{cur('transactions')}>Transactions</a>
       <a href="{root}index.html#team"{cur('team')}>Team</a>
       <a href="{root}insights/index.html"{cur('insights')}>Insights</a>
@@ -491,8 +491,8 @@ def footer(root):
     social = "".join(
         f'<a href="{href}" aria-label="{name}"{"" if name == "Email" else ext}><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">{path}</svg></a>'
         for name, (href, path) in SOCIAL.items())
-    sectors = "".join(f'<li><a href="{root}sectors/{s["slug"]}.html">{e(s["name"])}</a></li>' for s in SECTORS)
-    sectors += f'<li><a href="{root}sectors/index.html">All Sectors</a></li>'
+    sectors = "".join(f'<li><a href="{root}industries/{s["slug"]}.html">{e(s["name"])}</a></li>' for s in SECTORS)
+    sectors += f'<li><a href="{root}industries/index.html">All Industries</a></li>'
     pages = (f'<li><a href="{root}about.html">About</a></li><li><a href="{root}transactions.html">Transactions</a></li><li><a href="{root}index.html#team">Team</a></li>'
              f'<li><a href="{root}insights/index.html">Insights</a></li><li><a href="{root}index.html#library">CEO Library</a></li><li><a href="{root}index.html#form">Contact</a></li>')
     return f"""</main>
@@ -505,7 +505,7 @@ def footer(root):
         <p><a href="{PHONE_HREF}">{PHONE}</a><br><a href="mailto:{EMAIL}">{EMAIL}</a></p>
         <div class="social">{social}</div>
       </div>
-      <div><h4>Sectors</h4><ul>{sectors}</ul></div>
+      <div><h4>Industries</h4><ul>{sectors}</ul></div>
       <div><h4>Middle Market</h4><ul>{pages}</ul></div>
       <div><h4>Benchmark International</h4><ul>
         <li><a href="https://www.benchmarkintl.com/about/">About</a></li>
@@ -649,7 +649,7 @@ def photo_strip(slug, root, n=4):
 
 
 def report_extras(page, slug, root, extra=None):
-    """Finishes a sector report page: the industry photo hero, photo breaks after report sections 2 and 5,
+    """Finishes an industry report page: the industry photo hero, photo breaks after report sections 2 and 5,
     and the Important Disclosures link at the end of the report."""
     page = page.replace('<section class="hero hero--page">', photo_hero(slug, root), 1)
     page = page.replace('assets/css/report.css">', f'assets/css/report.css?v={_asset_version("assets/css/report.css")}">', 1)
@@ -679,7 +679,7 @@ def report_extras(page, slug, root, extra=None):
 
 def industry_card(s, root):
     tags = "".join(f"<li>{e(seg[0])}</li>" for seg in s["segments"])
-    return f"""<a class="ind-card ind-card--photo" href="{root}sectors/{s['slug']}.html">
+    return f"""<a class="ind-card ind-card--photo" href="{root}industries/{s['slug']}.html">
   <div class="ind-photo"><img src="{photo(s['slug'], 'card', root)}" alt="" loading="lazy" width="900" height="560"></div>
   <h3>{e(s['name'])}</h3>
   <p>{e(s['short'])}</p>
@@ -747,6 +747,16 @@ def team_html(root, lead_only=False):
     return f'<div class="team-lead">{lead}</div>' + (f'<div class="team-support">{support}</div>' if support else "") + dialogs
 
 
+def team_section(root):
+    """The leadership team module used on the industry pages and the online industry reports."""
+    return f"""<section class="section">
+  <div class="wrap">
+    <div class="section-head center reveal"><p class="eyebrow">Your Deal Team</p><h2 class="h2">Leadership Team</h2></div>
+    {team_html(root, lead_only=True)}
+    <div class="center" style="margin-top:36px"><a class="link-arrow" href="{root}index.html#team">Meet the full team</a></div>
+  </div>
+</section>"""
+
 
 def abs_url(rel):
     """Absolute URL for a site-relative path ("" or "index.html" is the home page)."""
@@ -802,8 +812,8 @@ def home_faqs():
          "recapitalizations and growth partnerships."),
         ("What size companies does the Middle Market team advise?",
          "The team serves privately held companies with a total enterprise value (TEV) of $50 million to $500 million."),
-        ("Which sectors does the Middle Market team focus on?",
-         "Five sectors: " + ", ".join(x["name"] for x in SECTORS[:-1]) + " and " + SECTORS[-1]["name"] + "."),
+        ("Which industries does the Middle Market team focus on?",
+         "Five industries: " + ", ".join(x["name"] for x in SECTORS[:-1]) + " and " + SECTORS[-1]["name"] + "."),
         ("What services does the Middle Market team provide?", "Services include " + svc + "."),
         ("How does working with Benchmark International start?",
          "The first step is always a confidential conversation about your goals, your company and your options. A senior member of the "
@@ -830,7 +840,7 @@ def sector_faqs(s, buyers):
     segs = [x[0] for x in s["segments"]]
     faqs = [
         (f"What types of {n.lower()} companies does Benchmark International advise?",
-         f"The Middle Market team advises {n.lower()} companies across {number_word(len(segs))} segments: " + semi_list(segs) + "."),
+         f"The Middle Market team advises {n.lower()} companies across {number_word(len(segs))} sectors: " + semi_list(segs) + "."),
         (f"What do buyers value in {n.lower()} companies?",
          " ".join(f"{h}: {d}" for h, d in s["value"])),
         (f"How many {n.lower()} transactions has Benchmark International completed?",
@@ -907,7 +917,7 @@ def page_home():
         for t in featured)
     stories = "".join(f"""<article class="story reveal">
   <div class="story-media">{vimeo(vid, title)}</div>
-  <div class="story-body"><p class="eyebrow"><a href="sectors/{slug}.html" style="text-decoration:none">{e(label)}</a></p><p>{e(title)}</p></div>
+  <div class="story-body"><p class="eyebrow"><a href="industries/{slug}.html" style="text-decoration:none">{e(label)}</a></p><p>{e(title)}</p></div>
 </article>""" for vid, label, slug, title in STORIES[:4])
     testimonials = "".join(f"""<figure class="testimonial reveal">
   <p class="eyebrow">{e(k)}</p>
@@ -927,7 +937,7 @@ def page_home():
     awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="Benchmark International award" loading="lazy" width="520" height="300">' for i in range(1, 5))
 
     html = head("Middle Market | Benchmark International",
-                "Benchmark International's Middle Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on sales, recapitalizations and growth partnerships in the industrial, business services, consumer, healthcare and technology sectors.", root)
+                "Benchmark International's Middle Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on sales, recapitalizations and growth partnerships in the industrial, business services, consumer, healthcare and technology industries.", root)
     html += header(root)
     html += f"""
 <section class="hero">
@@ -937,7 +947,7 @@ def page_home():
     <p class="lead">Maximize your company's value and achieve your goals with the world's #1 privately owned sell-side M&amp;A advisor.</p>
     <div class="btn-row">
       <a class="btn" href="#form">Start the Conversation</a>
-      <a class="btn btn--light" href="sectors/index.html">Explore Our Sectors</a>
+      <a class="btn btn--light" href="industries/index.html">Explore Our Industries</a>
     </div>
   </div>
 </section>
@@ -948,7 +958,7 @@ def page_home():
     <div class="stats">
       <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Privately owned sell-side M&amp;A advisor worldwide<sup>*</sup></div></div>
       <div class="stat"><div class="stat-num">$50M–$500M</div><div class="stat-label">Total Enterprise Value (TEV) range we serve</div></div>
-      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused sectors with dedicated deal expertise</div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused industries with dedicated deal expertise</div></div>
       <div class="stat"><div class="stat-num">15</div><div class="stat-label">Global offices across the Americas, Europe &amp; Africa</div></div>
     </div>
     <p class="note">* Based on PitchBook’s Q2 2026 Global League Tables.</p>
@@ -982,7 +992,7 @@ def page_home():
     <div class="section-head center reveal">
       <p class="eyebrow">Peace of Mind for Business Owners</p>
       <h2 class="h2">Your Benchmark Journey</h2>
-      <p class="lead">We focus on serving presidents, CEOs, founders and owners of privately held companies in the industrial, business services, consumer, healthcare and technology sectors. As you consider the next step in your legacy, most business owners want three things:</p>
+      <p class="lead">We focus on serving presidents, CEOs, founders and owners of privately held companies in the industrial, business services, consumer, healthcare and technology industries. As you consider the next step in your legacy, most business owners want three things:</p>
     </div>
     <div class="pillars">
       <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-1.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">01</div><h3 class="h3">Understand Every Option</h3><p>We'll make it possible for you to explore a full, partial or partnership path. From local to global, we have you covered.</p></div>
@@ -1024,11 +1034,11 @@ def page_home():
   <div class="wrap">
     <div class="section-head section-head--split reveal">
       <div>
-        <p class="eyebrow">Sector Expertise</p>
-        <h2 class="h2">Five Sectors. Deep Expertise.</h2>
-        <p class="lead">Sector knowledge matters. We focus on five sectors where we know the buyers, the valuation drivers and the questions that will come up in diligence.</p>
+        <p class="eyebrow">Industry Expertise</p>
+        <h2 class="h2">Five Industries. Deep Expertise.</h2>
+        <p class="lead">Industry knowledge matters. We focus on five industries where we know the buyers, the valuation drivers and the questions that will come up in diligence.</p>
       </div>
-      <a class="link-arrow" href="sectors/index.html">View all sectors</a>
+      <a class="link-arrow" href="industries/index.html">View all industries</a>
     </div>
     <div class="ind-grid reveal">{cards}</div>
   </div>
@@ -1041,7 +1051,7 @@ def page_home():
         <p class="eyebrow">Businesses We've Served</p>
         <h2 class="h2">Selected Transactions</h2>
       </div>
-      <a class="link-arrow" href="transactions.html">View all transactions by sector</a>
+      <a class="link-arrow" href="transactions.html">View all transactions by industry</a>
     </div>
   </div>
   <div class="marquee reveal"><div class="marquee-track">{marquee_items}{marquee_items.replace('<a ', '<a aria-hidden="true" tabindex="-1" ')}</div></div>
@@ -1111,7 +1121,7 @@ def page_industries():
     <h2 class="h2">{e(s['name'])}</h2>
     <p class="lead">{e(s['tagline'])}</p>
     <p>{e(s['overview'][0])}</p>
-    <h3 class="h3">Segments</h3>
+    <h3 class="h3">Sectors</h3>
     <ul class="seg-links">{segs}</ul>
     <div class="btn-row"><a class="btn" href="{s['slug']}.html">Explore {e(s['name'])}</a><a class="btn btn--ghost" href="{root}transactions.html#{s['slug']}">{len(deals)} Selected Transactions</a></div>
   </div>
@@ -1120,29 +1130,29 @@ def page_industries():
     <div class="ind-row-deals tomb-grid tomb-grid--compact">{minis}</div>
   </div>
 </article>"""
-    html = head("Sectors | Middle Market | Benchmark International",
-                "Benchmark International's Middle Market team focuses on five sectors: Industrial, Business Services, Consumer, Healthcare and Technology.", root)
+    html = head("Industries | Middle Market | Benchmark International",
+                "Benchmark International's Middle Market team focuses on five industries: Industrial, Business Services, Consumer, Healthcare and Technology.", root)
     html += header(root, "industries")
     html += f"""
 <section class="hero hero--page">
   <div class="wrap">
-    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Sectors</div>
-    <p class="eyebrow">Sector Expertise</p>
-    <h1 class="display">Five Sectors. Deep Expertise.</h1>
-    <p class="lead">We focus on five sectors where we have deep transaction experience and long relationships with the most active strategic and financial buyers. Sector focus means we know what drives value, who is buying and how to run a process that gets you the best outcome.</p>
-    <nav class="jump" aria-label="Sectors">{''.join(f'<a href="#{s["slug"]}">{e(s["name"])}</a>' for s in SECTORS)}</nav>
+    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Industries</div>
+    <p class="eyebrow">Industry Expertise</p>
+    <h1 class="display">Five Industries. Deep Expertise.</h1>
+    <p class="lead">We focus on five industries where we have deep transaction experience and long relationships with the most active strategic and financial buyers. Industry focus means we know what drives value, who is buying and how to run a process that gets you the best outcome.</p>
+    <nav class="jump" aria-label="Industries">{''.join(f'<a href="#{s["slug"]}">{e(s["name"])}</a>' for s in SECTORS)}</nav>
   </div>
 </section>
 
 <section class="section--dark section--tight">
   <div class="wrap">
     <div class="stats">
-      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused sectors</div></div>
-      <div class="stat"><div class="stat-num">{total}+</div><div class="stat-label">Completed transactions across these sectors<sup>†</sup></div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused industries</div></div>
+      <div class="stat"><div class="stat-num">{total}+</div><div class="stat-label">Completed transactions across these industries<sup>†</sup></div></div>
       <div class="stat"><div class="stat-num">{len(TOMBSTONES)}</div><div class="stat-label">Selected transactions featured on this site</div></div>
       <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Privately owned sell-side M&amp;A advisor worldwide<sup>*</sup></div></div>
     </div>
-    <p class="note">† Completed transactions tagged to these sectors on benchmarkintl.com/about/our-success, as of {AS_OF}. * PitchBook Q2 2026 Global League Tables.</p>
+    <p class="note">† Completed transactions tagged to these industries on benchmarkintl.com/about/our-success, as of {AS_OF}. * PitchBook Q2 2026 Global League Tables.</p>
   </div>
 </section>
 
@@ -1152,9 +1162,9 @@ def page_industries():
 """
     html += cta(root)
     html += footer(root)
-    items = {"@type": "ItemList", "name": "Middle Market sectors", "itemListElement": [
-        {"@type": "ListItem", "position": k + 1, "name": x["name"], "url": abs_url(f"sectors/{x['slug']}.html")} for k, x in enumerate(SECTORS)]}
-    write("sectors/index.html", html, crumbs=[("Middle Market", ""), ("Sectors", "sectors/index.html")], schema=[items])
+    items = {"@type": "ItemList", "name": "Middle Market industries", "itemListElement": [
+        {"@type": "ListItem", "position": k + 1, "name": x["name"], "url": abs_url(f"industries/{x['slug']}.html")} for k, x in enumerate(SECTORS)]}
+    write("industries/index.html", html, crumbs=[("Middle Market", ""), ("Industries", "industries/index.html")], schema=[items])
 
 
 def page_sector(i, s):
@@ -1163,7 +1173,7 @@ def page_sector(i, s):
     deals.sort(key=lambda t: (bool(t.get("cross")), not t.get("featured"), not t.get("desc"), -int(t.get("year") or 0)))
     tombs = "".join(tombstone(t, root) for t in deals)
     seg_counts = {seg[0]: sum(1 for t in deals if t.get("segment") == seg[0]) for seg in s["segments"]}
-    chips = '<button class="chip" data-filter="all" aria-pressed="true">All Segments</button>' + "".join(
+    chips = '<button class="chip" data-filter="all" aria-pressed="true">All Sectors</button>' + "".join(
         f'<button class="chip" data-filter="{e(seg[0])}" aria-pressed="false">{e(seg[0])} <span>{seg_counts[seg[0]]}</span></button>'
         for seg in s["segments"])
     segments = "".join(f"""<article class="segment reveal" id="seg-{k + 1}">
@@ -1205,7 +1215,7 @@ def page_sector(i, s):
 </section>"""
     prev_s = SECTORS[i - 1]
     next_s = SECTORS[(i + 1) % len(SECTORS)]
-    team_cards = team_html(root, lead_only=True)
+    team_cards = team_section(root)
     cur = ' aria-current="page"'
     tabs = "".join(f'<a href="{x["slug"]}.html"{cur if x is s else ""}>{e(x["name"])}</a>' for x in SECTORS)
 
@@ -1216,19 +1226,19 @@ def page_sector(i, s):
     html += f"""
 {photo_hero(s['slug'], root)}
   <div class="wrap">
-    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="index.html">Sectors</a> / {e(s['name'])}</div>
+    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="index.html">Industries</a> / {e(s['name'])}</div>
     <h1 class="display">{e(s['name'])}</h1>
     <p class="lead">{e(s['tagline'])}</p>
     <div class="btn-row"><a class="btn" href="#deals">Selected Transactions</a><a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a>{report_btn}</div>
   </div>
 </section>
-<nav class="sector-tabs" aria-label="Sectors"><div class="wrap">{tabs}</div></nav>
+<nav class="sector-tabs" aria-label="Industries"><div class="wrap">{tabs}</div></nav>
 
 <section class="section--dark section--tight">
   <div class="wrap">
     <div class="stats">
       <div class="stat"><div class="stat-num">{s['count']}+</div><div class="stat-label">Completed transactions<sup>†</sup></div></div>
-      <div class="stat"><div class="stat-num">{len(s['segments'])}</div><div class="stat-label">Focus segments</div></div>
+      <div class="stat"><div class="stat-num">{len(s['segments'])}</div><div class="stat-label">Sectors</div></div>
       <div class="stat"><div class="stat-num">{len(deals)}</div><div class="stat-label">Selected transactions below</div></div>
       <div class="stat"><div class="stat-num">{len(buyers)}</div><div class="stat-label">Distinct acquirers in those deals</div></div>
     </div>
@@ -1247,7 +1257,7 @@ def page_sector(i, s):
     </div>
     <aside class="glance reveal">
       <p class="eyebrow">At a Glance</p>
-      <h3>Segments We Cover</h3>
+      <h3>Sectors We Cover</h3>
       <ul>{glance}</ul>
       <a class="btn" href="#deals">View Transactions</a>
     </aside>
@@ -1261,7 +1271,7 @@ def page_sector(i, s):
     <div class="section-head reveal">
       <p class="eyebrow">Sector Coverage</p>
       <h2 class="h2">Where We Focus</h2>
-      <p class="lead">We advise companies across {number_word(len(s['segments']))} segments of {e(s['prose'])}, including the sub-sectors listed below.</p>
+      <p class="lead">We advise companies across {number_word(len(s['segments']))} sectors within {e(s['prose'])}, including the specialties listed below.</p>
     </div>
     <div class="segments">{segments}</div>
   </div>
@@ -1276,7 +1286,7 @@ def page_sector(i, s):
       </div>
       <a class="link-arrow" href="{root}transactions.html#{s['slug']}">All transactions</a>
     </div>
-    <div class="filter-bar" role="group" aria-label="Filter by segment">{chips}</div>
+    <div class="filter-bar" role="group" aria-label="Filter by sector">{chips}</div>
     <p class="result-count" aria-live="polite"></p>
     <div class="tomb-grid tomb-grid--detail" data-tomb-filter data-filter-key="segment" data-limit="12">{tombs}</div>
     <div class="center"><button class="btn btn--ghost show-more" hidden>Show All Transactions</button></div>
@@ -1324,18 +1334,12 @@ def page_sector(i, s):
 {feature}
 
 {{SECTOR_FAQ}}
-<section class="section">
-  <div class="wrap">
-    <div class="section-head center reveal"><p class="eyebrow">Your Deal Team</p><h2 class="h2">Leadership Team</h2></div>
-    {team_cards}
-    <div class="center" style="margin-top:36px"><a class="link-arrow" href="{root}index.html#team">Meet the full team</a></div>
-  </div>
-</section>
+{team_cards}
 
 <section class="section section--tight section--paper">
   <div class="wrap sector-nav">
-    <a href="{prev_s['slug']}.html"><small>← Previous sector</small><strong>{e(prev_s['name'])}</strong></a>
-    <a href="{next_s['slug']}.html" style="text-align:right"><small>Next sector →</small><strong>{e(next_s['name'])}</strong></a>
+    <a href="{prev_s['slug']}.html"><small>← Previous industry</small><strong>{e(prev_s['name'])}</strong></a>
+    <a href="{next_s['slug']}.html" style="text-align:right"><small>Next industry →</small><strong>{e(next_s['name'])}</strong></a>
   </div>
 </section>
 """
@@ -1346,33 +1350,34 @@ def page_sector(i, s):
     service = {"@type": "Service", "name": f"{s['name']} M&A advisory", "serviceType": "Sell-side M&A advisory",
                "provider": {"@id": SITE_URL + "#org"}, "areaServed": {"@type": "Country", "name": "United States"},
                "description": s["tagline"]}
-    write(f"sectors/{s['slug']}.html", html,
-          crumbs=[("Middle Market", ""), ("Sectors", "sectors/index.html"), (s["name"], f"sectors/{s['slug']}.html")],
+    write(f"industries/{s['slug']}.html", html,
+          crumbs=[("Middle Market", ""), ("Industries", "industries/index.html"), (s["name"], f"industries/{s['slug']}.html")],
           schema=[faq_schema(faqs), service], image=f"assets/img/social/{s['slug']}.jpg")
 
 
-def page_legacy(old, new):
-    """Redirect stub at industries/<old>.html (the sector pages' old folder) to sectors/<new>.html."""
+def page_legacy(old, new, folder="industries"):
+    """Redirect stub at <folder>/<old>.html to the industry page industries/<new>.html (or the industries index)."""
     target = "index" if new == "index" else new
-    label = "Sectors" if new == "index" else SECTOR_BY_SLUG[new]["name"]
-    write(f"industries/{old}.html", index=False, html=f"""<!DOCTYPE html>
+    label = "Industries" if new == "index" else SECTOR_BY_SLUG[new]["name"]
+    back = "" if folder == "industries" else "../industries/"
+    write(f"{folder}/{old}.html", index=False, html=f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><title>Redirecting…</title>
 <meta name="robots" content="noindex">
-<link rel="canonical" href="{abs_url(f'sectors/{target}.html')}">
-<meta http-equiv="refresh" content="0; url=../sectors/{target}.html">
-</head><body><p>This page has moved to <a href="../sectors/{target}.html">{e(label)}</a>.</p></body></html>
+<link rel="canonical" href="{abs_url(f'industries/{target}.html')}">
+<meta http-equiv="refresh" content="0; url={back}{target}.html">
+</head><body><p>This page has moved to <a href="{back}{target}.html">{e(label)}</a>.</p></body></html>
 """)
 
 
 def page_transactions():
     root = ""
-    chips = '<button class="chip" data-filter="all" aria-pressed="true">All Sectors</button>' + "".join(
+    chips = '<button class="chip" data-filter="all" aria-pressed="true">All Industries</button>' + "".join(
         f'<button class="chip" data-filter="{s["slug"]}" aria-pressed="false">{e(s["name"])} <span>{len(deals_in(s["slug"]))}</span></button>' for s in SECTORS)
     order = {s["slug"]: k for k, s in enumerate(SECTORS)}
     items = sorted(TOMBSTONES, key=lambda t: (order[t["sector"]], not t.get("featured"), -int(t.get("year") or 0)))
     tombs = "".join(tombstone(t, root, show_sector=True) for t in items)
     html = head("Transactions | Middle Market | Benchmark International",
-                "Selected completed transactions advised by Benchmark International in the industrial, business services, consumer, healthcare and technology sectors.", root)
+                "Selected completed transactions advised by Benchmark International in the industrial, business services, consumer, healthcare and technology industries.", root)
     html += header(root, "transactions")
     html += f"""
 <section class="hero hero--page hero--photo"><div class="hero-media" aria-hidden="true"><img src="assets/img/site/transactions-hero.jpg" alt="" width="1920" height="1000" fetchpriority="high"></div>
@@ -1380,14 +1385,14 @@ def page_transactions():
     <div class="crumbs"><a href="index.html">Middle Market</a> / Transactions</div>
     <p class="eyebrow">Our Success</p>
     <h1 class="display">Selected Transactions</h1>
-    <p class="lead">A curated selection of completed transactions across our five sectors. Tombstones marked <strong style="color:var(--gold)">Featured</strong> are signature Middle Market transactions.</p>
+    <p class="lead">A curated selection of completed transactions across our five industries. Tombstones marked <strong style="color:var(--gold)">Featured</strong> are signature Middle Market transactions.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <div class="filter-bar" role="group" aria-label="Filter by sector">{chips}</div>
-    <input class="search" type="search" placeholder="Search by company, acquirer or segment" aria-label="Search transactions">
+    <div class="filter-bar" role="group" aria-label="Filter by industry">{chips}</div>
+    <input class="search" type="search" placeholder="Search by company, acquirer or sector" aria-label="Search transactions">
     <p class="result-count" aria-live="polite"></p>
     <div class="tomb-grid tomb-grid--detail" data-tomb-filter data-filter-key="sector">{tombs}</div>
     <p class="note">Source: Benchmark International transaction announcements and benchmarkintl.com/about/our-success, as of {AS_OF}. Selected transactions shown.</p>
@@ -1409,7 +1414,7 @@ def insight_card(i, root, current):
     <span class="insight-cover-sector">{e(sec['name'])}</span>
   </a>
   <div class="insight-body">
-    <p class="insight-meta"><span>Sector Report</span><span aria-hidden="true">·</span><span>{e(sec['name'])}</span>{badge}</p>
+    <p class="insight-meta"><span>Industry Report</span><span aria-hidden="true">·</span><span>{e(sec['name'])}</span>{badge}</p>
     <h3><a href="{root}{i['url']}">{e(i['title'])}</a></h3>
     <p class="insight-summary">{e(i['summary'])}</p>
     <div class="insight-actions">
@@ -1426,7 +1431,7 @@ def page_insights():
     current = [current_report(s["slug"]) for s in SECTORS if current_report(s["slug"])]
     archive = sorted([i for i in INSIGHTS if i not in current],
                      key=lambda i: (-i["year"], -i["quarter"], order[i["sector"]]))
-    chips = '<button class="chip" data-filter="all" aria-pressed="true">All Sectors</button>' + "".join(
+    chips = '<button class="chip" data-filter="all" aria-pressed="true">All Industries</button>' + "".join(
         f'<button class="chip" data-filter="{s["slug"]}" aria-pressed="false">{e(s["name"])}</button>' for s in SECTORS)
     cards = "".join(insight_card(i, root, True) for i in current)
     if archive:
@@ -1441,7 +1446,7 @@ def page_insights():
         archive_html = '<p class="archive-empty">Earlier editions will be archived here as each new quarterly report is published.</p>'
     latest = max(current, key=lambda i: (i["year"], i["quarter"]))["period"] if current else ""
     html = head("Insights | Middle Market | Benchmark International",
-                "Quarterly M&A sector reports from Benchmark International's Middle Market team covering the industrial, business services, consumer, healthcare and technology sectors.", root)
+                "Quarterly M&A industry reports from Benchmark International's Middle Market team covering the industrial, business services, consumer, healthcare and technology industries.", root)
     html += header(root, "insights")
     html += f"""
 <section class="hero hero--page">
@@ -1449,7 +1454,7 @@ def page_insights():
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Insights</div>
     <p class="eyebrow">Insights</p>
     <h1 class="display">Perspective on the Middle Market</h1>
-    <p class="lead">Quarterly sector reports from the Middle Market team on deal activity, valuations and what buyers are paying for across our five sectors.</p>
+    <p class="lead">Quarterly industry reports from the Middle Market team on deal activity, valuations and what buyers are paying for across our five industries.</p>
   </div>
 </section>
 
@@ -1458,10 +1463,10 @@ def page_insights():
     <div class="section-head section-head--split reveal">
       <div>
         <p class="eyebrow">Current Reports</p>
-        <h2 class="h2">{e(latest)} Sector Reports</h2>
+        <h2 class="h2">{e(latest)} Industry Reports</h2>
       </div>
     </div>
-    <div class="filter-bar" role="group" aria-label="Filter by sector">{chips}</div>
+    <div class="filter-bar" role="group" aria-label="Filter by industry">{chips}</div>
     <div data-tomb-filter data-filter-key="sector">
       <div class="insight-grid">{cards}</div>
       <div class="archive reveal">
@@ -1474,7 +1479,7 @@ def page_insights():
 """
     html += cta(root, "Want to Talk Through What This Means for Your Business?")
     html += footer(root)
-    reports = {"@type": "ItemList", "name": "Middle Market sector reports", "itemListElement": [
+    reports = {"@type": "ItemList", "name": "Middle Market industry reports", "itemListElement": [
         {"@type": "ListItem", "position": k + 1, "name": i["title"], "url": abs_url(i["url"])} for k, i in enumerate(INSIGHTS)]}
     write("insights/index.html", html, crumbs=[("Middle Market", ""), ("Insights", "insights/index.html")], schema=[reports])
 
@@ -1482,7 +1487,7 @@ def page_insights():
 def page_disclosures():
     root = ""
     html = head("Important Disclosures | Middle Market | Benchmark International",
-                "Important disclosures for Benchmark International's Middle Market sector reports and website.", root)
+                "Important disclosures for Benchmark International's Middle Market industry reports and website.", root)
     html += header(root)
     paras = "".join(f"<p>{e(p)}</p>" for p in DISCLOSURES)
     html += f"""
@@ -1491,7 +1496,7 @@ def page_disclosures():
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Important Disclosures</div>
     <p class="eyebrow">Legal</p>
     <h1 class="display">Important Disclosures</h1>
-    <p class="lead">These disclosures apply to the Middle Market sector reports and to the content of this website.</p>
+    <p class="lead">These disclosures apply to the Middle Market industry reports and to the content of this website.</p>
   </div>
 </section>
 
@@ -1516,20 +1521,20 @@ def page_about():
         ("Who we are", "The Middle Market team of Benchmark International, serving owners of companies with $50M–$500M in total enterprise value (TEV)."),
         ("What we do", "Represent privately held companies across the United States in sell-side M&A, recapitalizations and growth partnerships."),
         ("Company size served", "$50 million to $500 million in total enterprise value (TEV)."),
-        ("Sectors", ", ".join(x["name"] for x in SECTORS) + "."),
+        ("Industries", ", ".join(x["name"] for x in SECTORS) + "."),
         ("Services", ", ".join(n for n, _ in SERVICES) + "."),
         ("Firm", "Benchmark International is the #1 privately owned sell-side M&A advisor worldwide (PitchBook Q2 2026 Global League Tables), with 15 offices across the Americas, Europe and Africa."),
         ("Leadership", lead + "."),
         ("Deal team", support + "."),
-        ("Research", "Quarterly M&A sector reports for each sector, published on the Insights page."),
+        ("Research", "Quarterly M&A industry reports for each industry, published on the Insights page."),
         ("Contact", f"{PHONE} | {EMAIL}"),
     ]
     rows = "".join(f"<tr><th scope=\"row\">{e(k)}</th><td>{e(v)}</td></tr>" for k, v in facts)
-    sector_links = "".join(f'<li><a href="sectors/{x["slug"]}.html">{e(x["name"])}</a>: {e(x["short"])}</li>' for x in SECTORS)
+    sector_links = "".join(f'<li><a href="industries/{x["slug"]}.html">{e(x["name"])}</a>: {e(x["short"])}</li>' for x in SECTORS)
     report_links = "".join(f'<li><a href="{i["url"]}">{e(i["title"])}</a></li>' for i in INSIGHTS)
     faqs = home_faqs()
     html = head("About | Middle Market | Benchmark International",
-                "Facts about Benchmark International's Middle Market team: who we serve, the $50M–$500M total enterprise value (TEV) range, five sectors, services, team and contact details.", root)
+                "Facts about Benchmark International's Middle Market team: who we serve, the $50M–$500M total enterprise value (TEV) range, five industries, services, team and contact details.", root)
     html += header(root)
     html += f"""
 <section class="hero hero--page">
@@ -1545,9 +1550,9 @@ def page_about():
   <div class="wrap about-wrap">
     <h2 class="h2">Key Facts</h2>
     <table class="facts">{rows}</table>
-    <h2 class="h2">Sectors We Cover</h2>
+    <h2 class="h2">Industries We Cover</h2>
     <ul class="about-list">{sector_links}</ul>
-    <h2 class="h2">Current Sector Reports</h2>
+    <h2 class="h2">Current Industry Reports</h2>
     <ul class="about-list">{report_links}</ul>
     <p class="note">Information as of {AS_OF}. See the <a href="disclosures.html">Important Disclosures</a>.</p>
   </div>
@@ -1562,14 +1567,14 @@ def page_about():
 def write_discovery_files():
     """sitemap.xml, robots.txt and llms.txt for search engines and AI assistants (absolute URLs from SITE_URL)."""
     pages = list(dict.fromkeys(SITEMAP + [i["url"] for i in INSIGHTS]))
-    prio = lambda r: "1.0" if r == "index.html" else "0.8" if r.startswith(("sectors/", "insights/")) or r == "about.html" else "0.6"
+    prio = lambda r: "1.0" if r == "index.html" else "0.8" if r.startswith(("industries/", "insights/")) or r == "about.html" else "0.6"
     urls = "".join(f"  <url><loc>{abs_url(r)}</loc><lastmod>{SITE_UPDATED}</lastmod><priority>{prio(r)}</priority></url>\n" for r in pages)
     sitemap = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n'
     robots = ("# Search engines and AI assistants are welcome to read and cite this site.\n"
               "User-agent: *\nAllow: /\nDisallow: " + urlparse(SITE_URL).path + "_build/\n\n"
               + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "PerplexityBot", "Google-Extended", "Applebot-Extended", "Bingbot"))
               + f"Sitemap: {SITE_URL}sitemap.xml\n")
-    sec = "\n".join(f"- [{x['name']}]({abs_url('sectors/' + x['slug'] + '.html')}): {x['short']}" for x in SECTORS)
+    sec = "\n".join(f"- [{x['name']}]({abs_url('industries/' + x['slug'] + '.html')}): {x['short']}" for x in SECTORS)
     def md_link(i):
         md = i['url'][:-5] + '.md'
         return f", [Markdown]({abs_url(md)})" if os.path.exists(os.path.join(SITE, md)) else ""
@@ -1584,15 +1589,15 @@ Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark Int
 ## Key pages
 - [Home]({SITE_URL}): overview, team, client stories and contact form
 - [About]({abs_url('about.html')}): key facts about the Middle Market team
-- [Sectors]({abs_url('sectors/index.html')}): the five sectors
+- [Industries]({abs_url('industries/index.html')}): the five industries
 - [Transactions]({abs_url('transactions.html')}): selected completed transactions
-- [Insights]({abs_url('insights/index.html')}): quarterly M&A sector reports
+- [Insights]({abs_url('insights/index.html')}): quarterly M&A industry reports
 - [Important Disclosures]({abs_url('disclosures.html')})
 
-## Sectors
+## Industries
 {sec}
 
-## Sector reports
+## Industry reports
 {rep}
 
 ## Common questions
@@ -1616,8 +1621,8 @@ def page_report_redirects():
 <meta http-equiv="refresh" content="0; url={target}">
 </head><body><p>This report has moved to <a href="{target}">{e(i['title'])}</a>.</p></body></html>
 """)
-        # Reports were published as insights/<sector>-industry-report-...; they are now -sector-report-.
-        old = i["slug"].replace("-sector-report-", "-industry-report-")
+        # Reports were also published as insights/<industry>-sector-report-...; that address redirects here.
+        old = i["slug"].replace("-industry-report-", "-sector-report-")
         if old != i["slug"]:
             write(f"insights/{old}.html", index=False, html=f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><title>Redirecting…</title>
@@ -1635,10 +1640,10 @@ if __name__ == "__main__":
         page_sector(i, s)
     for old, new in LEGACY.items():
         page_legacy(old, new)
-    # Sector pages moved from industries/ to sectors/; keep the old addresses working.
-    page_legacy("index", "index")
+    # The industry pages were for a time published under sectors/; keep those addresses working.
+    page_legacy("index", "index", "sectors")
     for s in SECTORS:
-        page_legacy(s["slug"], s["slug"])
+        page_legacy(s["slug"], s["slug"], "sectors")
     page_transactions()
     page_insights()
     page_report_redirects()

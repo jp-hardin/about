@@ -1,11 +1,11 @@
-# Technology Q4 2026 M&A Sector Report
+# Technology Q4 2026 M&A Industry Report
 
 Benchmark International's Middle Market team. October 2026 | Jared Hardin, Managing Director.
 
 Data center demand is filling order books, consolidators keep paying for recurring revenue, and government contractors are working through a slower award calendar.
 
-Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-sector-report-q4-2026.html  
-PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-sector-report-q4-2026.pdf
+Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.html  
+PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.pdf
 
 ## 2. Insights
 
@@ -29,7 +29,7 @@ North American electronics manufacturing services bookings rose 53.5% in August,
 
 ## 3. Key Trends in Technology
 
-Six developments are shaping demand, pricing and deal activity across the six focus areas as the fourth quarter begins.
+Six developments are shaping demand, pricing and deal activity across the six sectors as the fourth quarter begins.
 
 - AI infrastructure sets the pace of demand +62.5%
 
@@ -75,25 +75,25 @@ The fiscal 2027 budget requests $75.7 billion for civilian agency IT against $67
 
 *Recompete dates and set-aside status deserve attention before a sale process.*
 
-**WHAT IT MEANS FOR OWNERS**
+WHAT IT MEANSFOR OWNERS
 
 Buyers pay most readily for contracted, recurring revenue and for capability that customers or regulators require. Completed middle-market transactions averaged 7.0x EBITDA in the second quarter ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)), and 87% of sales above $5 million drew three or more offers ([IBBA and M&A Source](https://www.webull.com/news/15462423712777216)).
 
 Figures are the latest published as of October 5, 2026 and each is linked to its source. EMS is electronics manufacturing services. CMMC is the Cybersecurity Maturity Model Certification for defense suppliers.
 
-## 4. Perspectives on Six Focus Areas
+## 4. Perspectives on Six Sectors
 
-Each focus area has its own buyers and drivers, and the listed companies shown are the reference set used for valuation later in this brief.
+Each sector has its own buyers and drivers, and the listed companies shown are the reference set used for valuation later in this brief.
 
-**MANAGED IT & CLOUD SERVICES**
+MANAGED IT & CLOUD SERVICES
 
 *Consolidators are buying recurring revenue and the strongest providers are earning record margins.*
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 Evergreen Services Group, The 20 MSP, Integris, Thrive, CompassMSP and Magna5; ePlus and Cognizant among public buyers
 
-**LISTED REFERENCE COMPANIES**
+LISTED REFERENCE COMPANIES
 
 CDW
 
@@ -111,15 +111,15 @@ Cognizant
 
 EPAM Systems
 
-**CYBERSECURITY**
+CYBERSECURITY
 
 *Losses and staffing shortages are moving security budgets to outside providers.*
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 LevelBlue, CyberMaxx, A-LIGN and Accenture in services; Palo Alto Networks, Google and ServiceNow in software
 
-**LISTED REFERENCE COMPANIES**
+LISTED REFERENCE COMPANIES
 
 CrowdStrike
 
@@ -137,15 +137,15 @@ Qualys
 
 Check Point
 
-**TELECOM & UCAAS**
+TELECOM & UCAAS
 
 *Infrastructure investors are buying fiber while cloud voice grows about 5% a year.*
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 Verizon, AT&T and T-Mobile with KKR and EQT in fiber; Point Broadband, Ezee Fiber, Vero Fiber, Rightfiber and TDS Telecom regionally
 
-**LISTED REFERENCE COMPANIES**
+LISTED REFERENCE COMPANIES
 
 RingCentral
 
@@ -163,15 +163,15 @@ Shenandoah Telecommunications
 
 Telephone and Data Systems
 
-**SYSTEMS INTEGRATION**
+SYSTEMS INTEGRATION
 
 *Data center construction and security upgrades are filling integrator backlogs.*
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 Pavion, Convergint, Everon, Securitas Technology and Knox Lane in security; 26North in audiovisual; Myriad360 and Net at Work in IT
 
-**LISTED REFERENCE COMPANIES**
+LISTED REFERENCE COMPANIES
 
 Wesco
 
@@ -191,15 +191,15 @@ Bechtle
 
 ADT
 
-**ELECTRONICS & HARDWARE**
+ELECTRONICS & HARDWARE
 
 *Order books are filling faster than factories can ship.*
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 Jabil, Sanmina and Flex among public manufacturers; Transom Capital, Tide Rock, Align Capital Partners and Arcline among sponsors
 
-**LISTED REFERENCE COMPANIES**
+LISTED REFERENCE COMPANIES
 
 Jabil
 
@@ -219,15 +219,15 @@ TTM Technologies
 
 Keysight
 
-**GOVERNMENT TECHNOLOGY**
+GOVERNMENT TECHNOLOGY
 
 *Budgets for cyber, AI and mission software are rising while award timing and procurement rules shift.*
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 Leidos, Booz Allen, Parsons and SAIC; sponsor-backed ERT, Xpect Solutions, B&A and Detroit Defense
 
-**LISTED REFERENCE COMPANIES**
+LISTED REFERENCE COMPANIES
 
 Booz Allen Hamilton
 
@@ -267,7 +267,7 @@ John-David Lovelock, Distinguished VP Analyst, Gartner
 
 [READ HERE](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion)
 
-**GLOBAL ELECTRONICS ASSOCIATION**
+GLOBAL ELECTRONICS ASSOCIATION
 
 October 1, 2026
 
@@ -295,7 +295,7 @@ Jessica Davis, Principal Analyst, Omdia
 
 [READ HERE](https://www.channeldive.com/news/channel-acquistions-consolidation-managed-services-omdia/828297/)
 
-**DEPARTMENT OF WAR, CHIEF INFORMATION OFFICER**
+DEPARTMENT OF WAR, CHIEF INFORMATION OFFICER
 
 July 13, 2026
 
@@ -311,7 +311,7 @@ Department of War Chief Information Officer, CMMC program page
 
 Quotations are reproduced as published. ARR is annual recurring revenue. EMS is electronics manufacturing services. NIST 800-171 is the federal standard for protecting controlled unclassified information.
 
-## 6. Sector Activity
+## 6. Industry Activity
 
 -  Select recent M&A transactions
 
@@ -327,13 +327,10 @@ Public companies: valuation and operating metrics
 
 ## 7. Select Recent Technology M&A Transactions
 
-One transaction from each focus area, chosen from those announced or completed between June and September 2026.
+One transaction from each sector, chosen from those announced or completed between June and September 2026.
 
 - JUNE 2026 MANAGED IT & CLOUD SERVICES
-
-**ASTREYA**
-
-**ACQUIRED BY**
+ASTREYAACQUIRED BY
 
 Cognizant
 
@@ -346,10 +343,7 @@ Astreya provides managed IT services with about 2,600 employees. The purchase ad
 **WHAT IT SHOWS  **Large IT services firms are buying managed services scale and AI infrastructure skills.
 
 - JUNE 2026 CYBERSECURITY
-
-**DRAGOS**
-
-**ACQUIRED BY**
+DRAGOSACQUIRED BY
 
 Accenture
 
@@ -362,10 +356,7 @@ Accenture agreed to buy a majority of the industrial security firm Dragos and al
 **WHAT IT SHOWS  **Security for industrial and operational systems is drawing strategic prices.
 
 - SEPTEMBER 2026 TELECOM & UCAAS
-
-**GRANITE STATE COMMUNICATIONS**
-
-**ACQUIRED BY**
+GRANITE STATE COMMUNICATIONSACQUIRED BY
 
 Telephone and Data Systems
 
@@ -378,12 +369,7 @@ Granite State is a fiber and voice provider in New Hampshire with 11,000 service
 **WHAT IT SHOWS  **Local fiber operators have regional buyers as well as infrastructure funds.
 
 - SEPTEMBER 2026 SYSTEMS INTEGRATION
-
-**COMMUNICATION COMPANY**
-
-**ACQUIRED BY**
-
-**PAVION**
+COMMUNICATION COMPANYACQUIRED BYPAVION
 
 ### Pavion acquires Communication Company
 
@@ -392,10 +378,7 @@ Communication Company is a Midwest life safety, security, audiovisual and commun
 **WHAT IT SHOWS  **Sponsor-backed security and life safety platforms continue to add regional integrators.
 
 - AUGUST 2026 ELECTRONICS & HARDWARE
-
-**D-FEND SOLUTIONS**
-
-**ACQUIRED BY**
+D-FEND SOLUTIONSACQUIRED BY
 
 Motorola Solutions
 
@@ -403,15 +386,12 @@ Motorola Solutions
 
 ### Motorola Solutions buys D-Fend Solutions for $1.5 billion
 
-D-Fend makes counter-drone radio frequency technology. Defense and public safety electronics have drawn the highest prices in the focus area, after the same buyer paid $4.4 billion for Silvus Technologies in 2025 ([GovCon Wire](https://www.govconwire.com/articles/motorola-solutions-d-fend-counter-drone-acquisition)).
+D-Fend makes counter-drone radio frequency technology. Defense and public safety electronics have drawn the highest prices in the sector, after the same buyer paid $4.4 billion for Silvus Technologies in 2025 ([GovCon Wire](https://www.govconwire.com/articles/motorola-solutions-d-fend-counter-drone-acquisition)).
 
 **WHAT IT SHOWS  **Defense and public safety electronics command the highest disclosed prices in hardware.
 
 - AUGUST 2026 GOVERNMENT TECHNOLOGY
-
-**ULTRA I&C MISSION SOLUTIONS**
-
-**ACQUIRED BY**
+ULTRA I&C MISSION SOLUTIONSACQUIRED BY
 
 Booz Allen Hamilton
 
@@ -429,21 +409,9 @@ Transaction values are as reported by the linked source. Company names and marks
 
 Electronics and hardware leads with five closed transactions and systems integration follows with four, and most buyers were operating companies.
 
-**TRAILING 24 MONTHS**
+TRAILING 24 MONTHS
 
-**13**
-
-transactions closed in these six focus areas
-
-**38**
-
-further engagements in progress as of October 1, 2026, of which 19 are on the market
-
-**7 of 11**
-
-named sellers were bought by a company in their own or an adjacent field
-
-Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables ([Benchmark International](https://www.benchmarkintl.com/about/our-success/)).
+13transactions closed in these six sectors38further engagements in progress as of October 1, 2026, of which 19 are on the market7 of 11named sellers were bought by a company in their own or an adjacent field Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables (Benchmark International).
 
 MartianCraft
 
@@ -567,7 +535,7 @@ Electronics manufacturers re-rated from 12.1x to 21.8x EBITDA in a year, while I
 
 ### Share price change, past 52 weeks
 
-Median of the listed companies in each focus area
+Median of the listed companies in each sector
 
 Chart data:
 
@@ -597,23 +565,10 @@ Chart data:
 | Electronics & Hardware | 12x | 21.8x | 10x |
 | Government Technology | 13x | 10.4x | 13x |
 
-**PRIVATE-MARKET REFERENCE POINTS**
+PRIVATE-MARKET REFERENCE POINTS
 
-**12.5x**
-
-Median US buyout multiple of EBITDA in 2025 ([PitchBook](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf))
-
-**7.0x**
-
-Average for completed middle-market transactions in all industries, second quarter of 2026 ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective))
-
-**5.8x**
-
-Transactions of $5 million to $50 million in all industries, second quarter of 2026 ([IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf))
-
-*Listed multiples describe companies many times larger than a founder-owned business and show relative standing among the focus areas.*
-
-**LISTED COMPANIES IN EACH PEER GROUP**
+12.5xMedian US buyout multiple of EBITDA in 2025 (PitchBook)7.0xAverage for completed middle-market transactions in all industries, second quarter of 2026 (GF Data via ACG)5.8xTransactions of $5 million to $50 million in all industries, second quarter of 2026 (IBBA and M&A Source) Listed multiples describe companies many times larger than a founder-owned business and show relative standing among the sectors.
+LISTED COMPANIES IN EACH PEER GROUP
 
 **MANAGED IT & CLOUD**
 
@@ -733,7 +688,7 @@ Electronics manufacturers are growing about 20% a year, government contractors a
 
 ### Revenue growth, trailing twelve months
 
-Median by focus area
+Median by sector
 
 Chart data:
 
@@ -765,7 +720,7 @@ Chart data:
 
 ### EBITDA margin, trailing twelve months
 
-Median by focus area, on reported EBITDA
+Median by sector, on reported EBITDA
 
 Chart data:
 
@@ -780,7 +735,7 @@ Chart data:
 
 ### Free cash flow margin, trailing twelve months
 
-Median by focus area
+Median by sector
 
 Chart data:
 
@@ -793,7 +748,7 @@ Chart data:
 | Electronics & Hardware | 3.3% |
 | Government Technology | 10.1% |
 
-Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5, 6 and 14, 2026. Trailing periods end between June and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present, most visibly for security software. Medians cover all listed companies in each focus area.
+Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5, 6 and 14, 2026. Trailing periods end between June and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present, most visibly for security software. Medians cover all listed companies in each sector.
 
 ## 11. Earnings and Commentary
 
@@ -827,7 +782,7 @@ Chart data:
 
 Earnings releases: [Celestica](https://www.sec.gov/Archives/edgar/data/0001030894/000103089426000043/cls-20260630prcondensedfs.htm), [TD SYNNEX](https://www.sec.gov/Archives/edgar/data/0001177394/000162828026063314/ex991-fy26q3pressrelease.htm), [Palo Alto Networks](https://www.sec.gov/Archives/edgar/data/0001327567/000132756726000019/ex991q426earningsrelease.htm), [CrowdStrike](https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000029/crwd-20260826xex991.htm), [Fortinet](https://fortinet.gcs-web.com/static-files/e4ffcc79-194e-4ca3-9a69-8a51bd0a6314), [Flex](https://www.sec.gov/Archives/edgar/data/0000866374/000086637426000026/flexex991-6262026.htm), [CACI](https://www.sec.gov/Archives/edgar/data/0000016058/000162828026053448/fy26-q4caci20260805ex991.htm), [Insight Enterprises](https://www.businesswire.com/news/home/20260806171314/en/), [Wesco](https://www.sec.gov/Archives/edgar/data/0000929008/000092900826000021/wcc-2q2026earnings.htm), [CDW](https://www.sec.gov/Archives/edgar/data/0001402057/000140205726000062/cdw-2026630earningsrelease.htm), [Napco Security](https://www.sec.gov/Archives/edgar/data/0000069633/000110465926100077/nssc-20260820xex99d1.htm), [Tyler Technologies](https://s201.q4cdn.com/385562537/files/doc_financials/2026/q2/99-1-Earnings-Release-6-30-2026-FINAL.pdf), [Leidos](https://www.sec.gov/Archives/edgar/data/0001336920/000133692026000243/ldos070326q2pressreleaseex.htm), [Accenture](https://www.sec.gov/Archives/edgar/data/0001467373/000146737326000037/q4fy26earnings8-kexhibit.htm), [RingCentral](https://www.businesswire.com/news/home/20260723424331/en/), [Zoom](https://www.sec.gov/Archives/edgar/data/0001585521/000158552126000119/zm-20260731ex991.htm), [Booz Allen Hamilton](https://www.businesswire.com/news/home/20260724644070/en/Booz-Allen-Hamilton-Announces-First-Quarter-Fiscal-Year-2027-Results).
 
-**AI INFRASTRUCTURE DEMAND**
+AI INFRASTRUCTURE DEMAND
 
 CDW
 
@@ -847,11 +802,11 @@ Jabil
 
 > *“Our fiscal 2027 outlook reflects the strength of Jabil's diversified portfolio, with accelerating AI demand complemented by solid growth in automotive, healthcare, energy infrastructure, defense and aerospace, and warehouse and retail automation.”*
 
-**READ-THROUGH**
+READ-THROUGH
 
 Demand tied to data center build-outs runs through IT solutions, distribution and contract manufacturing alike.
 
-**SECURITY AND COMMUNICATIONS**
+SECURITY AND COMMUNICATIONS
 
 CrowdStrike
 
@@ -871,11 +826,11 @@ RingCentral
 
 > *“Customers using at least one paid AI product now represent approximately 13% of ARR, having doubled year-over-year.”*
 
-**READ-THROUGH**
+READ-THROUGH
 
 Security and communications vendors now tie their growth to how quickly customers adopt AI.
 
-**GOVERNMENT AND PUBLIC SECTOR**
+GOVERNMENT AND PUBLIC SECTOR
 
 Booz Allen Hamilton
 
@@ -895,7 +850,7 @@ Tyler Technologies
 
 > *“Public sector demand remains healthy, reflecting sustained modernization priorities for the public sector that translated into record SaaS and total bookings.”*
 
-**READ-THROUGH**
+READ-THROUGH
 
 Contractors describe a harder market even as bookings and backlog grow.
 
@@ -1225,11 +1180,10 @@ Each series is indexed to September 2021 and runs to its latest month: August 20
 
 ## 13. Select Market Participants
 
-The listed reference companies in each focus area, and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
+The listed reference companies in each sector, and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
 
-**MANAGED IT & CLOUD SERVICES**
-
-**LISTED COMPANIES**
+MANAGED IT & CLOUD SERVICES
+LISTED COMPANIES
 
 CDW
 
@@ -1265,7 +1219,7 @@ EPAM Systems
 
 EPAM Systems
 
-**CONSOLIDATORS**
+CONSOLIDATORS
 
 **Evergreen Services Group**
 
@@ -1281,9 +1235,8 @@ EPAM Systems
 
 **Park Place Technologies**
 
-**CYBERSECURITY**
-
-**LISTED COMPANIES**
+CYBERSECURITY
+LISTED COMPANIES
 
 CrowdStrike
 
@@ -1317,7 +1270,7 @@ Check Point
 
 Check Point
 
-**SERVICE PLATFORMS AND SOFTWARE BUYERS**
+SERVICE PLATFORMS AND SOFTWARE BUYERS
 
 - LevelBlue CyberMaxx
 
@@ -1327,11 +1280,8 @@ Check Point
 
 **Barracuda Networks**
 
-- Google ServiceNow
-
-**TELECOM & UCAAS**
-
-**LISTED COMPANIES**
+- Google ServiceNowTELECOM & UCAAS
+LISTED COMPANIES
 
 RingCentral
 
@@ -1367,7 +1317,7 @@ Telephone and Data Systems
 
 **TDS**
 
-**FIBER OPERATORS, INVESTORS AND CHANNEL**
+FIBER OPERATORS, INVESTORS AND CHANNEL
 
 - Verizon AT&T
 
@@ -1379,11 +1329,8 @@ Telephone and Data Systems
 
 - Ezee Fiber Vero Fiber
 
-- Rightfiber AppDirect
-
-**SYSTEMS INTEGRATION**
-
-**LISTED COMPANIES**
+- Rightfiber AppDirectSYSTEMS INTEGRATION
+LISTED COMPANIES
 
 Wesco
 
@@ -1421,7 +1368,7 @@ ADT
 
 **ADT**
 
-**SECURITY, AUDIOVISUAL AND IT PLATFORMS**
+SECURITY, AUDIOVISUAL AND IT PLATFORMS
 
 - Pavion Convergint
 
@@ -1441,9 +1388,8 @@ ADT
 
 **Net at Work**
 
-**ELECTRONICS & HARDWARE**
-
-**LISTED COMPANIES**
+ELECTRONICS & HARDWARE
+LISTED COMPANIES
 
 Jabil
 
@@ -1481,7 +1427,7 @@ Keysight
 
 Keysight
 
-**SPONSORS AND STRATEGIC BUYERS**
+SPONSORS AND STRATEGIC BUYERS
 
 **Transom Capital**
 
@@ -1495,11 +1441,8 @@ Keysight
 
 **Navitas Semiconductor**
 
-- Qualitel StenTech
-
-**GOVERNMENT TECHNOLOGY**
-
-**LISTED COMPANIES**
+- Qualitel StenTechGOVERNMENT TECHNOLOGY
+LISTED COMPANIES
 
 Booz Allen Hamilton
 
@@ -1529,7 +1472,7 @@ Tyler Technologies
 
 Tyler Technologies
 
-**SPONSOR-BACKED PLATFORMS**
+SPONSOR-BACKED PLATFORMS
 
 - ERT Xpect Solutions
 
@@ -1543,9 +1486,9 @@ Private participants are buyers in transactions announced between January 2025 a
 
 ## 17. Benchmark International
 
-The world's leading privately owned sell-side M&A advisor, with a Middle Market team focused on five sectors.
+The world's leading privately owned sell-side M&A advisor, with a Middle Market team focused on five industries.
 
-Benchmark International's Middle Market team advises owners of privately held companies on sales, recapitalizations and growth partnerships across five sectors.
+Benchmark International's Middle Market team advises owners of privately held companies on sales, recapitalizations and growth partnerships across five industries.
 
 - #1 $50M to $500M 5 15
 
@@ -1553,11 +1496,11 @@ Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Gl
 
 Total enterprise value range the Middle Market team serves
 
-Focused sector groups with dedicated sector expertise
+Focused industry groups with dedicated sector expertise
 
 Global offices across the Americas, Europe and Africa
 
-**RECOGNITION**
+RECOGNITION
 
 M&A Advisor Investment Banking Firm of the Year
 
@@ -1567,7 +1510,7 @@ LSEG League Table
 
 DealMakers Award
 
-**FIVE SECTORS**
+FIVE INDUSTRIES
 
 **INDUSTRIAL**
 
@@ -1605,47 +1548,47 @@ Benchmark International  |  4030 West Boy Scout Blvd., Suite 500, Tampa, FL 3360
 
 The sources linked on each page, listed by page with the link text used.
 
-**KEY TRENDS**
+KEY TRENDS
 
 [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion); [Synergy Research Group](https://www.srgresearch.com/articles/q2-cloud-market-passes-143-billion-highest-growth-rate-in-eight-years); [Omdia](https://omdia.tech.informa.com/om145542/global-msp-ma-1q26); [Federal Reserve](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm); [US Treasury](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610); [GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective); [Gartner](https://www.gartner.com/en/newsroom/press-releases/2025-07-29-gartner-forecasts-worldwide-end-user-spending-on-information-security-to-total-213-billion-us-dollars-in-2025); [FBI](https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf); [DoD CIO](https://dodcio.defense.gov/CMMC/About/); [Global Electronics Association](https://www.electronics.org/news-release/north-american-ems-orders-outpace-shipments-august-bookings-rise-535-year-over-year); [Wiley Rein](https://www.wiley.law/alert-New-Forced-Labor-Tariffs-Imposed-on-60-US-Trading-Partners); [FedScoop](https://fedscoop.com/radio/trump-admin-sets-75-7b-topline-civilian-it-budget-for-2027/); [SpacePolicyOnline](https://spacepolicyonline.com/news/house-clears-fy2027-cr-now-to-the-president/); [IBBA and M&A Source](https://www.webull.com/news/15462423712777216)
 
-**WHAT WE'RE READING**
+WHAT WE'RE READING
 
 [Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion); [Channel Dive](https://www.channeldive.com/news/channel-acquistions-consolidation-managed-services-omdia/828297/); [Global Electronics Association](https://www.electronics.org/news-release/north-american-ems-orders-outpace-shipments-august-bookings-rise-535-year-over-year); [Department of War, Chief Information Officer](https://dodcio.defense.gov/CMMC/About/); [McGuireWoods analysis](https://www.passwordprotectedlaw.com/2026/07/dow-suspends-cmmc-phase-ii-requirements-launches-60-day-review/)
 
-**RECENT TRANSACTIONS**
+RECENT TRANSACTIONS
 
 [Cognizant](https://news.cognizant.com/2026-06-22-Cognizant-Completes-Acquisition-of-Astreya,-Expanding-AI-Infrastructure-and-Managed-Services-Capabilities?asPDF=1); [Coverager](https://coverager.com/cognizant-to-acquire-astreya/); [SecurityWeek](https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-june-2026/); [Broadband Communities ISP roundup](https://bbcmag.com/september-2026-isp-roundup/); [Pavion](https://www.webull.com/news/15543005417877504); [GovCon Wire](https://www.govconwire.com/articles/motorola-solutions-d-fend-counter-drone-acquisition); [GovCon Wire](https://www.govconwire.com/articles/booz-allen-720m-ultra-ic-mission-solutions-close)
 
-**BENCHMARK INTERNATIONAL TRANSACTIONS**
+BENCHMARK INTERNATIONAL TRANSACTIONS
 
 [Benchmark International](https://www.benchmarkintl.com/about/our-success/)
 
-**PUBLIC COMPANIES: VALUATION**
+PUBLIC COMPANIES: VALUATION
 
 [PitchBook](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf); [GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective); [IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf); [StockAnalysis](https://stockanalysis.com/)
 
-**PUBLIC COMPANIES: OPERATING METRICS**
+PUBLIC COMPANIES: OPERATING METRICS
 
 [StockAnalysis](https://stockanalysis.com/)
 
-**EARNINGS AND COMMENTARY**
+EARNINGS AND COMMENTARY
 
 [Celestica](https://www.sec.gov/Archives/edgar/data/0001030894/000103089426000043/cls-20260630prcondensedfs.htm); [TD SYNNEX](https://www.sec.gov/Archives/edgar/data/0001177394/000162828026063314/ex991-fy26q3pressrelease.htm); [Palo Alto Networks](https://www.sec.gov/Archives/edgar/data/0001327567/000132756726000019/ex991q426earningsrelease.htm); [CrowdStrike](https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000029/crwd-20260826xex991.htm); [Fortinet](https://fortinet.gcs-web.com/static-files/e4ffcc79-194e-4ca3-9a69-8a51bd0a6314); [Flex](https://www.sec.gov/Archives/edgar/data/0000866374/000086637426000026/flexex991-6262026.htm); [CACI](https://www.sec.gov/Archives/edgar/data/0000016058/000162828026053448/fy26-q4caci20260805ex991.htm); [Insight Enterprises](https://www.businesswire.com/news/home/20260806171314/en/); [Wesco](https://www.sec.gov/Archives/edgar/data/0000929008/000092900826000021/wcc-2q2026earnings.htm); [CDW](https://www.sec.gov/Archives/edgar/data/0001402057/000140205726000062/cdw-2026630earningsrelease.htm); [Napco Security](https://www.sec.gov/Archives/edgar/data/0000069633/000110465926100077/nssc-20260820xex99d1.htm); [Tyler Technologies](https://s201.q4cdn.com/385562537/files/doc_financials/2026/q2/99-1-Earnings-Release-6-30-2026-FINAL.pdf); [Leidos](https://www.sec.gov/Archives/edgar/data/0001336920/000133692026000243/ldos070326q2pressreleaseex.htm); [Accenture](https://www.sec.gov/Archives/edgar/data/0001467373/000146737326000037/q4fy26earnings8-kexhibit.htm); [RingCentral](https://www.businesswire.com/news/home/20260723424331/en/); [Zoom](https://www.sec.gov/Archives/edgar/data/0001585521/000158552126000119/zm-20260731ex991.htm); [Booz Allen Hamilton](https://www.businesswire.com/news/home/20260724644070/en/Booz-Allen-Hamilton-Announces-First-Quarter-Fiscal-Year-2027-Results); [Jabil](https://www.sec.gov/Archives/edgar/data/0000898293/000162828026063890/jbl-20260930ex991.htm)
 
-**COST AND DEMAND INDICATORS**
+COST AND DEMAND INDICATORS
 
 [FRED series PCU33443344 (Bureau of Labor Statistics)](https://fred.stlouisfed.org/series/PCU33443344); [FRED series PCOPPUSDM (International Monetary Fund)](https://fred.stlouisfed.org/series/PCOPPUSDM); [FRED series PROFCONS (US Census Bureau)](https://fred.stlouisfed.org/series/PROFCONS); [FRED series CES6054150001 (Bureau of Labor Statistics)](https://fred.stlouisfed.org/series/CES6054150001); [Census Bureau construction spending release of October 1, 2026](https://www.census.gov/construction/c30/pdf/privsa.pdf)
 
-**CONNECT WITH US**
+CONNECT WITH US
 
-[Technology Q4 2026 sector report, Benchmark International Middle Market](https://jp-hardin.github.io/about/mid-market-practice/insights/technology-sector-report-q4-2026.html)
+[Technology Q4 2026 industry report, Benchmark International Middle Market](https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.html)
 
-**FIRM OVERVIEW**
+FIRM OVERVIEW
 
 [Benchmark International, Our Success](https://www.benchmarkintl.com/about/our-success/)
 
-**BENCHMARK INTERNATIONAL RECORDS**
+BENCHMARK INTERNATIONAL RECORDS
 
 Transaction records and the engagement portfolio as of October 1, 2026; announced transactions as published at [benchmarkintl.com/insights](https://www.benchmarkintl.com/insights/completed-transactions/), each linked from its tile
 

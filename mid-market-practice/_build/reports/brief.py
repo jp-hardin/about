@@ -1,4 +1,4 @@
-# Builds a sector report from its PowerPoint sector brief: the downloadable PDF and the site page come
+# Builds an industry report from its PowerPoint brief: the downloadable PDF and the site page come
 # from the same .pptx, so the two always match.
 #
 # Usage: python3 brief.py <report-folder>     e.g. python3 brief.py industrial-q4-2026
@@ -8,13 +8,13 @@
 # The sector and quarter come from the folder name.
 #
 # What it writes:
-#   insights/<sector>-sector-report-q<N>-<year>.pdf    the deck, converted by LibreOffice
-#   insights/<sector>-sector-report-q<N>-<year>.html   the site page: one report section per deck page, with the
+#   insights/<industry>-industry-report-q<N>-<year>.pdf    the deck, converted by LibreOffice
+#   insights/<industry>-industry-report-q<N>-<year>.html   the site page: one report section per deck page, with the
 #                                                      deck's words, links, tables and logos in the site's report
 #                                                      styles and its charts redrawn as SVG from the chart data
-#   insights/<sector>-sector-report-q<N>-<year>.md     the same content as Markdown, for AI tools (linked from the
+#   insights/<industry>-industry-report-q<N>-<year>.md     the same content as Markdown, for AI tools (linked from the
 #                                                      page and from llms.txt)
-#   assets/img/reports/<sector>-sector-report-q<N>-<year>/   logos and pictures used on the page
+#   assets/img/reports/<industry>-industry-report-q<N>-<year>/   logos and pictures used on the page
 #
 # Needs LibreOffice (soffice) with Impress, poppler-utils (pdffonts) and pip packages python-pptx, pypdf, Pillow.
 # The deck fonts (Calibri and Cambria stand-ins, Quicksand, Newsreader, Cinzel) are in brief-fonts/ and are
@@ -30,12 +30,13 @@ sys.path.insert(0, os.path.join(SITE, '_build'))
 sys.path.insert(0, HERE)
 import build as site  # noqa: E402
 from webdeck import WebDeck, plain  # noqa: E402
+from flow import flow  # noqa: E402
 
 FOLDER = os.path.join(HERE, sys.argv[1].strip('/'))
 SLUG = os.path.basename(FOLDER)                                   # industrial-q4-2026
 SECTOR = SLUG.rsplit('-', 2)[0]                                   # industrial
 QUARTER, YEAR = SLUG.rsplit('-', 2)[1:]                           # q4, 2026
-PUBLIC = f'{SECTOR}-sector-report-{QUARTER}-{YEAR}'
+PUBLIC = f'{SECTOR}-industry-report-{QUARTER}-{YEAR}'
 PERIOD = f'{QUARTER.upper()} {YEAR}'
 NAME = site.SECTOR_BY_SLUG[SECTOR]['name']
 CONF = json.load(open(os.path.join(FOLDER, 'brief.json'), encoding='utf-8'))
@@ -44,7 +45,7 @@ IMG_DIR = f'assets/img/reports/{PUBLIC}'
 # Corrections applied to a working copy of the deck before anything is built, so the deck itself stays as supplied.
 # Site style: no em dashes. Links to the old report addresses go straight to the current ones.
 TEXT_FIXES = [('” — ', '” '), (' — ', ', '), ('—', ', ')]
-LINK_FIXES = [('-industry-report-', '-sector-report-'), ('/mid-market-practice/industries/', '/mid-market-practice/sectors/')]
+LINK_FIXES = [('-sector-report-', '-industry-report-'), ('/mid-market-practice/sectors/', '/mid-market-practice/industries/')]
 
 esc = html.escape
 
@@ -108,7 +109,7 @@ def write_pdf(src):
     r = PdfReader(src)
     w = PdfWriter(clone_from=r)
     w.add_metadata({
-        '/Title': f'{NAME} {PERIOD} M&A Sector Report | Benchmark International',
+        '/Title': f'{NAME} {PERIOD} M&A Industry Report | Benchmark International',
         '/Author': 'Jared Hardin, Benchmark International',
         '/Subject': f'{NAME} mergers and acquisitions: deal activity, valuations and what buyers are paying for, {PERIOD}',
         '/Keywords': f'{NAME} M&A, {NAME} mergers and acquisitions, middle market, sell-side M&A, valuation multiples, {PERIOD}, Benchmark International',
@@ -237,7 +238,7 @@ def body_md(h):
 
 def to_markdown(pages, lead, byline, segs):
     url = site.abs_url(f'insights/{PUBLIC}.html')
-    out = [f'# {NAME} {PERIOD} M&A Sector Report', '', f"Benchmark International's Middle Market team. {byline}.", '',
+    out = [f'# {NAME} {PERIOD} M&A Industry Report', '', f"Benchmark International's Middle Market team. {byline}.", '',
            lead, '', f'Web version: {url}  ', f'PDF: {site.abs_url(f"insights/{PUBLIC}.pdf")}', '']
     if segs:
         out += ['Segments: ' + '; '.join(segs), '']
@@ -266,7 +267,7 @@ def build_page(prs):
             continue
         if after_skip and not pg['part']:
             pg['part_label'], after_skip = 'About This Report', False
-        pg['body'] = drop_team_cards(pg['body'])
+        pg['body'] = drop_team_cards(pg['body']) if pg['part'] else flow(drop_team_cards(pg['body']))
         web.append(pg)
     pages = web
     byline, segs, included = cover(prs)
@@ -324,21 +325,21 @@ def build_page(prs):
         band = (f'\n<section class="section--dark section--tight">\n  <div class="wrap">\n    {eyebrow}\n'
                 f'    <div class="stats rhero-stats">{stat_html}</div>\n  </div>\n</section>\n')
     seg_html = f'<p class="rsegs">{" &nbsp;·&nbsp; ".join(esc(x) for x in segs)}</p>' if segs else ''
-    desc = f"{NAME} {PERIOD} M&A sector report from Benchmark International's Middle Market team: {lead}"
-    page = site.head(f'{NAME} {PERIOD} M&A Sector Report', desc[:300], root).replace(
+    desc = f"{NAME} {PERIOD} M&A industry report from Benchmark International's Middle Market team: {lead}"
+    page = site.head(f'{NAME} {PERIOD} M&A Industry Report', desc[:300], root).replace(
         '</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n'
-                   f'<link rel="alternate" type="text/markdown" href="{md_name}" title="{esc(NAME)} {PERIOD} M&amp;A Sector Report (Markdown)">\n</head>')
+                   f'<link rel="alternate" type="text/markdown" href="{md_name}" title="{esc(NAME)} {PERIOD} M&amp;A Industry Report (Markdown)">\n</head>')
     page += site.header(root, 'industries')
     author = (f'<aside class="rauthor">\n      <img src="{root}assets/img/team/jared-hardin.jpg" alt="Jared Hardin" width="120" height="120" loading="lazy">\n'
-              f'      <div>\n        <p class="eyebrow">Considering a transaction in the {esc(NAME.lower())} sector?</p>\n        <h3>Jared Hardin</h3>\n'
+              f'      <div>\n        <p class="eyebrow">Considering a transaction in {esc(site.SECTOR_BY_SLUG[SECTOR]["prose"])}?</p>\n        <h3>Jared Hardin</h3>\n'
               f'        <p class="role">Managing Director, Benchmark International</p>\n'
               f'        <p><a href="tel:+18137716675">813-771-6675</a> &nbsp;|&nbsp; <a href="mailto:j.hardin@benchmarkintl.com">j.hardin@benchmarkintl.com</a></p>\n'
               f'        <div class="btn-row"><a class="btn" href="{root}index.html#form">Start the Conversation</a><a class="btn btn--ghost" href="{pdf}" download>{DL} Download the PDF</a></div>\n'
               f'      </div>\n    </aside>')
     page += (f'\n<section class="hero hero--page">\n  <div class="wrap">\n'
-             f'    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}sectors/index.html">Sectors</a> / '
-             f'<a href="{root}sectors/{SECTOR}.html">{esc(NAME)}</a> / {PERIOD} Sector Report</div>\n'
-             f'    <p class="eyebrow">Quarterly Sector Brief &nbsp;|&nbsp; {PERIOD}</p>\n'
+             f'    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}industries/index.html">Industries</a> / '
+             f'<a href="{root}industries/{SECTOR}.html">{esc(NAME)}</a> / {PERIOD} Industry Report</div>\n'
+             f'    <p class="eyebrow">Quarterly Industry Report &nbsp;|&nbsp; {PERIOD}</p>\n'
              f'    <h1 class="display">{esc(NAME)} <em>{PERIOD}</em></h1>\n'
              f'    <p class="lead">{esc(lead)}</p>\n    {seg_html}\n'
              f'    <p class="rbyline">{esc(norm(byline))}</p>\n'
@@ -347,6 +348,7 @@ def build_page(prs):
              f'{band}\n<div class="wrap rlayout">\n  <aside class="rtoc" aria-label="Report contents">\n    <p class="eyebrow">Contents</p>\n'
              f'    <ol>{"".join(toc)}</ol>\n    <a class="btn" href="{pdf}" download>{DL} Download the PDF</a>\n  </aside>\n'
              f'  <article class="report">\n{chr(10).join(secs)}\n    {author}\n  </article>\n</div>\n\n')
+    page += site.team_section(root) + '\n'
     page += site.cta(root)
     page += site.footer(root)
     extra = {

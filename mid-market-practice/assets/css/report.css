@@ -307,3 +307,26 @@
 .rtoc li.rtoc-part a { grid-template-columns: 0 1fr; margin-top: 8px; }
 .report .dchip a { color: inherit; text-decoration: none; }
 .report .dcard--dark .dcard:not(.dcard--dark) p, .report .dcard--dark .dcard:not(.dcard--dark) a { color: var(--ink); }
+/* Report flow: figure strips, notes and quotes in the original single-column style */
+.report .rstats-wrap { margin: 28px 0 30px; padding: 22px 0 4px; background: var(--ink); color: #f3eee8; }
+.report .rstats-wrap .rstats { margin: 0; background: none; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.report .rstats-wrap .rstat { padding: 14px 26px 18px; }
+.report .rstats-wrap .stat-num { color: var(--gold); }
+.report .rstats-wrap > p.rstats-head { margin: 0 26px 4px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+.report .rstats-wrap > p.rstats-note { margin: 4px 26px 18px; font-family: var(--font-serif); font-style: italic; line-height: 1.55; color: #f3eee8; }
+.report .rstats-wrap--light { background: var(--paper); color: var(--charcoal); border-top: 3px solid var(--gold); }
+.report .rstats-wrap--light .rstats { color: var(--charcoal); }
+.report .rstats-wrap--light .rstat + .rstat { border-left-color: var(--line); }
+.report .rstats-wrap--light .rstat-label { color: var(--charcoal); }
+.report .rquote + .rquote { margin-top: -30px; padding-top: 4px; }
+.report .rblock > .rh4, .report .rblock > .rnote .rh4 { margin: 28px 0 8px; }
+.report .rblock > .rh4 + .rh3 { margin-top: 2px; }
+.report .rblock > .rh4 + .rh4 { margin-top: 14px; }
+.report .rblock > .rh3 { margin: 30px 0 10px; }
+.report .rblock > .rsub { margin: 26px 0 0; padding: 22px 0 0; border-top: 1px solid var(--line); }
+.report .rblock > .rsub > .rh4:first-child { margin-top: 0; }
+.report .rstats-wrap > p.rstats-fine { margin: 2px 26px 16px; font-size: 0.78rem; color: var(--sand); }
+.report .rtable--flow td { vertical-align: top; }
+.report .rtable--flow td p { margin: 0 0 4px; }
+.report .rtable--flow td .dlabel { margin: 0 0 4px; font-size: 0.68rem; }
+.report .rtable--flow td .fine { font-size: 0.74rem; color: var(--muted); }

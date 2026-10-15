@@ -1,6 +1,6 @@
-# Business Services Q4 2026 sector report
+# Business Services Q4 2026 industry report
 
-The source is `brief.pptx`, the Business Services Q4 2026 Sector Brief deck. It is the authoritative document: the downloadable PDF and the site page are both built from it, so they always say the same thing.
+The source is `brief.pptx`, the Business Services Q4 2026 Industry Report deck. It is the authoritative document: the downloadable PDF and the site page are both built from it, so they always say the same thing.
 
 To change the report, edit the deck in PowerPoint, save it here as `brief.pptx` and rebuild:
 
@@ -10,10 +10,10 @@ sh build.sh
 
 This runs `../brief.py` (with `../webdeck.py` and `../deckhtml.py`), which writes:
 
-- `insights/business-services-sector-report-q4-2026.pdf`: the deck converted to PDF (the download).
-- `insights/business-services-sector-report-q4-2026.html`: the site page, in the site's report layout (side contents menu, numbered sections). Each deck page becomes one section with the same words, links, tables and logos; the deck's charts are redrawn as SVG from their data, each with its values as a table.
-- `insights/business-services-sector-report-q4-2026.md`: the same content as Markdown for AI tools, linked from the page and from `llms.txt`.
-- `assets/img/reports/business-services-sector-report-q4-2026/`: the logos and photos of people used on the page.
+- `insights/business-services-industry-report-q4-2026.pdf`: the deck converted to PDF (the download).
+- `insights/business-services-industry-report-q4-2026.html`: the site page, in the site's single-column report layout (side contents menu, numbered sections; `flow.py` sets each deck page as one reading column). Each deck page becomes one section with the same words, links, tables and logos; the deck's charts are redrawn as SVG from their data, each with its values as a table.
+- `insights/business-services-industry-report-q4-2026.md`: the same content as Markdown for AI tools, linked from the page and from `llms.txt`.
+- `assets/img/reports/business-services-industry-report-q4-2026/`: the logos and photos of people used on the page.
 
 `brief.json` holds the cover's summary sentence, which is the page lead and the summary on the Insights page. Copy it from the cover if the cover changes; the build checks that it matches.
 

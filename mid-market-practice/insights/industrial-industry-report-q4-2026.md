@@ -1,17 +1,17 @@
-# Industrial Q4 2026 M&A Sector Report
+# Industrial Q4 2026 M&A Industry Report
 
 Benchmark International's Middle Market team. October 2026 | Jared Hardin, Managing Director.
 
 Order books are full, the deal market has become more selective and buyers are paying the most for power, data center, aerospace and service revenue.
 
-Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-sector-report-q4-2026.html  
-PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-sector-report-q4-2026.pdf
+Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html  
+PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.pdf
 
 Segments: Manufacturing & Industrial Technology; Industrial Distribution & Services; Building Products & Construction Services; Energy, Power & Environmental Services; Transportation & Logistics
 
 ## 2. Insights
 
-American manufacturing has expanded for nine consecutive months, and acquirers in every industrial segment are buying capacity that already exists because skilled labor is scarce and new equipment takes a long time to arrive. Borrowing costs rose in September, and buyers have become more selective about what they pay for.
+American manufacturing has expanded for nine consecutive months, and acquirers in every industrial sector are buying capacity that already exists because skilled labor is scarce and new equipment takes a long time to arrive. Borrowing costs rose in September, and buyers have become more selective about what they pay for.
 
 **KEY INSIGHTS**
 
@@ -35,7 +35,7 @@ The Federal Reserve raised its target range to 3.75% to 4.00% on September 16. G
 
 Demand is broad, buyers are organized around platforms and financing became more expensive in September.
 
-**WHAT IT MEANS FOR OWNERS**
+WHAT IT MEANS FOR OWNERS
 
 *Strategic acquirers and private equity platforms are still buying machining, distribution, contracting, environmental and logistics capacity that already exists.*
 
@@ -61,29 +61,15 @@ APi Group is working toward 60% of revenue from inspection and service, and Tran
 
 Global M&A value fell 41% from the second quarter to $993 billion in the third, and the Federal Reserve raised its target range to 3.75% to 4.00% on September 16 ([LSEG data reported by Reuters](https://www.globalbankingandfinance.com/global-m-deal-rush-fades-third-quarter-rising-borrowing/); [Federal Reserve](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm)). GF Data’s average multiple eased to 7.0 times trailing adjusted EBITDA from 7.3 times, and debt on platform acquisitions fell to 2.9 times from 3.4 times ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)).
 
-**54.5**
-
-ISM Manufacturing PMI, September
-
-**13,509**
-
-US companies held by private equity
-
-**$53.4B**
-
-Quanta Services total backlog June 2026
-
-**60%**
-
-APi Group target for inspection and service revenue
-
-**7.0x**
-
-Average middle-market multiple of EBITDA, Q2
+54.5ISM Manufacturing PMI, September
+13,509US companies held by private equity
+$53.4BQuanta Services total backlog June 2026
+60%APi Group target for inspection and service revenue
+7.0xAverage middle-market multiple of EBITDA, Q2
 
 Figures are as reported by the linked sources. Middle-market multiple and debt figures are GF Data sponsor-reported averages for the first and second quarters of 2026.
 
-## 4. Power Demand: The Buildout Reaches Every Industrial Segment
+## 4. Power Demand: The Buildout Reaches Every Industrial Sector
 
 Electricity demand is growing about 2% a year, the equipment to meet it is sold out years ahead and acquirers are buying existing capacity.
 
@@ -93,51 +79,40 @@ The equipment needed to meet that demand is committed years ahead. GE Vernova’
 
 ### AI Bottleneck Is Power, Not Chips
 
-> *“So, it’s interesting as they continue to announce all the data centers and data center sites. I’ve sort of always had a strong view that energy would be the constraint.” Greg Abel, CEO, Berkshire Hathaway (*[CNBC](https://www.cnbc.com/2026/09/02/cnbc-exclusive-transcript-berkshire-hathaway-ceo-greg-abel-speaks-with-cnbcs-squawk-box-today.html))
+> “So, it’s interesting as they continue to announce all the data centers and data center sites. I’ve sort of always had a strong view that energy would be the constraint.”
 
-> *“Well, I don’t think it's going to come down to chips or the models that people create or the apps that we develop. I think the consistent theme you hear here is can we get the power generation to power these massive data centers.” Toby Rice, CEO, EQT (EQT Corporation)*
+Greg Abel, CEO, Berkshire Hathaway (CNBC)
 
-> *“quite frankly, the biggest issue we are now having is not a compute glut, but it’s a power and it's sort of the ability to get the builds done fast enough close to power. So, if you can't do that, you may actually have a bunch of chips sitting in inventory that I can’t plug in.” Satya Nadella, CEO, Microsoft (*[Bg2 Pod](https://www.youtube.com/watch?v=Gnl833wXRz0)*)*
+> “Well, I don’t think it's going to come down to chips or the models that people create or the apps that we develop. I think the consistent theme you hear here is can we get the power generation to power these massive data centers.”
 
-**HOW THE DEMAND REACHES EACH SEGMENT**
+Toby Rice, CEO, EQT (EQT Corporation)
 
-**MANUFACTURING & INDUSTRIAL TECHNOLOGY**
+> “quite frankly, the biggest issue we are now having is not a compute glut, but it’s a power and it's sort of the ability to get the builds done fast enough close to power. So, if you can't do that, you may actually have a bunch of chips sitting in inventory that I can’t plug in.”
+
+Satya Nadella, CEO, Microsoft (Bg2 Pod)HOW THE DEMAND REACHES EACH SECTOR
+MANUFACTURING & INDUSTRIAL TECHNOLOGY
 
 nVent agreed to buy Maverick Power, a Texas maker of switchgear and modular power for data centers, for $1.75 billion plus up to $550 million, and put the upfront payment at 11.5 times anticipated 2026 adjusted EBITDA ([nVent](https://www.globenewswire.com/news-release/2026/08/24/3349571/0/en/nvent-to-acquire-maverick-power.html)).
 
-**INDUSTRIAL DISTRIBUTION & SERVICES**
+INDUSTRIAL DISTRIBUTION & SERVICES
 
 EMCOR’s US Industrial Services segment grew 25.9% in the second quarter ([EMCOR](https://www.sec.gov/Archives/edgar/data/105634/000010563426000112/eme-ex991_2026630xq2.htm)), and contractors with power, utility and data center customers have kept growing in a year when refiners deferred turnaround work to 2027.
 
-**BUILDING PRODUCTS & CONSTRUCTION SERVICES**
+BUILDING PRODUCTS & CONSTRUCTION SERVICES
 
 Contractors doing data center work reported 9.9 months of backlog against 8.3 months for those that are not ([ABC](https://www.globenewswire.com/news-release/2026/09/15/3362305/0/en/abc-survey-1-in-6-members-perform-data-center-work-backlog-rebounds-in-august.html)). Limbach lowered its guidance after its gross margin fell to 21.5% from 28.0%, citing competition for skilled labor and materials in data center markets ([Limbach](https://www.businesswire.com/news/home/20260804326592/en/Limbach-Reports-Second-Quarter-2026-Results)).
 
-**ENERGY, POWER & ENVIRONMENTAL SERVICES**
+ENERGY, POWER & ENVIRONMENTAL SERVICES
 
 Mission Critical Group bought a Texas switchgear manufacturer and a transformer supplier within four months of each other ([Dallas Innovates](https://dallasinnovates.com/north-texas-mission-critical-group-acquires-txla-systems/); [Distribution Strategy Group](https://distributionstrategy.com/2026/07/mission-critical-group-makes-play-for-transformer-supply/)), and electrical testing and commissioning is the most contested category in the power sub-sector.
 
-**TRANSPORTATION & LOGISTICS**
+TRANSPORTATION & LOGISTICS
 
 Spending on data center construction was more than 73% higher in August than a year earlier ([ABC analysis reported by MDM](https://www.mdm.com/?p=436875)), and JK Technology Services bought a Virginia rigging company that works in data centers ([Vertikal](https://vertikal.net/en/news/story/49180/jk-takes-360)).
 
-**THE BUILDOUT IN FOUR FIGURES**
+THE BUILDOUT IN FOUR FIGURES
 
-**224 GW**
-
-NERC 10-year forecast of summer peak demand growth, raised from 132
-
-**116 GW**
-
-GE Vernova gas turbine backlog and slot reservations
-
-**160 weeks**
-
-Lead time for generator step-up transformers
-
-**9.9 months**
-
-Backlog at contractors doing data center work
+224 GWNERC 10-year forecast of summer peak demand growth, raised from 132116 GWGE Vernova gas turbine backlog and slot reservations160 weeksLead time for generator step-up transformers9.9 monthsBacklog at contractors doing data center work
 
 *A buyer will ask how much of the backlog is tied to funded power and data center work, and whether the company has the technicians to perform it at the margins it has earned so far.*
 
@@ -147,11 +122,11 @@ Transaction values and multiples are as stated by the acquirer in the linked ann
 
 A Laredo logistics and customs brokerage group and a Mexico manufacturing services company have combined to form an end-to-end cross-border platform.
 
-**BENCHMARK INTERNATIONAL ADVISED**
+BENCHMARK INTERNATIONAL ADVISED
 
 THE CARMI COMPANIES
 
-**ON ITS TRANSACTION WITH**
+ON ITS TRANSACTION WITH
 
 THE NEARSHORE COMPANY
 
@@ -159,27 +134,25 @@ Transportation & Logistics
 
 Cross-border freight, customs brokerage and warehousing
 
-**READ THE ANNOUNCEMENT**
-
-**THE CLIENT**
+READ THE ANNOUNCEMENTTHE CLIENT
 
 ### The Carmi Companies
 
 Founded in 1983 in Laredo, Texas, The Carmi Companies is a single-source logistics group that coordinates land, air and ocean freight and provides customs brokerage, warehousing and transloading.
 
-**THE COUNTERPARTY**
+THE COUNTERPARTY
 
 ### The Nearshore Company
 
 Founded in 1992 in Brownsville, Texas, The Nearshore Company offers manufacturing facilities in Mexico together with employer-of-record services.
 
-**THE RATIONALE**
+THE RATIONALE
 
 ### An end-to-end cross-border platform
 
 The combination pairs The Nearshore Company’s Mexico manufacturing facilities and employer-of-record services with Carmi’s logistics to form an end-to-end cross-border platform.
 
-**THE MARKET**
+THE MARKET
 
 ### Buyers are paying for border capability
 
@@ -187,23 +160,17 @@ Trade with Mexico reached a monthly record of $94.8 billion in July, 27.5% above
 
 > *“The simplest way to describe today’s market is that buyers are acquiring capabilities rather than capacity.”*
 
-Gaurang Shastri, Managing Director, Lincoln International, speaking to Transport Topics ([Lincoln International](https://www.lincolninternational.com/perspectives/in-the-press/transport-topics-transport-ma-builds-momentum-alongside-freight-market/))
+Gaurang Shastri, Managing Director, Lincoln International, speaking to Transport Topics (Lincoln International)
+BENCHMARK IN THIS SECTOR
+3transactions closed in the past 24 months14engagements in progress
 
-**BENCHMARK IN THIS SEGMENT**
-
-- 3 14
-
-transactions closed in the past 24 months
-
-engagements in progress
-
-**VIEW MORE TRANSACTIONS**
+VIEW MORE TRANSACTIONS
 
 Company descriptions are from the announcement on benchmarkintl.com. Benchmark International counts are for the 24 months to September 30, 2026 and for engagements in progress as of October 1, 2026.
 
-## 6. Sector Activity
+## 6. Industry Activity
 
-Acquirers announced transactions in every industrial segment during 2026, with sellers that ranged from founder-owned machine shops and customs brokers to companies bought by public acquirers for several billion dollars. Listed industrial companies trade at a median of 16.2 times EBITDA, and the indicators behind demand and financing are pointing in different directions.
+Acquirers announced transactions in every industrial sector during 2026, with sellers that ranged from founder-owned machine shops and customs brokers to companies bought by public acquirers for several billion dollars. Listed industrial companies trade at a median of 16.2 times EBITDA, and the indicators behind demand and financing are pointing in different directions.
 
 - 07 Select recent industrial transactions
 
@@ -241,29 +208,15 @@ Buyers in power, environmental services and logistics paid for technicians, perm
 | OCTOBER 2026 Transportation & Logistics | RXO acquired by C.H. ROBINSON | C.H. Robinson agreed on October 5 to acquire RXO, a truck brokerage, managed transportation and last-mile provider, at an implied value of $5.8 billion, a 29% premium to RXO’s last closing price ( C.H. Robinson and RXO ). | About $300 million of expected annual cost savings supports the price at the top of the brokerage market. |
 | MARCH 2026 Transportation & Logistics | EELCO acquired by REDWOOD LOGISTICS AEA Investors | Redwood Logistics acquired EELCO, a Laredo, Texas, customs brokerage with a foreign-trade-zone warehouse that had been founder-owned since 1991 ( FreightWaves ). Terms were not disclosed. | Logistics platforms are buying brokers at the border as trade with Mexico sets monthly records. |
 
-Transaction values and multiples are as reported by the linked source or calculated from the figures it gives. Company names are the property of their owners and are shown for identification. Two transactions are shown for each of the five industrial segments across pages 7 and 8.
+Transaction values and multiples are as reported by the linked source or calculated from the figures it gives. Company names are the property of their owners and are shown for identification. Two transactions are shown for each of the five industrial sectors across pages 7 and 8.
 
 ## 9. Benchmark International’s Industrial Transactions
 
-Building products and construction services is the most active segment, and strategic acquirers were the buyers in more than half of the sales.
+Building products and construction services is the most active sector, and strategic acquirers were the buyers in more than half of the sales.
 
-**TRAILING 24 MONTHS**
+TRAILING 24 MONTHS
 
-**85**
-
-industrial transactions closed in the five segments
-
-**212**
-
-industrial engagements in progress as of October 1, 2026
-
-**56%**
-
-of the 71 companies with a classified buyer were bought by a strategic acquirer
-
-Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook’s Q2 2026 Global League Tables ([Benchmark International](https://www.benchmarkintl.com/)).
-
-**BY SEGMENT**
+85industrial transactions closed in the five sectors212industrial engagements in progress as of October 1, 202656%of the 71 companies with a classified buyer were bought by a strategic acquirer Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook’s Q2 2026 Global League Tables (Benchmark International).BY SECTOR
 
 Chart data:
 
@@ -275,7 +228,7 @@ Chart data:
 | Distribution & Services | 24 | 8 |
 | Manufacturing & Industrial Tech | 28 | 22 |
 
-**WHO BOUGHT**
+WHO BOUGHT
 
 | Strategic acquirer | 40 | 56% |
 | --- | --- | --- |
@@ -283,127 +236,115 @@ Chart data:
 | Financial sponsor | 10 | 14% |
 | Individual investor | 8 | 11% |
 
-**SELECTED ANNOUNCED ENGAGEMENTS**
+SELECTED ANNOUNCED ENGAGEMENTS
 
 [FPS Technologies, Inc.](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-fps-technologies-inc-and-cintas-corporation/)
 
-**HAS BEEN ACQUIRED BY**
-
-**CINTAS CORPORATION**
+HAS BEEN ACQUIRED BY
+CINTAS CORPORATION
 
 Fire suppression and detection systems
 
-**DISTRIBUTION & SERVICES**
+DISTRIBUTION & SERVICES
 
 [Invocon, Inc.](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-of-invocon-inc-and-cemtrex-inc/)
 
-**HAS BEEN ACQUIRED BY**
-
-**CEMTREX, INC.**
+HAS BEEN ACQUIRED BY
+CEMTREX, INC.
 
 Instrumentation and wireless sensing for aerospace platforms
 
-**MANUFACTURING**
+MANUFACTURING
 
 [Capitol Plastics Recycling Inc.](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-of-capitol-plastics-recycling-inc-and-triumvirate-environmental/)
 
-**HAS BEEN ACQUIRED BY**
-
-**TRIUMVIRATE ENVIRONMENTAL**
+HAS BEEN ACQUIRED BY
+TRIUMVIRATE ENVIRONMENTAL
 
 Industrial plastics recycling
 
-**ENERGY & ENVIRONMENTAL**
+ENERGY & ENVIRONMENTAL
 
 [A.T. Parker, Inc. (Solar Electronics)](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-at-parker-inc-and-assessimus-group-gmbh/)
 
-**HAS BEEN ACQUIRED BY**
-
-**ASSESSIMUS GROUP GMBH**
+HAS BEEN ACQUIRED BY
+ASSESSIMUS GROUP GMBH
 
 Test equipment for electromagnetic interference
 
-**MANUFACTURING**
+MANUFACTURING
 
 [MaxVac Inc.](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-maxvac-inc-and-dxp-enterprises-inc/)
 
-**HAS BEEN ACQUIRED BY**
-
-**DXP ENTERPRISES, INC.**
+HAS BEEN ACQUIRED BY
+DXP ENTERPRISES, INC.
 
 Sales, repair and maintenance of industrial vacuum pumps
 
-**MANUFACTURING**
+MANUFACTURING
 
 [Climate Engineering, Inc.](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-climate-engineering-inc-and-harris-company/)
 
-**HAS BEEN ACQUIRED BY**
-
-**HARRIS COMPANY**
+HAS BEEN ACQUIRED BY
+HARRIS COMPANY
 
 Commercial HVAC and building automation
 
-**BUILDING & CONSTRUCTION**
+BUILDING & CONSTRUCTION
 
 [WESCO Chemicals, Inc.](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-wesco-chemicals-inc-and-apex-water-and-process-inc/)
 
-**HAS BEEN ACQUIRED BY**
-
-**APEX WATER AND PROCESS INC.**
+HAS BEEN ACQUIRED BY
+APEX WATER AND PROCESS INC.
 
 Water treatment chemical production and service
 
-**ENERGY & ENVIRONMENTAL**
+ENERGY & ENVIRONMENTAL
 
 [Clark Crane, LLC](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-clark-crane-and-capital-extension-crane-lift/)
 
-**HAS BEEN ACQUIRED BY**
-
-**CAPITAL EXTENSION CRANE & LIFT**
+HAS BEEN ACQUIRED BY
+CAPITAL EXTENSION CRANE & LIFT
 
 Crane rental and rigging
 
-**BUILDING & CONSTRUCTION**
+BUILDING & CONSTRUCTION
 
 [Trinity Industrial Services, LLC](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitated-the-transaction-of-trinity-industrial-services-llc-and-aecon-group-inc/)
 
-**HAS BEEN ACQUIRED BY**
-
-**AECON GROUP INC.**
+HAS BEEN ACQUIRED BY
+AECON GROUP INC.
 
 Industrial maintenance, capital projects and turnarounds
 
-**DISTRIBUTION & SERVICES**
+DISTRIBUTION & SERVICES
 
 [Briggs Engineering & Testing](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-a-transaction-between-briggs-engineering-testing-and-phenna-group/)
 
-**HAS BEEN ACQUIRED BY**
-
-**PHENNA GROUP**
+HAS BEEN ACQUIRED BY
+PHENNA GROUP
 
 Geotechnical and materials testing and special inspection
 
-**BUILDING & CONSTRUCTION**
+BUILDING & CONSTRUCTION
 
 [DW Industries](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-dw-industries-and-tipco-technologies/)
 
-**HAS BEEN ACQUIRED BY**
-
-**TIPCO TECHNOLOGIES**
+HAS BEEN ACQUIRED BY
+TIPCO TECHNOLOGIES
 
 Hose and hose assemblies for industrial customers
 
-**DISTRIBUTION & SERVICES**
+DISTRIBUTION & SERVICES
 
 [Christian Network International](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitated-the-transaction-of-christian-network-international-to-symbia-logistics/)
 
-**HAS BEEN ACQUIRED BY**
-
-**SYMBIA LOGISTICS**
+HAS BEEN ACQUIRED BY
+SYMBIA LOGISTICS
 
 Fulfillment and distribution
 
-**TRANSPORTATION**
+TRANSPORTATION
 
 Each tile links to the announcement on benchmarkintl.com. Counts are from Benchmark International’s transaction records for the 24 months to September 30, 2026; engagements in progress are shown in aggregate. Fifty-nine of the 85 closed transactions have been announced publicly.
 
@@ -526,21 +467,11 @@ Chart data:
 
 **7 companies: **J.B. Hunt, Knight-Swift, Werner Enterprises, C.H. Robinson, Kirby, Landstar System, Schneider National
 
-**PRIVATE-MARKET REFERENCE POINTS**
+PRIVATE-MARKET REFERENCE POINTS
 
-*Listed multiples describe companies many times larger than a founder-owned business and show relative standing among the segments.*
+Listed multiples describe companies many times larger than a founder-owned business and show relative standing among the sectors.
 
-**7.0x**
-
-Average for completed middle-market transactions in all industries in the second quarter of 2026 ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective))
-
-**5.8x**
-
-Median for transactions of $5 million to $50 million in all industries in the second quarter of 2026 ([IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf))
-
-**5.0x to 8.0x**
-
-Survey medians for manufacturing, wholesale and construction companies with $1 million to $25 million of EBITDA ([Pepperdine](https://digitalcommons.pepperdine.edu/gsbm_pcm_pcmr/19))
+7.0xAverage for completed middle-market transactions in all industries in the second quarter of 2026 (GF Data via ACG)5.8xMedian for transactions of $5 million to $50 million in all industries in the second quarter of 2026 (IBBA and M&A Source)5.0x to 8.0xSurvey medians for manufacturing, wholesale and construction companies with $1 million to $25 million of EBITDA (Pepperdine)
 
 Median enterprise value to trailing EBITDA for 38 listed companies at each company’s fiscal year-end from 2021 to 2025 and today; the five-year high, low and median under each chart use the year-end values. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026, with share prices from September 28 to October 7, 2026. Multiples use reported EBITDA.
 
@@ -604,11 +535,11 @@ Chart data:
 | Distribution & Services | 50% |
 | Manufacturing & Industrial Tech | 64% |
 
-Medians of the 38 listed companies shown on page 10, grouped by segment. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Trailing periods end between April and July 2026. EBITDA is as reported and is lower than the adjusted EBITDA that companies present. Forward estimates are not included.
+Medians of the 38 listed companies shown on page 10, grouped by sector. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Trailing periods end between April and July 2026. EBITDA is as reported and is lower than the adjusted EBITDA that companies present. Forward estimates are not included.
 
 ## 12. Public Company Performance and Trends: Valuation Metrics
 
-Transportation shares rose a median 43% in a year and still trade at the lowest multiple of EBITDA of the five segments.
+Transportation shares rose a median 43% in a year and still trade at the lowest multiple of EBITDA of the five sectors.
 
 ### Median enterprise value to trailing EBITDA
 
@@ -666,7 +597,7 @@ Chart data:
 | Energy & Env. | 2.1x |
 | Transport | 1.5x |
 
-Medians of the 38 listed companies shown on page 10, grouped by segment. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Year-end 2025 multiples stand in for the forward multiples that a licensed data service would provide. Three of the eight building products and construction companies hold more cash than debt.
+Medians of the 38 listed companies shown on page 10, grouped by sector. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Year-end 2025 multiples stand in for the forward multiples that a licensed data service would provide. Three of the eight building products and construction companies hold more cash than debt.
 
 ## 13. Economic Trends
 
@@ -1254,7 +1185,7 @@ Each series runs monthly from October 2021 to its latest reading, which is Augus
 
 ## 17. Important Disclosures
 
-These disclosures apply to this brief and to the Middle Market sector reports.
+These disclosures apply to this brief and to the Middle Market industry reports.
 
 > “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
@@ -1274,7 +1205,7 @@ Information in this brief is as of October 7, 2026 unless stated otherwise.
 
 Every figure in this brief links to the page it came from, and the same links are collected here by section.
 
-**INSIGHTS (PAGES 3 TO 5)**
+INSIGHTS (PAGES 3 TO 5)
 
 [ISM](https://www.prnewswire.com/news-releases/manufacturing-pmi-at-54-5-september-2026-ism-manufacturing-pmi-report-302894520.html)  prnewswire.com
 
@@ -1346,7 +1277,7 @@ Every figure in this brief links to the page it came from, and the same links ar
 
 [Quanta Services](https://investors.quantaservices.com/_assets/_27cda7558592cc1119359235c3a11955/quantaservices/news/2026-07-30_QUANTA_SERVICES_REPORTS_SECOND_QUARTER_2026_402.pdf) quantaservices.com/
 
-**TRANSACTIONS (PAGES 7 AND 8)**
+TRANSACTIONS (PAGES 7 AND 8)
 
 [Franklin Electric and Cat Pumps: Franklin Electric](https://www.franklin-electric.com/company/news/2026/franklin-electric-acquires-cat-pumps-expanding-commercial-and-industrial-flow-control-platform/)  franklin-electric.com
 
@@ -1368,7 +1299,7 @@ Every figure in this brief links to the page it came from, and the same links ar
 
 [C.H. Robinson and RXO](https://www.sec.gov/Archives/edgar/data/0001929561/000114036126038548/ef20083265_ex99-1.htm)  sec.gov
 
-**BENCHMARK INTERNATIONAL (PAGES 5, 9 AND 15)**
+BENCHMARK INTERNATIONAL (PAGES 5, 9 AND 15)
 
 [The Carmi Companies and The Nearshore Company](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-the-carmi-companies-and-the-nearshore-company/)  benchmarkintl.com
 
@@ -1398,9 +1329,9 @@ Every figure in this brief links to the page it came from, and the same links ar
 
 [Benchmark International](https://www.benchmarkintl.com/)  benchmarkintl.com
 
-[Middle Market: Industrial Q4 2026 M&A Sector Report](https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-sector-report-q4-2026.html)  jp-hardin.github.io
+[Middle Market: Industrial Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html)  jp-hardin.github.io
 
-**PUBLIC COMPANIES AND ECONOMIC TRENDS (PAGES 10 TO 13)**
+PUBLIC COMPANIES AND ECONOMIC TRENDS (PAGES 10 TO 13)
 
 [IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf)  ibba.org
 

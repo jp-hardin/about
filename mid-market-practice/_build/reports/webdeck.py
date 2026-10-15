@@ -1,4 +1,4 @@
-# Turns each page of a sector brief deck into a site-native report section: the same words, links, tables and
+# Turns each page of an industry report deck into a site-native report section: the same words, links, tables and
 # logos as the deck, set in the site's report styles, with the deck's charts redrawn as SVG from their data.
 # The deck's arrangement is kept loosely: elements that sit side by side on the page become columns that
 # stack on narrow screens, and filled panels become cards.
@@ -53,7 +53,7 @@ class WebDeck:
                     continue
                 if b.y < 36 and (txt.isupper() or re.fullmatch(r'Q\d \d{4}', txt)) and max(p['size'] for p in paras) <= 9:
                     continue
-                if '|' in txt and txt.isupper() and re.search(r'QUARTERLY SECTOR BRIEF|Q\d \d{4}', txt) and len(txt) < 60:
+                if '|' in txt and txt.isupper() and re.search(r'QUARTERLY (SECTOR BRIEF|INDUSTRY REPORT)|Q\d \d{4}', txt) and len(txt) < 60:
                     continue      # running header or footer
                 if title is None and (b.ph == 'title' or (b.y < self.H * 0.2 and not txt.isupper() and len(txt) < 120
                                                           and max(p['size'] for p in paras) >= 14)) and num > 1:

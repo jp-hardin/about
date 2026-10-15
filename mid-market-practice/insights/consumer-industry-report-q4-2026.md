@@ -1,11 +1,11 @@
-# Consumer Q4 2026 M&A Sector Report
+# Consumer Q4 2026 M&A Industry Report
 
 Benchmark International's Middle Market team. October 2026 | Jared Hardin, Managing Director.
 
-Strategic and financial buyers stayed active across the consumer sector through the third quarter, and they are paying for brands and operators that have held price and volume while the cost of financing a purchase rises.
+Strategic and financial buyers stayed active across the consumer industry through the third quarter, and they are paying for brands and operators that have held price and volume while the cost of financing a purchase rises.
 
-Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-sector-report-q4-2026.html  
-PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-sector-report-q4-2026.pdf
+Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.html  
+PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.pdf
 
 Segments: Food & Beverage; Consumer Brands & Products; Foodservice & Distribution; Consumer Services & Retail
 
@@ -37,7 +37,7 @@ Diesel averaged $6.29 a gallon in September, and the federal funds target now si
 
 Four developments shaping the market, each with what a listed company’s management said about it in its latest results.
 
-**WHAT IT MEANS FOR OWNERS**
+WHAT IT MEANS FOR OWNERS
 
 *Buyers are paying for brands and operators that have held price and volume, that sell through more than one channel and that have room to add distribution or locations.*
 
@@ -87,7 +87,7 @@ The effect differs from one company to the next. YETI recorded [a $45.6 million 
 
 *An owner who can hand a buyer landed cost by period, fuel recovery by contract and a clear account of how the business is financed shortens diligence and protects the earnings figure the price is built on.*
 
-**WHAT BUYERS ARE REBUILDING**
+WHAT BUYERS ARE REBUILDING
 
 01
 
@@ -113,31 +113,15 @@ The Federal Reserve [raised its target range](https://www.federalreserve.gov/new
 
 **WHAT BUYERS ASK FOR**  How much of the price is paid in cash at closing, how much is contingent and how much is rolled into the buyer’s equity.
 
-**THE REPRICING IN FOUR FIGURES**
+THE REPRICING IN FOUR FIGURES
 
-12.5%
-
-Section 301 tariff on goods from China and Vietnam since July 24
-
-$6.29
-
-Diesel per gallon, September average, against $3.75 a year earlier
-
-3.75% to 4.00%
-
-Federal funds target range after the September 16 increase
-
-24%
-
-Share of 2025 transactions that included an earn-out
-
-*Buyers who finance with debt carry the higher rate into their models, which favors sellers whose earnings are growing.*
+12.5%Section 301 tariff on goods from China and Vietnam since July 24$6.29Diesel per gallon, September average, against $3.75 a year earlier3.75% to 4.00%Federal funds target range after the September 16 increase24%Share of 2025 transactions that included an earn-out Buyers who finance with debt carry the higher rate into their models, which favors sellers whose earnings are growing.
 
 Tariff rates are as described in the linked sources. Diesel is the monthly average US on-highway retail price published by the Energy Information Administration. Earn-out figures are from the SRS Acquiom 2026 deal terms study of 2025 transactions.
 
-## 5. Perspectives on Four Consumer Segments
+## 5. Perspectives on Four Consumer Sectors
 
-What is moving demand, and who is buying, in each of the segments the consumer practice covers.
+What is moving demand, and who is buying, in each of the sectors the consumer practice covers.
 
 ### Food & Beverage
 
@@ -151,11 +135,11 @@ Growth is in protein, zero-sugar beverages, supplements and foodservice, and Pro
 
 National distributors are growing case volume with independent restaurants, up 5.1% at [US Foods](https://www.sec.gov/Archives/edgar/data/0001665918/000166591826000043/usfd06272026ex991.htm) and 5.8% organically at [Performance Food Group](https://www.sec.gov/Archives/edgar/data/0001618673/000119312526345718/pfgc-ex99_1.htm).
 
-**WHO IS BUYING**
+WHO IS BUYING
 
 Family-owned strategics such as Rich Products, Sargento and C.H. Guenther, bakery consolidators, private equity platforms and European strategics entering the United States.
 
-**BENCHMARK INTERNATIONAL**
+BENCHMARK INTERNATIONAL
 
 - 4 closed since January 2025
 
@@ -173,11 +157,11 @@ Dollar growth overstates unit demand: non-edible packaged goods rose 3.1% in dol
 
 Importers have carried three tariff regimes since April 2025, and packaging producer-responsibility rules [took effect in California](https://calrecycle.ca.gov/packaging/packaging-epr/) on May 1.
 
-**WHO IS BUYING**
+WHO IS BUYING
 
 Strategics such as Procter & Gamble, Clorox and Henkel, consumer private equity firms such as Advent, TSG and TowerBrook, and brand-management firms.
 
-**BENCHMARK INTERNATIONAL**
+BENCHMARK INTERNATIONAL
 
 - 2 closed since January 2025
 
@@ -195,11 +179,11 @@ Franchisee distress is the credit risk in the channel. A 314-unit Wendy’s fran
 
 Parts, repair, ice and refreshment route businesses changed hands all year ([Parts Town](https://www.fermag.com/articles/parts-town-gains-tech-with-acquisition-of-86-repairs/); [Easy Ice](https://www.fermag.com/articles/easy-ice-strengthens-footprint-with-acquisition/)).
 
-**WHO IS BUYING**
+WHO IS BUYING
 
 Strategic dealers such as Singer and Wasserstrom, parts and service platforms such as Parts Town and Tech24, and route platforms such as Five Star Breaktime Solutions.
 
-**BENCHMARK INTERNATIONAL**
+BENCHMARK INTERNATIONAL
 
 - 6 closed since January 2025
 
@@ -217,11 +201,11 @@ Platforms buy family-owned operators a few locations at a time, as when Classic 
 
 Housing-linked demand softened through the summer, and growth in home improvement spending is projected to slow to [0.5% by the second quarter of 2027](https://www.jchs.harvard.edu/press-releases/remodeling-spending-poised-further-slowdown).
 
-**WHO IS BUYING**
+WHO IS BUYING
 
 Sponsor-backed platforms in car wash, collision, roofing, pool and garage door service, public acquirers such as Rollins and Boyd Group, and regional strategics.
 
-**BENCHMARK INTERNATIONAL**
+BENCHMARK INTERNATIONAL
 
 - 20 closed since January 2025
 
@@ -237,7 +221,7 @@ Four pieces from the quarter
 
 Each bears on how consumer businesses are valued and sold, and each is shown with the passage we marked and the reason it matters to an owner.
 
-**USDA ECONOMIC RESEARCH SERVICE**
+USDA ECONOMIC RESEARCH SERVICE
 
 September 25, 2026
 
@@ -251,7 +235,7 @@ USDA Economic Research Service, Food Price Outlook
 
 [READ HERE](https://www.ers.usda.gov/data-products/food-price-outlook/summary-findings)
 
-**NATIONAL RESTAURANT ASSOCIATION**
+NATIONAL RESTAURANT ASSOCIATION
 
 September 30, 2026
 
@@ -293,7 +277,7 @@ Natalie Martini, vice chair, Deloitte, and US retail and consumer products leade
 
 Quotations are reproduced as published. Store brand figures are Circana data for the six months ending June 14, 2026. The Deloitte forecast covers November 2026 through January 2027.
 
-## 7. Sector Activity
+## 7. Industry Activity
 
 Strategic acquirers have committed more than $120 billion to three consumer transactions since November 2025, and sponsor-backed platforms are buying family-owned operators a few locations at a time. Listed consumer companies trade at lower multiples of earnings than a year ago in every peer group we track.
 
@@ -315,137 +299,13 @@ Benchmark International’s consumer transactions
 
 Acquirers disclosed a price in most of these transactions and a multiple of earnings in only a few.
 
-**ANNOUNCED**
-
-**TARGET AND ACQUIRER**
-
-**BUSINESS AND TERMS**
-
-**STATED VALUE**
-
-**VALUE TO REVENUE**
-
-**VALUE TO EARNINGS**
-
-**SEPT 2026**
-
-**FOOD & BEVERAGE**
-
-**BRAKEBUSH BROTHERS**
-
-**ACQUIRED BY**
-
-**HORMEL FOODS**
-
-Hormel agreed on September 30 to acquire Brakebush Brothers, a producer of prepared chicken ([Hormel and Brakebush Brothers](https://s204.q4cdn.com/636391999/files/content_files/Hormel-Foods-Announces-Definitive-Agreement-to-Acquire-Brakebush_-Supplemental-Slides-vFinal.pdf)).
-
-About $1.06B
-
-About 0.9x
-
-calculated from the stated figures
-
-10.7x
-
-projected CY2026 adjusted EBITDA, as stated by Hormel
-
-**JULY 2026**
-
-**FOOD & BEVERAGE**
-
-**SEARAY FOODS**
-
-**ACQUIRED BY**
-
-**HF FOODS**
-
-HF Foods agreed to acquire Searay Foods, a distributor of frozen specialty seafood, expected the purchase to close in the third quarter and stated the price as a multiple of projected adjusted EBITDA ([HF Foods and Searay Foods](https://finance.yahoo.com/markets/stocks/articles/hf-foods-group-acquire-searay-123000612.html)).
-
-C$47.9M
-
-Not disclosed
-
-5.0x
-
-projected 2025 adjusted EBITDA, as stated by HF Foods
-
-**JULY 2026**
-
-**FOOD & BEVERAGE**
-
-**COPRA INC.**
-
-**ACQUIRED BY**
-
-**VITA COCO**
-
-Vita Coco acquired Copra, a privately held producer of frozen organic coconut water and coconut meat ([Vita Coco and Copra](https://www.foodbusinessnews.net/articles/30721-the-vita-coco-co-acquires-copra-inc)).
-
-$175M
-
-Not disclosed
-
-Not disclosed
-
-**JAN 2026**
-
-**CONSUMER BRANDS & PRODUCTS**
-
-**MAR 2026**
-
-**CONSUMER BRANDS & PRODUCTS**
-
-**GOJO INDUSTRIES**
-
-**ACQUIRED BY**
-
-**CLOROX**
-
-**BREATHE RIGHT, DIMETAPP AND ANBESOL**
-
-**ACQUIRED BY**
-
-**PRESTIGE CONSUMER HEALTHCARE**
-
-Clorox bought GOJO Industries, the maker of Purell, which had been family-led in Akron, Ohio, since its founding in 1946 ([Clorox and GOJO Industries](https://investors.thecloroxcompany.com/news/news-details/2026/Clorox-Announces-Acquisition-of-GOJO-Industries-Makers-of-Purell-Market-Leader-in-Skin-Health-and-Hygiene/)).
-
-Prestige agreed to buy Breathe Right and other over-the-counter health brands, described the model as asset-light and stated the price as a multiple of EBITDA ([Prestige Consumer Healthcare](https://ir.prestigebrands.com/news-releases/news-release-details/prestige-consumer-healthcare-announces-agreement-acquire-breathe)).
-
-$2.25B
-
-$1.045B
-
-Not disclosed
-
-Not disclosed
-
-11.9x
-
-adjusted EBITDA net of anticipated tax benefits, as stated by Clorox
-
-11.0x
-
-EBITDA, as stated by Prestige
-
-**JAN 2026**
-
-**CONSUMER BRANDS & PRODUCTS**
-
-**MY MEDIC**
-
-**ACQUIRED BY**
-
-**ACME UNITED**
-
-Acme United bought My Medic, a maker of first-aid kits sold almost entirely direct to consumers, with about $19 million of revenue ([Acme United and My Medic](https://www.sec.gov/Archives/edgar/data/2098/000119312526019610/acu-ex99_1.htm)).
-
-$18.7M
-
-About 1.0x
-
-calculated from the stated figures
-
-Not disclosed
+| Announced | Target and acquirer | Business and terms | Stated value | Value to revenue | Value to earnings |
+| --- | --- | --- | --- | --- | --- |
+| SEPT 2026 FOOD & BEVERAGE | BRAKEBUSH BROTHERS ACQUIRED BY HORMEL FOODS | Hormel agreed on September 30 to acquire Brakebush Brothers, a producer of prepared chicken ( Hormel and Brakebush Brothers ). | About $1.06B | About 0.9x calculated from the stated figures | 10.7x projected CY2026 adjusted EBITDA, as stated by Hormel |
+| JULY 2026 FOOD & BEVERAGE | SEARAY FOODS ACQUIRED BY HF FOODS | HF Foods agreed to acquire Searay Foods, a distributor of frozen specialty seafood, expected the purchase to close in the third quarter and stated the price as a multiple of projected adjusted EBITDA ( HF Foods and Searay Foods ). | C$47.9M | Not disclosed | 5.0x projected 2025 adjusted EBITDA, as stated by HF Foods |
+| JULY 2026 FOOD & BEVERAGE | COPRA INC. ACQUIRED BY VITA COCO | Vita Coco acquired Copra, a privately held producer of frozen organic coconut water and coconut meat ( Vita Coco and Copra ). | $175M | Not disclosed | Not disclosed |
+| JAN 2026 CONSUMER BRANDS & PRODUCTS MAR 2026 CONSUMER BRANDS & PRODUCTS | GOJO INDUSTRIES ACQUIRED BY CLOROX BREATHE RIGHT, DIMETAPP AND ANBESOL ACQUIRED BY PRESTIGE CONSUMER HEALTHCARE | Clorox bought GOJO Industries, the maker of Purell, which had been family-led in Akron, Ohio, since its founding in 1946 ( Clorox and GOJO Industries ). Prestige agreed to buy Breathe Right and other over-the-counter health brands, described the model as asset-light and stated the price as a multiple of EBITDA ( Prestige Consumer Healthcare ). | $2.25B $1.045B | Not disclosed Not disclosed | 11.9x adjusted EBITDA net of anticipated tax benefits, as stated by Clorox 11.0x EBITDA, as stated by Prestige |
+| JAN 2026 CONSUMER BRANDS & PRODUCTS | MY MEDIC ACQUIRED BY ACME UNITED | Acme United bought My Medic, a maker of first-aid kits sold almost entirely direct to consumers, with about $19 million of revenue ( Acme United and My Medic ). | $18.7M | About 1.0x calculated from the stated figures | Not disclosed |
 
 Values and multiples are as stated by the acquirer or reported in the linked source. Value to revenue is our calculation where marked. Company names are the property of their owners and are used for identification. Transactions advised by Benchmark International appear on page 10.
 
@@ -453,93 +313,30 @@ Values and multiples are as stated by the acquirer or reported in the linked sou
 
 Buyers in foodservice and consumer services paid for store networks, subscription members and recurring customer contracts.
 
-**ANNOUNCED**
-
-**TARGET AND ACQUIRER**
-
-**BUSINESS AND TERMS**
-
-**STATED VALUE**
-
-**VALUE TO REVENUE**
-
-**VALUE TO EARNINGS**
-
-**MAR 2026**
-
-**FOODSERVICE & DISTRIBUTION**
-
-**JETRO RESTAURANT DEPOT**
-
-**ACQUIRED BY**
-
-**SYSCO**
-
-Sysco agreed to acquire Jetro Restaurant Depot and its 166 cash-and-carry warehouse stores, and it expects to close by the first calendar quarter of 2027, though members of Congress have [asked the FTC to investigate](https://www.agri-pulse.com/articles/25180-democrats-call-for-investigation-into-sysco-acquisition) ([Sysco and Jetro Restaurant Depot](https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/03-30-2026-113036743)).
-
-About $29.1B
-
-enterprise value
-
-Not disclosed
-
-14.6x
-
-2025 operating income, as stated by Sysco
-
-**MAR 2026**
-
-**FOODSERVICE & DISTRIBUTION**
-
-**FEDERAL INDUSTRIES**
-
-**ACQUIRED BY**
-
-**AERITEK**
-
-Mill Point Capital
-
-AeriTek bought Federal Industries, a Wisconsin maker of food display cases with $35.7 million of fiscal 2025 revenue, in a carve-out from Standex ([Standex on Federal Industries](https://ir.standex.com/2026-03-09-STANDEX-ANNOUNCES-DIVESTITURE-OF-FEDERAL-INDUSTRIES-TO-AERITEK)).
-
-About $70M
-
-enterprise value
-
-About 2.0x
-
-calculated from the stated figures
-
-Not disclosed
+| Announced | Target and acquirer | Business and terms | Stated value | Value to revenue | Value to earnings |
+| --- | --- | --- | --- | --- | --- |
+| MAR 2026 FOODSERVICE & DISTRIBUTION | JETRO RESTAURANT DEPOT ACQUIRED BY SYSCO | Sysco agreed to acquire Jetro Restaurant Depot and its 166 cash-and-carry warehouse stores, and it expects to close by the first calendar quarter of 2027, though members of Congress have asked the FTC to investigate ( Sysco and Jetro Restaurant Depot ). | About $29.1B enterprise value | Not disclosed | 14.6x 2025 operating income, as stated by Sysco |
+| MAR 2026 FOODSERVICE & DISTRIBUTION | FEDERAL INDUSTRIES ACQUIRED BY AERITEK Mill Point Capital | AeriTek bought Federal Industries, a Wisconsin maker of food display cases with $35.7 million of fiscal 2025 revenue, in a carve-out from Standex ( Standex on Federal Industries ). | About $70M enterprise value | About 2.0x calculated from the stated figures | Not disclosed |
 
 **APR 2026**
 
-**FOODSERVICE & DISTRIBUTION**
+FOODSERVICE & DISTRIBUTION
 
 **FEB 2026**
 
-**CONSUMER SERVICES & RETAIL**
+CONSUMER SERVICES & RETAIL
 
 **MAR 2026**
 
-**CONSUMER SERVICES & RETAIL**
-
-**BRESCO**
-
-**ACQUIRED BY**
-
-**SINGER EQUIPMENT CO.**
-
-**MISTER CAR WASH**
-
-**ACQUIRED BY**
-
-**LEONARD GREEN & PARTNERS**
-
-**GUILD GARAGE GROUP**
-
-**ACQUIRED BY**
-
-**OAK HILL CAPITAL**
+CONSUMER SERVICES & RETAILBRESCO
+ACQUIRED BY
+SINGER EQUIPMENT CO.
+MISTER CAR WASH
+ACQUIRED BY
+LEONARD GREEN & PARTNERS
+GUILD GARAGE GROUP
+ACQUIRED BY
+OAK HILL CAPITAL
 
 Singer acquired Bresco, a family-led foodservice equipment and supplies dealer in Birmingham, Alabama, with $39.3 million of 2025 sales ([Singer Equipment and Bresco](https://fesmag.com/topics/the-latest-news/23508-singer-buys-bresco)). Dealer acquirers rarely disclose price.
 
@@ -571,13 +368,9 @@ Calculated from full-year 2025 Mister Car Wash financials
 
 **APR 2026**
 
-**CONSUMER SERVICES & RETAIL**
-
-**ROMEX PEST CONTROL**
-
-**ACQUIRED BY**
-
-**ROLLINS**
+CONSUMER SERVICES & RETAILROMEX PEST CONTROL
+ACQUIRED BY
+ROLLINS
 
 Rollins acquired Romex Pest Control, a Utah company founded in 2016, and allocated about 89% of the price to customer contracts and goodwill ([Rollins and Romex Pest Control](https://rollins.com/investors/press-releases/detail/429/rollins-acquires-romex-pest-control); [Rollins quarterly filing](https://www.sec.gov/Archives/edgar/data/0000084839/000008483926000040/rol-20260630.htm); [PCT Top 100).](https://giecdn.blob.core.windows.net/fileuploads/document/2026/05/11/2026-top-100-poster.pdf)
 
@@ -593,13 +386,13 @@ PCT Top 100
 
 Not disclosed
 
-Values and multiples are as stated by the acquirer or reported in the linked source. Value to revenue is our calculation where marked. Three transactions are shown for each of the four segments on pages 8 and 9.
+Values and multiples are as stated by the acquirer or reported in the linked source. Value to revenue is our calculation where marked. Three transactions are shown for each of the four sectors on pages 8 and 9.
 
 ## 10. Benchmark International’s Consumer Transactions
 
-Consumer services and retail is the most active segment, and operating companies and platforms bought just over half of the named companies.
+Consumer services and retail is the most active sector, and operating companies and platforms bought just over half of the named companies.
 
-**BY SEGMENT**
+BY SECTOR
 
 -  Closed  In progress
 
@@ -607,7 +400,7 @@ Consumer services and retail is the most active segment, and operating companies
 
 -  4
 
-- consumer transactions closed in the four segments: 27
+- consumer transactions closed in the four sectors: 27
 
 **Consumer Brands & Products**
 
@@ -617,13 +410,9 @@ Consumer services and retail is the most active segment, and operating companies
 
 **Foodservice & Distribution**
 
-**SINCE JANUARY 2025**
+SINCE JANUARY 2025
 
-32
-
-110
-
-consumer engagements in progress as of October 1, 2026
+32110consumer engagements in progress as of October 1, 2026
 
 -  5
 
@@ -634,8 +423,7 @@ consumer engagements in progress as of October 1, 2026
 **Consumer Services & Retail**
 
 - : 66
-
-**WHO BOUGHT THE 17 NAMED COMPANIES**
+WHO BOUGHT THE 17 NAMED COMPANIES
 
 -  9
 
@@ -647,9 +435,7 @@ Operating companies and platforms adding to an existing business
 
 Private equity and private investment firms
 
--  Individual and entrepreneur-led buyers 2
-
-**ANNOUNCED ENGAGEMENTS, BY MONTH OF ANNOUNCEMENT**
+-  Individual and entrepreneur-led buyers 2ANNOUNCED ENGAGEMENTS, BY MONTH OF ANNOUNCEMENT
 
 - SEPT 2026 CONSUMER SERVICES & RETAIL
 
@@ -799,7 +585,7 @@ Founder- and family-owned consumer businesses draw bids from operating companies
 
 Buying brands, capacity and distribution to fill category gaps faster than they could build them.
 
-**ACTIVE IN THE 2026 MARKET**
+ACTIVE IN THE 2026 MARKET
 
 Procter & Gamble
 
@@ -815,7 +601,7 @@ Rollins
 
 Boyd Group
 
-**ACQUIRERS OF BENCHMARK INTERNATIONAL CLIENTS**
+ACQUIRERS OF BENCHMARK INTERNATIONAL CLIENTS
 
 Burris Logistics
 
@@ -823,7 +609,7 @@ Burris Logistics
 
 Operating companies that fund purchases from cash flow and are less sensitive to the cost of debt than a sponsor financing a new platform.
 
-**ACTIVE IN THE 2026 MARKET**
+ACTIVE IN THE 2026 MARKET
 
 Rich Products
 
@@ -837,7 +623,7 @@ Carmela Foods
 
 Bay Crane
 
-**ACQUIRERS OF BENCHMARK INTERNATIONAL CLIENTS**
+ACQUIRERS OF BENCHMARK INTERNATIONAL CLIENTS
 
 Front of House Worldwide
 
@@ -851,7 +637,7 @@ Hart & Price
 
 Sponsor-backed operating platforms that buy local operators a few locations or routes at a time.
 
-**ACTIVE IN THE 2026 MARKET**
+ACTIVE IN THE 2026 MARKET
 
 Rise Baking
 
@@ -869,7 +655,7 @@ SPS PoolCare
 
 Five Star Breaktime Solutions
 
-**ACQUIRERS OF BENCHMARK INTERNATIONAL CLIENTS**
+ACQUIRERS OF BENCHMARK INTERNATIONAL CLIENTS
 
 Classic Collision
 
@@ -887,7 +673,7 @@ Diversified Foodservice Supply
 
 Investors making a first purchase in a category. Founders or families kept a stake at Salt & Stone, Tapatio and Nugredient Solutions.
 
-**ACTIVE IN THE 2026 MARKET**
+ACTIVE IN THE 2026 MARKET
 
 Advent International
 
@@ -903,7 +689,7 @@ Guardian Capital Partners
 
 SouthWorth Capital Management
 
-**ACQUIRERS OF BENCHMARK INTERNATIONAL CLIENTS**
+ACQUIRERS OF BENCHMARK INTERNATIONAL CLIENTS
 
 - AAVIN Private Equity Innova Capital Lancaster Group
 
@@ -915,7 +701,7 @@ SouthWorth Capital Management
 
 European strategics using acquisitions to enter the United States, as Europastry did through Highland Baking.
 
-**ACTIVE IN THE 2026 MARKET**
+ACTIVE IN THE 2026 MARKET
 
 Intersnack
 
@@ -927,13 +713,13 @@ Solina
 
 Brand-management firms are a further buyer group for apparel and heritage names. Two Benchmark International clients were acquired by individual or entrepreneur-led buyers.
 
-**ACTIVE IN THE 2026 MARKET**
+ACTIVE IN THE 2026 MARKET
 
 Authentic Brands Group
 
 WHP Global
 
-**ACQUIRERS OF BENCHMARK INTERNATIONAL CLIENTS**
+ACQUIRERS OF BENCHMARK INTERNATIONAL CLIENTS
 
 Highwood Harbor
 
@@ -949,25 +735,22 @@ Packaged food shares have fallen about a third in a year, and earnings rose most
 
 Share prices dated October 2 to October 14, 2026, against a year earlier
 
-**FOOD & BEVERAGE**
+FOOD & BEVERAGE
 
 - Packaged food: −30.9%
 
 - Snacks: −37.9%
 
 - Beverages: +5.3%
-
-**CONSUMER BRANDS & PRODUCTS**
+CONSUMER BRANDS & PRODUCTS
 
 - Household & personal care  +2.7%
 
 - Durables, outdoor & pet: +11.4%
-
-**FOODSERVICE & DISTRIBUTION**
+FOODSERVICE & DISTRIBUTION
 
 - Foodservice distribution  +1.1%
-
-**CONSUMER SERVICES & RETAIL**
+CONSUMER SERVICES & RETAIL
 
 - Restaurants: −11.7%
 
@@ -979,25 +762,22 @@ Share prices dated October 2 to October 14, 2026, against a year earlier
 
 Reported EBITDA for the latest fiscal year against the year before
 
-**FOOD & BEVERAGE**
+FOOD & BEVERAGE
 
 - Packaged food: −11.1%
 
 - Snacks: −11.9%
 
 - Beverages: +6.4%
-
-**CONSUMER BRANDS & PRODUCTS**
+CONSUMER BRANDS & PRODUCTS
 
 - Household & personal care  +0.7%
 
 - Durables, outdoor & pet: −7.0%
-
-**FOODSERVICE & DISTRIBUTION**
+FOODSERVICE & DISTRIBUTION
 
 - Foodservice distribution: +10.2%
-
-**CONSUMER SERVICES & RETAIL**
+CONSUMER SERVICES & RETAIL
 
 - Restaurants: +6.3%
 
@@ -1005,19 +785,9 @@ Reported EBITDA for the latest fiscal year against the year before
 
 - Retail: +3.5%
 
-**WHAT THE MARKET IS PRICING**
+WHAT THE MARKET IS PRICING
 
-35 of 57
-
-listed consumer companies trade below their share price of a year ago
-
-11.4x
-
-median enterprise value to trailing EBITDA today, against 14.5x a year ago
-
-9 of 9
-
-peer groups carry a lower median multiple of EBITDA than a year ago
+35 of 57listed consumer companies trade below their share price of a year ago11.4xmedian enterprise value to trailing EBITDA today, against 14.5x a year ago9 of 9peer groups carry a lower median multiple of EBITDA than a year ago
 
 Medians of 57 listed companies in nine peer groups, shown on pages 15 to 17. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil. EBITDA is as reported. The snacks median sits between Hershey, down 18%, and three smaller companies down 58% to 78%. Multiples cover the 55 companies with comparable readings on both dates.
 
@@ -1120,25 +890,22 @@ The median multiple of EBITDA is lower than a year ago in every peer group, and 
 
 Trailing twelve months
 
-**FOOD & BEVERAGE**
+FOOD & BEVERAGE
 
 - Packaged food: 1.5x
 
 - Snacks: 1.5x
 
 - Beverages: 3.3x
-
-**CONSUMER BRANDS & PRODUCTS**
+CONSUMER BRANDS & PRODUCTS
 
 - Household & personal care: 3.7x
 
 - Durables, outdoor & pet: 1.1x
-
-**FOODSERVICE & DISTRIBUTION**
+FOODSERVICE & DISTRIBUTION
 
 - Foodservice distribution: 0.6x
-
-**CONSUMER SERVICES & RETAIL**
+CONSUMER SERVICES & RETAIL
 
 - Restaurants: 2.7x
 
@@ -1149,26 +916,22 @@ Trailing twelve months
 ### Median enterprise value to EBITDA
 
 - Trailing twelve months  A year ago
-
-**FOOD & BEVERAGE**
+FOOD & BEVERAGE
 
 - Packaged food: 8.2x
 
 - Snacks: 13.7x
 
 - Beverages: 11.2x
-
-**CONSUMER BRANDS & PRODUCTS**
+CONSUMER BRANDS & PRODUCTS
 
 - Household & personal care: 15.6x
 
 - Durables, outdoor & pet: 8.9x
-
-**FOODSERVICE & DISTRIBUTION**
+FOODSERVICE & DISTRIBUTION
 
 - Foodservice distribution: 12.3x
-
-**CONSUMER SERVICES & RETAIL**
+CONSUMER SERVICES & RETAIL
 
 - Restaurants: 14.6x
 
@@ -1180,25 +943,22 @@ Trailing twelve months
 
 Share price to consensus earnings for the next year
 
-**FOOD & BEVERAGE**
+FOOD & BEVERAGE
 
 - Packaged food: 11.1x
 
 - Snacks: 17.3x
 
 - Beverages: 17.3x
-
-**CONSUMER BRANDS & PRODUCTS**
+CONSUMER BRANDS & PRODUCTS
 
 - Household & personal care: 23.1x
 
 - Durables, outdoor & pet: 12.7x
-
-**FOODSERVICE & DISTRIBUTION**
+FOODSERVICE & DISTRIBUTION
 
 - Foodservice distribution: 15.9x
-
-**CONSUMER SERVICES & RETAIL**
+CONSUMER SERVICES & RETAIL
 
 - Restaurants: 17.6x
 
@@ -1206,27 +966,9 @@ Share price to consensus earnings for the next year
 
 - Retail: 16.5x
 
-**DISCLOSED DEAL MULTIPLES SINCE 2025**
+DISCLOSED DEAL MULTIPLES SINCE 2025
 
-14.3x
-
-trailing adjusted EBITDA: Kimberly-Clark for [Kenvue](https://www.sec.gov/Archives/edgar/data/55785/000110465925105220/tm2530027d1_ex99-1.htm)
-
-14.6x
-
-2025 operating income: Sysco for [Jetro Restaurant Depot](https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/03-30-2026-113036743)
-
-12.7x
-
-trailing EBITDA before the earn-out: Church & Dwight for [Touchland](https://www.businesswire.com/news/home/20250512684279/en/Church-Dwight-to-Acquire-the-Touchland-Brand-for-$700-million-Plus-Earn-out), calculated
-
-11.0x
-
-EBITDA: Prestige for [Breathe Right and other brands](https://ir.prestigebrands.com/news-releases/news-release-details/prestige-consumer-healthcare-announces-agreement-acquire-breathe)
-
-5.0x
-
-projected EBITDA: HF Foods for [Searay Foods](https://finance.yahoo.com/markets/stocks/articles/hf-foods-group-acquire-searay-123000612.html)
+14.3xtrailing adjusted EBITDA: Kimberly-Clark for Kenvue14.6x2025 operating income: Sysco for Jetro Restaurant Depot12.7xtrailing EBITDA before the earn-out: Church & Dwight for Touchland, calculated11.0xEBITDA: Prestige for Breathe Right and other brands5.0xprojected EBITDA: HF Foods for Searay Foods
 
 Medians by peer group, which can move with one or two companies in a group of six. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil. Multiples use reported EBITDA. The year-ago multiple is the reading four quarter-ends earlier, between late August and November 2025, and June 30, 2025 for Rentokil, which reports half-yearly. Deal multiples are as stated by each acquirer on its own basis.
 
@@ -2024,7 +1766,7 @@ Each series runs from January 2021. August retail figures are the Census advance
 
 ## 21. Important Disclosures
 
-These disclosures apply to this brief and to the Middle Market sector reports.
+These disclosures apply to this brief and to the Middle Market industry reports.
 
 > “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
