@@ -1,11 +1,11 @@
-# Business Services Q4 2026 M&A Sector Report
+# Business Services Q4 2026 M&A Industry Report
 
 Benchmark International's Middle Market team. October 2026 | Jared Hardin, Managing Director.
 
 Mergers and acquisitions across commercial, professional and human capital services.
 
-Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-sector-report-q4-2026.html  
-PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-sector-report-q4-2026.pdf
+Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.html  
+PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.pdf
 
 Segments: Commercial & Facility Services; Marketing, Sales & Tech-Enabled Services; Engineering, Architecture & Consulting; Financial & Insurance Services; Staffing & Human Capital
 
@@ -31,7 +31,7 @@ Completed middle-market deals averaged 7.0x EBITDA in the second quarter, and 87
 
 ## 3. Key Trends in Business Services
 
-Six developments are shaping demand, pricing and deal activity across the five segments as the fourth quarter begins.
+Six developments are shaping demand, pricing and deal activity across the five sectors as the fourth quarter begins.
 
 ### Inspection-driven revenue draws the most active buyers
 
@@ -81,99 +81,66 @@ US advertising revenue is forecast to grow 9.6% in 2026 ([MediaPost](https://www
 
 *Retained clients, first-party data and measurable outcomes hold their value.*
 
-**WHAT IT MEANS**
-
-**FOR OWNERS**
+WHAT IT MEANS
+FOR OWNERS
 
 Buyers pay most readily for revenue that repeats under contract. Completed middle-market transactions averaged 7.0x EBITDA in the second quarter ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)), the median multiple on sales of $5 million to $50 million reached 5.8x ([IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf)), and 87% of sales above $5 million drew three or more offers ([IBBA and M&A Source release](https://www.webull.com/news/15462423712777216)).
 
 Figures are the latest published as of October 7, 2026, and each is linked to its source. The 10-year Treasury figure is the monthly average for September 2026. EBITDA is earnings before interest, taxes, depreciation and amortization.
 
-## 4. Perspectives on Five Segments
+## 4. Perspectives on Five Sectors
 
-Each segment has its own buyers and drivers, and the same five tests decide how a buyer values a business in any of them.
+Each sector has its own buyers and drivers, and the same five tests decide how a buyer values a business in any of them.
 
-**COMMERCIAL & FACILITY SERVICES**
+COMMERCIAL & FACILITY SERVICES
 
 *Contracted, inspection-driven revenue is drawing the most active consolidators.*
 
-**MARKET SIZE AND GROWTH**
+MARKET SIZE AND GROWTH
 
 Recurring monthly revenue at the 100 largest security dealers rose 7% to $740 million in 2025 ([SDM](https://www.sdmmag.com/articles/105352-sdm-100-top-100-security-dealers-of-2026)), and SGS grew 5.6% organically in the first half ([SGS](https://www.sgs.com/en-ca/news/2026/07/sgs-2026-half-year-results)).
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 Pye-Barker, APi Group, AI Fire and Cintas in fire and safety; Allied Universal in guarding; DEX Imaging and UBEO in office technology; SGS and TIC Solutions in testing.
 
-**WHAT BUYERS REWARD**
+WHAT BUYERS REWARD
 
 Inspection, monitoring and service contracts that renew each year, and licenses held by the company.
 
-**MARKETING, SALES & TECH-ENABLED SERVICES**
+MARKETING, SALES & TECH-ENABLED SERVICES
 
 *Advertising demand is strong, and buyers want specialists with data or a vertical focus.*
 
-**MARKET SIZE AND GROWTH**
+MARKET SIZE AND GROWTH
 
 US internet advertising revenue reached $294.6 billion in 2025, up 13.9% ([IAB and PwC](https://www.iab.com/insights/internet-advertising-revenue-report-full-year-2025/)), and promotional products sales reached a record $27.7 billion ([ASI](https://asicentral.com/press-releases/north-america-promo-industry-grows-4-percent-in-2025/)).
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 Sponsor-backed agency platforms such as OneMagnify, Power Digital and Wpromote; Publicis and Havas; Accenture and Cognizant; HALO and Proforma in promotional products.
 
-**WHAT BUYERS REWARD**
+WHAT BUYERS REWARD
 
 Retained client relationships, depth in one vertical, proprietary data and a team beyond the founder.
 
-**ENGINEERING, ARCHITECTURE & CONSULTING**
+ENGINEERING, ARCHITECTURE & CONSULTING
 
 *Backlogs run a year deep, and private capital is paying for licensed talent.*
 
-**MARKET SIZE AND GROWTH**
+MARKET SIZE AND GROWTH
 
 The 500 largest design firms reported $158.7 billion of revenue, up 7.4% ([ENR](https://enr.com/toplists/2026-top-500-design-firms-preview)), and 447 transactions were announced among design and construction firms in 2025 ([PSMJ](https://go.psmj.com/outlook-2026-aec-ma-trends-report)).
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 Bernhard Capital Partners; Ardurra, owned by Littlejohn & Co.; Salas O'Brien; SAM Companies; Pape-Dawson; J.S. Held in forensic engineering.
 
-**WHAT BUYERS REWARD**
+WHAT BUYERS REWARD
 
 Funded backlog of a year or more, licensed staff and a second generation of principals.
 
-**FINANCIAL & INSURANCE SERVICES**
-
-*Softer premiums are slowing organic growth while the largest brokers keep buying.*
-
-**MARKET SIZE AND GROWTH**
-
-Managing general agents wrote $108.7 billion of premium in 2025, up 17.8% ([Risk & Insurance](https://riskandinsurance.com/mga-premiums-hit-108-7-billion-in-2025-as-capacity-scrutiny-tightens/)), and advisory firm sales moved $342.9 billion of client assets in the first half ([WealthManagement.com](https://www.wealthmanagement.com/ria-news/fidelity-m-a-transaction-count-fell-in-1h-but-total-asset-haul-rose-88-)).
-
-**ACTIVE BUYERS**
-
-Aon, Gallagher, Inszone, EPIC, King Risk Partners and World Insurance Associates in brokerage; Hightower and Mercer Advisors in wealth.
-
-**WHAT BUYERS REWARD**
-
-Recurring commissions and fees with high retention, and producers under contract beyond the owner.
-
-**STAFFING & HUMAN CAPITAL**
-
-*Staffing revenue is growing for the first time in three years, led by skilled work.*
-
-**MARKET SIZE AND GROWTH**
-
-US staffing sales were $113.5 billion in 2025, down 8.5% ([ASA](https://americanstaffing.net/posts/2026/03/30/employment-and-sales-rebound-in-q4/)), and industrial staffing revenue is now forecast to grow 7% in 2026 ([Staffing Industry Analysts](https://www.staffingindustry.com/editorial/industrial-staffing-report/industrial-staffing-forecast-revised-to-7-growth-from-1-)).
-
-**ACTIVE BUYERS**
-
-Korn Ferry, Aerotek, ALKU, CHG Healthcare and Airswift, with sponsor-backed specialists in skilled trades and engineering.
-
-**WHAT BUYERS REWARD**
-
-Specialty placements, gross margin held through the downturn and direct client relationships.
-
-**ACROSS ALL FIVE SEGMENTS**
+ACROSS ALL FIVE SECTORS
 
 ### Five tests buyers apply
 
@@ -185,7 +152,37 @@ Specialty placements, gross margin held through the downturn and direct client r
 
 - 4 No client above a fifth of revenue One dominant account lowers the price.
 
-- 5 Margins that held through the downturn Proof that pricing and staffing can adjust.
+- 5 Margins that held through the downturn Proof that pricing and staffing can adjust.FINANCIAL & INSURANCE SERVICES
+
+*Softer premiums are slowing organic growth while the largest brokers keep buying.*
+
+MARKET SIZE AND GROWTH
+
+Managing general agents wrote $108.7 billion of premium in 2025, up 17.8% ([Risk & Insurance](https://riskandinsurance.com/mga-premiums-hit-108-7-billion-in-2025-as-capacity-scrutiny-tightens/)), and advisory firm sales moved $342.9 billion of client assets in the first half ([WealthManagement.com](https://www.wealthmanagement.com/ria-news/fidelity-m-a-transaction-count-fell-in-1h-but-total-asset-haul-rose-88-)).
+
+ACTIVE BUYERS
+
+Aon, Gallagher, Inszone, EPIC, King Risk Partners and World Insurance Associates in brokerage; Hightower and Mercer Advisors in wealth.
+
+WHAT BUYERS REWARD
+
+Recurring commissions and fees with high retention, and producers under contract beyond the owner.
+
+STAFFING & HUMAN CAPITAL
+
+*Staffing revenue is growing for the first time in three years, led by skilled work.*
+
+MARKET SIZE AND GROWTH
+
+US staffing sales were $113.5 billion in 2025, down 8.5% ([ASA](https://americanstaffing.net/posts/2026/03/30/employment-and-sales-rebound-in-q4/)), and industrial staffing revenue is now forecast to grow 7% in 2026 ([Staffing Industry Analysts](https://www.staffingindustry.com/editorial/industrial-staffing-report/industrial-staffing-forecast-revised-to-7-growth-from-1-)).
+
+ACTIVE BUYERS
+
+Korn Ferry, Aerotek, ALKU, CHG Healthcare and Airswift, with sponsor-backed specialists in skilled trades and engineering.
+
+WHAT BUYERS REWARD
+
+Specialty placements, gross margin held through the downturn and direct client relationships.
 
 Active buyers are drawn from transactions announced between October 2025 and October 2026. Company names are the property of their owners and are shown for identification.
 
@@ -193,9 +190,8 @@ Active buyers are drawn from transactions announced between October 2025 and Oct
 
 Six primary sources and trade reports from the third quarter, with the reason each one matters to an owner.
 
-**INDUSTRY READING**
-
-**ACEC RESEARCH INSTITUTE**
+INDUSTRY READING
+ACEC RESEARCH INSTITUTE
 
 August 27, 2026
 
@@ -207,7 +203,7 @@ The third-quarter survey of engineering firms recorded a median backlog of 12 mo
 
 [READ HERE](https://engineeringinc.acec.org/blog/engineering-firms-remain-resilient-amid-growing-economic-uncertainty-new-acec-research-institute-study-finds/)
 
-**STAFFING INDUSTRY ANALYSTS**
+STAFFING INDUSTRY ANALYSTS
 
 September 29, 2026
 
@@ -219,7 +215,7 @@ The August Pulse Survey of 128 staffing firms recorded median revenue growth of 
 
 [READ HERE](https://www.staffingindustry.com/editorial/it-staffing-report/it-staffing-revenue-up-5-at-the-median-in-pulse-survey)
 
-**INSURANCE JOURNAL**
+INSURANCE JOURNAL
 
 August 20, 2026
 
@@ -231,7 +227,7 @@ The Council of Insurance Agents & Brokers recorded an average premium decline of
 
 [READ HERE](https://www.insurancejournal.com/news/national/2026/08/20/882240.htm)
 
-**ECONOMY AND DEAL MARKET**
+ECONOMY AND DEAL MARKET
 
 **REUTERS**
 
@@ -245,7 +241,7 @@ Announced global M&A fell to $993 billion in the third quarter, the first quarte
 
 [READ HERE](https://www.investing.com/news/stock-market-news/global-ma-deal-rush-fades-in-third-quarter-as-rising-borrowing-costs-bite-4928161)
 
-**FEDERAL RESERVE**
+FEDERAL RESERVE
 
 September 16, 2026
 
@@ -257,7 +253,7 @@ The committee raised the target range for the federal funds rate by 25 basis poi
 
 [READ HERE](https://www.federalreserve.gov/monetarypolicy/files/monetary20260916a1.pdf)
 
-**IBBA AND M&A SOURCE**
+IBBA AND M&A SOURCE
 
 Market Pulse, second quarter 2026
 
@@ -275,7 +271,7 @@ Each summary restates the source in our own words and links to it, and each head
 
 Inspection and service revenue explains why fire protection and security companies have the most active acquirers in business services.
 
-**SECTOR FEATURE**
+INDUSTRY FEATURE
 
 ### Why fire and life safety has the most active acquirers
 
@@ -332,11 +328,7 @@ Chart data:
 
 Cintas and Rollins run recurring service routes, and APi Group is built around inspection and service. ABM and BrightView depend more heavily on labor hours.
 
-**BUYER**
-
-**TARGET (LINKED)**
-
-**RECENT FIRE AND SECURITY TRANSACTIONS**
+BUYERTARGET (LINKED)RECENT FIRE AND SECURITY TRANSACTIONS
 
 **WHAT THE TARGET DOES**
 
@@ -366,15 +358,14 @@ Jun 2026
 
 Purchase prices were not disclosed for these transactions. Benchmark International's own fire and life safety sales appear in the client spotlight in the next section.
 
-**WHAT A BUYER**
-
-**WILL ASK**
+WHAT A BUYER
+WILL ASK
 
 An owner in this field should expect to be asked what share of revenue comes from inspection, monitoring and service agreements, whether the licenses are held by the company or by the owner personally, and how long the technicians have been with the business.
 
 Listed multiples were retrieved on October 7, 2026, and use reported EBITDA. Rollins is a pest control company and is included as a route-based comparison. Company names are the property of their owners.
 
-## 7. Sector Activity
+## 7. Industry Activity
 
 -  Client spotlight
 
@@ -396,7 +387,7 @@ Benchmark International advised the owners of three fire protection businesses t
 
 FPS Technologies
 
-**ACQUIRED**
+ACQUIRED
 
 **BY**
 
@@ -404,15 +395,15 @@ Cintas
 
 ### FPS Technologies and Cintas
 
-**BUSINESS OVERVIEW**
+BUSINESS OVERVIEW
 
 FPS Technologies designs, installs and maintains fire protection and safety systems from Oklahoma City and provides emergency service around the clock.
 
-**THE BUYER**
+THE BUYER
 
 Cintas is a listed company that serves more than one million business customers over approximately 12,500 local routes ([Cintas annual report](https://www.sec.gov/Archives/edgar/data/0000723254/000072325426000042/cintascorporation_arsprint.pdf)).
 
-**WHAT THE BUYER ADDED**
+WHAT THE BUYER ADDED
 
 A regional book of recurring fire system inspection and maintenance work.
 
@@ -420,7 +411,7 @@ A regional book of recurring fire system inspection and maintenance work.
 
 Fire Systems Technology
 
-**ACQUIRED**
+ACQUIRED
 
 **BY**
 
@@ -428,25 +419,22 @@ AI Fire
 
 ### Fire Systems Technology and AI Fire
 
-**BUSINESS OVERVIEW**
+BUSINESS OVERVIEW
 
 Fire Systems Technology is a full-service fire sprinkler contractor in Arkansas that installs, inspects, maintains and renovates systems.
 
-**THE BUYER**
+THE BUYER
 
 AI Fire is a fire and life safety platform backed by private equity that has been adding regional contractors.
 
-**WHAT THE BUYER ADDED**
+WHAT THE BUYER ADDED
 
 Sprinkler installation and inspection capacity in Arkansas.
 
 [Read the announcement](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-of-fire-systems-technology-incorporated-and-ai-fire-llc/)
 
-**HIGH TECH SOLUTIONS**
-
-**SYSTEMS GROUP**
-
-**ACQUIRED**
+HIGH TECH SOLUTIONS
+SYSTEMS GROUPACQUIRED
 
 **BY**
 
@@ -454,21 +442,21 @@ AI Fire
 
 ### High Tech Solutions and AI Fire
 
-**BUSINESS OVERVIEW**
+BUSINESS OVERVIEW
 
 High Tech Solutions - Systems Group designs, installs and services special systems for customers in Montana and Wyoming.
 
-**THE BUYER**
+THE BUYER
 
 AI Fire made this purchase in addition to its acquisition of Fire Systems Technology.
 
-**WHAT THE BUYER ADDED**
+WHAT THE BUYER ADDED
 
 Special systems capability and a position in Montana and Wyoming.
 
 [Read the announcement](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-high-tech-solutions-systems-group-inc-and-ai-fire/)
 
-**WHAT THE THREE SALES HAD IN COMMON**
+WHAT THE THREE SALES HAD IN COMMON
 
 ### Service alongside installation
 
@@ -486,17 +474,14 @@ Business descriptions are taken from the announcements published on benchmarkint
 
 ## 9. Select Recent Business Services M&A Transactions
 
-One transaction from each segment and one with disclosed economics, announced between June and October 2026.
+One transaction from each sector and one with disclosed economics, announced between June and October 2026.
 
 - SEPTEMBER 2026 COMMERCIAL & FACILITY SERVICES
-
-**UNION ALARMTRONIC**
-
-**ACQUIRED**
+UNION ALARMTRONICACQUIRED
 
 **BY**
 
-**PYE-BARKER FIRE & SAFETY**
+PYE-BARKER FIRE & SAFETY
 
 ### Pye-Barker adds a family-owned alarm company in New Jersey
 
@@ -505,14 +490,11 @@ Union AlarmTronic provides alarm, access control and video systems. The purchase
 **WHAT IT SHOWS** Family-owned alarm and fire companies with monitoring revenue continue to find a buyer quickly.
 
 - OCTOBER 2026 MARKETING, SALES & TECH-ENABLED SERVICES
-
-**EAST BEACH SPECIALTIES**
-
-**ACQUIRED**
+EAST BEACH SPECIALTIESACQUIRED
 
 **BY**
 
-**ZEBRA MARKETING**
+ZEBRA MARKETING
 
 ### Zebra Marketing agrees to acquire East Beach Specialties
 
@@ -521,14 +503,11 @@ East Beach Specialties is a promotional products distributor on the Mississippi 
 **WHAT IT SHOWS** Scale is separating promotional products distributors, and smaller firms are joining larger ones.
 
 - AUGUST 2026 ENGINEERING, ARCHITECTURE & CONSULTING
-
-**BOWMAN CONSULTING GROUP**
-
-**ACQUIRED**
+BOWMAN CONSULTING GROUPACQUIRED
 
 **BY**
 
-**BERNHARD CAPITAL PARTNERS**
+BERNHARD CAPITAL PARTNERS
 
 ### Bernhard Capital agrees to buy Bowman for about $1.0 billion
 
@@ -537,14 +516,11 @@ Bowman is a founder-led engineering firm with more than 2,500 employees and a ba
 **WHAT IT SHOWS** Private capital is paying for licensed staff and funded backlog.
 
 - AUGUST 2026 FINANCIAL & INSURANCE SERVICES
-
-**HARRIS INSURANCE SERVICES**
-
-**ACQUIRED**
+HARRIS INSURANCE SERVICESACQUIRED
 
 **BY**
 
-**INSZONE INSURANCE SERVICES**
+INSZONE INSURANCE SERVICES
 
 ### Inszone acquires a three-generation agency in Tulsa
 
@@ -553,14 +529,11 @@ Harris Insurance Services was founded in 1925 in West Tulsa, Oklahoma ([Insuranc
 **WHAT IT SHOWS** Multi-generation agencies are selling to consolidators while premium rates soften.
 
 - SEPTEMBER 2026 STAFFING & HUMAN CAPITAL
-
-**LABORWORX**
-
-**ACQUIRED**
+LABORWORXACQUIRED
 
 **BY**
 
-**VERIWORKS**
+VERIWORKS
 
 ### VeriWorks enters data center construction staffing
 
@@ -569,14 +542,11 @@ LaborWorx supplies skilled trades for data center construction ([Staffing Indust
 **WHAT IT SHOWS** Skilled trades tied to data center, power and factory construction are drawing buyers.
 
 - JUNE 2026 STAFFING & HUMAN CAPITAL
-
-**AMS**
-
-**ACQUIRED**
+AMSACQUIRED
 
 **BY**
 
-**KORN FERRY**
+KORN FERRY
 
 ### Korn Ferry agrees to buy AMS at about 11 times EBITDA
 
@@ -590,19 +560,9 @@ Transaction values are as reported by the linked source. The listed staffing med
 
 Marketing and sales services lead with 23 closed transactions, commercial and facility services follow with 21, and most buyers were operating companies.
 
-**TRAILING 24 MONTHS**
+TRAILING 24 MONTHS
 
-**67**
-
-transactions closed in these five segments
-
-**142**
-
-further engagements in progress as of October 1, 2026, of which 69 are on the market
-
-**44**
-
-named sellers, more than half of them bought by a company in their own or an adjacent field
+67transactions closed in these five sectors142further engagements in progress as of October 1, 2026, of which 69 are on the market44named sellers, more than half of them bought by a company in their own or an adjacent field
 
 Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables ([Benchmark International](https://www.benchmarkintl.com/about/our-success/)).
 
@@ -728,11 +688,11 @@ Each tile links to the announcement on benchmarkintl.com. Twelve of the 44 named
 
 ## 11. Public Companies: Valuation
 
-Listed multiples are lower than a year ago in all five segments, and each segment trades below its three-year median.
+Listed multiples are lower than a year ago in all five sectors, and each sector trades below its three-year median.
 
 ### Share price change, past 52 weeks
 
-Median of the listed companies in each segment
+Median of the listed companies in each sector
 
 Chart data:
 
@@ -762,41 +722,27 @@ Chart data:
 
 26 of the 36 companies trade below their own three-year median multiple.
 
-**PRIVATE-DEAL REFERENCE POINTS**
+PRIVATE-DEAL REFERENCE POINTS
 
-**7.0x**
-
-Average for completed middle-market transactions in all industries, second quarter of 2026 ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective))
-
-**5.8x**
-
-Median for transactions of $5 million to $50 million in all industries, second quarter of 2026 ([IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf))
-
-**4.0x**
-
-Median for transactions of $2 million to $5 million in the same survey
-
-*Listed multiples describe companies many times larger than a founder-owned business.*
-
-**LISTED COMPANIES IN EACH PEER GROUP, WITH ENTERPRISE VALUE TO TRAILING EBITDA**
-
-**COMMERCIAL & FACILITY**
+7.0xAverage for completed middle-market transactions in all industries, second quarter of 2026 (GF Data via ACG)5.8xMedian for transactions of $5 million to $50 million in all industries, second quarter of 2026 (IBBA and M&A Source)4.0xMedian for transactions of $2 million to $5 million in the same survey Listed multiples describe companies many times larger than a founder-owned business.
+LISTED COMPANIES IN EACH PEER GROUP, WITH ENTERPRISE VALUE TO TRAILING EBITDA
+COMMERCIAL & FACILITY
 
 [Cintas](https://stockanalysis.com/stocks/ctas/statistics/) **26.0x** | [APi Group](https://stockanalysis.com/stocks/apg/statistics/) **19.3x** | [UL Solutions](https://stockanalysis.com/stocks/uls/statistics/) **18.2x** | [Rollins](https://stockanalysis.com/stocks/rol/statistics/) **18.0x** | [SGS](https://stockanalysis.com/quote/swx/SGSN/statistics/) **15.4x** | [FirstService](https://stockanalysis.com/stocks/fsv/statistics/) **14.1x** | [Intertek](https://stockanalysis.com/quote/lon/ITRK/statistics/) **13.0x** | [Mistras Group](https://stockanalysis.com/stocks/mg/statistics/) **10.5x** | [Bureau Veritas](https://stockanalysis.com/quote/epa/BVI/statistics/) **10.4x** | [ABM Industries](https://stockanalysis.com/stocks/abm/statistics/) **10.1x** | [BrightView](https://stockanalysis.com/stocks/bv/statistics/) **5.9x** | [Eurofins](https://stockanalysis.com/quote/epa/ERF/statistics/) **n/m**
 
-**MARKETING, SALES & TECH**
+MARKETING, SALES & TECH
 
 [Stagwell](https://stockanalysis.com/stocks/stgw/statistics/) **11.3x** | [4imprint](https://stockanalysis.com/quote/lon/FOUR/statistics/) **10.3x** | [Daktronics](https://stockanalysis.com/stocks/dakt/statistics/) **9.0x** | [Accenture](https://stockanalysis.com/stocks/acn/statistics/) **8.2x** | [Omnicom](https://stockanalysis.com/stocks/omc/statistics/) **7.7x** | [Cognizant](https://stockanalysis.com/stocks/ctsh/statistics/) **6.7x** | [Advantage Solutions](https://stockanalysis.com/stocks/adv/statistics/) **5.8x** | [Dentsu](https://stockanalysis.com/quote/tyo/4324/statistics/) **4.5x** | [Publicis](https://stockanalysis.com/quote/epa/PUB/statistics/) **n/m** | [WPP](https://stockanalysis.com/stocks/wpp/statistics/) **n/m**
 
-**ENGINEERING & ARCHITECTURE**
+ENGINEERING & ARCHITECTURE
 
 [Bowman Consulting](https://stockanalysis.com/stocks/bwmn/statistics/) **21.8x** | [Jacobs](https://stockanalysis.com/stocks/j/statistics/) **18.0x** | [Willdan Group](https://stockanalysis.com/stocks/wldn/statistics/) **16.1x** | [Tetra Tech](https://stockanalysis.com/stocks/ttek/statistics/) **14.3x** | [TIC Solutions](https://stockanalysis.com/stocks/tic/statistics/) **13.4x** | [Stantec](https://stockanalysis.com/stocks/stn/statistics/) **13.0x** | [AECOM](https://stockanalysis.com/stocks/acm/statistics/) **10.7x** | [WSP Global](https://stockanalysis.com/quote/tsx/WSP/statistics/) **n/m**
 
-**FINANCIAL & INSURANCE**
+FINANCIAL & INSURANCE
 
 [Ryan Specialty](https://stockanalysis.com/stocks/ryan/statistics/) **14.6x** | [Marsh McLennan](https://stockanalysis.com/stocks/mmc/statistics/) **13.2x** | [Aon](https://stockanalysis.com/stocks/aon/statistics/) **12.4x** | [WTW](https://stockanalysis.com/stocks/wtw/statistics/) **11.4x** | [Crawford](https://stockanalysis.com/stocks/crd.a/statistics/) **9.9x** | [Brown & Brown](https://stockanalysis.com/stocks/bro/statistics/) **9.6x** | [Gallagher](https://stockanalysis.com/stocks/ajg/statistics/) **n/m** | [Baldwin](https://stockanalysis.com/stocks/bwin/statistics/) **n/m**
 
-**STAFFING & HUMAN CAPITAL**
+STAFFING & HUMAN CAPITAL
 
 [Kforce](https://stockanalysis.com/stocks/kfrc/statistics/) **17.9x** | [TriNet](https://stockanalysis.com/stocks/tnet/statistics/) **13.1x** | [Barrett (BBSI)](https://stockanalysis.com/stocks/bbsi/statistics/) **12.2x** | [Randstad](https://stockanalysis.com/quote/ams/RAND/statistics/) **10.8x** | [ManpowerGroup](https://stockanalysis.com/stocks/man/statistics/) **9.1x** | [Korn Ferry](https://stockanalysis.com/stocks/kfy/statistics/) **8.8x** | [AMN Healthcare](https://stockanalysis.com/stocks/amn/statistics/) **5.7x** | [TrueBlue](https://stockanalysis.com/stocks/tbi/statistics/) **n/m** | [Robert Half](https://stockanalysis.com/stocks/rhi/statistics/) **n/m** | [Insperity](https://stockanalysis.com/stocks/nsp/statistics/) **n/m**
 
@@ -808,7 +754,7 @@ Insurance brokers earn the widest margins and the highest revenue multiples, and
 
 ### Revenue growth, trailing twelve months
 
-Median by segment; growth includes acquisitions
+Median by sector; growth includes acquisitions
 
 Chart data:
 
@@ -824,7 +770,7 @@ Financial and insurance growth reflects large acquisitions by the listed brokers
 
 ### EBITDA margin, trailing twelve months
 
-Median by segment, on reported EBITDA
+Median by sector, on reported EBITDA
 
 Chart data:
 
@@ -840,7 +786,7 @@ Insurance brokerage earns the widest margin, and staffing earns the narrowest be
 
 ### Free cash flow margin, trailing twelve months
 
-Median by segment
+Median by sector
 
 Chart data:
 
@@ -856,7 +802,7 @@ Commercial and facility services converts more revenue to cash than engineering 
 
 ### Enterprise value to trailing revenue
 
-Median by segment
+Median by sector
 
 Chart data:
 
@@ -868,9 +814,9 @@ Chart data:
 | Financial & Insurance | 3.92x |
 | Staffing & Human Capital | 0.53x |
 
-Revenue multiples follow margin, which is why an owner should compare a business with its own segment.
+Revenue multiples follow margin, which is why an owner should compare a business with its own sector.
 
-Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Medians cover every listed company in each segment with a published figure, between 7 and 12 companies a segment. Trailing periods end between December 2025 and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present.
+Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Medians cover every listed company in each sector with a published figure, between 7 and 12 companies a sector. Trailing periods end between December 2025 and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present.
 
 ## 13. Earnings and Commentary
 
@@ -904,7 +850,7 @@ Chart data:
 | Crawford & Company | -0.5% |
 | Robert Half | -2.0% |
 
-**CONTRACTED AND INSPECTION-DRIVEN SERVICES**
+CONTRACTED AND INSPECTION-DRIVEN SERVICES
 
 **Russ Becker**, President and Chief Executive Officer, [APi Group](https://www.sec.gov/Archives/edgar/data/0001796209/000162828026050806/apg-20260630xexx991.htm)
 
@@ -922,11 +868,11 @@ Described record revenue, strong cash flow and wider margins, and said the compa
 
 Said profitability met expectations while macroeconomic headwinds held back organic growth.
 
-**READ-THROUGH**
+READ-THROUGH
 
 Inspection and service revenue is carrying growth while customers defer discretionary projects.
 
-**ENGINEERING AND ENERGY DEMAND**
+ENGINEERING AND ENERGY DEMAND
 
 **Gord Johnston**, President and CEO, [Stantec](https://www.sec.gov/Archives/edgar/data/0001131383/000117184326005457/exh_991.htm)
 
@@ -944,11 +890,11 @@ Said demand is healthy across the firm's markets, that recent wins open the way 
 
 Attributed a strong quarter mainly to US federal and international markets, each of which grew at a double-digit rate.
 
-**READ-THROUGH**
+READ-THROUGH
 
 Power, water and infrastructure work is filling backlogs, and buyers are paying for the licensed staff who deliver it.
 
-**HIRING AND CLIENT BUDGETS**
+HIRING AND CLIENT BUDGETS
 
 **Jonas Prising**, Chair and CEO, [ManpowerGroup](https://www.sec.gov/Archives/edgar/data/0000871763/000119312526305399/man-ex99_1.htm)
 
@@ -966,7 +912,7 @@ Said clients favor programs with measurable returns, with demand accelerating in
 
 Said hiring demand keeps improving and that market conditions are becoming more supportive.
 
-**READ-THROUGH**
+READ-THROUGH
 
 Staffing demand is returning, and marketing clients are concentrating spend where results can be measured.
 
@@ -1375,11 +1321,10 @@ Each series runs from September 2021 to its latest month, September 2026, and GD
 
 ## 15. Select Market Participants
 
-The listed reference companies in each segment, and the platforms, sponsors and strategic buyers acquiring founder-owned businesses.
+The listed reference companies in each sector, and the platforms, sponsors and strategic buyers acquiring founder-owned businesses.
 
-**COMMERCIAL & FACILITY SERVICES**
-
-**LISTED COMPANIES**
+COMMERCIAL & FACILITY SERVICES
+LISTED COMPANIES
 
 -  Cintas
 
@@ -1404,8 +1349,7 @@ The listed reference companies in each segment, and the platforms, sponsors and 
 -  Eurofins Scientific
 
 -  UL Solutions
-
-**FIRE, SECURITY AND GUARDING**
+FIRE, SECURITY AND GUARDING
 
 - Pye-Barker Fire & Safety AI Fire
 
@@ -1413,7 +1357,7 @@ Sciens Building Solutions
 
 Allied Universal
 
-**FACILITY AND OFFICE TECHNOLOGY**
+FACILITY AND OFFICE TECHNOLOGY
 
 4M Building Solutions
 
@@ -1425,13 +1369,10 @@ UBEO Business Services
 
 Pacific Office Automation
 
-**TESTING AND INSPECTION**
+TESTING AND INSPECTION
 
-- Phenna Group Transcat EQT
-
-**MARKETING, SALES & TECH-ENABLED SERVICES**
-
-**LISTED COMPANIES**
+- Phenna Group Transcat EQTMARKETING, SALES & TECH-ENABLED SERVICES
+LISTED COMPANIES
 
 -  Dentsu Group
 
@@ -1452,8 +1393,7 @@ Pacific Office Automation
 -  4imprint
 
 -  Daktronics
-
-**AGENCY PLATFORMS AND SPONSORS**
+AGENCY PLATFORMS AND SPONSORS
 
 OneMagnify (Crestview)
 
@@ -1467,7 +1407,7 @@ Impact XM (Riverside)
 
 Platinum Equity
 
-**PROMOTIONAL PRODUCTS**
+PROMOTIONAL PRODUCTS
 
 HALO Branded Solutions
 
@@ -1475,13 +1415,10 @@ IdentiBrands (Proforma)
 
 Zebra Marketing
 
-**CONSULTING**
+CONSULTING
 
-- Armanino Wavestone
-
-**ENGINEERING, ARCHITECTURE & CONSULTING**
-
-**LISTED COMPANIES**
+- Armanino WavestoneENGINEERING, ARCHITECTURE & CONSULTING
+LISTED COMPANIES
 
 -  AECOM
 
@@ -1498,8 +1435,7 @@ Zebra Marketing
 -  TIC Solutions
 
 -  WSP Global
-
-**PLATFORMS AND CONSOLIDATORS**
+PLATFORMS AND CONSOLIDATORS
 
 Bernhard Capital Partners
 
@@ -1515,13 +1451,12 @@ Control Point Associates
 
 Blew & Associates
 
-**FORENSIC ENGINEERING**
+FORENSIC ENGINEERING
 
 J.S. Held
 
-**FINANCIAL & INSURANCE SERVICES**
-
-**LISTED COMPANIES**
+FINANCIAL & INSURANCE SERVICES
+LISTED COMPANIES
 
 -  Brown & Brown
 
@@ -1538,8 +1473,7 @@ J.S. Held
 -  Marsh McLennan
 
 -  The Baldwin Group
-
-**INSURANCE BROKERAGE**
+INSURANCE BROKERAGE
 
 Inszone Insurance Services
 
@@ -1551,15 +1485,12 @@ King Risk Partners
 
 Risk Placement Services
 
-**WEALTH AND OTHER**
+WEALTH AND OTHER
 
 - Hightower Mercer Advisors
 
-- Class Valuation Broadridge
-
-**STAFFING & HUMAN CAPITAL**
-
-**LISTED COMPANIES**
+- Class Valuation BroadridgeSTAFFING & HUMAN CAPITAL
+LISTED COMPANIES
 
 -  AMN Healthcare
 
@@ -1580,8 +1511,7 @@ Risk Placement Services
 -  Robert Half
 
 -  Insperity
-
-**STAFFING FIRMS**
+STAFFING FIRMS
 
 - Aerotek (Allegis) ALKU
 
@@ -1595,7 +1525,7 @@ HW Staffing Solutions
 
 Empire Workforce Solutions
 
-**INVESTORS**
+INVESTORS
 
 Concord Holdings
 
@@ -1605,29 +1535,13 @@ Private participants are buyers in transactions announced between October 2025 a
 
 ## 19. Benchmark International
 
-The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five sectors.
+The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five industries.
 
-The Middle Market team is the part of Benchmark International that advises owners of privately held companies on sales, recapitalizations and growth partnerships across five sectors.
+The Middle Market team is the part of Benchmark International that advises owners of privately held companies on sales, recapitalizations and growth partnerships across five industries.
 
-**#1**
-
-Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables
-
-**$50M to $500M**
-
-Total enterprise value range that the Middle Market team serves
-
-**5**
-
-Focused sector groups with dedicated expertise
-
-**15**
-
-Global offices across the Americas, Europe and Africa
-
-**RECOGNITION**
-
-**FIVE SECTOR GROUPS**
+#1Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables$50M to $500MTotal enterprise value range that the Middle Market team serves5Focused industry groups with dedicated expertise15Global offices across the Americas, Europe and Africa
+RECOGNITION
+FIVE INDUSTRY GROUPS
 
 **INDUSTRIAL**
 
@@ -1665,59 +1579,59 @@ Benchmark International | 4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607 
 
 The sources linked on each page, listed by page with the link text used.
 
-**KEY TRENDS IN BUSINESS SERVICES**
+KEY TRENDS IN BUSINESS SERVICES
 
 [Pye-Barker](https://pyebarkerfs.com/news/pye-barker-fire-safety-celebrates-mid-year-momentum-and-3-sdm-100-ranking/); [APi Group](https://www.sec.gov/Archives/edgar/data/0001796209/000162828026050806/apg-20260630xexx991.htm); [Federal Reserve](https://www.federalreserve.gov/monetarypolicy/files/monetary20260916a1.pdf); [FRED series GS10](https://fred.stlouisfed.org/series/GS10); [GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective); [ACEC](https://engineeringinc.acec.org/blog/engineering-firms-remain-resilient-amid-growing-economic-uncertainty-new-acec-research-institute-study-finds/); [Bowman](https://investors.bowman.com/news-releases/news-release-details/bowman-consulting-group-enters-definitive-agreement-be-acquired); [Insurance Journal](https://www.insurancejournal.com/news/national/2026/08/20/882240.htm); [Insurance Journal, September 21](https://www.insurancejournal.com/magazines/mag-business-moves/2026/09/21/885520.htm); [Staffing Industry Analysts](https://www.staffingindustry.com/editorial/it-staffing-report/it-staffing-revenue-up-5-at-the-median-in-pulse-survey); [FRED series TEMPHELPS](https://fred.stlouisfed.org/series/TEMPHELPS); [MediaPost](https://www.mediapost.com/publications/article/417751/ad-outlook-composite-improves-on-mw-revisions.html); [Marketing Dive](https://finance.yahoo.com/sectors/technology/articles/ai-remains-top-priority-cmos-102100803.html); [IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf); [IBBA and M&A Source release](https://www.webull.com/news/15462423712777216)
 
-**PERSPECTIVES ON FIVE SEGMENTS**
+PERSPECTIVES ON FIVE SECTORS
 
 [SDM](https://www.sdmmag.com/articles/105352-sdm-100-top-100-security-dealers-of-2026); [SGS](https://www.sgs.com/en-ca/news/2026/07/sgs-2026-half-year-results); [IAB and PwC](https://www.iab.com/insights/internet-advertising-revenue-report-full-year-2025/); [ASI](https://asicentral.com/press-releases/north-america-promo-industry-grows-4-percent-in-2025/); [ENR](https://enr.com/toplists/2026-top-500-design-firms-preview); [PSMJ](https://go.psmj.com/outlook-2026-aec-ma-trends-report); [Risk & Insurance](https://riskandinsurance.com/mga-premiums-hit-108-7-billion-in-2025-as-capacity-scrutiny-tightens/); [WealthManagement.com](https://www.wealthmanagement.com/ria-news/fidelity-m-a-transaction-count-fell-in-1h-but-total-asset-haul-rose-88-); [ASA](https://americanstaffing.net/posts/2026/03/30/employment-and-sales-rebound-in-q4/); [Staffing Industry Analysts](https://www.staffingindustry.com/editorial/industrial-staffing-report/industrial-staffing-forecast-revised-to-7-growth-from-1-)
 
-**WHAT WE'RE READING**
+WHAT WE'RE READING
 
 [ACEC Research Institute](https://engineeringinc.acec.org/blog/engineering-firms-remain-resilient-amid-growing-economic-uncertainty-new-acec-research-institute-study-finds/); [Staffing Industry Analysts](https://www.staffingindustry.com/editorial/it-staffing-report/it-staffing-revenue-up-5-at-the-median-in-pulse-survey); [Insurance Journal](https://www.insurancejournal.com/news/national/2026/08/20/882240.htm); [PitchBook](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf); [Reuters](https://www.investing.com/news/stock-market-news/global-ma-deal-rush-fades-in-third-quarter-as-rising-borrowing-costs-bite-4928161); [GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective); [Federal Reserve](https://www.federalreserve.gov/monetarypolicy/files/monetary20260916a1.pdf); [survey release](https://www.webull.com/news/15462423712777216); [IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf)
 
-**FEATURE: FIRE AND LIFE SAFETY**
+FEATURE: FIRE AND LIFE SAFETY
 
 [Pye-Barker](https://pyebarkerfs.com/news/pye-barker-fire-safety-celebrates-mid-year-momentum-and-3-sdm-100-ranking/); [Security Systems News](https://www.securitysystemsnews.com/article/pye-barker-fire-safety-accelerates-growth-strategy-with-57-acquisitions-in-2025); [APi Group](https://www.sec.gov/Archives/edgar/data/0001796209/000162828026050806/apg-20260630xexx991.htm); [APi Group, December 10, 2025](https://www.businesswire.com/news/home/20251210396417/en/APi-Group-Announces-Acquisition-of-CertaSite-and-Provides-Full-Year-2025-Update); [SDM](https://www.sdmmag.com/articles/105352-sdm-100-top-100-security-dealers-of-2026); [StockAnalysis](https://stockanalysis.com/); [Union AlarmTronic](https://pyebarkerfs.com/news/pye-barker-fire-safety-acquires-union-alarmtronic-llc-continuing-security-alarm-service-expansion-in-the-northeast/); [Suppression Systems, Inc.](https://pyebarkerfs.com/news/); [Aegis Protective Services and Admiral Security Services](https://ausnewsroom.aus.com/news/allied-universal-advances-growth-strategy-with-recent-strategic-acquisitions-1); [Southern Fire Control](https://www.privsource.com/acquisitions/deal/LXSEjg)
 
-**CLIENT SPOTLIGHT: THREE FIRE AND LIFE SAFETY SALES**
+CLIENT SPOTLIGHT: THREE FIRE AND LIFE SAFETY SALES
 
 [Cintas annual report](https://www.sec.gov/Archives/edgar/data/0000723254/000072325426000042/cintascorporation_arsprint.pdf)
 
-**SELECT RECENT BUSINESS SERVICES M&A TRANSACTIONS**
+SELECT RECENT BUSINESS SERVICES M&A TRANSACTIONS
 
 [Pye-Barker](https://pyebarkerfs.com/news/pye-barker-fire-safety-acquires-union-alarmtronic-llc-continuing-security-alarm-service-expansion-in-the-northeast/); [ASI](https://members.asicentral.com/news/industry-news/october-2026/zebra-marketing-inks-deal-to-acquire-east-beach-specialties/); [ASI Central](https://members.asicentral.com/news/industry-news/july-2026/industry-sales-grow-25-in-q2-as-business-pressures-persist/); [Bowman results](https://investors.bowman.com/news-releases/news-release-details/bowman-reports-strong-results-second-quarter-2026); [Bowman](https://investors.bowman.com/news-releases/news-release-details/bowman-consulting-group-enters-definitive-agreement-be-acquired); [Insurance Business](https://www.insurancebusinessmag.com/us/news/mergers-acquisitions/inszone-snaps-up-centuryold-tulsa-agency-in-august-deal-run-586995.aspx); [Insurance Journal](https://www.insurancejournal.com/magazines/mag-business-moves/2026/10/05/887584.htm); [Staffing Industry Analysts](https://www.staffingindustry.com/editorial/industrial-staffing-report/veriworks-entering-data-center-construction-staffing-with-laborworx-acquisition); [SIA forecast](https://www.staffingindustry.com/editorial/industrial-staffing-report/industrial-staffing-forecast-revised-to-7-growth-from-1-); [Korn Ferry](https://ir.kornferry.com/news-events/press-releases/detail/724/korn-ferry-announces-definitive-agreement-to-acquire-ams)
 
-**BENCHMARK INTERNATIONAL'S BUSINESS SERVICES TRANSACTIONS**
+BENCHMARK INTERNATIONAL'S BUSINESS SERVICES TRANSACTIONS
 
 [Benchmark International](https://www.benchmarkintl.com/about/our-success/)
 
-**PUBLIC COMPANIES: VALUATION**
+PUBLIC COMPANIES: VALUATION
 
 [GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective); [IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf); [StockAnalysis](https://stockanalysis.com/)
 
-**PUBLIC COMPANIES: OPERATING AND VALUATION METRICS**
+PUBLIC COMPANIES: OPERATING AND VALUATION METRICS
 
 [StockAnalysis](https://stockanalysis.com/)
 
-**EARNINGS AND COMMENTARY**
+EARNINGS AND COMMENTARY
 
 [Willdan Group](https://willdangroupinc.gcs-web.com/node/16626); [Bowman Consulting](https://investors.bowman.com/news-releases/news-release-details/bowman-reports-strong-results-second-quarter-2026); [APi Group](https://www.sec.gov/Archives/edgar/data/0001796209/000162828026050806/apg-20260630xexx991.htm); [TrueBlue](https://investor.trueblue.com/news-events/press-releases/detail/471/trueblue-reports-second-quarter-2026-results/); [Stantec](https://www.sec.gov/Archives/edgar/data/0001131383/000117184326005457/exh_991.htm); [Stagwell](https://www.newswire.com/news/stagwell-inc-nasdaq-stgw-reports-results-for-the-three-and-six-months-ended); [ManpowerGroup](https://www.sec.gov/Archives/edgar/data/0000871763/000119312526305399/man-ex99_1.htm); [Ryan Specialty](https://www.sec.gov/Archives/edgar/data/0001849253/000184925326000034/ryan-20260630xex991.htm); [Daktronics](https://daktronics.gcs-web.com/news-releases/news-release-details/daktronics-inc-announces-fiscal-2027-first-quarter-results); [Korn Ferry](https://ir.kornferry.com/news-events/press-releases/detail/733/korn-ferry-announces-first-quarter-fiscal-2027-results-of-operations); [Accenture](https://newsroom.accenture.com/content/4q-full-fy26-earnings/accenture-reports-fourth-quarter-and-full-year-fiscal-2026-results.pdf); [UL Solutions](https://www.ul.com/news/ul-solutions-inc-reports-strong-second-quarter-2026-results); [Kforce](https://s27.q4cdn.com/587398032/files/doc_financials/2026/q2/Q2-2026-Press-Release-Prepred-Remarks.pdf); [ABM Industries](https://www.sec.gov/Archives/edgar/data/0000771497/000119312526384364/abm-ex99_1.htm); [FirstService](https://www.sec.gov/Archives/edgar/data/0001637810/000117184326004850/exh_991.htm); [Advantage Solutions](https://s21.q4cdn.com/203226956/files/doc_financials/2026/q2/ADV-2Q-26-Earnings-Press-Release.pdf); [BrightView](https://www.sec.gov/Archives/edgar/data/0001734713/000119312526332832/bv-ex99_1.htm); [Crawford & Company](https://www.businesswire.com/news/home/20260803939690/en/); [Robert Half](https://finviz.com/news/372015/robert-half-reports-second-quarter-financial-results); [Tetra Tech](https://www.businesswire.com/news/home/20260729563017/en/)
 
-**ECONOMIC TRENDS**
+ECONOMIC TRENDS
 
 [FRED series A191RL1Q225SBEA](https://fred.stlouisfed.org/series/A191RL1Q225SBEA); [FRED series UNRATE](https://fred.stlouisfed.org/series/UNRATE); [FRED series PAYEMS](https://fred.stlouisfed.org/series/PAYEMS); [FRED series GS10](https://fred.stlouisfed.org/series/GS10); [FRED series FEDFUNDS](https://fred.stlouisfed.org/series/FEDFUNDS); [FRED series TEMPHELPS](https://fred.stlouisfed.org/series/TEMPHELPS); [FRED series CES6054130001](https://fred.stlouisfed.org/series/CES6054130001); [FRED series CES6056170001](https://fred.stlouisfed.org/series/CES6056170001)
 
-**SELECT MARKET PARTICIPANTS**
+SELECT MARKET PARTICIPANTS
 
 [StockAnalysis](https://stockanalysis.com/)
 
-**BENCHMARK INTERNATIONAL**
+BENCHMARK INTERNATIONAL
 
 [benchmarkintl.com](https://www.benchmarkintl.com/about/our-success/)
 
-**BENCHMARK INTERNATIONAL RECORDS**
+BENCHMARK INTERNATIONAL RECORDS
 
 Transaction records and the engagement portfolio as of October 1, 2026; announced transactions as published at [benchmarkintl.com/insights](https://www.benchmarkintl.com/insights/), each linked from its card or tile.
 

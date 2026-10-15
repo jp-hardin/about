@@ -1,11 +1,11 @@
-# Healthcare Q4 2026 M&A Sector Report
+# Healthcare Q4 2026 M&A Industry Report
 
 Benchmark International's Middle Market team. October 2026 | Jared Hardin, Managing Director.
 
 Mergers and acquisitions across provider services, life sciences, medical products and pharmacy services.
 
-Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-sector-report-q4-2026.html  
-PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-sector-report-q4-2026.pdf
+Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.html  
+PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.pdf
 
 Segments: Provider Services; Life Sciences & Diagnostics; Medical Products & Distribution; Pharmacy & Healthcare Services
 
@@ -57,6 +57,12 @@ Direct lenders widened buyout loan spreads to an average of 509 basis points in 
 
 Completed middle-market transactions in all industries averaged 7.0x EBITDA, with senior debt priced at 7.8% ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)).
 
+WHAT IT MEANS FOR OWNERS
+
+Buyers are paying most readily for revenue that recurs under contract or clinical necessity and that is paid by a balanced mix of payers.
+
+The median private equity entry multiple for healthcare services was 13.6x EBITDA in 2025, a figure weighted toward larger platforms ([PitchBook via Becker's ASC Review](https://www.beckersasc.com/asc-transactions-and-valuation-issues/why-asc-deals-are-outperforming-the-rest-of-healthcare-ma-in-2026-8-things-to-know/)), and 87% of sales above $5 million in all industries drew three or more offers ([IBBA and M&A Source](https://www.webull.com/news/15462423712777216)).
+
 ### Demand fundamentals
 
 National health spending grew 6.8% in the year to July 2026 and represented 18.4% of GDP ([Altarum](https://www.altarum.org/news-and-insights/september-2026-health-sector-economic-indicators-briefs)).
@@ -70,12 +76,6 @@ Healthcare employers added 17,000 jobs in September against a twelve-month avera
 A 100% default tariff applies to covered patented pharmaceuticals, with country and company exceptions and generics excluded ([White House proclamation](https://www.whitehouse.gov/presidential-actions/2026/04/adjusting-imports-of-pharmaceuticals-and-pharmaceutical-ingredients-into-the-united-states/)). The medical device investigation remained open in September with no tariff imposed ([iData Research](https://idataresearch.com/news-medical-device-tariffs-in-2026/)).
 
 California now requires transaction notices from private equity groups and management services organizations ([Nixon Peabody](https://www.nixonpeabody.com/insights/alerts/2026/05/27/ohcas-proposed-emergency-regulations-clarify-ab-1415-notice-requirements)), and Maine's 180-day notice and approval regime begins January 1, 2027 ([BakerHostetler](https://www.bakerlaw.com/insights/healthcare-and-private-equity-transactions-continue-to-be-under-state-scrutiny/)).
-
-**WHAT IT MEANS FOR OWNERS**
-
-Buyers are paying most readily for revenue that recurs under contract or clinical necessity and that is paid by a balanced mix of payers.
-
-The median private equity entry multiple for healthcare services was 13.6x EBITDA in 2025, a figure weighted toward larger platforms ([PitchBook via Becker's ASC Review](https://www.beckersasc.com/asc-transactions-and-valuation-issues/why-asc-deals-are-outperforming-the-rest-of-healthcare-ma-in-2026-8-things-to-know/)), and 87% of sales above $5 million in all industries drew three or more offers ([IBBA and M&A Source](https://www.webull.com/news/15462423712777216)).
 
 Figures are the latest published as of October 7, 2026, and each is linked to its source. Deal counts and values are as reported by the named publisher and are revised as transactions are confirmed.
 
@@ -148,9 +148,9 @@ National health expenditure figures for 2016 to 2023 are drawn from CMS releases
 
 ## 5. Strong Fundamentals Support Continued Activity
 
-Employment, capital investment and drug approvals have all grown since 2021, which supports demand in each of the four focus areas.
+Employment, capital investment and drug approvals have all grown since 2021, which supports demand in each of the four sectors.
 
-**HEALTH CARE EMPLOYMENT KEEPS RISING**
+HEALTH CARE EMPLOYMENT KEEPS RISING
 
 All employees, health care, millions, monthly, seasonally adjusted. Source: Bureau of Labor Statistics via [FRED](https://fred.stlouisfed.org/series/CES6562000101)
 
@@ -224,7 +224,7 @@ Healthcare employed 18.55 million people in September 2026, 16.1% more than in S
 
 Health care and social assistance had 1,359,000 open positions in August ([Bureau of Labor Statistics JOLTS](https://www.bls.gov/news.release/jolts.t01.htm)), which keeps clinician retention central to how buyers assess a provider.
 
-**CAPITAL KEEPS FLOWING INTO FACILITIES**
+CAPITAL KEEPS FLOWING INTO FACILITIES
 
 Total construction spending on health care, $ billions at an annual rate, monthly. Source: US Census Bureau via [FRED](https://fred.stlouisfed.org/series/TLHLTHCONS)
 
@@ -297,7 +297,7 @@ Healthcare construction ran at an annual rate of $75.8 billion in August 2026, 4
 
 Medical care prices rose 13.0% over the same period on the consumer price index ([FRED](https://fred.stlouisfed.org/series/CPIMEDSL)), so part of the increase reflects higher costs.
 
-**DRUG APPROVALS HAVE RECOVERED**
+DRUG APPROVALS HAVE RECOVERED
 
 Novel drugs approved by the FDA Center for Drug Evaluation and Research, by year. Source: [FDA](https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026); [RAPS](https://www.raps.org/resource/cder-approved-50-novel-drugs-in-2024-record-numbe.html)
 
@@ -323,19 +323,19 @@ Outsourced research has recovered alongside approvals, with IQVIA booking $1.22 
 
 * 2026 covers approvals through September 28. Employment and construction series run from September 2021 to the latest month published as of October 7, 2026. Approval counts for 2016 to 2021 and 2024 are as reported by RAPS and US Pharmacist from FDA data.
 
-## 6. Perspectives on Four Focus Areas
+## 6. Perspectives on Four Sectors
 
-Each focus area has its own buyers and drivers. This page covers providers, laboratories and research services.
+Each sector has its own buyers and drivers. This page covers providers, laboratories and research services.
 
-**PROVIDER SERVICES**
+PROVIDER SERVICES
 
 *Health systems are buying access points and sponsors are trading platforms.*
 
-**BUSINESSES WE COVER**
+BUSINESSES WE COVER
 
 Urgent care, Optometry & eye care, Pediatric & physical therapy, Multi-specialty medical groups, Emergency medical services, Renal care
 
-**KEY TRENDS**
+KEY TRENDS
 
 The 100 largest urgent care operators hold 6,056 of the country's 14,655 centers, and 55.9% of those locations are affiliated with a hospital ([Journal of Urgent Care Medicine](https://www.jucm.com/?p=86881)).
 
@@ -345,25 +345,25 @@ Care in the home drew the largest provider transactions of the year, including K
 
 Independent practice continues to shrink, and 42.2% of physicians work in physician-owned practices against 60.1% in 2012 ([AMA survey via Medical Economics](https://www.medicaleconomics.com/view/ama-physician-private-practice-unraveling-due-to-low-payment-high-costs-administrative-burdens)).
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 HCA Healthcare, MyEyeDr., U.S. Physical Therapy, Addus HomeCare, Concentra, Kinderhook and Universal Health Services
 
-**LISTED REFERENCE COMPANIES**
+LISTED REFERENCE COMPANIES
 
 **HCATHCUSPHDVAADUSPNTG**
 
 **ACHCLFSTPRVACONENSG**
 
-**LIFE SCIENCES & DIAGNOSTICS**
+LIFE SCIENCES & DIAGNOSTICS
 
 *Research spending has turned up and laboratories are selling to the national networks.*
 
-**BUSINESSES WE COVER**
+BUSINESSES WE COVER
 
 Clinical & pathology labs, Biologics & reagents, Clinical research sites, Human-factors & device design
 
-**KEY TRENDS**
+KEY TRENDS
 
 Quest grew revenue 10.2% in the second quarter on 13.1% more requisitions ([Quest Diagnostics](https://newsroom.questdiagnostics.com/2026-07-23-Quest-Diagnostics-Reports-Second-Quarter-2026-Financial-Results-Raises-Revenue-and-EPS-Guidance-for-Full-Year-2026)), and Labcorp spent $528.6 million on acquisitions in the first half ([Labcorp Form 10-Q](https://www.sec.gov/Archives/edgar/data/0000920148/000092014826000175/lh-20260630.htm)).
 
@@ -373,31 +373,31 @@ Outsourced research has recovered, with IQVIA's net bookings up 19% ([IQVIA](htt
 
 Sponsor-backed networks continue to buy clinical research sites, including Headlands Research in California and Summit Clinical Research in Dallas ([Headlands Research](https://www.prnewswire.com/news-releases/headlands-research-expands-california-presence-with-acquisition-of-clinical-trials-research-302814202.html); [Summit Clinical Research](https://www.prnewswire.com/news-releases/summit-clinical-research-solutions-expands-pinnacle-site-network-with-acquisition-of-dallas-research-institute-302874775.html)).
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 Labcorp and Quest for laboratories; Thermo Fisher, Danaher, Agilent and Merck KGaA for tools and reagents; Headlands Research and Summit Clinical Research for sites
 
-**LISTED REFERENCE COMPANIES**
+LISTED REFERENCE COMPANIES
 
 **LHDGXTMODHRTECHIQV**
 
 - MEDP ICLR CRL
 
-Focus areas and the businesses listed under each follow the Middle Market team's healthcare coverage. Buyers named are examples drawn from 2026 transactions and results. Tickers identify the listed reference companies on the valuation pages.
+Sectors and the businesses listed under each follow the Middle Market team's healthcare coverage. Buyers named are examples drawn from 2026 transactions and results. Tickers identify the listed reference companies on the valuation pages.
 
-## 7. Perspectives on Four Focus Areas
+## 7. Perspectives on Four Sectors
 
-Each focus area has its own buyers and drivers. This page covers products, distribution, pharmacy and staffing.
+Each sector has its own buyers and drivers. This page covers products, distribution, pharmacy and staffing.
 
-**MEDICAL PRODUCTS & DISTRIBUTION**
+MEDICAL PRODUCTS & DISTRIBUTION
 
 *Procedure demand is firm and consumables are outgrowing capital equipment.*
 
-**BUSINESSES WE COVER**
+BUSINESSES WE COVER
 
 Surgical instrument reprocessing, Emergency medical supplies, Respiratory & anesthesia products, Dental devices, Orthopedic products
 
-**KEY TRENDS**
+KEY TRENDS
 
 Stryker grew 9.0% organically in the second quarter ([Stryker](https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm)), and Steris grew healthcare consumables 9% while capital equipment grew 1% ([Steris](https://www.biospace.com/press-releases/steris-announces-financial-results-for-fiscal-2027-first-quarter)).
 
@@ -407,25 +407,24 @@ Several of the largest distribution businesses changed ownership, including Owen
 
 Tariffs have moved earnings in both directions since the Supreme Court struck down the emergency-powers tariffs in February ([Barnes Dennig](https://www.barnesdennig.com/section-122-tariffs-ieepa-refunds-update/)).
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 KKR, Danaher, Stryker, Mitsui Chemicals, Cardinal Health, Aspen Surgical, Platinum Equity and Apollo
 
-**LISTED REFERENCE COMPANIES**
+LISTED REFERENCE COMPANIES
 
 **SYKSTETFXHSICXRAYNVST**
 
 - ZBH ITGR SOLV VMD
-
-**PHARMACY & HEALTHCARE SERVICES**
+PHARMACY & HEALTHCARE SERVICES
 
 *Drug pricing reform is reshaping pharmacy while staffing returns to growth.*
 
-**BUSINESSES WE COVER**
+BUSINESSES WE COVER
 
 Specialty & mail-order pharmacy, Home infusion, Pharmaceutical delivery, Clinical staffing
 
-**KEY TRENDS**
+KEY TRENDS
 
 US net medicine spending reached $606 billion in 2025, up 10.6% ([IQVIA Institute](https://www.iqvia.com/insights/the-iqvia-institute/reports/us-medicine-use-trends-2026)), while independent pharmacies reported their lowest gross profit in ten years ([NCPA Digest](https://ncpa.org/newsroom/news-releases/2025/10/19/ncpa-releases-2025-digest-report)).
 
@@ -435,17 +434,17 @@ Specialty and infusion are growing fastest, and BrightSpring's specialty and inf
 
 Healthcare staffing is forecast to grow 1% to $39.0 billion in 2026 after three years of contraction ([Staffing Industry Analysts](https://www.staffingindustry.com/editorial/healthcare-staffing-report/healthcare-staffing-rebounds-as-demand-strengthens-in-the-second-and-third-quarters)).
 
-**ACTIVE BUYERS**
+ACTIVE BUYERS
 
 Guardian Pharmacy Services, Cencora, Cardinal Health and McKesson; Knox Lane, JLL Partners and VeloSource in staffing and logistics; Strata Critical Medical in perfusion
 
-**LISTED REFERENCE COMPANIES**
+LISTED REFERENCE COMPANIES
 
 **OPCHBTSGGRDNMCKCORCAH**
 
 - CVS AMN
 
-Focus areas and the businesses listed under each follow the Middle Market team's healthcare coverage. Buyers named are examples drawn from 2026 transactions and results. Tickers identify the listed reference companies on the valuation pages.
+Sectors and the businesses listed under each follow the Middle Market team's healthcare coverage. Buyers named are examples drawn from 2026 transactions and results. Tickers identify the listed reference companies on the valuation pages.
 
 ## 8. What We're Reading
 
@@ -453,9 +452,9 @@ Primary sources and trade reporting from the third quarter.
 
 ### What We're Reading
 
-Four pieces from the third quarter, one for each focus area, with the passage we marked and what it means for an owner.
+Four pieces from the third quarter, one for each sector, with the passage we marked and what it means for an owner.
 
-**FIERCE HEALTHCARE | PROVIDER SERVICES**
+FIERCE HEALTHCARE | PROVIDER SERVICES
 
 August 19, 2026
 
@@ -495,7 +494,7 @@ IQVIA Global Thought Leadership
 
 [READ HERE](https://www.iqvia.com/locations/emea/blogs/2026/07/biopharma-ma-mid-year-2026-update)
 
-**DRUG CHANNELS | PHARMACY & HEALTHCARE SERVICES**
+DRUG CHANNELS | PHARMACY & HEALTHCARE SERVICES
 
 August 11, 2026
 
@@ -511,7 +510,7 @@ Bryce Platt, PharmD, Drug Channels
 
 Quotations are reproduced as published. The Fierce Healthcare quotation joins two consecutive sentences spoken by the analyst. The IQVIA and MedTech Dive passages are the publications' own text.
 
-## 9. Sector Activity
+## 9. Industry Activity
 
 -  Momentum in healthcare services transactions
 
@@ -576,11 +575,10 @@ Chart data:
 
 ## 11. Healthcare Market: Select Participants
 
-The listed reference companies in each focus area and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
+The listed reference companies in each sector and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
 
-**PROVIDER SERVICES**
-
-**LISTED COMPANIES**
+PROVIDER SERVICES
+LISTED COMPANIES
 
 - HCA HCA Healthcare
 
@@ -603,8 +601,7 @@ The listed reference companies in each focus area and the private platforms, spo
 - CON Concentra
 
 - ENSG Ensign Group
-
-**PLATFORMS, SPONSORS AND HEALTH SYSTEMS**
+PLATFORMS, SPONSORS AND HEALTH SYSTEMS
 
 **HCA Healthcare urgent care**
 
@@ -622,9 +619,8 @@ The listed reference companies in each focus area and the private platforms, spo
 
 **Global Medical Response**
 
-**LIFE SCIENCES & DIAGNOSTICS**
-
-**LISTED COMPANIES**
+LIFE SCIENCES & DIAGNOSTICS
+LISTED COMPANIES
 
 - LH Labcorp
 
@@ -643,8 +639,7 @@ The listed reference companies in each focus area and the private platforms, spo
 - ICLR ICON
 
 - CRL Charles River Laboratories
-
-**RESEARCH NETWORKS AND STRATEGIC BUYERS**
+RESEARCH NETWORKS AND STRATEGIC BUYERS
 
 **Headlands Research (THL)**
 
@@ -658,9 +653,8 @@ The listed reference companies in each focus area and the private platforms, spo
 
 **Leica Biosystems (Danaher)**
 
-**MEDICAL PRODUCTS & DISTRIBUTION**
-
-**LISTED COMPANIES**
+MEDICAL PRODUCTS & DISTRIBUTION
+LISTED COMPANIES
 
 - SYK Stryker
 
@@ -681,8 +675,7 @@ The listed reference companies in each focus area and the private platforms, spo
 - SOLV Solventum
 
 - VMD Viemed Healthcare
-
-**SPONSORS AND PRODUCT STRATEGICS**
+SPONSORS AND PRODUCT STRATEGICS
 
 - KKR Mitsui Chemicals Aspen Surgical
 
@@ -696,9 +689,8 @@ The listed reference companies in each focus area and the private platforms, spo
 
 **Montagu and Kohlberg**
 
-**PHARMACY & HEALTHCARE SERVICES**
-
-**LISTED COMPANIES**
+PHARMACY & HEALTHCARE SERVICES
+LISTED COMPANIES
 
 - OPCH Option Care Health
 
@@ -715,8 +707,7 @@ The listed reference companies in each focus area and the private platforms, spo
 - CVS CVS Health
 
 - AMN AMN Healthcare
-
-**PHARMACY, STAFFING AND LOGISTICS BUYERS**
+PHARMACY, STAFFING AND LOGISTICS BUYERS
 
 - Knox Lane JLL Partners Soleo Health
 
@@ -732,11 +723,10 @@ Listed companies are the reference set for the valuation pages and each links to
 
 ## 12. Select Recent Healthcare M&A Transactions
 
-Six transactions announced or completed between June and September 2026, with at least one from each focus area.
+Six transactions announced or completed between June and September 2026, with at least one from each sector.
 
 - SEPTEMBER 2026 PROVIDER SERVICES
-
-**ACQUIRED BY**
+ACQUIRED BY
 
 ### MyEyeDr. agrees to buy the optometry business of EyeCare Partners
 
@@ -744,13 +734,10 @@ The business has more than 300 offices, and EyeCare Partners will apply the proc
 
 **WHAT IT SHOWS **Scaled eye care platforms are combining, and sellers are using proceeds to reduce debt.
 
-**EYECARE PARTNERS OPTOMETRY**
-
-**MYEYEDR.**
-
+EYECARE PARTNERS OPTOMETRY
+MYEYEDR.
 - SEPTEMBER 2026 PROVIDER SERVICES
-
-**ACQUIRED BY**
+ACQUIRED BY
 
 ### Addus HomeCare agrees to buy AccentCare's personal care division
 
@@ -758,13 +745,10 @@ Addus will pay about $275 million for a division with about $280 million of annu
 
 **WHAT IT SHOWS **Listed home care operators are paying about one times revenue for personal care scale.
 
-**ACCENTCARE PERSONAL CARE**
-
-**ADDUS HOMECARE**
-
+ACCENTCARE PERSONAL CARE
+ADDUS HOMECARE
 - JUNE 2026 LIFE SCIENCES & DIAGNOSTICS
-
-**ACQUIRED BY**
+ACQUIRED BY
 
 ### Merck KGaA agrees to acquire Bio-Techne
 
@@ -772,13 +756,11 @@ The agreement values the reagent and instrument maker at an enterprise value of 
 
 **WHAT IT SHOWS **Strategic buyers are paying for recurring consumables and reagents.
 
-**BIO-TECHNE**
-
-**MERCK KGAA**
+BIO-TECHNE
+MERCK KGAA
 
 - SEPTEMBER 2026 LIFE SCIENCES & DIAGNOSTICS
-
-**ACQUIRED BY**
+ACQUIRED BY
 
 ### Leica Biosystems buys StatLab from Audax and Linden
 
@@ -786,13 +768,10 @@ StatLab makes anatomic pathology consumables and had about $250 million of 2025 
 
 **WHAT IT SHOWS **A platform assembled from founder-owned businesses became a strategic acquisition.
 
-**STATLAB**
-
-**DANAHER (LEICA BIOSYSTEMS)**
-
+STATLAB
+DANAHER (LEICA BIOSYSTEMS)
 - AUGUST 2026 MEDICAL PRODUCTS & DISTRIBUTION
-
-**ACQUIRED BY**
+ACQUIRED BY
 
 ### KKR agrees to take Integer Holdings private
 
@@ -800,13 +779,10 @@ The offer of $127 a share values the contract manufacturer at $5.7 billion, a 51
 
 **WHAT IT SHOWS **Sponsors are buying medical device manufacturing platforms at scale.
 
-**INTEGER HOLDINGS**
-
-**KKR**
-
+INTEGER HOLDINGS
+KKR
 - JULY 2026 PHARMACY & HEALTHCARE SERVICES
-
-**ACQUIRED BY**
+ACQUIRED BY
 
 ### Knox Lane completes its purchase of Cross Country Healthcare
 
@@ -814,9 +790,8 @@ Knox Lane paid $437 million, or $13.25 a share, after Aya Healthcare ended an ag
 
 **WHAT IT SHOWS **Regulatory review can change the buyer and the price of a scale merger.
 
-**CROSS COUNTRY HEALTHCARE**
-
-**KNOX LANE**
+CROSS COUNTRY HEALTHCARE
+KNOX LANE
 
 Terms are as disclosed by the parties or reported by the linked source. Benchmark International did not advise on these transactions.
 
@@ -824,21 +799,9 @@ Terms are as disclosed by the parties or reported by the linked source. Benchmar
 
 Pharmacy and healthcare services leads with five closed transactions, life sciences and diagnostics follows with four, and most buyers were operating companies.
 
-**TRAILING 24 MONTHS**
+TRAILING 24 MONTHS
 
-**12**
-
-transactions closed in these four focus areas
-
-**39**
-
-further engagements in progress as of October 1, 2026, of which 20 are on the market
-
-**6 of 9**
-
-named sellers were bought by an operating company
-
-Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables ([Benchmark International](https://www.benchmarkintl.com/about/our-success/)).
+12transactions closed in these four sectors39further engagements in progress as of October 1, 2026, of which 20 are on the market6 of 9named sellers were bought by an operating company Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables (Benchmark International).
 
 **HAS BEEN ACQUIRED BY**
 
@@ -932,11 +895,11 @@ Healthcare executive and clinical placement
 
 Transactions closed in the trailing 24 months on which Benchmark International advised the seller, as announced at benchmarkintl.com. Nine of the twelve are shown; buyers appear as announced. Engagements in progress are counted in aggregate.
 
-## 14. Valuation Multiples Have Shifted by Focus Area
+## 14. Valuation Multiples Have Shifted by Sector
 
-Life sciences and diagnostics companies re-rated from 14.5x to 21.8x EBITDA in a year, while the other three focus areas trade within about one turn of a year ago.
+Life sciences and diagnostics companies re-rated from 14.5x to 21.8x EBITDA in a year, while the other three sectors trade within about one turn of a year ago.
 
-### Enterprise value to trailing EBITDA, median by focus area
+### Enterprise value to trailing EBITDA, median by sector
 
 Quarter-end values from September 2023 and the latest value in October 2026; the same companies at each point, where a multiple was available
 
@@ -967,21 +930,11 @@ Provider ServicesLife Sciences & DiagnosticsMedical Products & DistributionPharm
 |  | Medical Products & Distribution | 13.2x | 12.7x | 13.8x | 10 of 10 |
 |  | Pharmacy & Healthcare Services | 13.8x | 14.0x | 12.7x | 7 of 8 |
 
-**PRIVATE-MARKET REFERENCE POINTS**
+PRIVATE-MARKET REFERENCE POINTS
 
-**13.6x**
+13.6xMedian EBITDA multiple private equity paid for healthcare services companies in 2025, weighted toward larger platforms (PitchBook via Becker's ASC Review)7.0xAverage for completed middle-market transactions in all industries, second quarter of 2026 (GF Data via ACG)5.8xMedian for transactions of $5 million to $50 million in all industries, second quarter of 2026 (IBBA and M&A Source)
 
-Median EBITDA multiple private equity paid for healthcare services companies in 2025, weighted toward larger platforms ([PitchBook via Becker's ASC Review](https://www.beckersasc.com/asc-transactions-and-valuation-issues/why-asc-deals-are-outperforming-the-rest-of-healthcare-ma-in-2026-8-things-to-know/))
-
-**7.0x**
-
-Average for completed middle-market transactions in all industries, second quarter of 2026 ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective))
-
-**5.8x**
-
-Median for transactions of $5 million to $50 million in all industries, second quarter of 2026 ([IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf))
-
-*Listed multiples describe companies many times larger than a founder-owned business. They show relative standing among the focus areas, and a private company's price is set by its own earnings, growth and risk.*
+*Listed multiples describe companies many times larger than a founder-owned business. They show relative standing among the sectors, and a private company's price is set by its own earnings, growth and risk.*
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Multiples use reported EBITDA. Medians cover companies with a multiple between zero and 60x today, a year ago and in at least eight of the past twelve quarters. Bio-Techne and Integer Holdings trade at agreed acquisition prices.
 
@@ -991,11 +944,11 @@ Pharmacy and healthcare services shares rose 38% at the median and life sciences
 
 ### Share price change, past 52 weeks
 
-Median of the listed companies in each focus area
+Median of the listed companies in each sector
 
 Chart data:
 
-|  | Median share price change over 52 weeks by focus area |
+|  | Median share price change over 52 weeks by sector |
 | --- | --- |
 | Provider Services | +6.5% |
 | Life Sciences & Dx | +20.8% |
@@ -1004,7 +957,7 @@ Chart data:
 
 ### Share price relative to the 52-week high
 
-Median of the listed companies in each focus area
+Median of the listed companies in each sector
 
 Chart data:
 
@@ -1015,7 +968,7 @@ Chart data:
 | Medical Products | 81% |
 | Pharmacy & Services | 87% |
 
-**LARGEST GAINS, 52 WEEKS**
+LARGEST GAINS, 52 WEEKS
 
 - BTSG BrightSpring +124.8%
 
@@ -1047,9 +1000,7 @@ Chart data:
 
 - MCK McKesson +25.1%
 
-- ITGR Integer Holdings +22.9%
-
-**DECLINES, 52 WEEKS**
+- ITGR Integer Holdings +22.9%DECLINES, 52 WEEKS
 
 - XRAY Dentsply Sirona −27.0%
 
@@ -1079,7 +1030,7 @@ Provider companies are growing fastest, life sciences and diagnostics earns the 
 
 Provider ServicesLife Sciences & DiagnosticsMedical Products & DistributionPharmacy & Healthcare Services
 
-**OPERATING METRICS**
+OPERATING METRICS
 
 **Revenue growth, trailing twelve months**
 
@@ -1133,7 +1084,7 @@ Chart data:
 | Medical Products | 9.2% |
 | Pharmacy & Services | 2.8% |
 
-**VALUATION METRICS**
+VALUATION METRICS
 
 **EV to trailing revenue**
 
@@ -1235,83 +1186,58 @@ Year over year, as stated in each earnings release; quarters ended June 2026
 
 -  Provider Services  Life Sciences & Diagnostics
 
--  Medical Products & Distribution  Pharmacy & Healthcare Services
-
-**PROVIDER SERVICES**
+-  Medical Products & Distribution  Pharmacy & Healthcare ServicesPROVIDER SERVICES
 
 > *“We continue to see opportunities that include everything from larger portfolios, landlords looking to replace current tenants*, *non-profits looking to divest of their post-acute assets and a steady flow of traditional one-sie two-sies.”*
 
-[Barry Port, Chief Executive Officer, The Ensign Group](https://www.sec.gov/Archives/edgar/data/0001125376/000112537626000036/q22026pressrelease.htm)
-
-**LIFE SCIENCES & DIAGNOSTICS**
+Barry Port, Chief Executive Officer, The Ensign Group
+LIFE SCIENCES & DIAGNOSTICS
 
 > *“Hospitals continue to contend with workforce, financial and other pressures. As a preferred strategic partner, we empower hospitals to improve quality, expand access to new test innovations, and maximize cost efficiencies and capital allocation.” *
 
-[Jim Davis, Chairman, CEO and President, Quest Diagnostics](https://s2.q4cdn.com/390454341/files/doc_earnings/2026/q2/transcript/prepared-comments-for-website-Q2-2026-final.pdf)
-
-**MEDICAL PRODUCTS & DISTRIBUTION**
+Jim Davis, Chairman, CEO and President, Quest Diagnostics
+MEDICAL PRODUCTS & DISTRIBUTION
 
 > *“When you talk about onshoring, it's not just a move to the U.S. There's localization going on globally as tariffs become more of a play in Europe and in the U.S. You'll see some duplication of manufacturing sites, whereas maybe in the past, you might have one site globally that is focusing on one pharmaceutical product.”*
 
-[Dan](https://stockanalysis.com/stocks/ste/transcripts/666655-q1-2027/)[Carestio](https://stockanalysis.com/stocks/ste/transcripts/666655-q1-2027/)[, President and CEO, STERIS](https://stockanalysis.com/stocks/ste/transcripts/666655-q1-2027/)
-
-**PHARMACY & HEALTHCARE SERVICES**
+Dan Carestio, President and CEO, STERIS
+PHARMACY & HEALTHCARE SERVICES
 
 > *“We are uniquely positioned to capitalize on the continued growth from these fast-growing categories, especially in the areas of urology, oncology, and neurology”*
 
-[Jason Hollar, CEO, Cardinal Health](https://s201.q4cdn.com/566741227/files/doc_financials/2026/q4/Q4-FY26-CAH-Earnings-Transcript.pdf)
-
-**PROVIDER SERVICES**
+Jason Hollar, CEO, Cardinal Health
+PROVIDER SERVICES
 
 > *“Recently, we have begun to see an increasing number of personal care opportunities, which we will be actively pursuing. Since the announcement of the 2027 proposed home health rule rate, there is more optimism around potential deals in skilled home health care.”*
 
-[Dirk Allison, Chairman and Chief Executive Officer,](https://stockanalysis.com/stocks/adus/transcripts/660727-q2-2026/)[Addus](https://stockanalysis.com/stocks/adus/transcripts/660727-q2-2026/)[](https://stockanalysis.com/stocks/adus/transcripts/660727-q2-2026/)[HomeCare](https://stockanalysis.com/stocks/adus/transcripts/660727-q2-2026/)
-
-**LIFE SCIENCES & DIAGNOSTICS**
+Dirk Allison, Chairman and Chief Executive Officer, Addus HomeCare
+LIFE SCIENCES & DIAGNOSTICS
 
 > * “As you know, our capital deployment strategy continues to prioritize strategic M&A, complemented by return of capital to our shareholders. We continue to have an active pipeline of M&A opportunities in our highly fragmented industry.”*
 
-[Marc Casper, CEO](https://stockanalysis.com/stocks/tmo/transcripts/653574-q2-2026/)[,](https://stockanalysis.com/stocks/tmo/transcripts/653574-q2-2026/)[Thermo](https://stockanalysis.com/stocks/tmo/transcripts/653574-q2-2026/)[Fisher Scientific](https://stockanalysis.com/stocks/tmo/transcripts/653574-q2-2026/)
-
-**MEDICAL PRODUCTS & DISTRIBUTION**
+Marc Casper, CEO, Thermo Fisher Scientific
+MEDICAL PRODUCTS & DISTRIBUTION
 
 > *“We also have a leading position in the fast-growing DSO segment of the market, which is driven especially by the middle market segment. As these DSOs continue to consolidate the dental market, this structural advantage should allow us to outgrow the broader dental market.”*
 
-[Fred Lowery, Chief Executive Officer, Henry Schein](https://s206.q4cdn.com/399858780/files/doc_financials/2026/q2/HSIC-USQ_Transcript_2026-08-04.pdf)
-
-**PHARMACY & HEALTHCARE SERVICES**
+Fred Lowery, Chief Executive Officer, Henry Schein
+PHARMACY & HEALTHCARE SERVICES
 
 > *“I think the market, as we've talked about over the last year, there's been an expectation there'd be more consolidation that would occur. Quite honestly, most of last year it was relatively quiet. There were a few transactions in certain categories, not as many as we expected. That's changed over the last couple of quarters. We're starting to see more assets come to market.”*
 
-[Brian Scott, CFO](https://stockanalysis.com/stocks/amn/transcripts/662833-q2-2026/)[& COO, AMN Healthcare](https://stockanalysis.com/stocks/amn/transcripts/662833-q2-2026/)
+Brian Scott, CFO & COO, AMN Healthcare
 
 Growth is total revenue as reported, including acquisitions; company names link to the releases. Steris and McKesson figures are for fiscal first quarters and Cardinal Health for its fiscal fourth quarter, all ended June 30, 2026. Quotations are from the earnings releases.
 
 ## 21. Benchmark International
 
-The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five sectors.
+The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five industries.
 
-The Middle Market team, part of Benchmark International, advises owners of privately held companies on sales, recapitalizations and growth partnerships across five sectors.
+The Middle Market team, part of Benchmark International, advises owners of privately held companies on sales, recapitalizations and growth partnerships across five industries.
 
-**#1**
-
-Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables
-
-**$50M to $500M**
-
-Total enterprise value range the Middle Market team serves
-
-**5**
-
-Focused sector groups with dedicated expertise
-
-**15**
-
-Global offices across the Americas, Europe and Africa
-
-**RECOGNITION**
-
-**FIVE SECTOR GROUPS**
+#1Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables$50M to $500MTotal enterprise value range the Middle Market team serves5Focused industry groups with dedicated expertise15Global offices across the Americas, Europe and Africa
+RECOGNITION
+FIVE INDUSTRY GROUPS
 
 **INDUSTRIAL**
 
@@ -1412,67 +1338,67 @@ Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. 
 
 The sources linked on each page, listed by page with the link text used.
 
-**03 HEALTHCARE M&A: STATE OF PLAY**
+03 HEALTHCARE M&A: STATE OF PLAY
 
 [PitchBook](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)[via Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds); [PwC via MedTech Dive](https://www.medtechdive.com/news/medtech-ma-maintains-momentum-following-decade-high-2025-pwc/823113/); [Kaufman Hall](https://www.kaufmanhall.com/news/hospital-and-health-system-ma-activity-among-highest-q2-levels-2019); [IQVIA](https://www.iqvia.com/locations/emea/blogs/2026/07/biopharma-ma-mid-year-2026-update); [CMS](https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-proposed-rule); [CMS outpatient rule](https://www.cms.gov/medicare/payment/prospective-payment-systems/hospital-outpatient/regulations-notices); [CMS home health](https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-home-health-prospective-payment-system-proposed-rule-fact-sheet-cms-1844-p); [CMS rate notice](https://www.cms.gov/newsroom/fact-sheets/2027-medicare-advantage-part-d-rate-announcement); [Medicaid.gov](https://www.medicaid.gov/resources-for-states/working-families-tax-cut-legislation); [Federal Reserve](https://federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm); [US Treasury](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610); [PitchBook](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf); [GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective); [Altarum](https://www.altarum.org/news-and-insights/september-2026-health-sector-economic-indicators-briefs); [CMS](https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/nhe-fact-sheet); [Bureau of Labor Statistics](https://www.bls.gov/news.release/archives/empsit_10022026.htm); [White House proclamation](https://www.whitehouse.gov/presidential-actions/2026/04/adjusting-imports-of-pharmaceuticals-and-pharmaceutical-ingredients-into-the-united-states/); [iData](https://idataresearch.com/news-medical-device-tariffs-in-2026/)[Research](https://idataresearch.com/news-medical-device-tariffs-in-2026/); [Nixon Peabody](https://www.nixonpeabody.com/insights/alerts/2026/05/27/ohcas-proposed-emergency-regulations-clarify-ab-1415-notice-requirements); [BakerHostetler](https://www.bakerlaw.com/insights/healthcare-and-private-equity-transactions-continue-to-be-under-state-scrutiny/); [PitchBook](https://www.beckersasc.com/asc-transactions-and-valuation-issues/why-asc-deals-are-outperforming-the-rest-of-healthcare-ma-in-2026-8-things-to-know/)[via Becker's ASC Review](https://www.beckersasc.com/asc-transactions-and-valuation-issues/why-asc-deals-are-outperforming-the-rest-of-healthcare-ma-in-2026-8-things-to-know/); [IBBA and M&A Source](https://www.webull.com/news/15462423712777216)
 
-**04 HISTORICAL MARKET CONTEXT**
+04 HISTORICAL MARKET CONTEXT
 
 [CMS](https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/nhe-fact-sheet); [Committee for a Responsible Federal Budget](https://www.crfb.org/blogs/national-health-expenditures-continue-rise); [Kaufman Hall](https://www.kaufmanhall.com/news/hospital-and-health-system-ma-activity-ends-2025-momentum); [Kaufman Hall, first quarter](https://www.kaufmanhall.com/sites/default/files/2026-04/KH-Report_M%2BA_2026-Q1.pdf); [second quarter](https://www.kaufmanhall.com/news/hospital-and-health-system-ma-activity-among-highest-q2-levels-2019); [PitchBook](https://pitchbook.brightspotcdn.com/2d/0a/acb3601c4e19925c22d3f3877637/q4-2025-healthcare-services-report.pdf); [2012 to 2022](https://www.beckershospitalreview.com/hospital-transactions-and-valuation/how-health-system-m-as-have-fluctuated-over-the-last-decade/)
 
-**05 STRONG FUNDAMENTALS SUPPORT CONTINUED ACTIVITY**
+05 STRONG FUNDAMENTALS SUPPORT CONTINUED ACTIVITY
 
 [FRED](https://fred.stlouisfed.org/series/CES6562000101); [Bureau of Labor Statistics JOLTS](https://www.bls.gov/news.release/jolts.t01.htm); [FRED](https://fred.stlouisfed.org/series/TLHLTHCONS); [FRED](https://fred.stlouisfed.org/series/CPIMEDSL); [FDA](https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026); [RAPS](https://www.raps.org/resource/cder-approved-50-novel-drugs-in-2024-record-numbe.html); [IQVIA](https://www.biospace.com/press-releases/iqvia-reports-second-quarter-2026-results)
 
-**06 PERSPECTIVES ON FOUR FOCUS AREAS**
+06 PERSPECTIVES ON FOUR SECTORS
 
 [Journal of Urgent Care Medicine](https://www.jucm.com/?p=86881); [Becker's ASC Review](https://www.beckersasc.com/asc-transactions-and-valuation-issues/hcas-urgent-care-acquisition-spree/); [Healthcare Dive](https://www.healthcaredive.com/news/hca-texas-medclinic-acquisition-urgent-care/826917/); [HLTH](https://hlth.com/insights/news/home-health-and-hospice-provider-enhabit-to-go-private-in-1-1b-deal-2026-02-24); [AMA survey via Medical Economics](https://www.medicaleconomics.com/view/ama-physician-private-practice-unraveling-due-to-low-payment-high-costs-administrative-burdens); [Quest Diagnostics](https://newsroom.questdiagnostics.com/2026-07-23-Quest-Diagnostics-Reports-Second-Quarter-2026-Financial-Results-Raises-Revenue-and-EPS-Guidance-for-Full-Year-2026); [Labcorp](https://www.sec.gov/Archives/edgar/data/0000920148/000092014826000175/lh-20260630.htm)[Form 10-Q](https://www.sec.gov/Archives/edgar/data/0000920148/000092014826000175/lh-20260630.htm); [Association for Diagnostics & Laboratory Medicine](https://myadlm.org/cln/The-Lab-Advocate/2026/August/ADLM-Continues-Push-for-Permanent-PAMA-Reform); [IQVIA](https://www.biospace.com/press-releases/iqvia-reports-second-quarter-2026-results); [Medpace](https://www.sec.gov/Archives/edgar/data/0001668397/000166839726000023/medp-2026722exx991.htm); [Headlands Research](https://www.prnewswire.com/news-releases/headlands-research-expands-california-presence-with-acquisition-of-clinical-trials-research-302814202.html); [Summit Clinical Research](https://www.prnewswire.com/news-releases/summit-clinical-research-solutions-expands-pinnacle-site-network-with-acquisition-of-dallas-research-institute-302874775.html)
 
-**07 PERSPECTIVES ON FOUR FOCUS AREAS**
+07 PERSPECTIVES ON FOUR SECTORS
 
 [Stryker](https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm); [Steris](https://www.biospace.com/press-releases/steris-announces-financial-results-for-fiscal-2027-first-quarter); [HFMA](https://www.hfma.org/fast-finance/health-system-capital-investment-strategy-2026/); [Owens & Minor](https://www.owens-minor.com/pressreleases/owens-minor-announces-definitive-agreement-to-divest-products-healthcare-services-segment-to-platinum-equity-for-375mm-in-cash-and-a-retained-equity-stake/); [McKesson](https://www.sec.gov/Archives/edgar/data/0000927653/000092765326000232/mck_exhibit991x6302026.htm); [Barnes Dennig](https://www.barnesdennig.com/section-122-tariffs-ieepa-refunds-update/); [IQVIA Institute](https://www.iqvia.com/insights/the-iqvia-institute/reports/us-medicine-use-trends-2026); [NCPA Digest](https://ncpa.org/newsroom/news-releases/2025/10/19/ncpa-releases-2025-digest-report); [Guardian Pharmacy Services](https://www.sec.gov/Archives/edgar/data/0001802255/000119312526338032/d160709dex991.htm); [BrightSpring](https://www.sec.gov/Archives/edgar/data/0001865782/000119312526326654/btsg-ex99_1.htm); [Staffing Industry Analysts](https://www.staffingindustry.com/editorial/healthcare-staffing-report/healthcare-staffing-rebounds-as-demand-strengthens-in-the-second-and-third-quarters)
 
-**08 WHAT WE'RE READING**
+08 WHAT WE'RE READING
 
 [PitchBook](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)[via Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds); [IQVIA](https://www.iqvia.com/locations/emea/blogs/2026/07/biopharma-ma-mid-year-2026-update); [MedTech Dive](https://www.medtechdive.com/news/top-10-medtech-deals-in-the-first-half-of-2026/824435/); [Drug Channels](https://www.drugchannels.net/2026/08/the-k-shaped-pharmacy-shakeout.html)
 
-**10 HEALTHCARE SERVICES DEAL VOLUME HAS RESET**
+10 HEALTHCARE SERVICES DEAL VOLUME HAS RESET
 
 [AMA](https://www.ama-assn.org/system/files/2021-01/cf-history.pdf); [Q4 2025 Healthcare Services Report](https://pitchbook.brightspotcdn.com/2d/0a/acb3601c4e19925c22d3f3877637/q4-2025-healthcare-services-report.pdf); [PitchBook](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)[via Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)
 
-**12 SELECT RECENT HEALTHCARE M&A TRANSACTIONS**
+12 SELECT RECENT HEALTHCARE M&A TRANSACTIONS
 
 [EyeCare](https://www.businesswire.com/news/home/20260928896885/en/EyeCare-Partners-Announces-Sale-of-Optometry-Business)[Partners](https://www.businesswire.com/news/home/20260928896885/en/EyeCare-Partners-Announces-Sale-of-Optometry-Business); [Addus](https://www.sec.gov/Archives/edgar/data/0001468328/000143774926030348/ex_1015828.htm)[](https://www.sec.gov/Archives/edgar/data/0001468328/000143774926030348/ex_1015828.htm)[HomeCare](https://www.sec.gov/Archives/edgar/data/0001468328/000143774926030348/ex_1015828.htm); [Bio-Techne](https://www.sec.gov/Archives/edgar/data/0000842023/000199937126013429/ex99-1.htm); [PE Professional](https://peprofessional.com/2026/07/statlab-sold-to-danahers-leica-biosystems/); [Medical Design & Outsourcing](https://www.medicaldesignandoutsourcing.com/?p=280019); [Staffing Industry Analysts](https://www.staffingindustry.com/news/global-daily-news/aya-healthcare-terminates-merger-agreement-with-cross-country-healthcare); [Fierce Healthcare](https://www.fiercehealthcare.com/finance/staffing-firm-cross-country-healthcare-be-acquired-knox-lane-437m)
 
-**13 BENCHMARK INTERNATIONAL'S HEALTHCARE TRANSACTIONS**
+13 BENCHMARK INTERNATIONAL'S HEALTHCARE TRANSACTIONS
 
 [Benchmark International](https://www.benchmarkintl.com/about/our-success/); [Benchmark International: Precise Bioscience](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-precise-bioscience-llc-and-new-horizon-medical-solutions/); [Benchmark International: Formulation Technology](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-formulation-technology-incorporated-and-aavin-private-equity/); [Benchmark International: Fast Response On-Site Testing](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-fast-response-onsite-testing-inc-and-relentless-health-inc/); [Benchmark International: Critical Environments Professionals, certification division](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-critical-environments-professionals-and-scientific-safety-alliance/); [Benchmark International: Dental Holdings](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitated-the-transaction-of-dental-holdings-llc-and-solmetex-llc/); [Benchmark International:](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-fosterbridge-inc-and-amvie/)[FosterBridge](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-fosterbridge-inc-and-amvie/); [Benchmark International: Medical Temps](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-medical-temps-inc-and-health-advocates-network/); [Benchmark International: The Brooks Group and Associates](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-the-brooks-group-and-private-investors/)
 
-**14 VALUATION MULTIPLES HAVE SHIFTED BY FOCUS AREA**
+14 VALUATION MULTIPLES HAVE SHIFTED BY SECTOR
 
 [PitchBook](https://www.beckersasc.com/asc-transactions-and-valuation-issues/why-asc-deals-are-outperforming-the-rest-of-healthcare-ma-in-2026-8-things-to-know/)[via Becker's ASC Review](https://www.beckersasc.com/asc-transactions-and-valuation-issues/why-asc-deals-are-outperforming-the-rest-of-healthcare-ma-in-2026-8-things-to-know/); [GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective); [IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf); [StockAnalysis](https://stockanalysis.com/)
 
-**15 PUBLIC COMPANY STOCK PERFORMANCE: PAST 12 MONTHS**
+15 PUBLIC COMPANY STOCK PERFORMANCE: PAST 12 MONTHS
 
 [StockAnalysis](https://stockanalysis.com/)
 
-**16 PUBLIC COMPANY OPERATING AND VALUATION METRICS**
+16 PUBLIC COMPANY OPERATING AND VALUATION METRICS
 
 [StockAnalysis](https://stockanalysis.com/)
 
-**17 EARNINGS AND COMMENTARY**
+17 EARNINGS AND COMMENTARY
 
 [Ensign Group](https://www.sec.gov/Archives/edgar/data/0001125376/000112537626000036/q22026pressrelease.htm); [Medpace](https://www.sec.gov/Archives/edgar/data/0001668397/000166839726000023/medp-2026722exx991.htm); [Quest Diagnostics](https://s2.q4cdn.com/390454341/files/doc_earnings/2026/q2/transcript/prepared-comments-for-website-Q2-2026-final.pdf); [Thermo](https://stockanalysis.com/stocks/tmo/transcripts/653574-q2-2026/)[Fisher Scientific](https://stockanalysis.com/stocks/tmo/transcripts/653574-q2-2026/); [Stryker](https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm); [HCA Healthcare](https://www.sec.gov/Archives/edgar/data/0000860730/000119312526315151/hca-ex99_1.htm); [IQVIA earnings release](https://www.sec.gov/Archives/edgar/data/0001478242/000162828026049923/iqv-q2x2026earningspressre.htm); [U.S. Physical Therapy](https://www.sec.gov/Archives/edgar/data/0000885978/000088597826000042/ex99-1.htm); [Addus](https://stockanalysis.com/stocks/adus/transcripts/660727-q2-2026/)[](https://stockanalysis.com/stocks/adus/transcripts/660727-q2-2026/)[HomeCare](https://stockanalysis.com/stocks/adus/transcripts/660727-q2-2026/); [McKesson](https://www.mckesson.com/about-us/newsroom/press-releases/2026/mckesson-reports-fiscal-2027-first-quarter-results-and-raises-full-year-adjusted-eps-guidance/); [Steris](https://stockanalysis.com/stocks/ste/transcripts/666655-q1-2027/); [Tenet Healthcare](https://www.sec.gov/Archives/edgar/data/0000070318/000007031826000032/thc-20260630ex991earningsr.htm); [Henry Schein](https://s206.q4cdn.com/399858780/files/doc_financials/2026/q2/HSIC-USQ_Transcript_2026-08-04.pdf); [Cardinal Health](https://s201.q4cdn.com/566741227/files/doc_financials/2026/q4/Q4-FY26-CAH-Earnings-Transcript.pdf); [Labcorp](https://www.sec.gov/Archives/edgar/data/0000920148/000092014826000162/form8-kexhibit9912q26.htm); [Guardian Pharmacy Services](https://www.sec.gov/Archives/edgar/data/0001802255/000119312526338032/d160709dex991.htm); [AMN Healthcare](https://stockanalysis.com/stocks/amn/transcripts/662833-q2-2026/); [Option Care Health](https://www.sec.gov/Archives/edgar/data/1014739/000101473926000021/exhibit991-q22026.htm); [Cardinal Health](https://s201.q4cdn.com/566741227/files/doc_financials/2026/q4/Q4-FY26-CAH-Earnings-Transcript.pdf)
 
-**21 BENCHMARK INTERNATIONAL**
+21 BENCHMARK INTERNATIONAL
 
 [benchmarkintl.com](https://www.benchmarkintl.com/about/our-success/)
 
-**23 APPENDIX: PUBLIC MARKET OPERATING AND VALUATION METRICS**
+23 APPENDIX: PUBLIC MARKET OPERATING AND VALUATION METRICS
 
 [StockAnalysis](https://stockanalysis.com/)
 
-**24 APPENDIX: PUBLIC MARKET OPERATING AND VALUATION METRICS**
+24 APPENDIX: PUBLIC MARKET OPERATING AND VALUATION METRICS
 
 [StockAnalysis](https://stockanalysis.com/)
 
