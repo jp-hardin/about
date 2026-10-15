@@ -10,7 +10,7 @@ A standalone site for Benchmark International's Middle Market team: firm overvie
 |---|---|
 | `index.html` | Home page: hero, stats, awards, intro, journey, who we help, testimonials, industries grid, featured transactions, team, client stories, CEO library, HubSpot contact form |
 | `industries/index.html` | Industries landing page (5 industries) |
-| `industries/<industry>.html` | Industry page: overview, sectors and sub-sectors, filterable tombstones with deal descriptions, market themes, what buyers value, active acquirers, services, client story, deal team |
+| `industries/<industry>.html` | Industry page: overview, sectors and subsectors, filterable tombstones with deal descriptions, market themes, what buyers value, active acquirers, services, client story, deal team |
 | `transactions.html` | All curated tombstones, filterable by sector and searchable |
 | `insights/index.html` | Insights: current quarterly industry report per industry plus an archive of earlier editions (from `INSIGHTS` in `build.py`) |
 | `insights/<industry>-industry-report-q<N>-<year>.html` | Industry report pages and PDFs, generated from `_build/reports/<report>/` (Industrial, Business Services, Consumer and Healthcare from the PowerPoint deck `brief.pptx` via `_build/reports/brief.py`) |

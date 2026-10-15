@@ -104,7 +104,7 @@ Contractors doing data center work reported 9.9 months of backlog against 8.3 mo
 
 ENERGY, POWER & ENVIRONMENTAL SERVICES
 
-Mission Critical Group bought a Texas switchgear manufacturer and a transformer supplier within four months of each other ([Dallas Innovates](https://dallasinnovates.com/north-texas-mission-critical-group-acquires-txla-systems/); [Distribution Strategy Group](https://distributionstrategy.com/2026/07/mission-critical-group-makes-play-for-transformer-supply/)), and electrical testing and commissioning is the most contested category in the power sub-sector.
+Mission Critical Group bought a Texas switchgear manufacturer and a transformer supplier within four months of each other ([Dallas Innovates](https://dallasinnovates.com/north-texas-mission-critical-group-acquires-txla-systems/); [Distribution Strategy Group](https://distributionstrategy.com/2026/07/mission-critical-group-makes-play-for-transformer-supply/)), and electrical testing and commissioning is the most contested category in the power subsector.
 
 TRANSPORTATION & LOGISTICS
 
