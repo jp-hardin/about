@@ -35,7 +35,7 @@ Diesel averaged $6.29 a gallon in September, and the federal funds target now si
 
 ## 2. Market Conditions
 
-### Happening in Consumer Right Now
+### What's Happening Now
 
 Four developments shaping the market, each with what a listed company’s management said about it in its latest results.
 
@@ -79,7 +79,7 @@ Brian Kaner, President & CEO, Boyd Group
 
 Company figures and quotations are from quarterly earnings releases filed between July 30 and October 1, 2026, and quotations are reproduced as published. Store brand share is Circana data for the six months to June 14, 2026. Platform location and acquisition counts are from the linked announcements.
 
-### Tariffs, Fuel and Financing: Three Costs Buyers Are Repricing
+### Tariffs, Fuel and Financing
 
 Tariffs, fuel and interest rates have each moved in the past year, and each changes what a buyer will treat as normal earnings.
 
@@ -122,8 +122,6 @@ THE REPRICING IN FOUR FIGURES
 Tariff rates are as described in the linked sources. Diesel is the monthly average US on-highway retail price published by the Energy Information Administration. Earn-out figures are from the SRS Acquiom 2026 deal terms study of 2025 transactions.
 
 ## 3. Sector by Sector
-
-### Perspectives on Four Consumer Sectors
 
 What is moving demand, and who is buying, in each of the sectors the consumer practice covers.
 
@@ -219,7 +217,7 @@ Benchmark International counts are from the firm’s transaction records as of O
 
 ## 4. Deals and Buyers
 
-### Select Recent Consumer Transactions
+### Recent Transactions
 
 Acquirers disclosed a price in most of these transactions and a multiple of earnings in only a few.
 
@@ -303,9 +301,9 @@ PCT Top 100
 
 Not disclosed
 
-Values and multiples are as stated by the acquirer or reported in the linked source. Value to revenue is our calculation where marked. Company names are the property of their owners and are used for identification. Transactions advised by Benchmark International appear in [Benchmark International’s Consumer Transactions](#p10). Three transactions are shown for each of the four sectors.
+Values and multiples are as stated by the acquirer or reported in the linked source. Value to revenue is our calculation where marked. Company names are the property of their owners and are used for identification. Transactions advised by Benchmark International appear in [Our Transactions](#p10). Three transactions are shown for each of the four sectors.
 
-### Benchmark International’s Consumer Transactions
+### Our Transactions
 
 Consumer services and retail is the most active sector, and operating companies and platforms bought just over half of the named companies.
 
@@ -646,7 +644,7 @@ Buyers listed as active are those named in the 2026 transactions covered in the 
 
 ## 5. Valuations and Public Markets
 
-### Public Company Market Performance
+### Share Prices
 
 Packaged food shares have fallen about a third in a year, and earnings rose most at foodservice distributors and consumer services companies.
 
@@ -708,9 +706,9 @@ WHAT THE MARKET IS PRICING
 
 35 of 57listed consumer companies trade below their share price of a year ago11.4xmedian enterprise value to trailing EBITDA today, against 14.5x a year ago9 of 9peer groups carry a lower median multiple of EBITDA than a year ago
 
-Medians of 57 listed companies in nine peer groups, shown in [Public Company Metrics: Food and Beverage](#p15), [Public Company Metrics: Consumer Brands and Foodservice](#p16) and [Public Company Metrics: Restaurants, Services and Retail](#p17). Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil. EBITDA is as reported. The snacks median sits between Hershey, down 18%, and three smaller companies down 58% to 78%. Multiples cover the 55 companies with comparable readings on both dates.
+Medians of 57 listed companies in nine peer groups, shown in [Food and Beverage Companies](#p15), [Consumer Brands and Foodservice Companies](#p16) and [Restaurant, Services and Retail Companies](#p17). Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil. EBITDA is as reported. The snacks median sits between Hershey, down 18%, and three smaller companies down 58% to 78%. Multiples cover the 55 companies with comparable readings on both dates.
 
-### Revenue Growth Trends
+### Revenue Growth
 
 Snack, restaurant and consumer services companies grew fastest in their latest fiscal year, and packaged food revenue has declined three years running.
 
@@ -801,7 +799,7 @@ Chart data:
 
 Medians of fiscal-year revenue growth, including acquisitions, with the number of companies in parentheses. Shaded years are analyst consensus, and the rows under each chart give the plotted values in the order of the key. Middleby is left out because its revenue was restated for a spin-off. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil.
 
-### Public Company Valuation Metrics
+### Valuation Multiples
 
 The median multiple of EBITDA is lower than a year ago in every peer group, and packaged food companies trade near eight times.
 
@@ -891,7 +889,7 @@ DISCLOSED DEAL MULTIPLES SINCE 2025
 
 Medians by peer group, which can move with one or two companies in a group of six. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil. Multiples use reported EBITDA. The year-ago multiple is the reading four quarter-ends earlier, between late August and November 2025, and June 30, 2025 for Rentokil, which reports half-yearly. Deal multiples are as stated by each acquirer on its own basis.
 
-### Public Company Metrics: Food and Beverage
+### Food and Beverage Companies
 
 Packaged food companies trade at a median 8.2 times EBITDA. Keurig Dr Pepper’s figures include JDE Peet’s, and Utz has agreed to be acquired by Intersnack.
 
@@ -926,7 +924,7 @@ Packaged food companies trade at a median 8.2 times EBITDA. Keurig Dr Pepper’s
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; share prices are dated October 2 to 7. Multiples and margins use reported trailing EBITDA. n.m. marks a figure that is not comparable and is left out of the median; n.a. is not available. Year-ago multiples are four quarter-ends earlier, and multiple medians use companies with both readings.
 
-### Public Company Metrics: Consumer Brands and Foodservice
+### Consumer Brands and Foodservice Companies
 
 Household and personal care companies hold the highest multiples of the nine groups. Middleby’s figures reflect the July spin-off of its food processing business.
 
@@ -959,7 +957,7 @@ Household and personal care companies hold the highest multiples of the nine gro
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; share prices are dated October 2 to 7. Multiples and margins use reported trailing EBITDA. n.m. marks a figure that is not comparable and is left out of the median; n.a. is not available. Year-ago multiples are four quarter-ends earlier, and multiple medians use companies with both readings.
 
-### Public Company Metrics: Restaurants, Services and Retail
+### Restaurant, Services and Retail Companies
 
 Rollins, Planet Fitness and Boyd Group shares have each fallen by about half in a year while their revenue kept growing.
 
@@ -994,8 +992,6 @@ Rollins, Planet Fitness and Boyd Group shares have each fallen by about half in 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; share prices are dated October 2 to 7, and October 14 for Rentokil. Multiples and margins use reported trailing EBITDA. n.m. marks a figure that is not comparable and is left out of the median; n.a. is not available. Year-ago multiples are four quarter-ends earlier (June 30, 2025 for Rentokil, which reports half-yearly), and multiple medians use companies with both readings.
 
 ## 6. Indicators to Watch
-
-### Demand and Cost Indicators
 
 Spending is rising in dollars while sentiment falls, food manufacturers’ selling prices are flat and diesel costs two thirds more than a year ago.
 
@@ -1686,8 +1682,6 @@ Source: [FRED, series GASDESM](https://fred.stlouisfed.org/series/GASDESM)
 Each series runs from January 2021. August retail figures are the Census advance estimate, and September sentiment is from the Surveys of Consumers. The consumer price series have no October 2025 reading, and the unadjusted food-at-home increase reported for August is 2.2%.
 
 ## 7. What We're Reading
-
-### What We’re Reading
 
 Primary sources and industry releases from the third quarter.
 

@@ -29,8 +29,6 @@ North American electronics manufacturing services bookings rose 53.5% in August,
 
 ## 2. Market Conditions
 
-### Key Trends in Technology
-
 Six developments are shaping demand, pricing and deal activity across the six sectors as the fourth quarter begins.
 
 - AI infrastructure sets the pace of demand +62.5%
@@ -84,8 +82,6 @@ Buyers pay most readily for contracted, recurring revenue and for capability tha
 Figures are the latest published as of October 5, 2026 and each is linked to its source. EMS is electronics manufacturing services. CMMC is the Cybersecurity Maturity Model Certification for defense suppliers.
 
 ## 3. Sector by Sector
-
-### Perspectives on Six Sectors
 
 Each sector has its own buyers and drivers, and the listed companies shown are the reference set used for valuation later in this report.
 
@@ -251,7 +247,7 @@ Active buyers are drawn from transactions announced between January 2025 and Oct
 
 ## 4. Deals and Buyers
 
-### Select Recent Technology M&A Transactions
+### Recent Transactions
 
 One transaction from each sector, chosen from those announced or completed between June and September 2026.
 
@@ -329,9 +325,9 @@ The business supplies defense software, encryption and edge computing. Large con
 
 **WHAT IT SHOWS  **Prime contractors are paying for software and cyber capability.
 
-Transaction values are as reported by the linked source. Company names and marks are the property of their owners and are shown for identification. Transactions advised by Benchmark International follow in the next section, [Benchmark International's Technology Transactions](#p08).
+Transaction values are as reported by the linked source. Company names and marks are the property of their owners and are shown for identification. Transactions advised by Benchmark International follow in [Our Transactions](#p08).
 
-### Benchmark International's Technology Transactions
+### Our Transactions
 
 Electronics and hardware leads with five closed transactions and systems integration follows with four, and most buyers were operating companies.
 
@@ -455,7 +451,7 @@ Two further closed transactions, in systems integration and government technolog
 
 Each tile links to the announcement on benchmarkintl.com. Transactions closed in the 24 months to September 2026. Engagements in progress are shown in aggregate. Company names and marks are the property of their owners.
 
-### Select Market Participants
+### Who Is Buying
 
 The listed reference companies in each sector, and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
 
@@ -763,7 +759,7 @@ Private participants are buyers in transactions announced between January 2025 a
 
 ## 5. Valuations and Public Markets
 
-### Public Companies: Valuation
+### Valuation
 
 Electronics manufacturers re-rated from 12.1x to 21.8x EBITDA in a year, while IT services and government contractors trade below three-year medians.
 
@@ -916,7 +912,7 @@ Tyler Technologies
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5, 6 and 14, 2026, on reported EBITDA. The multiple chart covers the 38 companies with a multiple between zero and 60x at each point (faded marks are the 13 left out); share price change covers all 51. Year-ago multiples are at the quarter end nearest September 30, 2025, or June 30, 2025 for Computacenter, which reports half-yearly.
 
-### Public Companies: Operating Metrics
+### Operating Metrics
 
 Electronics manufacturers are growing about 20% a year, government contractors are flat, and security software converts the most revenue to cash.
 
@@ -984,7 +980,7 @@ Chart data:
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5, 6 and 14, 2026. Trailing periods end between June and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present, most visibly for security software. Medians cover all listed companies in each sector.
 
-### Earnings and Commentary
+### What Public Companies Said
 
 Data center suppliers grew fastest, security vendors tied their outlook to AI adoption, and government contractors described a harder market.
 
@@ -1091,8 +1087,6 @@ Contractors describe a harder market even as bookings and backlog grow.
 Figures and quotations are from each company's earnings release, linked under the chart. Accenture growth is in US dollars, Palo Alto Networks includes acquired businesses, and the CACI quotation describes its full fiscal year. Jabil reported fourth-quarter revenue of $10.6 billion against $8.3 billion and is not charted because its release states no percentage.
 
 ## 6. Indicators to Watch
-
-### Key Cost and Demand Indicators
 
 Component and copper prices turned up in 2026, data center construction is surging, and IT services employment keeps drifting lower.
 
@@ -1416,8 +1410,6 @@ Each series is indexed to September 2021 and runs to its latest month: August 20
 
 ## 7. What We're Reading
 
-### What We're Reading
-
 Primary sources and trade reporting from the third quarter.
 
 ### What We're Reading
@@ -1483,8 +1475,6 @@ Department of War Chief Information Officer, CMMC program page
 Quotations are reproduced as published. ARR is annual recurring revenue. EMS is electronics manufacturing services. NIST 800-171 is the federal standard for protecting controlled unclassified information.
 
 ## 8. About Benchmark International
-
-### Benchmark International
 
 The world's leading privately owned sell-side M&A advisor, with a Middle Market team focused on five industries.
 

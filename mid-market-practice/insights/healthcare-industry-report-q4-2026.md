@@ -31,7 +31,7 @@ Medicare proposes physician conversion factor cuts of up to 1.68% for 2027. Main
 
 ## 2. Market Conditions
 
-### Healthcare M&A: State of Play
+### State of Play
 
 Strategic buyers are setting the pace in 2026 while private equity completes fewer healthcare services transactions.
 
@@ -81,7 +81,7 @@ California now requires transaction notices from private equity groups and manag
 
 Figures are the latest published as of October 7, 2026, and each is linked to its source. Deal counts and values are as reported by the named publisher and are revised as transactions are confirmed.
 
-### Historical Market Context
+### Historical Context
 
 Health spending has compounded through every cycle since 2016, and hospital transaction counts have recovered from the 2025 low.
 
@@ -148,7 +148,7 @@ Chart data:
 
 National health expenditure figures for 2016 to 2023 are drawn from CMS releases of different years, and CMS revises earlier years with each release. Transaction counts are announced transactions as tallied by Kaufman Hall.
 
-### Strong Fundamentals Support Continued Activity
+### Why Demand Holds Up
 
 Employment, capital investment and drug approvals have all grown since 2021, which supports demand in each of the four sectors.
 
@@ -325,7 +325,7 @@ Outsourced research has recovered alongside approvals, with IQVIA booking $1.22 
 
 * 2026 covers approvals through September 28. Employment and construction series run from September 2021 to the latest month published as of October 7, 2026. Approval counts for 2016 to 2021 and 2024 are as reported by RAPS and US Pharmacist from FDA data.
 
-### Healthcare Services Deal Volume Has Reset
+### Deal Volume Has Reset
 
 Private equity completed 1,217 healthcare services transactions in 2021 and is on pace for 674 in 2026, the fewest since 2017.
 
@@ -375,8 +375,6 @@ Chart data:
 * 2026 is the annualized pace of an estimated 337 transactions in the first half. Annual counts are the chart labels in PitchBook's Q4 2025 report, and PitchBook restates earlier years as late-reported transactions are added. The 2025 count is an estimate.
 
 ## 3. Sector by Sector
-
-### Perspectives on Four Sectors
 
 Each sector has its own buyers and drivers.
 
@@ -497,7 +495,7 @@ Sectors and the businesses listed under each follow the Middle Market team's hea
 
 ## 4. Deals and Buyers
 
-### Healthcare Market: Select Participants
+### Who Is Buying
 
 The listed reference companies in each sector and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
 
@@ -645,7 +643,7 @@ PHARMACY, STAFFING AND LOGISTICS BUYERS
 
 Listed companies are the reference set for the valuation sections and each links to its data page. Private participants are buyers named in 2026 transactions. The list is a selection.
 
-### Select Recent Healthcare M&A Transactions
+### Recent Transactions
 
 Six transactions announced or completed between June and September 2026, with at least one from each sector.
 
@@ -719,7 +717,7 @@ KNOX LANE
 
 Terms are as disclosed by the parties or reported by the linked source. Benchmark International did not advise on these transactions.
 
-### Benchmark International's Healthcare Transactions
+### Our Transactions
 
 Pharmacy and healthcare services leads with five closed transactions, life sciences and diagnostics follows with four, and most buyers were operating companies.
 
@@ -821,7 +819,7 @@ Transactions closed in the trailing 24 months on which Benchmark International a
 
 ## 5. Valuations and Public Markets
 
-### Valuation Multiples Have Shifted by Sector
+### Valuation Multiples by Sector
 
 Life sciences and diagnostics companies re-rated from 14.5x to 21.8x EBITDA in a year, while the other three sectors trade within about one turn of a year ago.
 
@@ -864,7 +862,7 @@ PRIVATE-MARKET REFERENCE POINTS
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Multiples use reported EBITDA. Medians cover companies with a multiple between zero and 60x today, a year ago and in at least eight of the past twelve quarters. Bio-Techne and Integer Holdings trade at agreed acquisition prices.
 
-### Public Company Stock Performance: Past 12 Months
+### Share Prices, Past 12 Months
 
 Pharmacy and healthcare services shares rose 38% at the median and life sciences shares rose 21%, while provider and medical products shares rose about 6%.
 
@@ -950,7 +948,7 @@ Shares rose over the year at 29 of the 38 companies: 7 of 11 provider companies,
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; prices are from October 2 to October 7. Price change excludes dividends. Bio-Techne and Integer Holdings trade near agreed acquisition prices.
 
-### Public Company Operating and Valuation Metrics
+### Operating and Valuation Metrics
 
 Provider companies are growing fastest, life sciences and diagnostics earns the highest margins and multiples, and pharmacy trades on thin margins.
 
@@ -1066,7 +1064,7 @@ Chart data:
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Bars in each panel run in the order of the key. Consensus growth is the analyst estimate for each company's current fiscal year, and fiscal years differ. Forward multiples require a licensed data source and are not shown. Company detail is in the appendix.
 
-### Earnings and Commentary
+### What Public Companies Said
 
 Skilled nursing and research services grew fastest in the latest quarter, laboratories and device makers grew 6% to 10%, and pharmacy and staffing grew 2%.
 
@@ -1155,7 +1153,7 @@ Brian Scott, CFO & COO, AMN Healthcare
 
 Growth is total revenue as reported, including acquisitions; company names link to the releases. Steris and McKesson figures are for fiscal first quarters and Cardinal Health for its fiscal fourth quarter, all ended June 30, 2026. Quotations are from the earnings releases.
 
-### Appendix: Public Market Operating and Valuation Metrics
+### Appendix: Company-by-Company Metrics
 
 As of October 7, 2026. Provider Services and Life Sciences & Diagnostics.
 
@@ -1214,8 +1212,6 @@ As of October 7, 2026. Medical Products & Distribution and Pharmacy & Healthcare
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. LTM is the trailing twelve months. EBITDA is as reported. † Excluded from the EV to EBITDA medians because the multiple is above 60x, negative or lacks eight quarters of history. n.a. marks a figure distorted by a divestiture.
 
 ## 6. What We're Reading
-
-### What We're Reading
 
 Primary sources and trade reporting from the third quarter.
 
@@ -1280,8 +1276,6 @@ Bryce Platt, PharmD, Drug Channels
 Quotations are reproduced as published. The Fierce Healthcare quotation joins two consecutive sentences spoken by the analyst. The IQVIA and MedTech Dive passages are the publications' own text.
 
 ## 7. About Benchmark International
-
-### Benchmark International
 
 The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five industries.
 

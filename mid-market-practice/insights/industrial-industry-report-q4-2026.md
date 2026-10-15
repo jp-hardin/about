@@ -33,7 +33,7 @@ The Federal Reserve raised its target range to 3.75% to 4.00% on September 16. G
 
 ## 2. Market Conditions
 
-### Market Insights: Q4 2026
+### The Quarter at a Glance
 
 Demand is broad, buyers are organized around platforms and financing became more expensive in September.
 
@@ -71,7 +71,7 @@ $53.4BQuanta Services total backlog June 2026
 
 Figures are as reported by the linked sources. Middle-market multiple and debt figures are GF Data sponsor-reported averages for the first and second quarters of 2026.
 
-### Power Demand: The Buildout Reaches Every Industrial Sector
+### Power Demand Reaches Every Sector
 
 Electricity demand is growing about 2% a year, the equipment to meet it is sold out years ahead and acquirers are buying existing capacity.
 
@@ -122,7 +122,7 @@ Transaction values and multiples are as stated by the acquirer in the linked ann
 
 ## 3. Deals and Buyers
 
-### Featured Engagement: The Carmi Companies
+### Featured Deal: The Carmi Companies
 
 A Laredo logistics and customs brokerage group and a Mexico manufacturing services company have combined to form an end-to-end cross-border platform.
 
@@ -172,7 +172,7 @@ VIEW MORE TRANSACTIONS
 
 Company descriptions are from the announcement on benchmarkintl.com. Benchmark International counts are for the 24 months to September 30, 2026 and for engagements in progress as of October 1, 2026.
 
-### Select Recent Industrial Transactions
+### Recent Transactions
 
 Public acquirers disclosed prices of about 6 to 10 times EBITDA, and sponsor-owned platforms bought family-owned companies on undisclosed terms.
 
@@ -191,9 +191,9 @@ Buyers in power, environmental services and logistics paid for technicians, perm
 | OCTOBER 2026 Transportation & Logistics | RXO acquired by C.H. ROBINSON | C.H. Robinson agreed on October 5 to acquire RXO, a truck brokerage, managed transportation and last-mile provider, at an implied value of $5.8 billion, a 29% premium to RXO’s last closing price ( C.H. Robinson and RXO ). | About $300 million of expected annual cost savings supports the price at the top of the brokerage market. |
 | MARCH 2026 Transportation & Logistics | EELCO acquired by REDWOOD LOGISTICS AEA Investors | Redwood Logistics acquired EELCO, a Laredo, Texas, customs brokerage with a foreign-trade-zone warehouse that had been founder-owned since 1991 ( FreightWaves ). Terms were not disclosed. | Logistics platforms are buying brokers at the border as trade with Mexico sets monthly records. |
 
-Transaction values and multiples are as reported by the linked source or calculated from the figures it gives. Company names are the property of their owners and are shown for identification. Transactions advised by Benchmark International appear in [Benchmark International’s Industrial Transactions](#p09). Two transactions are shown for each of the five industrial sectors.
+Transaction values and multiples are as reported by the linked source or calculated from the figures it gives. Company names are the property of their owners and are shown for identification. Transactions advised by Benchmark International appear in [Our Transactions](#p09). Two transactions are shown for each of the five industrial sectors.
 
-### Benchmark International’s Industrial Transactions
+### Our Transactions
 
 Building products and construction services is the most active sector, and strategic acquirers were the buyers in more than half of the sales.
 
@@ -333,7 +333,7 @@ Each tile links to the announcement on benchmarkintl.com. Counts are from Benchm
 
 ## 4. Valuations and Public Markets
 
-### Public Company Performance and Trends: Valuation History
+### Valuation History
 
 Manufacturing, distribution and transportation companies trade above every year-end multiple of the past five years.
 
@@ -460,7 +460,7 @@ Listed multiples describe companies many times larger than a founder-owned busin
 
 Median enterprise value to trailing EBITDA for 38 listed companies at each company’s fiscal year-end from 2021 to 2025 and today; the five-year high, low and median under each chart use the year-end values. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026, with share prices from September 28 to October 7, 2026. Multiples use reported EBITDA.
 
-### Public Company Performance and Trends: Operating Metrics
+### Operating Metrics
 
 Building products and construction companies are growing revenue about 22% a year, and manufacturers earn the highest margins.
 
@@ -520,9 +520,9 @@ Chart data:
 | Distribution & Services | 50% |
 | Manufacturing & Industrial Tech | 64% |
 
-Medians of the 38 listed companies shown in [Public Company Performance and Trends: Valuation History](#p10), grouped by sector. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Trailing periods end between April and July 2026. EBITDA is as reported and is lower than the adjusted EBITDA that companies present. Forward estimates are not included.
+Medians of the 38 listed companies shown in [Valuation History](#p10), grouped by sector. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Trailing periods end between April and July 2026. EBITDA is as reported and is lower than the adjusted EBITDA that companies present. Forward estimates are not included.
 
-### Public Company Performance and Trends: Valuation Metrics
+### Valuation Multiples
 
 Transportation shares rose a median 43% in a year and still trade at the lowest multiple of EBITDA of the five sectors.
 
@@ -582,11 +582,9 @@ Chart data:
 | Energy & Env. | 2.1x |
 | Transport | 1.5x |
 
-Medians of the 38 listed companies shown in [Public Company Performance and Trends: Valuation History](#p10), grouped by sector. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Year-end 2025 multiples stand in for the forward multiples that a licensed data service would provide. Three of the eight building products and construction companies hold more cash than debt.
+Medians of the 38 listed companies shown in [Valuation History](#p10), grouped by sector. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Year-end 2025 multiples stand in for the forward multiples that a licensed data service would provide. Three of the eight building products and construction companies hold more cash than debt.
 
 ## 5. Indicators to Watch
-
-### Economic Trends
 
 Capital goods orders are 14% above a year ago, diesel is up 68% and the 10-year Treasury yield averaged 4.99% in September.
 

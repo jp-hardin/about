@@ -353,3 +353,5 @@
 .report .rchap .rkey .rkey-d { color: var(--charcoal); }
 .report .rchap .dlabel { color: var(--gold-deep, var(--gold)) !important; }
 .report #ch-short .rblock > p:first-child, .report #ch-short .dtx > p:first-child { font-family: var(--font-serif); font-size: 1.15rem; line-height: 1.6; color: var(--ink); }
+.report .rpart > .rh2 { font-weight: 700; font-size: clamp(1.5rem, 2.6vw, 1.95rem); }
+.report .rpart .rh3 { font-size: clamp(1.1rem, 1.7vw, 1.25rem); margin-top: 30px; }

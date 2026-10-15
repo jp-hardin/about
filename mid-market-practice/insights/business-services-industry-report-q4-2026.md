@@ -31,8 +31,6 @@ Completed middle-market deals averaged 7.0x EBITDA in the second quarter, and 87
 
 ## 2. Market Conditions
 
-### Key Trends in Business Services
-
 Six developments are shaping demand, pricing and deal activity across the five sectors as the fourth quarter begins.
 
 ### Inspection-driven revenue draws the most active buyers
@@ -92,7 +90,7 @@ Figures are the latest published as of October 7, 2026, and each is linked to it
 
 ## 3. Sector by Sector
 
-### Perspectives on Five Sectors
+### Five Sectors
 
 Each sector has its own buyers and drivers, and the same five tests decide how a buyer values a business in any of them.
 
@@ -190,7 +188,7 @@ Specialty placements, gross margin held through the downturn and direct client r
 
 Active buyers are drawn from transactions announced between October 2025 and October 2026. Company names are the property of their owners and are shown for identification.
 
-### Feature: Fire and Life Safety
+### Fire and Life Safety
 
 Inspection and service revenue explains why fire protection and security companies have the most active acquirers in business services.
 
@@ -290,7 +288,7 @@ Listed multiples were retrieved on October 7, 2026, and use reported EBITDA. Rol
 
 ## 4. Deals and Buyers
 
-### Client Spotlight: Three Fire and Life Safety Sales
+### Three Fire and Life Safety Sales We Advised
 
 Benchmark International advised the owners of three fire protection businesses that were bought by operating companies already in the field.
 
@@ -381,7 +379,7 @@ Cintas and AI Fire both operate fire protection businesses, so each purchase ext
 
 Business descriptions are taken from the announcements published on benchmarkintl.com, which are linked from each card. Transaction values are not disclosed. Company names and marks are the property of their owners.
 
-### Select Recent Business Services M&A Transactions
+### Recent Transactions
 
 One transaction from each sector and one with disclosed economics, announced between June and October 2026.
 
@@ -463,9 +461,9 @@ The enterprise value of £850 million, roughly $1.1 billion, compares with about
 
 **WHAT IT SHOWS** Long-term outsourcing contracts earned a multiple in line with the 10.8x median of far larger listed staffing companies.
 
-Transaction values are as reported by the linked source. The listed staffing median is in the valuation section of this report. Company names are the property of their owners. Transactions advised by Benchmark International follow in the next section, [Benchmark International's Business Services Transactions](#p10).
+Transaction values are as reported by the linked source. The listed staffing median is in the valuation section of this report. Company names are the property of their owners. Transactions advised by Benchmark International follow in [Our Transactions](#p10).
 
-### Benchmark International's Business Services Transactions
+### Our Transactions
 
 Marketing and sales services lead with 23 closed transactions, commercial and facility services follow with 21, and most buyers were operating companies.
 
@@ -595,7 +593,7 @@ Retail Rex Capital
 
 Each tile links to the announcement on benchmarkintl.com. Twelve of the 44 named transactions are shown. Transactions closed in the 24 months to September 2026. Engagements in progress are shown in aggregate. Company names and marks are the property of their owners.
 
-### Select Market Participants
+### Who Is Buying
 
 The listed reference companies in each sector, and the platforms, sponsors and strategic buyers acquiring founder-owned businesses.
 
@@ -811,7 +809,7 @@ Private participants are buyers in transactions announced between October 2025 a
 
 ## 5. Valuations and Public Markets
 
-### Public Companies: Valuation
+### Valuation
 
 Listed multiples are lower than a year ago in all five sectors, and each sector trades below its three-year median.
 
@@ -873,7 +871,7 @@ STAFFING & HUMAN CAPITAL
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, with share prices dated September 15 to October 7. Multiples use reported EBITDA. The chart covers the 36 companies with a current multiple under 50x, a year-ago multiple and quarter-end history. The mark n/m identifies 9 companies whose multiple is above 50x, unavailable or inconsistent on the source.
 
-### Public Companies: Operating and Valuation Metrics
+### Operating and Valuation Metrics
 
 Insurance brokers earn the widest margins and the highest revenue multiples, and staffing companies earn the narrowest.
 
@@ -943,7 +941,7 @@ Revenue multiples follow margin, which is why an owner should compare a business
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Medians cover every listed company in each sector with a published figure, between 7 and 12 companies a sector. Trailing periods end between December 2025 and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present.
 
-### Earnings and Commentary
+### What Public Companies Said
 
 Engineering firms grew fastest, APi Group held double-digit growth, and four of the five staffing firms shown grew.
 
@@ -1044,8 +1042,6 @@ Staffing demand is returning, and marketing clients are concentrating spend wher
 Figures are from each earnings release, linked from the company name. Commentary is summarized in our own words. Stantec and Willdan are on net revenue, Korn Ferry is on fee revenue, and Crawford is computed from stated revenue. Omnicom, Tetra Tech and Baldwin state no comparable change and are not charted.
 
 ## 6. Indicators to Watch
-
-### Economic Trends
 
 Growth is positive, hiring has slowed, long-term yields are higher than a year ago and engineering employment keeps rising.
 
@@ -1448,8 +1444,6 @@ Each series runs from September 2021 to its latest month, September 2026, and GD
 
 ## 7. What We're Reading
 
-### What We're Reading
-
 Six primary sources and trade reports from the third quarter, with the reason each one matters to an owner.
 
 INDUSTRY READING
@@ -1530,8 +1524,6 @@ The quarterly survey of business brokers and M&A advisors put the median multipl
 Each summary restates the source in our own words and links to it, and each heading is our own description of the piece.
 
 ## 8. About Benchmark International
-
-### Benchmark International
 
 The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five industries.
 
