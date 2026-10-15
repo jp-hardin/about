@@ -350,7 +350,7 @@ def web_refs(pages, alias):
 
 # Shorter, plainer subsection titles for the web; the deck and PDF keep their own. Keys are lower case.
 WEB_TITLES = {
-    'market insights: q4 2026': 'The Quarter at a Glance',
+    'market insights: q4 2026': 'The Quarter in Brief',
     'power demand: the buildout reaches every industrial sector': 'Power Demand Reaches Every Sector',
     'featured engagement: the carmi companies': 'Featured Deal: The Carmi Companies',
     'public company performance and trends: valuation history': 'Valuation History',
@@ -416,13 +416,13 @@ ORDER = ['short', 'market', 'sectors', 'deals', 'valuations', 'indicators', 'rea
 
 
 def chapters(pages):
-    """The web report's chapters: [(key, title, [pages])]. The first part divider (the key insights) is The Short
+    """The web report's chapters: [(key, title, [pages])]. The first part divider (the key insights) is Industry at a
     Version; the other part dividers are dropped."""
     groups = {}
     for pg in pages[1:]:
         if pg['part']:
             if pg['part'] == '01':
-                groups.setdefault('short', ('The Short Version', []))[1].append(pg)
+                groups.setdefault('short', ('Industry at a Glance', []))[1].append(pg)
             continue
         t = re.sub(r'<[^>]+>', '', pg['title']).strip().lower()
         for key, title, pat in CHAPTERS:
@@ -488,7 +488,7 @@ def build_page(prs):
     byline, segs, included = cover(prs)
     lead = CONF['lead']
 
-    # Online the report is organized by what a reader comes for, not by deck page: chapters (The Short Version,
+    # Online the report is organized by what a reader comes for, not by deck page: chapters (Industry at a Glance,
     # Market Conditions, Sector by Sector, ...) hold the deck pages as subsections, in deck order within each chapter.
     # Part dividers go; long tables, the disclosures and the sources fold away until opened.
     def key_list(body):

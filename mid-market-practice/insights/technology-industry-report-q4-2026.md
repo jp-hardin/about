@@ -7,7 +7,7 @@ Data center demand is filling order books, consolidators keep paying for recurri
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.pdf
 
-## 1. The Short Version
+## 1. Industry at a Glance
 
 **KEY INSIGHTS**
 

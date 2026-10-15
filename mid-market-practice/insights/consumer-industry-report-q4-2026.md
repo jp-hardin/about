@@ -9,7 +9,7 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-ind
 
 Segments: Food & Beverage; Consumer Brands & Products; Foodservice & Distribution; Consumer Services & Retail
 
-## 1. The Short Version
+## 1. Industry at a Glance
 
 Buyers of consumer businesses are paying for brands that have held price and volume, for companies that sell through more than one channel and for operators with room to add distribution or locations. They have stayed active while tariffs, fuel and interest rates have each changed what a buyer treats as normal earnings.
 

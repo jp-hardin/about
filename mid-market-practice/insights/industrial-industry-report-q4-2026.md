@@ -9,7 +9,7 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-i
 
 Segments: Manufacturing & Industrial Technology; Industrial Distribution & Services; Building Products & Construction Services; Energy, Power & Environmental Services; Transportation & Logistics
 
-## 1. The Short Version
+## 1. Industry at a Glance
 
 American manufacturing has expanded for nine consecutive months, and acquirers in every industrial sector are buying capacity that already exists because skilled labor is scarce and new equipment takes a long time to arrive. Borrowing costs rose in September, and buyers have become more selective about what they pay for.
 
@@ -33,7 +33,7 @@ The Federal Reserve raised its target range to 3.75% to 4.00% on September 16. G
 
 ## 2. Market Conditions
 
-### The Quarter at a Glance
+### The Quarter in Brief
 
 Demand is broad, buyers are organized around platforms and financing became more expensive in September.
 

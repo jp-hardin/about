@@ -9,7 +9,7 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/business-ser
 
 Segments: Commercial & Facility Services; Marketing, Sales & Tech-Enabled Services; Engineering, Architecture & Consulting; Financial & Insurance Services; Staffing & Human Capital
 
-## 1. The Short Version
+## 1. Industry at a Glance
 
 **KEY INSIGHTS**
 

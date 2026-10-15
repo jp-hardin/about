@@ -9,7 +9,7 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-i
 
 Segments: Provider Services; Life Sciences & Diagnostics; Medical Products & Distribution; Pharmacy & Healthcare Services
 
-## 1. The Short Version
+## 1. Industry at a Glance
 
 **KEY INSIGHTS**
 
