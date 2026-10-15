@@ -9,7 +9,7 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-i
 
 Segments: Manufacturing & Industrial Technology; Industrial Distribution & Services; Building Products & Construction Services; Energy, Power & Environmental Services; Transportation & Logistics
 
-## Insights
+## 1. The Short Version
 
 American manufacturing has expanded for nine consecutive months, and acquirers in every industrial sector are buying capacity that already exists because skilled labor is scarce and new equipment takes a long time to arrive. Borrowing costs rose in September, and buyers have become more selective about what they pay for.
 
@@ -31,7 +31,9 @@ APi Group is working toward 60% of revenue from inspection and service. Buyers p
 
 The Federal Reserve raised its target range to 3.75% to 4.00% on September 16. GF Data's average multiple eased to 7.0 times trailing adjusted EBITDA, from 7.3 times.
 
-## 1. Market Insights: Q4 2026
+## 2. Market Conditions
+
+### Market Insights: Q4 2026
 
 Demand is broad, buyers are organized around platforms and financing became more expensive in September.
 
@@ -69,7 +71,7 @@ $53.4BQuanta Services total backlog June 2026
 
 Figures are as reported by the linked sources. Middle-market multiple and debt figures are GF Data sponsor-reported averages for the first and second quarters of 2026.
 
-## 2. Power Demand: The Buildout Reaches Every Industrial Sector
+### Power Demand: The Buildout Reaches Every Industrial Sector
 
 Electricity demand is growing about 2% a year, the equipment to meet it is sold out years ahead and acquirers are buying existing capacity.
 
@@ -118,7 +120,9 @@ THE BUILDOUT IN FOUR FIGURES
 
 Transaction values and multiples are as stated by the acquirer in the linked announcement. Backlog figures are from company second-quarter reports and the ABC member survey for August 2026.
 
-## 3. Featured Engagement: The Carmi Companies
+## 3. Deals and Buyers
+
+### Featured Engagement: The Carmi Companies
 
 A Laredo logistics and customs brokerage group and a Mexico manufacturing services company have combined to form an end-to-end cross-border platform.
 
@@ -168,21 +172,7 @@ VIEW MORE TRANSACTIONS
 
 Company descriptions are from the announcement on benchmarkintl.com. Benchmark International counts are for the 24 months to September 30, 2026 and for engagements in progress as of October 1, 2026.
 
-## Industry Activity
-
-Acquirers announced transactions in every industrial sector during 2026, with sellers that ranged from founder-owned machine shops and customs brokers to companies bought by public acquirers for several billion dollars. Listed industrial companies trade at a median of 16.2 times EBITDA, and the indicators behind demand and financing are pointing in different directions.
-
-- 07 Select recent industrial transactions
-
-09
-
-Benchmark International’s industrial transactions
-
-- 10 Public company performance and trends
-
-- 13 Economic trends
-
-## 4. Select Recent Industrial Transactions
+### Select Recent Industrial Transactions
 
 Public acquirers disclosed prices of about 6 to 10 times EBITDA, and sponsor-owned platforms bought family-owned companies on undisclosed terms.
 
@@ -203,7 +193,7 @@ Buyers in power, environmental services and logistics paid for technicians, perm
 
 Transaction values and multiples are as reported by the linked source or calculated from the figures it gives. Company names are the property of their owners and are shown for identification. Transactions advised by Benchmark International appear in [Benchmark International’s Industrial Transactions](#p09). Two transactions are shown for each of the five industrial sectors.
 
-## 5. Benchmark International’s Industrial Transactions
+### Benchmark International’s Industrial Transactions
 
 Building products and construction services is the most active sector, and strategic acquirers were the buyers in more than half of the sales.
 
@@ -341,7 +331,9 @@ TRANSPORTATION
 
 Each tile links to the announcement on benchmarkintl.com. Counts are from Benchmark International’s transaction records for the 24 months to September 30, 2026; engagements in progress are shown in aggregate. Fifty-nine of the 85 closed transactions have been announced publicly.
 
-## 6. Public Company Performance and Trends: Valuation History
+## 4. Valuations and Public Markets
+
+### Public Company Performance and Trends: Valuation History
 
 Manufacturing, distribution and transportation companies trade above every year-end multiple of the past five years.
 
@@ -468,7 +460,7 @@ Listed multiples describe companies many times larger than a founder-owned busin
 
 Median enterprise value to trailing EBITDA for 38 listed companies at each company’s fiscal year-end from 2021 to 2025 and today; the five-year high, low and median under each chart use the year-end values. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026, with share prices from September 28 to October 7, 2026. Multiples use reported EBITDA.
 
-## 7. Public Company Performance and Trends: Operating Metrics
+### Public Company Performance and Trends: Operating Metrics
 
 Building products and construction companies are growing revenue about 22% a year, and manufacturers earn the highest margins.
 
@@ -530,7 +522,7 @@ Chart data:
 
 Medians of the 38 listed companies shown in [Public Company Performance and Trends: Valuation History](#p10), grouped by sector. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Trailing periods end between April and July 2026. EBITDA is as reported and is lower than the adjusted EBITDA that companies present. Forward estimates are not included.
 
-## 8. Public Company Performance and Trends: Valuation Metrics
+### Public Company Performance and Trends: Valuation Metrics
 
 Transportation shares rose a median 43% in a year and still trade at the lowest multiple of EBITDA of the five sectors.
 
@@ -592,7 +584,9 @@ Chart data:
 
 Medians of the 38 listed companies shown in [Public Company Performance and Trends: Valuation History](#p10), grouped by sector. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026. Year-end 2025 multiples stand in for the forward multiples that a licensed data service would provide. Three of the eight building products and construction companies hold more cash than debt.
 
-## 9. Economic Trends
+## 5. Indicators to Watch
+
+### Economic Trends
 
 Capital goods orders are 14% above a year ago, diesel is up 68% and the 10-year Treasury yield averaged 4.99% in September.
 
@@ -1176,7 +1170,9 @@ Source: [FRED, series GS10](https://fred.stlouisfed.org/series/GS10)
 
 Each series runs monthly from October 2021 to its latest reading, which is August 2026 for all series except diesel and the Treasury yield (September 2026). Recent months are preliminary and subject to revision.
 
-## 10. Important Disclosures
+## 6. Disclosures and Sources
+
+### Important Disclosures
 
 These disclosures apply to this report and to the Middle Market industry reports.
 
@@ -1194,7 +1190,7 @@ This material is only being distributed to, and only made available to, and dire
 
 Information in this report is as of October 7, 2026 unless stated otherwise.
 
-## 11. Sources
+### Sources
 
 Every figure in this report links to the page it came from, and the same links are collected here by section.
 

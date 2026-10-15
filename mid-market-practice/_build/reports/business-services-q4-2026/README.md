@@ -11,7 +11,7 @@ sh build.sh
 This runs `../brief.py` (with `../webdeck.py` and `../deckhtml.py`), which writes:
 
 - `insights/business-services-industry-report-q4-2026.pdf`: the deck converted to PDF (the download).
-- `insights/business-services-industry-report-q4-2026.html`: the site page, in the site's single-column report layout (side contents menu, numbered sections; `flow.py` sets each deck page as one reading column). Each deck page becomes one section with the same words, links, tables and logos; the deck's charts are redrawn as SVG from their data, each with its values as a table.
+- `insights/business-services-industry-report-q4-2026.html`: the site page, organized for the web: chapters by what a reader comes for (The Short Version, Market Conditions, Sector by Sector, Deals and Buyers, Valuations and Public Markets, Indicators to Watch, What We're Reading, Disclosures and Sources), each holding the deck pages as subsections in one reading column (`flow.py`), with the same words, links, tables and logos; long tables and the sources fold away until opened; the deck's charts are redrawn as SVG from their data, each with its values as a table.
 - `insights/business-services-industry-report-q4-2026.md`: the same content as Markdown for AI tools, linked from the page and from `llms.txt`.
 - `assets/img/reports/business-services-industry-report-q4-2026/`: the logos and photos of people used on the page.
 

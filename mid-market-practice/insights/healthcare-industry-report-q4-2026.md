@@ -9,7 +9,7 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-i
 
 Segments: Provider Services; Life Sciences & Diagnostics; Medical Products & Distribution; Pharmacy & Healthcare Services
 
-## Insights
+## 1. The Short Version
 
 **KEY INSIGHTS**
 
@@ -29,7 +29,9 @@ The median private equity entry multiple for healthcare services was 13.6x EBITD
 
 Medicare proposes physician conversion factor cuts of up to 1.68% for 2027. Maine's 180-day notice and approval regime begins January 1, 2027. Model the rates and build review time into the deal calendar.
 
-## 1. Healthcare M&A: State of Play
+## 2. Market Conditions
+
+### Healthcare M&A: State of Play
 
 Strategic buyers are setting the pace in 2026 while private equity completes fewer healthcare services transactions.
 
@@ -79,7 +81,7 @@ California now requires transaction notices from private equity groups and manag
 
 Figures are the latest published as of October 7, 2026, and each is linked to its source. Deal counts and values are as reported by the named publisher and are revised as transactions are confirmed.
 
-## 2. Historical Market Context
+### Historical Market Context
 
 Health spending has compounded through every cycle since 2016, and hospital transaction counts have recovered from the 2025 low.
 
@@ -146,7 +148,7 @@ Chart data:
 
 National health expenditure figures for 2016 to 2023 are drawn from CMS releases of different years, and CMS revises earlier years with each release. Transaction counts are announced transactions as tallied by Kaufman Hall.
 
-## 3. Strong Fundamentals Support Continued Activity
+### Strong Fundamentals Support Continued Activity
 
 Employment, capital investment and drug approvals have all grown since 2021, which supports demand in each of the four sectors.
 
@@ -323,7 +325,58 @@ Outsourced research has recovered alongside approvals, with IQVIA booking $1.22 
 
 * 2026 covers approvals through September 28. Employment and construction series run from September 2021 to the latest month published as of October 7, 2026. Approval counts for 2016 to 2021 and 2024 are as reported by RAPS and US Pharmacist from FDA data.
 
-## 4. Perspectives on Four Sectors
+### Healthcare Services Deal Volume Has Reset
+
+Private equity completed 1,217 healthcare services transactions in 2021 and is on pace for 674 in 2026, the fewest since 2017.
+
+2017 to 2019
+
+### Steady platform building
+
+Private equity completed between 490 and 684 healthcare services transactions a year, and hospitals announced 117 transactions in 2017 and 92 in 2019.
+
+2020 to 2021
+
+### The peak
+
+Volume rose to 829 in 2020 and 1,217 in 2021, the highest in the series.
+
+2022 to 2024
+
+### Three years of decline
+
+Annual volume fell from 998 to 682. The Medicare conversion factor fell from $34.61 in 2022 to $32.35 in 2025 ([AMA](https://www.ama-assn.org/system/files/2021-01/cf-history.pdf)).
+
+2025 to 2026
+
+### Strategic buyers lead
+
+Volume recovered to an estimated 747 in 2025. The first half of 2026 produced an estimated 337, while medtech deal value reached $36.5 billion and biopharma deal value reached $130 billion.
+
+### US private equity healthcare services transactions
+
+Announced or closed transactions per year. Source: PitchBook, [Q4 2025 Healthcare Services Report](https://pitchbook.brightspotcdn.com/2d/0a/acb3601c4e19925c22d3f3877637/q4-2025-healthcare-services-report.pdf); 2026 from [PitchBook via Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)
+
+Chart data:
+
+|  | US private equity healthcare services transactions per year |
+| --- | --- |
+| 2017 | 490 |
+| 2018 | 651 |
+| 2019 | 684 |
+| 2020 | 829 |
+| 2021 | 1,217 |
+| 2022 | 998 |
+| 2023 | 801 |
+| 2024 | 682 |
+| 2025 | 747 |
+| 2026* | 674 |
+
+* 2026 is the annualized pace of an estimated 337 transactions in the first half. Annual counts are the chart labels in PitchBook's Q4 2025 report, and PitchBook restates earlier years as late-reported transactions are added. The 2025 count is an estimate.
+
+## 3. Sector by Sector
+
+### Perspectives on Four Sectors
 
 Each sector has its own buyers and drivers.
 
@@ -442,134 +495,9 @@ LISTED REFERENCE COMPANIES
 
 Sectors and the businesses listed under each follow the Middle Market team's healthcare coverage. Buyers named are examples drawn from 2026 transactions and results. Tickers identify the listed reference companies in the valuation sections.
 
-## 5. What We're Reading
+## 4. Deals and Buyers
 
-Primary sources and trade reporting from the third quarter.
-
-### What We're Reading
-
-Four pieces from the third quarter, one for each sector, with the passage we marked and what it means for an owner.
-
-FIERCE HEALTHCARE | PROVIDER SERVICES
-
-August 19, 2026
-
-### Projected healthcare services deal count to be lowest since 2017, PitchBook finds
-
-> *“It’s hard to imagine that things stay at such a depressed level. We expect mean reversion going forward.”*
-
-Brian Wright, lead research analyst of healthcare at PitchBook
-
-**Our read.** Private equity is on pace for 674 healthcare services transactions in 2026 after an estimated 337 in the first half. The analyst behind the count expects activity to return toward its longer-run level.
-
-[READ HERE](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)
-
-**MEDTECH DIVE | MEDICAL PRODUCTS & DISTRIBUTION**
-
-July 6, 2026
-
-### Top 10 medtech deals in the first half of 2026
-
-> *“Medtech dealmakers remained busy over the first half of 2026, building on the decade-high M&A activity achieved last year with a string of deals worth upward of $1 billion.”*
-
-MedTech Dive
-
-**Our read.** PwC counted $36.5 billion of medtech acquisitions in the first half. The largest were Boston Scientific’s $14.5 billion purchase of Penumbra and Danaher’s $9.9 billion purchase of Masimo.
-
-[READ HERE](https://www.medtechdive.com/news/top-10-medtech-deals-in-the-first-half-of-2026/824435/)
-
-- IQVIA | LIFE SCIENCES & DIAGNOSTICS July 8, 2026
-
-### Biopharma M&A: Mid-year 2026 update
-
-> *“After the first six months of 2026, aggregate M&A deal value has already reached $130Bn, almost matching the full-year total for 2025, with a year-to-date deal count of 42, or 84% of the 2025 total.”*
-
-IQVIA Global Thought Leadership
-
-**Our read.** The count covers acquisitions of $250 million or more, so it describes the largest buyers. Their spending supports demand for the research, laboratory and manufacturing services that founder-owned companies supply.
-
-[READ HERE](https://www.iqvia.com/locations/emea/blogs/2026/07/biopharma-ma-mid-year-2026-update)
-
-DRUG CHANNELS | PHARMACY & HEALTHCARE SERVICES
-
-August 11, 2026
-
-### The K-Shaped Pharmacy Shakeout: Consolidation in Cities, Lost Access in Rural America
-
-> *“The United States has almost 8,000 fewer retail pharmacies than it did in 2018, and more than 2,000 closed in 2025 alone.”*
-
-Bryce Platt, PharmD, Drug Channels
-
-**Our read.** Prescription dispensing revenues reached a record $751 billion in 2025, up 10%, while the number of pharmacies fell. Scale, specialty mix and payer contracts decide which pharmacies remain attractive to a buyer.
-
-[READ HERE](https://www.drugchannels.net/2026/08/the-k-shaped-pharmacy-shakeout.html)
-
-Quotations are reproduced as published. The Fierce Healthcare quotation joins two consecutive sentences spoken by the analyst. The IQVIA and MedTech Dive passages are the publications' own text.
-
-## Industry Activity
-
--  Momentum in healthcare services transactions
-
--  Select market participants
-
--  Select recent M&A transactions
-
--  Benchmark International transactions
-
-Public companies: valuation, performance and metrics
-
--  Earnings and commentary
-
-## 6. Healthcare Services Deal Volume Has Reset
-
-Private equity completed 1,217 healthcare services transactions in 2021 and is on pace for 674 in 2026, the fewest since 2017.
-
-2017 to 2019
-
-### Steady platform building
-
-Private equity completed between 490 and 684 healthcare services transactions a year, and hospitals announced 117 transactions in 2017 and 92 in 2019.
-
-2020 to 2021
-
-### The peak
-
-Volume rose to 829 in 2020 and 1,217 in 2021, the highest in the series.
-
-2022 to 2024
-
-### Three years of decline
-
-Annual volume fell from 998 to 682. The Medicare conversion factor fell from $34.61 in 2022 to $32.35 in 2025 ([AMA](https://www.ama-assn.org/system/files/2021-01/cf-history.pdf)).
-
-2025 to 2026
-
-### Strategic buyers lead
-
-Volume recovered to an estimated 747 in 2025. The first half of 2026 produced an estimated 337, while medtech deal value reached $36.5 billion and biopharma deal value reached $130 billion.
-
-### US private equity healthcare services transactions
-
-Announced or closed transactions per year. Source: PitchBook, [Q4 2025 Healthcare Services Report](https://pitchbook.brightspotcdn.com/2d/0a/acb3601c4e19925c22d3f3877637/q4-2025-healthcare-services-report.pdf); 2026 from [PitchBook via Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)
-
-Chart data:
-
-|  | US private equity healthcare services transactions per year |
-| --- | --- |
-| 2017 | 490 |
-| 2018 | 651 |
-| 2019 | 684 |
-| 2020 | 829 |
-| 2021 | 1,217 |
-| 2022 | 998 |
-| 2023 | 801 |
-| 2024 | 682 |
-| 2025 | 747 |
-| 2026* | 674 |
-
-* 2026 is the annualized pace of an estimated 337 transactions in the first half. Annual counts are the chart labels in PitchBook's Q4 2025 report, and PitchBook restates earlier years as late-reported transactions are added. The 2025 count is an estimate.
-
-## 7. Healthcare Market: Select Participants
+### Healthcare Market: Select Participants
 
 The listed reference companies in each sector and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
 
@@ -717,7 +645,7 @@ PHARMACY, STAFFING AND LOGISTICS BUYERS
 
 Listed companies are the reference set for the valuation sections and each links to its data page. Private participants are buyers named in 2026 transactions. The list is a selection.
 
-## 8. Select Recent Healthcare M&A Transactions
+### Select Recent Healthcare M&A Transactions
 
 Six transactions announced or completed between June and September 2026, with at least one from each sector.
 
@@ -791,7 +719,7 @@ KNOX LANE
 
 Terms are as disclosed by the parties or reported by the linked source. Benchmark International did not advise on these transactions.
 
-## 9. Benchmark International's Healthcare Transactions
+### Benchmark International's Healthcare Transactions
 
 Pharmacy and healthcare services leads with five closed transactions, life sciences and diagnostics follows with four, and most buyers were operating companies.
 
@@ -891,7 +819,9 @@ Healthcare executive and clinical placement
 
 Transactions closed in the trailing 24 months on which Benchmark International advised the seller, as announced at benchmarkintl.com. Nine of the twelve are shown; buyers appear as announced. Engagements in progress are counted in aggregate.
 
-## 10. Valuation Multiples Have Shifted by Sector
+## 5. Valuations and Public Markets
+
+### Valuation Multiples Have Shifted by Sector
 
 Life sciences and diagnostics companies re-rated from 14.5x to 21.8x EBITDA in a year, while the other three sectors trade within about one turn of a year ago.
 
@@ -934,7 +864,7 @@ PRIVATE-MARKET REFERENCE POINTS
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Multiples use reported EBITDA. Medians cover companies with a multiple between zero and 60x today, a year ago and in at least eight of the past twelve quarters. Bio-Techne and Integer Holdings trade at agreed acquisition prices.
 
-## 11. Public Company Stock Performance: Past 12 Months
+### Public Company Stock Performance: Past 12 Months
 
 Pharmacy and healthcare services shares rose 38% at the median and life sciences shares rose 21%, while provider and medical products shares rose about 6%.
 
@@ -1020,7 +950,7 @@ Shares rose over the year at 29 of the 38 companies: 7 of 11 provider companies,
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; prices are from October 2 to October 7. Price change excludes dividends. Bio-Techne and Integer Holdings trade near agreed acquisition prices.
 
-## 12. Public Company Operating and Valuation Metrics
+### Public Company Operating and Valuation Metrics
 
 Provider companies are growing fastest, life sciences and diagnostics earns the highest margins and multiples, and pharmacy trades on thin margins.
 
@@ -1136,7 +1066,7 @@ Chart data:
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Bars in each panel run in the order of the key. Consensus growth is the analyst estimate for each company's current fiscal year, and fiscal years differ. Forward multiples require a licensed data source and are not shown. Company detail is in the appendix.
 
-## 13. Earnings and Commentary
+### Earnings and Commentary
 
 Skilled nursing and research services grew fastest in the latest quarter, laboratories and device makers grew 6% to 10%, and pharmacy and staffing grew 2%.
 
@@ -1225,47 +1155,7 @@ Brian Scott, CFO & COO, AMN Healthcare
 
 Growth is total revenue as reported, including acquisitions; company names link to the releases. Steris and McKesson figures are for fiscal first quarters and Cardinal Health for its fiscal fourth quarter, all ended June 30, 2026. Quotations are from the earnings releases.
 
-## 14. Benchmark International
-
-The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five industries.
-
-The Middle Market team, part of Benchmark International, advises owners of privately held companies on sales, recapitalizations and growth partnerships across five industries.
-
-#1Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables$50M to $500MTotal enterprise value range the Middle Market team serves5Focused industry groups with dedicated expertise15Global offices across the Americas, Europe and Africa
-RECOGNITION
-FIVE INDUSTRY GROUPS
-
-**INDUSTRIAL**
-
-**BUSINESS SERVICES**
-
-**CONSUMER**
-
-**HEALTHCARE**
-
-**TECHNOLOGY**
-
-Ranking based on PitchBook's Q2 2026 Global League Tables, as published at [benchmarkintl.com](https://www.benchmarkintl.com/about/our-success/). Awards as shown on the Middle Market site.
-
-## 15. Important Disclosures
-
-Please read these notes together with the report.
-
-> “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
-
-Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.
-
-The distribution of this material in certain jurisdictions may be restricted by law, and accordingly, recipients of this material represent that they are able to receive it without contravention of any registration requirement or other legal restrictions in the jurisdictions in which they reside or in which they conduct business.
-
-This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide accounting, tax, investment, regulatory or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness or completeness of the information, opinions or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
-
-Company names, logos and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.
-
-This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the “Order”); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as “Relevant Persons”). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.
-
-Benchmark International Middle Market, 4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607.
-
-## 16. Appendix: Public Market Operating and Valuation Metrics
+### Appendix: Public Market Operating and Valuation Metrics
 
 As of October 7, 2026. Provider Services and Life Sciences & Diagnostics.
 
@@ -1323,7 +1213,117 @@ As of October 7, 2026. Medical Products & Distribution and Pharmacy & Healthcare
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. LTM is the trailing twelve months. EBITDA is as reported. † Excluded from the EV to EBITDA medians because the multiple is above 60x, negative or lacks eight quarters of history. n.a. marks a figure distorted by a divestiture.
 
-## 17. Sources
+## 6. What We're Reading
+
+### What We're Reading
+
+Primary sources and trade reporting from the third quarter.
+
+### What We're Reading
+
+Four pieces from the third quarter, one for each sector, with the passage we marked and what it means for an owner.
+
+FIERCE HEALTHCARE | PROVIDER SERVICES
+
+August 19, 2026
+
+### Projected healthcare services deal count to be lowest since 2017, PitchBook finds
+
+> *“It’s hard to imagine that things stay at such a depressed level. We expect mean reversion going forward.”*
+
+Brian Wright, lead research analyst of healthcare at PitchBook
+
+**Our read.** Private equity is on pace for 674 healthcare services transactions in 2026 after an estimated 337 in the first half. The analyst behind the count expects activity to return toward its longer-run level.
+
+[READ HERE](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)
+
+**MEDTECH DIVE | MEDICAL PRODUCTS & DISTRIBUTION**
+
+July 6, 2026
+
+### Top 10 medtech deals in the first half of 2026
+
+> *“Medtech dealmakers remained busy over the first half of 2026, building on the decade-high M&A activity achieved last year with a string of deals worth upward of $1 billion.”*
+
+MedTech Dive
+
+**Our read.** PwC counted $36.5 billion of medtech acquisitions in the first half. The largest were Boston Scientific’s $14.5 billion purchase of Penumbra and Danaher’s $9.9 billion purchase of Masimo.
+
+[READ HERE](https://www.medtechdive.com/news/top-10-medtech-deals-in-the-first-half-of-2026/824435/)
+
+- IQVIA | LIFE SCIENCES & DIAGNOSTICS July 8, 2026
+
+### Biopharma M&A: Mid-year 2026 update
+
+> *“After the first six months of 2026, aggregate M&A deal value has already reached $130Bn, almost matching the full-year total for 2025, with a year-to-date deal count of 42, or 84% of the 2025 total.”*
+
+IQVIA Global Thought Leadership
+
+**Our read.** The count covers acquisitions of $250 million or more, so it describes the largest buyers. Their spending supports demand for the research, laboratory and manufacturing services that founder-owned companies supply.
+
+[READ HERE](https://www.iqvia.com/locations/emea/blogs/2026/07/biopharma-ma-mid-year-2026-update)
+
+DRUG CHANNELS | PHARMACY & HEALTHCARE SERVICES
+
+August 11, 2026
+
+### The K-Shaped Pharmacy Shakeout: Consolidation in Cities, Lost Access in Rural America
+
+> *“The United States has almost 8,000 fewer retail pharmacies than it did in 2018, and more than 2,000 closed in 2025 alone.”*
+
+Bryce Platt, PharmD, Drug Channels
+
+**Our read.** Prescription dispensing revenues reached a record $751 billion in 2025, up 10%, while the number of pharmacies fell. Scale, specialty mix and payer contracts decide which pharmacies remain attractive to a buyer.
+
+[READ HERE](https://www.drugchannels.net/2026/08/the-k-shaped-pharmacy-shakeout.html)
+
+Quotations are reproduced as published. The Fierce Healthcare quotation joins two consecutive sentences spoken by the analyst. The IQVIA and MedTech Dive passages are the publications' own text.
+
+## 7. About Benchmark International
+
+### Benchmark International
+
+The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five industries.
+
+The Middle Market team, part of Benchmark International, advises owners of privately held companies on sales, recapitalizations and growth partnerships across five industries.
+
+#1Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables$50M to $500MTotal enterprise value range the Middle Market team serves5Focused industry groups with dedicated expertise15Global offices across the Americas, Europe and Africa
+RECOGNITION
+FIVE INDUSTRY GROUPS
+
+**INDUSTRIAL**
+
+**BUSINESS SERVICES**
+
+**CONSUMER**
+
+**HEALTHCARE**
+
+**TECHNOLOGY**
+
+Ranking based on PitchBook's Q2 2026 Global League Tables, as published at [benchmarkintl.com](https://www.benchmarkintl.com/about/our-success/). Awards as shown on the Middle Market site.
+
+## 8. Disclosures and Sources
+
+### Important Disclosures
+
+Please read these notes together with the report.
+
+> “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
+
+Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.
+
+The distribution of this material in certain jurisdictions may be restricted by law, and accordingly, recipients of this material represent that they are able to receive it without contravention of any registration requirement or other legal restrictions in the jurisdictions in which they reside or in which they conduct business.
+
+This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide accounting, tax, investment, regulatory or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness or completeness of the information, opinions or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
+
+Company names, logos and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.
+
+This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the “Order”); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as “Relevant Persons”). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.
+
+Benchmark International Middle Market, 4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607.
+
+### Sources
 
 The sources linked in each section, listed by section with the link text used.
 

@@ -7,7 +7,7 @@ Data center demand is filling order books, consolidators keep paying for recurri
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.pdf
 
-## Insights
+## 1. The Short Version
 
 **KEY INSIGHTS**
 
@@ -27,7 +27,9 @@ Total debt on platform acquisitions fell to 2.9x EBITDA from 3.4x, and the Feder
 
 North American electronics manufacturing services bookings rose 53.5% in August, while shipments rose 1.0%. Show that backlog converts at steady margins. Expect questions on component supply.
 
-## 1. Key Trends in Technology
+## 2. Market Conditions
+
+### Key Trends in Technology
 
 Six developments are shaping demand, pricing and deal activity across the six sectors as the fourth quarter begins.
 
@@ -81,7 +83,9 @@ Buyers pay most readily for contracted, recurring revenue and for capability tha
 
 Figures are the latest published as of October 5, 2026 and each is linked to its source. EMS is electronics manufacturing services. CMMC is the Cybersecurity Maturity Model Certification for defense suppliers.
 
-## 2. Perspectives on Six Sectors
+## 3. Sector by Sector
+
+### Perspectives on Six Sectors
 
 Each sector has its own buyers and drivers, and the listed companies shown are the reference set used for valuation later in this report.
 
@@ -245,87 +249,9 @@ Tyler Technologies
 
 Active buyers are drawn from transactions announced between January 2025 and October 2026 and cited in this report. Company marks are the property of their owners and are shown for identification.
 
-## 3. What We're Reading
+## 4. Deals and Buyers
 
-Primary sources and trade reporting from the third quarter.
-
-### What We're Reading
-
-Four pieces from the quarter that bear on how technology businesses are valued and sold, each with the passage we marked and the reason it matters to an owner.
-
-**GARTNER**
-
-July 27, 2026
-
-### Gartner Forecasts Worldwide IT Spending to Grow 14.2% in 2026, Totaling $6.37 Trillion
-
-> *“Building the compute capacity required for AI is the largest infrastructure project ever attempted by humanity.”*
-
-John-David Lovelock, Distinguished VP Analyst, Gartner
-
-**Our read.** Data center systems spending is forecast to rise 62.5% to $822 billion while IT services rise 5.3% to $1.57 trillion, so service firms tied to the infrastructure build-out are growing faster than the rest of the market.
-
-[READ HERE](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion)
-
-GLOBAL ELECTRONICS ASSOCIATION
-
-October 1, 2026
-
-### North American EMS Orders Outpace Shipments in August as Bookings Rise 53.5% Year-Over-Year
-
-> *“Strong bookings support the production outlook, but securing the materials needed to fulfill those orders remains a challenge.”*
-
-Dr. Shawn DuBravac, Chief Economist, Global Electronics Association
-
-**Our read.** Bookings rose 53.5% while shipments rose 1.0%. Buyers value backlog that converts to shipments, which makes component supply a diligence question.
-
-[READ HERE](https://www.electronics.org/news-release/north-american-ems-orders-outpace-shipments-august-bookings-rise-535-year-over-year)
-
-**CHANNEL DIVE**
-
-August 19, 2026
-
-### Private equity, cybersecurity drive managed services industry consolidation
-
-> *“ARR is what attracted private equity to the managed services space. It's nice because it's so predictable.”*
-
-Jessica Davis, Principal Analyst, Omdia
-
-**Our read.** Acquisitions of managed service providers rose 73% to 64 in the first quarter, with 37 in North America. Predictable annual recurring revenue is what investors are paying for.
-
-[READ HERE](https://www.channeldive.com/news/channel-acquistions-consolidation-managed-services-omdia/828297/)
-
-DEPARTMENT OF WAR, CHIEF INFORMATION OFFICER
-
-July 13, 2026
-
-### About CMMC: Phase II requirements suspended
-
-> *“All Phase I self-assessment requirements remain firmly in place.”*
-
-Department of War Chief Information Officer, CMMC program page
-
-**Our read.** Third-party certification for defense suppliers is paused while a task force reviews the program. Self-assessment against NIST 800-171 still applies ([McGuireWoods analysis](https://www.passwordprotectedlaw.com/2026/07/dow-suspends-cmmc-phase-ii-requirements-launches-60-day-review/)).
-
-[READ HERE](https://dodcio.defense.gov/CMMC/About/)
-
-Quotations are reproduced as published. ARR is annual recurring revenue. EMS is electronics manufacturing services. NIST 800-171 is the federal standard for protecting controlled unclassified information.
-
-## Industry Activity
-
--  Select recent M&A transactions
-
--  Benchmark International transactions
-
-Public companies: valuation and operating metrics
-
--  Earnings and commentary
-
--  Cost and demand indicators
-
--  Select market participants
-
-## 4. Select Recent Technology M&A Transactions
+### Select Recent Technology M&A Transactions
 
 One transaction from each sector, chosen from those announced or completed between June and September 2026.
 
@@ -405,7 +331,7 @@ The business supplies defense software, encryption and edge computing. Large con
 
 Transaction values are as reported by the linked source. Company names and marks are the property of their owners and are shown for identification. Transactions advised by Benchmark International follow in the next section, [Benchmark International's Technology Transactions](#p08).
 
-## 5. Benchmark International's Technology Transactions
+### Benchmark International's Technology Transactions
 
 Electronics and hardware leads with five closed transactions and systems integration follows with four, and most buyers were operating companies.
 
@@ -529,7 +455,315 @@ Two further closed transactions, in systems integration and government technolog
 
 Each tile links to the announcement on benchmarkintl.com. Transactions closed in the 24 months to September 2026. Engagements in progress are shown in aggregate. Company names and marks are the property of their owners.
 
-## 6. Public Companies: Valuation
+### Select Market Participants
+
+The listed reference companies in each sector, and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
+
+MANAGED IT & CLOUD SERVICES
+LISTED COMPANIES
+
+CDW
+
+**CDW**
+
+Insight Enterprises
+
+Insight Enterprises
+
+ePlus
+
+PC Connection
+
+PC Connection
+
+Kyndryl
+
+Kyndryl
+
+DXC Technology
+
+DXC Technology
+
+Accenture
+
+Accenture
+
+Cognizant
+
+Cognizant
+
+EPAM Systems
+
+EPAM Systems
+
+CONSOLIDATORS
+
+**Evergreen Services Group**
+
+- The 20 MSP Integris
+
+- Thrive CompassMSP
+
+**Magna5**
+
+**New Charter Technologies**
+
+- Arctiq 11:11 Systems
+
+**Park Place Technologies**
+
+CYBERSECURITY
+LISTED COMPANIES
+
+CrowdStrike
+
+CrowdStrike
+
+Palo Alto Networks
+
+Palo Alto Networks
+
+Fortinet
+
+Fortinet
+
+Zscaler
+
+Zscaler
+
+Okta
+
+Okta
+
+Tenable
+
+Tenable
+
+Qualys
+
+Qualys
+
+Check Point
+
+Check Point
+
+SERVICE PLATFORMS AND SOFTWARE BUYERS
+
+- LevelBlue CyberMaxx
+
+- A-LIGN Sophos
+
+**Proofpoint**
+
+**Barracuda Networks**
+
+- Google ServiceNowTELECOM & UCAAS
+LISTED COMPANIES
+
+RingCentral
+
+RingCentral
+
+8x8
+
+Zoom
+
+Zoom
+
+Five9
+
+Five9
+
+Bandwidth
+
+Bandwidth
+
+Ooma
+
+Ooma
+
+Crexendo
+
+Crexendo
+
+Shenandoah Telecommunications
+
+Shenandoah Telecom
+
+Telephone and Data Systems
+
+**TDS**
+
+FIBER OPERATORS, INVESTORS AND CHANNEL
+
+- Verizon AT&T
+
+**T-Mobile with KKR**
+
+- Zayo Stonepeak
+
+**Point Broadband**
+
+- Ezee Fiber Vero Fiber
+
+- Rightfiber AppDirectSYSTEMS INTEGRATION
+LISTED COMPANIES
+
+Wesco
+
+Wesco
+
+ScanSource
+
+ScanSource
+
+Climb Global Solutions
+
+Climb Global
+
+TD SYNNEX
+
+**TD SYNNEX**
+
+Unisys
+
+Unisys
+
+Napco Security
+
+Napco Security
+
+Computacenter
+
+Computacenter
+
+Bechtle
+
+Bechtle
+
+ADT
+
+**ADT**
+
+SECURITY, AUDIOVISUAL AND IT PLATFORMS
+
+- Pavion Convergint
+
+**Everon**
+
+**Securitas Technology**
+
+**Knox Lane**
+
+**Sciens Building Solutions**
+
+**AVI-SPL with 26North**
+
+**AVI Systems**
+
+**Myriad360**
+
+**Net at Work**
+
+ELECTRONICS & HARDWARE
+LISTED COMPANIES
+
+Jabil
+
+Jabil
+
+Flex
+
+Flex
+
+Celestica
+
+Celestica
+
+Sanmina
+
+Sanmina
+
+Plexus
+
+Plexus
+
+Benchmark Electronics
+
+Benchmark Elec.
+
+Kimball Electronics
+
+Kimball Electronics
+
+TTM Technologies
+
+TTM Technologies
+
+Keysight
+
+Keysight
+
+SPONSORS AND STRATEGIC BUYERS
+
+**Transom Capital**
+
+**Tide Rock**
+
+**Align Capital Partners**
+
+**Arcline**
+
+**Motorola Solutions**
+
+**Navitas Semiconductor**
+
+- Qualitel StenTechGOVERNMENT TECHNOLOGY
+LISTED COMPANIES
+
+Booz Allen Hamilton
+
+Booz Allen
+
+CACI
+
+**CACI**
+
+SAIC
+
+**SAIC**
+
+Leidos
+
+Leidos
+
+Parsons
+
+Parsons
+
+ICF
+
+**ICF**
+
+Tyler Technologies
+
+Tyler Technologies
+
+SPONSOR-BACKED PLATFORMS
+
+- ERT Xpect Solutions
+
+- B&A Detroit Defense
+
+**ITC Federal**
+
+**Falfurrias Management Partners**
+
+Private participants are buyers in transactions announced between January 2025 and October 2026 and cited in this report. The list is illustrative. Company names and marks are the property of their owners and are shown for identification.
+
+## 5. Valuations and Public Markets
+
+### Public Companies: Valuation
 
 Electronics manufacturers re-rated from 12.1x to 21.8x EBITDA in a year, while IT services and government contractors trade below three-year medians.
 
@@ -682,7 +916,7 @@ Tyler Technologies
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5, 6 and 14, 2026, on reported EBITDA. The multiple chart covers the 38 companies with a multiple between zero and 60x at each point (faded marks are the 13 left out); share price change covers all 51. Year-ago multiples are at the quarter end nearest September 30, 2025, or June 30, 2025 for Computacenter, which reports half-yearly.
 
-## 7. Public Companies: Operating Metrics
+### Public Companies: Operating Metrics
 
 Electronics manufacturers are growing about 20% a year, government contractors are flat, and security software converts the most revenue to cash.
 
@@ -750,7 +984,7 @@ Chart data:
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5, 6 and 14, 2026. Trailing periods end between June and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present, most visibly for security software. Medians cover all listed companies in each sector.
 
-## 8. Earnings and Commentary
+### Earnings and Commentary
 
 Data center suppliers grew fastest, security vendors tied their outlook to AI adoption, and government contractors described a harder market.
 
@@ -856,7 +1090,9 @@ Contractors describe a harder market even as bookings and backlog grow.
 
 Figures and quotations are from each company's earnings release, linked under the chart. Accenture growth is in US dollars, Palo Alto Networks includes acquired businesses, and the CACI quotation describes its full fiscal year. Jabil reported fourth-quarter revenue of $10.6 billion against $8.3 billion and is not charted because its release states no percentage.
 
-## 9. Key Cost and Demand Indicators
+## 6. Indicators to Watch
+
+### Key Cost and Demand Indicators
 
 Component and copper prices turned up in 2026, data center construction is surging, and IT services employment keeps drifting lower.
 
@@ -1178,313 +1414,77 @@ Headcount at IT services firms has fallen 5% from its March 2023 peak even as te
 
 Each series is indexed to September 2021 and runs to its latest month: August 2026 for component prices and construction, July 2026 for copper, September 2026 for employment. Recent months are preliminary. The data center figures are from the [Census Bureau construction spending release of October 1, 2026](https://www.census.gov/construction/c30/pdf/privsa.pdf).
 
-## 10. Select Market Participants
+## 7. What We're Reading
 
-The listed reference companies in each sector, and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
+### What We're Reading
 
-MANAGED IT & CLOUD SERVICES
-LISTED COMPANIES
+Primary sources and trade reporting from the third quarter.
 
-CDW
+### What We're Reading
 
-**CDW**
+Four pieces from the quarter that bear on how technology businesses are valued and sold, each with the passage we marked and the reason it matters to an owner.
 
-Insight Enterprises
+**GARTNER**
 
-Insight Enterprises
+July 27, 2026
 
-ePlus
+### Gartner Forecasts Worldwide IT Spending to Grow 14.2% in 2026, Totaling $6.37 Trillion
 
-PC Connection
+> *“Building the compute capacity required for AI is the largest infrastructure project ever attempted by humanity.”*
 
-PC Connection
+John-David Lovelock, Distinguished VP Analyst, Gartner
 
-Kyndryl
+**Our read.** Data center systems spending is forecast to rise 62.5% to $822 billion while IT services rise 5.3% to $1.57 trillion, so service firms tied to the infrastructure build-out are growing faster than the rest of the market.
 
-Kyndryl
+[READ HERE](https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion)
 
-DXC Technology
+GLOBAL ELECTRONICS ASSOCIATION
 
-DXC Technology
+October 1, 2026
 
-Accenture
+### North American EMS Orders Outpace Shipments in August as Bookings Rise 53.5% Year-Over-Year
 
-Accenture
+> *“Strong bookings support the production outlook, but securing the materials needed to fulfill those orders remains a challenge.”*
 
-Cognizant
+Dr. Shawn DuBravac, Chief Economist, Global Electronics Association
 
-Cognizant
+**Our read.** Bookings rose 53.5% while shipments rose 1.0%. Buyers value backlog that converts to shipments, which makes component supply a diligence question.
 
-EPAM Systems
+[READ HERE](https://www.electronics.org/news-release/north-american-ems-orders-outpace-shipments-august-bookings-rise-535-year-over-year)
 
-EPAM Systems
+**CHANNEL DIVE**
 
-CONSOLIDATORS
+August 19, 2026
 
-**Evergreen Services Group**
+### Private equity, cybersecurity drive managed services industry consolidation
 
-- The 20 MSP Integris
+> *“ARR is what attracted private equity to the managed services space. It's nice because it's so predictable.”*
 
-- Thrive CompassMSP
+Jessica Davis, Principal Analyst, Omdia
 
-**Magna5**
+**Our read.** Acquisitions of managed service providers rose 73% to 64 in the first quarter, with 37 in North America. Predictable annual recurring revenue is what investors are paying for.
 
-**New Charter Technologies**
+[READ HERE](https://www.channeldive.com/news/channel-acquistions-consolidation-managed-services-omdia/828297/)
 
-- Arctiq 11:11 Systems
+DEPARTMENT OF WAR, CHIEF INFORMATION OFFICER
 
-**Park Place Technologies**
+July 13, 2026
 
-CYBERSECURITY
-LISTED COMPANIES
+### About CMMC: Phase II requirements suspended
 
-CrowdStrike
+> *“All Phase I self-assessment requirements remain firmly in place.”*
 
-CrowdStrike
+Department of War Chief Information Officer, CMMC program page
 
-Palo Alto Networks
+**Our read.** Third-party certification for defense suppliers is paused while a task force reviews the program. Self-assessment against NIST 800-171 still applies ([McGuireWoods analysis](https://www.passwordprotectedlaw.com/2026/07/dow-suspends-cmmc-phase-ii-requirements-launches-60-day-review/)).
 
-Palo Alto Networks
+[READ HERE](https://dodcio.defense.gov/CMMC/About/)
 
-Fortinet
+Quotations are reproduced as published. ARR is annual recurring revenue. EMS is electronics manufacturing services. NIST 800-171 is the federal standard for protecting controlled unclassified information.
 
-Fortinet
+## 8. About Benchmark International
 
-Zscaler
-
-Zscaler
-
-Okta
-
-Okta
-
-Tenable
-
-Tenable
-
-Qualys
-
-Qualys
-
-Check Point
-
-Check Point
-
-SERVICE PLATFORMS AND SOFTWARE BUYERS
-
-- LevelBlue CyberMaxx
-
-- A-LIGN Sophos
-
-**Proofpoint**
-
-**Barracuda Networks**
-
-- Google ServiceNowTELECOM & UCAAS
-LISTED COMPANIES
-
-RingCentral
-
-RingCentral
-
-8x8
-
-Zoom
-
-Zoom
-
-Five9
-
-Five9
-
-Bandwidth
-
-Bandwidth
-
-Ooma
-
-Ooma
-
-Crexendo
-
-Crexendo
-
-Shenandoah Telecommunications
-
-Shenandoah Telecom
-
-Telephone and Data Systems
-
-**TDS**
-
-FIBER OPERATORS, INVESTORS AND CHANNEL
-
-- Verizon AT&T
-
-**T-Mobile with KKR**
-
-- Zayo Stonepeak
-
-**Point Broadband**
-
-- Ezee Fiber Vero Fiber
-
-- Rightfiber AppDirectSYSTEMS INTEGRATION
-LISTED COMPANIES
-
-Wesco
-
-Wesco
-
-ScanSource
-
-ScanSource
-
-Climb Global Solutions
-
-Climb Global
-
-TD SYNNEX
-
-**TD SYNNEX**
-
-Unisys
-
-Unisys
-
-Napco Security
-
-Napco Security
-
-Computacenter
-
-Computacenter
-
-Bechtle
-
-Bechtle
-
-ADT
-
-**ADT**
-
-SECURITY, AUDIOVISUAL AND IT PLATFORMS
-
-- Pavion Convergint
-
-**Everon**
-
-**Securitas Technology**
-
-**Knox Lane**
-
-**Sciens Building Solutions**
-
-**AVI-SPL with 26North**
-
-**AVI Systems**
-
-**Myriad360**
-
-**Net at Work**
-
-ELECTRONICS & HARDWARE
-LISTED COMPANIES
-
-Jabil
-
-Jabil
-
-Flex
-
-Flex
-
-Celestica
-
-Celestica
-
-Sanmina
-
-Sanmina
-
-Plexus
-
-Plexus
-
-Benchmark Electronics
-
-Benchmark Elec.
-
-Kimball Electronics
-
-Kimball Electronics
-
-TTM Technologies
-
-TTM Technologies
-
-Keysight
-
-Keysight
-
-SPONSORS AND STRATEGIC BUYERS
-
-**Transom Capital**
-
-**Tide Rock**
-
-**Align Capital Partners**
-
-**Arcline**
-
-**Motorola Solutions**
-
-**Navitas Semiconductor**
-
-- Qualitel StenTechGOVERNMENT TECHNOLOGY
-LISTED COMPANIES
-
-Booz Allen Hamilton
-
-Booz Allen
-
-CACI
-
-**CACI**
-
-SAIC
-
-**SAIC**
-
-Leidos
-
-Leidos
-
-Parsons
-
-Parsons
-
-ICF
-
-**ICF**
-
-Tyler Technologies
-
-Tyler Technologies
-
-SPONSOR-BACKED PLATFORMS
-
-- ERT Xpect Solutions
-
-- B&A Detroit Defense
-
-**ITC Federal**
-
-**Falfurrias Management Partners**
-
-Private participants are buyers in transactions announced between January 2025 and October 2026 and cited in this report. The list is illustrative. Company names and marks are the property of their owners and are shown for identification.
-
-## 11. Benchmark International
+### Benchmark International
 
 The world's leading privately owned sell-side M&A advisor, with a Middle Market team focused on five industries.
 
@@ -1524,7 +1524,9 @@ FIVE INDUSTRIES
 
 Ranking based on PitchBook's Q2 2026 Global League Tables, as published at [benchmarkintl.com](https://www.benchmarkintl.com/about/our-success/). Awards as shown on the Benchmark International Middle Market site.
 
-## 12. Important Disclosures
+## 9. Disclosures and Sources
+
+### Important Disclosures
 
 Please read these notes together with the report.
 
@@ -1544,7 +1546,7 @@ This material is only being distributed to, and only made available to, and dire
 
 Benchmark International  |  4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607  |  +1 813 898 2350  |  [benchmarkintl.com](https://www.benchmarkintl.com/)
 
-## 13. Sources
+### Sources
 
 The sources linked in each section, listed by section with the link text used.
 

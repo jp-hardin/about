@@ -348,24 +348,67 @@ def web_refs(pages, alias):
     return pages
 
 
+CHAPTERS = [  # (key, title, deck-page titles that belong to it); the first match wins, in this order
+    ('notes', 'Disclosures and Sources', r'disclosures|^sources$'),
+    ('about', 'About Benchmark International', r'^benchmark international$'),
+    ('reading', "What We're Reading", r'reading'),
+    ('indicators', 'Indicators to Watch', r'economic trends|indicators'),
+    ('valuations', 'Valuations and Public Markets', r'public compan|valuation|earnings|revenue growth|appendix|stock performance'),
+    ('deals', 'Deals and Buyers', r'transactions|engagement|spotlight|who is buying|participants'),
+    ('sectors', 'Sector by Sector', r'perspectives|feature:'),
+    ('market', 'Market Conditions', r'.'),
+]
+ORDER = ['short', 'market', 'sectors', 'deals', 'valuations', 'indicators', 'reading', 'about', 'notes']
+
+
+def chapters(pages):
+    """The web report's chapters: [(key, title, [pages])]. The first part divider (the key insights) is The Short
+    Version; the other part dividers are dropped."""
+    groups = {}
+    for pg in pages[1:]:
+        if pg['part']:
+            if pg['part'] == '01':
+                groups.setdefault('short', ('The Short Version', []))[1].append(pg)
+            continue
+        t = re.sub(r'<[^>]+>', '', pg['title']).strip().lower()
+        for key, title, pat in CHAPTERS:
+            if re.search(pat, t):
+                groups.setdefault(key, (title, []))[1].append(pg)
+                break
+    return [(k, groups[k][0], groups[k][1]) for k in ORDER if k in groups]
+
+
+def fold_tables(body):
+    """Long tables (more than 12 rows) show their first rows and fold the rest behind a button; every table of
+    eight rows or more gets a filter box."""
+    def fold(m):
+        html_ = m.group(0)
+        rows = html_.count('<tr')
+        if rows < 9:
+            return html_
+        box = '<div class="rfilter"><input type="search" placeholder="Filter this table" aria-label="Filter this table"></div>'
+        if rows <= 13:
+            return box + html_
+        return f'<details class="rfold rfold--table" open><summary>Table: {rows - 1} rows</summary>{box}{html_}</details>'
+    return re.sub(r'<div class="rtable-wrap">.*?</table></div>', fold, body, flags=re.S)
+
+
 def to_markdown(pages, lead, byline, segs):
     url = site.abs_url(f'insights/{PUBLIC}.html')
     out = [f'# {NAME} {PERIOD} M&A Industry Report', '', f"Benchmark International's Middle Market team. {byline}.", '',
            lead, '', f'Web version: {url}  ', f'PDF: {site.abs_url(f"insights/{PUBLIC}.pdf")}', '']
     if segs:
         out += ['Segments: ' + '; '.join(segs), '']
-    n = 0
-    for pg in pages[1:]:
-        if pg['part']:
-            out += [f'## {title_case(pg["title"])}', '']
-        else:
-            n += 1
-            out += [f'## {n}. {title_case(pg["title"])}', '']
-        if pg['subtitle']:
-            out += [inline_md(pg['subtitle']), '']
-        out += [body_md(pg['body']), '']
-        if pg['foot']:
-            out += [body_md(pg['foot']), '']
+    for k, (key, ctitle, pgs) in enumerate(chapters(pages), 1):
+        out += [f'## {k}. {ctitle}', '']
+        for pg in pgs:
+            if not pg['part']:
+                out += [f'### {title_case(pg["title"])}', '']
+            if pg['subtitle']:
+                out += [inline_md(pg['subtitle']), '']
+            out += [body_md(pg['body']), '']
+            if pg['foot']:
+                out += [body_md(pg['foot']), '']
     return '\n'.join(out).strip() + '\n'
 
 
@@ -391,25 +434,9 @@ def build_page(prs):
     byline, segs, included = cover(prs)
     lead = CONF['lead']
 
-    # Sections are numbered 01, 02, ... in reading order. The deck's part pages (01 Insights, 02 Sector Activity,
-    # 03 Connect With Us) are unnumbered part headings that carry the divider's own text (the Insights divider
-    # holds the brief's key insights).
-    seq, n = {}, 0
-    for pg in pages[1:]:
-        if not pg['part']:
-            n += 1
-            seq[pg['num']] = n
-
-    toc = []
-    for pg in pages[1:]:
-        t = title_case(pg['title'])
-        if pg['part']:
-            toc.append(f'<li class="rtoc-part"><a href="#p{pg["num"]:02d}"><span></span>{esc(t)}</a></li>')
-        else:
-            if pg.get('part_label'):
-                toc.append(f'<li class="rtoc-part"><a href="#p{pg["num"]:02d}"><span></span>{pg["part_label"]}</a></li>')
-            toc.append(f'<li><a href="#p{pg["num"]:02d}"><span>{seq[pg["num"]]:02d}</span>{esc(t)}</a></li>')
-
+    # Online the report is organized by what a reader comes for, not by deck page: chapters (The Short Version,
+    # Market Conditions, Sector by Sector, ...) hold the deck pages as subsections, in deck order within each chapter.
+    # Part dividers go; long tables, the disclosures and the sources fold away until opened.
     def key_list(body):
         """The divider's numbered key insights (a bold "NN  headline" line, then its sentence) as a list."""
         pat = r'<p(?: class="fine")?><strong>(\d\d)\s+(.*?)</strong></p>\s*<p(?: class="fine")?>(.*?)</p>'
@@ -422,18 +449,27 @@ def build_page(prs):
         body = body[:first.start()] + ol + re.sub(pat, '', body[first.start():], flags=re.S)
         return body
 
-    secs = []
-    for pg in pages[1:]:
-        t = title_case(pg['title']) if pg['title'].isupper() else (pg['title_html'] or esc(pg['title']))
-        foot = f'<div class="fine rfoot">{pg["foot"]}</div>' if pg['foot'] else ''
-        if pg['part']:
-            desc_ = f'<p class="rpart-desc">Part {int(pg["part"])}{" &nbsp;·&nbsp; " + esc(included[pg["part"]]) if included.get(pg["part"]) else ""}</p>'
-            secs.append(f'<section class="rsec rsec--part" id="p{pg["num"]:02d}">\n<div class="rsec-head"><span class="rsec-num"></span>'
-                        f'<h2 class="h2">{t}</h2></div>\n<div class="rblock dblock">{desc_}\n{key_list(pg["body"])}\n{foot}</div>\n</section>')
-            continue
-        sub = f'<p class="rlead">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
-        secs.append(f'<section class="rsec" id="p{pg["num"]:02d}">\n<div class="rsec-head"><span class="rsec-num">{seq[pg["num"]]:02d}</span>'
-                    f'<h2 class="h2">{t}</h2></div>\n<div class="rblock dblock">{sub}\n{pg["body"]}\n{foot}</div>\n</section>')
+    chaps = chapters(pages)
+    toc, secs = [], []
+    for k, (key, ctitle, pgs) in enumerate(chaps, 1):
+        subs = [pg for pg in pgs if not pg['part']]
+        sub_toc = ''.join(f'<li><a href="#p{pg["num"]:02d}">{esc(title_case(pg["title"]))}</a></li>' for pg in subs) if len(subs) > 1 and key != 'notes' else ''
+        toc.append(f'<li class="rtoc-ch"><a href="#ch-{key}"><span>{k:02d}</span>{esc(ctitle)}</a>' + (f'<ol class="rtoc-sub">{sub_toc}</ol>' if sub_toc else '') + '</li>')
+        inner = []
+        for pg in pgs:
+            foot = f'<div class="fine rfoot">{pg["foot"]}</div>' if pg['foot'] else ''
+            if pg['part']:
+                inner.append(flow(key_list(pg['body'])))
+                continue
+            t = title_case(pg['title']) if pg['title'].isupper() else (pg['title_html'] or esc(pg['title']))
+            sub = f'<p class="rlead">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
+            body = fold_tables(pg['body'])
+            block = f'<section class="rpart" id="p{pg["num"]:02d}">\n<h3 class="rh2">{t}</h3>\n{sub}\n{body}\n{foot}\n</section>'
+            if key == 'notes':
+                block = (f'<details class="rfold" id="p{pg["num"]:02d}"><summary>{t}</summary>\n{sub}\n{body}\n{foot}\n</details>')
+            inner.append(block)
+        secs.append(f'<section class="rsec rchap" id="ch-{key}">\n<div class="rsec-head"><span class="rsec-num">{k:02d}</span>'
+                    f'<h2 class="h2">{esc(ctitle)}</h2></div>\n<div class="rblock dblock">\n{chr(10).join(inner)}\n</div>\n</section>')
 
     pairs, band_label, _ = stats_band(pages)
     band = ''
@@ -467,6 +503,9 @@ def build_page(prs):
              f'    <ol>{"".join(toc)}</ol>\n    <a class="btn" href="{pdf}" download>{DL} Download the PDF</a>\n  </aside>\n'
              f'  <article class="report">\n{chr(10).join(secs)}\n    {author}\n  </article>\n</div>\n\n')
     page += site.team_section(root) + '\n'
+    page += ("<script>document.querySelectorAll('.rfilter input').forEach(function(i){var t=i.closest('.rfilter').nextElementSibling;"
+             "i.addEventListener('input',function(){var q=i.value.toLowerCase();t.querySelectorAll('tbody tr').forEach(function(r){"
+             "r.style.display=r.textContent.toLowerCase().indexOf(q)>-1?'':'none';});});});</script>\n")
     page += site.cta(root)
     page += site.footer(root)
     extra = {
