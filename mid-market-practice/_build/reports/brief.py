@@ -238,25 +238,46 @@ def build_page(prs):
     byline, segs, included = cover(prs)
     lead = CONF['lead']
 
-    # Contents: every page after the cover; the deck's three parts (01, 02, 03) are marked.
+    # Sections are numbered 01, 02, ... in reading order. The deck's part pages (01 Insights, 02 Sector Activity,
+    # 03 Connect With Us) are unnumbered part headings that carry the divider's own text (the Insights divider
+    # holds the brief's key insights).
+    seq, n = {}, 0
+    for pg in pages[1:]:
+        if not pg['part']:
+            n += 1
+            seq[pg['num']] = n
+
     toc = []
     for pg in pages[1:]:
         t = title_case(pg['title'])
         if pg['part']:
-            toc.append(f'<li class="rtoc-part"><a href="#p{pg["num"]:02d}"><span>{pg["part"]}</span>{esc(t)}</a></li>')
+            toc.append(f'<li class="rtoc-part"><a href="#p{pg["num"]:02d}"><span></span>{esc(t)}</a></li>')
         else:
-            toc.append(f'<li><a href="#p{pg["num"]:02d}"><span>{pg["num"]:02d}</span>{esc(t)}</a></li>')
+            toc.append(f'<li><a href="#p{pg["num"]:02d}"><span>{seq[pg["num"]]:02d}</span>{esc(t)}</a></li>')
+
+    def key_list(body):
+        """The divider's numbered key insights (a bold "NN  headline" line, then its sentence) as a list."""
+        pat = r'<p(?: class="fine")?><strong>(\d\d)\s+(.*?)</strong></p>\s*<p(?: class="fine")?>(.*?)</p>'
+        items = re.findall(pat, body, re.S)
+        if not items:
+            return body
+        ol = '<ol class="rkey">' + ''.join(f'<li><h3 class="rkey-t">{h}</h3><p class="rkey-d">{d}</p></li>' for _, h, d in items) + '</ol>'
+        body = re.sub(r'<p class="dlabel"><strong>KEY INSIGHTS</strong></p>', '<p class="dlabel">Key insights</p>', body)
+        first = re.search(pat, body, re.S)
+        body = body[:first.start()] + ol + re.sub(pat, '', body[first.start():], flags=re.S)
+        return body
 
     secs = []
     for pg in pages[1:]:
         t = title_case(pg['title']) if pg['title'].isupper() else (pg['title_html'] or esc(pg['title']))
-        num = pg['part'] if pg['part'] else f'{pg["num"]:02d}'
-        sub = f'<p class="rlead">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
-        if pg['part'] and included.get(pg['part']):
-            sub = f'<p class="rpart-desc">{esc(included[pg["part"]])}</p>' + sub
         foot = f'<div class="fine rfoot">{pg["foot"]}</div>' if pg['foot'] else ''
-        kind = ' rsec--part' if pg['part'] else ''
-        secs.append(f'<section class="rsec{kind}" id="p{pg["num"]:02d}">\n<div class="rsec-head"><span class="rsec-num">{num}</span>'
+        if pg['part']:
+            desc_ = f'<p class="rpart-desc">Part {int(pg["part"])}{" &nbsp;·&nbsp; " + esc(included[pg["part"]]) if included.get(pg["part"]) else ""}</p>'
+            secs.append(f'<section class="rsec rsec--part" id="p{pg["num"]:02d}">\n<div class="rsec-head"><span class="rsec-num"></span>'
+                        f'<h2 class="h2">{t}</h2></div>\n<div class="rblock dblock">{desc_}\n{key_list(pg["body"])}\n{foot}</div>\n</section>')
+            continue
+        sub = f'<p class="rlead">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
+        secs.append(f'<section class="rsec" id="p{pg["num"]:02d}">\n<div class="rsec-head"><span class="rsec-num">{seq[pg["num"]]:02d}</span>'
                     f'<h2 class="h2">{t}</h2></div>\n<div class="rblock dblock">{sub}\n{pg["body"]}\n{foot}</div>\n</section>')
 
     pairs, band_label, _ = stats_band(pages)

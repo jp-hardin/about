@@ -13,15 +13,23 @@ Segments: Manufacturing & Industrial Technology; Industrial Distribution & Servi
 
 American manufacturing has expanded for nine consecutive months, and acquirers in every industrial segment are buying capacity that already exists because skilled labor is scarce and new equipment takes a long time to arrive. Borrowing costs rose in September, and buyers have become more selective about what they pay for.
 
-03
+**KEY INSIGHTS**
 
-Market insights for the fourth quarter of 2026
+**01  Power and data center work earns the premium**
 
-04
+Quanta Services ended June with $53.4 billion of backlog, up from $35.8 billion. A buyer will ask how much of yours is tied to funded power and data center work.
 
-Power demand: the buildout reaches every industrial segment
+**02  The likely buyer is an operating platform**
 
-- 05 Featured engagement: The Carmi Companies
+Add-ons made up about three-quarters of buyouts in the second quarter, and Pye-Barker Fire & Safety completed 22 acquisitions in the first half. Expect a sponsor that already knows the trade.
+
+**03  Report service revenue on its own line**
+
+APi Group is working toward 60% of revenue from inspection and service. Buyers pay more for service, repair and aftermarket revenue when it is reported apart from projects, with its renewal history.
+
+**04  Financing costs more and buyers are choosier**
+
+The Federal Reserve raised its target range to 3.75% to 4.00% on September 16. GF Data's average multiple eased to 7.0 times trailing adjusted EBITDA, from 7.3 times.
 
 ## 3. Market Insights: Q4 2026
 

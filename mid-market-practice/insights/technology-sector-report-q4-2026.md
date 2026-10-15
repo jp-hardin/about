@@ -9,11 +9,23 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-s
 
 ## 2. Insights
 
--  Key trends in technology
+**KEY INSIGHTS**
 
--  Perspectives on six focus areas
+**01  Data center demand outpaces IT services**
 
--  What we're reading
+Gartner expects data center systems spending to rise 62.5% in 2026, against 5.3% for IT services. Firms tied to data center build-outs can show buyers faster growth.
+
+**02  Managed revenue brings funded bidders**
+
+Buyers announced 64 acquisitions of managed service providers in the first quarter, 73% more than a year earlier. Contracted managed revenue can put several funded bidders in one process.
+
+**03  Dearer debt favors documented earnings**
+
+Total debt on platform acquisitions fell to 2.9x EBITDA from 3.4x, and the Federal Reserve raised its target range on September 16. Documented earnings and contracted customers carry more weight.
+
+**04  Backlog counts once it ships**
+
+North American electronics manufacturing services bookings rose 53.5% in August, while shipments rose 1.0%. Show that backlog converts at steady margins. Expect questions on component supply.
 
 ## 3. Key Trends in Technology
 
@@ -251,7 +263,7 @@ July 27, 2026
 
 John-David Lovelock, Distinguished VP Analyst, Gartner
 
-**Key takeaway.** Data center systems spending is forecast to rise 62.5% to $822 billion while IT services rise 5.3% to $1.57 trillion, so service firms tied to the infrastructure build-out are growing faster than the rest of the market.
+**Our read.** Data center systems spending is forecast to rise 62.5% to $822 billion while IT services rise 5.3% to $1.57 trillion, so service firms tied to the infrastructure build-out are growing faster than the rest of the market.
 
 **READ HERE**
 
@@ -265,7 +277,7 @@ October 1, 2026
 
 Dr. Shawn DuBravac, Chief Economist, Global Electronics Association
 
-**Key takeaway.** Bookings rose 53.5% while shipments rose 1.0%. Buyers value backlog that converts to shipments, which makes component supply a diligence question.
+**Our read.** Bookings rose 53.5% while shipments rose 1.0%. Buyers value backlog that converts to shipments, which makes component supply a diligence question.
 
 **READ HERE**
 
@@ -279,7 +291,7 @@ August 19, 2026
 
 Jessica Davis, Principal Analyst, Omdia
 
-**Key takeaway.** Acquisitions of managed service providers rose 73% to 64 in the first quarter, with 37 in North America. Predictable annual recurring revenue is what investors are paying for.
+**Our read.** Acquisitions of managed service providers rose 73% to 64 in the first quarter, with 37 in North America. Predictable annual recurring revenue is what investors are paying for.
 
 **READ HERE**
 
@@ -293,7 +305,7 @@ July 13, 2026
 
 Department of War Chief Information Officer, CMMC program page
 
-**Key takeaway.** Third-party certification for defense suppliers is paused while a task force reviews the program. Self-assessment against NIST 800-171 still applies ([McGuireWoods analysis](https://www.passwordprotectedlaw.com/2026/07/dow-suspends-cmmc-phase-ii-requirements-launches-60-day-review/)).
+**Our read.** Third-party certification for defense suppliers is paused while a task force reviews the program. Self-assessment against NIST 800-171 still applies ([McGuireWoods analysis](https://www.passwordprotectedlaw.com/2026/07/dow-suspends-cmmc-phase-ii-requirements-launches-60-day-review/)).
 
 **READ HERE**
 
@@ -311,7 +323,7 @@ Public companies: valuation and operating metrics
 
 -  Cost and demand indicators
 
--  Landscape of select participants
+-  Select market participants
 
 ## 7. Select Recent Technology M&A Transactions
 
@@ -331,7 +343,7 @@ Cognizant
 
 Astreya provides managed IT services with about 2,600 employees. The purchase adds AI infrastructure and managed services capability and was reported at approximately $600 million ([Cognizant](https://news.cognizant.com/2026-06-22-Cognizant-Completes-Acquisition-of-Astreya,-Expanding-AI-Infrastructure-and-Managed-Services-Capabilities?asPDF=1); [Coverager](https://coverager.com/cognizant-to-acquire-astreya/)).
 
-**WHAT IT SHOWS  **Large IT services firms are buying managed services scale and AI infrastructure skills.
+**WHAT IT SHOWS  **Large IT services firms are buying managed services scale and AI infrastructure skills.
 
 - JUNE 2026 CYBERSECURITY
 
@@ -347,7 +359,7 @@ Accenture
 
 Accenture agreed to buy a majority of the industrial security firm Dragos and all of two smaller companies, runZero and NetRise, for a combined $4.175 billion ([SecurityWeek](https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-june-2026/)).
 
-**WHAT IT SHOWS  **Security for industrial and operational systems is drawing strategic prices.
+**WHAT IT SHOWS  **Security for industrial and operational systems is drawing strategic prices.
 
 - SEPTEMBER 2026 TELECOM & UCAAS
 
@@ -363,7 +375,7 @@ Telephone and Data Systems
 
 Granite State is a fiber and voice provider in New Hampshire with 11,000 service addresses. Regional operators and infrastructure funds are buying local fiber networks of this size; terms were not disclosed ([Broadband Communities ISP roundup](https://bbcmag.com/september-2026-isp-roundup/)).
 
-**WHAT IT SHOWS  **Local fiber operators have regional buyers as well as infrastructure funds.
+**WHAT IT SHOWS  **Local fiber operators have regional buyers as well as infrastructure funds.
 
 - SEPTEMBER 2026 SYSTEMS INTEGRATION
 
@@ -377,7 +389,7 @@ Granite State is a fiber and voice provider in New Hampshire with 11,000 service
 
 Communication Company is a Midwest life safety, security, audiovisual and communications integrator founded in 1976. Pavion is backed by Wind Point Partners; terms were not disclosed ([Pavion](https://www.webull.com/news/15543005417877504)).
 
-**WHAT IT SHOWS  **Sponsor-backed security and life safety platforms continue to add regional integrators.
+**WHAT IT SHOWS  **Sponsor-backed security and life safety platforms continue to add regional integrators.
 
 - AUGUST 2026 ELECTRONICS & HARDWARE
 
@@ -393,7 +405,7 @@ Motorola Solutions
 
 D-Fend makes counter-drone radio frequency technology. Defense and public safety electronics have drawn the highest prices in the focus area, after the same buyer paid $4.4 billion for Silvus Technologies in 2025 ([GovCon Wire](https://www.govconwire.com/articles/motorola-solutions-d-fend-counter-drone-acquisition)).
 
-**WHAT IT SHOWS  **Defense and public safety electronics command the highest disclosed prices in hardware.
+**WHAT IT SHOWS  **Defense and public safety electronics command the highest disclosed prices in hardware.
 
 - AUGUST 2026 GOVERNMENT TECHNOLOGY
 
@@ -409,7 +421,7 @@ Booz Allen Hamilton
 
 The business supplies defense software, encryption and edge computing. Large contractors are paying disclosed prices for cyber and software capability with funded backlog ([GovCon Wire](https://www.govconwire.com/articles/booz-allen-720m-ultra-ic-mission-solutions-close)).
 
-**WHAT IT SHOWS  **Prime contractors are paying for software and cyber capability.
+**WHAT IT SHOWS  **Prime contractors are paying for software and cyber capability.
 
 Transaction values are as reported by the linked source. Company names and marks are the property of their owners and are shown for identification. Transactions advised by Benchmark International follow on the next page.
 
@@ -1211,7 +1223,7 @@ Headcount at IT services firms has fallen 5% from its March 2023 peak even as te
 
 Each series is indexed to September 2021 and runs to its latest month: August 2026 for component prices and construction, July 2026 for copper, September 2026 for employment. Recent months are preliminary. The data center figures are from the [Census Bureau construction spending release of October 1, 2026](https://www.census.gov/construction/c30/pdf/privsa.pdf).
 
-## 13. Landscape: Select Participants
+## 13. Select Market Participants
 
 The listed reference companies in each focus area, and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
 
@@ -1737,7 +1749,7 @@ This material is only being distributed to, and only made available to, and dire
 
 *Information as of October 5, 2026.*
 
-Benchmark International  |  4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607  |  +1 813 898 2350  |  [benchmarkintl.com](https://www.benchmarkintl.com/)
+Benchmark International  |  4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607  |  +1 813 898 2350  |  [benchmarkintl.com](https://www.benchmarkintl.com/)
 
 ## 19. Sources
 

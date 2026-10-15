@@ -13,15 +13,23 @@ Segments: Food & Beverage; Consumer Brands & Products; Foodservice & Distributio
 
 Buyers of consumer businesses are paying for brands that have held price and volume, for companies that sell through more than one channel and for operators with room to add distribution or locations. They have stayed active while tariffs, fuel and interest rates have each changed what a buyer treats as normal earnings.
 
-- 03 Happening in consumer right now
+**KEY INSIGHTS**
 
-04
+**01  Volume has to hold up alongside price**
 
-Tariffs, fuel and financing: three costs buyers are repricing
+Hershey’s organic sales rose 3.6% on an 8-point decline in volume. Church & Dwight grew 5.8% with volume up 4.3%. Show buyers price and unit volume by product line.
 
-- 05 Perspectives on four consumer segments
+**02  Selling through several channels pays**
 
-- 06 What we’re reading
+E-commerce reached 17.1% of retail sales in the second quarter, and YETI grew wholesale 10% and direct-to-consumer 7%. Buyers are paying for brands that sell through more than one channel.
+
+**03  Platforms buy location by location**
+
+Add-ons made up about 75% of US private equity buyouts in the second quarter. Boyd Group’s sales rose 29.9%, mostly from new locations. Operators with room to add sites draw buyers.
+
+**04  Tariffs, fuel and rates are being repriced**
+
+Diesel averaged $6.29 a gallon in September, and the federal funds target now sits at 3.75% to 4.00%. Owners who show landed cost by period and fuel recovery by contract protect their earnings figure.
 
 **MIDDLE MARKET**
 
@@ -87,7 +95,7 @@ Tariffs
 
 The Supreme Court held on February 20 that the International Emergency Economic Powers Act [does not authorize tariffs. A temporary 10% tariff followed](https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf), and since July 24 [Section 301 tariffs of 10% to 12.5% have applied to 60](https://www.wiley.law/alert-New-Forced-Labor-Tariffs-Imposed-on-60-US-Trading-Partners) trading partners. Section 232 duties stayed in place, including [25% on upholstered furniture](https://info.expeditors.com/newsflash/white-house-delays-increase-of-section-232-tariffs-on-furniture-and-cabinets), and duty-free treatment for parcels under $800 [remains suspended](https://www.strtrade.com/trade-news-resources/str-trade-report/trade-report/february/de-minimis-suspension-remains-in-place).
 
-**WHAT BUYERS ASK FOR**  Landed cost under each regime, the status of any refund claim and the sourcing alternatives the company has already qualified.
+**WHAT BUYERS ASK FOR**  Landed cost under each regime, the status of any refund claim and the sourcing alternatives the company has already qualified.
 
 02
 
@@ -95,7 +103,7 @@ Fuel
 
 On-highway diesel averaged $6.29 a gallon in September against $3.75 a year earlier ([FRED](https://fred.stlouisfed.org/series/GASDESM)). The Energy Information Administration’s October outlook expects retail diesel to average [about $4.50 next year](https://www.eia.gov/outlooks/steo/), which would still be well above the price distributors and route-based service companies paid a year ago.
 
-**WHAT BUYERS ASK FOR**  Which customer contracts carry fuel surcharges or cost escalators, how quickly they reset and how much of the increase the company has recovered.
+**WHAT BUYERS ASK FOR**  Which customer contracts carry fuel surcharges or cost escalators, how quickly they reset and how much of the increase the company has recovered.
 
 03
 
@@ -103,7 +111,7 @@ Financing
 
 The Federal Reserve [raised its target range](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm) to 3.75% to 4.00% on September 16 and projects a policy rate of [4.1% at the end of 2026 and 2027](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm). Spreads on direct loans for buyouts [widened by roughly 25 to 50 basis points](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf) in the second quarter, and earn-outs appeared in 24% of 2025 transactions with a median equal to 34% of the closing payment ([SRS Acquiom study, as summarized by Fasken](https://www.fasken.com/en/knowledge/2026/05/private-ma-deal-trends-to-watch-key-takeaways-from-srs-acquioms-2026-study)).
 
-**WHAT BUYERS ASK FOR**  How much of the price is paid in cash at closing, how much is contingent and how much is rolled into the buyer’s equity.
+**WHAT BUYERS ASK FOR**  How much of the price is paid in cash at closing, how much is contingent and how much is rolled into the buyer’s equity.
 
 **THE REPRICING IN FOUR FIGURES**
 
@@ -239,7 +247,7 @@ Food Price Outlook: Summary Findings
 
 USDA Economic Research Service, Food Price Outlook
 
-**Key takeaway.** Food-at-home prices are forecast to rise 2.4% and food-away-from-home prices 3.5%, with beef and veal up 9.4% and eggs down 29.4%. Input costs are moving in different directions by category, which is why buyers ask for price and cost history by product line.
+**Our read.** Food-at-home prices are forecast to rise 2.4% and food-away-from-home prices 3.5%, with beef and veal up 9.4% and eggs down 29.4%. Input costs are moving in different directions by category, which is why buyers ask for price and cost history by product line.
 
 **READ HERE**
 
@@ -253,7 +261,7 @@ Restaurant Performance Index: August 2026
 
 National Restaurant Association, Restaurant Performance Index
 
-**Key takeaway.** The index stood at 100.6, with 51% of operators reporting higher same-store sales than a year earlier and 46% still reporting lower traffic. Distributors and equipment dealers that sell to restaurants are valued partly on the health of those customers.
+**Our read.** The index stood at 100.6, with 51% of operators reporting higher same-store sales than a year earlier and 46% still reporting lower traffic. Distributors and equipment dealers that sell to restaurants are valued partly on the health of those customers.
 
 **READ HERE**
 
@@ -265,7 +273,7 @@ Store Brands Continue Gains in Unit Sales and Shares
 
 Peggy Davies, President, Private Label Manufacturers Association
 
-**Key takeaway.** Store brand unit share reached a record 23.8% in the six months to mid-June, while store brand dollar sales were flat and national brand dollars rose 2.2%. Buyers pay for brands that hold unit volume while they raise price.
+**Our read.** Store brand unit share reached a record 23.8% in the six months to mid-June, while store brand dollar sales were flat and national brand dollars rose 2.2%. Buyers pay for brands that hold unit volume while they raise price.
 
 **READ HERE**
 
@@ -279,7 +287,7 @@ Deloitte Forecasts Holiday Retail Sales to Reach $1.70 Trillion to $1.71 Trillio
 
 Natalie Martini, vice chair, Deloitte, and US retail and consumer products leader
 
-**Key takeaway.** Holiday sales are forecast to rise 4.0% to 4.8% and e-commerce sales 7.5% to 8.4%. Online sales growing at nearly twice the pace of the total keeps channel mix in front of every buyer of a consumer brand.
+**Our read.** Holiday sales are forecast to rise 4.0% to 4.8% and e-commerce sales 7.5% to 8.4%. Online sales growing at nearly twice the pace of the total keeps channel mix in front of every buyer of a consumer brand.
 
 **READ HERE**
 
@@ -2122,9 +2130,9 @@ Tampa, FL 33607
 
 +1 813 898 2350
 
-**Europe**  One New Bailey, 4 Stanley St., Manchester, M3 5JL
+**Europe**  One New Bailey, 4 Stanley St., Manchester, M3 5JL
 
-**Africa**  Airport Office Park, Freight Rd., Cape Town Airport, 7525
+**Africa**  Airport Office Park, Freight Rd., Cape Town Airport, 7525
 
 Ranking based on PitchBook’s Q2 2026 Global League Tables, as published at [benchmarkintl.com](https://www.benchmarkintl.com/about/our-success/). Team as listed on the Middle Market site in October 2026.
 

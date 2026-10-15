@@ -11,21 +11,29 @@ Segments: Provider Services; Life Sciences & Diagnostics; Medical Products & Dis
 
 ## 2. Insights
 
--  Healthcare M&A: state of play
+**KEY INSIGHTS**
 
--  Historical market context
+**01  Strategic buyers are setting the pace**
 
--  Fundamentals supporting activity
+Private equity is on pace for 674 healthcare services transactions this year, the slowest since 2017. Medtech deal value reached $36.5 billion in the first half. Put strategic acquirers on every buyer list.
 
--  Perspectives on four focus areas
+**02  Debt costs healthcare buyers more**
 
--  What we're reading
+Direct lenders widened buyout loan spreads to an average of 509 basis points in the second quarter, from 474 in the first. Senior debt on completed middle-market deals was priced at 7.8%.
+
+**03  Recurring revenue earns the best price**
+
+The median private equity entry multiple for healthcare services was 13.6x EBITDA in 2025, weighted toward larger platforms. The best prices go to revenue that recurs under contract or clinical necessity, paid by a balanced mix of payers.
+
+**04  Plan now for 2027 rate and notice rules**
+
+Medicare proposes physician conversion factor cuts of up to 1.68% for 2027. Maine's 180-day notice and approval regime begins January 1, 2027. Model the rates and build review time into the deal calendar.
 
 ## 3. Healthcare M&A: State of Play
 
 Strategic buyers are setting the pace in 2026 while private equity completes fewer healthcare services transactions.
 
-### M&A market dynamics
+### M&A market conditions
 
 Private equity completed an estimated 337 healthcare services transactions in the first half, a pace of 674 for the year and the slowest since 2017 ([PitchBook via Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)).
 
@@ -457,7 +465,7 @@ August 19, 2026
 
 Brian Wright, lead research analyst of healthcare at PitchBook
 
-**Key takeaway.** Private equity is on pace for 674 healthcare services transactions in 2026 after an estimated 337 in the first half. The analyst behind the count expects activity to return toward its longer-run level.
+**Our read.** Private equity is on pace for 674 healthcare services transactions in 2026 after an estimated 337 in the first half. The analyst behind the count expects activity to return toward its longer-run level.
 
 **READ HERE**
 
@@ -471,7 +479,7 @@ July 6, 2026
 
 MedTech Dive
 
-**Key takeaway.** PwC counted $36.5 billion of medtech acquisitions in the first half. The largest were Boston Scientific’s $14.5 billion purchase of Penumbra and Danaher’s $9.9 billion purchase of Masimo.
+**Our read.** PwC counted $36.5 billion of medtech acquisitions in the first half. The largest were Boston Scientific’s $14.5 billion purchase of Penumbra and Danaher’s $9.9 billion purchase of Masimo.
 
 **READ HERE**
 
@@ -483,7 +491,7 @@ MedTech Dive
 
 IQVIA Global Thought Leadership
 
-**Key takeaway.** The count covers acquisitions of $250 million or more, so it describes the largest buyers. Their spending supports demand for the research, laboratory and manufacturing services that founder-owned companies supply.
+**Our read.** The count covers acquisitions of $250 million or more, so it describes the largest buyers. Their spending supports demand for the research, laboratory and manufacturing services that founder-owned companies supply.
 
 **READ HERE**
 
@@ -497,7 +505,7 @@ August 11, 2026
 
 Bryce Platt, PharmD, Drug Channels
 
-**Key takeaway.** Prescription dispensing revenues reached a record $751 billion in 2025, up 10%, while the number of pharmacies fell. Scale, specialty mix and payer contracts decide which pharmacies remain attractive to a buyer.
+**Our read.** Prescription dispensing revenues reached a record $751 billion in 2025, up 10%, while the number of pharmacies fell. Scale, specialty mix and payer contracts decide which pharmacies remain attractive to a buyer.
 
 **READ HERE**
 
@@ -507,7 +515,7 @@ Quotations are reproduced as published. The Fierce Healthcare quotation joins tw
 
 -  Momentum in healthcare services transactions
 
--  Landscape of select participants
+-  Select market participants
 
 -  Select recent M&A transactions
 
@@ -566,7 +574,7 @@ Chart data:
 
 * 2026 is the annualized pace of an estimated 337 transactions in the first half. Annual counts are the chart labels in PitchBook's Q4 2025 report, and PitchBook restates earlier years as late-reported transactions are added. The 2025 count is an estimate.
 
-## 11. Healthcare Market Landscape: Select Participants
+## 11. Healthcare Market: Select Participants
 
 The listed reference companies in each focus area and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
 
@@ -1261,7 +1269,7 @@ Year over year, as stated in each earnings release; quarters ended June 2026
 
 **LIFE SCIENCES & DIAGNOSTICS**
 
-> * “As you know, our capital deployment strategy continues to prioritize strategic M&A, complemented by return of capital to our shareholders. We continue to have an active pipeline of M&A opportunities in our highly fragmented industry.”*
+> * “As you know, our capital deployment strategy continues to prioritize strategic M&A, complemented by return of capital to our shareholders. We continue to have an active pipeline of M&A opportunities in our highly fragmented industry.”*
 
 [Marc Casper, CEO](https://stockanalysis.com/stocks/tmo/transcripts/653574-q2-2026/)[,](https://stockanalysis.com/stocks/tmo/transcripts/653574-q2-2026/)[Thermo](https://stockanalysis.com/stocks/tmo/transcripts/653574-q2-2026/)[Fisher Scientific](https://stockanalysis.com/stocks/tmo/transcripts/653574-q2-2026/)
 
@@ -1616,4 +1624,4 @@ The sources linked on each page, listed by page with the link text used.
 
 [StockAnalysis](https://stockanalysis.com/)
 
-Listed-company data pages at [StockAnalysis](https://stockanalysis.com/) are linked from each company name in the landscape and appendix pages.
+Listed-company data pages at [StockAnalysis](https://stockanalysis.com/) are linked from each company name in the market participants and appendix pages.
