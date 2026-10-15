@@ -13,21 +13,21 @@ Segments: Commercial & Facility Services; Marketing, Sales & Tech-Enabled Servic
 
 **KEY INSIGHTS**
 
-**01  Inspection revenue draws the most buyers**
+**01  Inspection work draws the deepest buyer pool**
 
-Pye-Barker completed 22 acquisitions in the first half of 2026 after 57 in 2025, so owners with contracted inspection, monitoring and service work are meeting the deepest pool of acquirers.
+Pye-Barker completed 22 acquisitions in the first half of 2026, after 57 in 2025. Acquirers compete hardest for contracted inspection and service work.
 
-**02  Costlier debt rewards documented earnings**
+**02  Costlier debt puts a premium on proof**
 
-The Federal Reserve raised its target range on September 16 and debt on platform acquisitions fell to 2.9x EBITDA from 3.4x, so buyers now pay most for documented earnings and contracted customers.
+Debt on platform acquisitions fell to 2.9x EBITDA from 3.4x, and the Federal Reserve raised its target range on September 16. Documented earnings and contracted customers now command the premium.
 
-**03  Licensed staff and backlog set engineering value**
+**03  Engineering buyers pay for people and backlog**
 
-Bernhard Capital agreed to buy Bowman at a 58% premium while 88% of engineering firms report open positions, so a year of funded backlog and licensed staff drive the price.
+Bernhard Capital agreed to buy Bowman at a 58% premium, and 88% of engineering firms report open positions. Licensed staff and a year of funded backlog set the price.
 
 **04  Prepared sellers still draw several offers**
 
-Completed middle-market deals averaged 7.0x EBITDA in the second quarter and 87% of sales above $5 million drew three or more offers, so owners should keep every client below a fifth of revenue.
+Completed middle-market deals averaged 7.0x EBITDA in the second quarter, and 87% of sales above $5 million drew three or more offers. Keep every client below a fifth of revenue.
 
 ## 3. Key Trends in Business Services
 
@@ -203,7 +203,7 @@ August 27, 2026
 
 The third-quarter survey of engineering firms recorded a median backlog of 12 months, with the strongest sentiment in data centers and in water and wastewater. The same firms put the odds of a recession within six months at 41%, and 88% reported open positions.
 
-**Key takeaway.** Backlog and a bench of licensed engineers are the first two facts a buyer will test.
+**Our read.** Backlog and a bench of licensed engineers are the first two facts a buyer will test.
 
 **READ HERE**
 
@@ -215,7 +215,7 @@ September 29, 2026
 
 The August Pulse Survey of 128 staffing firms recorded median revenue growth of 5% from a year earlier. Engineering staffing led at 10% and industrial staffing followed at 8%, after three years in which industry revenue declined.
 
-**Key takeaway.** The recovery is strongest in the skilled categories where this year's acquisitions are concentrated.
+**Our read.** The recovery is strongest in the skilled categories where this year's acquisitions are concentrated.
 
 **READ HERE**
 
@@ -227,7 +227,7 @@ August 20, 2026
 
 The Council of Insurance Agents & Brokers recorded an average premium decline of 2% in the second quarter. Large accounts fell 3.7% and small accounts 0.5%. Commercial property fell 6.3% while umbrella and commercial auto continued to rise.
 
-**Key takeaway.** Account size and line of business now explain most of the difference in agency growth.
+**Our read.** Account size and line of business now explain most of the difference in agency growth.
 
 **READ HERE**
 
@@ -241,7 +241,7 @@ October 1, 2026
 
 Announced global M&A fell to $993 billion in the third quarter, the first quarter under $1 trillion since mid-2025, after a record first half. The report attributes the decline to rising borrowing costs.
 
-**Key takeaway.** The slowdown is concentrated in the largest transactions. Add-on purchases by existing platforms made up about three-quarters of second-quarter buyouts ([PitchBook](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf)).
+**Our read.** The slowdown is concentrated in the largest transactions. Add-on purchases by existing platforms made up about three-quarters of second-quarter buyouts ([PitchBook](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf)).
 
 **READ HERE**
 
@@ -253,7 +253,7 @@ September 16, 2026
 
 The committee raised the target range for the federal funds rate by 25 basis points to 3.75% to 4.00% and stated that inflation remains elevated. Senior debt on middle-market acquisitions was already priced at 7.8% in the second quarter.
 
-**Key takeaway.** Lenders are advancing less debt against each dollar of earnings, at 2.9x EBITDA on platform deals ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)).
+**Our read.** Lenders are advancing less debt against each dollar of earnings, at 2.9x EBITDA on platform deals ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)).
 
 **READ HERE**
 
@@ -265,7 +265,7 @@ Market Pulse, second quarter 2026
 
 The quarterly survey of business brokers and M&A advisors put the median multiple on sales of $5 million to $50 million at 5.8x EBITDA, up from 5.5x. Sellers received 83% to 92% of the price in cash at closing.
 
-**Key takeaway.** Competition for well-prepared businesses is intact, with three or more offers on 87% of sales above $5 million ([survey release](https://www.webull.com/news/15462423712777216)).
+**Our read.** Competition for well-prepared businesses is intact, with three or more offers on 87% of sales above $5 million ([survey release](https://www.webull.com/news/15462423712777216)).
 
 **READ HERE**
 
@@ -388,7 +388,7 @@ Public companies: valuation and operating metrics
 
 -  Economic trends
 
--  Landscape of select participants
+-  Select market participants
 
 ## 8. Client Spotlight: Three Fire and Life Safety Sales
 
@@ -1373,7 +1373,7 @@ Architecture and engineering employment is 14.6% above its September 2021 level,
 
 Each series runs from September 2021 to its latest month, September 2026, and GDP runs to the second quarter of 2026. Recent months are preliminary. FRED has no unemployment rate for October 2025, and the line bridges that month.
 
-## 15. Landscape: Select Participants
+## 15. Select Market Participants
 
 The listed reference companies in each segment, and the platforms, sponsors and strategic buyers acquiring founder-owned businesses.
 
@@ -1891,7 +1891,7 @@ The sources linked on each page, listed by page with the link text used.
 
 [FRED series A191RL1Q225SBEA](https://fred.stlouisfed.org/series/A191RL1Q225SBEA); [FRED series UNRATE](https://fred.stlouisfed.org/series/UNRATE); [FRED series PAYEMS](https://fred.stlouisfed.org/series/PAYEMS); [FRED series GS10](https://fred.stlouisfed.org/series/GS10); [FRED series FEDFUNDS](https://fred.stlouisfed.org/series/FEDFUNDS); [FRED series TEMPHELPS](https://fred.stlouisfed.org/series/TEMPHELPS); [FRED series CES6054130001](https://fred.stlouisfed.org/series/CES6054130001); [FRED series CES6056170001](https://fred.stlouisfed.org/series/CES6056170001)
 
-**LANDSCAPE: SELECT PARTICIPANTS**
+**SELECT MARKET PARTICIPANTS**
 
 [StockAnalysis](https://stockanalysis.com/)
 

@@ -15,21 +15,21 @@ American manufacturing has expanded for nine consecutive months, and acquirers i
 
 **KEY INSIGHTS**
 
-**01  Power and data center work commands top value**
+**01  Power and data center work earns the premium**
 
-Quanta Services ended June with a $53.4 billion backlog, up from $35.8 billion, and buyers will ask how much of a company's backlog is tied to funded power and data center work.
+Quanta Services ended June with $53.4 billion of backlog, up from $35.8 billion. A buyer will ask how much of yours is tied to funded power and data center work.
 
-**02  Your likely buyer is an operating platform**
+**02  The likely buyer is an operating platform**
 
-Add-on acquisitions made up about three-quarters of buyouts in the second quarter, and Pye-Barker Fire & Safety completed 22 acquisitions in the first half, so owners should expect a sponsor that knows their trade.
+Add-ons made up about three-quarters of buyouts in the second quarter, and Pye-Barker Fire & Safety completed 22 acquisitions in the first half. Expect a sponsor that already knows the trade.
 
-**03  Report service revenue separately from projects**
+**03  Report service revenue on its own line**
 
-APi Group is working toward 60% of revenue from inspection and service, and buyers pay more for service, repair and aftermarket revenue that an owner reports separately with its renewal history.
+APi Group is working toward 60% of revenue from inspection and service. Buyers pay more for service, repair and aftermarket revenue when it is reported apart from projects, with its renewal history.
 
-**04  Higher financing costs make buyers more selective**
+**04  Financing costs more and buyers are choosier**
 
-The Federal Reserve raised its target range to 3.75% to 4.00% on September 16, and GF Data's average multiple eased to 7.0 times trailing adjusted EBITDA from 7.3 times, so preparation matters more.
+The Federal Reserve raised its target range to 3.75% to 4.00% on September 16. GF Data's average multiple eased to 7.0 times trailing adjusted EBITDA, from 7.3 times.
 
 ## 3. Market Insights: Q4 2026
 
