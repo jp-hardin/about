@@ -1271,7 +1271,7 @@ def page_sector(i, s):
     <div class="section-head reveal">
       <p class="eyebrow">Sector Coverage</p>
       <h2 class="h2">Where We Focus</h2>
-      <p class="lead">We advise companies across {number_word(len(s['segments']))} sectors within {e(s['prose'])}, including the specialties listed below.</p>
+      <p class="lead">We advise companies across {number_word(len(s['segments']))} sectors within {e(s['prose'])}, including the sub-sectors listed below.</p>
     </div>
     <div class="segments">{segments}</div>
   </div>
