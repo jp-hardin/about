@@ -901,6 +901,7 @@ class Chart:
         if horiz and bar is not None and all_vals and min(all_vals) < 0 and dl_props(sers[0])[0]:
             lw = max(est(fmt(v, dl_props(sers[0])[1]), dl_props(sers[0])[3][0]) for v in all_vals if v < 0) + 6
             if pw > lw * 2:
+                lo_axis = lo
                 lo = lo - (hi - lo) * lw / (pw - lw)
         # value -> position along the value axis
         def vpos(v):
@@ -926,6 +927,9 @@ class Chart:
                         step *= m
                         break
             v = lo
+            if 'lo_axis' in locals():   # lo was widened for negative labels: start the ticks on a round value
+                import math
+                v = math.ceil(lo / step - 1e-9) * step
             while v <= hi + 1e-9 and len(ticks) < 40:
                 ticks.append(v)
                 v += step

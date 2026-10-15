@@ -1,39 +1,24 @@
-# Technology Q4 2026 sector report: source
+# Technology Q4 2026 sector report
 
-One set of content produces three outputs. Edit the source here and rebuild; do not hand-edit the outputs.
+The source is `brief.pptx`, the Technology Q4 2026 Sector Brief deck. It is the authoritative document: the downloadable PDF and the site page are both built from it, so they always say the same thing.
 
-| Output | Where | Built by |
-| --- | --- | --- |
-| Site page (native HTML, site styles) | `mid-market-practice/insights/technology-sector-report-q4-2026.html` | `web.py` |
-| Downloadable PDF (21-page print layout) | `mid-market-practice/insights/technology-sector-report-q4-2026.pdf` | `pdf.py` |
-| Print layout pages for the design canvas | `root/project/` (not committed) | `gen.py` |
+To change the report, edit the deck in PowerPoint, save it here as `brief.pptx` and rebuild:
 
-## Rebuild
 ```
-./build.sh
+sh build.sh
 ```
-This runs `gen.py`, `pdf.py` and `web.py` in order. `pdf.py` needs Playwright with Chromium (`pip install playwright && playwright install chromium`) and prints `OVER` for any page whose text runs past its frame. To change only the site page, `python3 web.py` is enough. Commit the regenerated outputs with the source change. Merging to `main` publishes the site.
 
-## Files
-- `lib.py`: the building blocks (`h2`, `p`, `table`, `band`, `quote`, `note` and so on). Each one renders the fixed print layout by default and semantic HTML for the site when `lib.WEB` is set, which `web.py` does. Links are written in the text as `[[label|url]]` and are recorded for the sources list as they are used.
-- `pages_a.py`: shared source links, the cover, the opening paragraph and four headline figures (`BRIEF`, `FIGS`), the six focus areas table, the deal market, and policy, trade and tax.
-- `pages_b.py`: Managed IT & Cloud Services, Cybersecurity, Telecom & UCaaS and Systems Integration, each with a narrative page and a transactions page.
-- `pages_c.py`: Electronics & Hardware, Government Technology, the valuation page and its listed-company multiples (`COMPS`), Benchmark International's activity, what buyers reward and discount, the contact page and the sources list.
-- `report.py`: the page order (`PAGES`) and the grouping of links under the sources headings (`MERGE`).
-- `gen.py`: writes the print pages and `canvas.json` to `root/project/`, the same files the design canvas holds.
-- `pdf.py`: joins the print pages into one document and prints it. Fonts come from `../fonts`. The `IMG` table maps the design canvas's uploaded images to the copies in `art/` and in the site's `assets/img/`.
-- `web.py`: groups the same content into the thirteen site sections (`GROUPS`) and wraps it in the site header, footer and call to action from `_build/build.py`. Styles are in `mid-market-practice/assets/css/report.css`, shared with the other reports.
-- `art/`: the logo lockup and the watermark used by the print layout. The photographs (cover, stat bands, the preparation and contact pages) are `rpt-*.jpg` in `mid-market-practice/assets/img/industries/technology/`, mapped in `IMG`.
+This runs `../brief.py` (with `../webdeck.py` and `../deckhtml.py`), which writes:
 
-## Where to make common edits
-- Text, figures, table rows, links: the `pages_*.py` file that holds them. Both outputs pick the change up. Keep each print page inside its 890px text frame; `pdf.py` reports any that run over.
-- A listed-company multiple: `COMPS` in `pages_c.py`. The medians, the print chart, the site chart and the company lists all follow from it.
-- Site section order or titles: `GROUPS` in `web.py`.
-- Button on the Technology page: the `"report"` entry on the technology sector in `_build/build.py`, then `python3 build.py` from `_build/`.
-- After an edit here, send the changed files in `root/project/` to the design canvas as well so the two stay matched.
+- `insights/technology-sector-report-q4-2026.pdf`: the deck converted to PDF (the download).
+- `insights/technology-sector-report-q4-2026.html`: the site page, in the site's report layout (side contents menu, numbered sections). Each deck page becomes one section with the same words, links, tables and logos; the deck's charts are redrawn as SVG from their data, each with its values as a table.
+- `insights/technology-sector-report-q4-2026.md`: the same content as Markdown for AI tools, linked from the page and from `llms.txt`.
+- `assets/img/reports/technology-sector-report-q4-2026/`: the logos and photos of people used on the page.
 
-## Content rules
-- Benchmark transactions: trailing 24 months only, no dates, names only where the tombstone is public and the seller is cleared to market; no deal values; the live portfolio in aggregate only.
-- The four other banks quoted are named where they are quoted; Capstone Partners is never cited.
-- The contact page closes the report and the sources page follows it as the final page. The list of subscription sources is a separate document and stays out of the report.
-- Copy follows the house voice: full sentences, no em dashes, no arrows.
+`brief.json` holds the cover's summary sentence, which is the page lead and the summary on the Insights page. Copy it from the cover if the cover changes; the build checks that it matches.
+
+The build fixes two things in a working copy without changing `brief.pptx`: em dashes (site style) and links to the old `-industry-report-` and `/industries/` addresses. Anything else must be changed in the deck.
+
+Requirements: LibreOffice with Impress (`soffice`), poppler-utils (`pdffonts`) and `pip install python-pptx pypdf Pillow`. The deck fonts are in `../brief-fonts/` (Carlito and Caladea stand in for Calibri and Cambria with the same metrics), so nothing needs installing system-wide.
+
+To rebuild only the site page and Markdown (no PDF), run `python3 brief.py technology-q4-2026 --page-only` in `_build/reports/`.
