@@ -1264,9 +1264,11 @@ Benchmark International's Middle Market team represents owners of privately held
 
 - 15 Connect with our team
 
-- 16 Important disclosures
+- 16 Our team
 
-- 17 Sources
+- 17 Important disclosures
+
+- 18 Sources
 
 ## 15. Connect With Our Team
 
@@ -1290,17 +1292,25 @@ Owners considering a sale, a recapitalization or a growth partnership in any of 
 
 **MANAGING DIRECTOR**
 
+[813-771-6675](tel:8137716675)
+
+[jhoutz@benchmarkintl.com](mailto:jhoutz@benchmarkintl.com)
+
 ### Alex Zykov
 
 **TRANSACTION DIRECTOR**
 
-Leads execution from onboarding through signing and closing
+[813-898-2372](tel:8138982372)
+
+[azykov@benchmarkintl.com](mailto:azykov@benchmarkintl.com)
 
 ### Shannon Hess
 
 **CLIENT ENGAGEMENT DIRECTOR**
 
-An additional point of contact for owners considering an engagement
+[813-898-2397](tel:8138982397)
+
+[hess@benchmarkintl.com](mailto:hess@benchmarkintl.com)
 
 01
 
@@ -1322,7 +1332,7 @@ Understand the paths available, from a partial recapitalization to a full sale, 
 
 **SCHEDULE A CONVERSATION**
 
-**READ THE FULL Q4 2026 INDUSTRIAL REPORT**
+**READ THE REPORT ONLINE**
 
 **MIDDLE MARKET**
 
@@ -1362,7 +1372,123 @@ Tampa, FL 33607
 
 Ranking based on PitchBook’s Q2 2026 Global League Tables, as published at [benchmarkintl.com](https://www.benchmarkintl.com/). Team as listed on the Middle Market site in October 2026.
 
-## 16. Important Disclosures
+## 16. Our Team
+
+The Middle Market team leads each engagement from the first conversation through signing and closing.
+
+### Middle Market
+
+Benchmark International's Middle Market team represents owners of privately held companies with $50 million to $500 million of total enterprise value in sales, recapitalizations and growth partnerships.
+
+**HEADQUARTERS**
+
+**AMERICAS**
+
+4030 West Boy Scout Blvd. Suite 500, Tampa, FL 33607 +1 813 898 2350
+
+**EUROPE**
+
+One New Bailey, 4 Stanley St. Manchester, M3 5JL +44 (0) 161 359 4400
+
+**AFRICA**
+
+Airport Office Park, Freight Rd. Cape Town Airport, 7525 +27 (0) 21 300 2055
+
+Jordan Houtz
+
+### Jordan Houtz
+
+**MANAGING DIRECTOR**
+
+[813-771-6675](tel:8137716675) [jhoutz@benchmarkintl.com](mailto:jhoutz@benchmarkintl.com)
+
+Jared Hardin
+
+### Jared Hardin
+
+**MANAGING DIRECTOR**
+
+[813-771-6675](tel:8137716675) [j.hardin@benchmarkintl.com](mailto:j.hardin@benchmarkintl.com)
+
+Alex Zykov
+
+### Alex Zykov
+
+**TRANSACTION DIRECTOR**
+
+[813-898-2372](tel:8138982372) [azykov@benchmarkintl.com](mailto:azykov@benchmarkintl.com)
+
+Shannon Hess
+
+### Shannon Hess
+
+**CLIENT ENGAGEMENT DIRECTOR**
+
+[813-898-2397](tel:8138982397) [hess@benchmarkintl.com](mailto:hess@benchmarkintl.com)
+
+Sunny Garten
+
+### Sunny Garten
+
+Senior Deal Associate
+
+[813-898-2357](tel:8138982357) [garten@benchmarkintl.com](mailto:garten@benchmarkintl.com)
+
+Michael Wynn
+
+### Michael Wynn
+
+Senior Deal Associate
+
+[813-384-4972](tel:8133844972) [mwynn@benchmarkintl.com](mailto:mwynn@benchmarkintl.com)
+
+Jason Lisiak
+
+### Jason Lisiak
+
+Research Associate
+
+[jlisiak@benchmarkintl.com](mailto:jlisiak@benchmarkintl.com)
+
+Alexandra Barr
+
+### Alexandra Barr
+
+Transaction Support Associate
+
+[813-387-6046](tel:8133876046) [abarr@benchmarkintl.com](mailto:abarr@benchmarkintl.com)
+
+Josiah Warren
+
+### Josiah Warren
+
+Transaction Support Associate
+
+[813-898-2398](tel:8138982398) [jwarren@benchmarkintl.com](mailto:jwarren@benchmarkintl.com)
+
+Luke Ernst
+
+### Luke Ernst
+
+Deal Analyst
+
+[813-771-6318](tel:8137716318) [lernst@benchmarkintl.com](mailto:lernst@benchmarkintl.com)
+
+**INDUSTRIAL COVERAGE**
+
+**Manufacturing & Industrial Technology**
+
+**Industrial Distribution & Services**
+
+**Building Products & Construction Services**
+
+**Energy, Power & Environmental Services**
+
+**Transportation & Logistics**
+
+Team as listed on the Middle Market site in October 2026.
+
+## 17. Important Disclosures
 
 These disclosures apply to this brief and to the Middle Market sector reports.
 
@@ -1380,7 +1506,7 @@ This material is only being distributed to, and only made available to, and dire
 
 Information in this brief is as of October 7, 2026 unless stated otherwise.
 
-## 17. Sources
+## 18. Sources
 
 Every figure in this brief links to the page it came from, and the same links are collected here by section.
 
@@ -1536,4 +1662,4 @@ Every figure in this brief links to the page it came from, and the same links ar
 
 **How the figures were gathered. **Listed-company figures are from StockAnalysis and use reported results. Economic series are from FRED. Benchmark International figures are from the firm’s transaction records as of October 1, 2026. Subscription and registration sources that would add depth, including GF Data, PitchBook and S&P Capital IQ, are listed in a separate one-page companion.
 
-Figures were gathered from these sources between October 2 and October 7, 2026. The full Q4 2026 Industrial report carries the longer source list behind the five segment chapters.
+Figures were gathered from these sources between October 2 and October 7, 2026.

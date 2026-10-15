@@ -2,7 +2,7 @@
 
 Benchmark International's Middle Market team. October 2026 | Jared Hardin, Managing Director.
 
-Mergers and acquisitions across commercial, professional and human capital services
+Mergers and acquisitions across commercial, professional and human capital services.
 
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-sector-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-sector-report-q4-2026.pdf
@@ -177,7 +177,7 @@ Specialty placements, gross margin held through the downturn and direct client r
 
 - 5 Margins that held through the downturn Proof that pricing and staffing can adjust.
 
-Active buyers are drawn from transactions announced between October 2025 and October 2026 and cited in the [full Q4 2026 report](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-sector-report-q4-2026.html). Company names are the property of their owners and are shown for identification.
+Active buyers are drawn from transactions announced between October 2025 and October 2026. Company names are the property of their owners and are shown for identification.
 
 ## 5. What We're Reading
 
@@ -574,7 +574,7 @@ The enterprise value of £850 million, roughly $1.1 billion, compares with about
 
 **WHAT IT SHOWS** Long-term outsourcing contracts earned a multiple in line with the 10.8x median of far larger listed staffing companies.
 
-Transaction values are as reported by the linked source. The listed staffing median is on the valuation page of this brief. Company names are the property of their owners. Transactions advised by Benchmark International follow on the next page, and further transactions in each segment are in the [full report](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-sector-report-q4-2026.html).
+Transaction values are as reported by the linked source. The listed staffing median is on the valuation page of this brief. Company names are the property of their owners. Transactions advised by Benchmark International follow on the next page.
 
 ## 10. Benchmark International's Business Services Transactions
 
@@ -592,7 +592,7 @@ further engagements in progress as of October 1, 2026, of which 69 are on the ma
 
 **44**
 
-sellers named in the full report, more than half of them bought by a company in their own or an adjacent field
+named sellers, more than half of them bought by a company in their own or an adjacent field
 
 Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables ([Benchmark International](https://www.benchmarkintl.com/about/our-success/)).
 
@@ -714,7 +714,7 @@ Aerospace engineering and technical contract staffing
 
 **STAFFING & HUMAN CAPITAL**
 
-Each tile links to the announcement on benchmarkintl.com. Twelve of the 44 named transactions are shown, and the rest are in the [full report](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-sector-report-q4-2026.html). Transactions closed in the 24 months to September 2026. Engagements in progress are shown in aggregate. Company names and marks are the property of their owners.
+Each tile links to the announcement on benchmarkintl.com. Twelve of the 44 named transactions are shown. Transactions closed in the 24 months to September 2026. Engagements in progress are shown in aggregate. Company names and marks are the property of their owners.
 
 ## 11. Public Companies: Valuation
 
@@ -1591,7 +1591,7 @@ Concord Holdings
 
 Red Dog Equity
 
-Private participants are buyers in transactions announced between October 2025 and October 2026 and cited in the [full report](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-sector-report-q4-2026.html). The list is illustrative. Company names are the property of their owners and are shown for identification.
+Private participants are buyers in transactions announced between October 2025 and October 2026. The list is illustrative. Company names are the property of their owners and are shown for identification.
 
 ## 16. Connect With Us
 
@@ -1617,7 +1617,7 @@ Jared Hardin
 
 ### Jared Hardin
 
-**MANAGING DIRECTOR, MIDDLE MARKET**
+**MANAGING DIRECTOR**
 
 [813-771-6675](tel:8137716675)
 
@@ -1625,13 +1625,7 @@ Jared Hardin
 
 **SCHEDULE A CONVERSATION**
 
-**READ THE FULL Q4 2026 REPORT**
-
-**UPCOMING EVENT**
-
-### Event name, dates and location
-
-This panel is reserved for the next conference or event where the Middle Market team will be meeting business services owners.
+**READ THE REPORT ONLINE**
 
 Benchmark International Middle Market, 4030 West Boy Scout Blvd., Suite 500, Tampa, FL 33607
 
@@ -1675,6 +1669,10 @@ Jordan Houtz
 
 **MANAGING DIRECTOR**
 
+[813-771-6675](tel:8137716675)
+
+[jhoutz@benchmarkintl.com](mailto:jhoutz@benchmarkintl.com)
+
 Jared Hardin
 
 ### Jared Hardin
@@ -1691,11 +1689,19 @@ Alex Zykov
 
 **TRANSACTION DIRECTOR**
 
+[813-898-2372](tel:8138982372)
+
+[azykov@benchmarkintl.com](mailto:azykov@benchmarkintl.com)
+
 Shannon Hess
 
 ### Shannon Hess
 
 **CLIENT ENGAGEMENT DIRECTOR**
+
+[813-898-2397](tel:8138982397)
+
+[hess@benchmarkintl.com](mailto:hess@benchmarkintl.com)
 
 Sunny Garten
 
@@ -1703,11 +1709,19 @@ Sunny Garten
 
 Senior Deal Associate
 
+[813-898-2357](tel:8138982357)
+
+[garten@benchmarkintl.com](mailto:garten@benchmarkintl.com)
+
 Michael Wynn
 
 ### Michael Wynn
 
 Senior Deal Associate
+
+[813-384-4972](tel:8133844972)
+
+[mwynn@benchmarkintl.com](mailto:mwynn@benchmarkintl.com)
 
 Jason Lisiak
 
@@ -1715,11 +1729,17 @@ Jason Lisiak
 
 Research Associate
 
+[jlisiak@benchmarkintl.com](mailto:jlisiak@benchmarkintl.com)
+
 Alexandra Barr
 
 ### Alexandra Barr
 
 Transaction Support Associate
+
+[813-387-6046](tel:8133876046)
+
+[abarr@benchmarkintl.com](mailto:abarr@benchmarkintl.com)
 
 Josiah Warren
 
@@ -1727,11 +1747,19 @@ Josiah Warren
 
 Transaction Support Associate
 
+[813-898-2398](tel:8138982398)
+
+[jwarren@benchmarkintl.com](mailto:jwarren@benchmarkintl.com)
+
 Luke Ernst
 
 ### Luke Ernst
 
 Deal Analyst
+
+[813-771-6318](tel:8137716318)
+
+[lernst@benchmarkintl.com](mailto:lernst@benchmarkintl.com)
 
 **BUSINESS SERVICES COVERAGE**
 
@@ -1815,7 +1843,7 @@ The sources linked on each page, listed by page with the link text used.
 
 **PERSPECTIVES ON FIVE SEGMENTS**
 
-[SDM](https://www.sdmmag.com/articles/105352-sdm-100-top-100-security-dealers-of-2026); [SGS](https://www.sgs.com/en-ca/news/2026/07/sgs-2026-half-year-results); [IAB and PwC](https://www.iab.com/insights/internet-advertising-revenue-report-full-year-2025/); [ASI](https://asicentral.com/press-releases/north-america-promo-industry-grows-4-percent-in-2025/); [ENR](https://enr.com/toplists/2026-top-500-design-firms-preview); [PSMJ](https://go.psmj.com/outlook-2026-aec-ma-trends-report); [Risk & Insurance](https://riskandinsurance.com/mga-premiums-hit-108-7-billion-in-2025-as-capacity-scrutiny-tightens/); [WealthManagement.com](https://www.wealthmanagement.com/ria-news/fidelity-m-a-transaction-count-fell-in-1h-but-total-asset-haul-rose-88-); [ASA](https://americanstaffing.net/posts/2026/03/30/employment-and-sales-rebound-in-q4/); [Staffing Industry Analysts](https://www.staffingindustry.com/editorial/industrial-staffing-report/industrial-staffing-forecast-revised-to-7-growth-from-1-); [full Q4 2026 report](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-sector-report-q4-2026.html)
+[SDM](https://www.sdmmag.com/articles/105352-sdm-100-top-100-security-dealers-of-2026); [SGS](https://www.sgs.com/en-ca/news/2026/07/sgs-2026-half-year-results); [IAB and PwC](https://www.iab.com/insights/internet-advertising-revenue-report-full-year-2025/); [ASI](https://asicentral.com/press-releases/north-america-promo-industry-grows-4-percent-in-2025/); [ENR](https://enr.com/toplists/2026-top-500-design-firms-preview); [PSMJ](https://go.psmj.com/outlook-2026-aec-ma-trends-report); [Risk & Insurance](https://riskandinsurance.com/mga-premiums-hit-108-7-billion-in-2025-as-capacity-scrutiny-tightens/); [WealthManagement.com](https://www.wealthmanagement.com/ria-news/fidelity-m-a-transaction-count-fell-in-1h-but-total-asset-haul-rose-88-); [ASA](https://americanstaffing.net/posts/2026/03/30/employment-and-sales-rebound-in-q4/); [Staffing Industry Analysts](https://www.staffingindustry.com/editorial/industrial-staffing-report/industrial-staffing-forecast-revised-to-7-growth-from-1-)
 
 **WHAT WE'RE READING**
 
@@ -1831,11 +1859,11 @@ The sources linked on each page, listed by page with the link text used.
 
 **SELECT RECENT BUSINESS SERVICES M&A TRANSACTIONS**
 
-[Pye-Barker](https://pyebarkerfs.com/news/pye-barker-fire-safety-acquires-union-alarmtronic-llc-continuing-security-alarm-service-expansion-in-the-northeast/); [ASI](https://members.asicentral.com/news/industry-news/october-2026/zebra-marketing-inks-deal-to-acquire-east-beach-specialties/); [ASI Central](https://members.asicentral.com/news/industry-news/july-2026/industry-sales-grow-25-in-q2-as-business-pressures-persist/); [Bowman results](https://investors.bowman.com/news-releases/news-release-details/bowman-reports-strong-results-second-quarter-2026); [Bowman](https://investors.bowman.com/news-releases/news-release-details/bowman-consulting-group-enters-definitive-agreement-be-acquired); [Insurance Business](https://www.insurancebusinessmag.com/us/news/mergers-acquisitions/inszone-snaps-up-centuryold-tulsa-agency-in-august-deal-run-586995.aspx); [Insurance Journal](https://www.insurancejournal.com/magazines/mag-business-moves/2026/10/05/887584.htm); [Staffing Industry Analysts](https://www.staffingindustry.com/editorial/industrial-staffing-report/veriworks-entering-data-center-construction-staffing-with-laborworx-acquisition); [SIA forecast](https://www.staffingindustry.com/editorial/industrial-staffing-report/industrial-staffing-forecast-revised-to-7-growth-from-1-); [Korn Ferry](https://ir.kornferry.com/news-events/press-releases/detail/724/korn-ferry-announces-definitive-agreement-to-acquire-ams); [full report](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-sector-report-q4-2026.html)
+[Pye-Barker](https://pyebarkerfs.com/news/pye-barker-fire-safety-acquires-union-alarmtronic-llc-continuing-security-alarm-service-expansion-in-the-northeast/); [ASI](https://members.asicentral.com/news/industry-news/october-2026/zebra-marketing-inks-deal-to-acquire-east-beach-specialties/); [ASI Central](https://members.asicentral.com/news/industry-news/july-2026/industry-sales-grow-25-in-q2-as-business-pressures-persist/); [Bowman results](https://investors.bowman.com/news-releases/news-release-details/bowman-reports-strong-results-second-quarter-2026); [Bowman](https://investors.bowman.com/news-releases/news-release-details/bowman-consulting-group-enters-definitive-agreement-be-acquired); [Insurance Business](https://www.insurancebusinessmag.com/us/news/mergers-acquisitions/inszone-snaps-up-centuryold-tulsa-agency-in-august-deal-run-586995.aspx); [Insurance Journal](https://www.insurancejournal.com/magazines/mag-business-moves/2026/10/05/887584.htm); [Staffing Industry Analysts](https://www.staffingindustry.com/editorial/industrial-staffing-report/veriworks-entering-data-center-construction-staffing-with-laborworx-acquisition); [SIA forecast](https://www.staffingindustry.com/editorial/industrial-staffing-report/industrial-staffing-forecast-revised-to-7-growth-from-1-); [Korn Ferry](https://ir.kornferry.com/news-events/press-releases/detail/724/korn-ferry-announces-definitive-agreement-to-acquire-ams)
 
 **BENCHMARK INTERNATIONAL'S BUSINESS SERVICES TRANSACTIONS**
 
-[Benchmark International](https://www.benchmarkintl.com/about/our-success/); [full report](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-sector-report-q4-2026.html)
+[Benchmark International](https://www.benchmarkintl.com/about/our-success/)
 
 **PUBLIC COMPANIES: VALUATION**
 
@@ -1855,7 +1883,7 @@ The sources linked on each page, listed by page with the link text used.
 
 **LANDSCAPE: SELECT PARTICIPANTS**
 
-[StockAnalysis](https://stockanalysis.com/); [full report](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-sector-report-q4-2026.html)
+[StockAnalysis](https://stockanalysis.com/)
 
 **BENCHMARK INTERNATIONAL**
 

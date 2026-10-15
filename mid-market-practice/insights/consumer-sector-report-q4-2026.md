@@ -2197,7 +2197,7 @@ Understand the paths available, from a partial recapitalization to a full sale, 
 
 **SCHEDULE A CONVERSATION**
 
-**READ THE FULL Q4 2026 CONSUMER REPORT**
+**READ THE REPORT ONLINE**
 
 **MIDDLE MARKET**
 
@@ -2455,4 +2455,4 @@ hormelfoods.com
 
 **How the figures were gathered.** Listed-company figures are from StockAnalysis and use reported results. Index series are from FRED, the US Census Bureau and the University of Michigan. Benchmark International figures are from the firm’s transaction records as of October 1, 2026. No investment bank is used as a source. Subscription and registration sources that would add depth, including GF Data, PitchBook, S&P Capital IQ and Circana, are listed in a separate one-page companion.
 
-Figures were gathered from these sources between October 2 and October 7, 2026. The full Q4 2026 Consumer report carries the longer source list behind the four segment chapters.
+Figures were gathered from these sources between October 2 and October 7, 2026.
