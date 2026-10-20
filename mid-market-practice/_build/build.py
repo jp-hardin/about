@@ -805,7 +805,7 @@ def faq_html(faqs, title="Frequently Asked Questions", eyebrow="Questions Owners
 
 def home_faqs():
     # Prose names of SERVICES
-    svc = "sell-side M&A, majority and control transactions and strategic partnerships, along with exit planning and valuation"
+    svc = "sell-side M&A, majority and control transactions and strategic partnerships, along with exit planning"
     return [
         ("What does Benchmark International's Middle Market team do?",
          "Benchmark International's Middle Market team represents privately held companies across the United States in sell-side M&A, "
