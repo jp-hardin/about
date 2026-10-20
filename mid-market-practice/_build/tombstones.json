@@ -1267,7 +1267,7 @@
  },
  {
   "seller": "Central Emergency Medical Services Inc",
-  "buyer": "Priority Ambulance owned by Enhanced Equity Funds",
+  "buyer": "Priority Ambulance, owned by Enhanced Equity Funds",
   "verb": "Acquired By",
   "sector": "healthcare",
   "segment": "Provider Services",
@@ -1417,7 +1417,7 @@
  },
  {
   "seller": "ARC Medical, Inc.",
-  "buyer": "Typenex Medical, Owned by Chicago Venture Partners",
+  "buyer": "Typenex Medical, owned by Chicago Venture Partners",
   "verb": "Acquired By",
   "sector": "healthcare",
   "segment": "Medical Products & Distribution",
@@ -1530,7 +1530,7 @@
   ]
  },
  {
-  "seller": "Transaction Data Systems (RX30)",
+  "seller": "Transaction Data Systems (Rx30)",
   "buyer": "GTCR",
   "verb": "Investment From",
   "sector": "technology",
