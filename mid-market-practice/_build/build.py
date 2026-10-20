@@ -56,7 +56,7 @@ SERVICES = [
     ("Sell-Side M&A", "A full sale to the right strategic acquirer or financial sponsor, run as a confidential, competitive process from positioning through closing."),
     ("Majority & Control Transactions", "Sell a majority or controlling interest to a strategic acquirer, private equity firm or family office on terms that fit your goals for value, timing and your role after closing."),
     ("Strategic Partnerships", "Find a partner that brings capital, capabilities or market access to accelerate the next phase of growth."),
-    ("Exit Planning & Valuation", "Understand what your company is worth today, what drives value in your industry and the steps that will maximize it before you go to market."),
+    ("Exit Planning", "Understand what your company is worth today, what drives value in your industry and the steps that will maximize it before you go to market."),
 ]
 
 # Old 12-industry URLs → current industry page (redirect stubs keep any shared links working)
