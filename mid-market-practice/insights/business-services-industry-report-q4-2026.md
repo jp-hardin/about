@@ -1527,7 +1527,7 @@ Each summary restates the source in our own words and links to it, and each head
 
 The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five industries.
 
-The Middle Market team is the part of Benchmark International that advises owners of privately held companies on majority and control transactions and strategic partnerships across five industries.
+The Middle Market team is the part of Benchmark International that advises owners of privately held companies across five industries, from majority and control transactions to strategic partnerships.
 
 #1Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables$50M to $500MTotal enterprise value range that the Middle Market team serves5Focused industry groups with dedicated expertise15Global offices across the Americas, Europe and Africa
 RECOGNITION
