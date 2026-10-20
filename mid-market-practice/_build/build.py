@@ -54,8 +54,8 @@ DISCLOSURES = [
 # Services offered on every sector page
 SERVICES = [
     ("Sell-Side M&A", "A full sale to the right strategic acquirer or financial sponsor, run as a confidential, competitive process from positioning through closing."),
-    ("Recapitalizations & Partial Sales", "Take chips off the table while keeping a stake in the upside, through majority or minority recapitalizations with private equity and family offices."),
-    ("Strategic Partnerships & Growth Capital", "Find a partner that brings capital, capabilities or market access to accelerate the next phase of growth."),
+    ("Majority & Control Transactions", "Sell a majority or controlling interest to a strategic acquirer, private equity firm or family office on terms that fit your goals for value, timing and your role after closing."),
+    ("Strategic Partnerships", "Find a partner that brings capital, capabilities or market access to accelerate the next phase of growth."),
     ("Exit Planning & Valuation", "Understand what your company is worth today, what drives value in your industry and the steps that will maximize it before you go to market."),
 ]
 
@@ -87,7 +87,7 @@ SECTORS = [
         "title_in": "Industrial Markets",        # Title Case heading form ("What We're Seeing in Industrial Markets")
         "adj": "industrial",                     # adjective before "transactions"
         "count": 290,
-        "tagline": "Advising founder-led manufacturers, distributors and industrial service companies on sales, recapitalizations and partnerships.",
+        "tagline": "Advising founder-led manufacturers, distributors and industrial service companies on sales, majority and control transactions and strategic partnerships.",
         "short": "Manufacturing, industrial distribution, building products, energy and environmental services, and transportation.",
         "overview": [
             "Reshoring, automation, infrastructure investment and the push for supply-chain resilience have put middle-market industrial companies at the top of many buyers' lists. Strategic acquirers want capabilities and capacity they can't build quickly. Private equity platforms want founder-built businesses with engineering know-how, sticky customers and room to grow through add-ons.",
@@ -501,7 +501,7 @@ def footer(root):
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="{root}assets/img/brand/benchmark-logo-white.png" alt="Benchmark International" width="138" height="26">
-        <p>Benchmark International’s Middle Market team represents privately held companies across the United States in sell-side M&amp;A, recapitalizations and growth partnerships.</p>
+        <p>Benchmark International’s Middle Market team represents privately held companies across the United States in sell-side M&amp;A, majority and control transactions and strategic partnerships.</p>
         <p><a href="{PHONE_HREF}">{PHONE}</a><br><a href="mailto:{EMAIL}">{EMAIL}</a></p>
         <div class="social">{social}</div>
       </div>
@@ -546,7 +546,7 @@ def cta(root, title="It All Starts With a Conversation", form=False):
     steps = [
         ("Share a few details", "Tell us about your company and what you are considering. Everything you share is held in strict confidence."),
         ("Talk with a Managing Director", "A senior member of the Middle Market team will set up a private conversation at a time that suits you."),
-        ("See your options clearly", "Understand the paths available, from a partial recapitalization to a full sale, and what each could mean for you."),
+        ("See your options clearly", "Understand the paths available, from a full sale to a strategic partnership, and what each could mean for you."),
     ]
     step_html = "".join(f'<li><span class="contact-step-num">{k + 1:02d}</span><div><h3>{e(h)}</h3><p>{e(p)}</p></div></li>'
                         for k, (h, p) in enumerate(steps))
@@ -774,10 +774,10 @@ def org_schema():
         "alternateName": ["Benchmark International Middle Market team", "Middle Market team"],
         "url": SITE_URL, "logo": SITE_URL + "assets/img/brand/benchmark-logo-black.svg",
         "description": "Benchmark International's Middle Market team represents privately held companies across the United States "
-                       "with $50M–$500M in total enterprise value (TEV) in sell-side M&A, recapitalizations and growth partnerships.",
+                       "with $50M–$500M in total enterprise value (TEV) in sell-side M&A, majority and control transactions and strategic partnerships.",
         "parentOrganization": PARENT_ORG, "telephone": "+1-" + PHONE, "email": EMAIL,
         "areaServed": {"@type": "Country", "name": "United States"},
-        "knowsAbout": ["Sell-side M&A", "Mergers and acquisitions advisory", "Recapitalizations", "Growth capital"] + [x["name"] for x in SECTORS],
+        "knowsAbout": ["Sell-side M&A", "Mergers and acquisitions advisory", "Majority and control transactions", "Strategic partnerships"] + [x["name"] for x in SECTORS],
         "sameAs": [v[0] for k, v in SOCIAL.items() if k != "Email"],
     }
 
@@ -805,11 +805,11 @@ def faq_html(faqs, title="Frequently Asked Questions", eyebrow="Questions Owners
 
 def home_faqs():
     # Prose names of SERVICES; the serial comma stays because each item contains "and".
-    svc = "sell-side M&A, recapitalizations and partial sales, strategic partnerships and growth capital, and exit planning and valuation"
+    svc = "sell-side M&A, majority and control transactions, strategic partnerships, and exit planning and valuation"
     return [
         ("What does Benchmark International's Middle Market team do?",
          "Benchmark International's Middle Market team represents privately held companies across the United States in sell-side M&A, "
-         "recapitalizations and growth partnerships."),
+         "majority and control transactions and strategic partnerships."),
         ("What size companies does the Middle Market team advise?",
          "The team serves privately held companies with a total enterprise value (TEV) of $50 million to $500 million."),
         ("Which industries does the Middle Market team focus on?",
@@ -817,7 +817,7 @@ def home_faqs():
         ("What services does the Middle Market team provide?", "Services include " + svc + "."),
         ("How does working with Benchmark International start?",
          "The first step is always a confidential conversation about your goals, your company and your options. A senior member of the "
-         "Middle Market team sets up a private conversation, then walks you through the paths available, from a partial recapitalization to a full sale."),
+         "Middle Market team sets up a private conversation, then walks you through the paths available, from a full sale to a strategic partnership."),
         ("How large is Benchmark International?",
          "Benchmark International is the #1 privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables, "
          "with 15 offices across the Americas, Europe and Africa."),
@@ -937,7 +937,7 @@ def page_home():
     awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="Benchmark International award" loading="lazy" width="520" height="300">' for i in range(1, 5))
 
     html = head("Middle Market | Benchmark International",
-                "Benchmark International's Middle Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on sales, recapitalizations and growth partnerships in the industrial, business services, consumer, healthcare and technology industries.", root)
+                "Benchmark International's Middle Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on sales, majority and control transactions and strategic partnerships in the industrial, business services, consumer, healthcare and technology industries.", root)
     html += header(root)
     html += f"""
 <section class="hero">
@@ -975,9 +975,9 @@ def page_home():
       <p class="eyebrow">You Built an Extraordinary Company</p>
       <h2 class="h2">Let's Talk About What's Next.</h2>
       <hr class="rule">
-      <p>Most business owners only sell once in a lifetime. The stakes couldn’t be higher. Yet many don’t realize that an exit can take many forms, from a minority recapitalization to a full sale. Each option comes with different implications for your wealth, your family and your company’s future.</p>
+      <p>Most business owners only sell once in a lifetime. The stakes couldn’t be higher. Yet many don’t realize that an exit can take many forms, from a full sale to a majority or control transaction or a strategic partnership. Each option comes with different implications for your wealth, your family and your company’s future.</p>
       <p>Benchmark International helps you explore these options with clarity, discretion and a global network of qualified buyers.</p>
-      <p>Whether you’re exploring a full exit, a partial sale or simply preparing for the future, the right strategy ensures you maximize value, protect your legacy and stay in control.</p>
+      <p>Whether you’re exploring a full exit, a majority or control transaction, a strategic partnership or simply preparing for the future, the right strategy ensures you maximize value and protect your legacy.</p>
     </div>
     <div class="quote-card reveal">
       It all starts with a conversation.
@@ -1520,7 +1520,7 @@ def page_about():
     support = ", ".join(f"{n} ({r})" for n, r, _ in TEAM_SUPPORT)
     facts = [
         ("Who we are", "The Middle Market team of Benchmark International, serving owners of companies with $50M–$500M in total enterprise value (TEV)."),
-        ("What we do", "Represent privately held companies across the United States in sell-side M&A, recapitalizations and growth partnerships."),
+        ("What we do", "Represent privately held companies across the United States in sell-side M&A, majority and control transactions and strategic partnerships."),
         ("Company size served", "$50 million to $500 million in total enterprise value (TEV)."),
         ("Industries", ", ".join(x["name"] for x in SECTORS) + "."),
         ("Services", ", ".join(n for n, _ in SERVICES) + "."),
@@ -1543,7 +1543,7 @@ def page_about():
     <div class="crumbs"><a href="index.html">Middle Market</a> / About</div>
     <p class="eyebrow">At a Glance</p>
     <h1 class="display">About Our Middle Market Practice</h1>
-    <p class="lead">Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV) in sell-side M&amp;A, recapitalizations and growth partnerships.</p>
+    <p class="lead">Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV) in sell-side M&amp;A, majority and control transactions and strategic partnerships.</p>
   </div>
 </section>
 
@@ -1583,7 +1583,7 @@ def write_discovery_files():
     faqs = "\n".join(f"- **{q}** {a}" for q, a in home_faqs())
     llms = f"""# {ORG_NAME}
 
-> Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV) in sell-side M&A, recapitalizations and growth partnerships, across five sectors: {", ".join(x["name"] for x in SECTORS)}.
+> Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV) in sell-side M&A, majority and control transactions and strategic partnerships, across five industries: {", ".join(x["name"] for x in SECTORS)}.
 
 Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark International (https://www.benchmarkintl.com/).
 
