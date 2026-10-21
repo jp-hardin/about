@@ -2,7 +2,7 @@
 
 Benchmark International's Middle Market team. October 2026 | Jared Hardin, Managing Director.
 
-Order books are full, the deal market has become more selective and buyers are paying the most for power, data center, aerospace and service revenue.
+Order books are full, the deal market has become more selective, and buyers are paying the most for power, data center, aerospace, and service revenue.
 
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.pdf
@@ -25,7 +25,7 @@ Add-ons made up about three-quarters of buyouts in the second quarter, and Pye-B
 
 **03  Report service revenue on its own line**
 
-APi Group is working toward 60% of revenue from inspection and service. Buyers pay more for service, repair and aftermarket revenue when it is reported apart from projects, with its renewal history.
+APi Group is working toward 60% of revenue from inspection and service. Buyers pay more for service, repair, and aftermarket revenue when it is reported apart from projects, with its renewal history.
 
 **04  Financing costs more and buyers are choosier**
 
@@ -35,13 +35,13 @@ The Federal Reserve raised its target range to 3.75% to 4.00% on September 16. G
 
 ### The Quarter in Brief
 
-Demand is broad, buyers are organized around platforms and financing became more expensive in September.
+Demand is broad, buyers are organized around platforms, and financing became more expensive in September.
 
 WHAT IT MEANS FOR OWNERS
 
-*Strategic acquirers and private equity platforms are still buying machining, distribution, contracting, environmental and logistics capacity that already exists.*
+*Strategic acquirers and private equity platforms are still buying machining, distribution, contracting, environmental, and logistics capacity that already exists.*
 
-They are paying the most for companies tied to power, data centers, aerospace and service work that codes and regulations require.
+They are paying the most for companies tied to power, data centers, aerospace, and service work that codes and regulations require.
 
 ### Domestic manufacturing demand is broad
 
@@ -57,7 +57,7 @@ Quanta Services ended June with a backlog of $53.4 billion against $35.8 billion
 
 ### Recurring service revenue is valued above project revenue
 
-APi Group is working toward 60% of revenue from inspection and service, and Transcat’s service revenue grew 27% ([APi Group](https://www.businesswire.com/news/home/20251210396417/en/APi-Group-Announces-Acquisition-of-CertaSite-and-Provides-Full-Year-2025-Update); [Transcat](https://www.transcat.com/news/post/transcat-reports-strong-fiscal-first-quarter-2027-financial-results)). Buyers pay more for service, repair, inspection and aftermarket parts revenue when an owner reports it separately from project and product sales, with the renewal history behind it.
+APi Group is working toward 60% of revenue from inspection and service, and Transcat’s service revenue grew 27% ([APi Group](https://www.businesswire.com/news/home/20251210396417/en/APi-Group-Announces-Acquisition-of-CertaSite-and-Provides-Full-Year-2025-Update); [Transcat](https://www.transcat.com/news/post/transcat-reports-strong-fiscal-first-quarter-2027-financial-results)). Buyers pay more for service, repair, inspection, and aftermarket parts revenue when an owner reports it separately from project and product sales, with the renewal history behind it.
 
 ### Financing costs more and buyers are more selective
 
@@ -98,7 +98,7 @@ nVent agreed to buy Maverick Power, a Texas maker of switchgear and modular powe
 
 INDUSTRIAL DISTRIBUTION & SERVICES
 
-EMCOR’s US Industrial Services segment grew 25.9% in the second quarter ([EMCOR](https://www.sec.gov/Archives/edgar/data/105634/000010563426000112/eme-ex991_2026630xq2.htm)), and contractors with power, utility and data center customers have kept growing in a year when refiners deferred turnaround work to 2027.
+EMCOR’s US Industrial Services segment grew 25.9% in the second quarter ([EMCOR](https://www.sec.gov/Archives/edgar/data/105634/000010563426000112/eme-ex991_2026630xq2.htm)), and contractors with power, utility, and data center customers have kept growing in a year when refiners deferred turnaround work to 2027.
 
 BUILDING PRODUCTS & CONSTRUCTION SERVICES
 
@@ -136,13 +136,13 @@ THE NEARSHORE COMPANY
 
 Transportation & Logistics
 
-Cross-border freight, customs brokerage and warehousing
+Cross-border freight, customs brokerage, and warehousing
 
 READ THE ANNOUNCEMENTTHE CLIENT
 
 ### The Carmi Companies
 
-Founded in 1983 in Laredo, Texas, The Carmi Companies is a single-source logistics group that coordinates land, air and ocean freight and provides customs brokerage, warehousing and transloading.
+Founded in 1983 in Laredo, Texas, The Carmi Companies is a single-source logistics group that coordinates land, air, and ocean freight and provides customs brokerage, warehousing, and transloading.
 
 THE COUNTERPARTY
 
@@ -176,19 +176,19 @@ Company descriptions are from the announcement on benchmarkintl.com. Benchmark I
 
 Public acquirers disclosed prices of about 6 to 10 times EBITDA, and sponsor-owned platforms bought family-owned companies on undisclosed terms.
 
-Buyers in power, environmental services and logistics paid for technicians, permits, equipment supply and border capability they did not already have.
+Buyers in power, environmental services, and logistics paid for technicians, permits, equipment supply, and border capability they did not already have.
 
 | ANNOUNCED | TARGET AND ACQUIRER | BUSINESS AND TERMS | WHAT IT SHOWS |
 | --- | --- | --- | --- |
 | SEPTEMBER 2026 Manufacturing & Industrial Tech | CAT PUMPS acquired by FRANKLIN ELECTRIC | Franklin Electric acquired Cat Pumps, a Minneapolis maker of high-pressure pumps, for $350 million in cash plus up to $50 million in stock ( Franklin Electric ). | The upfront payment equals about 7.8 times 2025 adjusted EBITDA, by our calculation, for a business with a margin above 35%. |
-| JULY 2026 Manufacturing & Industrial Tech | ADVANCE MFG. CO. acquired by PRECINMAC Centerbridge Partners | Precinmac acquired Advance Mfg. Co. of Westfield, Massachusetts, family-owned since 1961, which supplies machined components, fabrications and Nadcap coating for defense and aerospace customers ( Precinmac ). Terms were not disclosed. | Sponsor-owned platforms are assembling certified aerospace and defense machining capacity, and Precinmac had acquired Precision Aerospace Holdings of Dallas in April. |
+| JULY 2026 Manufacturing & Industrial Tech | ADVANCE MFG. CO. acquired by PRECINMAC Centerbridge Partners | Precinmac acquired Advance Mfg. Co. of Westfield, Massachusetts, family-owned since 1961, which supplies machined components, fabrications, and Nadcap coating for defense and aerospace customers ( Precinmac ). Terms were not disclosed. | Sponsor-owned platforms are assembling certified aerospace and defense machining capacity, and Precinmac had acquired Precision Aerospace Holdings of Dallas in April. |
 | JULY 2026 Distribution & Services | FLOWORKS acquired by FERGUSON | Ferguson agreed to buy FloWorks, a flow control distributor with about $1 billion of revenue, from Wynnchurch Capital for $1.6 billion and completed the purchase in August ( MDM ). | Ferguson described the price as about 10 times trailing adjusted EBITDA after including roughly $45 million of expected synergies ( MDM ). |
 | JULY 2026 Distribution & Services | METROPLEX WELDING SUPPLY acquired by MERITUS GAS PARTNERS AEA Investors | Meritus Gas Partners acquired Metroplex Welding Supply of Dallas, a family-owned distributor of industrial gases and welding supplies founded in 1975 with five locations ( MDM ). Terms were not disclosed. | Meritus has announced at least five acquisitions in 2026, four of them since July, and nearly every product line now has a specialist acquirer of this kind. |
-| SEPTEMBER 2026 Building Products & Construction | 1901 INC. acquired by LIMBACH HOLDINGS | Limbach acquired 1901 Inc., a mechanical, electrical and plumbing contractor in Madison, Wisconsin, that it expects to contribute about $140 million of revenue, for $63 million plus an earn-out of up to $6 million ( Pulse 2.0 ). | The upfront payment is about 5.7 times expected 2027 adjusted EBITDA, by our calculation, just below the 6 to 9 times at which project-based contractors have traded. |
-| AUGUST 2026 Building Products & Construction | CLARK RIGGING & RENTAL acquired by BAY CRANE | Bay Crane acquired Clark Rigging & Rental, a crane rental, rigging and heavy-haul company in upstate New York that had been family-owned since 1954 ( RER ). Terms were not disclosed. | Crane, rigging and pump rental each have an active acquirer buying family-owned regional operators. |
-| AUGUST 2026 Energy, Power & Environmental | ENVIROSERVE acquired by CLEAN HARBORS | Clean Harbors agreed to buy EnviroServe, a remediation, industrial cleaning and emergency response company with 40 locations, from One Rock Capital Partners for $470 million ( Waste Advantage ). | The agreement followed Clean Harbors’ $305 million deal for ES&H, which it described as 8.7 times EBITDA after synergies ( Clean Harbors ). |
-| JULY 2026 Energy, Power & Environmental | CORE TRANSFORMERS acquired by MISSION CRITICAL GROUP Emerald Lake Capital Management | Mission Critical Group acquired CORE Transformers, a founder-led supplier of new, made-to-order and remanufactured power transformers ( Distribution Strategy Group ). Terms were not disclosed. | It was the buyer’s second power equipment purchase in four months, after the Texas switchgear maker TxLa Systems. |
-| OCTOBER 2026 Transportation & Logistics | RXO acquired by C.H. ROBINSON | C.H. Robinson agreed on October 5 to acquire RXO, a truck brokerage, managed transportation and last-mile provider, at an implied value of $5.8 billion, a 29% premium to RXO’s last closing price ( C.H. Robinson and RXO ). | About $300 million of expected annual cost savings supports the price at the top of the brokerage market. |
+| SEPTEMBER 2026 Building Products & Construction | 1901 INC. acquired by LIMBACH HOLDINGS | Limbach acquired 1901 Inc., a mechanical, electrical, and plumbing contractor in Madison, Wisconsin, that it expects to contribute about $140 million of revenue, for $63 million plus an earn-out of up to $6 million ( Pulse 2.0 ). | The upfront payment is about 5.7 times expected 2027 adjusted EBITDA, by our calculation, just below the 6 to 9 times at which project-based contractors have traded. |
+| AUGUST 2026 Building Products & Construction | CLARK RIGGING & RENTAL acquired by BAY CRANE | Bay Crane acquired Clark Rigging & Rental, a crane rental, rigging, and heavy-haul company in upstate New York that had been family-owned since 1954 ( RER ). Terms were not disclosed. | Crane, rigging, and pump rental each have an active acquirer buying family-owned regional operators. |
+| AUGUST 2026 Energy, Power & Environmental | ENVIROSERVE acquired by CLEAN HARBORS | Clean Harbors agreed to buy EnviroServe, a remediation, industrial cleaning, and emergency response company with 40 locations, from One Rock Capital Partners for $470 million ( Waste Advantage ). | The agreement followed Clean Harbors’ $305 million deal for ES&H, which it described as 8.7 times EBITDA after synergies ( Clean Harbors ). |
+| JULY 2026 Energy, Power & Environmental | CORE TRANSFORMERS acquired by MISSION CRITICAL GROUP Emerald Lake Capital Management | Mission Critical Group acquired CORE Transformers, a founder-led supplier of new, made-to-order, and remanufactured power transformers ( Distribution Strategy Group ). Terms were not disclosed. | It was the buyer’s second power equipment purchase in four months, after the Texas switchgear maker TxLa Systems. |
+| OCTOBER 2026 Transportation & Logistics | RXO acquired by C.H. ROBINSON | C.H. Robinson agreed on October 5 to acquire RXO, a truck brokerage, managed transportation, and last-mile provider, at an implied value of $5.8 billion, a 29% premium to RXO’s last closing price ( C.H. Robinson and RXO ). | About $300 million of expected annual cost savings supports the price at the top of the brokerage market. |
 | MARCH 2026 Transportation & Logistics | EELCO acquired by REDWOOD LOGISTICS AEA Investors | Redwood Logistics acquired EELCO, a Laredo, Texas, customs brokerage with a foreign-trade-zone warehouse that had been founder-owned since 1991 ( FreightWaves ). Terms were not disclosed. | Logistics platforms are buying brokers at the border as trade with Mexico sets monthly records. |
 
 Transaction values and multiples are as reported by the linked source or calculated from the figures it gives. Company names are the property of their owners and are shown for identification. Transactions advised by Benchmark International appear in [Our Transactions](#p09). Two transactions are shown for each of the five industrial sectors.
@@ -262,7 +262,7 @@ MANUFACTURING
 HAS BEEN ACQUIRED BY
 DXP ENTERPRISES, INC.
 
-Sales, repair and maintenance of industrial vacuum pumps
+Sales, repair, and maintenance of industrial vacuum pumps
 
 MANUFACTURING
 
@@ -298,7 +298,7 @@ BUILDING & CONSTRUCTION
 HAS BEEN ACQUIRED BY
 AECON GROUP INC.
 
-Industrial maintenance, capital projects and turnarounds
+Industrial maintenance, capital projects, and turnarounds
 
 DISTRIBUTION & SERVICES
 
@@ -335,7 +335,7 @@ Each tile links to the announcement on benchmarkintl.com. Counts are from Benchm
 
 ### Valuation History
 
-Manufacturing, distribution and transportation companies trade above every year-end multiple of the past five years.
+Manufacturing, distribution, and transportation companies trade above every year-end multiple of the past five years.
 
 **Manufacturing & Industrial Tech**
 
@@ -456,9 +456,9 @@ PRIVATE-MARKET REFERENCE POINTS
 
 Listed multiples describe companies many times larger than a founder-owned business and show relative standing among the sectors.
 
-7.0xAverage for completed middle-market transactions in all industries in the second quarter of 2026 (GF Data via ACG)5.8xMedian for transactions of $5 million to $50 million in all industries in the second quarter of 2026 (IBBA and M&A Source)5.0x to 8.0xSurvey medians for manufacturing, wholesale and construction companies with $1 million to $25 million of EBITDA (Pepperdine)
+7.0xAverage for completed middle-market transactions in all industries in the second quarter of 2026 (GF Data via ACG)5.8xMedian for transactions of $5 million to $50 million in all industries in the second quarter of 2026 (IBBA and M&A Source)5.0x to 8.0xSurvey medians for manufacturing, wholesale, and construction companies with $1 million to $25 million of EBITDA (Pepperdine)
 
-Median enterprise value to trailing EBITDA for 38 listed companies at each company’s fiscal year-end from 2021 to 2025 and today; the five-year high, low and median under each chart use the year-end values. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026, with share prices from September 28 to October 7, 2026. Multiples use reported EBITDA.
+Median enterprise value to trailing EBITDA for 38 listed companies at each company’s fiscal year-end from 2021 to 2025 and today; the five-year high, low, and median under each chart use the year-end values. Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5 to 7, 2026, with share prices from September 28 to October 7, 2026. Multiples use reported EBITDA.
 
 ### Operating Metrics
 
@@ -556,7 +556,7 @@ Chart data:
 
 ### Median change in share price over 52 weeks
 
-Shares rose at 7 of 7 manufacturing, 8 of 8 distribution, 4 of 8 building, 3 of 8 energy and 7 of 7 transport companies
+Shares rose at 7 of 7 manufacturing, 8 of 8 distribution, 4 of 8 building, 3 of 8 energy, and 7 of 7 transport companies
 
 Chart data:
 
@@ -586,7 +586,7 @@ Medians of the 38 listed companies shown in [Valuation History](#p10), grouped b
 
 ## 5. Indicators to Watch
 
-Capital goods orders are 14% above a year ago, diesel is up 68% and the 10-year Treasury yield averaged 4.99% in September.
+Capital goods orders are 14% above a year ago, diesel is up 68%, and the 10-year Treasury yield averaged 4.99% in September.
 
 **Core capital goods orders**
 
@@ -1176,13 +1176,13 @@ These disclosures apply to this report and to the Middle Market industry reports
 
 > “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
-Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.
+Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers, or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.
 
 The distribution of this material in certain jurisdictions may be restricted by law, and accordingly, recipients of this material represent that they are able to receive it without contravention of any registration requirement or other legal restrictions in the jurisdictions in which they reside or in which they conduct business.
 
-This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals or fairness opinions, and does not provide accounting, tax, investment, regulatory or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness or completeness of the information, opinions or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
+This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals, or fairness opinions, and does not provide accounting, tax, investment, regulatory, or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer, or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports, and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples, and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness, or completeness of the information, opinions, or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
 
-Company names, logos and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.
+Company names, logos, and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.
 
 This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the “Order”); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as “Relevant Persons”). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.
 
@@ -1342,6 +1342,6 @@ PUBLIC COMPANIES AND ECONOMIC TRENDS
 
 [FRED: 10-year Treasury yield (GS10)](https://fred.stlouisfed.org/series/GS10)  fred.stlouisfed.org
 
-**How the figures were gathered. **Listed-company figures are from StockAnalysis and use reported results. Economic series are from FRED. Benchmark International figures are from the firm’s transaction records as of October 1, 2026. Subscription and registration sources that would add depth, including GF Data, PitchBook and S&P Capital IQ, are listed in a separate one-page companion.
+**How the figures were gathered. **Listed-company figures are from StockAnalysis and use reported results. Economic series are from FRED. Benchmark International figures are from the firm’s transaction records as of October 1, 2026. Subscription and registration sources that would add depth, including GF Data, PitchBook, and S&P Capital IQ, are listed in a separate one-page companion.
 
 Figures were gathered from these sources between October 2 and October 7, 2026.

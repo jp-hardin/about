@@ -2,7 +2,7 @@
 
 Benchmark International's Middle Market team. October 2026 | Jared Hardin, Managing Director.
 
-Mergers and acquisitions across provider services, life sciences, medical products and pharmacy services.
+Mergers and acquisitions across provider services, life sciences, medical products, and pharmacy services.
 
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.pdf
@@ -37,7 +37,7 @@ Strategic buyers are setting the pace in 2026 while private equity completes few
 
 ### M&A market conditions
 
-Private equity completed an estimated 337 healthcare services transactions in the first half, a pace of 674 for the year and the slowest since 2017 ([PitchBook via Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)).
+Private equity completed an estimated 337 healthcare services transactions in the first half, a pace of 674 for the year, and the slowest since 2017 ([PitchBook via Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)).
 
 Strategic buyers carried more of the activity. Medtech deal value reached $36.5 billion in the first half ([PwC via MedTech Dive](https://www.medtechdive.com/news/medtech-ma-maintains-momentum-following-decade-high-2025-pwc/823113/)) and health systems announced 18 transactions in the second quarter ([Kaufman Hall](https://www.kaufmanhall.com/news/hospital-and-health-system-ma-activity-among-highest-q2-levels-2019)).
 
@@ -47,7 +47,7 @@ Biopharma deal value reached $130 billion in six months, almost matching the tot
 
 Medicare has proposed 2027 physician conversion factors of $33.17 and $32.84, reductions of 1.19% and 1.68%, with the final rule pending ([CMS](https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-proposed-rule)).
 
-Hospital outpatient, surgery center and home health rates are each proposed to rise 2.4% ([CMS outpatient rule](https://www.cms.gov/medicare/payment/prospective-payment-systems/hospital-outpatient/regulations-notices); [CMS home health](https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-home-health-prospective-payment-system-proposed-rule-fact-sheet-cms-1844-p)), and Medicare Advantage rates rise 2.48% ([CMS rate notice](https://www.cms.gov/newsroom/fact-sheets/2027-medicare-advantage-part-d-rate-announcement)).
+Hospital outpatient, surgery center, and home health rates are each proposed to rise 2.4% ([CMS outpatient rule](https://www.cms.gov/medicare/payment/prospective-payment-systems/hospital-outpatient/regulations-notices); [CMS home health](https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-home-health-prospective-payment-system-proposed-rule-fact-sheet-cms-1844-p)), and Medicare Advantage rates rise 2.48% ([CMS rate notice](https://www.cms.gov/newsroom/fact-sheets/2027-medicare-advantage-part-d-rate-announcement)).
 
 Medicaid work requirements and six-month eligibility reviews for expansion adults begin in 2027 ([Medicaid.gov](https://www.medicaid.gov/resources-for-states/working-families-tax-cut-legislation)).
 
@@ -150,7 +150,7 @@ National health expenditure figures for 2016 to 2023 are drawn from CMS releases
 
 ### Why Demand Holds Up
 
-Employment, capital investment and drug approvals have all grown since 2021, which supports demand in each of the four sectors.
+Employment, capital investment, and drug approvals have all grown since 2021, which supports demand in each of the four sectors.
 
 HEALTH CARE EMPLOYMENT KEEPS RISING
 
@@ -398,7 +398,7 @@ Independent practice continues to shrink, and 42.2% of physicians work in physic
 
 ACTIVE BUYERS
 
-HCA Healthcare, MyEyeDr., U.S. Physical Therapy, Addus HomeCare, Concentra, Kinderhook and Universal Health Services
+HCA Healthcare, MyEyeDr., U.S. Physical Therapy, Addus HomeCare, Concentra, Kinderhook, and Universal Health Services
 
 LISTED REFERENCE COMPANIES
 
@@ -426,7 +426,7 @@ Sponsor-backed networks continue to buy clinical research sites, including Headl
 
 ACTIVE BUYERS
 
-Labcorp and Quest for laboratories; Thermo Fisher, Danaher, Agilent and Merck KGaA for tools and reagents; Headlands Research and Summit Clinical Research for sites
+Labcorp and Quest for laboratories; Thermo Fisher, Danaher, Agilent, and Merck KGaA for tools and reagents; Headlands Research and Summit Clinical Research for sites
 
 LISTED REFERENCE COMPANIES
 
@@ -456,7 +456,7 @@ Tariffs have moved earnings in both directions since the Supreme Court struck do
 
 ACTIVE BUYERS
 
-KKR, Danaher, Stryker, Mitsui Chemicals, Cardinal Health, Aspen Surgical, Platinum Equity and Apollo
+KKR, Danaher, Stryker, Mitsui Chemicals, Cardinal Health, Aspen Surgical, Platinum Equity, and Apollo
 
 LISTED REFERENCE COMPANIES
 
@@ -483,7 +483,7 @@ Healthcare staffing is forecast to grow 1% to $39.0 billion in 2026 after three 
 
 ACTIVE BUYERS
 
-Guardian Pharmacy Services, Cencora, Cardinal Health and McKesson; Knox Lane, JLL Partners and VeloSource in staffing and logistics; Strata Critical Medical in perfusion
+Guardian Pharmacy Services, Cencora, Cardinal Health, and McKesson; Knox Lane, JLL Partners, and VeloSource in staffing and logistics; Strata Critical Medical in perfusion
 
 LISTED REFERENCE COMPANIES
 
@@ -497,7 +497,7 @@ Sectors and the businesses listed under each follow the Middle Market team's hea
 
 ### Who Is Buying
 
-The listed reference companies in each sector and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
+The listed reference companies in each sector and the private platforms, sponsors, and strategic buyers acquiring founder-owned businesses.
 
 PROVIDER SERVICES
 LISTED COMPANIES
@@ -737,7 +737,7 @@ TRAILING 24 MONTHS
 
 **HAS BEEN ACQUIRED BY**
 
-[Certification testing for pharmacy compounding spaces, laboratories and bio-containment facilities](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-critical-environments-professionals-and-scientific-safety-alliance/)
+[Certification testing for pharmacy compounding spaces, laboratories, and bio-containment facilities](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-critical-environments-professionals-and-scientific-safety-alliance/)
 
 **LIFE SCIENCES & DIAGNOSTICS**
 
@@ -777,7 +777,7 @@ Solmetex
 
 **HAS BEEN ACQUIRED BY**
 
-[Training, research and instructional design for pharmaceutical, biotech and device companies](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-the-brooks-group-and-private-investors/)
+[Training, research, and instructional design for pharmaceutical, biotech, and device companies](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-the-brooks-group-and-private-investors/)
 
 **PHARMACY & HEALTHCARE SERVICES**
 
@@ -858,9 +858,9 @@ PRIVATE-MARKET REFERENCE POINTS
 
 13.6xMedian EBITDA multiple private equity paid for healthcare services companies in 2025, weighted toward larger platforms (PitchBook via Becker's ASC Review)7.0xAverage for completed middle-market transactions in all industries, second quarter of 2026 (GF Data via ACG)5.8xMedian for transactions of $5 million to $50 million in all industries, second quarter of 2026 (IBBA and M&A Source)
 
-*Listed multiples describe companies many times larger than a founder-owned business. They show relative standing among the sectors, and a private company's price is set by its own earnings, growth and risk.*
+*Listed multiples describe companies many times larger than a founder-owned business. They show relative standing among the sectors, and a private company's price is set by its own earnings, growth, and risk.*
 
-Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Multiples use reported EBITDA. Medians cover companies with a multiple between zero and 60x today, a year ago and in at least eight of the past twelve quarters. Bio-Techne and Integer Holdings trade at agreed acquisition prices.
+Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. Multiples use reported EBITDA. Medians cover companies with a multiple between zero and 60x today, a year ago, and in at least eight of the past twelve quarters. Bio-Techne and Integer Holdings trade at agreed acquisition prices.
 
 ### Share Prices, Past 12 Months
 
@@ -944,7 +944,7 @@ LARGEST GAINS, 52 WEEKS
 
 - ENSG Ensign Group −1.4%
 
-Shares rose over the year at 29 of the 38 companies: 7 of 11 provider companies, 8 of 9 life sciences and diagnostics companies, 6 of 10 medical products companies and 8 of 8 pharmacy and healthcare services companies.
+Shares rose over the year at 29 of the 38 companies: 7 of 11 provider companies, 8 of 9 life sciences and diagnostics companies, 6 of 10 medical products companies, and 8 of 8 pharmacy and healthcare services companies.
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; prices are from October 2 to October 7. Price change excludes dividends. Bio-Techne and Integer Holdings trade near agreed acquisition prices.
 
@@ -1119,7 +1119,7 @@ LIFE SCIENCES & DIAGNOSTICS
 
 > *“Hospitals continue to contend with workforce, financial and other pressures. As a preferred strategic partner, we empower hospitals to improve quality, expand access to new test innovations, and maximize cost efficiencies and capital allocation.” *
 
-Jim Davis, Chairman, CEO and President, Quest Diagnostics
+Jim Davis, Chairman, CEO, and President, Quest Diagnostics
 MEDICAL PRODUCTS & DISTRIBUTION
 
 > *“When you talk about onshoring, it's not just a move to the U.S. There's localization going on globally as tariffs become more of a play in Europe and in the U.S. You'll see some duplication of manufacturing sites, whereas maybe in the past, you might have one site globally that is focusing on one pharmaceutical product.”*
@@ -1209,7 +1209,7 @@ As of October 7, 2026. Medical Products & Distribution and Pharmacy & Healthcare
 | Median |  |  | 87% | +38.4% | 9.6% | 13.0% | 4.2% | 0.46x | 14.0x | 13.8x |
 | Total reference set median |  |  | 89% | +18.4% | 8.4% | 32.7% | 15.2% | 1.84x | 14.0x | 13.6x |
 
-Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. LTM is the trailing twelve months. EBITDA is as reported. † Excluded from the EV to EBITDA medians because the multiple is above 60x, negative or lacks eight quarters of history. n.a. marks a figure distorted by a divestiture.
+Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026. LTM is the trailing twelve months. EBITDA is as reported. † Excluded from the EV to EBITDA medians because the multiple is above 60x, negative, or lacks eight quarters of history. n.a. marks a figure distorted by a divestiture.
 
 ## 6. What We're Reading
 
@@ -1255,7 +1255,7 @@ MedTech Dive
 
 IQVIA Global Thought Leadership
 
-**Our read.** The count covers acquisitions of $250 million or more, so it describes the largest buyers. Their spending supports demand for the research, laboratory and manufacturing services that founder-owned companies supply.
+**Our read.** The count covers acquisitions of $250 million or more, so it describes the largest buyers. Their spending supports demand for the research, laboratory, and manufacturing services that founder-owned companies supply.
 
 [READ HERE](https://www.iqvia.com/locations/emea/blogs/2026/07/biopharma-ma-mid-year-2026-update)
 
@@ -1269,7 +1269,7 @@ August 11, 2026
 
 Bryce Platt, PharmD, Drug Channels
 
-**Our read.** Prescription dispensing revenues reached a record $751 billion in 2025, up 10%, while the number of pharmacies fell. Scale, specialty mix and payer contracts decide which pharmacies remain attractive to a buyer.
+**Our read.** Prescription dispensing revenues reached a record $751 billion in 2025, up 10%, while the number of pharmacies fell. Scale, specialty mix, and payer contracts decide which pharmacies remain attractive to a buyer.
 
 [READ HERE](https://www.drugchannels.net/2026/08/the-k-shaped-pharmacy-shakeout.html)
 
@@ -1281,7 +1281,7 @@ The world's leading privately owned sell-side M&A advisor, with its Middle Marke
 
 The Middle Market team, part of Benchmark International, advises owners of privately held companies across five industries on strategic sales, mergers, and qualifying change-of-control transactions.
 
-#1Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables$50M to $500MTotal enterprise value range the Middle Market team serves5Focused industry groups with dedicated expertise15Global offices across the Americas, Europe and Africa
+#1Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables$50M to $500MTotal enterprise value range the Middle Market team serves5Focused industry groups with dedicated expertise15Global offices across the Americas, Europe, and Africa
 RECOGNITION
 FIVE INDUSTRY GROUPS
 
@@ -1305,13 +1305,13 @@ Please read these notes together with the report.
 
 > “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
-Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.
+Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers, or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.
 
 The distribution of this material in certain jurisdictions may be restricted by law, and accordingly, recipients of this material represent that they are able to receive it without contravention of any registration requirement or other legal restrictions in the jurisdictions in which they reside or in which they conduct business.
 
-This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals or fairness opinions, and does not provide accounting, tax, investment, regulatory or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness or completeness of the information, opinions or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
+This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals, or fairness opinions, and does not provide accounting, tax, investment, regulatory, or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer, or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports, and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples, and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness, or completeness of the information, opinions, or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
 
-Company names, logos and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.
+Company names, logos, and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.
 
 This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the “Order”); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as “Relevant Persons”). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.
 

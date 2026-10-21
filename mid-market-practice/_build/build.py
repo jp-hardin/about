@@ -43,10 +43,10 @@ REPORT_DATE = "2026-10"       # publication month of the current industry report
 # change, and add Benchmark International's own regulatory status here if Compliance wants it stated.
 DISCLOSURES = [
     "\u201cBenchmark International\u201d refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.",
-    "Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.",
+    "Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers, or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.",
     "The distribution of this material in certain jurisdictions may be restricted by law, and accordingly, recipients of this material represent that they are able to receive it without contravention of any registration requirement or other legal restrictions in the jurisdictions in which they reside or in which they conduct business.",
-    "This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals or fairness opinions, and does not provide accounting, tax, investment, regulatory or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples and other figures are as publicly reported, and the value of any private company depends on its own circumstances. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness or completeness of the information, opinions or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.",
-    "Company names, logos and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.",
+    "This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals, or fairness opinions, and does not provide accounting, tax, investment, regulatory, or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer, or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports, and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples, and other figures are as publicly reported, and the value of any private company depends on its own circumstances. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness, or completeness of the information, opinions, or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.",
+    "Company names, logos, and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.",
     "This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the \u201cOrder\u201d); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as \u201cRelevant Persons\u201d). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.",
 ]
 
@@ -89,34 +89,34 @@ SECTORS = [
         "title_in": "Industrial Markets",        # Title Case heading form ("What We're Seeing in Industrial Markets")
         "adj": "industrial",                     # adjective before "transactions"
         "count": 290,
-        "tagline": "Advising founder-led manufacturers, distributors and industrial services businesses on strategic sales, mergers and qualifying change-of-control transactions designed to maximize enterprise value and achieve shareholder objectives.",
+        "tagline": "Advising founder-led manufacturers, distributors, and industrial services businesses on strategic sales, mergers, and qualifying change-of-control transactions designed to maximize enterprise value and achieve shareholder objectives.",
         "short": "Manufacturing, industrial distribution, building products, energy and environmental services, and transportation.",
         "overview": [
-            "Reshoring, automation, infrastructure investment and the push for supply-chain resilience have put middle-market industrial companies at the top of many buyers' lists. Strategic acquirers want capabilities and capacity they can't build quickly. Private equity platforms want founder-built businesses with engineering know-how, sticky customers and room to grow through add-ons.",
-            "Our Industrial group advises owners of manufacturers, fabricators, distributors and industrial service providers across five sectors. We translate machine capability, certifications, installed base and customer relationships into the terms buyers use to value them, then run a competitive process that puts those qualities in front of the right strategic and financial partners.",
+            "Reshoring, automation, infrastructure investment, and the push for supply-chain resilience have put middle-market industrial companies at the top of many buyers' lists. Strategic acquirers want capabilities and capacity they can't build quickly. Private equity platforms want founder-built businesses with engineering know-how, sticky customers, and room to grow through add-ons.",
+            "Our Industrial group advises owners of manufacturers, fabricators, distributors, and industrial service providers across five sectors. We translate machine capability, certifications, installed base, and customer relationships into the terms buyers use to value them, then run a competitive process that puts those qualities in front of the right strategic and financial partners.",
         ],
         "segments": [
-            ("Manufacturing & Industrial Technology", "Engineered products and precision manufacturing where proprietary processes, certifications and approved-vendor status create durable advantages.",
+            ("Manufacturing & Industrial Technology", "Engineered products and precision manufacturing where proprietary processes, certifications, and approved-vendor status create durable advantages.",
              ["Precision machining & fabrication", "Aerospace & defense components", "Electronics & microelectronics", "Plastics & molding", "Coatings & metal finishing", "Pumps, vacuum & flow control"]),
             ("Industrial Distribution & Services", "Value-added distributors and field-service providers with recurring maintenance revenue and dense local relationships.",
              ["Gases & specialty supplies", "Hydraulics & fluid power", "MRO & parts distribution", "Fire & life safety", "Industrial maintenance & turnarounds", "Material handling"]),
-            ("Building Products & Construction Services", "Specialty trades, infrastructure contractors and building-products businesses benefiting from infrastructure spending and non-residential construction.",
+            ("Building Products & Construction Services", "Specialty trades, infrastructure contractors, and building-products businesses benefiting from infrastructure spending and non-residential construction.",
              ["Mechanical, electrical & plumbing", "Roofing & exteriors", "Infrastructure & marine construction", "Crane & equipment services", "Building products distribution", "Testing & inspection"]),
-            ("Energy, Power & Environmental Services", "Businesses serving power generation, water, energy transition and regulated environmental markets with non-discretionary demand.",
+            ("Energy, Power & Environmental Services", "Businesses serving power generation, water, energy transition, and regulated environmental markets with non-discretionary demand.",
              ["Power generation & backup power", "Energy consulting", "Water treatment & chemicals", "Environmental & emergency response", "Recycling & waste services"]),
-            ("Transportation & Logistics", "Carriers, 3PLs and specialized logistics providers with diversified shippers and capabilities buyers cannot easily replicate.",
+            ("Transportation & Logistics", "Carriers, 3PLs, and specialized logistics providers with diversified shippers and capabilities buyers cannot easily replicate.",
              ["Dedicated & intermodal trucking", "3PL & customs brokerage", "Export crating & rigging", "Pallets & packaging logistics", "Marine & subsea"]),
         ],
         "themes": [
             ("Reshoring and supply-chain resilience", "Customers are qualifying domestic suppliers and dual sources, which raises the value of certified capacity and long-standing OEM relationships."),
             ("Platform building by private equity", "Sponsors keep assembling industrial platforms through add-on acquisitions, creating competitive tension for well-run founder-owned businesses."),
-            ("Infrastructure and electrification", "Spending on infrastructure, grid modernization and water is lifting demand for specialty contractors, power services and environmental providers."),
-            ("Service and aftermarket revenue", "Buyers pay a premium for recurring maintenance, repair and aftermarket revenue that smooths project and capital-spending cycles."),
+            ("Infrastructure and electrification", "Spending on infrastructure, grid modernization, and water is lifting demand for specialty contractors, power services, and environmental providers."),
+            ("Service and aftermarket revenue", "Buyers pay a premium for recurring maintenance, repair, and aftermarket revenue that smooths project and capital-spending cycles."),
         ],
         "value": [
             ("Engineering know-how", "Proprietary processes, certifications such as AS9100 and ISO, and engineered-to-order capabilities."),
-            ("Customer stickiness", "Approved-vendor status, long OEM relationships and recurring service agreements."),
-            ("Capacity & equipment", "Modern equipment, documented maintenance and room for a buyer to add volume."),
+            ("Customer stickiness", "Approved-vendor status, long OEM relationships, and recurring service agreements."),
+            ("Capacity & equipment", "Modern equipment, documented maintenance, and room for a buyer to add volume."),
         ],
     },
     {
@@ -126,34 +126,34 @@ SECTORS = [
         "title_in": "Business Services",
         "adj": "business services",
         "count": 230,
-        "tagline": "Advising owners of commercial, professional and tech-enabled service businesses with recurring revenue and loyal clients.",
+        "tagline": "Advising owners of commercial, professional, and tech-enabled service businesses with recurring revenue and loyal clients.",
         "short": "Commercial and facility services, marketing and tech-enabled services, engineering and consulting, financial and insurance services, and staffing and human capital.",
         "overview": [
-            "Business services is one of the most active and diverse areas of middle-market M&A. Buyers look for recurring or repeat revenue, a diversified client base, scalable delivery and a management team that can support growth. Those qualities attract strategic consolidators and private equity firms building platforms through acquisition.",
-            "Our Business Services group represents commercial and facility services providers, marketing and tech-enabled service firms, engineering and consulting practices, financial and insurance services businesses, and staffing and human capital firms. We frame contracts, retention, utilization and margin profile the way buyers evaluate them, and we know which consolidators and sponsors are active in each niche.",
+            "Business services is one of the most active and diverse areas of middle-market M&A. Buyers look for recurring or repeat revenue, a diversified client base, scalable delivery, and a management team that can support growth. Those qualities attract strategic consolidators and private equity firms building platforms through acquisition.",
+            "Our Business Services group represents commercial and facility services providers, marketing and tech-enabled service firms, engineering and consulting practices, financial and insurance services businesses, and staffing and human capital firms. We frame contracts, retention, utilization, and margin profile the way buyers evaluate them, and we know which consolidators and sponsors are active in each niche.",
         ],
         "segments": [
-            ("Commercial & Facility Services", "Route-based, compliance-driven and contracted services where recurring revenue and density create value.",
+            ("Commercial & Facility Services", "Route-based, compliance-driven, and contracted services where recurring revenue and density create value.",
              ["Fire protection & life safety", "Managed print & document services", "Testing, inspection & certification", "Security services", "Painting & property maintenance"]),
-            ("Marketing, Sales & Technology-Enabled Services", "Agencies, outsourced sales and technology consultancies that help clients grow, often with long relationships and embedded workflows.",
+            ("Marketing, Sales & Technology-Enabled Services", "Agencies, outsourced sales, and technology consultancies that help clients grow, often with long relationships and embedded workflows.",
              ["Outsourced sales & brokerage", "Promotional products", "Digital strategy & consulting", "Education technology consulting", "Display & signage"]),
-            ("Engineering, Architecture & Consulting", "Licensed professional-services firms whose talent, backlog and public-sector relationships attract national platforms.",
+            ("Engineering, Architecture & Consulting", "Licensed professional-services firms whose talent, backlog, and public-sector relationships attract national platforms.",
              ["Civil & transportation engineering", "Architecture", "Surveying & geospatial", "Forensic engineering", "BIM & reality capture"]),
-            ("Financial & Insurance Services", "Fee-based financial businesses with recurring commissions, renewals and high client retention.",
+            ("Financial & Insurance Services", "Fee-based financial businesses with recurring commissions, renewals, and high client retention.",
              ["Insurance brokerage & MGAs", "Claims adjusting", "Appraisal management", "Wealth & financial planning", "Trading technology"]),
-            ("Staffing & Human Capital", "Staffing, search and workforce solutions firms with repeat client relationships, deep candidate networks and recurring placement revenue.",
+            ("Staffing & Human Capital", "Staffing, search, and workforce solutions firms with repeat client relationships, deep candidate networks, and recurring placement revenue.",
              ["Commercial & light industrial staffing", "Professional & technical staffing", "Executive search", "Recruitment process outsourcing", "Talent development & HR consulting"]),
         ],
         "themes": [
-            ("Consolidation by sponsor-backed platforms", "National platforms in fire and life safety, engineering, insurance and facility services continue to acquire founder-owned firms to add density and capabilities."),
-            ("Premium for recurring revenue", "Contracted, subscription and inspection-driven revenue earns higher multiples than project work, so how revenue is presented matters."),
+            ("Consolidation by sponsor-backed platforms", "National platforms in fire and life safety, engineering, insurance, and facility services continue to acquire founder-owned firms to add density and capabilities."),
+            ("Premium for recurring revenue", "Contracted, subscription, and inspection-driven revenue earns higher multiples than project work, so how revenue is presented matters."),
             ("Talent as a strategic asset", "In professional services, licensed people and their client relationships drive value, which puts retention planning and deal structure at the center of the process."),
             ("Tech enablement", "Firms that use technology to deliver services more efficiently, or to give clients better data, stand out to buyers seeking scalable models."),
         ],
         "value": [
-            ("Recurring revenue", "Contracted, subscription, inspection or renewal revenue with demonstrated retention."),
+            ("Recurring revenue", "Contracted, subscription, inspection, or renewal revenue with demonstrated retention."),
             ("Client diversification", "Long-tenured relationships without outsized concentration."),
-            ("Scalable operations", "Systems, KPIs and leadership that can support add-on acquisitions."),
+            ("Scalable operations", "Systems, KPIs, and leadership that can support add-on acquisitions."),
         ],
     },
     {
@@ -163,31 +163,31 @@ SECTORS = [
         "title_in": "Consumer Markets",
         "adj": "consumer",
         "count": 80,
-        "tagline": "Advising founders of food, restaurant, consumer brand, foodservice and consumer services businesses.",
+        "tagline": "Advising founders of food, restaurant, consumer brand, foodservice, and consumer services businesses.",
         "short": "Food and beverage (including restaurants), consumer brands and products, foodservice and distribution, and consumer services.",
         "overview": [
-            "Buyers of consumer businesses look for brands with pricing power, loyal customers, channel diversity and room to grow distribution. Strategic acquirers use acquisitions to add brands, categories and capabilities. Consumer-focused private equity firms and family offices back founders who have built a differentiated product and want a partner to scale it.",
-            "Our Consumer group represents food and beverage producers, restaurant groups, consumer brand owners, foodservice suppliers and distributors, and multi-site consumer services businesses. We present the brand's story, unit economics and growth runway in the way buyers underwrite them.",
+            "Buyers of consumer businesses look for brands with pricing power, loyal customers, channel diversity, and room to grow distribution. Strategic acquirers use acquisitions to add brands, categories, and capabilities. Consumer-focused private equity firms and family offices back founders who have built a differentiated product and want a partner to scale it.",
+            "Our Consumer group represents food and beverage producers, restaurant groups, consumer brand owners, foodservice suppliers and distributors, and multi-site consumer services businesses. We present the brand's story, unit economics, and growth runway in the way buyers underwrite them.",
         ],
         "segments": [
             ("Food & Beverage", "Food and beverage producers and distributors with quality certifications and loyal wholesale and retail customers, and multi-unit restaurant and catering groups.",
              ["Bakery & specialty foods", "Dairy & ingredients distribution", "Seafood import & processing", "Nutritional supplements", "Confectionery", "Restaurants & catering"]),
-            ("Consumer Brands & Products", "Branded products with recognized names, enthusiast followings and multi-channel distribution.",
+            ("Consumer Brands & Products", "Branded products with recognized names, enthusiast followings, and multi-channel distribution.",
              ["Outdoor & recreation", "Beauty & wellness", "Sporting goods & accessories", "Flags & specialty manufacturing", "Containers & storage"]),
-            ("Foodservice & Distribution", "Restaurant equipment, parts, supplies and service providers, and the distributors that keep restaurants, hospitality and retail operating.",
+            ("Foodservice & Distribution", "Restaurant equipment, parts, supplies, and service providers, and the distributors that keep restaurants, hospitality, and retail operating.",
              ["Restaurant equipment & supplies", "Commercial coffee equipment", "Outdoor kitchen appliances", "CPG sales agencies", "Dealer distribution"]),
             ("Consumer Services & Retail", "Multi-site and route-based consumer services with recurring local demand.",
              ["Car wash & auto care", "Collision repair", "Equipment rental & storage", "Home services"]),
         ],
         "themes": [
             ("Brands with pricing power", "Buyers favor brands that have held price and volume through inflation, and that can show it in their data."),
-            ("Omnichannel growth", "Businesses balanced across wholesale, retail, foodservice and e-commerce are less exposed to any single channel and easier to scale."),
+            ("Omnichannel growth", "Businesses balanced across wholesale, retail, foodservice, and e-commerce are less exposed to any single channel and easier to scale."),
             ("Strategic portfolio building", "Strategic acquirers buy niche brands and distribution businesses to fill category gaps faster than they could build them."),
-            ("Multi-site consolidation", "Consumer services categories such as car wash, collision repair and home services keep consolidating under sponsor-backed platforms."),
+            ("Multi-site consolidation", "Consumer services categories such as car wash, collision repair, and home services keep consolidating under sponsor-backed platforms."),
         ],
         "value": [
-            ("Brand equity", "Recognized brands, loyal customers and demonstrable pricing power."),
-            ("Channel diversity", "Balanced exposure across retail, foodservice, e-commerce and wholesale."),
+            ("Brand equity", "Recognized brands, loyal customers, and demonstrable pricing power."),
+            ("Channel diversity", "Balanced exposure across retail, foodservice, e-commerce, and wholesale."),
             ("Margin & capacity", "Gross-margin resilience and production or distribution capacity a buyer can fill."),
         ],
     },
@@ -201,28 +201,28 @@ SECTORS = [
         "tagline": "Advising healthcare providers, life sciences and medical products companies, and pharmacy and healthcare services businesses.",
         "short": "Provider services, life sciences and diagnostics, medical products and distribution, and pharmacy and healthcare services.",
         "overview": [
-            "Healthcare remains one of the most resilient and actively consolidated industries in the middle market. Demand is steady and growing, and health systems, public strategics and private equity platforms continue to acquire providers and suppliers to extend their reach.",
-            "Our Healthcare group represents physician and therapy practices, urgent care operators, laboratories, medical device and product companies, and pharmacy and healthcare services businesses. We show buyers the clinical quality, payer mix and growth behind each business while managing the regulatory and diligence complexity these transactions bring.",
+            "Healthcare remains one of the most resilient and actively consolidated industries in the middle market. Demand is steady and growing, and health systems, public strategics, and private equity platforms continue to acquire providers and suppliers to extend their reach.",
+            "Our Healthcare group represents physician and therapy practices, urgent care operators, laboratories, medical device and product companies, and pharmacy and healthcare services businesses. We show buyers the clinical quality, payer mix, and growth behind each business while managing the regulatory and diligence complexity these transactions bring.",
         ],
         "segments": [
-            ("Provider Services", "Clinics, practices and care providers with strong referral relationships and clinical reputations.",
+            ("Provider Services", "Clinics, practices, and care providers with strong referral relationships and clinical reputations.",
              ["Urgent care", "Optometry & eye care", "Pediatric & physical therapy", "Multi-specialty medical groups", "Emergency medical services", "Renal care"]),
-            ("Life Sciences & Diagnostics", "Laboratories, research sites and product-development firms serving pharma, biotech and device companies.",
+            ("Life Sciences & Diagnostics", "Laboratories, research sites, and product-development firms serving pharma, biotech, and device companies.",
              ["Clinical & pathology labs", "Biologics & reagents", "Clinical research sites", "Human-factors & device design"]),
-            ("Medical Products & Distribution", "Manufacturers and distributors of medical devices, consumables and equipment.",
+            ("Medical Products & Distribution", "Manufacturers and distributors of medical devices, consumables, and equipment.",
              ["Surgical instrument reprocessing", "Emergency medical supplies", "Respiratory & anesthesia products", "Dental devices", "Orthopedic products"]),
-            ("Pharmacy & Healthcare Services", "Pharmacy, infusion, staffing and logistics businesses supporting providers and patients.",
+            ("Pharmacy & Healthcare Services", "Pharmacy, infusion, staffing, and logistics businesses supporting providers and patients.",
              ["Specialty & mail-order pharmacy", "Home infusion", "Pharmaceutical delivery", "Clinical staffing"]),
         ],
         "themes": [
             ("Health system consolidation", "Hospital systems and national operators keep adding outpatient and urgent care sites to capture patients closer to home."),
-            ("Outsourcing and specialization", "Providers and pharma companies increasingly outsource labs, research, staffing and logistics to specialists."),
+            ("Outsourcing and specialization", "Providers and pharma companies increasingly outsource labs, research, staffing, and logistics to specialists."),
             ("Strategic interest in med-tech niches", "Public strategics acquire focused device and product companies to add patented technology and clinical relationships."),
-            ("Care moving to the home", "Home infusion, home care and delivery services benefit as care shifts away from inpatient settings."),
+            ("Care moving to the home", "Home infusion, home care, and delivery services benefit as care shifts away from inpatient settings."),
         ],
         "value": [
             ("Payer & revenue quality", "A balanced payer mix and clean revenue-cycle performance."),
-            ("Clinical reputation", "Quality outcomes, referral relationships and regulatory standing."),
+            ("Clinical reputation", "Quality outcomes, referral relationships, and regulatory standing."),
             ("Platform scalability", "Systems and leadership ready for new sites and add-on acquisitions."),
         ],
     },
@@ -233,30 +233,30 @@ SECTORS = [
         "title_in": "Technology",
         "adj": "technology",
         "count": 105,
-        "tagline": "Advising founders of software, IT services and technology businesses with recurring revenue and mission-critical products.",
+        "tagline": "Advising founders of software, IT services, and technology businesses with recurring revenue and mission-critical products.",
         "short": "Vertical software, enterprise and infrastructure software, IT and managed services, and communications and hardware.",
         "overview": [
-            "Vertical software and mission-critical technology businesses command some of the strongest buyer interest in the market. Software consolidators, strategic acquirers and private equity firms compete for products that are deeply embedded in customer workflows, with recurring revenue and high switching costs.",
-            "Our Technology group has represented pharmacy software, field-service, lending, CAD/CAM and IT management platforms, as well as managed service providers and technology consultancies. We know how to present ARR, retention, unit economics and the product roadmap, and we bring buyers ranging from software holding companies to large-cap private equity.",
+            "Vertical software and mission-critical technology businesses command some of the strongest buyer interest in the market. Software consolidators, strategic acquirers, and private equity firms compete for products that are deeply embedded in customer workflows, with recurring revenue and high switching costs.",
+            "Our Technology group has represented pharmacy software, field-service, lending, CAD/CAM, and IT management platforms, as well as managed service providers and technology consultancies. We know how to present ARR, retention, unit economics, and the product roadmap, and we bring buyers ranging from software holding companies to large-cap private equity.",
         ],
         "segments": [
             ("Vertical Software", "Industry-specific software that runs critical workflows for its customers.",
              ["Pharmacy & healthcare software", "Field service management", "Lending & financial software", "CAD/CAM & manufacturing software", "Marketing analytics"]),
-            ("Enterprise & Infrastructure Software", "Horizontal software for IT, data and communications teams.",
+            ("Enterprise & Infrastructure Software", "Horizontal software for IT, data, and communications teams.",
              ["Endpoint & desktop management", "Database performance", "Email & communications governance"] ),
             ("IT & Managed Services", "IT providers and software development firms with contracted and recurring revenue.",
              ["Managed IT for education", "Microsoft-stack consulting", "Custom software development", "Data conversion & migration", "Government training & simulation"]),
-            ("Communications & Hardware", "Telecom, electronics and specialized technology talent businesses.",
+            ("Communications & Hardware", "Telecom, electronics, and specialized technology talent businesses.",
              ["Cloud communications", "Telecom services", "Optical inspection systems", "Cybersecurity & IT staffing"]),
         ],
         "themes": [
             ("Software consolidators", "Serial acquirers of vertical software are active buyers of founder-led companies with loyal niche customer bases."),
-            ("Sponsor appetite for recurring revenue", "Private equity continues to favor ARR, high net revenue retention and low churn."),
+            ("Sponsor appetite for recurring revenue", "Private equity continues to favor ARR, high net revenue retention, and low churn."),
             ("AI and data", "Buyers are looking for proprietary data and workflows that position a product to benefit from AI rather than be displaced by it."),
             ("Managed services and security", "Demand for managed IT and cybersecurity keeps pulling platforms toward MSPs with contracted revenue and certified talent."),
         ],
         "value": [
-            ("Recurring revenue", "ARR growth, net revenue retention and low churn."),
+            ("Recurring revenue", "ARR growth, net revenue retention, and low churn."),
             ("Mission-critical product", "Deep workflow integration and high switching costs."),
             ("Scalable unit economics", "Efficient customer acquisition and a credible product roadmap."),
         ],
@@ -273,19 +273,19 @@ SECTOR_BY_SLUG = {s["slug"]: s for s in SECTORS}
 INSIGHTS = [
     {"sector": "industrial", "quarter": 4, "year": 2026, "slug": "industrial-industry-report-q4-2026", "legacy": "industrial-q4-2026",
      "title": "Industrials Q4 2026 M&A Industry Report",
-     "summary": "Manufacturing and industrial technology; distribution and services; building products and construction services; energy, power and environmental services; and transportation and logistics: the order books, the deal market and what acquirers are paying for."},
+     "summary": "Manufacturing and industrial technology; distribution and services; building products and construction services; energy, power and environmental services; and transportation and logistics: the order books, the deal market, and what acquirers are paying for."},
     {"sector": "business-services", "quarter": 4, "year": 2026, "slug": "business-services-industry-report-q4-2026", "legacy": "business-services-q4-2026",
      "title": "Business Services Q4 2026 M&A Industry Report",
-     "summary": "Commercial and facility services; marketing, sales and tech-enabled services; engineering, architecture and consulting; financial and insurance services; and staffing and human capital: the deal market, public-market valuations and what buyers are paying for."},
+     "summary": "Commercial and facility services; marketing, sales and tech-enabled services; engineering, architecture and consulting; financial and insurance services; and staffing and human capital: the deal market, public-market valuations, and what buyers are paying for."},
     {"sector": "consumer", "quarter": 4, "year": 2026, "slug": "consumer-industry-report-q4-2026", "legacy": "consumer-q4-2026",
      "title": "Consumer Q4 2026 M&A Industry Report",
-     "summary": "Food and beverage (including restaurants), consumer brands and products, foodservice and distribution, and consumer services and retail: who is buying, what they are paying for and what an owner can prepare."},
+     "summary": "Food and beverage (including restaurants), consumer brands and products, foodservice and distribution, and consumer services and retail: who is buying, what they are paying for, and what an owner can prepare."},
     {"sector": "healthcare", "quarter": 4, "year": 2026, "slug": "healthcare-industry-report-q4-2026", "legacy": "healthcare-q4-2026",
      "title": "Healthcare Q4 2026 M&A Industry Report",
-     "summary": "Provider services, life sciences and diagnostics, medical products and distribution, and pharmacy and healthcare services: the deal market, the policy calendar and what buyers are paying for."},
+     "summary": "Provider services, life sciences and diagnostics, medical products and distribution, and pharmacy and healthcare services: the deal market, the policy calendar, and what buyers are paying for."},
     {"sector": "technology", "quarter": 4, "year": 2026, "slug": "technology-industry-report-q4-2026", "legacy": "technology-q4-2026",
      "title": "Technology Q4 2026 M&A Industry Report",
-     "summary": "Managed IT and cloud services, cybersecurity, telecom and UCaaS, systems integration, electronics and hardware, and government technology: the deal market, the policy calendar and what buyers are paying for."},
+     "summary": "Managed IT and cloud services, cybersecurity, telecom and UCaaS, systems integration, electronics and hardware, and government technology: the deal market, the policy calendar, and what buyers are paying for."},
 ]
 for _i in INSIGHTS:
     # A report built from a PowerPoint industry report deck (reports/<folder>/brief.pptx) is summarized by its cover sentence.
@@ -313,15 +313,15 @@ for _s in SECTORS:
 TEAM_LEAD = [
     ("Jordan Houtz", "Managing Director | Head of Middle Market", "jordan-houtz",
      ["As Managing Director and Head of Middle Market, Jordan represents clients with total enterprise values (TEV) ranging from $50 million to $500 million across the United States. He is a seasoned investment banker with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
-      "His deep experience on both the buy and sell sides of M&A transactions gives his clients a unique advantage in understanding deal dynamics and achieving their objectives. By leading full-cycle processes from idea and thesis generation through valuation, diligence and negotiation, he stays closely involved in every stage of his clients’ transactions. Jordan builds lasting client relationships and stays focused on the outcomes that matter to them."]),
+      "His deep experience on both the buy and sell sides of M&A transactions gives his clients a unique advantage in understanding deal dynamics and achieving their objectives. By leading full-cycle processes from idea and thesis generation through valuation, diligence, and negotiation, he stays closely involved in every stage of his clients’ transactions. Jordan builds lasting client relationships and stays focused on the outcomes that matter to them."]),
     ("Jared Hardin", "Managing Director", "jared-hardin",
      ["As Managing Director, Jared is the first team member an owner works with. He walks owners through their options as they consider and plan their next step.",
-      "Jared spent more than 20 years as a C-suite executive and business owner, leading sales, marketing, technology, operations and finance. He has also worked with hundreds of owners of industrial, healthcare, business services, consumer and technology companies. That background uniquely positions him to understand the challenges owners face and show them how buyers evaluate a business, the range buyers would likely pay and the paths open to them."]),
+      "Jared spent more than 20 years as a C-suite executive and business owner, leading sales, marketing, technology, operations, and finance. He has also worked with hundreds of owners of industrial, healthcare, business services, consumer, and technology companies. That background uniquely positions him to understand the challenges owners face and show them how buyers evaluate a business, the range buyers would likely pay, and the paths open to them."]),
     ("Alex Zykov", "Transaction Director", "alex-zykov",
-     ["As a Transaction Director, Alex leads the execution of our clients’ transactions from onboarding through signing and closing. He oversees every aspect of the process for middle-market clients across the industrial, consumer, business services, healthcare and technology industries. He makes sure clients understand each step and feel confident along the way, supporting them and our team through due diligence, evaluating competing offers and leading negotiations through to the finish line.",
-      "Alex’s career spans corporate development, executing transactions on Wall Street and cofounding and running boutique advisory firms serving small and mid-sized businesses. Each step was deliberate: building the breadth of knowledge and experience needed to give his clients the best possible advice and help them achieve their goals. He discovered his passion for corporate finance at MIT, where he earned dual degrees in Economics and Management Science, and later earned his MBA from the University of Virginia’s Darden School of Business."]),
+     ["As a Transaction Director, Alex leads the execution of our clients’ transactions from onboarding through signing and closing. He oversees every aspect of the process for middle-market clients across the industrial, consumer, business services, healthcare, and technology industries. He makes sure clients understand each step and feel confident along the way, supporting them and our team through due diligence, evaluating competing offers, and leading negotiations through to the finish line.",
+      "Alex’s career spans corporate development, executing transactions on Wall Street, and cofounding and running boutique advisory firms serving small and mid-sized businesses. Each step was deliberate: building the breadth of knowledge and experience needed to give his clients the best possible advice and help them achieve their goals. He discovered his passion for corporate finance at MIT, where he earned dual degrees in Economics and Management Science, and later earned his MBA from the University of Virginia’s Darden School of Business."]),
     ("Shannon Hess", "Client Engagement Director", "shannon-hess",
-     ["Shannon grew up in a military family, living on Army bases until she was nine years old. She enjoyed living in Germany and Hawaii and traveling to many wonderful places. Growing up in a military family meant a disciplined way of life, with importance placed on punctuality, respect and loyalty.",
+     ["Shannon grew up in a military family, living on Army bases until she was nine years old. She enjoyed living in Germany and Hawaii and traveling to many wonderful places. Growing up in a military family meant a disciplined way of life, with importance placed on punctuality, respect, and loyalty.",
       "Shannon works with our Field Directors and with owners who are considering working with us. She is an additional point of contact for clients who want another perspective or someone to talk through their concerns. She has been with Benchmark International long enough to see many deals through from start to finish, and she draws on that experience to answer any questions clients have."]),
 ]
 # Team contact details (phone, email); use None for a missing value. Anything missing shows the team line or team email.
@@ -361,7 +361,7 @@ TEAM_GROUP_OF = {"alexandra-barr": "transaction-support", "josiah-warren": "tran
 TEAM_SUPPORT = [
     ("Sunny Garten", "Senior Deal Associate", "sunny-garten"),
     ("Michael Wynn", "Senior Deal Associate", "michael-wynn"),
-    ("Jason Lisiak", "Research Associate", "jason-lisiak"),
+    ("Jason Lisiak, CFA", "Research Associate", "jason-lisiak"),
     ("Alexandra Barr", "Transaction Support Associate", "alexandra-barr"),
     ("Josiah Warren", "Transaction Support Associate", "josiah-warren"),
     ("Luke Ernst", "Deal Analyst", "luke-ernst"),
@@ -369,13 +369,13 @@ TEAM_SUPPORT = [
 
 # Profile window bios for the support team, keyed by image slug.
 TEAM_SUPPORT_BIO = {
-    "sunny-garten": ["Sunny runs the daily work of a client\u2019s sale alongside the Transaction Director, from market launch through closing. She is the person owners call with questions; she also prepares management meetings with buyers and keeps offers and due diligence on schedule. A native of Beijing, she holds a BA in Business Administration from the University of International Relations and an MS from the Illinois Institute of Technology, and brings experience in financial analysis, negotiation and cross-border investment."],
+    "sunny-garten": ["Sunny runs the daily work of a client\u2019s sale alongside the Transaction Director, from market launch through closing. She is the person owners call with questions; she also prepares management meetings with buyers and keeps offers and due diligence on schedule. A native of Beijing, she holds a BA in Business Administration from the University of International Relations and an MS from the Illinois Institute of Technology, and brings experience in financial analysis, negotiation, and cross-border investment."],
     "michael-wynn": ["As a Senior Deal Associate, Michael partners with business owners from market launch through a signed purchase agreement, guiding buyer conversations and competing offers through due diligence and final negotiations. He has worked on more than 220 transactions in corporate M&A at Alliant, a top five insurance brokerage with over $6 billion in revenue, and at PCF Insurance Services, an HGGC portfolio company that exited on the strength of its unprecedented growth through M&A. Michael also has experience in quality of earnings (QofE) and post-close integration, and holds a B.S. in Accounting from Florida State University."],
-    "jason-lisiak": ["Jason identifies the buyers and investors for each Middle Market client, researching the strategic acquirers, private equity firms and family offices with a reason to own the business and following recent transactions in the client\u2019s sector. He spent two decades at Manning & Napier, where he rose to senior analyst and co-managed the firm\u2019s Small Cap and Real Estate Series. A CFA charterholder, he holds a BA from SUNY Geneseo and completed executive education in M&A at Columbia Business School."],
-    "alexandra-barr": ["As a Transaction Support Associate, Alexandra helps business owners prepare their companies for market. She analyzes financial statements and operating data, develops buyer materials, and works with clients and their finance teams to address questions that may arise during due diligence. Her work helps buyers understand a company’s performance, operations and growth opportunities.",
-                       "Before joining Benchmark, Alexandra worked in finance at Volkswagen Group of America, evaluating profitability across multiple vehicle programs in domestic and international markets. Her experience spans pricing strategy, investment analysis and developing business cases to inform executive decisions. She holds a B.S. in Industrial Engineering from West Virginia University."],
-    "josiah-warren": ["As a Transaction Support Associate, Josiah conducts the financial and operational review that precedes a client\u2019s launch, analyzing historical performance, adjusting earnings for one-time and owner-related items and evaluating working capital. He has spent more than five years at Benchmark, moving from transaction support analyst to senior quality control specialist, and previously performed company valuations at iT Valuations. He holds a bachelor\u2019s degree in Enterprise Risk Management from Penn State."],
-    "luke-ernst": ["Luke supports the deal team on every transaction in process. He contacts prospective buyers, manages confidentiality agreements, maintains the data room and prepares the offer comparisons and status tracking that keep several buyers on the same schedule through closing. Before Benchmark, he worked in strategic finance at a single-family office and in investment banking at CEA Group. He earned a BS in Finance and Economics from the University of Tampa in three years and holds the FMVA\u00ae certification."],
+    "jason-lisiak": ["Jason is responsible for research across the firm\u2019s M&A practice and brings extensive institutional investment experience to each engagement. He previously served as a Senior Research Analyst and co-portfolio manager of the real estate and small-cap funds at a $20 billion institutional asset manager. He applies that buy-side perspective on behalf of sellers, analyzing industry dynamics, competitive landscapes, and strategic positioning to help clients realize the full value of their businesses. A CFA charterholder and member of CFA Society Tampa Bay, Jason holds a B.S. from SUNY Geneseo. He also coaches founders at the University of Tampa\u2019s Lowth Entrepreneurship Center."],
+    "alexandra-barr": ["As a Transaction Support Associate, Alexandra helps business owners prepare their companies for market. She analyzes financial statements and operating data, develops buyer materials, and works with clients and their finance teams to address questions that may arise during due diligence. Her work helps buyers understand a company’s performance, operations, and growth opportunities.",
+                       "Before joining Benchmark, Alexandra worked in finance at Volkswagen Group of America, evaluating profitability across multiple vehicle programs in domestic and international markets. Her experience spans pricing strategy, investment analysis, and developing business cases to inform executive decisions. She holds a B.S. in Industrial Engineering from West Virginia University."],
+    "josiah-warren": ["As a Transaction Support Associate, Josiah conducts the financial and operational review that precedes a client\u2019s launch, analyzing historical performance, adjusting earnings for one-time and owner-related items, and evaluating working capital. He has spent more than five years at Benchmark, moving from transaction support analyst to senior quality control specialist, and previously performed company valuations at iT Valuations. He holds a bachelor\u2019s degree in Enterprise Risk Management from Penn State."],
+    "luke-ernst": ["Luke supports the deal team on every transaction in process. He contacts prospective buyers, manages confidentiality agreements, maintains the data room, and prepares the offer comparisons and status tracking that keep several buyers on the same schedule through closing. Before Benchmark, he worked in strategic finance at a single-family office and in investment banking at CEA Group. He earned a BS in Finance and Economics from the University of Tampa in three years and holds the FMVA\u00ae certification."],
 }
 
 # Client video stories (Vimeo IDs) → sector
@@ -395,7 +395,7 @@ TESTIMONIALS = [
 ]
 
 LIBRARY = [
-    ("kp0gV6Dj0_0", "Sell-Side Process", "Before the Sale: What a Sell-Side M&A Process Really Looks Like", "Jordan Houtz, Managing Director and Head of Middle Market, walks through what a successful sell-side process looks like, how buyers evaluate a business, what drives a premium valuation and what owners should do before going to market."),
+    ("kp0gV6Dj0_0", "Sell-Side Process", "Before the Sale: What a Sell-Side M&A Process Really Looks Like", "Jordan Houtz, Managing Director and Head of Middle Market, walks through what a successful sell-side process looks like, how buyers evaluate a business, what drives a premium valuation, and what owners should do before going to market."),
     ("X8a04-Ok6j4", "Growth & Exit Strategy", "Taking Control of Your Growth and Exit Strategy", "Managing Director Jared Hardin discusses taking control of your growth and exit strategy, including the key considerations and the right time to go to market."),
     ("8giQ5YAiCIA", "Webinar", "Selling for Maximum Value", "An M&A expert\u2019s guide to preparation and process: how owners can position their company to achieve the highest value in a sale."),
 ]
@@ -406,7 +406,7 @@ LIBRARY = [
 PODCAST = [
     ("08LRm0acEhs", "Owner Story", "Thomas Frey on Selling a Business", "The founder of Silexx Financial Systems describes building his trading software company and selling it to Cboe Global Markets with Benchmark International, and how he decided what he wanted from life after the sale."),
     ("W92GtOXmD90", "Owner Story", "Keith Marshall on Opportunity and M&A", "The founder of Solution Matrix traces the company from a home-based start to a manufacturing business, the role his family played along the way, and the sale through Benchmark International to a buyer who could carry it forward."),
-    ("JgZd56mMlmQ", "Deal Terms", "Doug Starcher on Simplifying M&A Legal Terms", "A managing partner at Nelson Mullins with more than 35 years in M&A explains the terms every owner will meet in a sale, including letters of intent, representations and warranties, indemnification and working capital."),
+    ("JgZd56mMlmQ", "Deal Terms", "Doug Starcher on Simplifying M&A Legal Terms", "A managing partner at Nelson Mullins with more than 35 years in M&A explains the terms every owner will meet in a sale, including letters of intent, representations and warranties, indemnification, and working capital."),
 ]
 PODCAST_LINKS = [
     ("Spotify", "https://open.spotify.com/show/4tH5twLR8zllxpeQqS9vgR"),
@@ -537,7 +537,7 @@ def footer(root):
 def cta(root, title="It All Starts With a Conversation", form=False, sub="", paras=None):
     if not form:
         body = (f'<p class="lead"><strong>{e(sub)}</strong></p>' if sub else "") + "".join(f'<p class="lead">{e(x)}</p>' for x in paras) if paras else \
-            '<p class="lead">Our first step is always a confidential conversation exploring your goals, your company and your options.</p>'
+            '<p class="lead">Our first step is always a confidential conversation exploring your goals, your company, and your options.</p>'
         return f"""<section class="section section--knot cta" id="contact">
   <div class="wrap center reveal">
     <p class="eyebrow">Confidential. No pressure. No commitments.</p>
@@ -564,7 +564,7 @@ def cta(root, title="It All Starts With a Conversation", form=False, sub="", par
     <div class="contact-info reveal">
       <p class="eyebrow">Confidential. No pressure. No commitments.</p>
       <h2 class="display">{e(title)}</h2>
-      <p class="lead">Our first step is always a confidential conversation exploring your goals, your company and your options.</p>
+      <p class="lead">Our first step is always a confidential conversation exploring your goals, your company, and your options.</p>
       <ol class="contact-steps">{step_html}</ol>
       <div class="contact-direct">
         <a href="{PHONE_HREF}">{icon_phone}<span><small>Speak with an M&amp;A expert</small>{PHONE}</span></a>
@@ -797,8 +797,14 @@ def faq_schema(faqs):
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}
 
 
+def linkify(text):
+    """Escapes an answer and links the team email and phone number."""
+    html = e(text).replace(EMAIL, f'<a href="mailto:{EMAIL}">{EMAIL}</a>')
+    return html.replace(PHONE, f'<a href="{PHONE_HREF}">{PHONE}</a>')
+
+
 def faq_html(faqs, title="Frequently Asked Questions", eyebrow="Questions Owners Ask"):
-    items = "".join(f'<details class="faq-item"><summary><h3>{e(q)}</h3></summary><p>{e(a)}</p></details>' for q, a in faqs)
+    items = "".join(f'<details class="faq-item"><summary><h3>{e(q)}</h3></summary><p>{linkify(a)}</p></details>' for q, a in faqs)
     return f"""<section class="section section--paper" id="faq">
   <div class="wrap faq-wrap">
     <div class="section-head reveal"><p class="eyebrow">{e(eyebrow)}</p><h2 class="h2">{e(title)}</h2></div>
@@ -818,7 +824,7 @@ def home_faqs():
          "that meet applicable M&A broker exemption requirements, including companies with less than $25 million in annual EBITDA "
          "or less than $250 million in annual revenue."),
         ("Which industries does the Middle Market team focus on?",
-         "Five industries: " + ", ".join(x["name"] for x in SECTORS[:-1]) + " and " + SECTORS[-1]["name"] + "."),
+         "Five industries: " + ", ".join(x["name"] for x in SECTORS[:-1]) + ", and " + SECTORS[-1]["name"] + "."),
         ("What services does the Middle Market team provide?",
          "Our Middle Market team provides comprehensive sell-side M&A advisory services, specializing in business sales, mergers, "
          "controlling ownership transfers, strategic acquisitions, and exit planning for privately held companies. Our services span "
@@ -826,10 +832,10 @@ def home_faqs():
          "applicable regulatory requirements."),
         next((q, " ".join(ans)) for q, ans in pagecopy.load("about")["faq"] if "FINRA" in q),
         ("How does working with Benchmark International start?",
-         "The first step is always a confidential conversation about your goals, your company and your options. A senior member of the "
+         "The first step is always a confidential conversation about your goals, your company, and your options. A senior member of the "
          "Middle Market team sets up a private conversation, then walks you through the paths available, from a strategic sale to a merger or change-of-control transaction."),
         ("How large is Benchmark International?",
-         "Headquartered in Tampa, FL, Benchmark International has over 300 employees across 15 global offices in the Americas, Europe and Africa "
+         "Headquartered in Tampa, FL, Benchmark International has over 300 employees across 15 global offices in the Americas, Europe, and Africa "
          "and is proudly ranked the #1 global M&A advisor for privately owned businesses (based on PitchBook's Q2 2026 Global League Tables)."),
         ("How do I contact the Middle Market team?", f"Call {PHONE} or email {EMAIL}."),
     ]
@@ -861,7 +867,7 @@ def sector_faqs(s, buyers):
                      f"Acquirers and investors in Benchmark International's selected {s['adj']} transactions include " + semi_list(buyers[:8]) + "."))
     if s.get("report"):
         faqs.append((f"Is there a current {s['adj']} M&A market report?",
-                     f"Yes. The {current_report(s['slug'])['title']} covers deal activity, valuations and what buyers are paying for, and is free to read online or download as a PDF."))
+                     f"Yes. The {current_report(s['slug'])['title']} covers deal activity, valuations, and what buyers are paying for, and is free to read online or download as a PDF."))
     return faqs
 
 
@@ -947,7 +953,7 @@ def page_home():
     awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="Benchmark International award" loading="lazy" width="520" height="300">' for i in range(1, 5))
 
     html = head("Middle Market | Benchmark International",
-                "Benchmark International's Middle Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions in the industrial, business services, consumer, healthcare and technology industries.", root)
+                "Benchmark International's Middle Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions in the industrial, business services, consumer, healthcare, and technology industries.", root)
     html += header(root)
     html += f"""
 <section class="hero">
@@ -985,7 +991,7 @@ def page_home():
       <div>
         <p class="eyebrow">Industry Expertise</p>
         <h2 class="h2">Five Industries. Deep Expertise.</h2>
-        <p class="lead">We focus on five industries where we know the buyers, the valuation drivers and the questions that will come up in diligence.</p>
+        <p class="lead">We focus on five industries where we know the buyers, the valuation drivers, and the questions that will come up in diligence.</p>
       </div>
       <a class="link-arrow" href="industries/index.html">View all industries</a>
     </div>
@@ -999,9 +1005,9 @@ def page_home():
       <p class="eyebrow">You Built an Extraordinary Company</p>
       <h2 class="h2">Let's Talk About What's Next.</h2>
       <hr class="rule">
-      <p>Most owners sell a business once in a lifetime. The stakes couldn’t be higher. Yet many don’t realize that an exit can take many forms: a full sale, a merger or a qualifying change-of-control transaction. Each option comes with different implications for your wealth, your family and your company’s future.</p>
-      <p>Benchmark International helps you explore these options with clarity, discretion and a global network of qualified buyers.</p>
-      <p>Whether you’re planning a sale, exploring a merger or simply preparing for the future, the right strategy helps you maximize value and protect your legacy.</p>
+      <p>Most owners sell a business once in a lifetime. The stakes couldn’t be higher. Yet many don’t realize that an exit can take many forms: a full sale, a merger, or a qualifying change-of-control transaction. Each option comes with different implications for your wealth, your family, and your company’s future.</p>
+      <p>Benchmark International helps you explore these options with clarity, discretion, and a global network of qualified buyers.</p>
+      <p>Whether you’re planning a sale, exploring a merger, or simply preparing for the future, the right strategy helps you maximize value and protect your legacy.</p>
     </div>
     <div class="quote-card reveal">
       It all starts with a conversation.
@@ -1016,7 +1022,7 @@ def page_home():
     <div class="section-head center reveal">
       <p class="eyebrow">Peace of Mind for Business Owners</p>
       <h2 class="h2">Your Benchmark Journey</h2>
-      <p class="lead">We serve presidents, CEOs, founders and owners of privately held companies in our five industries. As they consider the next step, most want three things:</p>
+      <p class="lead">We serve presidents, CEOs, founders, and owners of privately held companies in our five industries. As they consider the next step, most want three things:</p>
     </div>
     <div class="pillars">
       <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-1.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">01</div><h3 class="h3">Understand Every Option</h3><p>We'll walk you through every path, from a full sale to a merger or change-of-control transaction, with buyers from across the country and around the world.</p></div>
@@ -1141,7 +1147,7 @@ def page_industries():
   </div>
 </article>"""
     html = head("Industries | Middle Market | Benchmark International",
-                "Benchmark International's Middle Market team focuses on five industries: Industrials, Business Services, Consumer, Healthcare and Technology.", root)
+                "Benchmark International's Middle Market team focuses on five industries: Industrials, Business Services, Consumer, Healthcare, and Technology.", root)
     html += header(root, "industries")
     html += f"""
 <section class="hero hero--page">
@@ -1149,7 +1155,7 @@ def page_industries():
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Industries</div>
     <p class="eyebrow">Industry Expertise</p>
     <h1 class="display">Five Industries. Deep Expertise.</h1>
-    <p class="lead">We focus on five industries where we have deep transaction experience and long relationships with the most active strategic and financial buyers. Industry focus means we know what drives value, who is buying and how to run a process that gets you the best outcome.</p>
+    <p class="lead">We focus on five industries where we have deep transaction experience and long relationships with the most active strategic and financial buyers. Industry focus means we know what drives value, who is buying, and how to run a process that gets you the best outcome.</p>
     <nav class="jump" aria-label="Industries">{''.join(f'<a href="#{s["slug"]}">{e(s["name"])}</a>' for s in SECTORS)}</nav>
   </div>
 </section>
@@ -1230,14 +1236,14 @@ def page_sector(i, s):
     else:
         services = "".join(f'<article class="service reveal"><h3>{e(h)}</h3><p>{e(p)}</p></article>' for h, p in SERVICES)
         services_head = (f'<h2 class="h2">Advisory Built Around Your Goals</h2>'
-                         f'<p class="lead">An exit can take many forms. We help owners of {e(s["adj"])} companies choose the path that fits their wealth, family and company goals.</p>')
+                         f'<p class="lead">An exit can take many forms. We help owners of {e(s["adj"])} companies choose the path that fits their wealth, family, and company goals.</p>')
     hero = cp.get("hero") or {}
     hero_lead = f'<p class="lead">{e(hero["sub"])}</p>' + "".join(f'<p class="hero-text">{e(x)}</p>' for x in hero["paras"]) if hero.get("sub") else f'<p class="lead">{e(s["tagline"])}</p>'
     if cp.get("overview"):
         overview = f'<h2 class="h2">{e(cp["overview"]["title"])}</h2>\n      <hr class="rule">\n      ' + paras_html(cp["overview"]["paras"])
     else:
         overview = (f'<h2 class="h2">{e(s["name"])} M&amp;A Advisory</h2>\n      <hr class="rule">\n      ' + paras_html(s["overview"])
-                    + "<p>Every engagement is led by the Middle Market team and backed by Benchmark International's global network of strategic acquirers, private equity groups, family offices and independent sponsors.</p>")
+                    + "<p>Every engagement is led by the Middle Market team and backed by Benchmark International's global network of strategic acquirers, private equity groups, family offices, and independent sponsors.</p>")
     acq = cp.get("acquirers")
     acq_html = (f'<h3 class="h3">{e(acq["title"])}</h3>' + paras_html(acq["paras"])
                 + f'<h4 class="buyer-head">Acquirers and Investors in Our Selected {e(s["name"])} Transactions</h4>') if acq else \
@@ -1420,7 +1426,7 @@ def page_transactions():
     items = sorted(TOMBSTONES, key=lambda t: (order[t["sector"]], not t.get("featured"), -int(t.get("year") or 0)))
     tombs = "".join(tombstone(t, root, show_sector=True) for t in items)
     html = head("Transactions | Middle Market | Benchmark International",
-                "Selected completed transactions advised by Benchmark International in the industrial, business services, consumer, healthcare and technology industries.", root)
+                "Selected completed transactions advised by Benchmark International in the industrial, business services, consumer, healthcare, and technology industries.", root)
     html += header(root, "transactions")
     html += f"""
 <section class="hero hero--page hero--photo"><div class="hero-media" aria-hidden="true"><img src="assets/img/site/transactions-hero.jpg" alt="" width="1920" height="1000" fetchpriority="high"></div>
@@ -1435,7 +1441,7 @@ def page_transactions():
 <section class="section">
   <div class="wrap">
     <div class="filter-bar" role="group" aria-label="Filter by industry">{chips}</div>
-    <input class="search" type="search" placeholder="Search by company, acquirer or sector" aria-label="Search transactions">
+    <input class="search" type="search" placeholder="Search by company, acquirer, or sector" aria-label="Search transactions">
     <p class="result-count" aria-live="polite"></p>
     <div class="tomb-grid tomb-grid--detail" data-tomb-filter data-filter-key="sector">{tombs}</div>
     <p class="note">Source: Benchmark International transaction announcements and benchmarkintl.com/about/our-success, as of {AS_OF}. Selected transactions shown.</p>
@@ -1489,7 +1495,7 @@ def page_insights():
         archive_html = '<p class="archive-empty">Earlier editions will be archived here as each new quarterly report is published.</p>'
     latest = max(current, key=lambda i: (i["year"], i["quarter"]))["period"] if current else ""
     html = head("Insights | Middle Market | Benchmark International",
-                "Quarterly M&A industry reports from Benchmark International's Middle Market team covering the industrial, business services, consumer, healthcare and technology industries.", root)
+                "Quarterly M&A industry reports from Benchmark International's Middle Market team covering the industrial, business services, consumer, healthcare, and technology industries.", root)
     html += header(root, "insights")
     html += f"""
 <section class="hero hero--page">
@@ -1497,7 +1503,7 @@ def page_insights():
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Insights</div>
     <p class="eyebrow">Insights</p>
     <h1 class="display">Unique Perspectives on the Middle Market</h1>
-    <p class="lead">Quarterly industry reports from the Middle Market team on deal activity, valuations and what buyers are paying for across our five industries.</p>
+    <p class="lead">Quarterly industry reports from the Middle Market team on deal activity, valuations, and what buyers are paying for across our five industries.</p>
   </div>
 </section>
 
@@ -1564,11 +1570,11 @@ def page_about():
     support = ", ".join(f"{n} ({r})" for n, r, _ in TEAM_SUPPORT)
     facts = [
         ("Who we are", "The Middle Market team of Benchmark International, serving owners of companies with $50M–$500M in total enterprise value (TEV)."),
-        ("What we do", "Specialized sell-side M&A advisory services to owners of privately held businesses, focused on qualifying mergers, business sales and controlling ownership transitions."),
+        ("What we do", "Specialized sell-side M&A advisory services to owners of privately held businesses, focused on qualifying mergers, business sales, and controlling ownership transitions."),
         ("Company size served", "$50 million to $500 million in total enterprise value (TEV)."),
         ("Industries", ", ".join(x["name"] for x in SECTORS) + "."),
         ("Services", ", ".join(n for n, _ in SERVICES) + "."),
-        ("Firm", "Headquartered in Tampa, FL, with over 300 employees across 15 global offices in the Americas, Europe and Africa; ranked the #1 global M&A advisor for privately owned businesses (PitchBook Q2 2026 Global League Tables)."),
+        ("Firm", "Headquartered in Tampa, FL, with over 300 employees across 15 global offices in the Americas, Europe, and Africa; ranked the #1 global M&A advisor for privately owned businesses (PitchBook Q2 2026 Global League Tables)."),
         ("Leadership", lead + "."),
         ("Deal team", support + "."),
         ("Research", "Quarterly M&A reports for each of our five industries, published on the Insights page."),
@@ -1686,7 +1692,7 @@ def write_discovery_files():
 Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark International (https://www.benchmarkintl.com/).
 
 ## Key pages
-- [Home]({SITE_URL}): overview, team, client stories and contact form
+- [Home]({SITE_URL}): overview, team, client stories, and contact form
 - [About]({abs_url('about.html')}): key facts about the Middle Market team
 - [Industries]({abs_url('industries/index.html')}): the five industries
 - [Transactions]({abs_url('transactions.html')}): selected completed transactions
