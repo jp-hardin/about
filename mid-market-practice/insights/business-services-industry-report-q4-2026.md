@@ -7,7 +7,7 @@ Mergers and acquisitions across commercial, professional and human capital servi
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.pdf
 
-Segments: Commercial & Facility Services; Marketing, Sales & Tech-Enabled Services; Engineering, Architecture & Consulting; Financial & Insurance Services; Staffing & Human Capital
+Segments: Commercial & Facility Services; Engineering, Architecture & Consulting; Financial & Insurance Services; Staffing & Human Capital
 
 ## 1. Industry at a Glance
 
@@ -1527,13 +1527,13 @@ Each summary restates the source in our own words and links to it, and each head
 
 The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five industries.
 
-The Middle Market team is the part of Benchmark International that advises owners of privately held companies across five industries, from majority and control transactions to strategic partnerships.
+The Middle Market team is the part of Benchmark International that advises owners of privately held companies across five industries on strategic sales, mergers, and qualifying change-of-control transactions.
 
 #1Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables$50M to $500MTotal enterprise value range that the Middle Market team serves5Focused industry groups with dedicated expertise15Global offices across the Americas, Europe and Africa
 RECOGNITION
 FIVE INDUSTRY GROUPS
 
-**INDUSTRIAL**
+**INDUSTRIALS**
 
 **BUSINESS SERVICES**
 

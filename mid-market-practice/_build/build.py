@@ -13,6 +13,8 @@ import re
 from urllib.parse import urlparse
 from html import escape
 
+import pagecopy
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.dirname(HERE)
 
@@ -53,10 +55,10 @@ DISCLOSURES = [
 
 # Services offered on every sector page
 SERVICES = [
-    ("Sell-Side M&A", "A full sale to the right strategic acquirer or financial sponsor, run as a confidential, competitive process from positioning through closing."),
-    ("Majority & Control Transactions", "Sell a majority or controlling interest to a strategic acquirer, private equity firm or family office on terms that fit your goals for value, timing and your role after closing."),
-    ("Strategic Partnerships", "Find a partner that brings capital, capabilities or market access to accelerate the next phase of growth."),
-    ("Exit Planning", "See the range acquirers and partners would likely pay for a business like yours, what drives value in your industry and the steps that can raise it before you go to market."),
+    ("Sell-Side Mergers & Acquisitions", "Comprehensive advisory services for the sale of privately held businesses, including valuation analysis, transaction preparation, investment positioning, confidential buyer outreach, competitive bid management, negotiation, and transaction execution."),
+    ("Controlling Ownership Transactions", "Advisory services for qualifying majority and other controlling ownership transfers to strategic acquirers, private equity firms, and family offices."),
+    ("Strategic Buyer Identification & Engagement", "Identification, qualification, and engagement of strategic and financial acquirers pursuing qualifying business acquisitions."),
+    ("Exit Readiness & Transaction Planning", "Comprehensive assessment of transaction readiness, valuation drivers, quality of earnings, financial reporting, management infrastructure, and potential diligence considerations."),
 ]
 
 # Old 12-industry URLs → current industry page (redirect stubs keep any shared links working)
@@ -82,12 +84,12 @@ LEGACY = {
 SECTORS = [
     {
         "slug": "industrial",
-        "name": "Industrial",
+        "name": "Industrials",
         "prose": "industrial markets",           # running-prose name ("valuation in industrial markets")
         "title_in": "Industrial Markets",        # Title Case heading form ("What We're Seeing in Industrial Markets")
         "adj": "industrial",                     # adjective before "transactions"
         "count": 290,
-        "tagline": "Advising founder-led manufacturers, distributors and industrial service companies on everything from a full sale to a strategic partnership.",
+        "tagline": "Advising founder-led manufacturers, distributors and industrial services businesses on strategic sales, mergers and qualifying change-of-control transactions designed to maximize enterprise value and achieve shareholder objectives.",
         "short": "Manufacturing, industrial distribution, building products, energy and environmental services, and transportation.",
         "overview": [
             "Reshoring, automation, infrastructure investment and the push for supply-chain resilience have put middle-market industrial companies at the top of many buyers' lists. Strategic acquirers want capabilities and capacity they can't build quickly. Private equity platforms want founder-built businesses with engineering know-how, sticky customers and room to grow through add-ons.",
@@ -133,7 +135,7 @@ SECTORS = [
         "segments": [
             ("Commercial & Facility Services", "Route-based, compliance-driven and contracted services where recurring revenue and density create value.",
              ["Fire protection & life safety", "Managed print & document services", "Testing, inspection & certification", "Security services", "Painting & property maintenance"]),
-            ("Marketing, Sales & Tech-Enabled Services", "Agencies, outsourced sales and technology consultancies that help clients grow, often with long relationships and embedded workflows.",
+            ("Marketing, Sales & Technology-Enabled Services", "Agencies, outsourced sales and technology consultancies that help clients grow, often with long relationships and embedded workflows.",
              ["Outsourced sales & brokerage", "Promotional products", "Digital strategy & consulting", "Education technology consulting", "Display & signage"]),
             ("Engineering, Architecture & Consulting", "Licensed professional-services firms whose talent, backlog and public-sector relationships attract national platforms.",
              ["Civil & transportation engineering", "Architecture", "Surveying & geospatial", "Forensic engineering", "BIM & reality capture"]),
@@ -270,7 +272,7 @@ SECTOR_BY_SLUG = {s["slug"]: s for s in SECTORS}
 # ─────────────────────────────────────────────────────────────────────────────
 INSIGHTS = [
     {"sector": "industrial", "quarter": 4, "year": 2026, "slug": "industrial-industry-report-q4-2026", "legacy": "industrial-q4-2026",
-     "title": "Industrial Q4 2026 M&A Industry Report",
+     "title": "Industrials Q4 2026 M&A Industry Report",
      "summary": "Manufacturing and industrial technology; distribution and services; building products and construction services; energy, power and environmental services; and transportation and logistics: the order books, the deal market and what acquirers are paying for."},
     {"sector": "business-services", "quarter": 4, "year": 2026, "slug": "business-services-industry-report-q4-2026", "legacy": "business-services-q4-2026",
      "title": "Business Services Q4 2026 M&A Industry Report",
@@ -309,8 +311,8 @@ for _s in SECTORS:
 # Team
 # ─────────────────────────────────────────────────────────────────────────────
 TEAM_LEAD = [
-    ("Jordan Houtz", "Managing Director", "jordan-houtz",
-     ["As a Managing Director, Jordan represents clients with total enterprise values (TEV) ranging from $50 million to $500 million across the United States. He is a seasoned investment banker with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
+    ("Jordan Houtz", "Managing Director | Head of Middle Market", "jordan-houtz",
+     ["As Managing Director and Head of Middle Market, Jordan represents clients with total enterprise values (TEV) ranging from $50 million to $500 million across the United States. He is a seasoned investment banker with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
       "His deep experience on both the buy and sell sides of M&A transactions gives his clients a unique advantage in understanding deal dynamics and achieving their objectives. By leading full-cycle processes from idea and thesis generation through valuation, diligence and negotiation, he stays closely involved in every stage of his clients’ transactions. Jordan builds lasting client relationships and stays focused on the outcomes that matter to them."]),
     ("Jared Hardin", "Managing Director", "jared-hardin",
      ["As Managing Director, Jared is the first team member an owner works with. He walks owners through their options as they consider and plan their next step.",
@@ -392,7 +394,7 @@ TESTIMONIALS = [
 ]
 
 LIBRARY = [
-    ("kp0gV6Dj0_0", "Sell-Side Process", "Before the Sale: What a Sell-Side M&A Process Really Looks Like", "Managing Director Jordan Houtz walks through what a successful sell-side process looks like, how buyers evaluate a business, what drives a premium valuation and what owners should do before going to market."),
+    ("kp0gV6Dj0_0", "Sell-Side Process", "Before the Sale: What a Sell-Side M&A Process Really Looks Like", "Jordan Houtz, Managing Director and Head of Middle Market, walks through what a successful sell-side process looks like, how buyers evaluate a business, what drives a premium valuation and what owners should do before going to market."),
     ("X8a04-Ok6j4", "Growth & Exit Strategy", "Taking Control of Your Growth and Exit Strategy", "Managing Director Jared Hardin discusses taking control of your growth and exit strategy, including the key considerations and the right time to go to market."),
     ("8giQ5YAiCIA", "Webinar", "Selling for Maximum Value", "An M&A expert\u2019s guide to preparation and process: how owners can position their company to achieve the highest value in a sale."),
 ]
@@ -501,7 +503,7 @@ def footer(root):
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="{root}assets/img/brand/benchmark-logo-white.png" alt="Benchmark International" width="138" height="26">
-        <p>Benchmark International’s Middle Market team represents privately held companies across the United States in sell-side M&amp;A, from majority and control transactions to strategic partnerships.</p>
+        <p>Benchmark International’s Middle Market team represents premier privately held companies across the United States in sell-side M&amp;A, offering white-glove, high-touch service to the firm’s largest clients.</p>
         <p><a href="{PHONE_HREF}">{PHONE}</a><br><a href="mailto:{EMAIL}">{EMAIL}</a></p>
         <div class="social">{social}</div>
       </div>
@@ -531,13 +533,15 @@ def footer(root):
 """
 
 
-def cta(root, title="It All Starts With a Conversation", form=False):
+def cta(root, title="It All Starts With a Conversation", form=False, sub="", paras=None):
     if not form:
+        body = (f'<p class="lead"><strong>{e(sub)}</strong></p>' if sub else "") + "".join(f'<p class="lead">{e(x)}</p>' for x in paras) if paras else \
+            '<p class="lead">Our first step is always a confidential conversation exploring your goals, your company and your options.</p>'
         return f"""<section class="section section--knot cta" id="contact">
   <div class="wrap center reveal">
     <p class="eyebrow">Confidential. No pressure. No commitments.</p>
     <h2 class="display">{e(title)}</h2>
-    <p class="lead">Our first step is always a confidential conversation exploring your goals, your company and your options.</p>
+    {body}
     <div class="btn-row"><a class="btn" href="{root}index.html#form">Start the Conversation</a><a class="btn btn--light" href="{PHONE_HREF}">Call {PHONE}</a></div>
     <p class="contact-line">Call to speak with an M&amp;A expert at <a href="{PHONE_HREF}">{PHONE}</a></p>
   </div>
@@ -546,7 +550,7 @@ def cta(root, title="It All Starts With a Conversation", form=False):
     steps = [
         ("Share a few details", "Tell us about your company and what you are considering. Everything you share is held in strict confidence."),
         ("Talk with a Managing Director", "A senior member of the Middle Market team will set up a private conversation at a time that suits you."),
-        ("See your options clearly", "Understand the paths available, from a full sale to a strategic partnership, and what each could mean for you."),
+        ("See your options clearly", "Understand the paths available, from a strategic sale to a merger or change-of-control transaction, and what each could mean for you."),
     ]
     step_html = "".join(f'<li><span class="contact-step-num">{k + 1:02d}</span><div><h3>{e(h)}</h3><p>{e(p)}</p></div></li>'
                         for k, (h, p) in enumerate(steps))
@@ -774,10 +778,10 @@ def org_schema():
         "alternateName": ["Benchmark International Middle Market team", "Middle Market team"],
         "url": SITE_URL, "logo": SITE_URL + "assets/img/brand/benchmark-logo-black.svg",
         "description": "Benchmark International's Middle Market team represents privately held companies across the United States "
-                       "with $50M–$500M in total enterprise value (TEV), from majority and control transactions to strategic partnerships.",
+                       "with $50M–$500M in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions.",
         "parentOrganization": PARENT_ORG, "telephone": "+1-" + PHONE, "email": EMAIL,
         "areaServed": {"@type": "Country", "name": "United States"},
-        "knowsAbout": ["Sell-side M&A", "Mergers and acquisitions advisory", "Majority and control transactions", "Strategic partnerships"] + [x["name"] for x in SECTORS],
+        "knowsAbout": ["Sell-side M&A", "Mergers and acquisitions advisory", "Controlling ownership transactions", "Exit readiness and transaction planning"] + [x["name"] for x in SECTORS],
         "sameAs": [v[0] for k, v in SOCIAL.items() if k != "Email"],
     }
 
@@ -804,23 +808,28 @@ def faq_html(faqs, title="Frequently Asked Questions", eyebrow="Questions Owners
 
 
 def home_faqs():
-    # Prose names of SERVICES
-    svc = "sell-side M&A, majority and control transactions and strategic partnerships, along with exit planning"
     return [
         ("What does Benchmark International's Middle Market team do?",
-         "Benchmark International's Middle Market team represents privately held companies across the United States in sell-side M&A, "
-         "from majority and control transactions to strategic partnerships."),
+         "Benchmark International's Middle Market team represents premier privately held companies across the United States in sell-side M&A, "
+         "offering white-glove, high-touch service to the firm's largest clients."),
         ("What size companies does the Middle Market team advise?",
-         "The team serves privately held companies with a total enterprise value (TEV) of $50 million to $500 million."),
+         "Our Middle Market team advises privately held businesses, typically with enterprise values of $50 million to $500 million, "
+         "that meet applicable M&A broker exemption requirements, including companies with less than $25 million in annual EBITDA "
+         "or less than $250 million in annual revenue."),
         ("Which industries does the Middle Market team focus on?",
          "Five industries: " + ", ".join(x["name"] for x in SECTORS[:-1]) + " and " + SECTORS[-1]["name"] + "."),
-        ("What services does the Middle Market team provide?", "Services include " + svc + "."),
+        ("What services does the Middle Market team provide?",
+         "Our Middle Market team provides comprehensive sell-side M&A advisory services, specializing in business sales, mergers, "
+         "controlling ownership transfers, strategic acquisitions, and exit planning for privately held companies. Our services span "
+         "transaction preparation, valuation analysis, buyer identification, deal structuring, negotiation, and execution, subject to "
+         "applicable regulatory requirements."),
+        next((q, " ".join(ans)) for q, ans in pagecopy.load("about")["faq"] if "FINRA" in q),
         ("How does working with Benchmark International start?",
          "The first step is always a confidential conversation about your goals, your company and your options. A senior member of the "
-         "Middle Market team sets up a private conversation, then walks you through the paths available, from a full sale to a strategic partnership."),
+         "Middle Market team sets up a private conversation, then walks you through the paths available, from a strategic sale to a merger or change-of-control transaction."),
         ("How large is Benchmark International?",
-         "Benchmark International is the #1 privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables, "
-         "with 15 offices across the Americas, Europe and Africa."),
+         "Headquartered in Tampa, FL, Benchmark International has over 300 employees across 15 global offices in the Americas, Europe and Africa "
+         "and is proudly ranked the #1 global M&A advisor for privately owned businesses (based on PitchBook's Q2 2026 Global League Tables)."),
         ("How do I contact the Middle Market team?", f"Call {PHONE} or email {EMAIL}."),
     ]
 
@@ -839,18 +848,18 @@ def sector_faqs(s, buyers):
     n = s["name"]
     segs = [x[0] for x in s["segments"]]
     faqs = [
-        (f"What types of {n.lower()} companies does Benchmark International advise?",
-         f"The Middle Market team advises {n.lower()} companies across {number_word(len(segs))} sectors: " + semi_list(segs) + "."),
-        (f"What do buyers value in {n.lower()} companies?",
+        (f"What types of {s['adj']} companies does Benchmark International advise?",
+         f"The Middle Market team advises {s['adj']} companies across {number_word(len(segs))} sectors: " + semi_list(segs) + "."),
+        (f"What do buyers value in {s['adj']} companies?",
          " ".join(f"{h}: {d}" for h, d in s["value"])),
-        (f"How many {n.lower()} transactions has Benchmark International completed?",
-         f"Benchmark International lists {s['count']}+ completed {n.lower()} transactions on benchmarkintl.com, as of {AS_OF}."),
+        (f"How many {s['adj']} transactions has Benchmark International completed?",
+         f"Benchmark International lists {s['count']}+ completed {s['adj']} transactions on benchmarkintl.com, as of {AS_OF}."),
     ]
     if buyers:
-        faqs.append((f"Who is acquiring {n.lower()} companies?",
+        faqs.append((f"Who is acquiring {s['adj']} companies?",
                      f"Acquirers and investors in Benchmark International's selected {s['adj']} transactions include " + semi_list(buyers[:8]) + "."))
     if s.get("report"):
-        faqs.append((f"Is there a current {n.lower()} M&A market report?",
+        faqs.append((f"Is there a current {s['adj']} M&A market report?",
                      f"Yes. The {current_report(s['slug'])['title']} covers deal activity, valuations and what buyers are paying for, and is free to read online or download as a PDF."))
     return faqs
 
@@ -937,13 +946,13 @@ def page_home():
     awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="Benchmark International award" loading="lazy" width="520" height="300">' for i in range(1, 5))
 
     html = head("Middle Market | Benchmark International",
-                "Benchmark International's Middle Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on everything from a full sale to a strategic partnership in the industrial, business services, consumer, healthcare and technology industries.", root)
+                "Benchmark International's Middle Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions in the industrial, business services, consumer, healthcare and technology industries.", root)
     html += header(root)
     html += f"""
 <section class="hero">
   <div class="wrap">
     <p class="eyebrow">Benchmark International · <span class="nowrap">Middle Market</span></p>
-    <h1 class="display">Selling a Business Isn’t the End, <em>It’s a Beginning.</em></h1>
+    <h1 class="display">Your Legacy Is Built. <em>Your Next Chapter Awaits.</em></h1>
     <p class="lead">Maximize your company's value and achieve your goals with the world's #1 privately owned sell-side M&amp;A advisor.</p>
     <div class="btn-row">
       <a class="btn" href="#form">Start the Conversation</a>
@@ -969,15 +978,29 @@ def page_home():
   <div class="wrap"><div class="awards reveal">{awards}</div></div>
 </section>
 
+<section class="section section--paper" id="industries">
+  <div class="wrap">
+    <div class="section-head section-head--split reveal">
+      <div>
+        <p class="eyebrow">Industry Expertise</p>
+        <h2 class="h2">Five Industries. Deep Expertise.</h2>
+        <p class="lead">We focus on five industries where we know the buyers, the valuation drivers and the questions that will come up in diligence.</p>
+      </div>
+      <a class="link-arrow" href="industries/index.html">View all industries</a>
+    </div>
+    <div class="ind-grid reveal">{cards}</div>
+  </div>
+</section>
+
 <section class="section">
   <div class="wrap split">
     <div class="reveal">
       <p class="eyebrow">You Built an Extraordinary Company</p>
       <h2 class="h2">Let's Talk About What's Next.</h2>
       <hr class="rule">
-      <p>Most owners sell a business once in a lifetime. The stakes couldn’t be higher. Yet many don’t realize that an exit can take many forms: a full sale, a majority or control transaction or a strategic partnership. Each option comes with different implications for your wealth, your family and your company’s future.</p>
+      <p>Most owners sell a business once in a lifetime. The stakes couldn’t be higher. Yet many don’t realize that an exit can take many forms: a full sale, a merger or a qualifying change-of-control transaction. Each option comes with different implications for your wealth, your family and your company’s future.</p>
       <p>Benchmark International helps you explore these options with clarity, discretion and a global network of qualified buyers.</p>
-      <p>Whether you’re planning a sale, weighing a strategic partnership or simply preparing for the future, the right strategy helps you maximize value and protect your legacy.</p>
+      <p>Whether you’re planning a sale, exploring a merger or simply preparing for the future, the right strategy helps you maximize value and protect your legacy.</p>
     </div>
     <div class="quote-card reveal">
       It all starts with a conversation.
@@ -995,7 +1018,7 @@ def page_home():
       <p class="lead">We serve presidents, CEOs, founders and owners of privately held companies in our five industries. As they consider the next step, most want three things:</p>
     </div>
     <div class="pillars">
-      <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-1.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">01</div><h3 class="h3">Understand Every Option</h3><p>We'll walk you through every path, from a full sale to a strategic partnership, with buyers from across the country and around the world.</p></div>
+      <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-1.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">01</div><h3 class="h3">Understand Every Option</h3><p>We'll walk you through every path, from a full sale to a merger or change-of-control transaction, with buyers from across the country and around the world.</p></div>
       <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-2.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">02</div><h3 class="h3">Be Positioned for Maximum Value</h3><p>We'll help you see your company the way buyers do, so you can address gaps and highlight strengths before going to market.</p></div>
       <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-3.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">03</div><h3 class="h3">Execute with Confidence</h3><p>While you weigh your options, our experienced team works as your partner, running a discreet process to secure the right deal on your terms.</p></div>
     </div>
@@ -1013,7 +1036,7 @@ def page_home():
     <div class="fit">
       <div class="fit-item reveal"><h3>Looking to retire</h3><p>Ready to sell so you can retire or move on to what's next.</p></div>
       <div class="fit-item reveal"><h3>Approached by a buyer</h3><p>Weighing an unsolicited offer and want to know if it's fair.</p></div>
-      <div class="fit-item reveal"><h3>Looking for a partner</h3><p>Looking for a strategic partner to take your business to its next stage.</p></div>
+      <div class="fit-item reveal"><h3>Exploring a merger</h3><p>Weighing a merger or change of control to take your business to its next stage.</p></div>
       <div class="fit-item reveal"><h3>Ready to learn more</h3><p>Curious what buyers would likely pay for your company so you can plan for the future.</p></div>
     </div>
     </div>
@@ -1027,20 +1050,6 @@ def page_home():
       <h2 class="h2">Working With Clients Around the World</h2>
     </div>
     <div class="testimonials">{testimonials}</div>
-  </div>
-</section>
-
-<section class="section" id="industries">
-  <div class="wrap">
-    <div class="section-head section-head--split reveal">
-      <div>
-        <p class="eyebrow">Industry Expertise</p>
-        <h2 class="h2">Five Industries. Deep Expertise.</h2>
-        <p class="lead">We focus on five industries where we know the buyers, the valuation drivers and the questions that will come up in diligence.</p>
-      </div>
-      <a class="link-arrow" href="industries/index.html">View all industries</a>
-    </div>
-    <div class="ind-grid reveal">{cards}</div>
   </div>
 </section>
 
@@ -1131,7 +1140,7 @@ def page_industries():
   </div>
 </article>"""
     html = head("Industries | Middle Market | Benchmark International",
-                "Benchmark International's Middle Market team focuses on five industries: Industrial, Business Services, Consumer, Healthcare and Technology.", root)
+                "Benchmark International's Middle Market team focuses on five industries: Industrials, Business Services, Consumer, Healthcare and Technology.", root)
     html += header(root, "industries")
     html += f"""
 <section class="hero hero--page">
@@ -1147,10 +1156,10 @@ def page_industries():
 <section class="section--dark section--tight">
   <div class="wrap">
     <div class="stats">
-      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused industries</div></div>
-      <div class="stat"><div class="stat-num">{total}+</div><div class="stat-label">Completed transactions across these industries<sup>†</sup></div></div>
-      <div class="stat"><div class="stat-num">{len(TOMBSTONES)}</div><div class="stat-label">Selected transactions featured on this site</div></div>
-      <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Privately owned sell-side M&amp;A advisor worldwide<sup>*</sup></div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused Industries</div></div>
+      <div class="stat"><div class="stat-num">{total}+</div><div class="stat-label">Completed Transactions<sup>†</sup></div></div>
+      <div class="stat"><div class="stat-num">{len(TOMBSTONES)}</div><div class="stat-label">Featured Transactions</div></div>
+      <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Global M&amp;A Advisor to Privately Held Companies<sup>*</sup></div></div>
     </div>
     <p class="note">† Completed transactions tagged to these industries on benchmarkintl.com/about/our-success, as of {AS_OF}. * PitchBook Q2 2026 Global League Tables.</p>
   </div>
@@ -1158,6 +1167,7 @@ def page_industries():
 
 <section class="section">
   <div class="wrap ind-rows">{rows}</div>
+  <div class="wrap"><p class="note">† Completed transactions tagged to each industry on benchmarkintl.com/about/our-success, as of {AS_OF}.</p></div>
 </section>
 """
     html += cta(root)
@@ -1167,8 +1177,13 @@ def page_industries():
     write("industries/index.html", html, crumbs=[("Middle Market", ""), ("Industries", "industries/index.html")], schema=[items])
 
 
+def paras_html(ps):
+    return "".join(f"<p>{e(x)}</p>" for x in ps)
+
+
 def page_sector(i, s):
     root = "../"
+    cp = pagecopy.load(s["slug"], [x[0] for x in s["segments"]])
     deals = deals_in(s["slug"])
     deals.sort(key=lambda t: (bool(t.get("cross")), not t.get("featured"), not t.get("desc"), -int(t.get("year") or 0)))
     tombs = "".join(tombstone(t, root) for t in deals)
@@ -1180,16 +1195,26 @@ def page_sector(i, s):
   <div class="segment-num">{k + 1:02d}</div>
   <div class="segment-body">
     <h3>{e(name)}</h3>
-    <p>{e(desc)}</p>
+    {paras_html(cp.get('segments', {}).get(name) or [desc])}
     <p class="eyebrow" style="margin:16px 0 8px">Subsector Expertise</p>
     <ul class="ind-tags">{''.join(f'<li>{e(x)}</li>' for x in subs)}</ul>
     <button class="link-arrow seg-jump" data-segment="{e(name)}">{seg_counts[name]} selected transactions</button>
   </div>
 </article>""" for k, (name, desc, subs) in enumerate(s["segments"]))
     glance = "".join(f'<li><a href="#seg-{k + 1}">{e(seg[0])}</a><span>{seg_counts[seg[0]]}</span></li>' for k, seg in enumerate(s["segments"]))
-    themes = "".join(f'<article class="theme reveal"><span class="theme-num">{k + 1:02d}</span><h3>{e(h)}</h3><p>{e(p)}</p></article>'
-                     for k, (h, p) in enumerate(s["themes"]))
-    value = "".join(f'<li><span class="vnum">0{k + 1}</span><div><h4>{e(h)}</h4><p>{e(p)}</p></div></li>' for k, (h, p) in enumerate(s["value"]))
+    theme_items = cp["themes"]["items"] if cp.get("themes") else [(h, [p]) for h, p in s["themes"]]
+    themes_title = (cp.get("themes") or {}).get("title") or f"What We're Seeing in {s['title_in']}"
+    themes = "".join(f'<article class="theme reveal"><span class="theme-num">{k + 1:02d}</span><h3>{e(h)}</h3>{paras_html(ps)}</article>'
+                     for k, (h, ps) in enumerate(theme_items))
+    value_items = cp["value"]["items"] if cp.get("value") else [(h, [p]) for h, p in s["value"]]
+    value_title = cp["value"]["title"] if cp.get("value") else "Seeing Your Company Through a Buyer's Eyes"
+    value = "".join(f'<li><span class="vnum">{k + 1:02d}</span><div><h4>{e(h)}</h4>{paras_html(ps)}</div></li>' for k, (h, ps) in enumerate(value_items))
+    if cp.get("statement"):
+        value_lead = f'<p class="lead"><strong>{e(cp["statement"]["title"])}</strong></p>' + paras_html(cp["statement"]["paras"])
+    elif cp.get("value"):
+        value_lead = ""
+    else:
+        value_lead = f'<p class="lead">We build the story around the factors that drive valuation in {e(s["prose"])}, so qualified buyers compete on your terms.</p>'
     seen, buyers = set(), []
     for t in deals:
         b = t["buyer"].strip()
@@ -1198,7 +1223,24 @@ def page_sector(i, s):
         seen.add(b.lower())
         buyers.append(b)
     buyer_list = "".join(f"<li>{e(b)}</li>" for b in buyers[:18])
-    services = "".join(f'<article class="service reveal"><h3>{e(h)}</h3><p>{e(p)}</p></article>' for h, p in SERVICES)
+    if cp.get("services"):
+        services = "".join(f'<article class="service reveal"><h3>{e(h)}</h3>{paras_html(ps)}</article>' for h, ps in cp["services"]["items"])
+        services_head = f'<h2 class="h2">{e(cp["services"]["title"])}</h2>' + "".join(f'<p class="lead">{e(x)}</p>' for x in cp["services"]["intro"])
+    else:
+        services = "".join(f'<article class="service reveal"><h3>{e(h)}</h3><p>{e(p)}</p></article>' for h, p in SERVICES)
+        services_head = (f'<h2 class="h2">Advisory Built Around Your Goals</h2>'
+                         f'<p class="lead">An exit can take many forms. We help owners of {e(s["adj"])} companies choose the path that fits their wealth, family and company goals.</p>')
+    hero = cp.get("hero") or {}
+    hero_lead = f'<p class="lead">{e(hero["sub"])}</p>' + "".join(f'<p class="hero-text">{e(x)}</p>' for x in hero["paras"]) if hero.get("sub") else f'<p class="lead">{e(s["tagline"])}</p>'
+    if cp.get("overview"):
+        overview = f'<h2 class="h2">{e(cp["overview"]["title"])}</h2>\n      <hr class="rule">\n      ' + paras_html(cp["overview"]["paras"])
+    else:
+        overview = (f'<h2 class="h2">{e(s["name"])} M&amp;A Advisory</h2>\n      <hr class="rule">\n      ' + paras_html(s["overview"])
+                    + "<p>Every engagement is led by the Middle Market team and backed by Benchmark International's global network of strategic acquirers, private equity groups, family offices and independent sponsors.</p>")
+    acq = cp.get("acquirers")
+    acq_html = (f'<h3 class="h3">{e(acq["title"])}</h3>' + paras_html(acq["paras"])
+                + f'<h4 class="buyer-head">Acquirers and Investors in Our Selected {e(s["name"])} Transactions</h4>') if acq else \
+               f'<h3 class="h3">Acquirers and Investors in Our Selected {e(s["name"])} Transactions</h3>'
     story = next((x for x in STORIES if x[2] == s["slug"]), None)
     quote = next((x for x in TESTIMONIALS if x[4] == s["slug"]), None)
     feature = ""
@@ -1229,7 +1271,7 @@ def page_sector(i, s):
   <div class="wrap">
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="index.html">Industries</a> / {e(s['name'])}</div>
     <h1 class="display">{e(s['name'])}</h1>
-    <p class="lead">{e(s['tagline'])}</p>
+    {hero_lead}
     <div class="btn-row"><a class="btn" href="#deals">Selected Transactions</a><a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a>{report_btn}</div>
   </div>
 </section>
@@ -1251,10 +1293,7 @@ def page_sector(i, s):
   <div class="wrap split split--top">
     <div class="reveal">
       <p class="eyebrow">Overview</p>
-      <h2 class="h2">{e(s['name'])} M&amp;A Advisory</h2>
-      <hr class="rule">
-      {''.join(f'<p>{e(p)}</p>' for p in s['overview'])}
-      <p>Every engagement is led by the Middle Market team and backed by Benchmark International's global network of strategic acquirers, private equity groups, family offices and independent sponsors.</p>
+      {overview}
     </div>
     <aside class="glance reveal">
       <p class="eyebrow">At a Glance</p>
@@ -1272,7 +1311,7 @@ def page_sector(i, s):
     <div class="section-head reveal">
       <p class="eyebrow">Sector Expertise</p>
       <h2 class="h2">Where We Focus</h2>
-      <p class="lead">We advise {e(s['name'].lower())} companies in {number_word(len(s['segments']))} sectors, including these subsectors:</p>
+      <p class="lead">We advise {e(s['adj'])} companies in {number_word(len(s['segments']))} sectors, including these subsectors:</p>
     </div>
     <div class="segments">{segments}</div>
   </div>
@@ -1299,9 +1338,9 @@ def page_sector(i, s):
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">Market Perspective</p>
-      <h2 class="h2" style="color:#fff">What We're Seeing in {e(s['title_in'])}</h2>
+      <h2 class="h2" style="color:#fff">{e(themes_title)}</h2>
     </div>
-    <div class="themes">{themes}</div>
+    <div class="themes{' themes--3' if len(theme_items) in (5, 6) else ''}">{themes}</div>
   </div>
 </section>
 
@@ -1309,13 +1348,13 @@ def page_sector(i, s):
   <div class="wrap split split--top">
     <div class="reveal">
       <p class="eyebrow">What Buyers Value</p>
-      <h2 class="h2">Seeing Your Company Through a Buyer's Eyes</h2>
-      <p class="lead">We build the story around the factors that drive valuation in {e(s['prose'])}, so qualified buyers compete on your terms.</p>
+      <h2 class="h2">{e(value_title)}</h2>
+      {value_lead}
       <ul class="value-list">{value}</ul>
     </div>
     <div class="reveal">
       <p class="eyebrow">Who Is Buying</p>
-      <h3 class="h3">Acquirers and Investors in Our Selected {e(s['name'])} Transactions</h3>
+      {acq_html}
       <ul class="buyer-list">{buyer_list}</ul>
     </div>
   </div>
@@ -1325,8 +1364,7 @@ def page_sector(i, s):
   <div class="wrap">
     <div class="section-head center reveal">
       <p class="eyebrow">How We Help</p>
-      <h2 class="h2">Advisory Built Around Your Goals</h2>
-      <p class="lead">An exit can take many forms. We help owners of {e(s['name'].lower())} companies choose the path that fits their wealth, family and company goals.</p>
+      {services_head}
     </div>
     <div class="services">{services}</div>
   </div>
@@ -1344,9 +1382,12 @@ def page_sector(i, s):
   </div>
 </section>
 """
-    faqs = sector_faqs(s, buyers)
+    faqs = [(q, " ".join(a)) for q, a in cp["faq"]] if cp.get("faq") else sector_faqs(s, buyers)
     html = html.replace("{SECTOR_FAQ}", faq_html(faqs, f"{s['name']} M&A: Common Questions"))
-    html += cta(root, f"Considering a Transaction in {s['title_in']}?")
+    if cp.get("cta"):
+        html += cta(root, cp["cta"]["title"], sub=cp["cta"]["sub"], paras=cp["cta"]["paras"])
+    else:
+        html += cta(root, f"Considering a Transaction in {s['title_in']}?")
     html += footer(root)
     service = {"@type": "Service", "name": f"{s['name']} M&A advisory", "serviceType": "Sell-side M&A advisory",
                "provider": {"@id": SITE_URL + "#org"}, "areaServed": {"@type": "Country", "name": "United States"},
@@ -1454,7 +1495,7 @@ def page_insights():
   <div class="wrap">
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Insights</div>
     <p class="eyebrow">Insights</p>
-    <h1 class="display">Perspective on the Middle Market</h1>
+    <h1 class="display">Unique Perspectives on the Middle Market</h1>
     <p class="lead">Quarterly industry reports from the Middle Market team on deal activity, valuations and what buyers are paying for across our five industries.</p>
   </div>
 </section>
@@ -1478,7 +1519,7 @@ def page_insights():
   </div>
 </section>
 """
-    html += cta(root, "Want to Talk Through What This Means for Your Business?")
+    html += cta(root, "Curious What This Means for Your Business?")
     html += footer(root)
     reports = {"@type": "ItemList", "name": "Middle Market industry reports", "itemListElement": [
         {"@type": "ListItem", "position": k + 1, "name": i["title"], "url": abs_url(i["url"])} for k, i in enumerate(INSIGHTS)]}
@@ -1514,45 +1555,100 @@ def page_disclosures():
 
 
 def page_about():
-    """A single, plain fact sheet: the page AI assistants and search engines can cite for who the team is."""
+    """The About page: Jordan's practice overview, then a plain fact sheet AI assistants and search engines can cite."""
     root = ""
+    cp = pagecopy.load("about")
+    sec = {x["title"].split(".")[0]: x for x in cp.get("sections", [])}
     lead = ", ".join(f"{n} ({r})" for n, r, _, _ in TEAM_LEAD)
     support = ", ".join(f"{n} ({r})" for n, r, _ in TEAM_SUPPORT)
     facts = [
         ("Who we are", "The Middle Market team of Benchmark International, serving owners of companies with $50M–$500M in total enterprise value (TEV)."),
-        ("What we do", "Represent privately held companies across the United States in sell-side M&A, from majority and control transactions to strategic partnerships."),
+        ("What we do", "Specialized sell-side M&A advisory services to owners of privately held businesses, focused on qualifying mergers, business sales and controlling ownership transitions."),
         ("Company size served", "$50 million to $500 million in total enterprise value (TEV)."),
         ("Industries", ", ".join(x["name"] for x in SECTORS) + "."),
         ("Services", ", ".join(n for n, _ in SERVICES) + "."),
-        ("Firm", "Benchmark International is the #1 privately owned sell-side M&A advisor worldwide (PitchBook Q2 2026 Global League Tables), with 15 offices across the Americas, Europe and Africa."),
+        ("Firm", "Headquartered in Tampa, FL, with over 300 employees across 15 global offices in the Americas, Europe and Africa; ranked the #1 global M&A advisor for privately owned businesses (PitchBook Q2 2026 Global League Tables)."),
         ("Leadership", lead + "."),
         ("Deal team", support + "."),
         ("Research", "Quarterly M&A reports for each of our five industries, published on the Insights page."),
         ("Contact", f"{PHONE} | {EMAIL}"),
     ]
     rows = "".join(f"<tr><th scope=\"row\">{e(k)}</th><td>{e(v)}</td></tr>" for k, v in facts)
-    sector_links = "".join(f'<li><a href="industries/{x["slug"]}.html">{e(x["name"])}</a>: {e(x["short"])}</li>' for x in SECTORS)
     report_links = "".join(f'<li><a href="{i["url"]}">{e(i["title"])}</a></li>' for i in INSIGHTS)
-    faqs = home_faqs()
+    hero, stmt = cp["hero"], cp.get("statement")
+    slug_of = {"Industrials": "industrial"}
+    slug_of.update({x["name"]: x["slug"] for x in SECTORS})
+
+    def prose(key, eyebrow, extra="", cls="section"):
+        x = sec[key]
+        return f"""<section class="{cls}">
+  <div class="wrap about-wrap reveal">
+    <p class="eyebrow">{eyebrow}</p>
+    <h2 class="h2">{e(x["title"])}</h2>
+    <hr class="rule">
+    {paras_html([q for q in x["paras"] if not q.startswith("**")])}{extra}
+  </div>
+</section>
+"""
+
+    def cards(key, eyebrow, link=False):
+        x = sec[key]
+        intro = []
+        for ln in x["lines"]:
+            if pagecopy._is_item_head(ln):
+                break
+            if ln.strip():
+                intro.append(ln.strip())
+        items = "".join(
+            f'<article class="service reveal"><h3>'
+            + (f'<a href="industries/{slug_of[h]}.html">{e(h)}</a>' if link and h in slug_of else e(h))
+            + f'</h3>{paras_html(ps)}</article>' for h, ps in x["items"])
+        return f"""<section class="section section--paper">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow">{eyebrow}</p>
+      <h2 class="h2">{e(x["title"])}</h2>
+      {"".join(f'<p class="lead">{e(i)}</p>' for i in intro)}
+    </div>
+    <div class="services{' services--5' if len(x['items']) == 5 else ''}">{items}</div>
+  </div>
+</section>
+"""
+
+    faqs = [(q, " ".join(ans)) for q, ans in cp["faq"]]
     html = head("About | Middle Market | Benchmark International",
-                "Facts about Benchmark International's Middle Market team: who we serve, the $50M–$500M total enterprise value (TEV) range, five industries, services, team and contact details.", root)
+                "About Benchmark International's Middle Market team: sell-side M&A advisory for privately held businesses with $50M–$500M in total enterprise value (TEV) across five industries.", root)
     html += header(root)
     html += f"""
 <section class="hero hero--page">
   <div class="wrap">
     <div class="crumbs"><a href="index.html">Middle Market</a> / About</div>
-    <p class="eyebrow">At a Glance</p>
-    <h1 class="display">About Our Middle Market Practice</h1>
-    <p class="lead">Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV), from majority and control transactions to strategic partnerships.</p>
+    <p class="eyebrow">About</p>
+    <h1 class="display">{e(hero["title"])}</h1>
+    <p class="lead">{e(hero["sub"])}</p>
+    {"".join(f'<p class="hero-text">{e(x)}</p>' for x in hero["paras"])}
   </div>
 </section>
-
-<section class="section">
+"""
+    if stmt:
+        html += f"""<section class="section--dark section--tight">
+  <div class="wrap center reveal">
+    <h2 class="h2" style="color:#fff">{e(stmt["title"])}</h2>
+    {"".join(f'<p class="lead">{e(x)}</p>' for x in stmt["paras"])}
+  </div>
+</section>
+"""
+    html += prose("Built for the Middle Market", "Our Practice")
+    html += cards("A Disciplined Approach to Maximizing Shareholder Value", "Our Approach")
+    html += cards("Specialized Industry Coverage", "Industries", link=True)
+    html += prose("Experienced Professionals", "Our Team", f'<p><a class="link-arrow" href="{root}index.html#team">Meet the team</a></p>')
+    html += prose("Global Reach", "Global Platform", cls="section section--paper")
+    html += prose("Research-Driven Advisory", "Research", f'<div class="btn-row"><a class="btn" href="{root}insights/index.html">Explore Our Industry Research</a></div>')
+    html += f"""
+<section class="section section--paper">
   <div class="wrap about-wrap">
     <h2 class="h2">Key Facts</h2>
     <table class="facts">{rows}</table>
-    <h2 class="h2">Industries We Cover</h2>
-    <ul class="about-list">{sector_links}</ul>
     <h2 class="h2">Current Industry Reports</h2>
     <ul class="about-list">{report_links}</ul>
     <p class="note">Information as of {AS_OF}. See the <a href="disclosures.html">Important Disclosures</a>.</p>
@@ -1560,7 +1656,8 @@ def page_about():
 </section>
 """
     html += faq_html(faqs)
-    html += cta(root)
+    c = cp["cta"]
+    html += cta(root, c["title"], sub=c["sub"], paras=c["paras"])
     html += footer(root)
     write("about.html", html, crumbs=[("Middle Market", ""), ("About", "about.html")], schema=[faq_schema(faqs)])
 
@@ -1583,7 +1680,7 @@ def write_discovery_files():
     faqs = "\n".join(f"- **{q}** {a}" for q, a in home_faqs())
     llms = f"""# {ORG_NAME}
 
-> Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV), from majority and control transactions to strategic partnerships, across five industries: {", ".join(x["name"] for x in SECTORS)}.
+> Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions, across five industries: {", ".join(x["name"] for x in SECTORS)}.
 
 Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark International (https://www.benchmarkintl.com/).
 
