@@ -87,7 +87,7 @@ SECTORS = [
         "title_in": "Industrial Markets",        # Title Case heading form ("What We're Seeing in Industrial Markets")
         "adj": "industrial",                     # adjective before "transactions"
         "count": 290,
-        "tagline": "Advising founder-led manufacturers, distributors and industrial service companies on everything from a full sale to a strategic partnership.",
+        "tagline": "Advising founder-led manufacturers, distributors and industrial services businesses on strategic sales, mergers and qualifying change-of-control transactions designed to maximize enterprise value and achieve shareholder objectives.",
         "short": "Manufacturing, industrial distribution, building products, energy and environmental services, and transportation.",
         "overview": [
             "Reshoring, automation, infrastructure investment and the push for supply-chain resilience have put middle-market industrial companies at the top of many buyers' lists. Strategic acquirers want capabilities and capacity they can't build quickly. Private equity platforms want founder-built businesses with engineering know-how, sticky customers and room to grow through add-ons.",
@@ -808,8 +808,8 @@ def home_faqs():
     svc = "sell-side M&A, majority and control transactions and strategic partnerships, along with exit planning"
     return [
         ("What does Benchmark International's Middle Market team do?",
-         "Benchmark International's Middle Market team represents privately held companies across the United States in sell-side M&A, "
-         "from majority and control transactions to strategic partnerships."),
+         "Benchmark International's Middle Market team represents premier privately held companies across the United States in sell-side M&A, "
+         "offering white-glove, high-touch service to the firm's largest clients."),
         ("What size companies does the Middle Market team advise?",
          "Our Middle Market team advises privately held businesses, typically with enterprise values of $50 million to $500 million, "
          "that meet applicable M&A broker exemption requirements, including companies with less than $25 million in annual EBITDA "
