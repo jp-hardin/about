@@ -11,7 +11,7 @@ import json
 import os
 import re
 from urllib.parse import urlparse
-from html import escape
+from html import escape, unescape
 
 import pagecopy
 
@@ -33,9 +33,12 @@ AS_OF = "October 2026"
 # Search and AI discovery. SITE_URL is the one place to change when the site moves (for example to HubSpot);
 # canonical links, sitemap.xml, robots.txt, llms.txt, social previews and structured data all build from it.
 SITE_URL = "https://jp-hardin.github.io/about/mid-market-practice/"
-SITE_UPDATED = "2026-10-12"   # date stamp for sitemap.xml; update when content changes
+SITE_UPDATED = "2026-10-21"   # date stamp for sitemap.xml; update when content changes
 ORG_NAME = "Benchmark International Middle Market"
-PARENT_ORG = {"@type": "Organization", "name": "Benchmark International", "url": "https://www.benchmarkintl.com/"}
+PARENT_ORG = {"@type": "Organization", "@id": "https://www.benchmarkintl.com/#organization", "name": "Benchmark International",
+              "url": "https://www.benchmarkintl.com/", "numberOfEmployees": {"@type": "QuantitativeValue", "minValue": 300},
+              "address": {"@type": "PostalAddress", "streetAddress": "4030 W Boy Scout Blvd, Suite 500", "addressLocality": "Tampa",
+                          "addressRegion": "FL", "postalCode": "33607", "addressCountry": "US"}}
 REPORT_DATE = "2026-10"       # publication month of the current industry reports (ISO 8601)
 
 # Important Disclosures: shown on disclosures.html and printed as the last page of every industry report PDF
@@ -374,7 +377,7 @@ TEAM_SUPPORT_BIO = {
     "jason-lisiak": ["Jason is responsible for research across the firm\u2019s M&A practice and brings extensive institutional investment experience to each engagement. He previously served as a Senior Research Analyst and co-portfolio manager of the real estate and small-cap funds at a $20 billion institutional asset manager. He applies that buy-side perspective on behalf of sellers, analyzing industry dynamics, competitive landscapes, and strategic positioning to help clients realize the full value of their businesses. A CFA charterholder and member of CFA Society Tampa Bay, Jason holds a B.S. from SUNY Geneseo. He also coaches founders at the University of Tampa\u2019s Lowth Entrepreneurship Center."],
     "alexandra-barr": ["As a Transaction Support Associate, Alexandra helps business owners prepare their companies for market. She analyzes financial statements and operating data, develops buyer materials, and works with clients and their finance teams to address questions that may arise during due diligence. Her work helps buyers understand a company’s performance, operations, and growth opportunities.",
                        "Before joining Benchmark, Alexandra worked in finance at Volkswagen Group of America, evaluating profitability across multiple vehicle programs in domestic and international markets. Her experience spans pricing strategy, investment analysis, and developing business cases to inform executive decisions. She holds a B.S. in Industrial Engineering from West Virginia University."],
-    "josiah-warren": ["As a Transaction Support Associate, Josiah conducts the financial and operational review that precedes a client\u2019s launch, analyzing historical performance, adjusting earnings for one-time and owner-related items, and evaluating working capital. He has spent more than five years at Benchmark, moving from transaction support analyst to senior quality control specialist, and previously performed company valuations at iT Valuations. He holds a bachelor\u2019s degree in Enterprise Risk Management from Penn State."],
+    "josiah-warren": ["As an associate on the Middle Market team, Josiah conducts the financial and operational review that precedes a client\u2019s launch to market, analyzing historical performance, building financial models, and evaluating key business metrics. He has spent more than five years at Benchmark International, starting as a transaction support analyst before moving to central operations as the senior quality control specialist. Before Benchmark, Josiah worked at iTValuations, where he gained buy-side, sell-side, and valuation experience. He earned a bachelor\u2019s degree in Enterprise Risk Management, with minors in International Business and Spanish, from The Pennsylvania State University."],
     "luke-ernst": ["Luke supports the deal team on every transaction in process. He contacts prospective buyers, manages confidentiality agreements, maintains the data room, and prepares the offer comparisons and status tracking that keep several buyers on the same schedule through closing. Before Benchmark, he worked in strategic finance at a single-family office and in investment banking at CEA Group. He earned a BS in Finance and Economics from the University of Tampa in three years and holds the FMVA\u00ae certification."],
 }
 
@@ -422,6 +425,15 @@ for t in TOMBSTONES:
 # ─────────────────────────────────────────────────────────────────────────────
 # Partials
 # ─────────────────────────────────────────────────────────────────────────────
+def meta_desc(text, n=160):
+    """Shortens a meta description to about n characters, ending at a sentence or word."""
+    if len(text) <= n:
+        return text
+    cut = text[:n]
+    end = cut.rfind(". ")
+    return cut[:end + 1] if end > n * 0.6 else cut[:cut.rfind(" ")].rstrip(",;:") + "…"
+
+
 def e(s):
     return escape(s, quote=True)
 
@@ -433,6 +445,7 @@ def number_word(k):
 
 
 def head(title, desc, root, canonical=""):
+    desc = meta_desc(desc, 240)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -523,7 +536,7 @@ def footer(root):
       </ul></div>
     </div>
     <div class="footer-base">
-      <span>&copy; 2026 Benchmark International. All rights reserved.</span>
+      <span>&copy; 2026 Benchmark International. All rights reserved. Information as of <time datetime="{SITE_UPDATED}">{AS_OF}</time>.</span>
       <span><a href="{root}disclosures.html">Important Disclosures</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/terms/">Terms</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/privacy-policy/">Privacy Policy</a></span>
     </div>
   </div>
@@ -671,7 +684,7 @@ def report_extras(page, slug, root, extra=None):
     assert page.count("</article>") == 1, "report page should have one <article>"
     page = page.replace("</article>", note, 1)
     rpt, sec = current_report(slug), SECTOR_BY_SLUG[slug]
-    author = next(({"@type": "Person", "name": n, "jobTitle": r, "worksFor": {"@id": SITE_URL + "#org"}} for n, r, i, _ in TEAM_LEAD if i == "jared-hardin"), None)
+    author = next(({"@type": "Person", "@id": person_id(i), "name": n, "jobTitle": r, "worksFor": {"@id": SITE_URL + "#org"}} for n, r, i, _ in TEAM_LEAD if i == "jared-hardin"), None)
     article = {"@type": "Report", "headline": rpt["title"], "name": rpt["title"], "description": rpt["summary"],
                "datePublished": REPORT_DATE, "dateModified": REPORT_DATE, "inLanguage": "en-US", "url": abs_url(rpt["url"]),
                "author": author, "publisher": {"@id": SITE_URL + "#org"}, "about": f"{sec['name']} mergers and acquisitions",
@@ -780,11 +793,21 @@ def org_schema():
         "url": SITE_URL, "logo": SITE_URL + "assets/img/brand/benchmark-logo-black.svg",
         "description": "Benchmark International's Middle Market team represents privately held companies across the United States "
                        "with $50M–$500M in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions.",
-        "parentOrganization": PARENT_ORG, "telephone": "+1-" + PHONE, "email": EMAIL,
+        "parentOrganization": PARENT_ORG, "telephone": "+1-" + PHONE, "email": EMAIL, "address": PARENT_ORG["address"],
+        "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "telephone": "+1-" + PHONE, "email": EMAIL, "areaServed": "US", "availableLanguage": "English"},
+        "slogan": "Your Legacy Is Built. Your Next Chapter Awaits.",
+        "award": "#1 global M&A advisor for privately owned businesses (PitchBook Q2 2026 Global League Tables)",
         "areaServed": {"@type": "Country", "name": "United States"},
         "knowsAbout": ["Sell-side M&A", "Mergers and acquisitions advisory", "Controlling ownership transactions", "Exit readiness and transaction planning"] + [x["name"] for x in SECTORS],
-        "sameAs": [v[0] for k, v in SOCIAL.items() if k != "Email"],
+        "sameAs": [v[0] for k, v in SOCIAL.items() if k != "Email"] + [PARENT_ORG["url"]],
+        "member": [{"@id": person_id(m["img"])} for m in team_members()],
+        "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Sell-side M&A advisory services", "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": n, "description": d}} for n, d in SERVICES]},
     }
+
+
+def person_id(img):
+    return SITE_URL + "#" + img
 
 
 def breadcrumb_schema(crumbs):
@@ -873,8 +896,10 @@ def sector_faqs(s, buyers):
 
 def person_schema(m, root_abs=SITE_URL):
     phone, email = TEAM_CONTACT.get(m["img"], (None, None))
-    p = {"@type": "Person", "name": m["name"], "jobTitle": m["role"], "worksFor": {"@id": SITE_URL + "#org"},
-         "image": f"{SITE_URL}assets/img/team/{m['img']}.jpg"}
+    p = {"@type": "Person", "@id": person_id(m["img"]), "name": m["name"], "jobTitle": m["role"].replace(" | ", ", "),
+         "worksFor": {"@id": SITE_URL + "#org"}, "url": SITE_URL + "#team", "image": f"{SITE_URL}assets/img/team/{m['img']}.jpg"}
+    if m["bio"]:
+        p["description"] = m["bio"][0].split(". ")[0].rstrip(".") + "."
     if phone:
         p["telephone"] = "+1-" + phone
     if email:
@@ -889,9 +914,12 @@ def finalize(html, rel, crumbs=None, schema=None, image="assets/img/social/defau
     url = abs_url(rel)
     title = re.search(r"<title>(.*?)</title>", html, re.S).group(1)
     desc = re.search(r'<meta name="description" content="([^"]*)"', html).group(1)
-    graph = [org_schema(), {"@type": "WebPage", "@id": url, "url": url, "name": title, "description": desc,
-                            "isPartOf": {"@type": "WebSite", "name": ORG_NAME, "url": SITE_URL},
-                            "publisher": {"@id": SITE_URL + "#org"}, "inLanguage": "en-US"}]
+    page = {"@type": "WebPage", "@id": url, "url": url, "name": unescape(title), "description": unescape(desc),
+            "isPartOf": {"@type": "WebSite", "@id": SITE_URL + "#website", "name": ORG_NAME, "url": SITE_URL, "publisher": {"@id": SITE_URL + "#org"}},
+            "about": {"@id": SITE_URL + "#org"}, "publisher": {"@id": SITE_URL + "#org"}, "inLanguage": "en-US",
+            "dateModified": SITE_UPDATED, "primaryImageOfPage": SITE_URL + image,
+            "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".lead", ".faq-item"]}}
+    graph = [org_schema(), page]
     if crumbs:
         graph.append(breadcrumb_schema(crumbs))
     graph += schema or []
@@ -907,10 +935,14 @@ def finalize(html, rel, crumbs=None, schema=None, image="assets/img/social/defau
 
 
 SITEMAP = []   # (rel, priority) of every indexable page written this build
+PAGE_FAQS = {}  # rel -> [(question, answer)] from each page's FAQPage schema, for llms-full.txt
 
 
 def write(rel, html, crumbs=None, schema=None, image="assets/img/social/default.jpg", index=True):
     if index:
+        for x in schema or []:
+            if x.get("@type") == "FAQPage":
+                PAGE_FAQS[rel] = [(q["name"], q["acceptedAnswer"]["text"]) for q in x["mainEntity"]]
         html = finalize(html, rel, crumbs, schema, image)
         SITEMAP.append(rel)
     path = os.path.join(SITE, rel)
@@ -952,8 +984,8 @@ def page_home():
     cards = "".join(industry_card(s, root) for s in SECTORS) + cta_card(root)
     awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="Benchmark International award" loading="lazy" width="520" height="300">' for i in range(1, 5))
 
-    html = head("Middle Market | Benchmark International",
-                "Benchmark International's Middle Market team advises owners of privately held companies with $50M–$500M in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions in the industrial, business services, consumer, healthcare, and technology industries.", root)
+    html = head("Middle Market Sell-Side M&A Advisory | Benchmark International",
+                "Sell-side M&A advisory for owners of privately held companies with $50M–$500M in enterprise value: strategic sales, mergers, and change-of-control transactions.", root)
     html += header(root)
     html += f"""
 <section class="hero">
@@ -1146,7 +1178,7 @@ def page_industries():
     <div class="ind-row-deals tomb-grid tomb-grid--compact">{minis}</div>
   </div>
 </article>"""
-    html = head("Industries | Middle Market | Benchmark International",
+    html = head("Industries We Advise | Middle Market M&A | Benchmark International",
                 "Benchmark International's Middle Market team focuses on five industries: Industrials, Business Services, Consumer, Healthcare, and Technology.", root)
     html += header(root, "industries")
     html += f"""
@@ -1270,8 +1302,8 @@ def page_sector(i, s):
     tabs = "".join(f'<a href="{x["slug"]}.html"{cur if x is s else ""}>{e(x["name"])}</a>' for x in SECTORS)
 
     report_btn = f'<a class="btn btn--light" href="{root}{s["report"][1]}">{e(s["report"][0])}</a>' if s.get("report") else ""
-    html = head(f"{s['name']} | Middle Market | Benchmark International",
-                f"{s['name']} M&A advisory from Benchmark International's Middle Market team. {s['tagline']}", root)
+    html = head(f"{s['name']} M&A Advisory | Middle Market | Benchmark International",
+                f"{s['name']} M&A advisory for privately held companies with $50M–$500M in enterprise value. {s['short']}", root)
     html += header(root, "industries")
     html += f"""
 {photo_hero(s['slug'], root)}
@@ -1425,8 +1457,8 @@ def page_transactions():
     order = {s["slug"]: k for k, s in enumerate(SECTORS)}
     items = sorted(TOMBSTONES, key=lambda t: (order[t["sector"]], not t.get("featured"), -int(t.get("year") or 0)))
     tombs = "".join(tombstone(t, root, show_sector=True) for t in items)
-    html = head("Transactions | Middle Market | Benchmark International",
-                "Selected completed transactions advised by Benchmark International in the industrial, business services, consumer, healthcare, and technology industries.", root)
+    html = head("Completed M&A Transactions | Middle Market | Benchmark International",
+                "Selected completed sell-side M&A transactions advised by Benchmark International across Industrials, Business Services, Consumer, Healthcare, and Technology.", root)
     html += header(root, "transactions")
     html += f"""
 <section class="hero hero--page hero--photo"><div class="hero-media" aria-hidden="true"><img src="assets/img/site/transactions-hero.jpg" alt="" width="1920" height="1000" fetchpriority="high"></div>
@@ -1450,7 +1482,11 @@ def page_transactions():
 """
     html += cta(root)
     html += footer(root)
-    write("transactions.html", html, crumbs=[("Middle Market", ""), ("Transactions", "transactions.html")])
+    deals = {"@type": "ItemList", "name": "Selected completed transactions", "numberOfItems": len(items), "itemListElement": [
+        dict({"@type": "ListItem", "position": n + 1, "name": f"{t['seller']} {t['verb'].lower()} {t['buyer']}",
+              "description": " ".join(x for x in (t.get("desc", ""), f"{t['sector_name']}." + (f" {t['year']}." if t.get("year") else "")) if x)},
+             **({"url": t["link"]} if t.get("link") else {})) for n, t in enumerate(items)]}
+    write("transactions.html", html, crumbs=[("Middle Market", ""), ("Transactions", "transactions.html")], schema=[deals])
 
 
 def insight_card(i, root, current):
@@ -1494,8 +1530,8 @@ def page_insights():
     else:
         archive_html = '<p class="archive-empty">Earlier editions will be archived here as each new quarterly report is published.</p>'
     latest = max(current, key=lambda i: (i["year"], i["quarter"]))["period"] if current else ""
-    html = head("Insights | Middle Market | Benchmark International",
-                "Quarterly M&A industry reports from Benchmark International's Middle Market team covering the industrial, business services, consumer, healthcare, and technology industries.", root)
+    html = head("Middle Market M&A Industry Reports | Benchmark International",
+                "Quarterly middle market M&A reports on deal activity, valuation metrics, and buyer demand in Industrials, Business Services, Consumer, Healthcare, and Technology.", root)
     html += header(root, "insights")
     html += f"""
 <section class="hero hero--page">
@@ -1561,14 +1597,11 @@ def page_disclosures():
     write("disclosures.html", html, crumbs=[("Middle Market", ""), ("Important Disclosures", "disclosures.html")])
 
 
-def page_about():
-    """The About page: Jordan's practice overview, then a plain fact sheet AI assistants and search engines can cite."""
-    root = ""
-    cp = pagecopy.load("about")
-    sec = {x["title"].split(".")[0]: x for x in cp.get("sections", [])}
+def about_facts():
+    """The About page's Key Facts table, also used in llms-full.txt."""
     lead = ", ".join(f"{n} ({r})" for n, r, _, _ in TEAM_LEAD)
     support = ", ".join(f"{n} ({r})" for n, r, _ in TEAM_SUPPORT)
-    facts = [
+    return [
         ("Who we are", "The Middle Market team of Benchmark International, serving owners of companies with $50M–$500M in total enterprise value (TEV)."),
         ("What we do", "Specialized sell-side M&A advisory services to owners of privately held businesses, focused on qualifying mergers, business sales, and controlling ownership transitions."),
         ("Company size served", "$50 million to $500 million in total enterprise value (TEV)."),
@@ -1580,6 +1613,14 @@ def page_about():
         ("Research", "Quarterly M&A reports for each of our five industries, published on the Insights page."),
         ("Contact", f"{PHONE} | {EMAIL}"),
     ]
+
+
+def page_about():
+    """The About page: Jordan's practice overview, then a plain fact sheet AI assistants and search engines can cite."""
+    root = ""
+    cp = pagecopy.load("about")
+    sec = {x["title"].split(".")[0]: x for x in cp.get("sections", [])}
+    facts = about_facts()
     rows = "".join(f"<tr><th scope=\"row\">{e(k)}</th><td>{e(v)}</td></tr>" for k, v in facts)
     report_links = "".join(f'<li><a href="{i["url"]}">{e(i["title"])}</a></li>' for i in INSIGHTS)
     hero, stmt = cp["hero"], cp.get("statement")
@@ -1623,8 +1664,8 @@ def page_about():
 """
 
     faqs = [(q, " ".join(ans)) for q, ans in cp["faq"]]
-    html = head("About | Middle Market | Benchmark International",
-                "About Benchmark International's Middle Market team: sell-side M&A advisory for privately held businesses with $50M–$500M in total enterprise value (TEV) across five industries.", root)
+    html = head("About the Middle Market Team | Benchmark International",
+                "Benchmark International's Middle Market team: sell-side M&A advisory for privately held companies with $50M–$500M in enterprise value across five industries.", root)
     html += header(root)
     html += f"""
 <section class="hero hero--page">
@@ -1669,6 +1710,11 @@ def page_about():
     write("about.html", html, crumbs=[("Middle Market", ""), ("About", "about.html")], schema=[faq_schema(faqs)])
 
 
+AI_BOTS = ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User",
+           "Google-Extended", "Googlebot", "Applebot", "Applebot-Extended", "Bingbot", "Meta-ExternalAgent", "Meta-ExternalFetcher",
+           "Amazonbot", "DuckAssistBot", "MistralAI-User", "CCBot", "cohere-ai")
+
+
 def write_discovery_files():
     """sitemap.xml, robots.txt and llms.txt for search engines and AI assistants (absolute URLs from SITE_URL)."""
     pages = list(dict.fromkeys(SITEMAP + [i["url"] for i in INSIGHTS]))
@@ -1677,7 +1723,7 @@ def write_discovery_files():
     sitemap = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n'
     robots = ("# Search engines and AI assistants are welcome to read and cite this site.\n"
               "User-agent: *\nAllow: /\nDisallow: " + urlparse(SITE_URL).path + "_build/\n\n"
-              + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "PerplexityBot", "Google-Extended", "Applebot-Extended", "Bingbot"))
+              + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in AI_BOTS)
               + f"Sitemap: {SITE_URL}sitemap.xml\n")
     sec = "\n".join(f"- [{x['name']}]({abs_url('industries/' + x['slug'] + '.html')}): {x['short']}" for x in SECTORS)
     def md_link(i):
@@ -1698,6 +1744,7 @@ Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark Int
 - [Transactions]({abs_url('transactions.html')}): selected completed transactions
 - [Insights]({abs_url('insights/index.html')}): quarterly M&A industry reports
 - [Important Disclosures]({abs_url('disclosures.html')})
+- [Full text for AI assistants]({abs_url('llms-full.txt')}): every page's key facts, services, team, industries, and FAQs in one file
 
 ## Industries
 {sec}
@@ -1708,10 +1755,49 @@ Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark Int
 ## Common questions
 {faqs}
 """
-    for name, body in (("sitemap.xml", sitemap), ("robots.txt", robots), ("llms.txt", llms)):
+    for name, body in (("sitemap.xml", sitemap), ("robots.txt", robots), ("llms.txt", llms), ("llms-full.txt", llms_full())):
         with open(os.path.join(SITE, name), "w", encoding="utf-8") as f:
             f.write(body)
         print("wrote", name)
+
+
+def llms_full():
+    """The whole site as one plain Markdown file, so an AI assistant can answer from it without crawling every page."""
+    out = [f"# {ORG_NAME}", "",
+           "> Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M "
+           "in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions.", "",
+           f"Information as of {AS_OF} (updated {SITE_UPDATED}). Source: {SITE_URL}", "", "## Key facts", ""]
+    out += [f"- **{k}:** {v}" for k, v in about_facts()]
+    out += ["", "## Services", ""] + [f"### {n}\n\n{d}\n" for n, d in SERVICES]
+    out += ["## Team", ""]
+    for m in team_members():
+        phone, email = TEAM_CONTACT.get(m["img"], (None, None))
+        contact = " | ".join(x for x in (phone, email) if x)
+        out += [f"### {m['name']}, {m['role'].replace(' | ', ', ')}", ""] + ([contact, ""] if contact else []) + [p + "\n" for p in m["bio"]]
+    out += ["## Industries", ""]
+    for s in SECTORS:
+        rel = f"industries/{s['slug']}.html"
+        cp = pagecopy.load(s["slug"], [x[0] for x in s["segments"]])
+        out += [f"### {s['name']}", "", f"Page: {abs_url(rel)}", "", s["tagline"], "", f"Completed transactions: {s['count']}+ (as of {AS_OF}).", "", "Sectors:", ""]
+        out += [f"- **{seg[0]}:** " + " ".join(cp.get("segments", {}).get(seg[0]) or [seg[1]]) for seg in s["segments"]]
+        if s.get("report"):
+            r = current_report(s["slug"])
+            out += ["", f"Current report: [{r['title']}]({abs_url(r['url'])}) ([PDF]({abs_url(r['pdf'])})). {r['summary']}"]
+        faqs = PAGE_FAQS.get(rel, [])
+        if faqs:
+            out += ["", f"#### {s['name']} M&A: common questions", ""] + [f"**{q}**\n{a}\n" for q, a in faqs]
+        out.append("")
+    out += ["## Industry reports", ""] + [f"- [{i['title']}]({abs_url(i['url'])}) ([PDF]({abs_url(i['pdf'])})): {i['summary']}" for i in INSIGHTS]
+    out += ["", "## Common questions", ""]
+    seen = set()
+    for rel in ("index.html", "about.html"):
+        for q, a in PAGE_FAQS.get(rel, []):
+            if q not in seen:
+                seen.add(q)
+                out.append(f"**{q}**\n{a}\n")
+    out += ["## Important disclosures", "", f"Benchmark International does not provide valuations, appraisals, or fairness opinions. "
+            f"Full disclosures: {abs_url('disclosures.html')}", ""]
+    return "\n".join(out)
 
 
 def page_report_redirects():

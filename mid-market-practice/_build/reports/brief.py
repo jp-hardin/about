@@ -534,8 +534,8 @@ def build_page(prs):
         band = (f'\n<section class="section--dark section--tight">\n  <div class="wrap">\n    {eyebrow}\n'
                 f'    <div class="stats rhero-stats">{stat_html}</div>\n  </div>\n</section>\n')
     seg_html = f'<p class="rsegs">{" &nbsp;·&nbsp; ".join(esc(x) for x in segs)}</p>' if segs else ''
-    desc = f"{NAME} {PERIOD} M&A industry report from Benchmark International's Middle Market team: {lead}"
-    page = site.head(f'{NAME} {PERIOD} M&A Industry Report', desc[:300], root).replace(
+    desc = f"{NAME} {PERIOD} middle market M&A report: {lead}"
+    page = site.head(f'{NAME} {PERIOD} M&A Industry Report | Benchmark International', site.meta_desc(desc, 240), root).replace(
         '</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n'
                    f'<link rel="alternate" type="text/markdown" href="{md_name}" title="{esc(NAME)} {PERIOD} M&amp;A Industry Report (Markdown)">\n</head>')
     page += site.header(root, 'industries')
@@ -568,7 +568,7 @@ def build_page(prs):
         'keywords': ', '.join([f'{NAME} M&A', f'{NAME} mergers and acquisitions', 'middle market', 'valuation multiples', 'sell-side M&A'] + segs),
         'encoding': [{'@type': 'MediaObject', 'contentUrl': site.abs_url(f'insights/{md_name}'), 'encodingFormat': 'text/markdown'}],
         'hasPart': [dict({'@type': 'WebPageElement', 'name': title_case(pg['title']), 'url': site.abs_url(f'insights/{PUBLIC}.html') + f'#p{pg["num"]:02d}'},
-                         **({'description': plain(pg['subtitle'])} if pg['subtitle'] else {})) for pg in pages[1:]],
+                         **({'description': html.unescape(plain(pg['subtitle']))} if pg['subtitle'] else {})) for pg in pages[1:]],
     }
     page = site.report_extras(page, SECTOR, root, extra)
     for bad, why in (('—', 'em dash'), ('Capital Markets', 'old team name'), ('BCM', 'old team name')):
