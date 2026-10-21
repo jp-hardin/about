@@ -104,6 +104,7 @@ h1, h2, h3, h4 { margin: 0 0 16px; line-height: 1.2; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--gold); }
 .nav .nav-phone { color: var(--white); }
 .nav .btn { padding: 11px 20px; color: var(--white); }
+.nav .btn:hover { color: var(--white); }
 .nav-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); margin: 5px 0; transition: .3s; }
 
