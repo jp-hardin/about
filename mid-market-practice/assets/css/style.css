@@ -710,7 +710,7 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 /* Team cards as buttons that open the profile window (original layout) */
 .member-open { display: block; width: 100%; padding: 0; border: 0; background: var(--white); font: inherit; color: inherit; text-align: left; cursor: pointer; }
 .member-open img { display: block; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
-.team-lead .member-open { overflow: hidden; }
+.team-lead .member-open { overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; }
 .team-lead .member-open:hover img { transform: scale(1.03); }
 .member-name { display: block; font-family: var(--font-serif); font-weight: 400; font-size: 1.35rem; margin-bottom: 2px; color: var(--ink); }
 .member .role { display: block; }

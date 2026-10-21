@@ -309,8 +309,8 @@ for _s in SECTORS:
 # Team
 # ─────────────────────────────────────────────────────────────────────────────
 TEAM_LEAD = [
-    ("Jordan Houtz", "Managing Director", "jordan-houtz",
-     ["As a Managing Director, Jordan represents clients with total enterprise values (TEV) ranging from $50 million to $500 million across the United States. He is a seasoned investment banker with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
+    ("Jordan Houtz", "Managing Director | Head of Middle Market", "jordan-houtz",
+     ["As Managing Director and Head of Middle Market, Jordan represents clients with total enterprise values (TEV) ranging from $50 million to $500 million across the United States. He is a seasoned investment banker with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
       "His deep experience on both the buy and sell sides of M&A transactions gives his clients a unique advantage in understanding deal dynamics and achieving their objectives. By leading full-cycle processes from idea and thesis generation through valuation, diligence and negotiation, he stays closely involved in every stage of his clients’ transactions. Jordan builds lasting client relationships and stays focused on the outcomes that matter to them."]),
     ("Jared Hardin", "Managing Director", "jared-hardin",
      ["As Managing Director, Jared is the first team member an owner works with. He walks owners through their options as they consider and plan their next step.",
@@ -392,7 +392,7 @@ TESTIMONIALS = [
 ]
 
 LIBRARY = [
-    ("kp0gV6Dj0_0", "Sell-Side Process", "Before the Sale: What a Sell-Side M&A Process Really Looks Like", "Managing Director Jordan Houtz walks through what a successful sell-side process looks like, how buyers evaluate a business, what drives a premium valuation and what owners should do before going to market."),
+    ("kp0gV6Dj0_0", "Sell-Side Process", "Before the Sale: What a Sell-Side M&A Process Really Looks Like", "Jordan Houtz, Managing Director and Head of Middle Market, walks through what a successful sell-side process looks like, how buyers evaluate a business, what drives a premium valuation and what owners should do before going to market."),
     ("X8a04-Ok6j4", "Growth & Exit Strategy", "Taking Control of Your Growth and Exit Strategy", "Managing Director Jared Hardin discusses taking control of your growth and exit strategy, including the key considerations and the right time to go to market."),
     ("8giQ5YAiCIA", "Webinar", "Selling for Maximum Value", "An M&A expert\u2019s guide to preparation and process: how owners can position their company to achieve the highest value in a sale."),
 ]
@@ -811,7 +811,9 @@ def home_faqs():
          "Benchmark International's Middle Market team represents privately held companies across the United States in sell-side M&A, "
          "from majority and control transactions to strategic partnerships."),
         ("What size companies does the Middle Market team advise?",
-         "The team serves privately held companies with a total enterprise value (TEV) of $50 million to $500 million."),
+         "Our Middle Market team advises privately held businesses, typically with enterprise values of $50 million to $500 million, "
+         "that meet applicable M&A broker exemption requirements, including companies with less than $25 million in annual EBITDA "
+         "or less than $250 million in annual revenue."),
         ("Which industries does the Middle Market team focus on?",
          "Five industries: " + ", ".join(x["name"] for x in SECTORS[:-1]) + " and " + SECTORS[-1]["name"] + "."),
         ("What services does the Middle Market team provide?", "Services include " + svc + "."),
@@ -819,8 +821,8 @@ def home_faqs():
          "The first step is always a confidential conversation about your goals, your company and your options. A senior member of the "
          "Middle Market team sets up a private conversation, then walks you through the paths available, from a full sale to a strategic partnership."),
         ("How large is Benchmark International?",
-         "Benchmark International is the #1 privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables, "
-         "with 15 offices across the Americas, Europe and Africa."),
+         "Headquartered in Tampa, FL, Benchmark International has over 300 employees across 15 global offices in the Americas, Europe and Africa "
+         "and is proudly ranked the #1 global M&A advisor for privately owned businesses (based on PitchBook's Q2 2026 Global League Tables)."),
         ("How do I contact the Middle Market team?", f"Call {PHONE} or email {EMAIL}."),
     ]
 
@@ -943,7 +945,7 @@ def page_home():
 <section class="hero">
   <div class="wrap">
     <p class="eyebrow">Benchmark International · <span class="nowrap">Middle Market</span></p>
-    <h1 class="display">Selling a Business Isn’t the End, <em>It’s a Beginning.</em></h1>
+    <h1 class="display">Your Legacy Is Built. <em>Your Next Chapter Awaits.</em></h1>
     <p class="lead">Maximize your company's value and achieve your goals with the world's #1 privately owned sell-side M&amp;A advisor.</p>
     <div class="btn-row">
       <a class="btn" href="#form">Start the Conversation</a>
@@ -967,6 +969,20 @@ def page_home():
 
 <section class="section section--tight awards-band" id="recognition">
   <div class="wrap"><div class="awards reveal">{awards}</div></div>
+</section>
+
+<section class="section section--paper" id="industries">
+  <div class="wrap">
+    <div class="section-head section-head--split reveal">
+      <div>
+        <p class="eyebrow">Industry Expertise</p>
+        <h2 class="h2">Five Industries. Deep Expertise.</h2>
+        <p class="lead">We focus on five industries where we know the buyers, the valuation drivers and the questions that will come up in diligence.</p>
+      </div>
+      <a class="link-arrow" href="industries/index.html">View all industries</a>
+    </div>
+    <div class="ind-grid reveal">{cards}</div>
+  </div>
 </section>
 
 <section class="section">
@@ -1027,20 +1043,6 @@ def page_home():
       <h2 class="h2">Working With Clients Around the World</h2>
     </div>
     <div class="testimonials">{testimonials}</div>
-  </div>
-</section>
-
-<section class="section" id="industries">
-  <div class="wrap">
-    <div class="section-head section-head--split reveal">
-      <div>
-        <p class="eyebrow">Industry Expertise</p>
-        <h2 class="h2">Five Industries. Deep Expertise.</h2>
-        <p class="lead">We focus on five industries where we know the buyers, the valuation drivers and the questions that will come up in diligence.</p>
-      </div>
-      <a class="link-arrow" href="industries/index.html">View all industries</a>
-    </div>
-    <div class="ind-grid reveal">{cards}</div>
   </div>
 </section>
 
@@ -1147,10 +1149,10 @@ def page_industries():
 <section class="section--dark section--tight">
   <div class="wrap">
     <div class="stats">
-      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused industries</div></div>
-      <div class="stat"><div class="stat-num">{total}+</div><div class="stat-label">Completed transactions across these industries<sup>†</sup></div></div>
-      <div class="stat"><div class="stat-num">{len(TOMBSTONES)}</div><div class="stat-label">Selected transactions featured on this site</div></div>
-      <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Privately owned sell-side M&amp;A advisor worldwide<sup>*</sup></div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused Industries</div></div>
+      <div class="stat"><div class="stat-num">{total}+</div><div class="stat-label">Completed Transactions<sup>†</sup></div></div>
+      <div class="stat"><div class="stat-num">{len(TOMBSTONES)}</div><div class="stat-label">Featured Transactions</div></div>
+      <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Global M&amp;A Advisor to Privately Held Companies<sup>*</sup></div></div>
     </div>
     <p class="note">† Completed transactions tagged to these industries on benchmarkintl.com/about/our-success, as of {AS_OF}. * PitchBook Q2 2026 Global League Tables.</p>
   </div>
@@ -1158,6 +1160,7 @@ def page_industries():
 
 <section class="section">
   <div class="wrap ind-rows">{rows}</div>
+  <div class="wrap"><p class="note">† Completed transactions tagged to each industry on benchmarkintl.com/about/our-success, as of {AS_OF}.</p></div>
 </section>
 """
     html += cta(root)
@@ -1454,7 +1457,7 @@ def page_insights():
   <div class="wrap">
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Insights</div>
     <p class="eyebrow">Insights</p>
-    <h1 class="display">Perspective on the Middle Market</h1>
+    <h1 class="display">Unique Perspectives on the Middle Market</h1>
     <p class="lead">Quarterly industry reports from the Middle Market team on deal activity, valuations and what buyers are paying for across our five industries.</p>
   </div>
 </section>
@@ -1478,7 +1481,7 @@ def page_insights():
   </div>
 </section>
 """
-    html += cta(root, "Want to Talk Through What This Means for Your Business?")
+    html += cta(root, "Curious What This Means for Your Business?")
     html += footer(root)
     reports = {"@type": "ItemList", "name": "Middle Market industry reports", "itemListElement": [
         {"@type": "ListItem", "position": k + 1, "name": i["title"], "url": abs_url(i["url"])} for k, i in enumerate(INSIGHTS)]}
