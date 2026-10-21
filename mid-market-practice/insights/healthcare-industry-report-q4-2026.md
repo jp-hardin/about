@@ -1279,7 +1279,7 @@ Quotations are reproduced as published. The Fierce Healthcare quotation joins tw
 
 The world's leading privately owned sell-side M&A advisor, with its Middle Market team focused on five industries.
 
-The Middle Market team, part of Benchmark International, advises owners of privately held companies across five industries, from majority and control transactions to strategic partnerships.
+The Middle Market team, part of Benchmark International, advises owners of privately held companies across five industries on strategic sales, mergers, and qualifying change-of-control transactions.
 
 #1Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables$50M to $500MTotal enterprise value range the Middle Market team serves5Focused industry groups with dedicated expertise15Global offices across the Americas, Europe and Africa
 RECOGNITION

@@ -1478,7 +1478,7 @@ Quotations are reproduced as published. ARR is annual recurring revenue. EMS is 
 
 The world's leading privately owned sell-side M&A advisor, with a Middle Market team focused on five industries.
 
-Benchmark International's Middle Market team advises owners of privately held companies across five industries, from majority and control transactions to strategic partnerships.
+Benchmark International's Middle Market team advises owners of privately held companies across five industries on strategic sales, mergers, and qualifying change-of-control transactions.
 
 - #1 $50M to $500M 5 15
 
