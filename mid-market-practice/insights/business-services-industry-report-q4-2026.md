@@ -7,7 +7,7 @@ Mergers and acquisitions across commercial, professional and human capital servi
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.pdf
 
-Segments: Commercial & Facility Services; Marketing, Sales & Tech-Enabled Services; Engineering, Architecture & Consulting; Financial & Insurance Services; Staffing & Human Capital
+Segments: Commercial & Facility Services; Engineering, Architecture & Consulting; Financial & Insurance Services; Staffing & Human Capital
 
 ## 1. Industry at a Glance
 
@@ -1533,7 +1533,7 @@ The Middle Market team is the part of Benchmark International that advises owner
 RECOGNITION
 FIVE INDUSTRY GROUPS
 
-**INDUSTRIAL**
+**INDUSTRIALS**
 
 **BUSINESS SERVICES**
 

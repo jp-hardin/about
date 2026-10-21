@@ -1285,7 +1285,7 @@ The Middle Market team, part of Benchmark International, advises owners of priva
 RECOGNITION
 FIVE INDUSTRY GROUPS
 
-**INDUSTRIAL**
+**INDUSTRIALS**
 
 **BUSINESS SERVICES**
 

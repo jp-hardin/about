@@ -598,7 +598,7 @@
   "buyer": "Sentinel Capital Partners",
   "verb": "Acquired By",
   "sector": "business-services",
-  "segment": "Marketing, Sales & Tech-Enabled Services",
+  "segment": "Marketing, Sales & Technology-Enabled Services",
   "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-telmark-sales-solutions-inc-and-market-performance-group/",
   "seller_logo": "assets/img/logos/telmark-c2c3b.png",
   "buyer_logo": "assets/img/logos/sentinel-capital-partners-logo-c05fb.png",
@@ -616,7 +616,7 @@
   "buyer": "Skylight Equity",
   "verb": "Acquired By",
   "sector": "business-services",
-  "segment": "Marketing, Sales & Tech-Enabled Services",
+  "segment": "Marketing, Sales & Technology-Enabled Services",
   "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-infinity-communications-consulting-inc-and-skylight-equity/",
   "seller_logo": "assets/img/logos/infinity-communications-consulting-inc-eb367.png",
   "buyer_logo": "assets/img/logos/skylight-equity-1c9d9.png",
@@ -634,7 +634,7 @@
   "buyer": "10Pearls",
   "verb": "Acquired By",
   "sector": "business-services",
-  "segment": "Marketing, Sales & Tech-Enabled Services",
+  "segment": "Marketing, Sales & Technology-Enabled Services",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-inspirant-group-inc-and-10pearls-llc/",
   "seller_logo": "assets/img/logos/inspirant-5059e.png",
   "buyer_logo": "assets/img/logos/10-pearls-1a543.png",
@@ -652,7 +652,7 @@
   "buyer": "Mod Op",
   "verb": "Acquired By",
   "sector": "business-services",
-  "segment": "Marketing, Sales & Tech-Enabled Services",
+  "segment": "Marketing, Sales & Technology-Enabled Services",
   "link": "https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-digital-prism-advisors-inc-and-mod-op/",
   "seller_logo": "assets/img/logos/dprism-logo-735dc.png",
   "buyer_logo": "assets/img/logos/facebook-modop-logo-4eebc.png",
@@ -670,7 +670,7 @@
   "buyer": "Retail Rex Capital",
   "verb": "Acquired By",
   "sector": "business-services",
-  "segment": "Marketing, Sales & Tech-Enabled Services",
+  "segment": "Marketing, Sales & Technology-Enabled Services",
   "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-total-sales-marketing-inc-and-retail-rex-capital/",
   "seller_logo": "assets/img/logos/total-sales-marketing-e7ee5.png",
   "buyer_logo": "assets/img/logos/retail-rex-logo-e448f.png",
@@ -682,7 +682,7 @@
   "buyer": "Balius Partners",
   "verb": "Acquired By",
   "sector": "business-services",
-  "segment": "Marketing, Sales & Tech-Enabled Services",
+  "segment": "Marketing, Sales & Technology-Enabled Services",
   "link": "https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-of-boostr-llc-and-balius-partners/",
   "seller_logo": "assets/img/logos/boostr-square-logo-48a72.png",
   "buyer_logo": "assets/img/logos/balius-partners-logo-2115b.png",
@@ -1165,7 +1165,7 @@
   "also": [
    {
     "sector": "business-services",
-    "segment": "Marketing, Sales & Tech-Enabled Services"
+    "segment": "Marketing, Sales & Technology-Enabled Services"
    }
   ]
  },

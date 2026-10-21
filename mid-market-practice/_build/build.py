@@ -84,7 +84,7 @@ LEGACY = {
 SECTORS = [
     {
         "slug": "industrial",
-        "name": "Industrial",
+        "name": "Industrials",
         "prose": "industrial markets",           # running-prose name ("valuation in industrial markets")
         "title_in": "Industrial Markets",        # Title Case heading form ("What We're Seeing in Industrial Markets")
         "adj": "industrial",                     # adjective before "transactions"
@@ -135,7 +135,7 @@ SECTORS = [
         "segments": [
             ("Commercial & Facility Services", "Route-based, compliance-driven and contracted services where recurring revenue and density create value.",
              ["Fire protection & life safety", "Managed print & document services", "Testing, inspection & certification", "Security services", "Painting & property maintenance"]),
-            ("Marketing, Sales & Tech-Enabled Services", "Agencies, outsourced sales and technology consultancies that help clients grow, often with long relationships and embedded workflows.",
+            ("Marketing, Sales & Technology-Enabled Services", "Agencies, outsourced sales and technology consultancies that help clients grow, often with long relationships and embedded workflows.",
              ["Outsourced sales & brokerage", "Promotional products", "Digital strategy & consulting", "Education technology consulting", "Display & signage"]),
             ("Engineering, Architecture & Consulting", "Licensed professional-services firms whose talent, backlog and public-sector relationships attract national platforms.",
              ["Civil & transportation engineering", "Architecture", "Surveying & geospatial", "Forensic engineering", "BIM & reality capture"]),
@@ -272,7 +272,7 @@ SECTOR_BY_SLUG = {s["slug"]: s for s in SECTORS}
 # ─────────────────────────────────────────────────────────────────────────────
 INSIGHTS = [
     {"sector": "industrial", "quarter": 4, "year": 2026, "slug": "industrial-industry-report-q4-2026", "legacy": "industrial-q4-2026",
-     "title": "Industrial Q4 2026 M&A Industry Report",
+     "title": "Industrials Q4 2026 M&A Industry Report",
      "summary": "Manufacturing and industrial technology; distribution and services; building products and construction services; energy, power and environmental services; and transportation and logistics: the order books, the deal market and what acquirers are paying for."},
     {"sector": "business-services", "quarter": 4, "year": 2026, "slug": "business-services-industry-report-q4-2026", "legacy": "business-services-q4-2026",
      "title": "Business Services Q4 2026 M&A Industry Report",
@@ -823,16 +823,7 @@ def home_faqs():
          "controlling ownership transfers, strategic acquisitions, and exit planning for privately held companies. Our services span "
          "transaction preparation, valuation analysis, buyer identification, deal structuring, negotiation, and execution, subject to "
          "applicable regulatory requirements."),
-        ("Is Benchmark International's Middle Market team registered with FINRA?",
-         "No. Benchmark International's Middle Market team operates as an independent M&A advisory practice and is not registered as a "
-         "broker-dealer with the Financial Industry Regulatory Authority (FINRA). "
-         "Our team focuses on advising owners of privately held businesses on qualifying mergers, acquisitions, and ownership transitions "
-         "under the federal M&A Broker Exemption established by Section 15(b)(13) of the Securities Exchange Act of 1934. "
-         "This exemption permits eligible M&A advisors to facilitate qualifying change-of-control transactions without federal broker-dealer "
-         "registration, provided the applicable statutory conditions are satisfied. "
-         "Our advisory services are structured around these requirements and applicable state securities laws. We do not provide services "
-         "requiring broker-dealer registration unless conducted through an appropriately registered entity. "
-         "And under this exemption, our teams have completed nearly 1,000 transactions for business owners across the five industries we cover."),
+        next((q, " ".join(ans)) for q, ans in pagecopy.load("about")["faq"] if "FINRA" in q),
         ("How does working with Benchmark International start?",
          "The first step is always a confidential conversation about your goals, your company and your options. A senior member of the "
          "Middle Market team sets up a private conversation, then walks you through the paths available, from a strategic sale to a merger or change-of-control transaction."),
@@ -857,18 +848,18 @@ def sector_faqs(s, buyers):
     n = s["name"]
     segs = [x[0] for x in s["segments"]]
     faqs = [
-        (f"What types of {n.lower()} companies does Benchmark International advise?",
-         f"The Middle Market team advises {n.lower()} companies across {number_word(len(segs))} sectors: " + semi_list(segs) + "."),
-        (f"What do buyers value in {n.lower()} companies?",
+        (f"What types of {s['adj']} companies does Benchmark International advise?",
+         f"The Middle Market team advises {s['adj']} companies across {number_word(len(segs))} sectors: " + semi_list(segs) + "."),
+        (f"What do buyers value in {s['adj']} companies?",
          " ".join(f"{h}: {d}" for h, d in s["value"])),
-        (f"How many {n.lower()} transactions has Benchmark International completed?",
-         f"Benchmark International lists {s['count']}+ completed {n.lower()} transactions on benchmarkintl.com, as of {AS_OF}."),
+        (f"How many {s['adj']} transactions has Benchmark International completed?",
+         f"Benchmark International lists {s['count']}+ completed {s['adj']} transactions on benchmarkintl.com, as of {AS_OF}."),
     ]
     if buyers:
-        faqs.append((f"Who is acquiring {n.lower()} companies?",
+        faqs.append((f"Who is acquiring {s['adj']} companies?",
                      f"Acquirers and investors in Benchmark International's selected {s['adj']} transactions include " + semi_list(buyers[:8]) + "."))
     if s.get("report"):
-        faqs.append((f"Is there a current {n.lower()} M&A market report?",
+        faqs.append((f"Is there a current {s['adj']} M&A market report?",
                      f"Yes. The {current_report(s['slug'])['title']} covers deal activity, valuations and what buyers are paying for, and is free to read online or download as a PDF."))
     return faqs
 
@@ -1149,7 +1140,7 @@ def page_industries():
   </div>
 </article>"""
     html = head("Industries | Middle Market | Benchmark International",
-                "Benchmark International's Middle Market team focuses on five industries: Industrial, Business Services, Consumer, Healthcare and Technology.", root)
+                "Benchmark International's Middle Market team focuses on five industries: Industrials, Business Services, Consumer, Healthcare and Technology.", root)
     html += header(root, "industries")
     html += f"""
 <section class="hero hero--page">
@@ -1238,7 +1229,7 @@ def page_sector(i, s):
     else:
         services = "".join(f'<article class="service reveal"><h3>{e(h)}</h3><p>{e(p)}</p></article>' for h, p in SERVICES)
         services_head = (f'<h2 class="h2">Advisory Built Around Your Goals</h2>'
-                         f'<p class="lead">An exit can take many forms. We help owners of {e(s["name"].lower())} companies choose the path that fits their wealth, family and company goals.</p>')
+                         f'<p class="lead">An exit can take many forms. We help owners of {e(s["adj"])} companies choose the path that fits their wealth, family and company goals.</p>')
     hero = cp.get("hero") or {}
     hero_lead = f'<p class="lead">{e(hero["sub"])}</p>' + "".join(f'<p class="hero-text">{e(x)}</p>' for x in hero["paras"]) if hero.get("sub") else f'<p class="lead">{e(s["tagline"])}</p>'
     if cp.get("overview"):
@@ -1320,7 +1311,7 @@ def page_sector(i, s):
     <div class="section-head reveal">
       <p class="eyebrow">Sector Expertise</p>
       <h2 class="h2">Where We Focus</h2>
-      <p class="lead">We advise {e(s['name'].lower())} companies in {number_word(len(s['segments']))} sectors, including these subsectors:</p>
+      <p class="lead">We advise {e(s['adj'])} companies in {number_word(len(s['segments']))} sectors, including these subsectors:</p>
     </div>
     <div class="segments">{segments}</div>
   </div>

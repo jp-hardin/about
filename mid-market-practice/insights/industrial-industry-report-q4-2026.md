@@ -1,4 +1,4 @@
-# Industrial Q4 2026 M&A Industry Report
+# Industrials Q4 2026 M&A Industry Report
 
 Benchmark International's Middle Market team. October 2026 | Jared Hardin, Managing Director.
 
@@ -1316,7 +1316,7 @@ BENCHMARK INTERNATIONAL
 
 [Benchmark International](https://www.benchmarkintl.com/)  benchmarkintl.com
 
-[Middle Market: Industrial Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html)  jp-hardin.github.io
+[Middle Market: Industrials Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html)  jp-hardin.github.io
 
 PUBLIC COMPANIES AND ECONOMIC TRENDS
 
