@@ -29,7 +29,7 @@ North American electronics manufacturing services bookings rose 53.5% in August,
 
 ## 2. Market Conditions
 
-Six developments are shaping demand, pricing and deal activity across the six sectors as the fourth quarter begins.
+Six developments are shaping demand, pricing, and deal activity across the six sectors as the fourth quarter begins.
 
 - AI infrastructure sets the pace of demand +62.5%
 
@@ -91,7 +91,7 @@ MANAGED IT & CLOUD SERVICES
 
 ACTIVE BUYERS
 
-Evergreen Services Group, The 20 MSP, Integris, Thrive, CompassMSP and Magna5; ePlus and Cognizant among public buyers
+Evergreen Services Group, The 20 MSP, Integris, Thrive, CompassMSP, and Magna5; ePlus and Cognizant among public buyers
 
 LISTED REFERENCE COMPANIES
 
@@ -117,7 +117,7 @@ CYBERSECURITY
 
 ACTIVE BUYERS
 
-LevelBlue, CyberMaxx, A-LIGN and Accenture in services; Palo Alto Networks, Google and ServiceNow in software
+LevelBlue, CyberMaxx, A-LIGN, and Accenture in services; Palo Alto Networks, Google, and ServiceNow in software
 
 LISTED REFERENCE COMPANIES
 
@@ -143,7 +143,7 @@ TELECOM & UCAAS
 
 ACTIVE BUYERS
 
-Verizon, AT&T and T-Mobile with KKR and EQT in fiber; Point Broadband, Ezee Fiber, Vero Fiber, Rightfiber and TDS Telecom regionally
+Verizon, AT&T, and T-Mobile with KKR and EQT in fiber; Point Broadband, Ezee Fiber, Vero Fiber, Rightfiber, and TDS Telecom regionally
 
 LISTED REFERENCE COMPANIES
 
@@ -169,7 +169,7 @@ SYSTEMS INTEGRATION
 
 ACTIVE BUYERS
 
-Pavion, Convergint, Everon, Securitas Technology and Knox Lane in security; 26North in audiovisual; Myriad360 and Net at Work in IT
+Pavion, Convergint, Everon, Securitas Technology, and Knox Lane in security; 26North in audiovisual; Myriad360 and Net at Work in IT
 
 LISTED REFERENCE COMPANIES
 
@@ -197,7 +197,7 @@ ELECTRONICS & HARDWARE
 
 ACTIVE BUYERS
 
-Jabil, Sanmina and Flex among public manufacturers; Transom Capital, Tide Rock, Align Capital Partners and Arcline among sponsors
+Jabil, Sanmina, and Flex among public manufacturers; Transom Capital, Tide Rock, Align Capital Partners, and Arcline among sponsors
 
 LISTED REFERENCE COMPANIES
 
@@ -221,11 +221,11 @@ Keysight
 
 GOVERNMENT TECHNOLOGY
 
-*Budgets for cyber, AI and mission software are rising while award timing and procurement rules shift.*
+*Budgets for cyber, AI, and mission software are rising while award timing and procurement rules shift.*
 
 ACTIVE BUYERS
 
-Leidos, Booz Allen, Parsons and SAIC; sponsor-backed ERT, Xpect Solutions, B&A and Detroit Defense
+Leidos, Booz Allen, Parsons, and SAIC; sponsor-backed ERT, Xpect Solutions, B&A, and Detroit Defense
 
 LISTED REFERENCE COMPANIES
 
@@ -295,7 +295,7 @@ COMMUNICATION COMPANYACQUIRED BYPAVION
 
 ### Pavion acquires Communication Company
 
-Communication Company is a Midwest life safety, security, audiovisual and communications integrator founded in 1976. Pavion is backed by Wind Point Partners; terms were not disclosed ([Pavion](https://www.webull.com/news/15543005417877504)).
+Communication Company is a Midwest life safety, security, audiovisual, and communications integrator founded in 1976. Pavion is backed by Wind Point Partners; terms were not disclosed ([Pavion](https://www.webull.com/news/15543005417877504)).
 
 **WHAT IT SHOWS  **Sponsor-backed security and life safety platforms continue to add regional integrators.
 
@@ -321,7 +321,7 @@ Booz Allen Hamilton
 
 ### Booz Allen closes its $720 million purchase of Ultra I&C Mission Solutions
 
-The business supplies defense software, encryption and edge computing. Large contractors are paying disclosed prices for cyber and software capability with funded backlog ([GovCon Wire](https://www.govconwire.com/articles/booz-allen-720m-ultra-ic-mission-solutions-close)).
+The business supplies defense software, encryption, and edge computing. Large contractors are paying disclosed prices for cyber and software capability with funded backlog ([GovCon Wire](https://www.govconwire.com/articles/booz-allen-720m-ultra-ic-mission-solutions-close)).
 
 **WHAT IT SHOWS  **Prime contractors are paying for software and cyber capability.
 
@@ -341,7 +341,7 @@ MartianCraft
 
 Walnut Capital Partners
 
-[Software design and development for mobile, Mac and backend systems](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-martiancraft-llc-and-walnut-capital-partners/)
+[Software design and development for mobile, Mac, and backend systems](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-martiancraft-llc-and-walnut-capital-partners/)
 
 **MANAGED IT & CLOUD**
 
@@ -371,7 +371,7 @@ Walnut Capital Partners
 
 **CAPCON NETWORKS**
 
-[Dedicated leased lit fiber for schools, hospitals and libraries](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitated-the-transaction-of-em3-networks-llc-and-capcon-networks/)
+[Dedicated leased lit fiber for schools, hospitals, and libraries](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitated-the-transaction-of-em3-networks-llc-and-capcon-networks/)
 
 **TELECOM & UCAAS**
 
@@ -381,7 +381,7 @@ Walnut Capital Partners
 
 **BLUEROCK GLOBAL PRIVATE EQUITY**
 
-[Build-to-print cables, harnesses and electro-mechanical assemblies](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-paragon-manufacturing-corp-and-bluerock-global-private-equity/)
+[Build-to-print cables, harnesses, and electro-mechanical assemblies](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-paragon-manufacturing-corp-and-bluerock-global-private-equity/)
 
 **ELECTRONICS & HARDWARE**
 
@@ -391,7 +391,7 @@ Walnut Capital Partners
 
 **AMTECH DRIVES**
 
-[Instrumentation, calibration and controls integration](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-complete-control-services-inc-and-amtech-drives-inc/)
+[Instrumentation, calibration, and controls integration](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-complete-control-services-inc-and-amtech-drives-inc/)
 
 **ELECTRONICS & HARDWARE**
 
@@ -401,7 +401,7 @@ Walnut Capital Partners
 
 **ZEUS FIRE AND SECURITY**
 
-[Voice and data cabling, audiovisual and security systems](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-clearline-networks-llc-and-zeus-fire-and-security/)
+[Voice and data cabling, audiovisual, and security systems](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-clearline-networks-llc-and-zeus-fire-and-security/)
 
 **SYSTEMS INTEGRATION**
 
@@ -431,7 +431,7 @@ Cemtrex
 
 AI Fire
 
-[Fire alarm, security, access control and video surveillance systems](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-high-tech-solutions-systems-group-inc-and-ai-fire/)
+[Fire alarm, security, access control, and video surveillance systems](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-high-tech-solutions-systems-group-inc-and-ai-fire/)
 
 **SYSTEMS INTEGRATION**
 
@@ -453,7 +453,7 @@ Each tile links to the announcement on benchmarkintl.com. Transactions closed in
 
 ### Who Is Buying
 
-The listed reference companies in each sector, and the private platforms, sponsors and strategic buyers acquiring founder-owned businesses.
+The listed reference companies in each sector, and the private platforms, sponsors, and strategic buyers acquiring founder-owned businesses.
 
 MANAGED IT & CLOUD SERVICES
 LISTED COMPANIES
@@ -782,7 +782,7 @@ Shares rose over the year at 3 of 9 IT services companies, 6 of 8 security compa
 
 ### Enterprise value to trailing EBITDA
 
-Median multiple a year ago, today and over three years, same companies at each point
+Median multiple a year ago, today, and over three years, same companies at each point
 
 Chart data:
 
@@ -910,7 +910,7 @@ ICF
 
 Tyler Technologies
 
-Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5, 6 and 14, 2026, on reported EBITDA. The multiple chart covers the 38 companies with a multiple between zero and 60x at each point (faded marks are the 13 left out); share price change covers all 51. Year-ago multiples are at the quarter end nearest September 30, 2025, or June 30, 2025 for Computacenter, which reports half-yearly.
+Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5, 6, and 14, 2026, on reported EBITDA. The multiple chart covers the 38 companies with a multiple between zero and 60x at each point (faded marks are the 13 left out); share price change covers all 51. Year-ago multiples are at the quarter end nearest September 30, 2025, or June 30, 2025 for Computacenter, which reports half-yearly.
 
 ### Operating Metrics
 
@@ -978,7 +978,7 @@ Chart data:
 | Electronics & Hardware | 3.3% |
 | Government Technology | 10.1% |
 
-Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5, 6 and 14, 2026. Trailing periods end between June and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present, most visibly for security software. Medians cover all listed companies in each sector.
+Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 5, 6, and 14, 2026. Trailing periods end between June and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present, most visibly for security software. Medians cover all listed companies in each sector.
 
 ### What Public Companies Said
 
@@ -1034,7 +1034,7 @@ Jabil
 
 READ-THROUGH
 
-Demand tied to data center build-outs runs through IT solutions, distribution and contract manufacturing alike.
+Demand tied to data center build-outs runs through IT solutions, distribution, and contract manufacturing alike.
 
 SECURITY AND COMMUNICATIONS
 
@@ -1052,7 +1052,7 @@ Palo Alto Networks
 
 RingCentral
 
-[Vlad Shmunis, Founder, Chairman and CEO, RingCentral](https://www.businesswire.com/news/home/20260723424331/en/)
+[Vlad Shmunis, Founder, Chairman, and CEO, RingCentral](https://www.businesswire.com/news/home/20260723424331/en/)
 
 > *“Customers using at least one paid AI product now represent approximately 13% of ARR, having doubled year-over-year.”*
 
@@ -1076,7 +1076,7 @@ CACI
 
 Tyler Technologies
 
-[Lynn Moore, Executive Chair, President and Chief Executive Officer, Tyler Technologies](https://s201.q4cdn.com/385562537/files/doc_financials/2026/q2/99-1-Earnings-Release-6-30-2026-FINAL.pdf)
+[Lynn Moore, Executive Chair, President, and Chief Executive Officer, Tyler Technologies](https://s201.q4cdn.com/385562537/files/doc_financials/2026/q2/99-1-Earnings-Release-6-30-2026-FINAL.pdf)
 
 > *“Public sector demand remains healthy, reflecting sustained modernization priorities for the public sector that translated into record SaaS and total bookings.”*
 
@@ -1245,7 +1245,7 @@ Chart data:
 
 - Since Sep 2021 +45.2%
 
-Copper feeds cabling, power and fiber construction budgets, and it reached a record monthly average in 2026.
+Copper feeds cabling, power, and fiber construction budgets, and it reached a record monthly average in 2026.
 
 ### Private office construction, including data centers
 
@@ -1488,7 +1488,7 @@ Total enterprise value range the Middle Market team serves
 
 Focused industry groups with dedicated sector expertise
 
-Global offices across the Americas, Europe and Africa
+Global offices across the Americas, Europe, and Africa
 
 RECOGNITION
 
@@ -1520,17 +1520,17 @@ Ranking based on PitchBook's Q2 2026 Global League Tables, as published at [benc
 
 Please read these notes together with the report.
 
-> “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
+> “Benchmark International” refers to the Benchmark International group of companies, which provide merger, and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
-Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.
+Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction, and their related persons, or with their competitors, customers, or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.
 
 The distribution of this material in certain jurisdictions may be restricted by law, and accordingly, recipients of this material represent that they are able to receive it without contravention of any registration requirement or other legal restrictions in the jurisdictions in which they reside or in which they conduct business.
 
-This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals or fairness opinions, and does not provide accounting, tax, investment, regulatory or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples and other figures are as publicly reported, and the value of any private company depends on its own circumstances. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness or completeness of the information, opinions or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
+This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals, or fairness opinions, and does not provide accounting, tax, investment, regulatory, or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer, or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports, and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples, and other figures are as publicly reported, and the value of any private company depends on its own circumstances. No representation or warranty, expressed, or implied, is made in relation to the fairness, accuracy, correctness, or completeness of the information, opinions, or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
 
-Company names, logos and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.
+Company names, logos, and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.
 
-This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the “Order”); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as “Relevant Persons”). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.
+This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the “Order”); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as “Relevant Persons”). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment, or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.
 
 *Information as of October 5, 2026.*
 

@@ -11,7 +11,7 @@ Segments: Food & Beverage; Consumer Brands & Products; Foodservice & Distributio
 
 ## 1. Industry at a Glance
 
-Buyers of consumer businesses are paying for brands that have held price and volume, for companies that sell through more than one channel and for operators with room to add distribution or locations. They have stayed active while tariffs, fuel and interest rates have each changed what a buyer treats as normal earnings.
+Buyers of consumer businesses are paying for brands that have held price and volume, for companies that sell through more than one channel and for operators with room to add distribution or locations. They have stayed active while tariffs, fuel, and interest rates have each changed what a buyer treats as normal earnings.
 
 **KEY INSIGHTS**
 
@@ -27,7 +27,7 @@ E-commerce reached 17.1% of retail sales in the second quarter, and YETI grew wh
 
 Add-ons made up about 75% of US private equity buyouts in the second quarter. Boyd Group’s sales rose 29.9%, mostly from new locations. Operators with room to add sites draw buyers.
 
-**04  Tariffs, fuel and rates are being repriced**
+**04  Tariffs, fuel, and rates are being repriced**
 
 Diesel averaged $6.29 a gallon in September, and the federal funds target now sits at 3.75% to 4.00%. Owners who show landed cost by period and fuel recovery by contract protect their earnings figure.
 
@@ -41,7 +41,7 @@ Four developments shaping the market, each with what a listed company’s manage
 
 WHAT IT MEANS FOR OWNERS
 
-*Buyers are paying for brands and operators that have held price and volume, that sell through more than one channel and that have room to add distribution or locations.*
+*Buyers are paying for brands and operators that have held price and volume, that sell through more than one channel, and that have room to add distribution or locations.*
 
 An owner who can show price increases by product or service line, with unit volume and customer retention beside them, gives a buyer the evidence that supports a higher valuation.
 
@@ -55,7 +55,7 @@ E-commerce reached $340.2 billion in the second quarter, or 17.1% of retail sale
 
 ### Strategic acquirers are reshaping portfolios at scale
 
-Kimberly-Clark, McCormick and Sysco have committed more than $120 billion to three transactions since November 2025 ([Kenvue](https://www.sec.gov/Archives/edgar/data/55785/000110465925105220/tm2530027d1_ex99-1.htm); [Unilever’s food business](https://www.foodbusinessnews.net/articles/30071-mccormick-to-acquire-unilevers-food-business); [Jetro Restaurant Depot](https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/03-30-2026-113036743)). The largest companies are also selling and separating businesses: General Mills completed the sale of its Brazil business on September 2, Keurig Dr Pepper is preparing to separate in early 2027, and Middleby spun off its food processing business in July ([General Mills](https://www.sec.gov/Archives/edgar/data/0000040704/000162828026063141/a20260923ex99.htm); [Keurig Dr Pepper](https://www.sec.gov/Archives/edgar/data/0001418135/000141813526000048/ex991-keurigdrpepperreport.htm); [Middleby](https://www.sec.gov/Archives/edgar/data/0000769520/000076952026000044/middex991er-q22026.htm)).
+Kimberly-Clark, McCormick, and Sysco have committed more than $120 billion to three transactions since November 2025 ([Kenvue](https://www.sec.gov/Archives/edgar/data/55785/000110465925105220/tm2530027d1_ex99-1.htm); [Unilever’s food business](https://www.foodbusinessnews.net/articles/30071-mccormick-to-acquire-unilevers-food-business); [Jetro Restaurant Depot](https://investors.sysco.com/annual-reports-and-sec-filings/news-releases/2026/03-30-2026-113036743)). The largest companies are also selling and separating businesses: General Mills completed the sale of its Brazil business on September 2, Keurig Dr Pepper is preparing to separate in early 2027, and Middleby spun off its food processing business in July ([General Mills](https://www.sec.gov/Archives/edgar/data/0000040704/000162828026063141/a20260923ex99.htm); [Keurig Dr Pepper](https://www.sec.gov/Archives/edgar/data/0001418135/000141813526000048/ex991-keurigdrpepperreport.htm); [Middleby](https://www.sec.gov/Archives/edgar/data/0000769520/000076952026000044/middex991er-q22026.htm)).
 
 ### Multi-site platforms keep adding locations
 
@@ -71,7 +71,7 @@ Matt Reintjes, Chair of the Board and Chief Executive Officer, YETI
 
 > *“We remain confident in the strategic benefits of the proposed combination with Unilever Foods and have made substantial progress on integration planning.”*
 
-Brendan M. Foley, Chairman, President and CEO, McCormick
+Brendan M. Foley, Chairman, President, and CEO, McCormick
 
 > *“We also successfully completed the conversion of Joe Hudson’s 258 locations during the quarter, accelerating synergy realization, which contributed to the strength in our profitability.”*
 
@@ -79,15 +79,15 @@ Brian Kaner, President & CEO, Boyd Group
 
 Company figures and quotations are from quarterly earnings releases filed between July 30 and October 1, 2026, and quotations are reproduced as published. Store brand share is Circana data for the six months to June 14, 2026. Platform location and acquisition counts are from the linked announcements.
 
-### Tariffs, Fuel and Financing
+### Tariffs, Fuel, and Financing: Three Costs Buyers Are Repricing
 
-Tariffs, fuel and interest rates have each moved in the past year, and each changes what a buyer will treat as normal earnings.
+Tariffs, fuel, and interest rates have each moved in the past year, and each changes what a buyer will treat as normal earnings.
 
-A consumer company that reaches the market in the next year will present earnings that passed through three tariff regimes, a fuel shock and the first increase in the federal funds rate since 2023. Buyers are rebuilding each of those costs period by period before they settle on the earnings they will pay for.
+A consumer company that reaches the market in the next year will present earnings that passed through three tariff regimes, a fuel shock, and the first increase in the federal funds rate since 2023. Buyers are rebuilding each of those costs period by period before they settle on the earnings they will pay for.
 
 The effect differs from one company to the next. YETI recorded [a $45.6 million net benefit](https://sgbonline.com/yeti-boosts-fy-eps-outlook-after-q2-earnings-beat-sales-climb-9-percent/) from tariff refunds in its second quarter and Walmart said it [reinvested its refunds into price](https://www.sec.gov/Archives/edgar/data/0000104169/000010416926000145/earningsreleasefy27q2.htm), while [91% of the foodservice equipment manufacturers](https://nafem.org/2026/03/11/advocacy-issues-survey-pressure-is-the-new-normal/) surveyed by their trade association reported negative effects from tariffs and 78% said they were passing the cost on to customers.
 
-*An owner who can hand a buyer landed cost by period, fuel recovery by contract and a clear account of how the business is financed shortens diligence and protects the earnings figure the price is built on.*
+*An owner who can hand a buyer landed cost by period, fuel recovery by contract, and a clear account of how the business is financed shortens diligence and protects the earnings figure the price is built on.*
 
 WHAT BUYERS ARE REBUILDING
 
@@ -97,7 +97,7 @@ Tariffs
 
 The Supreme Court held on February 20 that the International Emergency Economic Powers Act [does not authorize tariffs. A temporary 10% tariff followed](https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf), and since July 24 [Section 301 tariffs of 10% to 12.5% have applied to 60](https://www.wiley.law/alert-New-Forced-Labor-Tariffs-Imposed-on-60-US-Trading-Partners) trading partners. Section 232 duties stayed in place, including [25% on upholstered furniture](https://info.expeditors.com/newsflash/white-house-delays-increase-of-section-232-tariffs-on-furniture-and-cabinets), and duty-free treatment for parcels under $800 [remains suspended](https://www.strtrade.com/trade-news-resources/str-trade-report/trade-report/february/de-minimis-suspension-remains-in-place).
 
-**WHAT BUYERS ASK FOR**  Landed cost under each regime, the status of any refund claim and the sourcing alternatives the company has already qualified.
+**WHAT BUYERS ASK FOR**  Landed cost under each regime, the status of any refund claim, and the sourcing alternatives the company has already qualified.
 
 02
 
@@ -105,7 +105,7 @@ Fuel
 
 On-highway diesel averaged $6.29 a gallon in September against $3.75 a year earlier ([FRED](https://fred.stlouisfed.org/series/GASDESM)). The Energy Information Administration’s October outlook expects retail diesel to average [about $4.50 next year](https://www.eia.gov/outlooks/steo/), which would still be well above the price distributors and route-based service companies paid a year ago.
 
-**WHAT BUYERS ASK FOR**  Which customer contracts carry fuel surcharges or cost escalators, how quickly they reset and how much of the increase the company has recovered.
+**WHAT BUYERS ASK FOR**  Which customer contracts carry fuel surcharges or cost escalators, how quickly they reset, and how much of the increase the company has recovered.
 
 03
 
@@ -113,7 +113,7 @@ Financing
 
 The Federal Reserve [raised its target range](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm) to 3.75% to 4.00% on September 16 and projects a policy rate of [4.1% at the end of 2026 and 2027](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm). Spreads on direct loans for buyouts [widened by roughly 25 to 50 basis points](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf) in the second quarter, and earn-outs appeared in 24% of 2025 transactions with a median equal to 34% of the closing payment ([SRS Acquiom study, as summarized by Fasken](https://www.fasken.com/en/knowledge/2026/05/private-ma-deal-trends-to-watch-key-takeaways-from-srs-acquioms-2026-study)).
 
-**WHAT BUYERS ASK FOR**  How much of the price is paid in cash at closing, how much is contingent and how much is rolled into the buyer’s equity.
+**WHAT BUYERS ASK FOR**  How much of the price is paid in cash at closing, how much is contingent, and how much is rolled into the buyer’s equity.
 
 THE REPRICING IN FOUR FIGURES
 
@@ -133,13 +133,13 @@ Store brand share of units sold in the first half of 2026
 
 The largest packaged food companies report flat or falling volume, and they are selling slow-growing brands and buying growth and capacity from smaller companies ([General Mills](https://investors.generalmills.com/press-releases/press-release-details/2026/General-Mills-Reports-Fiscal-2027-First-quarter-Results-and-Reaffirms-Full-year-Outlook/default.aspx); [Conagra](https://www.foodbusinessnews.net/articles/31105-conagra-reviews-brand-portfolio-in-turnaround-push)).
 
-Growth is in protein, zero-sugar beverages, supplements and foodservice, and Procter & Gamble agreed to buy Thorne in a deal [reportedly valued at $3.8 billion](https://www.nutraingredients.com/Article/2026/08/04/pg-to-acquire-thorne-in-premium-wellness-play/).
+Growth is in protein, zero-sugar beverages, supplements, and foodservice, and Procter & Gamble agreed to buy Thorne in a deal [reportedly valued at $3.8 billion](https://www.nutraingredients.com/Article/2026/08/04/pg-to-acquire-thorne-in-premium-wellness-play/).
 
 National distributors are growing case volume with independent restaurants, up 5.1% at [US Foods](https://www.sec.gov/Archives/edgar/data/0001665918/000166591826000043/usfd06272026ex991.htm) and 5.8% organically at [Performance Food Group](https://www.sec.gov/Archives/edgar/data/0001618673/000119312526345718/pfgc-ex99_1.htm).
 
 WHO IS BUYING
 
-Family-owned strategics such as Rich Products, Sargento and C.H. Guenther, bakery consolidators, private equity platforms and European strategics entering the United States.
+Family-owned strategics such as Rich Products, Sargento, and C.H. Guenther, bakery consolidators, private equity platforms, and European strategics entering the United States.
 
 BENCHMARK INTERNATIONAL
 
@@ -153,7 +153,7 @@ BENCHMARK INTERNATIONAL
 
 Growth in both prestige and mass beauty sales in the first half of 2026
 
-Beauty, personal care, over-the-counter health and pet products drew a large share of this year’s brand acquisitions, and beauty and pet spending are still growing ([Circana](https://www.circana.com/post/us-beauty-industry-posts-solid-first-half-growth-as-fragrance-and-skincare-lead-across-prestige-and); [American Pet Products Association](https://americanpetproducts.org/news/u.s.-pet-industry-reaches-158-billion-in-2025-poised-for-continued-growth-in-2026)).
+Beauty, personal care, over-the-counter health, and pet products drew a large share of this year’s brand acquisitions, and beauty and pet spending are still growing ([Circana](https://www.circana.com/post/us-beauty-industry-posts-solid-first-half-growth-as-fragrance-and-skincare-lead-across-prestige-and); [American Pet Products Association](https://americanpetproducts.org/news/u.s.-pet-industry-reaches-158-billion-in-2025-poised-for-continued-growth-in-2026)).
 
 Dollar growth overstates unit demand: non-edible packaged goods rose 3.1% in dollars and fell 2.2% in units in June ([Circana](https://chainstoreage.com/circana-retail-spending-remained-resilient-june-heres-what-drove-it)).
 
@@ -161,7 +161,7 @@ Importers have carried three tariff regimes since April 2025, and packaging prod
 
 WHO IS BUYING
 
-Strategics such as Procter & Gamble, Clorox and Henkel, consumer private equity firms such as Advent, TSG and TowerBrook, and brand-management firms.
+Strategics such as Procter & Gamble, Clorox, and Henkel, consumer private equity firms such as Advent, TSG, and TowerBrook, and brand-management firms.
 
 BENCHMARK INTERNATIONAL
 
@@ -179,7 +179,7 @@ Operators are spending carefully: sales of equipment and supplies through manufa
 
 Franchisee distress is the credit risk in the channel. A 314-unit Wendy’s franchisee [filed for Chapter 11 in September](https://www.nrn.com/restaurant-franchising/giant-wendy-s-franchisee-meritage-hospitality-group-files-for-bankruptcy) after store-level EBITDA fell 48%.
 
-Parts, repair, ice and refreshment route businesses changed hands all year ([Parts Town](https://www.fermag.com/articles/parts-town-gains-tech-with-acquisition-of-86-repairs/); [Easy Ice](https://www.fermag.com/articles/easy-ice-strengthens-footprint-with-acquisition/)).
+Parts, repair, ice, and refreshment route businesses changed hands all year ([Parts Town](https://www.fermag.com/articles/parts-town-gains-tech-with-acquisition-of-86-repairs/); [Easy Ice](https://www.fermag.com/articles/easy-ice-strengthens-footprint-with-acquisition/)).
 
 WHO IS BUYING
 
@@ -205,7 +205,7 @@ Housing-linked demand softened through the summer, and growth in home improvemen
 
 WHO IS BUYING
 
-Sponsor-backed platforms in car wash, collision, roofing, pool and garage door service, public acquirers such as Rollins and Boyd Group, and regional strategics.
+Sponsor-backed platforms in car wash, collision, roofing, pool, and garage door service, public acquirers such as Rollins and Boyd Group, and regional strategics.
 
 BENCHMARK INTERNATIONAL
 
@@ -221,7 +221,7 @@ Benchmark International counts are from the firm’s transaction records as of O
 
 Acquirers disclosed a price in most of these transactions and a multiple of earnings in only a few.
 
-Buyers in foodservice and consumer services paid for store networks, subscription members and recurring customer contracts.
+Buyers in foodservice and consumer services paid for store networks, subscription members, and recurring customer contracts.
 
 | Announced | Target and acquirer | Business and terms | Stated value | Value to revenue | Value to earnings |
 | --- | --- | --- | --- | --- | --- |
@@ -444,7 +444,7 @@ Private equity and private investment firms
 
 **AFFORDABLE GARAGE DOOR**
 
-[Garage door sales, installation and repair, IN and IL](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-affordable-garage-doors-inc-and-asap-garage-door-repair/)
+[Garage door sales, installation, and repair, IN and IL](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-affordable-garage-doors-inc-and-asap-garage-door-repair/)
 
 [ACQUIRED BY A.S.A.P. Garage Door Repair](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-affordable-garage-doors-inc-and-asap-garage-door-repair/)
 
@@ -476,7 +476,7 @@ Private equity and private investment firms
 
 **NOVA SEAFOOD**
 
-[Seafood importer, processor and distributor, Portland, ME](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-nova-seafood-ltd-and-highwood-harbor-llc/)
+[Seafood importer, processor, and distributor, Portland, ME](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-nova-seafood-ltd-and-highwood-harbor-llc/)
 
 [ACQUIRED BY Highwood Harbor](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-nova-seafood-ltd-and-highwood-harbor-llc/)
 
@@ -494,11 +494,11 @@ Each tile links to the announcement on benchmarkintl.com, and Benchmark Internat
 
 ### Who Is Buying
 
-Founder- and family-owned consumer businesses draw bids from operating companies, sponsor-backed platforms and first-time investors in a category.
+Founder- and family-owned consumer businesses draw bids from operating companies, sponsor-backed platforms, and first-time investors in a category.
 
 ### Public and large private strategics
 
-Buying brands, capacity and distribution to fill category gaps faster than they could build them.
+Buying brands, capacity, and distribution to fill category gaps faster than they could build them.
 
 ACTIVE IN THE 2026 MARKET
 
@@ -520,7 +520,7 @@ ACQUIRERS OF BENCHMARK INTERNATIONAL CLIENTS
 
 Burris Logistics
 
-### Family-owned, regional and specialist strategics
+### Family-owned, regional, and specialist strategics
 
 Operating companies that fund purchases from cash flow and are less sensitive to the cost of debt than a sponsor financing a new platform.
 
@@ -586,7 +586,7 @@ Diversified Foodservice Supply
 
 ### Private equity firms and family offices investing directly
 
-Investors making a first purchase in a category. Founders or families kept a stake at Salt & Stone, Tapatio and Nugredient Solutions.
+Investors making a first purchase in a category. Founders or families kept a stake at Salt & Stone, Tapatio, and Nugredient Solutions.
 
 ACTIVE IN THE 2026 MARKET
 
@@ -706,11 +706,11 @@ WHAT THE MARKET IS PRICING
 
 35 of 57listed consumer companies trade below their share price of a year ago11.4xmedian enterprise value to trailing EBITDA today, against 14.5x a year ago9 of 9peer groups carry a lower median multiple of EBITDA than a year ago
 
-Medians of 57 listed companies in nine peer groups, shown in [Food and Beverage Companies](#p15), [Consumer Brands and Foodservice Companies](#p16) and [Restaurant, Services and Retail Companies](#p17). Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil. EBITDA is as reported. The snacks median sits between Hershey, down 18%, and three smaller companies down 58% to 78%. Multiples cover the 55 companies with comparable readings on both dates.
+Medians of 57 listed companies in nine peer groups, shown in [Food and Beverage Companies](#p15), [Consumer Brands and Foodservice Companies](#p16) and [Public Company Metrics: Restaurants, Services, and Retail](#p17). Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, and October 14 for Rentokil. EBITDA is as reported. The snacks median sits between Hershey, down 18%, and three smaller companies down 58% to 78%. Multiples cover the 55 companies with comparable readings on both dates.
 
 ### Revenue Growth
 
-Snack, restaurant and consumer services companies grew fastest in their latest fiscal year, and packaged food revenue has declined three years running.
+Snack, restaurant, and consumer services companies grew fastest in their latest fiscal year, and packaged food revenue has declined three years running.
 
 ### Food & Beverage
 
@@ -957,9 +957,9 @@ Household and personal care companies hold the highest multiples of the nine gro
 
 Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; share prices are dated October 2 to 7. Multiples and margins use reported trailing EBITDA. n.m. marks a figure that is not comparable and is left out of the median; n.a. is not available. Year-ago multiples are four quarter-ends earlier, and multiple medians use companies with both readings.
 
-### Restaurant, Services and Retail Companies
+### Public Company Metrics: Restaurants, Services, and Retail
 
-Rollins, Planet Fitness and Boyd Group shares have each fallen by about half in a year while their revenue kept growing.
+Rollins, Planet Fitness, and Boyd Group shares have each fallen by about half in a year while their revenue kept growing.
 
 | COMPANY | TICKER | MARKET CAP ($B) | ENTERPRISE VALUE ($B) | SHARE PRICE, 52 WEEKS | EV / REVENUE | EV / EBITDA TODAY | EV / EBITDA A YEAR AGO | FORWARD P/E | REVENUE GROWTH, TRAILING | EBITDA MARGIN | REVENUE GROWTH, CURRENT YEAR EST. |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -993,7 +993,7 @@ Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026; 
 
 ## 6. Indicators to Watch
 
-Spending is rising in dollars while sentiment falls, food manufacturers’ selling prices are flat and diesel costs two thirds more than a year ago.
+Spending is rising in dollars while sentiment falls, food manufacturers’ selling prices are flat, and diesel costs two thirds more than a year ago.
 
 **Retail and food services sales**
 
@@ -1753,13 +1753,13 @@ These disclosures apply to this report and to the Middle Market industry reports
 
 > “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
-Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.
+Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers, or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.
 
 The distribution of this material in certain jurisdictions may be restricted by law, and accordingly, recipients of this material represent that they are able to receive it without contravention of any registration requirement or other legal restrictions in the jurisdictions in which they reside or in which they conduct business.
 
-This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals or fairness opinions, and does not provide accounting, tax, investment, regulatory or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness or completeness of the information, opinions or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
+This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals, or fairness opinions, and does not provide accounting, tax, investment, regulatory, or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer, or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports, and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples, and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness, or completeness of the information, opinions, or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
 
-Company names, logos and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.
+Company names, logos, and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.
 
 This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the “Order”); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as “Relevant Persons”). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.
 
@@ -1963,6 +1963,6 @@ hormelfoods.com
 
 [PCT Top 100](https://giecdn.blob.core.windows.net/fileuploads/document/2026/05/11/2026-top-100-poster.pdf)  pctonline.com
 
-**How the figures were gathered.** Listed-company figures are from StockAnalysis and use reported results. Index series are from FRED, the US Census Bureau and the University of Michigan. Benchmark International figures are from the firm’s transaction records as of October 1, 2026. No investment bank is used as a source. Subscription and registration sources that would add depth, including GF Data, PitchBook, S&P Capital IQ and Circana, are listed in a separate one-page companion.
+**How the figures were gathered.** Listed-company figures are from StockAnalysis and use reported results. Index series are from FRED, the US Census Bureau, and the University of Michigan. Benchmark International figures are from the firm’s transaction records as of October 1, 2026. No investment bank is used as a source. Subscription and registration sources that would add depth, including GF Data, PitchBook, S&P Capital IQ, and Circana, are listed in a separate one-page companion.
 
 Figures were gathered from these sources between October 2 and October 14, 2026.

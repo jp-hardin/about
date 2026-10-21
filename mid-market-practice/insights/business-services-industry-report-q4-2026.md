@@ -2,7 +2,7 @@
 
 Benchmark International's Middle Market team. October 2026 | Jared Hardin, Managing Director.
 
-Mergers and acquisitions across commercial, professional and human capital services.
+Mergers and acquisitions across commercial, professional, and human capital services.
 
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.pdf
@@ -31,7 +31,7 @@ Completed middle-market deals averaged 7.0x EBITDA in the second quarter, and 87
 
 ## 2. Market Conditions
 
-Six developments are shaping demand, pricing and deal activity across the five sectors as the fourth quarter begins.
+Six developments are shaping demand, pricing, and deal activity across the five sectors as the fourth quarter begins.
 
 ### Inspection-driven revenue draws the most active buyers
 
@@ -71,7 +71,7 @@ Commercial premiums fell 2% on average in the second quarter, with property down
 
 Median staffing revenue grew 5% in August, the highest reading since late 2022 ([Staffing Industry Analysts](https://www.staffingindustry.com/editorial/it-staffing-report/it-staffing-revenue-up-5-at-the-median-in-pulse-survey)). Temporary help employment remains 21% below its March 2022 peak ([BLS via FRED](https://fred.stlouisfed.org/series/TEMPHELPS)).
 
-*Skilled trades, engineering and healthcare placements are drawing acquirers.*
+*Skilled trades, engineering, and healthcare placements are drawing acquirers.*
 
 ### Advertising is growing while AI changes what agencies sell
 
@@ -79,14 +79,14 @@ Median staffing revenue grew 5% in August, the highest reading since late 2022 (
 
 US advertising revenue is forecast to grow 9.6% in 2026 ([MediaPost](https://www.mediapost.com/publications/article/417751/ad-outlook-composite-improves-on-mw-revisions.html)). Marketing budgets hold at 7.8% of company revenue, with 15.3% of those budgets directed to AI ([Marketing Dive](https://finance.yahoo.com/sectors/technology/articles/ai-remains-top-priority-cmos-102100803.html)).
 
-*Retained clients, first-party data and measurable outcomes hold their value.*
+*Retained clients, first-party data, and measurable outcomes hold their value.*
 
 WHAT IT MEANS
 FOR OWNERS
 
 Buyers pay most readily for revenue that repeats under contract. Completed middle-market transactions averaged 7.0x EBITDA in the second quarter ([GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)), the median multiple on sales of $5 million to $50 million reached 5.8x ([IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf)), and 87% of sales above $5 million drew three or more offers ([IBBA and M&A Source release](https://www.webull.com/news/15462423712777216)).
 
-Figures are the latest published as of October 7, 2026, and each is linked to its source. The 10-year Treasury figure is the monthly average for September 2026. EBITDA is earnings before interest, taxes, depreciation and amortization.
+Figures are the latest published as of October 7, 2026, and each is linked to its source. The 10-year Treasury figure is the monthly average for September 2026. EBITDA is earnings before interest, taxes, depreciation, and amortization.
 
 ## 3. Sector by Sector
 
@@ -104,11 +104,11 @@ Recurring monthly revenue at the 100 largest security dealers rose 7% to $740 mi
 
 ACTIVE BUYERS
 
-Pye-Barker, APi Group, AI Fire and Cintas in fire and safety; Allied Universal in guarding; DEX Imaging and UBEO in office technology; SGS and TIC Solutions in testing.
+Pye-Barker, APi Group, AI Fire, and Cintas in fire and safety; Allied Universal in guarding; DEX Imaging and UBEO in office technology; SGS and TIC Solutions in testing.
 
 WHAT BUYERS REWARD
 
-Inspection, monitoring and service contracts that renew each year, and licenses held by the company.
+Inspection, monitoring, and service contracts that renew each year, and licenses held by the company.
 
 MARKETING, SALES & TECH-ENABLED SERVICES
 
@@ -120,11 +120,11 @@ US internet advertising revenue reached $294.6 billion in 2025, up 13.9% ([IAB a
 
 ACTIVE BUYERS
 
-Sponsor-backed agency platforms such as OneMagnify, Power Digital and Wpromote; Publicis and Havas; Accenture and Cognizant; HALO and Proforma in promotional products.
+Sponsor-backed agency platforms such as OneMagnify, Power Digital, and Wpromote; Publicis and Havas; Accenture and Cognizant; HALO and Proforma in promotional products.
 
 WHAT BUYERS REWARD
 
-Retained client relationships, depth in one vertical, proprietary data and a team beyond the founder.
+Retained client relationships, depth in one vertical, proprietary data, and a team beyond the founder.
 
 ENGINEERING, ARCHITECTURE & CONSULTING
 
@@ -140,15 +140,15 @@ Bernhard Capital Partners; Ardurra, owned by Littlejohn & Co.; Salas O'Brien; SA
 
 WHAT BUYERS REWARD
 
-Funded backlog of a year or more, licensed staff and a second generation of principals.
+Funded backlog of a year or more, licensed staff, and a second generation of principals.
 
 ACROSS ALL FIVE SECTORS
 
 ### Five tests buyers apply
 
-- 1 Revenue that repeats under contract Service agreements, retainers and renewals.
+- 1 Revenue that repeats under contract Service agreements, retainers, and renewals.
 
-- 2 Licensed, certified or tenured people Credentials held by the company.
+- 2 Licensed, certified, or tenured people Credentials held by the company.
 
 - 3 Management beyond the owner Leaders who hold the client relationships.
 
@@ -164,7 +164,7 @@ Managing general agents wrote $108.7 billion of premium in 2025, up 17.8% ([Risk
 
 ACTIVE BUYERS
 
-Aon, Gallagher, Inszone, EPIC, King Risk Partners and World Insurance Associates in brokerage; Hightower and Mercer Advisors in wealth.
+Aon, Gallagher, Inszone, EPIC, King Risk Partners, and World Insurance Associates in brokerage; Hightower and Mercer Advisors in wealth.
 
 WHAT BUYERS REWARD
 
@@ -180,11 +180,11 @@ US staffing sales were $113.5 billion in 2025, down 8.5% ([ASA](https://american
 
 ACTIVE BUYERS
 
-Korn Ferry, Aerotek, ALKU, CHG Healthcare and Airswift, with sponsor-backed specialists in skilled trades and engineering.
+Korn Ferry, Aerotek, ALKU, CHG Healthcare, and Airswift, with sponsor-backed specialists in skilled trades and engineering.
 
 WHAT BUYERS REWARD
 
-Specialty placements, gross margin held through the downturn and direct client relationships.
+Specialty placements, gross margin held through the downturn, and direct client relationships.
 
 Active buyers are drawn from transactions announced between October 2025 and October 2026. Company names are the property of their owners and are shown for identification.
 
@@ -196,13 +196,13 @@ INDUSTRY FEATURE
 
 ### Why fire and life safety has the most active acquirers
 
-Pye-Barker alone bought 79 fire and security companies in the 18 months to June 2026, and APi Group, Sciens Building Solutions and AI Fire are buying alongside it. Three features of the work explain the interest.
+Pye-Barker alone bought 79 fire and security companies in the 18 months to June 2026, and APi Group, Sciens Building Solutions, and AI Fire are buying alongside it. Three features of the work explain the interest.
 
 1
 
 **The work is contracted or mandated**
 
-Inspection, testing and monitoring repeat on a schedule, so the revenue continues when new construction slows.
+Inspection, testing, and monitoring repeat on a schedule, so the revenue continues when new construction slows.
 
 2
 
@@ -259,7 +259,7 @@ BUYERTARGET (LINKED)RECENT FIRE AND SECURITY TRANSACTIONS
 
 [Union AlarmTronic](https://pyebarkerfs.com/news/pye-barker-fire-safety-acquires-union-alarmtronic-llc-continuing-security-alarm-service-expansion-in-the-northeast/)
 
-Family-owned alarm, access control and video company, New Jersey
+Family-owned alarm, access control, and video company, New Jersey
 
 Sep 2026
 
@@ -282,7 +282,7 @@ Purchase prices were not disclosed for these transactions. Benchmark Internation
 WHAT A BUYER
 WILL ASK
 
-An owner in this field should expect to be asked what share of revenue comes from inspection, monitoring and service agreements, whether the licenses are held by the company or by the owner personally, and how long the technicians have been with the business.
+An owner in this field should expect to be asked what share of revenue comes from inspection, monitoring, and service agreements, whether the licenses are held by the company or by the owner personally, and how long the technicians have been with the business.
 
 Listed multiples were retrieved on October 7, 2026, and use reported EBITDA. Rollins is a pest control company and is included as a route-based comparison. Company names are the property of their owners.
 
@@ -304,7 +304,7 @@ Cintas
 
 BUSINESS OVERVIEW
 
-FPS Technologies designs, installs and maintains fire protection and safety systems from Oklahoma City and provides emergency service around the clock.
+FPS Technologies designs, installs, and maintains fire protection and safety systems from Oklahoma City and provides emergency service around the clock.
 
 THE BUYER
 
@@ -328,7 +328,7 @@ AI Fire
 
 BUSINESS OVERVIEW
 
-Fire Systems Technology is a full-service fire sprinkler contractor in Arkansas that installs, inspects, maintains and renovates systems.
+Fire Systems Technology is a full-service fire sprinkler contractor in Arkansas that installs, inspects, maintains, and renovates systems.
 
 THE BUYER
 
@@ -351,7 +351,7 @@ AI Fire
 
 BUSINESS OVERVIEW
 
-High Tech Solutions - Systems Group designs, installs and services special systems for customers in Montana and Wyoming.
+High Tech Solutions - Systems Group designs, installs, and services special systems for customers in Montana and Wyoming.
 
 THE BUYER
 
@@ -367,7 +367,7 @@ WHAT THE THREE SALES HAD IN COMMON
 
 ### Service alongside installation
 
-Each business maintained, inspected or serviced the systems it installed, which gave the buyer continuing work with the same customers.
+Each business maintained, inspected, or serviced the systems it installed, which gave the buyer continuing work with the same customers.
 
 ### A defined home region
 
@@ -392,7 +392,7 @@ PYE-BARKER FIRE & SAFETY
 
 ### Pye-Barker adds a family-owned alarm company in New Jersey
 
-Union AlarmTronic provides alarm, access control and video systems. The purchase follows 22 acquisitions by Pye-Barker in the first half of 2026 and 57 in 2025 across fire and security ([Pye-Barker](https://pyebarkerfs.com/news/pye-barker-fire-safety-acquires-union-alarmtronic-llc-continuing-security-alarm-service-expansion-in-the-northeast/)).
+Union AlarmTronic provides alarm, access control, and video systems. The purchase follows 22 acquisitions by Pye-Barker in the first half of 2026 and 57 in 2025 across fire and security ([Pye-Barker](https://pyebarkerfs.com/news/pye-barker-fire-safety-acquires-union-alarmtronic-llc-continuing-security-alarm-service-expansion-in-the-northeast/)).
 
 **WHAT IT SHOWS** Family-owned alarm and fire companies with monitoring revenue continue to find a buyer quickly.
 
@@ -431,7 +431,7 @@ INSZONE INSURANCE SERVICES
 
 ### Inszone acquires a three-generation agency in Tulsa
 
-Harris Insurance Services was founded in 1925 in West Tulsa, Oklahoma ([Insurance Business](https://www.insurancebusinessmag.com/us/news/mergers-acquisitions/inszone-snaps-up-centuryold-tulsa-agency-in-august-deal-run-586995.aspx)). King Risk Partners, EPIC and World Insurance Associates each bought a long-established agency in the weeks that followed ([Insurance Journal](https://www.insurancejournal.com/magazines/mag-business-moves/2026/10/05/887584.htm)).
+Harris Insurance Services was founded in 1925 in West Tulsa, Oklahoma ([Insurance Business](https://www.insurancebusinessmag.com/us/news/mergers-acquisitions/inszone-snaps-up-centuryold-tulsa-agency-in-august-deal-run-586995.aspx)). King Risk Partners, EPIC, and World Insurance Associates each bought a long-established agency in the weeks that followed ([Insurance Journal](https://www.insurancejournal.com/magazines/mag-business-moves/2026/10/05/887584.htm)).
 
 **WHAT IT SHOWS** Multi-generation agencies are selling to consolidators while premium rates soften.
 
@@ -446,7 +446,7 @@ VERIWORKS
 
 LaborWorx supplies skilled trades for data center construction ([Staffing Industry Analysts](https://www.staffingindustry.com/editorial/industrial-staffing-report/veriworks-entering-data-center-construction-staffing-with-laborworx-acquisition)). In September, the 2026 forecast for industrial staffing revenue was raised to 7% growth from 1% ([SIA forecast](https://www.staffingindustry.com/editorial/industrial-staffing-report/industrial-staffing-forecast-revised-to-7-growth-from-1-)).
 
-**WHAT IT SHOWS** Skilled trades tied to data center, power and factory construction are drawing buyers.
+**WHAT IT SHOWS** Skilled trades tied to data center, power, and factory construction are drawing buyers.
 
 - JUNE 2026 STAFFING & HUMAN CAPITAL
 AMSACQUIRED
@@ -479,7 +479,7 @@ FPS Technologies
 
 Cintas
 
-[Fire protection and safety systems design, installation and service](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-fps-technologies-inc-and-cintas-corporation/)
+[Fire protection and safety systems design, installation, and service](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-fps-technologies-inc-and-cintas-corporation/)
 
 **COMMERCIAL & FACILITY**
 
@@ -529,7 +529,7 @@ Walnut Capital Partners
 
 **RTM ENGINEERING CONSULTANTS**
 
-[Mechanical, electrical and plumbing engineering, Northern Kentucky](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-engineered-building-systems-and-rtm-engineering-consultants/)
+[Mechanical, electrical, and plumbing engineering, Northern Kentucky](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-engineered-building-systems-and-rtm-engineering-consultants/)
 
 **ENGINEERING & ARCHITECTURE**
 
@@ -569,7 +569,7 @@ Beacon Software
 
 **PHENNA GROUP**
 
-[Inspection, testing and quality control engineering](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-a-transaction-between-briggs-engineering-testing-and-phenna-group/)
+[Inspection, testing, and quality control engineering](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-a-transaction-between-briggs-engineering-testing-and-phenna-group/)
 
 **COMMERCIAL & FACILITY**
 
@@ -595,7 +595,7 @@ Each tile links to the announcement on benchmarkintl.com. Twelve of the 44 named
 
 ### Who Is Buying
 
-The listed reference companies in each sector, and the platforms, sponsors and strategic buyers acquiring founder-owned businesses.
+The listed reference companies in each sector, and the platforms, sponsors, and strategic buyers acquiring founder-owned businesses.
 
 COMMERCIAL & FACILITY SERVICES
 LISTED COMPANIES
@@ -831,7 +831,7 @@ Shares rose over the year at 6 of 11 commercial and facility, 3 of 9 marketing, 
 
 ### Enterprise value to trailing EBITDA
 
-Median multiple a year ago, today and over three years, same companies at each point
+Median multiple a year ago, today, and over three years, same companies at each point
 
 Chart data:
 
@@ -869,7 +869,7 @@ STAFFING & HUMAN CAPITAL
 
 [Kforce](https://stockanalysis.com/stocks/kfrc/statistics/) **17.9x** | [TriNet](https://stockanalysis.com/stocks/tnet/statistics/) **13.1x** | [Barrett (BBSI)](https://stockanalysis.com/stocks/bbsi/statistics/) **12.2x** | [Randstad](https://stockanalysis.com/quote/ams/RAND/statistics/) **10.8x** | [ManpowerGroup](https://stockanalysis.com/stocks/man/statistics/) **9.1x** | [Korn Ferry](https://stockanalysis.com/stocks/kfy/statistics/) **8.8x** | [AMN Healthcare](https://stockanalysis.com/stocks/amn/statistics/) **5.7x** | [TrueBlue](https://stockanalysis.com/stocks/tbi/statistics/) **n/m** | [Robert Half](https://stockanalysis.com/stocks/rhi/statistics/) **n/m** | [Insperity](https://stockanalysis.com/stocks/nsp/statistics/) **n/m**
 
-Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, with share prices dated September 15 to October 7. Multiples use reported EBITDA. The chart covers the 36 companies with a current multiple under 50x, a year-ago multiple and quarter-end history. The mark n/m identifies 9 companies whose multiple is above 50x, unavailable or inconsistent on the source.
+Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 7, 2026, with share prices dated September 15 to October 7. Multiples use reported EBITDA. The chart covers the 36 companies with a current multiple under 50x, a year-ago multiple, and quarter-end history. The mark n/m identifies 9 companies whose multiple is above 50x, unavailable, or inconsistent on the source.
 
 ### Operating and Valuation Metrics
 
@@ -977,7 +977,7 @@ CONTRACTED AND INSPECTION-DRIVEN SERVICES
 
 **Russ Becker**, President and Chief Executive Officer, [APi Group](https://www.sec.gov/Archives/edgar/data/0001796209/000162828026050806/apg-20260630xexx991.htm)
 
-Credited inspection, service and monitoring revenue, together with healthy project work, for double-digit organic growth, and pointed to a record backlog above $5 billion.
+Credited inspection, service, and monitoring revenue, together with healthy project work, for double-digit organic growth, and pointed to a record backlog above $5 billion.
 
 **Scott Salmirs**, President and Chief Executive Officer, [ABM Industries](https://www.sec.gov/Archives/edgar/data/0000771497/000119312526384364/abm-ex99_1.htm)
 
@@ -985,7 +985,7 @@ Said aviation and manufacturing and distribution led organic growth, and that de
 
 **Jennifer Scanlon**, President and CEO, [UL Solutions](https://www.ul.com/news/ul-solutions-inc-reports-strong-second-quarter-2026-results)
 
-Described record revenue, strong cash flow and wider margins, and said the company is well positioned for the second half of 2026.
+Described record revenue, strong cash flow, and wider margins, and said the company is well positioned for the second half of 2026.
 
 **Scott Patterson**, Chief Executive Officer, [FirstService](https://www.sec.gov/Archives/edgar/data/0001637810/000117184326004850/exh_991.htm)
 
@@ -1015,7 +1015,7 @@ Attributed a strong quarter mainly to US federal and international markets, each
 
 READ-THROUGH
 
-Power, water and infrastructure work is filling backlogs, and buyers are paying for the licensed staff who deliver it.
+Power, water, and infrastructure work is filling backlogs, and buyers are paying for the licensed staff who deliver it.
 
 HIRING AND CLIENT BUDGETS
 
@@ -1039,7 +1039,7 @@ READ-THROUGH
 
 Staffing demand is returning, and marketing clients are concentrating spend where results can be measured.
 
-Figures are from each earnings release, linked from the company name. Commentary is summarized in our own words. Stantec and Willdan are on net revenue, Korn Ferry is on fee revenue, and Crawford is computed from stated revenue. Omnicom, Tetra Tech and Baldwin state no comparable change and are not charted.
+Figures are from each earnings release, linked from the company name. Commentary is summarized in our own words. Stantec and Willdan are on net revenue, Korn Ferry is on fee revenue, and Crawford is computed from stated revenue. Omnicom, Tetra Tech, and Baldwin state no comparable change and are not charted.
 
 ## 6. Indicators to Watch
 
@@ -1529,7 +1529,7 @@ The world's leading privately owned sell-side M&A advisor, with its Middle Marke
 
 The Middle Market team is the part of Benchmark International that advises owners of privately held companies across five industries on strategic sales, mergers, and qualifying change-of-control transactions.
 
-#1Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables$50M to $500MTotal enterprise value range that the Middle Market team serves5Focused industry groups with dedicated expertise15Global offices across the Americas, Europe and Africa
+#1Privately owned sell-side M&A advisor worldwide, based on PitchBook's Q2 2026 Global League Tables$50M to $500MTotal enterprise value range that the Middle Market team serves5Focused industry groups with dedicated expertise15Global offices across the Americas, Europe, and Africa
 RECOGNITION
 FIVE INDUSTRY GROUPS
 
@@ -1553,13 +1553,13 @@ Please read these notes together with the report.
 
 > “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
-Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.
+Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers, or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction.
 
 The distribution of this material in certain jurisdictions may be restricted by law, and accordingly, recipients of this material represent that they are able to receive it without contravention of any registration requirement or other legal restrictions in the jurisdictions in which they reside or in which they conduct business.
 
-This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals or fairness opinions, and does not provide accounting, tax, investment, regulatory or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness or completeness of the information, opinions or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
+This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals, or fairness opinions, and does not provide accounting, tax, investment, regulatory, or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer, or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports, and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples, and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness, or completeness of the information, opinions, or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
 
-Company names, logos and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.
+Company names, logos, and trademarks referenced in this material are the property of their respective owners and are used for identification only. Their use does not imply any affiliation with or endorsement by those owners.
 
 This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the “Order”); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as “Relevant Persons”). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.
 
