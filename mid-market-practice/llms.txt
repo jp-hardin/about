@@ -11,6 +11,7 @@ Information as of October 2026. Contact: 813-771-6675, mmt@benchmarkintl.com. Pa
 - [Transactions](https://jp-hardin.github.io/about/mid-market-practice/transactions.html): selected completed transactions
 - [Insights](https://jp-hardin.github.io/about/mid-market-practice/insights/index.html): quarterly M&A industry reports
 - [Important Disclosures](https://jp-hardin.github.io/about/mid-market-practice/disclosures.html)
+- [Full text for AI assistants](https://jp-hardin.github.io/about/mid-market-practice/llms-full.txt): every page's key facts, services, team, industries, and FAQs in one file
 
 ## Industries
 - [Industrials](https://jp-hardin.github.io/about/mid-market-practice/industries/industrial.html): Manufacturing, industrial distribution, building products, energy and environmental services, and transportation.
