@@ -759,3 +759,12 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 @media (min-width: 1081px) { .services.services--5 { grid-template-columns: repeat(3, 1fr); } }
 .service h3 a { color: inherit; text-decoration: none; }
 .service h3 a:hover { color: var(--gold-deep); }
+
+/* ── Home hero video ── */
+.hero--video { background: var(--ink); }
+.hero-video { position: absolute; inset: 0; overflow: hidden; background: center/cover no-repeat; }
+html:not(.js) .hero-video { background-image: url('../video/home-hero-1.jpg'); }
+.hero-video video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0; transition: opacity 1.2s ease; }
+.hero-video video.is-on { opacity: 1; }
+.hero--video::after { background: linear-gradient(90deg, rgba(20,18,18,.9) 0%, rgba(20,18,18,.65) 50%, rgba(20,18,18,.35) 100%), linear-gradient(0deg, rgba(20,18,18,.5), transparent 50%); }
+@media (prefers-reduced-motion: reduce) { .hero-video video { display: none; } }

@@ -102,4 +102,39 @@
       if (ev.clientX < r.left || ev.clientX > r.right || ev.clientY < r.top || ev.clientY > r.bottom) d.close();
     });
   });
+  // Home hero: short clips of the firm video, shuffled on every visit and crossfaded into each other
+  var hv = document.querySelector('.hero-video[data-clips]');
+  if (hv) {
+    var n = parseInt(hv.dataset.clips, 10), order = [], k;
+    for (k = 1; k <= n; k++) order.push(k);
+    for (k = n - 1; k > 0; k--) { var r = Math.floor(Math.random() * (k + 1)), t = order[k]; order[k] = order[r]; order[r] = t; }
+    hv.style.backgroundImage = 'url(assets/video/home-hero-' + order[0] + '.jpg)';
+    var vids = hv.querySelectorAll('video');
+    var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var ext = vids[0].canPlayType('video/mp4; codecs="avc1.640028"') ? '.mp4' : '.webm';
+    if (!still && vids.length === 2) {
+      var pos = 0, cur = 0, fading = false;
+      var load = function (v, i) { v.src = 'assets/video/home-hero-' + order[i % n] + ext; v.load(); };
+      var next = function () {
+        var a = vids[cur], b = vids[1 - cur];
+        fading = true;
+        b.currentTime = 0;
+        var p = b.play();
+        if (p && p.catch) p.catch(function () {});
+        b.classList.add('is-on'); a.classList.remove('is-on');
+        cur = 1 - cur; pos++;
+        setTimeout(function () { a.pause(); load(a, pos + 1); fading = false; }, 1300);
+      };
+      vids.forEach(function (v) {
+        v.addEventListener('timeupdate', function () {
+          if (v === vids[cur] && !fading && v.duration && v.currentTime > v.duration - 1.3) next();
+        });
+        v.addEventListener('ended', function () { if (v === vids[cur] && !fading) next(); });
+      });
+      load(vids[0], 0); load(vids[1], 1);
+      vids[0].classList.add('is-on');
+      var p0 = vids[0].play();
+      if (p0 && p0.catch) p0.catch(function () {});
+    }
+  }
 })();
