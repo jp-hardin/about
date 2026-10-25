@@ -988,7 +988,13 @@ def page_home():
                 "Sell-side M&A advisory for owners of privately held companies with $50M–$500M in enterprise value: strategic sales, mergers, and change-of-control transactions.", root)
     html += header(root)
     html += f"""
-<section class="hero">
+<section class="hero hero--video">
+  <div class="hero-video" aria-hidden="true" style="background-image:url('assets/video/home-hero-poster.jpg')">
+    <video autoplay muted loop playsinline preload="auto" poster="assets/video/home-hero-poster.jpg" width="1280" height="720">
+      <source src="assets/video/home-hero.mp4" type="video/mp4">
+      <source src="assets/video/home-hero.webm" type="video/webm">
+    </video>
+  </div>
   <div class="wrap">
     <p class="eyebrow">Benchmark International · <span class="nowrap">Middle Market</span></p>
     <h1 class="display">Your Legacy Is Built. <em>Your Next Chapter Awaits.</em></h1>
