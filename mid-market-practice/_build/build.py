@@ -39,9 +39,6 @@ PARENT_ORG = {"@type": "Organization", "@id": "https://www.benchmarkintl.com/#or
               "url": "https://www.benchmarkintl.com/", "numberOfEmployees": {"@type": "QuantitativeValue", "minValue": 300},
               "address": {"@type": "PostalAddress", "streetAddress": "4030 W Boy Scout Blvd, Suite 500", "addressLocality": "Tampa",
                           "addressRegion": "FL", "postalCode": "33607", "addressCountry": "US"}}
-# Home hero background: assets/video/home-hero-<n>.mp4/.webm/.jpg, short cuts of the Benchmark International
-# home page video, played in a shuffled order that changes on every visit (assets/js/main.js).
-HERO_CLIPS = 6
 REPORT_DATE = "2026-10"       # publication month of the current industry reports (ISO 8601)
 
 # Important Disclosures: shown on disclosures.html and printed as the last page of every industry report PDF
@@ -991,11 +988,7 @@ def page_home():
                 "Sell-side M&A advisory for owners of privately held companies with $50M–$500M in enterprise value: strategic sales, mergers, and change-of-control transactions.", root)
     html += header(root)
     html += f"""
-<section class="hero hero--video">
-  <div class="hero-video" aria-hidden="true" data-clips="{HERO_CLIPS}">
-    <video muted playsinline preload="auto" width="1280" height="720"></video>
-    <video muted playsinline preload="auto" width="1280" height="720"></video>
-  </div>
+<section class="hero">
   <div class="wrap">
     <p class="eyebrow">Benchmark International · <span class="nowrap">Middle Market</span></p>
     <h1 class="display">Your Legacy Is Built. <em>Your Next Chapter Awaits.</em></h1>
