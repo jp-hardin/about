@@ -1,0 +1,33 @@
+name: MMT server folder list
+
+# One-off check: logs in to the MMT web host over SFTP and lists its folders,
+# so we know where the site root is before setting up the deploy.
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/mmt-website-expansion-kepooc]
+    paths: [.github/workflows/mmt-server-list.yml]
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check secrets
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_USER: ${{ secrets.SFTP_USER }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+        run: |
+          for v in SFTP_HOST SFTP_USER SFTP_PASSWORD; do
+            [ -n "${!v}" ] || { echo "::error::Secret $v is not set"; exit 1; }
+          done
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+      - name: List folders
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_USER: ${{ secrets.SFTP_USER }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+        run: |
+          lftp -e "set sftp:auto-confirm yes; set net:max-retries 2; set net:timeout 20; pwd; ls -la; find -d 3 .; bye" \
+            -u "$SFTP_USER,$SFTP_PASSWORD" "sftp://$SFTP_HOST:22" | head -300
