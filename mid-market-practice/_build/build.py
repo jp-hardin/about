@@ -267,6 +267,11 @@ SECTORS = [
 ]
 SECTOR_BY_SLUG = {s["slug"]: s for s in SECTORS}
 
+# Industry reports are kept off the site until the final versions are ready. While this is False the build writes
+# no Insights page, report pages, PDFs or old report addresses, removes any already in the site folder, and drops
+# every link, button, sitemap entry and llms.txt line that points to them. Set True and rebuild the reports to publish.
+REPORTS_LIVE = False
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Insights: quarterly industry reports. Add a new entry each quarter; the newest
 # report per industry becomes "Current" and older ones move to the archive.
@@ -305,9 +310,11 @@ def current_report(slug):
     return max(reports, key=lambda i: (i["year"], i["quarter"])) if reports else None
 
 
+PUBLISHED_REPORTS = INSIGHTS if REPORTS_LIVE else []
+
 for _s in SECTORS:
     _cur = current_report(_s["slug"])
-    if _cur:
+    if _cur and REPORTS_LIVE:
         _s["report"] = (f"{_cur['period']} Industry Report", _cur["url"])
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -411,10 +418,51 @@ PODCAST = [
     ("W92GtOXmD90", "Owner Story", "Keith Marshall on Opportunity and M&A", "The founder of Solution Matrix traces the company from a home-based start to a manufacturing business, the role his family played along the way, and the sale through Benchmark International to a buyer who could carry it forward."),
     ("JgZd56mMlmQ", "Deal Terms", "Doug Starcher on Simplifying M&A Legal Terms", "A managing partner at Nelson Mullins with more than 35 years in M&A explains the terms every owner will meet in a sale, including letters of intent, representations and warranties, indemnification, and working capital."),
 ]
+# Publish dates, lengths and thumbnails for the video structured data on the home page, from Vimeo and the
+# YouTube channel feed: id -> (upload date, seconds or None, thumbnail). Videos without a known publish date
+# are left out of the structured data (Google requires one); add the date here to include them.
+VIDEO_META = {
+    "158933030": ("2016-03-14", 278, "https://i.vimeocdn.com/video/1779468038-e74874803dca2e4d662a6c8c3cc2ba2df0d91cdec7f13cdef664a57c5ec41643-d_1280x720"),
+    "254578384": ("2018-02-06", 336, "https://i.vimeocdn.com/video/1779468455-52833ecf156d84bb56c9a95e614c6042b0115521d446977671b5309e3b452a7b-d_1280x720"),
+    "696225328": ("2022-04-05", 273, "https://i.vimeocdn.com/video/1779460963-61b4433ae2550784bac866e2fd3eca6853d78670781ddcf470096ecffd64b5e2-d_1280x720"),
+    "766180085": ("2022-11-01", 521, "https://i.vimeocdn.com/video/1779543341-6ae8f38987238880dcf8845aaf3dd9650b28e94cdefa87f6dcc0e944299b30a6-d_1280x720"),
+    "736906177": ("2022-08-05", 216, "https://i.vimeocdn.com/video/1779465411-5d28fd45412a975cc54e0500d3026d7bb79805da1cba4ed4ecb5cc04c1423e30-d_1280x720"),
+    "08LRm0acEhs": ("2026-09-02", None, "https://i.ytimg.com/vi/08LRm0acEhs/hqdefault.jpg"),
+    "W92GtOXmD90": ("2026-10-07", None, "https://i.ytimg.com/vi/W92GtOXmD90/hqdefault.jpg"),
+    "JgZd56mMlmQ": ("2026-08-12", None, "https://i.ytimg.com/vi/JgZd56mMlmQ/hqdefault.jpg"),
+}
+
+
+def video_schema():
+    """VideoObject entries for the client stories, CEO Library and podcast videos shown on the home page."""
+    vids = [(v, t, t, f"https://player.vimeo.com/video/{v}", f"https://vimeo.com/{v}") for v, _, _, t in STORIES[:4]]
+    vids += [(v, t, d, f"https://www.youtube.com/embed/{v}", f"https://www.youtube.com/watch?v={v}") for v, _, t, d in LIBRARY + PODCAST]
+    out = []
+    for vid, name, desc, embed, url in vids:
+        if vid not in VIDEO_META:
+            continue
+        date, secs, thumb = VIDEO_META[vid]
+        o = {"@type": "VideoObject", "name": name, "description": desc, "uploadDate": date, "thumbnailUrl": thumb,
+             "embedUrl": embed, "url": url, "publisher": {"@id": SITE_URL + "#org"}}
+        if secs:
+            o["duration"] = f"PT{secs // 60}M{secs % 60}S"
+        out.append(o)
+    return out
+
+
 PODCAST_LINKS = [
     ("Spotify", "https://open.spotify.com/show/4tH5twLR8zllxpeQqS9vgR"),
     ("Apple Podcasts", "https://podcasts.apple.com/us/podcast/closing-remarks/id1896060877"),
     ("YouTube", "https://www.youtube.com/playlist?list=PLY23_cDjMExKHyUNVI5rD8B24wzgK5RnC"),
+]
+
+# Award badges on the home page (assets/img/awards/award-<n>.png): (alt text, award name, awarded by).
+AWARDS = [
+    ("The M&A Advisor: Investment Banking Firm of the Year", "Investment Banking Firm of the Year", "The M&A Advisor"),
+    ("PitchBook: #1 Sell-Side Exclusive M&A Advisor in the World", "#1 Sell-Side Exclusive M&A Advisor in the World", "PitchBook"),
+    ("LSEG: #1 Privately-Held M&A Advisor Worldwide", "#1 Privately-Held M&A Advisor Worldwide", "LSEG"),
+    ("DealMakers: First in Mergers & Acquisitions (Unlisted Deals), Investment Advisers by Deal Flow",
+     "First in Mergers & Acquisitions (Unlisted Deals), Investment Advisers by Deal Flow", "DealMakers"),
 ]
 
 TOMBSTONES = json.load(open(os.path.join(HERE, "tombstones.json"), encoding="utf-8"))
@@ -444,8 +492,11 @@ def number_word(k):
     return words[k] if 0 <= k < len(words) else str(k)
 
 
+FONTS = "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+
+
 def head(title, desc, root, canonical=""):
-    desc = meta_desc(desc, 240)
+    desc = meta_desc(desc, 160)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -461,7 +512,9 @@ def head(title, desc, root, canonical=""):
 <link rel="icon" href="{root}assets/img/brand/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="{FONTS}">
+<link rel="stylesheet" href="{FONTS}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{FONTS}"></noscript>
 <link rel="stylesheet" href="{root}assets/css/style.css?v={_asset_version('assets/css/style.css')}">
 </head>
 <body>
@@ -472,6 +525,7 @@ def head(title, desc, root, canonical=""):
 def header(root, current=""):
     def cur(k):
         return ' aria-current="page"' if k == current else ""
+    insights_link = f'      <a href="{root}insights/index.html"{cur("insights")}>Insights</a>\n' if REPORTS_LIVE else ""
     return f"""<header class="site-header">
   <div class="wrap">
     <a class="brand" href="{root}index.html" aria-label="Benchmark International Middle Market home">
@@ -483,8 +537,7 @@ def header(root, current=""):
       <a href="{root}industries/index.html"{cur('industries')}>Industries</a>
       <a href="{root}transactions.html"{cur('transactions')}>Transactions</a>
       <a href="{root}index.html#team"{cur('team')}>Team</a>
-      <a href="{root}insights/index.html"{cur('insights')}>Insights</a>
-      <a href="{root}index.html#library"{cur('library')}>CEO Library</a>
+{insights_link}      <a href="{root}index.html#library"{cur('library')}>CEO Library</a>
       <a class="nav-phone" href="{PHONE_HREF}">{PHONE}</a>
       <a class="btn" href="{root}index.html#form">Start the Conversation</a>
     </nav>
@@ -510,7 +563,7 @@ def footer(root):
     sectors = "".join(f'<li><a href="{root}industries/{s["slug"]}.html">{e(s["name"])}</a></li>' for s in SECTORS)
     sectors += f'<li><a href="{root}industries/index.html">All Industries</a></li>'
     pages = (f'<li><a href="{root}about.html">About</a></li><li><a href="{root}transactions.html">Transactions</a></li><li><a href="{root}index.html#team">Team</a></li>'
-             f'<li><a href="{root}insights/index.html">Insights</a></li><li><a href="{root}index.html#library">CEO Library</a></li><li><a href="{root}index.html#form">Contact</a></li>')
+             + (f'<li><a href="{root}insights/index.html">Insights</a></li>' if REPORTS_LIVE else "") + f'<li><a href="{root}index.html#library">CEO Library</a></li><li><a href="{root}index.html#form">Contact</a></li>')
     return f"""</main>
 <footer class="site-footer">
   <div class="wrap">
@@ -608,14 +661,29 @@ def cta(root, title="It All Starts With a Conversation", form=False, sub="", par
 """
 
 
+_SIZES = {}
+
+
+def img_size(rel):
+    """width="…" height="…" for an image in the site folder, so the page keeps its layout while images load."""
+    if rel not in _SIZES:
+        try:
+            from PIL import Image
+            with Image.open(os.path.join(SITE, rel)) as im:
+                _SIZES[rel] = f'width="{im.width}" height="{im.height}"'
+        except Exception:
+            _SIZES[rel] = ""
+    return _SIZES[rel]
+
+
 def tombstone(t, root, show_sector=False):
     text = e(f"{t['seller']} {t['buyer']} {t['sector_name']} {t.get('segment', '')} {t.get('desc', '')}".lower())
     if t.get("image"):
         face = f'<div class="tomb-face tomb-face--img"><img src="{root}{t["image"]}" alt="{e(t["seller"])} {e(t["verb"].lower())} {e(t["buyer"])}" loading="lazy" width="200" height="200"></div>'
     else:
-        face = (f'<div class="tomb-face"><img src="{root}{t["seller_logo"]}" alt="{e(t["seller"])}" loading="lazy">'
+        face = (f'<div class="tomb-face"><img src="{root}{t["seller_logo"]}" alt="{e(t["seller"])}" loading="lazy" {img_size(t["seller_logo"])}>'
                 f'<span class="tomb-verb">{e(t["verb"])}</span>'
-                f'<img src="{root}{t["buyer_logo"]}" alt="{e(t["buyer"])}" loading="lazy"></div>')
+                f'<img src="{root}{t["buyer_logo"]}" alt="{e(t["buyer"])}" loading="lazy" {img_size(t["buyer_logo"])}></div>')
     badge = '<span class="tomb-badge">Featured</span>' if t.get("featured") else ""
     desc = f'<p class="tomb-desc">{e(t["desc"])}</p>' if t.get("desc") else ""
     names = [t["sector_name"]] + [SECTOR_BY_SLUG[x["sector"]]["name"] for x in t.get("also", [])]
@@ -738,7 +806,7 @@ def team_dialog(m, root):
   <div class="team-dialog-head"><h3 id="{did}-name">{e(m['name'])}</h3><p class="team-title">{e(m['role'])}</p></div>
   <div class="team-dialog-body">
     <div class="team-dialog-left">
-      <img src="{root}assets/img/team/{m['img']}.jpg" alt="{e(m['name'])}" loading="lazy" width="480" height="480">
+      <img src="{root}assets/img/team/{m['img']}.jpg" alt="{e(member_alt(m))}" loading="lazy" width="480" height="480">
       <ul class="team-contact">
         <li><small>{"Phone" if phone else "Team Phone"}</small>{phone_html}</li>
         <li><small>{"Email" if email else "Team Email"}</small>{email_html}</li>
@@ -750,15 +818,19 @@ def team_dialog(m, root):
 </dialog>"""
 
 
+def member_alt(m):
+    return f"{m['name']}, {m['role'].replace(' | ', ', ')}, Benchmark International"
+
+
 def team_html(root, lead_only=False):
     """Leadership cards and the support-team row; clicking anyone opens their profile window."""
     people = team_members(lead_only)
     lead = "".join(f"""<button type="button" class="member member-open reveal" data-dialog="tm-{m['img']}" aria-haspopup="dialog">
-  <img src="{root}assets/img/team/{m['img']}.jpg" alt="{e(m['name'])}" loading="lazy" width="480" height="480">
+  <img src="{root}assets/img/team/{m['img']}.jpg" alt="{e(member_alt(m))}" loading="lazy" width="480" height="480">
   <span class="member-body"><span class="member-name">{e(m['name'])}</span><span class="role">{e(m['role'])}</span><span class="member-link">View Profile</span></span>
 </button>""" for m in people if m["group"] == "leadership")
     support = "".join(f"""<button type="button" class="member member-open" data-dialog="tm-{m['img']}" aria-haspopup="dialog">
-  <img src="{root}assets/img/team/{m['img']}.jpg" alt="{e(m['name'])}" loading="lazy" width="120" height="120">
+  <img src="{root}assets/img/team/{m['img']}.jpg" alt="{e(member_alt(m))}" loading="lazy" width="120" height="120">
   <span class="member-body"><span class="member-name">{e(m['name'])}</span><span class="role">{e(m['role'])}</span></span>
 </button>""" for m in people if m["group"] != "leadership")
     dialogs = "".join(team_dialog(m, root) for m in people)
@@ -796,7 +868,7 @@ def org_schema():
         "parentOrganization": PARENT_ORG, "telephone": "+1-" + PHONE, "email": EMAIL, "address": PARENT_ORG["address"],
         "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "telephone": "+1-" + PHONE, "email": EMAIL, "areaServed": "US", "availableLanguage": "English"},
         "slogan": "Your Legacy Is Built. Your Next Chapter Awaits.",
-        "award": "#1 global M&A advisor for privately owned businesses (PitchBook Q2 2026 Global League Tables)",
+        "award": ["#1 global M&A advisor for privately owned businesses (PitchBook Q2 2026 Global League Tables)"] + [f"{n} ({by})" for _, n, by in AWARDS],
         "areaServed": {"@type": "Country", "name": "United States"},
         "knowsAbout": ["Sell-side M&A", "Mergers and acquisitions advisory", "Controlling ownership transactions", "Exit readiness and transaction planning"] + [x["name"] for x in SECTORS],
         "sameAs": [v[0] for k, v in SOCIAL.items() if k != "Email"] + [PARENT_ORG["url"]],
@@ -959,9 +1031,9 @@ def page_home():
     root = ""
     featured = [t for t in TOMBSTONES if t.get("featured")]
     marquee_items = "".join(
-        f'<a href="{e(t["link"])}" target="_blank" rel="noopener" title="{e(t["seller"])} / {e(t["buyer"])}"><img src="{t["image"]}" alt="{e(t["seller"])} {e(t["verb"].lower())} {e(t["buyer"])}" width="170" height="170"></a>'
+        f'<a href="{e(t["link"])}" target="_blank" rel="noopener" title="{e(t["seller"])} / {e(t["buyer"])}"><img src="{t["image"]}" alt="{e(t["seller"])} {e(t["verb"].lower())} {e(t["buyer"])}" loading="lazy" width="170" height="170"></a>'
         if t.get("link") else
-        f'<a href="transactions.html" title="{e(t["seller"])} / {e(t["buyer"])}"><img src="{t["image"]}" alt="{e(t["seller"])} {e(t["verb"].lower())} {e(t["buyer"])}" width="170" height="170"></a>'
+        f'<a href="transactions.html" title="{e(t["seller"])} / {e(t["buyer"])}"><img src="{t["image"]}" alt="{e(t["seller"])} {e(t["verb"].lower())} {e(t["buyer"])}" loading="lazy" width="170" height="170"></a>'
         for t in featured)
     stories = "".join(f"""<article class="story reveal">
   <div class="story-media">{vimeo(vid, title)}</div>
@@ -982,9 +1054,9 @@ def page_home():
 </article>""" for vid, label, title, desc in PODCAST)
     podcast_links = "".join(f'<a href="{url}" target="_blank" rel="noopener">{e(name)}</a>' for name, url in PODCAST_LINKS)
     cards = "".join(industry_card(s, root) for s in SECTORS) + cta_card(root)
-    awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="Benchmark International award" loading="lazy" width="520" height="300">' for i in range(1, 5))
+    awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="{e(a[0])}" loading="lazy" width="520" height="300">' for i, a in enumerate(AWARDS, 1))
 
-    html = head("Middle Market Sell-Side M&A Advisory | Benchmark International",
+    html = head("Middle Market M&A Advisory | Benchmark International",
                 "Sell-side M&A advisory for owners of privately held companies with $50M–$500M in enterprise value: strategic sales, mergers, and change-of-control transactions.", root)
     html += header(root)
     html += f"""
@@ -1149,7 +1221,7 @@ def page_home():
     html += cta(root, form=True)
     html += footer(root)
     team = [person_schema(m) for m in team_members()]
-    write("index.html", html, crumbs=[("Middle Market", "")], schema=[faq_schema(faqs)] + team)
+    write("index.html", html, crumbs=[("Middle Market", "")], schema=[faq_schema(faqs)] + team + video_schema())
 
 
 def page_industries():
@@ -1178,7 +1250,7 @@ def page_industries():
     <div class="ind-row-deals tomb-grid tomb-grid--compact">{minis}</div>
   </div>
 </article>"""
-    html = head("Industries We Advise | Middle Market M&A | Benchmark International",
+    html = head("Industries We Advise | Benchmark International Middle Market",
                 "Benchmark International's Middle Market team focuses on five industries: Industrials, Business Services, Consumer, Healthcare, and Technology.", root)
     html += header(root, "industries")
     html += f"""
@@ -1218,6 +1290,16 @@ def page_industries():
 
 def paras_html(ps):
     return "".join(f"<p>{e(x)}</p>" for x in ps)
+
+
+# Search-result descriptions for the industry pages (about 160 characters, so Google shows them whole).
+SECTOR_META_DESC = {
+    "industrial": "Industrials M&A advisory for owners of $50M–$500M companies in manufacturing, distribution, building products, energy services, and transportation.",
+    "business-services": "Business Services M&A advisory for owners of $50M–$500M companies in facility, marketing, engineering, financial, and staffing services.",
+    "consumer": "Consumer M&A advisory for owners of $50M–$500M food and beverage, restaurant, consumer brand, foodservice, and consumer services companies.",
+    "healthcare": "Healthcare M&A advisory for owners of $50M–$500M provider, life sciences, medical products, and pharmacy and healthcare services companies.",
+    "technology": "Technology M&A advisory for owners of $50M–$500M software, IT and managed services, communications, and hardware companies.",
+}
 
 
 def page_sector(i, s):
@@ -1302,8 +1384,7 @@ def page_sector(i, s):
     tabs = "".join(f'<a href="{x["slug"]}.html"{cur if x is s else ""}>{e(x["name"])}</a>' for x in SECTORS)
 
     report_btn = f'<a class="btn btn--light" href="{root}{s["report"][1]}">{e(s["report"][0])}</a>' if s.get("report") else ""
-    html = head(f"{s['name']} M&A Advisory | Middle Market | Benchmark International",
-                f"{s['name']} M&A advisory for privately held companies with $50M–$500M in enterprise value. {s['short']}", root)
+    html = head(f"{s['name']} M&A Advisory | Benchmark International", SECTOR_META_DESC[s["slug"]], root)
     html += header(root, "industries")
     html += f"""
 {photo_hero(s['slug'], root)}
@@ -1430,10 +1511,10 @@ def page_sector(i, s):
     html += footer(root)
     service = {"@type": "Service", "name": f"{s['name']} M&A advisory", "serviceType": "Sell-side M&A advisory",
                "provider": {"@id": SITE_URL + "#org"}, "areaServed": {"@type": "Country", "name": "United States"},
-               "description": s["tagline"]}
+               "description": s["tagline"], "employee": [{"@id": person_id(m["img"])} for m in team_members(lead_only=True)]}
     write(f"industries/{s['slug']}.html", html,
           crumbs=[("Middle Market", ""), ("Industries", "industries/index.html"), (s["name"], f"industries/{s['slug']}.html")],
-          schema=[faq_schema(faqs), service], image=f"assets/img/social/{s['slug']}.jpg")
+          schema=[faq_schema(faqs), service] + [person_schema(m) for m in team_members(lead_only=True)], image=f"assets/img/social/{s['slug']}.jpg")
 
 
 def page_legacy(old, new, folder="industries"):
@@ -1457,7 +1538,7 @@ def page_transactions():
     order = {s["slug"]: k for k, s in enumerate(SECTORS)}
     items = sorted(TOMBSTONES, key=lambda t: (order[t["sector"]], not t.get("featured"), -int(t.get("year") or 0)))
     tombs = "".join(tombstone(t, root, show_sector=True) for t in items)
-    html = head("Completed M&A Transactions | Middle Market | Benchmark International",
+    html = head("Completed M&A Transactions | Benchmark International",
                 "Selected completed sell-side M&A transactions advised by Benchmark International across Industrials, Business Services, Consumer, Healthcare, and Technology.", root)
     html += header(root, "transactions")
     html += f"""
@@ -1571,8 +1652,8 @@ def page_insights():
 
 def page_disclosures():
     root = ""
-    html = head("Important Disclosures | Middle Market | Benchmark International",
-                "Important disclosures for Benchmark International's Middle Market industry reports and website.", root)
+    html = head("Important Disclosures | Benchmark International",
+                "Important disclosures for Benchmark International's Middle Market " + ("industry reports and website." if REPORTS_LIVE else "website."), root)
     html += header(root)
     paras = "".join(f"<p>{e(p)}</p>" for p in DISCLOSURES)
     html += f"""
@@ -1581,14 +1662,14 @@ def page_disclosures():
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Important Disclosures</div>
     <p class="eyebrow">Legal</p>
     <h1 class="display">Important Disclosures</h1>
-    <p class="lead">These disclosures apply to the Middle Market industry reports and to the content of this website.</p>
+    <p class="lead">{"These disclosures apply to the Middle Market industry reports and to the content of this website." if REPORTS_LIVE else "These disclosures apply to the content of this website."}</p>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
     <article class="legal">{paras}
-      <p class="legal-links"><a class="link-arrow" href="{root}insights/index.html">Back to Insights</a></p>
+      <p class="legal-links">{f'<a class="link-arrow" href="{root}insights/index.html">Back to Insights</a>' if REPORTS_LIVE else f'<a class="link-arrow" href="{root}index.html">Back to Home</a>'}</p>
     </article>
   </div>
 </section>
@@ -1601,7 +1682,7 @@ def about_facts():
     """The About page's Key Facts table, also used in llms-full.txt."""
     lead = ", ".join(f"{n} ({r})" for n, r, _, _ in TEAM_LEAD)
     support = ", ".join(f"{n} ({r})" for n, r, _ in TEAM_SUPPORT)
-    return [
+    rows = [
         ("Who we are", "The Middle Market team of Benchmark International, serving owners of companies with $50M–$500M in total enterprise value (TEV)."),
         ("What we do", "Specialized sell-side M&A advisory services to owners of privately held businesses, focused on qualifying mergers, business sales, and controlling ownership transitions."),
         ("Company size served", "$50 million to $500 million in total enterprise value (TEV)."),
@@ -1613,6 +1694,7 @@ def about_facts():
         ("Research", "Quarterly M&A reports for each of our five industries, published on the Insights page."),
         ("Contact", f"{PHONE} | {EMAIL}"),
     ]
+    return rows if REPORTS_LIVE else [r for r in rows if r[0] != "Research"]
 
 
 def page_about():
@@ -1691,14 +1773,14 @@ def page_about():
     html += cards("Specialized Industry Coverage", "Industries", link=True)
     html += prose("Experienced Professionals", "Our Team", f'<p><a class="link-arrow" href="{root}index.html#team">Meet the team</a></p>')
     html += prose("Global Reach", "Global Platform", cls="section section--paper")
-    html += prose("Research-Driven Advisory", "Research", f'<div class="btn-row"><a class="btn" href="{root}insights/index.html">Explore Our Industry Research</a></div>')
+    html += prose("Research-Driven Advisory", "Research",
+                  f'<div class="btn-row"><a class="btn" href="{root}insights/index.html">Explore Our Industry Research</a></div>' if REPORTS_LIVE else "")
     html += f"""
 <section class="section section--paper">
   <div class="wrap about-wrap">
     <h2 class="h2">Key Facts</h2>
     <table class="facts">{rows}</table>
-    <h2 class="h2">Current Industry Reports</h2>
-    <ul class="about-list">{report_links}</ul>
+    {f'<h2 class="h2">Current Industry Reports</h2>{chr(10)}    <ul class="about-list">{report_links}</ul>' if REPORTS_LIVE else ""}
     <p class="note">Information as of {AS_OF}. See the <a href="disclosures.html">Important Disclosures</a>.</p>
   </div>
 </section>
@@ -1707,7 +1789,8 @@ def page_about():
     c = cp["cta"]
     html += cta(root, c["title"], sub=c["sub"], paras=c["paras"])
     html += footer(root)
-    write("about.html", html, crumbs=[("Middle Market", ""), ("About", "about.html")], schema=[faq_schema(faqs)])
+    write("about.html", html, crumbs=[("Middle Market", ""), ("About", "about.html")],
+          schema=[faq_schema(faqs)] + [person_schema(m) for m in team_members()])
 
 
 AI_BOTS = ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User",
@@ -1717,7 +1800,7 @@ AI_BOTS = ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-Searc
 
 def write_discovery_files():
     """sitemap.xml, robots.txt and llms.txt for search engines and AI assistants (absolute URLs from SITE_URL)."""
-    pages = list(dict.fromkeys(SITEMAP + [i["url"] for i in INSIGHTS]))
+    pages = list(dict.fromkeys(SITEMAP + [i["url"] for i in PUBLISHED_REPORTS] + [i["pdf"] for i in PUBLISHED_REPORTS]))
     prio = lambda r: "1.0" if r == "index.html" else "0.8" if r.startswith(("industries/", "insights/")) or r == "about.html" else "0.6"
     urls = "".join(f"  <url><loc>{abs_url(r)}</loc><lastmod>{SITE_UPDATED}</lastmod><priority>{prio(r)}</priority></url>\n" for r in pages)
     sitemap = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n'
@@ -1729,7 +1812,7 @@ def write_discovery_files():
     def md_link(i):
         md = i['url'][:-5] + '.md'
         return f", [Markdown]({abs_url(md)})" if os.path.exists(os.path.join(SITE, md)) else ""
-    rep = "\n".join(f"- [{i['title']}]({abs_url(i['url'])}) ([PDF]({abs_url(i['pdf'])}){md_link(i)}): {i['summary']}" for i in INSIGHTS)
+    rep = "\n".join(f"- [{i['title']}]({abs_url(i['url'])}) ([PDF]({abs_url(i['pdf'])}){md_link(i)}): {i['summary']}" for i in PUBLISHED_REPORTS)
     faqs = "\n".join(f"- **{q}** {a}" for q, a in home_faqs())
     llms = f"""# {ORG_NAME}
 
@@ -1742,17 +1825,13 @@ Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark Int
 - [About]({abs_url('about.html')}): key facts about the Middle Market team
 - [Industries]({abs_url('industries/index.html')}): the five industries
 - [Transactions]({abs_url('transactions.html')}): selected completed transactions
-- [Insights]({abs_url('insights/index.html')}): quarterly M&A industry reports
-- [Important Disclosures]({abs_url('disclosures.html')})
+{f"- [Insights]({abs_url('insights/index.html')}): quarterly M&A industry reports" + chr(10) if REPORTS_LIVE else ""}- [Important Disclosures]({abs_url('disclosures.html')})
 - [Full text for AI assistants]({abs_url('llms-full.txt')}): every page's key facts, services, team, industries, and FAQs in one file
 
 ## Industries
 {sec}
 
-## Industry reports
-{rep}
-
-## Common questions
+{"## Industry reports" + chr(10) + rep + chr(10) + chr(10) if REPORTS_LIVE else ""}## Common questions
 {faqs}
 """
     for name, body in (("sitemap.xml", sitemap), ("robots.txt", robots), ("llms.txt", llms), ("llms-full.txt", llms_full())):
@@ -1787,7 +1866,17 @@ def llms_full():
         if faqs:
             out += ["", f"#### {s['name']} M&A: common questions", ""] + [f"**{q}**\n{a}\n" for q, a in faqs]
         out.append("")
-    out += ["## Industry reports", ""] + [f"- [{i['title']}]({abs_url(i['url'])}) ([PDF]({abs_url(i['pdf'])})): {i['summary']}" for i in INSIGHTS]
+    if REPORTS_LIVE:
+        out += ["## Industry reports", ""] + [f"- [{i['title']}]({abs_url(i['url'])}) ([PDF]({abs_url(i['pdf'])})): {i['summary']}" for i in PUBLISHED_REPORTS]
+    out += ["", "## Selected completed transactions", "", f"Publicly announced transactions advised by Benchmark International. Full list: {abs_url('transactions.html')}", ""]
+    for t in TOMBSTONES:
+        bits = [t["sector_name"], t.get("segment", ""), t.get("year", "")]
+        line = f"- {t['seller']} {t['verb'].lower()} {t['buyer']} ({', '.join(b for b in bits if b)})"
+        if t.get("desc"):
+            line += f": {t['desc']}"
+        if t.get("link"):
+            line += f" [Announcement]({t['link']})"
+        out.append(line)
     out += ["", "## Common questions", ""]
     seen = set()
     for rel in ("index.html", "about.html"):
@@ -1798,6 +1887,19 @@ def llms_full():
     out += ["## Important disclosures", "", f"Benchmark International does not provide valuations, appraisals, or fairness opinions. "
             f"Full disclosures: {abs_url('disclosures.html')}", ""]
     return "\n".join(out)
+
+
+def remove_unpublished_reports():
+    """While REPORTS_LIVE is False: deletes the Insights page, report pages, PDFs, Markdown copies and old report
+    addresses from the site folder, so nothing links to or serves them. Rebuild the reports to bring them back."""
+    targets = [os.path.join(SITE, "insights"), os.path.join(SITE, "reports")]
+    for d in targets:
+        if not os.path.isdir(d):
+            continue
+        for f in os.listdir(d):
+            if f.endswith((".html", ".pdf", ".md")):
+                os.remove(os.path.join(d, f))
+                print("removed", os.path.relpath(os.path.join(d, f), SITE))
 
 
 def page_report_redirects():
@@ -1836,8 +1938,11 @@ if __name__ == "__main__":
     for s in SECTORS:
         page_legacy(s["slug"], s["slug"], "sectors")
     page_transactions()
-    page_insights()
-    page_report_redirects()
+    if REPORTS_LIVE:
+        page_insights()
+        page_report_redirects()
+    else:
+        remove_unpublished_reports()
     page_disclosures()
     page_about()
     write_discovery_files()

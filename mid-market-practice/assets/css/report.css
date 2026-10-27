@@ -193,8 +193,7 @@
 .rdisclosure p:last-child { margin: 0; font-size: 0.86rem; color: var(--graphite); line-height: 1.65; }
 .rdisclosure .link-arrow { display: inline-block; margin-top: 6px; }
 
-/* Report sections built from the sector brief decks (_build/reports/webdeck.py): the deck's words, tables, logos
-   and charts in the report styles above. Panels from the deck become cards; side-by-side elements become columns. */
+/* Report sections: tables, logos and charts. Panels become cards; side-by-side elements become columns. */
 .dblock > * + * { margin-top: 16px; }
 .dblock .rlead { margin-bottom: 26px; }
 .drow { display: flex; flex-wrap: wrap; gap: 18px 26px; align-items: flex-start; }
