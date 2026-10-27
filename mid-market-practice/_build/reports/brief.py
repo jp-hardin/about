@@ -587,6 +587,9 @@ def build_page(prs):
 
 
 def main():
+    if not site.REPORTS_LIVE and '--preview' not in sys.argv:
+        sys.exit('Reports are switched off (REPORTS_LIVE = False in build.py). Set it to True to publish, '
+                 'or add --preview to build this report locally without publishing it.')
     with tempfile.TemporaryDirectory() as tmp:
         work = os.path.join(tmp, f'{PUBLIC}.pptx')
         prs = corrected_deck(work)
