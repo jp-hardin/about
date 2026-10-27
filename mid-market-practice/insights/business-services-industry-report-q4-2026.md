@@ -7,7 +7,7 @@ Mergers and acquisitions across commercial, professional, and human capital serv
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.pdf
 
-Segments: Commercial & Facility Services; Engineering, Architecture & Consulting; Financial & Insurance Services; Staffing & Human Capital
+Sectors: Commercial & Facility Services; Engineering, Architecture & Consulting; Financial & Insurance Services; Staffing & Human Capital
 
 ## 1. Industry at a Glance
 
@@ -15,7 +15,7 @@ Segments: Commercial & Facility Services; Engineering, Architecture & Consulting
 
 -  Our view
 
--  Perspectives on five segments
+-  Perspectives on five sectors
 
 -  What we're reading
 
@@ -23,7 +23,7 @@ Segments: Commercial & Facility Services; Engineering, Architecture & Consulting
 
 ## 2. Market Conditions
 
-Six developments across the five segments, fourth quarter 2026
+Six developments across the five sectors, fourth quarter 2026
 
 - Fire and life safety consolidation 22
 
@@ -98,7 +98,7 @@ TIMING
 
 The Fed raised rates into a labor market adding 66,000 jobs a month, with unemployment at 4.2% and engineering executives putting recession odds at 41%. An owner with a renewal book or funded backlog has a better story in the first quarter of 2027 than after a softer year shows up in trailing figures, which argues for preparing now and going to market early in the new year.
 
-BY SEGMENT
+BY SECTOR
 
 **Commercial & facility**
 
@@ -124,9 +124,9 @@ Expectations are Benchmark International's judgments, drawn from the data in thi
 
 ## 4. Sector by Sector
 
-### Perspectives on Five Segments
+### Five Sectors
 
-Buyers, drivers, and valuation tests by segment
+Buyers, drivers, and valuation tests by sector
 
 COMMERCIAL & FACILITY SERVICES
 
@@ -176,7 +176,7 @@ WHAT BUYERS REWARD
 
 Funded backlog of a year or more, licensed staff, and a second generation of principals.
 
-ACROSS THE FIVE SEGMENTS
+ACROSS THE FIVE SECTORS
 
 ### Five tests buyers apply
 
@@ -421,7 +421,7 @@ Business descriptions follow the announcements on benchmarkintl.com, linked from
 
 ### Recent Transactions
 
-Six transactions announced between June and October 2026, one or more from each segment
+Six transactions announced between June and October 2026, one or more from each sector
 
 - SEPTEMBER 2026 COMMERCIAL & FACILITY SERVICES
 UNION ALARMTRONICACQUIRED
@@ -520,11 +520,11 @@ Transaction values are as reported by the linked source. The listed staffing med
 
 ### Our Transactions
 
-Closed transactions by segment, trailing 24 months
+Closed transactions by sector, trailing 24 months
 
 TRAILING 24 MONTHS
 
-67transactions closed in these five segments44sellers named publicly, more than half of them bought by a company in their own or an adjacent field Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables (Benchmark International).
+67transactions closed in these five sectors44sellers named publicly, more than half of them bought by a company in their own or an adjacent field Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables (Benchmark International).
 
 FPS Technologies
 
@@ -648,7 +648,7 @@ Each tile links to the announcement on benchmarkintl.com. Twelve of the 44 named
 
 ### Select Participants
 
-Listed reference companies and active private acquirers by segment
+Listed reference companies and active private acquirers by sector
 
 **COMMERCIAL & FACILITY SERVICES**
 
@@ -906,11 +906,11 @@ Private participants are buyers in transactions announced between October 2025 a
 
 ### Valuation
 
-Listed peers by segment, priced at the October 16, 2026 close
+Listed peers by sector, priced at the October 16, 2026 close
 
 ### Share price change, past 52 weeks
 
-Median of the listed companies in each segment
+Median of the listed companies in each sector
 
 Chart data:
 
@@ -938,7 +938,7 @@ Chart data:
 | Financial & Insurance | 15.0x | 12.7x | 16.8x |
 | Staffing & Human Capital | 13.4x | 10.0x | 13.4x |
 
-25 of the 42 companies trade below their own three-year median multiple; marketing is the one segment above its year-ago and three-year medians.
+25 of the 42 companies trade below their own three-year median multiple; marketing is the one sector above its year-ago and three-year medians.
 
 PRIVATE-DEAL REFERENCE POINTS
 
@@ -968,11 +968,11 @@ Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 19, 2026,
 
 ### Operating and Valuation Metrics
 
-Segment medians, trailing twelve months
+Sector medians, trailing twelve months
 
 ### Revenue growth, trailing twelve months
 
-Median by segment; growth includes acquisitions
+Median by sector; growth includes acquisitions
 
 Chart data:
 
@@ -988,7 +988,7 @@ Financial and insurance growth reflects large acquisitions by the listed brokers
 
 ### EBITDA margin, trailing twelve months
 
-Median by segment, on reported EBITDA
+Median by sector, on reported EBITDA
 
 Chart data:
 
@@ -1004,7 +1004,7 @@ Insurance brokerage earns the widest margin, and staffing earns the narrowest be
 
 ### Free cash flow margin, trailing twelve months
 
-Median by segment
+Median by sector
 
 Chart data:
 
@@ -1020,7 +1020,7 @@ Commercial and facility services converts more revenue to cash than engineering 
 
 ### Enterprise value to trailing revenue
 
-Median by segment
+Median by sector
 
 Chart data:
 
@@ -1032,9 +1032,9 @@ Chart data:
 | Financial & Insurance | 3.93x |
 | Staffing & Human Capital | 0.55x |
 
-Revenue multiples follow margin, which is why an owner should compare a business with its own segment.
+Revenue multiples follow margin, which is why an owner should compare a business with its own sector.
 
-Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 19, 2026. Medians cover the listed companies in each segment with a published figure, between 8 and 11 companies a segment. Trailing periods end between December 2025 and September 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present.
+Source: [StockAnalysis](https://stockanalysis.com/), retrieved October 19, 2026. Medians cover the listed companies in each sector with a published figure, between 8 and 11 companies a sector. Trailing periods end between December 2025 and September 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present.
 
 ### What Public Companies Said
 
@@ -1678,7 +1678,7 @@ KEY TRENDS IN BUSINESS SERVICES
 
 [Pye-Barker](https://pyebarkerfs.com/news/pye-barker-fire-safety-celebrates-mid-year-momentum-and-3-sdm-100-ranking/); [Pye-Barker, March 17](https://pyebarkerfs.com/?p=19317); [APi Group](https://www.sec.gov/Archives/edgar/data/0001796209/000162828026050806/apg-20260630xexx991.htm); [Federal Reserve](https://www.federalreserve.gov/monetarypolicy/files/monetary20260916a1.pdf); [FRED series GS10](https://fred.stlouisfed.org/series/GS10); [GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective); [ACEC](https://engineeringinc.acec.org/blog/engineering-firms-remain-resilient-amid-growing-economic-uncertainty-new-acec-research-institute-study-finds/); [Bowman](https://investors.bowman.com/news-releases/news-release-details/bowman-consulting-group-enters-definitive-agreement-be-acquired); [Insurance Journal](https://www.insurancejournal.com/news/national/2026/08/20/882240.htm); [Insurance Journal, September 21](https://www.insurancejournal.com/magazines/mag-business-moves/2026/09/21/885520.htm); [Staffing Industry Analysts](https://www.staffingindustry.com/news/global-daily-news/highest-median-revenue-in-pulse-staffing-survey-since-late-2022); [FRED series TEMPHELPS](https://fred.stlouisfed.org/series/TEMPHELPS); [MediaPost composite](https://www.mediapost.com/publications/article/417751/ad-outlook-composite-improves-on-mw-revisions.html); [Gartner via Marketing Dive](https://www.marketingdive.com/news/ai-remains-a-top-priority-for-cmos-but-spending-lags-gartner/819806/); [IBBA and M&A Source](https://www.ibba.org/wp-content/uploads/2026/08/mp-highlights-q2-2026.pdf); [IBBA and M&A Source release](https://www.ibba.org/market-pulse-q2-2026-survey-results/)
 
-PERSPECTIVES ON FIVE SEGMENTS
+PERSPECTIVES ON FIVE SECTORS
 
 [SDM](https://www.sdmmag.com/articles/105352-sdm-100-top-100-security-dealers-of-2026); [SGS](https://www.sgs.com/en-ca/news/2026/07/sgs-2026-half-year-results); [IAB and PwC](https://www.iab.com/news/digital-ad-revenue-climbs-to-nearly-300b-as-iab-celebrates-30-year-anniversary/); [ASI](https://asicentral.com/press-releases/north-america-promo-industry-grows-4-percent-in-2025/); [ENR](https://enr.com/toplists/2026-top-500-design-firms-preview); [PSMJ](https://go.psmj.com/outlook-2026-aec-ma-trends-report); [AM Best via Risk & Insurance](https://riskandinsurance.com/mga-premiums-hit-108-7-billion-in-2025-as-capacity-scrutiny-tightens/); [WealthManagement.com](https://www.wealthmanagement.com/ria-news/fidelity-m-a-transaction-count-fell-in-1h-but-total-asset-haul-rose-88-); [ASA](https://americanstaffing.net/posts/2026/03/30/employment-and-sales-rebound-in-q4/); [Staffing Industry Analysts](https://www.staffingindustry.com/editorial/industrial-staffing-report/industrial-staffing-forecast-revised-to-7-growth-from-1-)
 

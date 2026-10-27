@@ -13,7 +13,7 @@ PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-i
 
 -  Costs buyers are repricing
 
--  Perspectives on six focus areas
+-  Perspectives on six sectors
 
 -  What we're reading
 
@@ -135,7 +135,7 @@ OUR POSITION
 
 Buyers pay full prices for contracted revenue, essential capabilities, and backlog that converts to cash. Lower debt availability makes them more selective elsewhere.
 
-About 60%of a typical sponsor purchase is funded with equity, at 2.9x debt against a 7.0x average price (GF Data via ACG).87%of sales above $5 million drew three or more offers (IBBA and M&A Source).7 of 11named sellers in our recent technology transactions were bought by a company in their own or an adjacent field (page 13).FOCUS AREADEMANDOUR VIEW
+About 60%of a typical sponsor purchase is funded with equity, at 2.9x debt against a 7.0x average price (GF Data via ACG).87%of sales above $5 million drew three or more offers (IBBA and M&A Source).7 of 11named sellers in our recent technology transactions were bought by a company in their own or an adjacent field (page 13).SECTORDEMANDOUR VIEW
 
 - MANAGED IT & CLOUD SERVICES  STRONG 
 
@@ -169,11 +169,11 @@ TO OWNERS
 
 1Document contracted revenue by customer, term, and renewal history; equity-funded buyers price what they can verify.2Add pass-through or escalation terms to open backlog before a process, with component and copper prices up more than 25%.3Approach strategic buyers in adjacent fields alongside sponsors; seven of our eleven named sellers sold to one.
 
-Views are those of the Benchmark International Middle Market team, drawn from the figures in this report, which are the latest published as of October 14, 2026. Buyer demand is the team's assessment for owner-operated businesses in each focus area. Page references are to this report.
+Views are those of the Benchmark International Middle Market team, drawn from the figures in this report, which are the latest published as of October 14, 2026. Buyer demand is the team's assessment for owner-operated businesses in each sector. Page references are to this report.
 
 ## 4. Sector by Sector
 
-Each focus area has its own buyers and drivers.
+Each sector has its own buyers and drivers.
 
 Q4 2026
 
@@ -583,17 +583,17 @@ expected FY2027 adjusted EBITDA, as stated by TTM; MKS states more than 18x on F
 
 - $450M cash base price, as stated by Leonardo DRS Not disclosed Not disclosed
 
-Values and multiples are as stated by the acquirer or reported in the linked source. Value to revenue is our calculation where marked. Company names are the property of their owners and are used for identification. Two transactions are shown for each of the six focus areas, and transactions advised by Benchmark International appear in [Our Transactions](#p13). Euro figures are not converted. Booz Allen, Motorola Solutions, and Leonardo DRS figures are from their own releases and filings.
+Values and multiples are as stated by the acquirer or reported in the linked source. Value to revenue is our calculation where marked. Company names are the property of their owners and are used for identification. Two transactions are shown for each of the six sectors, and transactions advised by Benchmark International appear in [Our Transactions](#p13). Euro figures are not converted. Booz Allen, Motorola Solutions, and Leonardo DRS figures are from their own releases and filings.
 
 ### Our Transactions
 
-Closed transactions in the six focus areas, trailing 24 months.
+Closed transactions in the six sectors, trailing 24 months.
 
 Q4 2026
 
 TRAILING 24 MONTHS
 
-13transactions closed in these six focus areas7 of 11named sellers were bought by a company in their own or an adjacent field Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables (Benchmark International).
+13transactions closed in these six sectors7 of 11named sellers were bought by a company in their own or an adjacent field Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables (Benchmark International).
 
 MartianCraft
 
@@ -1158,7 +1158,7 @@ Q4 2026
 
 ### Revenue growth, trailing twelve months
 
-Median by focus area
+Median by sector
 
 Chart data:
 
@@ -1225,7 +1225,7 @@ Cybersecurity
 
 ### EBITDA margin, trailing twelve months
 
-Median by focus area, on reported EBITDA
+Median by sector, on reported EBITDA
 
 Chart data:
 
@@ -1240,7 +1240,7 @@ Chart data:
 
 ### Free cash flow margin, trailing twelve months
 
-Median by focus area
+Median by sector
 
 Chart data:
 
@@ -1253,7 +1253,7 @@ Chart data:
 | Electronics & Hardware | 3.3% |
 | Government Technology | 10.1% |
 
-Source: StockAnalysis, retrieved October 8 to 19, 2026 (free cash flow margin as retrieved October 5 to 14). Trailing periods end between June and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present, most visibly for security software, where stock compensation is excluded from adjusted figures. Medians cover all listed companies in each focus area.
+Source: StockAnalysis, retrieved October 8 to 19, 2026 (free cash flow margin as retrieved October 5 to 14). Trailing periods end between June and August 2026. EBITDA is as reported and is lower than the adjusted EBITDA companies present, most visibly for security software, where stock compensation is excluded from adjusted figures. Medians cover all listed companies in each sector.
 
 ### What Public Companies Said
 

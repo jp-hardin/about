@@ -7,7 +7,7 @@ Mergers and acquisitions across provider services, life sciences, medical produc
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.pdf
 
-Segments: Provider Services; Life Sciences & Diagnostics; Medical Products & Distribution; Pharmacy & Healthcare Services
+Sectors: Provider Services; Life Sciences & Diagnostics; Medical Products & Distribution; Pharmacy & Healthcare Services
 
 ## 1. Industry at a Glance
 
@@ -1297,7 +1297,7 @@ Median of the listed companies by sector
 
 Chart data:
 
-|  | Median share price change over 52 weeks by focus area |
+|  | Median share price change over 52 weeks by sector |
 | --- | --- |
 | Provider Services | +21.5% |
 | Life Sciences & Dx | +21.8% |

@@ -99,7 +99,390 @@ class WebDeck:
         s_html = self.inline(subtitle) if subtitle else ''
         f_html = ''.join(self.paras_html(b.paras, fine=True) for b in foot)
         text = ' '.join(plain(x) for x in (t_html, s_html, body, f_html))
-        return dict(num=num, title=plain(t_html), title_html=t_html, subtitle=s_html, body=body, foot=f_html, part=part, text=text)
+        web = self.web(roots)
+        return dict(num=num, title=plain(t_html), title_html=t_html, subtitle=s_html, body=body, foot=f_html, part=part, text=text,
+                    web=web)
+
+    # -- web-native layout ---------------------------------------------------
+    # The page online is not a picture of the slide: the slide only supplies reading order (top to bottom, then
+    # left to right within a row) and grouping (cards, columns). Logos become company names, big figures become
+    # stat cards, and side-by-side content becomes a responsive grid that stacks on a phone.
+    @staticmethod
+    def xy_order(items):
+        """A nested reading order: ('rows', [...]) or ('cols', [...]) or a single box (recursive XY cut)."""
+        if len(items) <= 1:
+            return items[0] if items else ('rows', [])
+        def cut(key_lo, key_hi):
+            srt = sorted(items, key=key_lo)
+            groups, edge = [[srt[0]]], key_hi(srt[0])
+            for b in srt[1:]:
+                if key_lo(b) >= edge - 2:
+                    groups.append([b])
+                    edge = key_hi(b)
+                else:
+                    groups[-1].append(b)
+                    edge = max(edge, key_hi(b))
+            return groups
+        rows = cut(lambda b: b.y, lambda b: b.y + b.h)
+        cols = cut(lambda b: b.x, lambda b: b.x + b.w)
+        # side-by-side columns that each hold several items (a heading over its text) are read column by column
+        short = lambda g: all(len(' '.join(p['text'] for p in (getattr(b, 'paras', None) or []))) < 25 for b in g)
+        if len(cols) > 1 and len(rows) > 1 and all(len(c) >= 2 for c in cols) and not any(short(c) for c in cols):
+            return ('cols', [WebDeck.xy_order(g) for g in cols])
+        if len(rows) > 1:
+            return ('rows', [WebDeck.xy_order(g) for g in rows])
+        if len(cols) > 1:
+            return ('cols', [WebDeck.xy_order(g) for g in cols])
+        return ('rows', sorted(items, key=lambda b: (b.y, b.x)))
+
+    @staticmethod
+    def node_boxes(node):
+        if not isinstance(node, tuple):
+            out = [node]
+            for c in getattr(node, 'children', []):
+                out += WebDeck.node_boxes(c)
+            return out
+        return [b for k in node[1] for b in WebDeck.node_boxes(k)]
+
+    def node_text(self, node):
+        return ' '.join(p['text'] for b in self.node_boxes(node) for p in (getattr(b, 'paras', None) or []) if not p['empty'])
+
+    def node_cards(self, node):
+        """The cards (filled containers) this node consists of, or None if it holds anything else."""
+        if not isinstance(node, tuple):
+            return [node] if node.container and (node.children or getattr(node, 'paras', None)) and node.fill else None
+        out = []
+        for k in node[1]:
+            got = self.node_cards(k)
+            if got is None:
+                return None
+            out += got
+        return out
+
+    def web(self, roots):
+        return self.web_node(self.xy_order(roots)) if roots else ''
+
+    @staticmethod
+    def is_logo(node):
+        return not isinstance(node, tuple) and node.cls.startswith('pc') and node.geom != 'ellipse' and node.alt
+
+    def flat_logos(self, node):
+        """The company names if this node holds only logos, else None."""
+        if not isinstance(node, tuple):
+            return [node.alt] if self.is_logo(node) else None
+        names = []
+        for k in node[1]:
+            got = self.flat_logos(k)
+            if got is None:
+                return None
+            names += got
+        return names
+
+    def web_node(self, node):
+        if not isinstance(node, tuple):
+            return self.web_box(node)
+        kind, kids = node
+        kids = [k for k in kids if not (isinstance(k, tuple) and not k[1])]
+        names = self.flat_logos(node)
+        if names:
+            return self.names_html(names)
+        cards = self.node_cards(node)
+        if cards and len(cards) >= 2:
+            only = [self.flat_logos(self.xy_order(c.children)) if c.children and not getattr(c, 'paras', None) else None for c in cards]
+            if all(only):
+                return self.names_html([nm for o in only for nm in o])
+            cards = sorted(cards, key=lambda b: (round(b.y / 40), b.x))
+            wide = any(c.cls == 'ch' for card in cards for c in self.node_boxes(card))
+            return f'<div class="wgrid{" wgrid--wide" if wide else ""}">' + ''.join(self.web_box(c) for c in cards) + '</div>'
+        if kind == 'cols':
+            # a column that only numbers the next one ("01 02 03") is dropped; prose stacks into one reading column
+            kids = [k for k in kids if not re.fullmatch(r'(\s*0?\d\s*)+', self.node_text(k) or 'x')]
+            parts = [(k, self.web_node(k)) for k in kids]
+            parts = [(k, x) for k, x in parts if x.strip()]
+            if len(parts) == 1:
+                return parts[0][1]
+            prose = any(len(self.node_text(k)) > (160 if getattr(self, '_depth', 0) else 420) for k, _ in parts)
+            charts = sum(1 for k, _ in parts if any(b.cls == 'ch' for b in self.node_boxes(k)))
+            if prose or (charts and len(parts) > 2):
+                return '\n'.join(x for _, x in parts)
+            return f'<div class="wcols wcols--{min(len(parts), 4)}">' + ''.join(f'<div class="wcol">{x}</div>' for _, x in parts) + '</div>'
+        logo_names = [nm.lower() for b in self.node_boxes(node) if self.is_logo(b) for nm in [b.alt]]
+        def caption(k):
+            t = self.node_text(k).strip().lower() if not isinstance(k, tuple) and not k.cls.startswith('pc') else ''
+            return bool(t) and len(t) < 30 and not (getattr(k, 'container', False)) and any(t in nm or nm in t for nm in logo_names)
+        kids = [k for k in kids if not caption(k) and not re.fullmatch(r'\s*Q\d \d{4}\s*', self.node_text(k) or 'x')]
+        stack = self.name_stack(node)
+        if stack:
+            return self.names_html(stack)
+        if kind == 'rows':
+            table = self.header_table(kids) or self.text_table(kids)
+            if table:
+                return table
+        out, buf = [], []
+        def flush():
+            if buf:
+                out.append(self.names_html(list(buf)))
+                buf.clear()
+        for k in kids:
+            got = self.flat_logos(k)
+            if got:
+                if out and re.search(r'class="wlabel wacq"', out[-1][-120:]) and not buf:
+                    out[-1] = re.sub(r'<p class="wlabel wacq">(.*?)</p>$', lambda m: f'<p class="wacq">{m.group(1).capitalize()} <strong>{esc(got[0])}</strong></p>', out[-1], flags=re.S)
+                    got = got[1:]
+                buf.extend(got)
+                continue
+            flush()
+            out.append(self.web_node(k))
+        flush()
+        return '\n'.join(x for x in out if x.strip())
+
+    def names_html(self, names):
+        seen, uniq = set(getattr(self, '_exclude', set())), []
+        for nm in names:
+            if nm.lower() not in seen:
+                seen.add(nm.lower())
+                uniq.append(nm)
+        if not uniq:
+            return ''
+        return '<ul class="wnames">' + ''.join(f'<li>{esc(nm)}</li>' for nm in uniq) + '</ul>'
+
+    def web_box(self, b):
+        if b.cls == 'br':
+            return self.render(b)
+        if b.cls == 'sw':
+            return ''
+        if b.cls == 'ch':
+            data = f'<details class="wdata"><summary>Chart data</summary>{b.data_table}</details>' if getattr(b, 'data_table', '') else ''
+            svg = b.html.replace('<svg ', '<svg class="svg-d" ', 1)
+            mob = getattr(b, 'html_m', '')
+            if mob:
+                mob = mob.replace('<svg ', '<svg class="svg-m" aria-hidden="true" ', 1).replace(' role="img"', '', 1)
+            return f'<figure class="wfig" style="max-width:{n(max(b.w * 1.7, 320), 0)}px">{svg}{mob}{data}</figure>'
+        if b.cls == 'tb':
+            return self.table(b)
+        if b.cls.startswith('pc'):
+            if b.geom == 'ellipse':
+                return f'<img class="wperson" src="{esc(b.url)}" alt="{esc(b.alt)}" loading="lazy" decoding="async">'
+            return self.names_html([b.alt]) if b.alt else ''
+        own = self.paras_web(b.paras) if getattr(b, 'paras', None) else ''
+        if b.container and b.children:
+            deal = self.deal_card(b)
+            if deal:
+                return deal
+            prev = getattr(self, '_exclude', set())
+            self._exclude = prev | {re.sub(r'\s+', ' ', p['text']).strip().lower() for x in self.node_boxes(b)
+                                    for p in (getattr(x, 'paras', None) or []) if not p['empty']}
+            self._depth = getattr(self, '_depth', 0) + 1
+            kids = self.web_node(self.xy_order(b.children))
+            self._depth -= 1
+            self._exclude = prev
+            lum = luminance(b.fill) if b.fill else 1.0
+            kind = ' wcard--dark' if b.fill and lum < 0.35 else ''
+            boxes = self.node_boxes(b)
+            full = any(x.cls == 'tb' for x in boxes) or len(self.node_text(b)) > 900
+            return f'<div class="wcard{kind}{" wcard--full" if full else ""}">{own}{kids}</div>'
+        texts = [p for p in (getattr(b, 'paras', None) or []) if not p['empty']]
+        if b.container and len(texts) == 1 and '<a ' in texts[0]['sem'] and len(texts[0]['text']) < 30:
+            label = re.sub(r'>([^<]*)<', lambda m: '>' + m.group(1).strip().capitalize() + ' →<' if m.group(1).strip() else m.group(0), texts[0]['sem'], count=1)
+            return f'<p class="wlink">{label}</p>'
+        if b.container and not b.children and texts and len(' '.join(p['text'] for p in texts)) < 60 \
+                and all(p['caps'] or p['text'].strip() == p['text'].strip().upper() for p in texts):
+            return ''.join(f'<p class="wlabel">{p["sem"]}</p>' for p in texts)
+        if b.container and own and b.fill:
+            lum = luminance(b.fill)
+            return f'<div class="wcard{" wcard--dark" if lum < 0.35 else ""}">{own}</div>'
+        return own
+
+    @staticmethod
+    def leaf_text(b):
+        if isinstance(b, tuple) or b.container or b.cls in ('ch', 'tb') or b.cls.startswith('pc'):
+            return None
+        ps = [p for p in (getattr(b, 'paras', None) or []) if not p['empty']]
+        return ps or None
+
+    def name_stack(self, node):
+        """Five or more short plain text boxes stacked one per line (a list of company names) as a name list."""
+        if not isinstance(node, tuple) or node[0] != 'rows':
+            return None
+        leaves = [k for k in node[1] if not (isinstance(k, tuple) and not k[1])]
+        if len(leaves) < 5 or any(isinstance(k, tuple) for k in leaves):
+            return None
+        names = []
+        for k in leaves:
+            ps = self.leaf_text(k)
+            if not ps or len(ps) != 1:
+                return None
+            t = ps[0]['text'].strip()
+            if len(t) > 40 or ps[0]['caps'] or t == t.upper() or re.search(r'\d', t):
+                return None
+            names.append(t)
+        return names
+
+    def header_table(self, kids):
+        """A row of short column labels over rows of content (cards or side-by-side boxes): each piece of content goes in
+        the column whose label sits above it."""
+        kids = [k for k in kids if not (isinstance(k, tuple) and not k[1])]
+        if len(kids) < 3 or not (isinstance(kids[0], tuple) and kids[0][0] == 'cols'):
+            return None
+        heads = kids[0][1]
+        if len(heads) < 3 or any(isinstance(h, tuple) for h in heads):
+            return None
+        names = []
+        for h in heads:
+            ps = self.leaf_text(h)
+            if not ps or len(ps) != 1 or len(ps[0]['text']) > 40 or not (ps[0]['caps'] or ps[0]['text'] == ps[0]['text'].upper()):
+                return None
+            names.append(ps[0]['sem'])
+        xs = [h.x for h in heads]
+        body = []
+        for k in kids[1:]:
+            boxes = [b for b in self.node_boxes(k) if b.cls not in ('sw', 'ln', 'br')]
+            if any(b.cls in ('ch', 'tb') for b in boxes):
+                return None
+            cells = [[] for _ in xs]
+            for b in sorted(boxes, key=lambda b: (b.y, b.x)):
+                if self.is_logo(b):
+                    piece = esc(b.alt)
+                else:
+                    ps = [p for p in (getattr(b, 'paras', None) or []) if not p['empty'] and not re.fullmatch(r'Q\d \d{4}', p['text'].strip())]
+                    if not ps:
+                        continue
+                    piece = '<br>'.join(p['sem'].lower() if self.ACQ.fullmatch(p['text'].strip()) else p['sem'] for p in ps)
+                i = max([j for j, x in enumerate(xs) if x <= b.x + 20] or [0])
+                cells[i].append(piece)
+            if any(cells):
+                body.append([' '.join(c) if all('<br>' not in x for x in c) and len(c) <= 3 and any(self.ACQ.search(re.sub('<[^>]+>', '', x)) for x in c)
+                             else '<br>'.join(c) for c in cells])
+        if len(body) < 2:
+            return None
+        th = '<thead><tr>' + ''.join(f'<th>{n_}</th>' for n_ in names) + '</tr></thead>'
+        tb = ''.join('<tr>' + ''.join(f'<td>{c}</td>' for c in r) + '</tr>' for r in body)
+        return f'<div class="rtable-wrap"><table class="rtable dtable">{th}<tbody>{tb}</tbody></table></div>'
+
+    def text_table(self, kids):
+        """Rows of side-by-side text boxes whose columns line up: the slide's table drawn as text boxes."""
+        rows = []
+        for k in kids:
+            if isinstance(k, tuple) and k[0] == 'cols':
+                cells = []
+                for c in k[1]:
+                    boxes = [c] if not isinstance(c, tuple) else self.node_boxes(c)
+                    if any(self.leaf_text(b) is None and not (isinstance(b, tuple)) and b.cls != 'ln' for b in boxes if not isinstance(b, tuple)):
+                        return None
+                    cells.append(boxes)
+                rows.append(cells)
+            elif not isinstance(k, tuple) and self.leaf_text(k):
+                rows.append([[k]])
+            else:
+                return None
+        multi = [r for r in rows if len(r) >= 3]
+        if len(multi) < 3:
+            return None
+        width = max(len(r) for r in multi)
+        if sum(1 for r in multi if len(r) == width) < max(3, len(multi) - 1):
+            return None
+        xs = [min(b.x for b in cell) for cell in next(r for r in multi if len(r) == width)]
+        def place(cell):
+            x = min(b.x for b in cell)
+            return min(range(width), key=lambda i: abs(xs[i] - x))
+        def html_cell(cell):
+            return '<br>'.join(p['sem'] for b in sorted(cell, key=lambda b: b.y) for p in self.leaf_text(b) or [])
+        head, body = None, []
+        for r in rows:
+            cells = [''] * width
+            for cell in r:
+                i = place(cell)
+                cells[i] = (cells[i] + '<br>' if cells[i] else '') + html_cell(cell)
+            ps = [p for cell in r for b in cell for p in (self.leaf_text(b) or [])]
+            if head is None and not body and ps and all(p['caps'] or p['bold'] for p in ps):
+                head = cells
+            else:
+                body.append(cells)
+        if len(body) < 2:
+            return None
+        th = '<thead><tr>' + ''.join(f'<th>{c}</th>' for c in head) + '</tr></thead>' if head else ''
+        tb = ''.join('<tr>' + ''.join(f'<td>{c}</td>' for c in r) + '</tr>' for r in body)
+        return f'<div class="rtable-wrap"><table class="rtable dtable">{th}<tbody>{tb}</tbody></table></div>'
+
+    ACQ = re.compile(r'(has been )?acquired by|merged with|received (an? )?(strategic )?investment from', re.I)
+
+    def deal_card(self, card):
+        """A transaction tile (segment, seller, "has been acquired by", buyer logo, description) as a compact card."""
+        boxes = sorted(self.node_boxes(card)[1:], key=lambda b: (b.y, b.x))
+        paras = [(b, p) for b in boxes for p in self.join_acq([p for p in (getattr(b, 'paras', None) or []) if not p['empty']])]
+        acq = next((i for i, (_, p) in enumerate(paras) if self.ACQ.fullmatch(p['text'].strip())), None)
+        logos = [b for b in boxes if self.is_logo(b)]
+        if acq is None:
+            return ''
+        label0 = lambda p: p['caps'] or p['text'].strip() == p['text'].strip().upper()
+        after = [p for _, p in paras[acq + 1:]]
+        text_buyer = after[0] if after and label0(after[0]) and len(after) > 1 and not any(b.y > paras[acq][0].y for b in logos) else None
+        if not logos and not text_buyer:
+            return ''
+        verb = paras[acq][1]['text'].strip().lower().replace('has been ', '')
+        label = lambda p: p['caps'] or p['text'].strip() == p['text'].strip().upper()
+        seller = next((p for _, p in paras[:acq][::-1] if not label(p)), None)
+        if seller is None:
+            seller_logo = [b for b in logos if b.y < paras[acq][0].y]
+            seller_html = esc(seller_logo[0].alt) if seller_logo else ''
+        else:
+            seller_html = seller['sem']
+        buyer = [b for b in logos if b.y >= paras[acq][0].y] or logos[-1:]
+        buyer_name = esc(buyer[0].alt) if buyer and not text_buyer else text_buyer['text'].strip().capitalize()
+        segs = [p['sem'] for _, p in paras if label(p) and not self.ACQ.fullmatch(p['text'].strip()) and p is not text_buyer]
+        desc = [p['sem'] for _, p in paras[acq + 1:] if not label(p)]
+        return ('<div class="wcard wdeal">' + (f'<p class="wlabel">{segs[0]}</p>' if segs else '')
+                + (f'<h4 class="wh">{seller_html}</h4>' if seller_html else '') + f'<p class="wacq">{esc(verb.capitalize())} <strong>{buyer_name}</strong></p>'
+                + ''.join(f'<p class="wfine">{d}</p>' for d in desc) + '</div>')
+
+    @staticmethod
+    def join_acq(paras):
+        """"ACQUIRED" over "BY" on two lines reads as one label."""
+        out = []
+        for p in paras:
+            if out and p['text'].strip().lower() == 'by' and out[-1]['text'].strip().lower() == 'acquired':
+                out[-1] = dict(out[-1], text='ACQUIRED BY', sem='ACQUIRED BY')
+                continue
+            out.append(p)
+        return out
+
+    def paras_web(self, paras):
+        paras = self.join_acq([p for p in paras if not p['empty']])
+        out, ul = [], []
+
+        def flush():
+            if ul:
+                out.append('<ul class="wlist">' + ''.join(f'<li>{x}</li>' for x in ul) + '</ul>')
+                ul.clear()
+        for p in paras:
+            if p['empty']:
+                continue
+            t, h, sz = p['text'].strip(), p['sem'], p['size']
+            if re.fullmatch(r'Q\d \d{4}', t):
+                continue                      # the slide's running header
+            if p['bullet']:
+                ul.append(h)
+                continue
+            flush()
+            letters = [c for c in t if c.isalpha()]
+            if re.fullmatch(r'(has been )?acquired by|acquired|merged with|received (an? )?(strategic )?investment from', t, re.I):
+                out.append(f'<p class="wlabel wacq">{h}</p>')
+            elif (p['caps'] or (letters and t == t.upper())) and len(t) < 90 and len(letters) > 2 and sz <= 12:
+                out.append(f'<p class="wlabel">{h}</p>')
+            elif sz >= 15 and len(t) <= 18 and re.search(r'\d', t):
+                out.append(f'<p class="wnum">{h}</p>')
+            elif sz <= 7:
+                out.append(f'<p class="wfine">{h}</p>')
+            elif t[:1] in '“"‘' and len(t) > 40:
+                out.append(f'<blockquote class="wquote">{h}</blockquote>')
+            elif p['bold'] and len(t) < 140:
+                out.append(f'<h4 class="wh">{h}</h4>')
+            elif sz >= 13 and len(t) < 260:
+                out.append(f'<p class="wlead">{h}</p>')
+            else:
+                out.append(f'<p>{h}</p>')
+        flush()
+        return '\n'.join(out)
 
     @staticmethod
     def link_buttons(boxes):
