@@ -14,6 +14,7 @@ Information as of October 2026 (updated 2026-10-21). Source: https://jp-hardin.g
 - **Firm:** Headquartered in Tampa, FL, with over 300 employees across 15 global offices in the Americas, Europe, and Africa; ranked the #1 global M&A advisor for privately owned businesses (PitchBook Q2 2026 Global League Tables).
 - **Leadership:** Jordan Houtz (Managing Director | Head of Middle Market), Jared Hardin (Managing Director), Alex Zykov (Transaction Director), Shannon Hess (Client Engagement Director).
 - **Deal team:** Sunny Garten (Senior Deal Associate), Michael Wynn (Senior Deal Associate), Jason Lisiak, CFA (Research Associate), Alexandra Barr (Transaction Support Associate), Josiah Warren (Transaction Support Associate), Luke Ernst (Deal Analyst).
+- **Research:** Quarterly M&A reports for each of our five industries, published on the Insights page.
 - **Contact:** 813-771-6675 | mmt@benchmarkintl.com
 
 ## Services
@@ -46,7 +47,7 @@ His deep experience on both the buy and sell sides of M&A transactions gives his
 
 ### Jared Hardin, Managing Director
 
-813-771-6675 | j.hardin@benchmarkintl.com
+210-241-7990 | j.hardin@benchmarkintl.com
 
 As Managing Director, Jared is the first team member an owner works with. He walks owners through their options as they consider and plan their next step.
 
@@ -124,6 +125,29 @@ Sectors:
 - **Energy, Power & Environmental Services:** We advise companies serving energy infrastructure, power generation, utility services, water treatment, environmental compliance, and specialized industrial markets. Our transaction positioning focuses on mission-critical service capabilities, regulatory and technical credentials, customer relationships, contracted or recurring revenue, and exposure to long-term infrastructure investment. We evaluate the sustainability of earnings, capital requirements, and opportunities for service expansion and market consolidation.
 - **Transportation & Logistics:** We advise specialized transportation providers, third-party logistics businesses, asset-based carriers, and logistics services companies. Our sector expertise encompasses businesses with differentiated transportation capabilities, longstanding shipper relationships, specialized equipment, and established operating networks. We evaluate fleet economics, contractual revenue, customer diversification, operating ratios, asset utilization, working capital efficiency, and opportunities for network expansion and consolidation.
 
+Current report: [Industrials Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html) ([PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.pdf)). Order books are full and financing costs more. Buyers are paying the most for what they cannot build in time: power and data center work, certified aerospace machining, and the service revenue that codes and regulations require.
+
+#### From the Industrials Q4 2026 M&A Industry Report
+
+**What is happening in industrial M&A in Q4 2026?**
+Order books are full and financing costs more. Buyers are paying the most for what they cannot build in time: power and data center work, certified aerospace machining, and the service revenue that codes and regulations require.
+
+**What is the Middle Market team's view of industrial M&A for Q4 2026?**
+Buyers are paying premiums for specialized capabilities.
+
+**What are buyers paying for industrial companies?**
+Public acquirers disclosed prices of about 6 to 10 times EBITDA, and sponsor-owned platforms bought family-owned companies on undisclosed terms.
+
+**How are public industrial companies valued?**
+Distribution companies trade above any year-end multiple of the past five years; manufacturing and energy have come off their 2025 levels.
+
+**How are listed industrial companies performing?**
+Listed contractors grew revenue about 22% while total construction spending fell. Manufacturers reported the highest margins.
+
+**Which indicators should owners of industrial companies watch?**
+Demand indicators are rising and so are the costs of serving it: steel is up 23%, diesel is up 68%, and the 10-year Treasury averaged 4.99% in September.
+
+
 #### Industrials M&A: common questions
 
 **What types of industrial companies does Benchmark International advise?**
@@ -167,6 +191,17 @@ Sectors:
 - **Financial & Insurance Services:** We advise privately held insurance distribution, claims administration, financial services, and specialized financial technology businesses. Our transaction positioning emphasizes recurring fee and commission revenue, client persistency, regulatory considerations, distribution capabilities, operating leverage, and opportunities for continued market consolidation.
 - **Staffing & Human Capital:** We advise staffing, recruitment, workforce solutions, and human capital services businesses serving specialized end markets. We evaluate contract quality, customer concentration, gross profit trends, placement economics, workforce retention, recruiter productivity, and working capital requirements to articulate the underlying earnings quality, competitive positioning, and growth potential of each business.
 
+Current report: [Business Services Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.html) ([PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.pdf)). Mergers and acquisitions across commercial, professional, and human capital services
+
+#### From the Business Services Q4 2026 M&A Industry Report
+
+**What is happening in business services M&A in Q4 2026?**
+Buyers pay most readily for revenue that repeats under contract.
+
+**What is the Middle Market team's view of business services M&A for Q4 2026?**
+Global M&A fell 41% from the second quarter on the rate move, but the decline sits in the largest transactions.
+
+
 #### Business Services M&A: common questions
 
 **What types of business services companies does Benchmark International advise?**
@@ -202,6 +237,29 @@ Sectors:
 - **Consumer Brands & Products:** Branded products with recognized names, enthusiast followings, and multi-channel distribution.
 - **Foodservice & Distribution:** Restaurant equipment, parts, supplies, and service providers, and the distributors that keep restaurants, hospitality, and retail operating.
 - **Consumer Services & Retail:** Multi-site and route-based consumer services with recurring local demand.
+
+Current report: [Consumer Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.html) ([PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.pdf)). Strategic and financial buyers stayed active across consumer through the third quarter, and they are paying for brands and operators that have held price and volume while the cost of financing a purchase rises.
+
+#### From the Consumer Q4 2026 M&A Industry Report
+
+**What is happening in consumer M&A in Q4 2026?**
+Strategic and financial buyers stayed active across consumer through the third quarter, and they are paying for brands and operators that have held price and volume while the cost of financing a purchase rises.
+
+**What is the Middle Market team's view of consumer M&A for Q4 2026?**
+Buyers are paying for brands and operators that held volume, sell through more than one channel, and can add locations.
+
+**How are public consumer companies valued?**
+The median multiple of EBITDA is lower than a year ago in seven of nine peer groups and below its three-year median in eight of nine.
+
+**How are listed consumer companies performing?**
+Packaged food and snack shares are down a quarter to a third in a year, and earnings rose most at consumer services and foodservice companies.
+
+**What are consumer company executives saying about the market?**
+Beverage, beauty, and platform companies grew fastest in their latest quarter, while General Mills and Campbell’s reported lower sales.
+
+**Which indicators should owners of consumer companies watch?**
+Spending is rising in dollars while sentiment falls, food manufacturers’ selling prices sit below a year ago, and diesel costs two thirds more than a year ago.
+
 
 #### Consumer M&A: common questions
 
@@ -241,6 +299,23 @@ Sectors:
 - **Life Sciences & Diagnostics:** We advise diagnostic laboratories, clinical research organizations, research sites, and specialized life sciences businesses serving pharmaceutical, biotechnology, and medical technology markets. Our approach emphasizes differentiated scientific capabilities, technical and regulatory credentials, intellectual property, customer and sponsor relationships, revenue visibility, and the commercial relevance of specialized products and services. We evaluate laboratory economics, utilization, research pipelines, operating performance, and opportunities for strategic expansion.
 - **Medical Products & Distribution:** We advise manufacturers, distributors, and specialized service providers operating across the medical device, surgical equipment, consumables, and healthcare supply markets. Our transaction positioning focuses on proprietary technologies, regulatory approvals, product differentiation, intellectual property, established distribution channels, recurring consumables demand, and longstanding relationships with healthcare providers and institutional customers. We evaluate manufacturing performance, product-level profitability, supply chain resilience, and opportunities for portfolio expansion.
 - **Pharmacy & Healthcare Services:** We advise specialty pharmacies, home infusion providers, pharmaceutical distribution and logistics businesses, clinical staffing companies, and technology-enabled healthcare services platforms. Our approach emphasizes reimbursement economics, prescription and patient retention, payer and provider relationships, pharmacy network participation, regulatory compliance, working capital intensity, and opportunities for operational scalability. We help position businesses around revenue quality, differentiated service capabilities, and sustainable cash flow generation.
+
+Current report: [Healthcare Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.html) ([PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.pdf)). Mergers and acquisitions across provider services, life sciences, medical products, and pharmacy services
+
+#### From the Healthcare Q4 2026 M&A Industry Report
+
+**What is happening in healthcare M&A in Q4 2026?**
+Strategic buyers are setting the pace in 2026 while private equity completes fewer healthcare services transactions.
+
+**What is the Middle Market team's view of healthcare M&A for Q4 2026?**
+Strategic buyers hold the advantage into 2027, and the owners who do best will have answered the policy questions before a buyer asks them.
+
+**How are public healthcare companies valued?**
+Provider companies are growing fastest, life sciences and diagnostics earns the highest margins and multiples, and drug distribution holds the pharmacy sector’s margins down.
+
+**What are healthcare company executives saying about the market?**
+Skilled nursing and research services grew fastest in the latest quarter, laboratories and device makers grew 6% to 10%, and pharmacy and staffing grew about 2%.
+
 
 #### Healthcare M&A: common questions
 
@@ -284,6 +359,35 @@ Sectors:
 - **IT & Managed Services:** We advise managed service providers, IT consulting firms, digital transformation specialists, software development businesses, and technology-enabled professional services organizations. Our transaction positioning emphasizes contracted and recurring revenue, customer retention, service delivery economics, technical certifications, utilization, gross margin sustainability, and management infrastructure. We evaluate the balance between project-based and recurring services, workforce productivity, customer concentration, and the ability to scale service delivery while maintaining profitability.
 - **Communications & Hardware:** We advise telecommunications providers, communications technology businesses, specialized electronics manufacturers, and technology infrastructure companies serving enterprise, industrial, and government markets. Our approach emphasizes proprietary technology, specialized engineering capabilities, intellectual property, recurring service and maintenance revenue, customer relationships, manufacturing economics, and technical differentiation. We evaluate capital intensity, product lifecycle exposure, supply chain requirements, and opportunities for strategic market expansion.
 
+Current report: [Technology Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.html) ([PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.pdf)). Mergers and acquisitions across technology services, hardware, and government technology
+
+#### From the Technology Q4 2026 M&A Industry Report
+
+**What is happening in technology M&A in Q4 2026?**
+Buyers pay most readily for contracted, recurring revenue and for capability that customers or regulators require.
+
+**What is the Middle Market team's view of technology M&A for Q4 2026?**
+Buyers favor contracted revenue and backlog that converts to cash.
+
+**What are buyers paying for technology companies?**
+Ten of the twelve transactions carry a disclosed price, six carry a value to revenue multiple, and two carry a multiple of earnings.
+
+**Who is buying technology companies?**
+Owners of technology businesses draw bids from six types of buyer, and Benchmark International clients were acquired by five of them.
+
+**How are public technology companies valued?**
+Median EV to EBITDA is higher than a year ago at four of six peer groups, led by electronics manufacturers at 17.4x against 12.1x.
+
+**How are listed technology companies performing?**
+Share prices rose a median 54% at security companies and 42% at electronics manufacturers, while government contractors fell 23%.
+
+**What are technology company executives saying about the market?**
+Data center suppliers grew fastest, security vendors tied their outlook to AI adoption, and government contractors split on civilian exposure.
+
+**Which indicators should owners of technology companies watch?**
+Component and copper prices turned up in 2026, data center construction is surging, and IT services employment keeps drifting lower.
+
+
 #### Technology M&A: common questions
 
 **What types of technology companies does Benchmark International advise?**
@@ -314,6 +418,13 @@ As of October 2026, Benchmark International's published transaction history iden
 Our Middle Market team focuses on qualifying mergers, business sales, and controlling ownership transfers involving privately held operating companies. Transactions may include outright sales or qualifying ownership structures in which existing shareholders retain an equity interest. All transaction advisory activities are subject to applicable regulatory requirements and transaction eligibility criteria.
 
 
+## Industry reports
+
+- [Industrials Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html) ([PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.pdf)): Order books are full and financing costs more. Buyers are paying the most for what they cannot build in time: power and data center work, certified aerospace machining, and the service revenue that codes and regulations require.
+- [Business Services Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.html) ([PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.pdf)): Mergers and acquisitions across commercial, professional, and human capital services
+- [Consumer Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.html) ([PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.pdf)): Strategic and financial buyers stayed active across consumer through the third quarter, and they are paying for brands and operators that have held price and volume while the cost of financing a purchase rises.
+- [Healthcare Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.html) ([PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.pdf)): Mergers and acquisitions across provider services, life sciences, medical products, and pharmacy services
+- [Technology Q4 2026 M&A Industry Report](https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.html) ([PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.pdf)): Mergers and acquisitions across technology services, hardware, and government technology
 
 ## Selected completed transactions
 

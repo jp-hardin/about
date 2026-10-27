@@ -604,6 +604,7 @@ class Deck:
                 alpha = X1(blip, './a:alphaModFix/@amt')
                 descr = X1(el, './p:nvPicPr/p:cNvPr/@descr') or ''
                 alt = '' if ('/' in descr or re.search(r'\.(png|jpe?g|svg)$', descr, re.I) or not descr) else descr
+                alt = re.sub(r'\s+logo$', '', alt, flags=re.I)      # "HCA Healthcare logo" -> "HCA Healthcare"
                 if geom == 'ellipse':
                     st.append('border-radius:50%')
                 elif geom == 'roundRect':

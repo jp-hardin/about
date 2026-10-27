@@ -270,7 +270,7 @@ SECTOR_BY_SLUG = {s["slug"]: s for s in SECTORS}
 # Industry reports are kept off the site until the final versions are ready. While this is False the build writes
 # no Insights page, report pages, PDFs or old report addresses, removes any already in the site folder, and drops
 # every link, button, sitemap entry and llms.txt line that points to them. Set True and rebuild the reports to publish.
-REPORTS_LIVE = False
+REPORTS_LIVE = True
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Insights: quarterly industry reports. Add a new entry each quarter; the newest
@@ -337,7 +337,7 @@ TEAM_LEAD = [
 # Team contact details (phone, email); use None for a missing value. Anything missing shows the team line or team email.
 TEAM_CONTACT = {
     "jordan-houtz": ("813-771-6675", "jhoutz@benchmarkintl.com"),
-    "jared-hardin": ("813-771-6675", "j.hardin@benchmarkintl.com"),
+    "jared-hardin": ("210-241-7990", "j.hardin@benchmarkintl.com"),
     "alex-zykov": ("813-898-2372", "azykov@benchmarkintl.com"),
     "shannon-hess": ("813-898-2397", "hess@benchmarkintl.com"),
     "sunny-garten": ("813-898-2357", "garten@benchmarkintl.com"),
@@ -734,7 +734,7 @@ def photo_strip(slug, root, n=4):
     return f'<div class="photo-strip reveal" aria-hidden="true">{imgs}</div>'
 
 
-def report_extras(page, slug, root, extra=None):
+def report_extras(page, slug, root, extra=None, faqs=None):
     """Finishes an industry report page: the industry photo hero, photo breaks after report sections 2 and 5,
     and the Important Disclosures link at the end of the report."""
     page = page.replace('<section class="hero hero--page">', photo_hero(slug, root), 1)
@@ -760,7 +760,7 @@ def report_extras(page, slug, root, extra=None):
                "associatedMedia": {"@type": "MediaObject", "contentUrl": abs_url(rpt["pdf"]), "encodingFormat": "application/pdf"}}
     article.update(extra or {})
     return finalize(page, rpt["url"], crumbs=[("Middle Market", ""), ("Insights", "insights/index.html"), (rpt["title"], rpt["url"])],
-                    schema=[article], image=f"assets/img/social/{slug}-report.jpg")
+                    schema=[article] + ([faq_schema(faqs)] if faqs else []), image=f"assets/img/social/{slug}-report.jpg")
 
 
 def industry_card(s, root):
@@ -1862,6 +1862,9 @@ def llms_full():
         if s.get("report"):
             r = current_report(s["slug"])
             out += ["", f"Current report: [{r['title']}]({abs_url(r['url'])}) ([PDF]({abs_url(r['pdf'])})). {r['summary']}"]
+            fq = os.path.join(HERE, "reports", f"{s['slug']}-q{r['quarter']}-{r['year']}", "faq.json")
+            if os.path.exists(fq):
+                out += ["", f"#### From the {r['title']}", ""] + [f"**{q}**\n{a}\n" for q, a in json.load(open(fq, encoding="utf-8"))["faqs"]]
         faqs = PAGE_FAQS.get(rel, [])
         if faqs:
             out += ["", f"#### {s['name']} M&A: common questions", ""] + [f"**{q}**\n{a}\n" for q, a in faqs]

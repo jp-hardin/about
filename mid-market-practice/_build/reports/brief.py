@@ -81,7 +81,7 @@ def corrected_deck(dst):
 
 def all_shapes(shapes):
     for sh in shapes:
-        if sh.shape_type == MSO_SHAPE_TYPE.GROUP:
+        if sh._element.tag.endswith('}grpSp'):  # shape_type raises on some shapes in newer decks
             yield from all_shapes(sh.shapes)
         else:
             yield sh
@@ -410,9 +410,10 @@ CHAPTERS = [  # (key, title, deck-page titles that belong to it); the first matc
     ('valuations', 'Valuations and Public Markets', r'public compan|valuation|earnings|revenue growth|appendix|stock performance'),
     ('deals', 'Deals and Buyers', r'transactions|engagement|spotlight|who is buying|participants'),
     ('sectors', 'Sector by Sector', r'perspectives|feature:'),
+    ('view', 'Our View', r'^our view'),
     ('market', 'Market Conditions', r'.'),
 ]
-ORDER = ['short', 'market', 'sectors', 'deals', 'valuations', 'indicators', 'reading', 'about', 'notes']
+ORDER = ['short', 'market', 'view', 'sectors', 'deals', 'valuations', 'indicators', 'reading', 'about', 'notes']
 
 
 def chapters(pages):
@@ -464,6 +465,84 @@ def to_markdown(pages, lead, byline, segs):
             if pg['foot']:
                 out += [body_md(pg['foot']), '']
     return '\n'.join(out).strip() + '\n'
+
+
+JH_PHONE, JH_EMAIL = site.TEAM_CONTACT['jared-hardin']
+
+# Questions answered on the report page, each answered in the deck's own words: the subtitle of the first deck page
+# whose title matches. {adj} is the industry adjective ("industrial", "consumer", ...).
+FAQ_PAGES = [
+    (r'^our view$', "What is the Middle Market team's view of {adj} M&A for {period}?"),
+    (r'select recent .*transactions', 'What are buyers paying for {adj} companies?'),
+    (r'who is buying|participants', 'Who is buying {adj} companies?'),
+    (r'valuation (history|metrics)|public companies: valuation', 'How are public {adj} companies valued?'),
+    (r'operating metrics|revenue growth|market performance', 'How are listed {adj} companies performing?'),
+    (r'earnings', 'What are {adj} company executives saying about the market?'),
+    (r'economic trends|indicators', 'Which indicators should owners of {adj} companies watch?'),
+]
+
+
+def is_answer(t):
+    """A sentence that states a finding, not a label such as "Latest reported quarter, by theme"."""
+    return t.endswith('.') and 50 < len(t) <= 450 and bool(re.search(
+        r'\b(are|is|was|were|has|have|grew|rose|fell|trades?|traded|paid|pay|paying|favor|tied|turned|draws?|held|holds|'
+        r'bought|buy|buying|carry|carries|surging|drifting|rising|falls?|grow|growing|earns?|sit|decoupled|expect|compete)\b', t))
+
+
+FINE = re.compile(r'^(Expectations|Views|Figures|Sources?|Ratings|Information|Data|Listed|Medians?|Quotations|Notes?|Company names|'
+                  r'Demand ratings|Revenue growth is|Share prices are|Private participants|Active buyers are)\b')
+
+
+def tidy(t):
+    t = re.sub(r'\(\s+', '(', re.sub(r'\s+\)', ')', t))
+    return re.sub(r'^[A-Z][A-Z ]{3,}[A-Z]\s+(?=[A-Z][a-z])', '', t).strip()    # drop a leading label such as "WHAT IT SHOWS"
+
+
+def first_sentence(t):
+    m = re.match(r'(.+?[.])(\s|$)', t)
+    return m.group(1) if m else t
+
+
+def answer(pg, body=False):
+    """The page's subtitle when it states a finding. With body=True, otherwise the first finding sentence on the page
+    (used for Our View, where the subtitle is often a heading)."""
+    sub = tidy(html.unescape(plain(pg['subtitle']))) if pg['subtitle'] else ''
+    if is_answer(sub):
+        return sub
+    if body:
+        for para in re.findall(r'<p[^>]*>(.*?)</p>', pg['body'], re.S):
+            t = tidy(html.unescape(plain(para)))
+            if not FINE.match(t) and is_answer(first_sentence(t)):
+                return first_sentence(t)
+    return ''
+
+
+def owners_summary(pages):
+    """The "What it means for owners" sentence on the first pages, if the deck has one."""
+    for pg in pages[1:6]:
+        m = re.search(r'WHAT IT MEANS\s*(?:<[^>]+>\s*)*FOR OWNERS.*?<p[^>]*>(.*?)</p>', pg['body'], re.S | re.I)
+        if m:
+            t = first_sentence(tidy(html.unescape(plain(m.group(1)))))
+            if is_answer(t):
+                return t
+    return ''
+
+
+def report_faqs(pages, lead):
+    adj = site.SECTOR_BY_SLUG[SECTOR]['adj']
+    title = lambda p: re.sub(r'<[^>]+>', '', html.unescape(p['title'])).lower()
+    market = [p for key, _, pgs in chapters(pages) if key == 'market' for p in pgs if not p['part']]
+    lead_ = lead.rstrip('.') + '.'
+    first = lead_ if is_answer(lead_) else (owners_summary(pages) or next((a for a in map(answer, market) if a), ''))
+    faqs = [(f'What is happening in {adj} M&A in {PERIOD}?', first)] if first else []
+    for pat, q in FAQ_PAGES:
+        for pg in pages[1:]:
+            if not pg['part'] and re.search(pat, title(pg)):
+                a = answer(pg, body=pat == '^our view$')
+                if a:
+                    faqs.append((q.format(adj=adj, period=PERIOD), a))
+                    break
+    return faqs
 
 
 def build_page(prs):
@@ -535,14 +614,14 @@ def build_page(prs):
                 f'    <div class="stats rhero-stats">{stat_html}</div>\n  </div>\n</section>\n')
     seg_html = f'<p class="rsegs">{" &nbsp;·&nbsp; ".join(esc(x) for x in segs)}</p>' if segs else ''
     desc = f"{NAME} {PERIOD} middle market M&A report: {lead}"
-    page = site.head(f'{NAME} {PERIOD} M&A Industry Report | Benchmark International', site.meta_desc(desc, 240), root).replace(
+    page = site.head(f'{NAME} M&A Report, {PERIOD} | Benchmark International', site.meta_desc(desc, 160), root).replace(
         '</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n'
                    f'<link rel="alternate" type="text/markdown" href="{md_name}" title="{esc(NAME)} {PERIOD} M&amp;A Industry Report (Markdown)">\n</head>')
     page += site.header(root, 'industries')
     author = (f'<aside class="rauthor">\n      <img src="{root}assets/img/team/jared-hardin.jpg" alt="Jared Hardin" width="120" height="120" loading="lazy">\n'
               f'      <div>\n        <p class="eyebrow">Considering a transaction in {esc(site.SECTOR_BY_SLUG[SECTOR]["prose"])}?</p>\n        <h3>Jared Hardin</h3>\n'
               f'        <p class="role">Managing Director, Benchmark International</p>\n'
-              f'        <p><a href="tel:+18137716675">813-771-6675</a> &nbsp;|&nbsp; <a href="mailto:j.hardin@benchmarkintl.com">j.hardin@benchmarkintl.com</a></p>\n'
+              f'        <p><a href="tel:+1{JH_PHONE.replace("-", "")}">{JH_PHONE}</a> &nbsp;|&nbsp; <a href="mailto:{JH_EMAIL}">{JH_EMAIL}</a></p>\n'
               f'        <div class="btn-row"><a class="btn" href="{root}index.html#form">Start the Conversation</a><a class="btn btn--ghost" href="{pdf}" download>{DL} Download the PDF</a></div>\n'
               f'      </div>\n    </aside>')
     page += (f'\n<section class="hero hero--page">\n  <div class="wrap">\n'
@@ -557,6 +636,10 @@ def build_page(prs):
              f'{band}\n<div class="wrap rlayout">\n  <aside class="rtoc" aria-label="Report contents">\n    <p class="eyebrow">Contents</p>\n'
              f'    <ol>{"".join(toc)}</ol>\n    <a class="btn" href="{pdf}" download>{DL} Download the PDF</a>\n  </aside>\n'
              f'  <article class="report">\n{chr(10).join(secs)}\n    {author}\n  </article>\n</div>\n\n')
+    faqs = report_faqs(pages, lead)
+    if faqs:
+        page += site.faq_html(faqs, f'{NAME} M&A, {PERIOD}: Common Questions', 'From the Report')
+    json.dump({'faqs': faqs}, open(os.path.join(FOLDER, 'faq.json'), 'w'), indent=1, ensure_ascii=False)
     page += site.team_section(root) + '\n'
     page += ("<script>document.querySelectorAll('.rfilter input').forEach(function(i){var t=i.closest('.rfilter').nextElementSibling;"
              "i.addEventListener('input',function(){var q=i.value.toLowerCase();t.querySelectorAll('tbody tr').forEach(function(r){"
@@ -564,13 +647,13 @@ def build_page(prs):
     page += site.cta(root)
     page += site.footer(root)
     extra = {
-        'abstract': lead,
+        'abstract': lead, 'temporalCoverage': str(YEAR), 'isAccessibleForFree': True,
         'keywords': ', '.join([f'{NAME} M&A', f'{NAME} mergers and acquisitions', 'middle market', 'valuation multiples', 'sell-side M&A'] + segs),
         'encoding': [{'@type': 'MediaObject', 'contentUrl': site.abs_url(f'insights/{md_name}'), 'encodingFormat': 'text/markdown'}],
         'hasPart': [dict({'@type': 'WebPageElement', 'name': title_case(pg['title']), 'url': site.abs_url(f'insights/{PUBLIC}.html') + f'#p{pg["num"]:02d}'},
                          **({'description': html.unescape(plain(pg['subtitle']))} if pg['subtitle'] else {})) for pg in pages[1:]],
     }
-    page = site.report_extras(page, SECTOR, root, extra)
+    page = site.report_extras(page, SECTOR, root, extra, faqs=faqs)
     for bad, why in (('—', 'em dash'), ('Capital Markets', 'old team name'), ('BCM', 'old team name')):
         assert bad not in page, f'{why} on the page'
     assert not re.search(r'\bMMT\b|Middle Market Team', page), 'MMT on the page'
