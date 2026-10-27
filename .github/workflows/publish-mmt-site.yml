@@ -1,0 +1,35 @@
+name: Publish MMT site
+
+# On every merge to main, copies the finished Middle Market site (everything in
+# mid-market-practice/ except the build scripts) to the jp-hardin/mmt-site repo.
+# The mmt.benchmarkintl.com server pulls that repo every 5 minutes.
+# Needs the MMT_SITE_TOKEN secret (fine-grained token: mmt-site only, Contents read and write).
+on:
+  push:
+    branches: [main]
+    paths: ['mid-market-practice/**', '.github/workflows/publish-mmt-site.yml']
+  workflow_dispatch:
+
+concurrency: publish-mmt-site
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy the finished site into mmt-site
+        env:
+          TOKEN: ${{ secrets.MMT_SITE_TOKEN }}
+        run: |
+          [ -n "$TOKEN" ] || { echo "::error::Secret MMT_SITE_TOKEN is not set"; exit 1; }
+          remote="https://x-access-token:${TOKEN}@github.com/jp-hardin/mmt-site.git"
+          if ! git clone -q --depth 1 "$remote" site 2>/dev/null || [ -z "$(git -C site rev-parse --verify -q HEAD)" ]; then
+            rm -rf site && mkdir site && git -C site init -q -b main && git -C site remote add origin "$remote"
+          fi
+          rsync -a --delete --exclude .git --exclude _build/ --exclude README.md mid-market-practice/ site/
+          cd site
+          git add -A
+          if git diff --cached --quiet; then echo "No changes to publish"; exit 0; fi
+          git -c user.name="MMT site" -c user.email="mmt-site@users.noreply.github.com" commit -qm "Publish ${GITHUB_SHA::7}"
+          git push -q origin HEAD:main
+          echo "Published $(git rev-parse --short HEAD) ($(git ls-files | wc -l) files)"
