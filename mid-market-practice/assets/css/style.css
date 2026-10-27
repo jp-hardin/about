@@ -1,4 +1,4 @@
-/* Benchmark International — Mid-Market */
+/* Benchmark International, Middle Market */
 :root {
   --ink: #231f20;
   --charcoal: #2a2a2a;
@@ -162,7 +162,7 @@ h1, h2, h3, h4 { margin: 0 0 16px; line-height: 1.2; }
 .pillar-num { font-family: var(--font-serif); font-size: 2.4rem; color: var(--sand); line-height: 1; margin-bottom: 18px; }
 .pillar p { color: var(--graphite); margin: 0; }
 
-/* ── Industry grid (HL-style) ── */
+/* ── Industry grid ── */
 .ind-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
 .ind-card {
   position: relative; display: flex; flex-direction: column; background: var(--white);
@@ -585,7 +585,7 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
   .archive-row { grid-template-columns: 1fr; gap: 4px; }
 }
 
-/* ── Photography (Mid-Market image library) ── */
+/* ── Photography ── */
 @keyframes kenburns { from { transform: scale(1.12) translate3d(0, 0, 0); } to { transform: scale(1) translate3d(0, 0, 0); } }
 .hero--photo { background: var(--ink); }
 .hero-media { position: absolute; inset: 0; overflow: hidden; }
@@ -728,7 +728,7 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .team-close svg { width: 16px; height: 16px; display: block; }
 .team-close:hover, .team-close:focus-visible { background: var(--ink); color: var(--white); border-color: var(--ink); outline: none; }
 
-/* ── FAQ (answer-first content for search and AI assistants) ── */
+/* ── FAQ ── */
 .faq-wrap { max-width: 920px; }
 .faq { border-top: 1px solid var(--line); }
 .faq-item { border-bottom: 1px solid var(--line); }
