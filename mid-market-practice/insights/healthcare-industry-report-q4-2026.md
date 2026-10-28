@@ -4,8 +4,7 @@ Benchmark International's Middle Market team. October 2026 | Jared Hardin, Manag
 
 Mergers and acquisitions across provider services, life sciences, medical products, and pharmacy services
 
-Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.html  
-PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.pdf
+Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.html
 
 Sectors: Provider Services; Life Sciences & Diagnostics; Medical Products & Distribution; Pharmacy & Healthcare Services
 

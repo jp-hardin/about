@@ -759,3 +759,32 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 @media (min-width: 1081px) { .services.services--5 { grid-template-columns: repeat(3, 1fr); } }
 .service h3 a { color: inherit; text-decoration: none; }
 .service h3 a:hover { color: var(--gold-deep); }
+
+/* Report download form */
+.gate { width: min(560px, calc(100vw - 32px)); max-height: calc(100vh - 32px); padding: 36px 36px 28px; border: 0; border-top: 3px solid var(--gold); background: var(--white); color: var(--ink); box-shadow: 0 24px 60px rgba(0,0,0,.35); }
+.gate::backdrop { background: rgba(20, 17, 16, .72); }
+.gate h2 { font-family: var(--font-serif); font-weight: 400; font-size: 1.9rem; margin: 0 0 6px; }
+.gate .eyebrow { margin: 0 0 8px; }
+.gate-report { color: var(--graphite); margin: 0 0 20px; font-size: .95rem; }
+.gate-close { position: absolute; top: 12px; right: 14px; width: 36px; height: 36px; border: 0; background: none; font-size: 28px; line-height: 1; color: var(--muted); cursor: pointer; }
+.gate-form label, .prefs-form label { display: block; font-size: .8rem; font-weight: 600; color: var(--ink); margin: 0 0 14px; }
+.gate-form input:not([type=checkbox]), .prefs-form input:not([type=checkbox]) { display: block; width: 100%; margin-top: 6px; padding: 12px 14px; font: inherit; font-size: 1rem; font-weight: 400; border: 1px solid var(--line); background: var(--white); color: var(--ink); }
+.gate-form input:focus, .prefs-form input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+.gate-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.gate-check { display: flex !important; gap: 10px; align-items: flex-start; font-weight: 400 !important; font-size: .9rem !important; line-height: 1.5; color: var(--graphite) !important; }
+.gate-check input { margin: 4px 0 0; flex: 0 0 auto; width: 17px; height: 17px; accent-color: var(--gold-deep); }
+.gate-terms { color: var(--ink) !important; }
+.gate-check a { color: var(--gold-deep); }
+.gate-hp { position: absolute !important; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.gate-error { color: #a33; font-size: .9rem; margin: 0 0 12px; }
+.gate-submit { width: 100%; justify-content: center; margin-top: 4px; }
+.gate-fine { font-size: .78rem; line-height: 1.55; color: var(--muted); margin: 14px 0 0; }
+.gate-fine a { color: var(--gold-deep); }
+.gate-done .btn { margin-top: 10px; }
+.prefs-form { max-width: 560px; }
+.prefs-done { margin-top: 16px; color: var(--ink); }
+.legal-h { font-family: var(--font-serif); font-weight: 400; font-size: 1.5rem; margin: 40px 0 14px; scroll-margin-top: 100px; }
+.legal-updated { color: var(--muted); font-size: .9rem; }
+.legal-toc { margin: 0 0 12px; padding-left: 20px; columns: 2; column-gap: 40px; font-size: .95rem; line-height: 1.9; }
+.legal-toc a { color: var(--gold-deep); }
+@media (max-width: 640px) { .gate { padding: 30px 20px 22px; } .gate-row { grid-template-columns: 1fr; gap: 0; } .legal-toc { columns: 1; } }

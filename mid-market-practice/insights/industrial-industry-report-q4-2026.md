@@ -4,8 +4,7 @@ Benchmark International's Middle Market team. October 2026 | Jared Hardin, Manag
 
 Order books are full and financing costs more. Buyers are paying the most for what they cannot build in time: power and data center work, certified aerospace machining, and the service revenue that codes and regulations require.
 
-Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html  
-PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.pdf
+Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html
 
 Sectors: Manufacturing & Industrial Technology; Industrial Distribution & Services; Building Products & Construction Services; Energy, Power & Environmental Services; Transportation & Logistics
 

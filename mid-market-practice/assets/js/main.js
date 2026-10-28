@@ -123,4 +123,73 @@
     }, { rootMargin: '-30% 0px -65% 0px' });
     document.querySelectorAll('.wchap, .wpart[id]').forEach(function (c) { spy.observe(c); });
   }
+  // Report downloads: a short form (name, email, optional email opt-ins, agreement to the report terms) before the PDF.
+  // The answers go to the report downloads sheet; this browser then skips the form for later downloads.
+  var gate = document.getElementById('report-gate');
+  function send(endpoint, data) {
+    if (!endpoint) return Promise.resolve();
+    return fetch(endpoint, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(data) }).catch(function () {});
+  }
+  function remembered() { try { return localStorage.getItem('mmtReportForm') === '1'; } catch (err) { return false; } }
+  function startDownload(href) {
+    var a = document.createElement('a');
+    a.href = href; a.setAttribute('download', ''); document.body.appendChild(a); a.click(); a.remove();
+  }
+  if (gate && typeof gate.showModal === 'function') {
+    var form = gate.querySelector('.gate-form'), done = gate.querySelector('.gate-done'), err = gate.querySelector('.gate-error');
+    var current = null;
+    document.addEventListener('click', function (ev) {
+      var link = ev.target.closest('[data-gate]');
+      if (!link) return;
+      ev.preventDefault();
+      current = { pdf: link.getAttribute('data-gate'), report: link.getAttribute('data-report') || 'Industry report' };
+      if (remembered()) {
+        send(gate.getAttribute('data-endpoint'), { action: 'download', report: current.report, page: location.pathname,
+          terms_version: gate.getAttribute('data-terms'), returning: 'yes', email: localStorage.getItem('mmtReportEmail') || '' });
+        startDownload(current.pdf);
+        return;
+      }
+      gate.querySelector('.gate-report').textContent = current.report;
+      form.hidden = false; done.hidden = true; err.hidden = true;
+      gate.showModal();
+      var first = form.querySelector('input[name="first_name"]');
+      if (first) first.focus();
+    });
+    gate.querySelector('.gate-close').addEventListener('click', function () { gate.close(); });
+    gate.addEventListener('click', function (ev) { if (ev.target === gate) gate.close(); });
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var f = form.elements, problem = '';
+      if (!f.first_name.value.trim() || !f.last_name.value.trim()) problem = 'Please enter your first and last name.';
+      else if (!f.email.checkValidity() || !f.email.value.trim()) problem = 'Please enter a valid email address.';
+      else if (!f.terms.checked) problem = 'Please agree to the Report Terms and Conditions to download the report.';
+      if (problem) { err.textContent = problem; err.hidden = false; return; }
+      var data = { action: 'download', first_name: f.first_name.value.trim(), last_name: f.last_name.value.trim(),
+        email: f.email.value.trim(), reports: f.reports.checked ? 'yes' : 'no', newsletter: f.newsletter.checked ? 'yes' : 'no',
+        terms: 'yes', terms_version: gate.getAttribute('data-terms'), report: current.report, page: location.pathname,
+        company_website: f.company_website.value };
+      var btn = form.querySelector('.gate-submit');
+      btn.disabled = true;
+      send(gate.getAttribute('data-endpoint'), data).then(function () {
+        try { localStorage.setItem('mmtReportForm', '1'); localStorage.setItem('mmtReportEmail', data.email); } catch (err2) {}
+        btn.disabled = false;
+        form.hidden = true; done.hidden = false;
+        done.querySelector('.gate-file').href = current.pdf;
+        startDownload(current.pdf);
+      });
+    });
+  }
+  // Email preferences: unsubscribe requests go to the same sheet.
+  var prefs = document.querySelector('.prefs-form');
+  if (prefs) {
+    prefs.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var f = prefs.elements, perr = prefs.querySelector('.gate-error');
+      if (!f.email.checkValidity() || !f.email.value.trim()) { perr.textContent = 'Please enter a valid email address.'; perr.hidden = false; return; }
+      perr.hidden = true;
+      send(prefs.getAttribute('data-endpoint'), { action: 'unsubscribe', email: f.email.value.trim(),
+        reports: f.reports.checked ? 'yes' : 'no', newsletter: f.newsletter.checked ? 'yes' : 'no', company_website: f.company_website.value })
+        .then(function () { prefs.querySelector('.prefs-done').hidden = false; });
+    });
+  }
 })();

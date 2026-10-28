@@ -31,6 +31,7 @@ sys.path.insert(0, HERE)
 import build as site  # noqa: E402
 from webdeck import WebDeck, plain  # noqa: E402
 from flow import flow  # noqa: E402
+from readable import readable  # noqa: E402
 
 FOLDER = os.path.join(HERE, sys.argv[1].strip('/'))
 SLUG = os.path.basename(FOLDER)                                   # industrial-q4-2026
@@ -453,7 +454,7 @@ def fold_tables(body):
 def to_markdown(pages, lead, byline, segs):
     url = site.abs_url(f'insights/{PUBLIC}.html')
     out = [f'# {NAME} {PERIOD} M&A Industry Report', '', f"Benchmark International's Middle Market team. {byline}.", '',
-           lead, '', f'Web version: {url}  ', f'PDF: {site.abs_url(f"insights/{PUBLIC}.pdf")}', '']
+           lead, '', f'Web version: {url}', '']
     if segs:
         out += ['Sectors: ' + '; '.join(segs), '']
     for k, (key, ctitle, pgs) in enumerate(chapters(pages), 1):
@@ -625,8 +626,8 @@ def build_page(prs):
                 continue
             t = esc(web_title(pg))
             sub = f'<p class="wsub">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
-            body = polish(fold_tables(pg['web']))
-            head = f'<h3 class="wh3">{t}</h3>\n' if len(subs) > 1 else ''
+            body = readable(polish(fold_tables(pg['web'])))
+            head = f'<h3 class="wh3">{t}</h3>\n' if len(subs) > 1 and t.lower() != esc(ctitle).lower() else ''
             block = f'<section class="wpart" id="p{pg["num"]:02d}">\n{head}{sub}\n{body}\n{notes}\n</section>'
             if key == 'notes':
                 block = (f'<details class="wfold" id="p{pg["num"]:02d}"><summary>{t}</summary>\n{sub}\n{body}\n{pg["foot"]}\n</details>')
@@ -637,6 +638,9 @@ def build_page(prs):
         toc.append(f'<li class="rtoc-ch"><a href="#ch-{key}"><span>{k:02d}</span>{esc(ctitle)}</a>' + (f'<ol class="rtoc-sub">{sub_toc}</ol>' if sub_toc else '') + '</li>')
         secs.append(f'<section class="wchap" id="ch-{key}">\n<header class="wchap-head"><span class="wchap-num">{k:02d}</span>'
                     f'<h2 class="h2">{esc(ctitle)}</h2></header>\n{chr(10).join(inner)}\n</section>')
+        if k % 2 == 0 and k < len(chaps) - 1:
+            secs.append(f'<aside class="wdl"><p><strong>The full {esc(NAME)} {PERIOD} report</strong> has every chart, table, and source in the original layout.</p>'
+                        + site.gated(root, f'insights/{pdf}', f'{NAME} {PERIOD} M&A Industry Report', 'btn', f'{DL} Download the full report (PDF)') + '</aside>')
 
     pairs, band_label, _ = stats_band(pages)
     band = ''
@@ -651,12 +655,9 @@ def build_page(prs):
         '</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n'
                    f'<link rel="alternate" type="text/markdown" href="{md_name}" title="{esc(NAME)} {PERIOD} M&amp;A Industry Report (Markdown)">\n</head>')
     page += site.header(root, 'industries')
-    author = (f'<aside class="rauthor">\n      <img src="{root}assets/img/team/jared-hardin.jpg" alt="Jared Hardin" width="120" height="120" loading="lazy">\n'
-              f'      <div>\n        <p class="eyebrow">Considering a transaction in {esc(site.SECTOR_BY_SLUG[SECTOR]["prose"])}?</p>\n        <h3>Jared Hardin</h3>\n'
-              f'        <p class="role">Managing Director, Benchmark International</p>\n'
-              f'        <p><a href="tel:+1{JH_PHONE.replace("-", "")}">{JH_PHONE}</a> &nbsp;|&nbsp; <a href="mailto:{JH_EMAIL}">{JH_EMAIL}</a></p>\n'
-              f'        <div class="btn-row"><a class="btn" href="{root}index.html#form">Start the Conversation</a><a class="btn btn--ghost" href="{pdf}" download>{DL} Download the PDF</a></div>\n'
-              f'      </div>\n    </aside>')
+    final_dl = (f'<aside class="wdl wdl--end"><p><strong>Download the full {esc(NAME)} {PERIOD} report</strong> with every chart, table, and source, '
+                f'or <a href="{root}index.html#form">start a confidential conversation</a> about your business.</p>'
+                + site.gated(root, f'insights/{pdf}', f'{NAME} {PERIOD} M&A Industry Report', 'btn', f'{DL} Download the full report (PDF)') + '</aside>')
     page += (f'\n<section class="hero hero--page">\n  <div class="wrap">\n'
              f'    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}industries/index.html">Industries</a> / '
              f'<a href="{root}industries/{SECTOR}.html">{esc(NAME)}</a> / {PERIOD} Industry Report</div>\n'
@@ -664,11 +665,11 @@ def build_page(prs):
              f'    <h1 class="display">{esc(NAME)} <em>{PERIOD}</em></h1>\n'
              f'    <p class="lead">{esc(lead)}</p>\n    {seg_html}\n'
              f'    <p class="rbyline">{esc(norm(byline))}</p>\n'
-             f'    <div class="btn-row"><a class="btn" href="{pdf}" download>{DL} Download the PDF</a>'
+             f'    <div class="btn-row">' + site.gated(root, f'insights/{pdf}', f'{NAME} {PERIOD} M&A Industry Report', 'btn', f'{DL} Download the PDF') +
              f'<a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a></div>\n  </div>\n</section>\n'
              f'{band}\n<div class="wrap rlayout">\n  <aside class="rtoc" aria-label="Report contents">\n    <p class="eyebrow">Contents</p>\n'
-             f'    <ol>{"".join(toc)}</ol>\n    <a class="btn" href="{pdf}" download>{DL} Download the PDF</a>\n  </aside>\n'
-             f'  <article class="report wdoc">\n{chr(10).join(secs)}\n    {author}\n  </article>\n</div>\n\n')
+             f'    <ol>{"".join(toc)}</ol>\n    ' + site.gated(root, f'insights/{pdf}', f'{NAME} {PERIOD} M&A Industry Report', 'btn', f'{DL} Download the PDF') + '\n  </aside>\n'
+             f'  <article class="report wdoc">\n{chr(10).join(secs)}\n    {final_dl}\n  </article>\n</div>\n\n')
     faqs = report_faqs(pages, lead)
     if faqs:
         page += site.faq_html(faqs, f'{NAME} M&A, {PERIOD}: Common Questions', 'From the Report')

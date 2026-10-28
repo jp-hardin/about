@@ -41,6 +41,14 @@ PARENT_ORG = {"@type": "Organization", "@id": "https://www.benchmarkintl.com/#or
                           "addressRegion": "FL", "postalCode": "33607", "addressCountry": "US"}}
 REPORT_DATE = "2026-10"       # publication month of the current industry reports (ISO 8601)
 
+# Report downloads: every "Download" button opens a short form (name, email, two opt-ins, agreement to the report
+# terms). Each submission is added as a row to the "MMT Report Downloads" Google Sheet by the Apps Script web app in
+# _build/forms/report-signups.gs. REPORT_FORM_URL is that web app's /exec address; while it is empty the form still
+# gates the download but records nothing. REPORT_TERMS_VERSION is written into each row's Notes, so change it when
+# the wording of report-terms.html or of the form's consent lines changes.
+REPORT_FORM_URL = ""
+REPORT_TERMS_VERSION = "2026-10-28"
+
 # Important Disclosures: shown on disclosures.html and printed as the last page of every industry report PDF
 # (_build/reports/disclosures.py). Adapted from a peer firm's report disclosures; have Compliance confirm any
 # change, and add Benchmark International's own regulatory status here if Compliance wants it stated.
@@ -555,6 +563,42 @@ SOCIAL = {
 }
 
 
+
+def report_gate(root):
+    """The short form in front of every report PDF. The download links carry data-gate (the PDF) and data-report
+    (its title); assets/js/main.js opens this dialog, sends the form to REPORT_FORM_URL and then starts the download."""
+    return f"""<dialog class="gate" id="report-gate" aria-labelledby="gate-title" data-endpoint="{e(REPORT_FORM_URL)}" data-terms="{REPORT_TERMS_VERSION}">
+  <button class="gate-close" type="button" aria-label="Close">&times;</button>
+  <form class="gate-form" novalidate>
+    <p class="eyebrow">Free download</p>
+    <h2 id="gate-title">Get the full report</h2>
+    <p class="gate-report"></p>
+    <div class="gate-row">
+      <label>First name<input name="first_name" autocomplete="given-name" required maxlength="80"></label>
+      <label>Last name<input name="last_name" autocomplete="family-name" required maxlength="80"></label>
+    </div>
+    <label>Work email<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
+    <label class="gate-hp" aria-hidden="true">Company website<input name="company_website" tabindex="-1" autocomplete="off"></label>
+    <label class="gate-check"><input type="checkbox" name="reports" value="yes"><span>Email me new Middle Market industry reports when they are published.</span></label>
+    <label class="gate-check"><input type="checkbox" name="newsletter" value="yes"><span>Send me the Benchmark International Middle Market newsletter.</span></label>
+    <label class="gate-check gate-terms"><input type="checkbox" name="terms" value="yes" required><span>I agree to the <a href="{root}report-terms.html" target="_blank">Report Terms and Conditions</a>, including the Important Disclosures and the Privacy Notice.</span></label>
+    <p class="gate-error" role="alert" hidden></p>
+    <button class="btn gate-submit" type="submit">Download the report</button>
+    <p class="gate-fine">The two email boxes are optional, and you can unsubscribe at any time from any email or on our <a href="{root}email-preferences.html" target="_blank">email preferences</a> page. Your details stay with the Middle Market team.</p>
+  </form>
+  <div class="gate-done" hidden>
+    <p class="eyebrow">Thank you</p>
+    <h2>Your download is starting</h2>
+    <p>If it does not start, use the button below.</p>
+    <a class="btn gate-file" href="#" download>Download the PDF</a>
+  </div>
+</dialog>"""
+
+
+def gated(root, pdf, title, cls, label):
+    """A download link that goes through the report form. Without JavaScript it opens the report terms page."""
+    return (f'<a class="{cls}" href="{root}report-terms.html#download" data-gate="{root}{pdf}" data-report="{e(title)}">{label}</a>')
+
 def footer(root):
     ext = ' target="_blank" rel="noopener"'
     social = "".join(
@@ -590,10 +634,11 @@ def footer(root):
     </div>
     <div class="footer-base">
       <span>&copy; 2026 Benchmark International. All rights reserved. Information as of <time datetime="{SITE_UPDATED}">{AS_OF}</time>.</span>
-      <span><a href="{root}disclosures.html">Important Disclosures</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/terms/">Terms</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/privacy-policy/">Privacy Policy</a></span>
+      <span><a href="{root}disclosures.html">Important Disclosures</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/terms/">Terms</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/privacy-policy/">Privacy Policy</a>{f' &nbsp;/&nbsp; <a href="{root}report-terms.html">Report Terms</a> &nbsp;/&nbsp; <a href="{root}email-preferences.html">Email Preferences</a>' if REPORTS_LIVE else ""}</span>
     </div>
   </div>
 </footer>
+{report_gate(root) if REPORTS_LIVE else ""}
 <script src="{root}assets/js/main.js?v={_asset_version('assets/js/main.js')}" defer></script>
 </body>
 </html>
@@ -648,9 +693,27 @@ def cta(root, title="It All Starts With a Conversation", form=False, sub="", par
       <script>
         (function () {{
           var host = document.getElementById('hs-form');
+          // a copy of each enquiry for the General Form tab of the report downloads sheet (REPORT_FORM_URL)
+          function logContact($form) {{
+            var endpoint = "{e(REPORT_FORM_URL)}", form = $form && ($form[0] || $form);
+            if (!endpoint || !form || !form.querySelectorAll) return;
+            var data = new URLSearchParams({{ action: 'contact', page: location.pathname }}), extra = [];
+            form.querySelectorAll('input, select, textarea').forEach(function (el) {{
+              if (!el.name || el.type === 'hidden' || el.type === 'submit' || ((el.type === 'checkbox' || el.type === 'radio') && !el.checked)) return;
+              var v = String(el.value || '').trim();
+              if (!v) return;
+              if (el.name === 'firstname') data.set('first_name', v);
+              else if (el.name === 'lastname') data.set('last_name', v);
+              else if (el.name === 'email') data.set('email', v);
+              else extra.push((el.closest('.hs-form-field') && el.closest('.hs-form-field').querySelector('label') ? el.closest('.hs-form-field').querySelector('label').textContent.replace(/\*/g, '').trim() : el.name) + ': ' + v);
+            }});
+            data.set('details', extra.join('; '));
+            if (navigator.sendBeacon) navigator.sendBeacon(endpoint, data);
+            else fetch(endpoint, {{ method: 'POST', mode: 'no-cors', body: data }});
+          }}
           function fallback() {{ host.innerHTML = '<p class="hs-fallback">Call <a href="{PHONE_HREF}">{PHONE}</a> or email <a href="mailto:{EMAIL}">{EMAIL}</a> to start the conversation.</p>'; }}
           if (window.hbspt) {{
-            hbspt.forms.create({{ region: "{HUBSPOT['region']}", portalId: "{HUBSPOT['portalId']}", formId: "{HUBSPOT['formId']}", target: "#hs-form", css: "", submitButtonClass: "btn hs-submit", submitText: "Start the Conversation" }});
+            hbspt.forms.create({{ region: "{HUBSPOT['region']}", portalId: "{HUBSPOT['portalId']}", formId: "{HUBSPOT['formId']}", target: "#hs-form", css: "", submitButtonClass: "btn hs-submit", submitText: "Start the Conversation", onFormSubmit: logContact }});
           }} else {{ fallback(); }}
         }})();
       </script>
@@ -756,8 +819,7 @@ def report_extras(page, slug, root, extra=None, faqs=None):
     article = {"@type": "Report", "headline": rpt["title"], "name": rpt["title"], "description": rpt["summary"],
                "datePublished": REPORT_DATE, "dateModified": REPORT_DATE, "inLanguage": "en-US", "url": abs_url(rpt["url"]),
                "author": author, "publisher": {"@id": SITE_URL + "#org"}, "about": f"{sec['name']} mergers and acquisitions",
-               "image": SITE_URL + f"assets/img/social/{slug}-report.jpg",
-               "associatedMedia": {"@type": "MediaObject", "contentUrl": abs_url(rpt["pdf"]), "encodingFormat": "application/pdf"}}
+               "image": SITE_URL + f"assets/img/social/{slug}-report.jpg"}
     article.update(extra or {})
     return finalize(page, rpt["url"], crumbs=[("Middle Market", ""), ("Insights", "insights/index.html"), (rpt["title"], rpt["url"])],
                     schema=[article] + ([faq_schema(faqs)] if faqs else []), image=f"assets/img/social/{slug}-report.jpg")
@@ -1585,7 +1647,7 @@ def insight_card(i, root, current):
     <p class="insight-summary">{e(i['summary'])}</p>
     <div class="insight-actions">
       <a class="btn" href="{root}{i['url']}">Read the Report</a>
-      <a class="link-arrow" href="{root}{i['pdf']}" download>Download PDF</a>
+      {gated(root, i['pdf'], i['title'], "link-arrow", "Download PDF")}
     </div>
   </div>
 </article>"""
@@ -1605,7 +1667,7 @@ def page_insights():
   <span class="archive-period">{e(i['period'])}</span>
   <a class="archive-title" href="{root}{i['url']}">{e(i['title'])}</a>
   <span class="archive-sector">{e(SECTOR_BY_SLUG[i['sector']]['name'])}</span>
-  <a class="link-arrow" href="{root}{i['pdf']}" download>PDF</a>
+  {gated(root, i['pdf'], i['title'], "link-arrow", "PDF")}
 </li>""" for i in archive)
         archive_html = f'<ul class="archive-list">{rows}</ul>'
     else:
@@ -1649,6 +1711,108 @@ def page_insights():
         {"@type": "ListItem", "position": k + 1, "name": i["title"], "url": abs_url(i["url"])} for k, i in enumerate(INSIGHTS)]}
     write("insights/index.html", html, crumbs=[("Middle Market", ""), ("Insights", "insights/index.html")], schema=[reports])
 
+
+
+# Report Terms and Conditions: agreed to on the download form. A working draft for Compliance and counsel to confirm
+# before the site goes live; change REPORT_TERMS_VERSION and TERMS_UPDATED whenever the wording changes.
+TERMS_UPDATED = "October 28, 2026"
+POSTAL_ADDRESS = "Benchmark International, 4030 W Boy Scout Blvd, Suite 500, Tampa, FL 33607, United States"
+REPORT_TERMS = [
+    ("About these terms", [
+        "These terms apply when you request or download a Middle Market industry report (a “Report”) from this website. By checking the box on the download form and downloading a Report, you agree to them. If you do not agree, please do not download the Report. The online version of each Report remains available on this website.",
+        f"The Reports are published by the Middle Market team of Benchmark International, {POSTAL_ADDRESS.split(', ', 1)[1]}. You can reach us at {EMAIL}."]),
+    ("How you may use a Report", [
+        "You may read, download, and print a Report for your own information and for internal use within your business. You may quote brief passages with attribution to Benchmark International and a link to this website.",
+        "You may not sell, republish, redistribute, or make a Report available to others in whole or in substantial part, remove or alter any notice in it, or use it to build a database or a competing product, without our written permission. Requests can be sent to " + EMAIL + "."]),
+    ("No advice and no offer", [
+        "The Reports are general market commentary for information only. They are not a recommendation, an offer, or a solicitation to buy or sell any security or business, and they are not investment, legal, tax, accounting, or valuation advice. Benchmark International does not provide valuations, appraisals, or fairness opinions. Please consult your own advisers before making any decision."]),
+    ("Information and sources", [
+        "Reports draw on public filings, company announcements, published research, and other third-party sources, together with our own transaction experience. We have not independently verified third-party information. Figures are current only as of the date stated in each Report, and we are under no obligation to update them. Forward-looking statements are opinions, not facts, and past transactions do not predict future results."]),
+    ("Ownership", [
+        "The Reports and their contents are owned by Benchmark International and protected by copyright and other laws. Company names, logos, and trademarks mentioned in a Report belong to their owners, are used for identification only, and do not imply any affiliation or endorsement."]),
+    ("Limitation of liability", [
+        "Reports are provided “as is” without any warranty. To the fullest extent permitted by law, Benchmark International and its affiliates, officers, and employees are not liable for any loss or damage arising from the use of, or reliance on, a Report or this website."]),
+    ("Privacy notice", [
+        "When you download a Report we collect your first name, last name, and email address, which Report you requested, the date, your agreement to these terms, and your choices about the two optional emails. We use this information to provide the Report, to keep a record of your agreement and your choices, and, only if you opted in, to send you new industry reports or the Middle Market newsletter. We may also use it to respond to you if you contact us.",
+        "We do not sell your information or share it for targeted advertising. It is stored with service providers that process it on our behalf, such as our cloud document and email providers, and it may be disclosed if the law requires. We keep it for as long as you remain subscribed or we have a business need for it, and we keep a record of any unsubscribe request so that we can continue to honor it.",
+        "Depending on where you live, you may have the right to ask for access to, correction of, or deletion of your information, to withdraw your consent at any time, and to object to its use, and visitors in the European Economic Area and the United Kingdom may complain to their data protection authority. To make a request, email " + EMAIL + ". We will not treat you differently for exercising these rights. Your information may be stored and processed in the United States. These Reports are intended for business owners and professionals and are not directed to anyone under 18.",
+        "For more on how Benchmark International handles personal information, see the Benchmark International Privacy Policy."]),
+    ("Emails and unsubscribing", [
+        "Checking a box on the download form is optional and is never a condition of receiving a Report. We send industry reports or the Middle Market newsletter only to people who opt in. Every such email identifies Benchmark International, includes our postal address, and has a working unsubscribe link. You can also unsubscribe on our email preferences page or by emailing " + EMAIL + ". We act on unsubscribe requests promptly, and in any case within 10 business days.",
+        "Postal address: " + POSTAL_ADDRESS + "."]),
+    ("Changes and governing law", [
+        "We may update these terms from time to time; the date below shows the latest version, and the version you agreed to is recorded with your download. These terms are governed by the laws of the State of Florida, United States, without regard to conflict-of-laws rules, except where the law of your country of residence gives you rights that cannot be waived."]),
+]
+
+
+def page_report_terms():
+    root = ""
+    html = head("Report Terms and Conditions | Benchmark International",
+                "Terms for downloading Benchmark International Middle Market industry reports, with the Important Disclosures and the privacy notice.", root)
+    html += header(root)
+    toc = "".join(f'<li><a href="#t{k}">{e(t)}</a></li>' for k, (t, _) in enumerate(REPORT_TERMS, 1)) + '<li><a href="#disclosures">Important Disclosures</a></li>'
+    body = "".join(f'<h2 class="legal-h" id="t{k}">{e(t)}</h2>' + "".join(f"<p>{e(x)}</p>" for x in ps) for k, (t, ps) in enumerate(REPORT_TERMS, 1))
+    body = body.replace(e("Benchmark International Privacy Policy."), '<a href="https://www.benchmarkintl.com/privacy-policy/">Benchmark International Privacy Policy</a>.')
+    body = body.replace(e("email preferences page"), f'<a href="{root}email-preferences.html">email preferences page</a>')
+    body += '<h2 class="legal-h" id="disclosures">Important Disclosures</h2>' + "".join(f"<p>{e(p)}</p>" for p in DISCLOSURES)
+    html += f"""
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Report Terms and Conditions</div>
+    <p class="eyebrow">Legal</p>
+    <h1 class="display">Report Terms and Conditions</h1>
+    <p class="lead">The terms for downloading our industry reports, including the Important Disclosures and how we handle your information.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <article class="legal" id="download">
+      <p class="legal-updated">Last updated {TERMS_UPDATED}.</p>
+      <ol class="legal-toc">{toc}</ol>
+      {body}
+      <p class="legal-links"><a class="link-arrow" href="{root}insights/index.html">Back to Insights</a></p>
+    </article>
+  </div>
+</section>
+"""
+    html += footer(root)
+    write("report-terms.html", html, crumbs=[("Middle Market", ""), ("Report Terms and Conditions", "report-terms.html")])
+
+
+def page_email_preferences():
+    """Unsubscribe from the industry report emails or the newsletter; recorded in the report downloads sheet."""
+    root = ""
+    html = head("Email Preferences | Benchmark International", "Unsubscribe from Benchmark International Middle Market emails.", root)
+    html = html.replace("</head>", '<meta name="robots" content="noindex">\n</head>')
+    html += header(root)
+    html += f"""
+<section class="hero hero--page">
+  <div class="wrap">
+    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Email Preferences</div>
+    <p class="eyebrow">Email preferences</p>
+    <h1 class="display">Unsubscribe</h1>
+    <p class="lead">Enter the email address you used and choose what to stop receiving. We act on every request promptly, and in any case within 10 business days.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <form class="prefs-form legal" data-endpoint="{e(REPORT_FORM_URL)}" novalidate>
+      <label>Email address<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
+      <label class="gate-hp" aria-hidden="true">Company website<input name="company_website" tabindex="-1" autocomplete="off"></label>
+      <label class="gate-check"><input type="checkbox" name="reports" value="yes" checked><span>Stop sending me Middle Market industry reports.</span></label>
+      <label class="gate-check"><input type="checkbox" name="newsletter" value="yes" checked><span>Stop sending me the Middle Market newsletter.</span></label>
+      <p class="gate-error" role="alert" hidden></p>
+      <button class="btn" type="submit">Update my preferences</button>
+      <p class="prefs-done" hidden>Thank you. Your request has been recorded. You can also email <a href="mailto:{EMAIL}">{EMAIL}</a> at any time.</p>
+      <p class="gate-fine">See the <a href="{root}report-terms.html">Report Terms and Conditions</a> for how we handle your information.</p>
+    </form>
+  </div>
+</section>
+"""
+    html += footer(root)
+    write("email-preferences.html", html, index=False)
 
 def page_disclosures():
     root = ""
@@ -1800,19 +1964,21 @@ AI_BOTS = ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-Searc
 
 def write_discovery_files():
     """sitemap.xml, robots.txt and llms.txt for search engines and AI assistants (absolute URLs from SITE_URL)."""
-    pages = list(dict.fromkeys(SITEMAP + [i["url"] for i in PUBLISHED_REPORTS] + [i["pdf"] for i in PUBLISHED_REPORTS]))
+    pages = list(dict.fromkeys(SITEMAP + [i["url"] for i in PUBLISHED_REPORTS]))
     prio = lambda r: "1.0" if r == "index.html" else "0.8" if r.startswith(("industries/", "insights/")) or r == "about.html" else "0.6"
     urls = "".join(f"  <url><loc>{abs_url(r)}</loc><lastmod>{SITE_UPDATED}</lastmod><priority>{prio(r)}</priority></url>\n" for r in pages)
     sitemap = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n'
+    base = urlparse(SITE_URL).path
+    pdfs = f"Disallow: {base}insights/*.pdf\n"   # the report PDFs are behind the download form; the report pages are open
     robots = ("# Search engines and AI assistants are welcome to read and cite this site.\n"
-              "User-agent: *\nAllow: /\nDisallow: " + urlparse(SITE_URL).path + "_build/\n\n"
-              + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in AI_BOTS)
+              "User-agent: *\nAllow: /\nDisallow: " + base + "_build/\n" + pdfs + "\n"
+              + "".join(f"User-agent: {b}\nAllow: /\n{pdfs}\n" for b in AI_BOTS)
               + f"Sitemap: {SITE_URL}sitemap.xml\n")
     sec = "\n".join(f"- [{x['name']}]({abs_url('industries/' + x['slug'] + '.html')}): {x['short']}" for x in SECTORS)
     def md_link(i):
         md = i['url'][:-5] + '.md'
-        return f", [Markdown]({abs_url(md)})" if os.path.exists(os.path.join(SITE, md)) else ""
-    rep = "\n".join(f"- [{i['title']}]({abs_url(i['url'])}) ([PDF]({abs_url(i['pdf'])}){md_link(i)}): {i['summary']}" for i in PUBLISHED_REPORTS)
+        return f" ([Markdown]({abs_url(md)}))" if os.path.exists(os.path.join(SITE, md)) else ""
+    rep = "\n".join(f"- [{i['title']}]({abs_url(i['url'])}){md_link(i)}: {i['summary']}" for i in PUBLISHED_REPORTS)
     faqs = "\n".join(f"- **{q}** {a}" for q, a in home_faqs())
     llms = f"""# {ORG_NAME}
 
@@ -1861,7 +2027,7 @@ def llms_full():
         out += [f"- **{seg[0]}:** " + " ".join(cp.get("segments", {}).get(seg[0]) or [seg[1]]) for seg in s["segments"]]
         if s.get("report"):
             r = current_report(s["slug"])
-            out += ["", f"Current report: [{r['title']}]({abs_url(r['url'])}) ([PDF]({abs_url(r['pdf'])})). {r['summary']}"]
+            out += ["", f"Current report: [{r['title']}]({abs_url(r['url'])}). {r['summary']}"]
             fq = os.path.join(HERE, "reports", f"{s['slug']}-q{r['quarter']}-{r['year']}", "faq.json")
             if os.path.exists(fq):
                 out += ["", f"#### From the {r['title']}", ""] + [f"**{q}**\n{a}\n" for q, a in json.load(open(fq, encoding="utf-8"))["faqs"]]
@@ -1870,7 +2036,7 @@ def llms_full():
             out += ["", f"#### {s['name']} M&A: common questions", ""] + [f"**{q}**\n{a}\n" for q, a in faqs]
         out.append("")
     if REPORTS_LIVE:
-        out += ["## Industry reports", ""] + [f"- [{i['title']}]({abs_url(i['url'])}) ([PDF]({abs_url(i['pdf'])})): {i['summary']}" for i in PUBLISHED_REPORTS]
+        out += ["## Industry reports", ""] + [f"- [{i['title']}]({abs_url(i['url'])}): {i['summary']}" for i in PUBLISHED_REPORTS]
     out += ["", "## Selected completed transactions", "", f"Publicly announced transactions advised by Benchmark International. Full list: {abs_url('transactions.html')}", ""]
     for t in TOMBSTONES:
         bits = [t["sector_name"], t.get("segment", ""), t.get("year", "")]
@@ -1947,5 +2113,8 @@ if __name__ == "__main__":
     else:
         remove_unpublished_reports()
     page_disclosures()
+    if REPORTS_LIVE:
+        page_report_terms()
+        page_email_preferences()
     page_about()
     write_discovery_files()
