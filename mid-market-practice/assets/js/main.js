@@ -102,4 +102,20 @@
       if (ev.clientX < r.left || ev.clientX > r.right || ev.clientY < r.top || ev.clientY > r.bottom) d.close();
     });
   });
+  // Report pages: the section bar marks the section being read
+  var bar = document.querySelector('.wbar');
+  if (bar && 'IntersectionObserver' in window) {
+    var links = {};
+    bar.querySelectorAll('a[href^="#ch-"]').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && links[e.target.id]) {
+          Object.keys(links).forEach(function (k) { links[k].classList.remove('is-active'); });
+          links[e.target.id].classList.add('is-active');
+          links[e.target.id].scrollIntoView({ block: 'nearest', inline: 'center' });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    document.querySelectorAll('.wchap').forEach(function (c) { spy.observe(c); });
+  }
 })();

@@ -7,7 +7,7 @@ Strategic and financial buyers stayed active across consumer through the third q
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.pdf
 
-Segments: Food & Beverage; Consumer Brands & Products; Foodservice & Distribution; Consumer Services & Retail
+Sectors: Food & Beverage; Consumer Brands & Products; Foodservice & Distribution; Consumer Services & Retail
 
 ## 1. Industry at a Glance
 
@@ -19,7 +19,7 @@ Buyers of consumer businesses stayed active through the third quarter while rebu
 
 Tariffs, fuel, and financing: three costs buyers are repricing
 
-- 07 Perspectives on four consumer segments
+- 07 Perspectives on four consumer sectors
 
 - 08 Our view
 
@@ -257,7 +257,7 @@ OUR POSITION
 
 Buyers are paying for brands and operators that held volume while they raised price, that sell through more than one channel, and that can add locations, and with financing costs higher they are testing the earnings behind that performance more closely than a year ago.
 
-23.8%store brand share of units sold in the first half of 2026 (Private Label Manufacturers Association)About 75%of US private equity buyouts in the second quarter were add-on acquisitions (PitchBook)9 of 17named acquirers of our consumer clients were operating companies or platforms adding to an existing businessSEGMENT
+23.8%store brand share of units sold in the first half of 2026 (Private Label Manufacturers Association)About 75%of US private equity buyouts in the second quarter were add-on acquisitions (PitchBook)9 of 17named acquirers of our consumer clients were operating companies or platforms adding to an existing businessSECTOR
 FOOD & BEVERAGE
 CONSUMER BRANDS & PRODUCTS
 FOODSERVICE & DISTRIBUTION
@@ -291,11 +291,11 @@ Assemble landed cost by period, fuel recovery by contract, and the financing ter
 
 Approach operating companies and platforms in adjacent categories alongside sponsors; nine of the 17 named acquirers of our consumer clients were operating companies or platforms.
 
-Views are those of the Benchmark International Middle Market team, drawn from the figures in this report, which are the latest published as of October 19, 2026. Demand reflects the team’s assessment for owner-operated businesses in each segment.
+Views are those of the Benchmark International Middle Market team, drawn from the figures in this report, which are the latest published as of October 19, 2026. Demand reflects the team’s assessment for owner-operated businesses in each sector.
 
 ## 4. Sector by Sector
 
-What is moving demand, and who is buying, in each of the segments the consumer practice covers.
+What is moving demand, and who is buying, in each of the sectors the consumer practice covers.
 
 ### Food & Beverage
 
@@ -671,13 +671,13 @@ Calculated on 2025 revenue of $35.1M (PCT Top 100)
 
 Not disclosed
 
-Values and multiples are as stated by the acquirer or reported in the linked source. Value to revenue is our calculation where marked. Company names are the property of their owners and are used for identification. Transactions advised by Benchmark International appear in [Our Transactions](#p14). Three transactions are shown for each of the four segments.
+Values and multiples are as stated by the acquirer or reported in the linked source. Value to revenue is our calculation where marked. Company names are the property of their owners and are used for identification. Transactions advised by Benchmark International appear in [Our Transactions](#p14). Three transactions are shown for each of the four sectors.
 
 ### Our Transactions
 
-Consumer services and retail is the most active segment, and operating companies and platforms bought just over half of the named companies.
+Consumer services and retail is the most active sector, and operating companies and platforms bought just over half of the named companies.
 
-CLOSED BY SEGMENT
+CLOSED BY SECTOR
 
 Since January 2025
 
@@ -693,7 +693,7 @@ Since January 2025
 
 SINCE JANUARY 2025
 
-32consumer transactions closed in the four segments9 of 17
+32consumer transactions closed in the four sectors9 of 17
 
 - named acquirers were operating companies or platforms adding to an existing business: 6
 
@@ -866,7 +866,7 @@ Each tile links to the announcement on benchmarkintl.com, and Benchmark Internat
 
 ### Landscape: Select Participants
 
-The listed reference companies in each segment, and the platforms, sponsors, and strategic buyers acquiring founder-owned consumer businesses.
+The listed reference companies in each sector, and the platforms, sponsors, and strategic buyers acquiring founder-owned consumer businesses.
 
 - FOOD & BEVERAGE 20 LISTED
 LISTED COMPANIES

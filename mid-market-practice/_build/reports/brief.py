@@ -284,6 +284,8 @@ def merge_continued(pages):
         if prev is not None and not pg['part'] and not prev['part'] and key(pg['title']) == key(prev['title']):
             sub = f'<p class="rlead">{pg["subtitle"]}</p>\n' if pg['subtitle'] and pg['subtitle'] != prev['subtitle'] else ''
             prev['body'] += '\n' + sub + pg['body']
+            prev['web'] += '\n' + sub + pg['web']
+            prev['web'] = join_tables(prev['web'])
             if pg['foot'] and pg['foot'] not in prev['foot']:
                 prev['foot'] = (prev['foot'] + '\n' + pg['foot']).strip()
             alias[pg['num']] = prev['num']
@@ -328,7 +330,7 @@ def web_refs(pages, alias):
     for i, pg in enumerate(pages[1:], 1):
         here = pg['num']
         nxt = pages[i + 1] if i + 1 < len(pages) else None
-        for k in ('body', 'foot', 'subtitle'):
+        for k in ('body', 'web', 'foot', 'subtitle'):
             h = pg[k] or ''
             h = re.sub(r'\b(on|across|in) (pages? \d+(?:\s*(?:,|and|to|–)\s*\d+)*)', lambda m: pages_ref(m), h)
             h = re.sub(r'\b(shown) (pages? \d+(?:\s*(?:,|and|to|–)\s*\d+)*)', lambda m: ('shown ' + pages_ref(m)).strip(), h)
@@ -444,7 +446,7 @@ def fold_tables(body):
         box = '<div class="rfilter"><input type="search" placeholder="Filter this table" aria-label="Filter this table"></div>'
         if rows <= 13:
             return box + html_
-        return f'<details class="rfold rfold--table" open><summary>Table: {rows - 1} rows</summary>{box}{html_}</details>'
+        return f'<details class="wtable-fold"><summary>Show the full table ({rows - 1} rows)</summary>{box}{html_}</details>'
     return re.sub(r'<div class="rtable-wrap">.*?</table></div>', fold, body, flags=re.S)
 
 
@@ -453,7 +455,7 @@ def to_markdown(pages, lead, byline, segs):
     out = [f'# {NAME} {PERIOD} M&A Industry Report', '', f"Benchmark International's Middle Market team. {byline}.", '',
            lead, '', f'Web version: {url}  ', f'PDF: {site.abs_url(f"insights/{PUBLIC}.pdf")}', '']
     if segs:
-        out += ['Segments: ' + '; '.join(segs), '']
+        out += ['Sectors: ' + '; '.join(segs), '']
     for k, (key, ctitle, pgs) in enumerate(chapters(pages), 1):
         out += [f'## {k}. {ctitle}', '']
         for pg in pgs:
@@ -572,38 +574,39 @@ def build_page(prs):
     # Part dividers go; long tables, the disclosures and the sources fold away until opened.
     def key_list(body):
         """The divider's numbered key insights (a bold "NN  headline" line, then its sentence) as a list."""
-        pat = r'<p(?: class="fine")?><strong>(\d\d)\s+(.*?)</strong></p>\s*<p(?: class="fine")?>(.*?)</p>'
+        pat = (r'(?:<p(?: class="fine")?><strong>|<h4 class="wh">)(\d\d)\s+(.*?)(?:</strong></p>|</h4>)\s*'
+               r'<p(?: class="(?:fine|wfine)")?>(.*?)</p>')
         items = re.findall(pat, body, re.S)
         if not items:
             return body
         ol = '<ol class="rkey">' + ''.join(f'<li><h3 class="rkey-t">{h}</h3><p class="rkey-d">{d}</p></li>' for _, h, d in items) + '</ol>'
-        body = re.sub(r'<p class="dlabel"><strong>KEY INSIGHTS</strong></p>', '<p class="dlabel">Key insights</p>', body)
+        body = re.sub(r'<p class="(d|w)label"><strong>KEY INSIGHTS</strong></p>', r'<p class="\1label">Key insights</p>', body)
         first = re.search(pat, body, re.S)
         body = body[:first.start()] + ol + re.sub(pat, '', body[first.start():], flags=re.S)
         return body
 
     chaps = chapters(pages)
     toc, secs = [], []
+    chaps = [c for c in chaps if c[0] != 'about']     # the firm boilerplate: the page ends with the team and the contact form
     for k, (key, ctitle, pgs) in enumerate(chaps, 1):
         subs = [pg for pg in pgs if not pg['part']]
-        sub_toc = ''.join(f'<li><a href="#p{pg["num"]:02d}">{esc(web_title(pg))}</a></li>' for pg in subs) if len(subs) > 1 and key != 'notes' else ''
-        toc.append(f'<li class="rtoc-ch"><a href="#ch-{key}"><span>{k:02d}</span>{esc(ctitle)}</a>' + (f'<ol class="rtoc-sub">{sub_toc}</ol>' if sub_toc else '') + '</li>')
+        toc.append(f'<a href="#ch-{key}">{esc(ctitle)}</a>')
         inner = []
         for pg in pgs:
-            foot = f'<div class="fine rfoot">{pg["foot"]}</div>' if pg['foot'] else ''
+            notes = f'<details class="wnotes"><summary>Notes</summary><div>{pg["foot"]}</div></details>' if pg['foot'] else ''
             if pg['part']:
-                inner.append(flow(key_list(pg['body'])))
+                inner.append(f'<div class="wpart wglance">{key_list(pg["web"])}</div>')
                 continue
             t = esc(web_title(pg))
-            sub = f'<p class="rlead">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
-            body = fold_tables(pg['body'])
-            head = f'<h3 class="rh2">{t}</h3>\n' if len(subs) > 1 else ''
-            block = f'<section class="rpart" id="p{pg["num"]:02d}">\n{head}{sub}\n{body}\n{foot}\n</section>'
+            sub = f'<p class="wsub">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
+            body = fold_tables(pg['web'])
+            head = f'<h3 class="wh3">{t}</h3>\n' if len(subs) > 1 else ''
+            block = f'<section class="wpart" id="p{pg["num"]:02d}">\n{head}{sub}\n{body}\n{notes}\n</section>'
             if key == 'notes':
-                block = (f'<details class="rfold" id="p{pg["num"]:02d}"><summary>{t}</summary>\n{sub}\n{body}\n{foot}\n</details>')
+                block = (f'<details class="wfold" id="p{pg["num"]:02d}"><summary>{t}</summary>\n{sub}\n{body}\n{pg["foot"]}\n</details>')
             inner.append(block)
-        secs.append(f'<section class="rsec rchap" id="ch-{key}">\n<div class="rsec-head"><span class="rsec-num">{k:02d}</span>'
-                    f'<h2 class="h2">{esc(ctitle)}</h2></div>\n<div class="rblock dblock">\n{chr(10).join(inner)}\n</div>\n</section>')
+        secs.append(f'<section class="wchap" id="ch-{key}">\n<header class="wchap-head"><span class="wchap-num">{k:02d}</span>'
+                    f'<h2 class="h2">{esc(ctitle)}</h2></header>\n{chr(10).join(inner)}\n</section>')
 
     pairs, band_label, _ = stats_band(pages)
     band = ''
@@ -633,9 +636,9 @@ def build_page(prs):
              f'    <p class="rbyline">{esc(norm(byline))}</p>\n'
              f'    <div class="btn-row"><a class="btn" href="{pdf}" download>{DL} Download the PDF</a>'
              f'<a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a></div>\n  </div>\n</section>\n'
-             f'{band}\n<div class="wrap rlayout">\n  <aside class="rtoc" aria-label="Report contents">\n    <p class="eyebrow">Contents</p>\n'
-             f'    <ol>{"".join(toc)}</ol>\n    <a class="btn" href="{pdf}" download>{DL} Download the PDF</a>\n  </aside>\n'
-             f'  <article class="report">\n{chr(10).join(secs)}\n    {author}\n  </article>\n</div>\n\n')
+             f'{band}\n<nav class="wbar" aria-label="Report sections"><div class="wrap wbar-in">{"".join(toc)}'
+             f'<a class="wbar-pdf" href="{pdf}" download>{DL} PDF</a></div></nav>\n'
+             f'<div class="wrap wreport">\n  <article class="report wdoc">\n{chr(10).join(secs)}\n    {author}\n  </article>\n</div>\n\n')
     faqs = report_faqs(pages, lead)
     if faqs:
         page += site.faq_html(faqs, f'{NAME} M&A, {PERIOD}: Common Questions', 'From the Report')

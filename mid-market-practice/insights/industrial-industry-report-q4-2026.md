@@ -7,27 +7,27 @@ Order books are full and financing costs more. Buyers are paying the most for wh
 Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html  
 PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.pdf
 
-Segments: Manufacturing & Industrial Technology; Industrial Distribution & Services; Building Products & Construction Services; Energy, Power & Environmental Services; Transportation & Logistics
+Sectors: Manufacturing & Industrial Technology; Industrial Distribution & Services; Building Products & Construction Services; Energy, Power & Environmental Services; Transportation & Logistics
 
 ## 1. Industry at a Glance
 
-American manufacturing has expanded for nine consecutive months. Acquirers across the industrial segments are buying capabilities they cannot build in time, because skilled labor is scarce, certifications take years, and new equipment is sold out well ahead. Borrowing costs rose in September, and buyers have become more selective about what they pay for.
+American manufacturing has expanded for nine consecutive months. Acquirers across the industrial sectors are buying capabilities they cannot build in time, because skilled labor is scarce, certifications take years, and new equipment is sold out well ahead. Borrowing costs rose in September, and buyers have become more selective about what they pay for.
 
 Market insights for the fourth quarter of 2026
 
 05
 
-- 06 Perspectives on five segments
+- 06 Perspectives on five sectors
 
 07
 
-Power demand: how the buildout reaches the industrial segments
+Power demand: how the buildout reaches the industrial sectors
 
 - 08 What we’re reading
 
 - 09 Our view
 
-- 10 Our view: segment outlook
+- 10 Our view: sector outlook
 
 - 11 Featured engagement: The Carmi Companies
 
@@ -35,7 +35,7 @@ Power demand: how the buildout reaches the industrial segments
 
 ### The Quarter in Brief
 
-Demand spans the five segments, and buyers are acquiring through existing platforms. Higher financing costs in September reduced sponsors’ borrowing capacity.
+Demand spans the five sectors, and buyers are acquiring through existing platforms. Higher financing costs in September reduced sponsors’ borrowing capacity.
 
 WHAT IT MEANS FOR OWNERS
 
@@ -71,7 +71,7 @@ $53.4BQuanta Services total backlog June 2026
 
 Figures are as reported by the linked sources. Middle-market multiple and debt figures are GF Data sponsor-reported averages for the first and second quarters of 2026.
 
-### Power Demand: How the Buildout Reaches the Industrial Segments
+### Power Demand: How the Buildout Reaches the Industrial Sectors
 
 Electricity demand grows about 2% a year and the equipment is sold out years ahead, so acquirers buy the people, permits, and delivery slots already in place.
 
@@ -92,7 +92,7 @@ Toby Rice, CEO, EQT (EQT Corporation)
 > *“Quite frankly, the biggest issue we are now having is not a compute glut, but it’s a power and it’s sort of the ability to get the builds done fast enough close to power. So, if you can’t do that, you may actually have a bunch of chips sitting in inventory that I can’t plug in.”*
 
 Satya Nadella, CEO, Microsoft (Bg2 Pod)
-HOW THE DEMAND REACHES EACH SEGMENT
+HOW THE DEMAND REACHES EACH SECTOR
 MANUFACTURING & INDUSTRIAL TECHNOLOGY
 
 nVent agreed to buy Maverick Power, a Texas maker of switchgear and modular power for data centers, for $1.75 billion plus up to $550 million, which it put at 11.5 times anticipated 2026 adjusted EBITDA on the upfront payment ([nVent](https://www.globenewswire.com/news-release/2026/08/24/3349571/0/en/nvent-to-acquire-maverick-power.html)).
@@ -165,17 +165,17 @@ APi Group is steering toward 60% inspection and service revenue, Transcat’s se
 
 Cass shipments are up 2.1% off a two-year low, transportation shares rose a median 39% in a year, and C.H. Robinson agreed to pay $5.8 billion for RXO with $300 million of synergies behind it. Diesel at $6.29 a gallon is testing surcharge pass-through, and US-Mexico trade at a record $94.8 billion a month is why logistics platforms are buying Laredo brokers. Customs licensing, bonded warehousing, and cross-border capability will be priced above asset-based capacity through 2027.
 
-Views are those of the Benchmark International Middle Market team as of October 19, 2026 and draw on the sources cited in [The Quarter in Brief](#p05) and [Power Demand: How the Buildout Reaches the Industrial Segments](#p07), and 25. They are opinions, and the price of any company depends on that business.
+Views are those of the Benchmark International Middle Market team as of October 19, 2026 and draw on the sources cited in [The Quarter in Brief](#p05) and [Power Demand: How the Buildout Reaches the Industrial Sectors](#p07), and 25. They are opinions, and the price of any company depends on that business.
 
-### Our View: Segment Outlook
+### Our View: Sector Outlook
 
-Demand for owner-operated businesses differs across the five segments.
+Demand for owner-operated businesses differs across the five sectors.
 
 OUR VIEW
 
-### Buyer demand by segment
+### Buyer demand by sector
 
-Ratings weigh listed-company growth, valuation, and cash conversion against Benchmark closings in the segment, on a scale of one to five.
+Ratings weigh listed-company growth, valuation, and cash conversion against Benchmark closings in the sector, on a scale of one to five.
 
 ### Energy, Power & Environmental
 
@@ -221,17 +221,17 @@ Strategic acquirers account for 56% of the transactions in [Recent Transactions]
 
 Licenses, certifications, permits, and delivery slots belong in the first management presentation, because buyers have paid 8x to 12x for them against about 6x for businesses without them.
 
-- Demand ratings are Benchmark International judgments from the metrics in [Valuation History](#p16), [Operating Metrics](#p17) and [Valuation Multiples](#p18) and the sources in [The Quarter in Brief](#p05) and [Power Demand: How the Buildout Reaches the Industrial Segments](#p07).
+- Demand ratings are Benchmark International judgments from the metrics in [Valuation History](#p16), [Operating Metrics](#p17) and [Valuation Multiples](#p18) and the sources in [The Quarter in Brief](#p05) and [Power Demand: How the Buildout Reaches the Industrial Sectors](#p07).
 
 ## 4. Sector by Sector
 
-The five segments draw different buyers and respond to different drivers.
+The five sectors draw different buyers and respond to different drivers.
 
 Manufacturing & Industrial Tech
 
 **MANUFACTURING & INDUSTRIAL TECH**
 
-The segment earns the highest EBITDA margin of the five at 22.1% and trades at the highest multiple at 17.3x.
+The sector earns the highest EBITDA margin of the five at 22.1% and trades at the highest multiple at 17.3x.
 
 ACTIVE BUYERS
 
@@ -287,7 +287,7 @@ Building & Construction
 
 **BUILDING PRODUCTS & CONSTRUCTION**
 
-Listed contractors grew revenue 21.8% and EBITDA 28%, and Benchmark closed 45 transactions here, the most among the five segments.
+Listed contractors grew revenue 21.8% and EBITDA 28%, and Benchmark closed 45 transactions here, the most among the five sectors.
 
 ACTIVE BUYERS
 
@@ -313,9 +313,9 @@ Watsco
 
 Also: APi Group.
 
-SEGMENT SCORECARD
+SECTOR SCORECARD
 
-Listed company metrics from pages 16 to 18, with Benchmark International closed transactions by segment.
+Listed company metrics from pages 16 to 18, with Benchmark International closed transactions by sector.
 
 |  | EV / EBITDA | Rev. growth | EBITDA mgn. | Deals |
 | --- | --- | --- | --- | --- |
@@ -331,7 +331,7 @@ Energy, Power & Environmental
 
 **ENERGY, POWER & ENVIRONMENTAL**
 
-The segment carries the heaviest leverage at 2.5x net debt to EBITDA and the lowest free cash flow conversion at 44.7%, while EBITDA grew 21.2%.
+The sector carries the heaviest leverage at 2.5x net debt to EBITDA and the lowest free cash flow conversion at 44.7%, while EBITDA grew 21.2%.
 
 ACTIVE BUYERS
 
@@ -359,7 +359,7 @@ Transportation & Logistics
 
 **TRANSPORTATION & LOGISTICS**
 
-Shares rose 38.9% over the year and the segment still trades at the lowest multiple of the five at 12.2x, with EBITDA down 0.8%.
+Shares rose 38.9% over the year and the sector still trades at the lowest multiple of the five at 12.2x, with EBITDA down 0.8%.
 
 ACTIVE BUYERS
 
@@ -381,7 +381,7 @@ ArcBest
 
 Also: Knight-Swift.
 
-- Active buyers are drawn from the transactions in [Recent Transactions](#p13) and [Our Transactions](#p15) and the sources in [The Quarter in Brief](#p05) and [Power Demand: How the Buildout Reaches the Industrial Segments](#p07). Company names and logos are the property of their owners and are shown for identification.
+- Active buyers are drawn from the transactions in [Recent Transactions](#p13) and [Our Transactions](#p15) and the sources in [The Quarter in Brief](#p05) and [Power Demand: How the Buildout Reaches the Industrial Sectors](#p07). Company names and logos are the property of their owners and are shown for identification.
 
 ## 5. Deals and Buyers
 
@@ -510,15 +510,15 @@ Redwood Logistics
 
 EELCO
 
-Transaction values and multiples are as reported by the linked source or calculated from the figures it gives. Company names are the property of their owners and are shown for identification. Transactions advised by Benchmark International appear in [Our Transactions](#p15). Two transactions are shown for each of the five industrial segments.
+Transaction values and multiples are as reported by the linked source or calculated from the figures it gives. Company names are the property of their owners and are shown for identification. Transactions advised by Benchmark International appear in [Our Transactions](#p15). Two transactions are shown for each of the five industrial sectors.
 
 ### Our Transactions
 
-Building products and construction services is the most active segment, and strategic acquirers were the buyers in more than half of the sales.
+Building products and construction services is the most active sector, and strategic acquirers were the buyers in more than half of the sales.
 
 TRAILING 24 MONTHS
 
-85industrial transactions closed in the five segments56%of the 71 companies with a classified buyer were bought by a strategic acquirer Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook’s Q2 2026 Global League Tables (Benchmark International).BY SEGMENT
+85industrial transactions closed in the five sectors56%of the 71 companies with a classified buyer were bought by a strategic acquirer Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook’s Q2 2026 Global League Tables (Benchmark International).BY SECTOR
 
 Chart data:
 
@@ -918,7 +918,7 @@ Greenbriar
 
 Audax PE
 
-- Listed companies are from pages 16 to 18. Buyers are from this report. Sponsors have relevant sector investment experience and may appear in more than one segment. Sources updated October 27, 2026. Names and logos belong to their owners.
+- Listed companies are from pages 16 to 18. Buyers are from this report. Sponsors have relevant sector investment experience and may appear in more than one sector. Sources updated October 27, 2026. Names and logos belong to their owners.
 
 ## 6. Valuations and Public Markets
 
@@ -1043,7 +1043,7 @@ Chart data:
 
 PRIVATE-MARKET REFERENCE POINTS
 
-Listed multiples describe companies many times larger than a founder-owned business and show relative standing among the segments.
+Listed multiples describe companies many times larger than a founder-owned business and show relative standing among the sectors.
 
 7.0xAverage for completed middle-market transactions in all industries in the second quarter of 2026 (GF Data via ACG)5.8xMedian for transactions of $5 million to $50 million in all industries in the second quarter of 2026 (IBBA and M&A Source)5.0x to 8.0xSurvey medians for manufacturing, wholesale, and construction companies with $1 million to $25 million of EBITDA (Pepperdine)
 
@@ -1109,11 +1109,11 @@ Chart data:
 | Distribution & Services | 50% |
 | Manufacturing & Industrial Tech | 62% |
 
-Medians of the 40 listed companies shown in [Valuation History](#p16), grouped by segment. Source: StockAnalysis, retrieved October 19, 2026. Trailing periods end between May and September 2026. EBITDA is as reported and is lower than the adjusted EBITDA that companies present. Forward estimates are not included.
+Medians of the 40 listed companies shown in [Valuation History](#p16), grouped by sector. Source: StockAnalysis, retrieved October 19, 2026. Trailing periods end between May and September 2026. EBITDA is as reported and is lower than the adjusted EBITDA that companies present. Forward estimates are not included.
 
 ### Valuation Multiples
 
-Transportation shares rose a median 39% in a year and still trade at the lowest multiple of EBITDA of the five segments.
+Transportation shares rose a median 39% in a year and still trade at the lowest multiple of EBITDA of the five sectors.
 
 ### Median enterprise value to trailing EBITDA
 
@@ -1171,7 +1171,7 @@ Chart data:
 | Energy & Env. | 2.5x |
 | Transport | 1.0x |
 
-Medians of the 40 listed companies shown in [Valuation History](#p16), grouped by segment. Source: StockAnalysis, retrieved October 19, 2026. Year-end 2025 multiples are shown beside today’s for comparison. Three of the nine building products and construction companies hold more cash than debt.
+Medians of the 40 listed companies shown in [Valuation History](#p16), grouped by sector. Source: StockAnalysis, retrieved October 19, 2026. Year-end 2025 multiples are shown beside today’s for comparison. Three of the nine building products and construction companies hold more cash than debt.
 
 ### What Public Companies Said
 
