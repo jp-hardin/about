@@ -46,7 +46,7 @@ REPORT_DATE = "2026-10"       # publication month of the current industry report
 # _build/forms/report-signups.gs. REPORT_FORM_URL is that web app's /exec address; while it is empty the form still
 # gates the download but records nothing. REPORT_TERMS_VERSION is written into each row's Notes, so change it when
 # the wording of report-terms.html or of the form's consent lines changes.
-REPORT_FORM_URL = ""
+REPORT_FORM_URL = "https://script.google.com/macros/s/AKfycbyWqNQfWuW0IGHqsuDyAKeQBP2RSgcuWHhgJAxsFVR2Wg-y16KaXDYSQyenhe7isEJV/exec"
 REPORT_TERMS_VERSION = "2026-10-28"
 
 # Important Disclosures: shown on disclosures.html and printed as the last page of every industry report PDF
@@ -278,7 +278,9 @@ SECTOR_BY_SLUG = {s["slug"]: s for s in SECTORS}
 # Industry reports are kept off the site until the final versions are ready. While this is False the build writes
 # no Insights page, report pages, PDFs or old report addresses, removes any already in the site folder, and drops
 # every link, button, sitemap entry and llms.txt line that points to them. Set True and rebuild the reports to publish.
-REPORTS_LIVE = True
+# The github.io preview always shows the reports. The live copy (the Publish MMT site workflow) builds with
+# MMT_REPORTS=off until the reports are released there, which hides them as described in CLAUDE.md.
+REPORTS_LIVE = os.environ.get("MMT_REPORTS", "on") != "off"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Insights: quarterly industry reports. Add a new entry each quarter; the newest
@@ -1969,7 +1971,7 @@ def write_discovery_files():
     urls = "".join(f"  <url><loc>{abs_url(r)}</loc><lastmod>{SITE_UPDATED}</lastmod><priority>{prio(r)}</priority></url>\n" for r in pages)
     sitemap = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n'
     base = urlparse(SITE_URL).path
-    pdfs = f"Disallow: {base}insights/*.pdf\n"   # the report PDFs are behind the download form; the report pages are open
+    pdfs = f"Disallow: {base}insights/*.pdf\n" if REPORTS_LIVE else ""   # the PDFs are behind the download form; the report pages are open
     robots = ("# Search engines and AI assistants are welcome to read and cite this site.\n"
               "User-agent: *\nAllow: /\nDisallow: " + base + "_build/\n" + pdfs + "\n"
               + "".join(f"User-agent: {b}\nAllow: /\n{pdfs}\n" for b in AI_BOTS)
@@ -2062,6 +2064,15 @@ def remove_unpublished_reports():
     """While REPORTS_LIVE is False: deletes the Insights page, report pages, PDFs, Markdown copies and old report
     addresses from the site folder, so nothing links to or serves them. Rebuild the reports to bring them back."""
     targets = [os.path.join(SITE, "insights"), os.path.join(SITE, "reports")]
+    for rel in ("report-terms.html", "email-preferences.html"):
+        if os.path.exists(os.path.join(SITE, rel)):
+            os.remove(os.path.join(SITE, rel))
+            print("removed", rel)
+    shots = os.path.join(SITE, "assets", "img", "reports")
+    if os.path.isdir(shots):
+        import shutil
+        shutil.rmtree(shots)
+        print("removed assets/img/reports")
     for d in targets:
         if not os.path.isdir(d):
             continue

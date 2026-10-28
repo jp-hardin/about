@@ -1,9 +1,9 @@
 /**
  * Middle Market website forms: report downloads, the general contact form and email preferences.
  *
- * Paste this into the "MMT Report Downloads" Google Sheet (Extensions > Apps Script), then
- * Deploy > New deployment > Web app, Execute as: Me, Who has access: Anyone. Put the /exec address it gives
- * into REPORT_FORM_URL in _build/build.py and rebuild the site.
+ * Lives as the "MMT Website Forms" Apps Script project in Drive, writing to the "MMT Report Downloads" sheet
+ * (SHEET_ID). Deploy > New deployment > Web app, Execute as: Me, Who has access: Anyone. Put the /exec address
+ * it gives into REPORT_FORM_URL in _build/build.py and rebuild the site.
  *
  * Tabs (all with the same columns):
  *   All Submissions   every form submission and unsubscribe request
@@ -18,6 +18,7 @@
  *   contact      first_name, last_name, email, details, page
  *   unsubscribe  email, reports, newsletter (yes = stop sending)
  */
+var SHEET_ID = '1ZwPmuSspyIsl2TQvP-emN2PXx062m26St7d5CnkSlbE';
 var TZ = 'America/New_York';
 var ALL = 'All Submissions', GENERAL = 'General Form', DOWNLOADS = 'Report Downloads';
 var INDUSTRIES = ['Industrials', 'Business Services', 'Consumer', 'Healthcare', 'Technology'];
@@ -30,7 +31,7 @@ function doPost(e) {
   var email = String(p.email || '').trim().toLowerCase();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 160) return done();
 
-  var book = SpreadsheetApp.getActiveSpreadsheet();
+  var book = SpreadsheetApp.openById(SHEET_ID);
   var now = Utilities.formatDate(new Date(), TZ, 'yyyy-MM-dd HH:mm');
   var lock = LockService.getScriptLock();
   lock.waitLock(10000);

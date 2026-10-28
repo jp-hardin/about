@@ -4,7 +4,8 @@ name: Publish MMT site
 # started by hand (Actions > Publish MMT site > Run workflow). It copies the finished Middle Market
 # site (everything in mid-market-practice/ except the build scripts) from main, or from an earlier
 # live-* tag to roll back, to the jp-hardin/mmt-site repo, which the mmt.benchmarkintl.com server
-# pulls every 5 minutes. Each publish from main is tagged live-<date>-<time> here.
+# pulls every 5 minutes. Each publish from main is tagged live-<date>-<time> here. The live copy is rebuilt first
+# with the industry reports hidden (MMT_REPORTS=off) unless "reports" is set to shown.
 # Needs the MMT_SITE_TOKEN secret (fine-grained token: mmt-site only, Contents read and write).
 on:
   workflow_dispatch:
@@ -13,6 +14,11 @@ on:
         description: 'What to publish: main, or a live-* tag to roll back to'
         default: main
         required: true
+      reports:
+        description: 'Industry reports on the live site'
+        type: choice
+        options: [hidden, shown]
+        default: hidden
 
 permissions:
   contents: write
@@ -26,6 +32,16 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ inputs.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build the live copy
+        env:
+          MMT_REPORTS: ${{ inputs.reports == 'shown' && 'on' || 'off' }}
+        run: |
+          pip install -q pillow
+          python3 mid-market-practice/_build/build.py > /dev/null
+          echo "Built with industry reports $MMT_REPORTS"
       - name: Copy the finished site into mmt-site
         env:
           TOKEN: ${{ secrets.MMT_SITE_TOKEN }}
