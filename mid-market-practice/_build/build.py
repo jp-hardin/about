@@ -14,6 +14,8 @@ from urllib.parse import urlparse
 from html import escape, unescape
 
 import pagecopy
+import strip_meta
+from mdtwin import markdown as md_twin
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.dirname(HERE)
@@ -50,6 +52,10 @@ REPORT_DATE = "2026-10"       # publication month of the current industry report
 # the wording of report-terms.html or of the form's consent lines changes.
 REPORT_FORM_URL = "https://script.google.com/macros/s/AKfycbyWqNQfWuW0IGHqsuDyAKeQBP2RSgcuWHhgJAxsFVR2Wg-y16KaXDYSQyenhe7isEJV/exec"
 REPORT_TERMS_VERSION = "2026-10-28"
+
+# IndexNow (Bing, Copilot, ChatGPT search, Yandex and others): the key file sits at the site root, and the Publish MMT
+# site workflow sends the sitemap URLs to api.indexnow.org after each live publish.
+INDEXNOW_KEY = "e934c238ef3bc2b2838efef69dbb8e11"
 
 # Important Disclosures: shown on disclosures.html and printed as the last page of every industry report PDF
 # (_build/reports/disclosures.py). Adapted from a peer firm's report disclosures; have Compliance confirm any
@@ -281,7 +287,7 @@ SECTOR_BY_SLUG = {s["slug"]: s for s in SECTORS}
 # no Insights page, report pages, PDFs or old report addresses, removes any already in the site folder, and drops
 # every link, button, sitemap entry and llms.txt line that points to them. Set True and rebuild the reports to publish.
 # The github.io preview always shows the reports. The live copy (the Publish MMT site workflow) builds with
-# MMT_REPORTS=off until the reports are released there, which hides them as described in CLAUDE.md.
+# MMT_REPORTS=off until the reports are released there, which hides them as described in the project notes.
 REPORTS_LIVE = os.environ.get("MMT_REPORTS", "on") != "off"
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1061,7 +1067,9 @@ def finalize(html, rel, crumbs=None, schema=None, image="assets/img/social/defau
     if crumbs:
         graph.append(breadcrumb_schema(crumbs))
     graph += schema or []
-    tags = (f'<link rel="canonical" href="{url}">\n<meta property="og:url" content="{url}">\n'
+    md = "" if "text/markdown" in html else f'<link rel="alternate" type="text/markdown" href="{abs_url(rel[:-5] + ".md")}" title="{title} (Markdown)">\n'
+    tags = (f'<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">\n'
+            f'<link rel="canonical" href="{url}">\n{md}<meta property="og:url" content="{url}">\n'
             f'<meta property="og:site_name" content="{ORG_NAME}">\n'
             f'<meta property="og:image" content="{SITE_URL}{image}">\n<meta property="og:image:width" content="1200">\n'
             f'<meta property="og:image:height" content="630">\n<meta name="twitter:card" content="summary_large_image">\n'
@@ -1083,6 +1091,11 @@ def write(rel, html, crumbs=None, schema=None, image="assets/img/social/default.
                 PAGE_FAQS[rel] = [(q["name"], q["acceptedAnswer"]["text"]) for q in x["mainEntity"]]
         html = finalize(html, rel, crumbs, schema, image)
         SITEMAP.append(rel)
+        title = re.search(r"<title>(.*?)</title>", html, re.S).group(1)
+        desc = re.search(r'<meta name="description" content="([^"]*)"', html).group(1)
+        twin = md_twin(html, abs_url(rel), title, desc)
+        with open(os.path.join(SITE, rel[:-5] + ".md"), "w", encoding="utf-8") as f:
+            f.write(twin)
     path = os.path.join(SITE, rel)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
@@ -1997,6 +2010,7 @@ Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark Int
 - [Transactions]({abs_url('transactions.html')}): selected completed transactions
 {f"- [Insights]({abs_url('insights/index.html')}): quarterly M&A industry reports" + chr(10) if REPORTS_LIVE else ""}- [Important Disclosures]({abs_url('disclosures.html')})
 - [Full text for AI assistants]({abs_url('llms-full.txt')}): every page's key facts, services, team, industries, and FAQs in one file
+- Every page has a plain Markdown version at the same address ending in .md instead of .html (for example {abs_url('about.md')})
 
 ## Industries
 {sec}
@@ -2004,7 +2018,8 @@ Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark Int
 {"## Industry reports" + chr(10) + rep + chr(10) + chr(10) if REPORTS_LIVE else ""}## Common questions
 {faqs}
 """
-    for name, body in (("sitemap.xml", sitemap), ("robots.txt", robots), ("llms.txt", llms), ("llms-full.txt", llms_full())):
+    for name, body in (("sitemap.xml", sitemap), ("robots.txt", robots), ("llms.txt", llms), ("llms-full.txt", llms_full()),
+                       (f"{INDEXNOW_KEY}.txt", INDEXNOW_KEY)):
         with open(os.path.join(SITE, name), "w", encoding="utf-8") as f:
             f.write(body)
         print("wrote", name)
@@ -2131,3 +2146,4 @@ if __name__ == "__main__":
         page_email_preferences()
     page_about()
     write_discovery_files()
+    strip_meta.main(os.path.join(SITE, "assets"))
