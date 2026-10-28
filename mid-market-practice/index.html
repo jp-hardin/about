@@ -489,7 +489,7 @@
           var host = document.getElementById('hs-form');
           // a copy of each enquiry for the General Form tab of the report downloads sheet (REPORT_FORM_URL)
           function logContact($form) {
-            var endpoint = "", form = $form && ($form[0] || $form);
+            var endpoint = "https://script.google.com/macros/s/AKfycbyWqNQfWuW0IGHqsuDyAKeQBP2RSgcuWHhgJAxsFVR2Wg-y16KaXDYSQyenhe7isEJV/exec", form = $form && ($form[0] || $form);
             if (!endpoint || !form || !form.querySelectorAll) return;
             var data = new URLSearchParams({ action: 'contact', page: location.pathname }), extra = [];
             form.querySelectorAll('input, select, textarea').forEach(function (el) {
@@ -545,7 +545,7 @@
     </div>
   </div>
 </footer>
-<dialog class="gate" id="report-gate" aria-labelledby="gate-title" data-endpoint="" data-terms="2026-10-28">
+<dialog class="gate" id="report-gate" aria-labelledby="gate-title" data-endpoint="https://script.google.com/macros/s/AKfycbyWqNQfWuW0IGHqsuDyAKeQBP2RSgcuWHhgJAxsFVR2Wg-y16KaXDYSQyenhe7isEJV/exec" data-terms="2026-10-28">
   <button class="gate-close" type="button" aria-label="Close">&times;</button>
   <form class="gate-form" novalidate>
     <p class="eyebrow">Free download</p>

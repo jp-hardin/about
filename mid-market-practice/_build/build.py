@@ -46,7 +46,7 @@ REPORT_DATE = "2026-10"       # publication month of the current industry report
 # _build/forms/report-signups.gs. REPORT_FORM_URL is that web app's /exec address; while it is empty the form still
 # gates the download but records nothing. REPORT_TERMS_VERSION is written into each row's Notes, so change it when
 # the wording of report-terms.html or of the form's consent lines changes.
-REPORT_FORM_URL = ""
+REPORT_FORM_URL = "https://script.google.com/macros/s/AKfycbyWqNQfWuW0IGHqsuDyAKeQBP2RSgcuWHhgJAxsFVR2Wg-y16KaXDYSQyenhe7isEJV/exec"
 REPORT_TERMS_VERSION = "2026-10-28"
 
 # Important Disclosures: shown on disclosures.html and printed as the last page of every industry report PDF
