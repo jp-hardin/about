@@ -102,20 +102,25 @@
       if (ev.clientX < r.left || ev.clientX > r.right || ev.clientY < r.top || ev.clientY > r.bottom) d.close();
     });
   });
-  // Report pages: the section bar marks the section being read
-  var bar = document.querySelector('.wbar');
-  if (bar && 'IntersectionObserver' in window) {
+  // Report pages: the contents sidebar marks the section being read
+  var toc = document.querySelector('.rtoc');
+  if (toc && 'IntersectionObserver' in window) {
     var links = {};
-    bar.querySelectorAll('a[href^="#ch-"]').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+    toc.querySelectorAll('a[href^="#"]').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
     var spy = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        if (e.isIntersecting && links[e.target.id]) {
-          Object.keys(links).forEach(function (k) { links[k].classList.remove('is-active'); });
-          links[e.target.id].classList.add('is-active');
-          links[e.target.id].scrollIntoView({ block: 'nearest', inline: 'center' });
+        var a = links[e.target.id];
+        if (!e.isIntersecting || !a) return;
+        var ch = e.target.closest('.wchap');
+        toc.querySelectorAll('a.is-current').forEach(function (x) { x.classList.remove('is-current'); });
+        a.classList.add('is-current');
+        if (ch && links[ch.id]) links[ch.id].classList.add('is-current');
+        if (getComputedStyle(toc).position === 'sticky') {
+          var t = a.offsetTop - toc.clientHeight / 2;
+          toc.scrollTop = Math.max(0, t);
         }
       });
-    }, { rootMargin: '-40% 0px -55% 0px' });
-    document.querySelectorAll('.wchap').forEach(function (c) { spy.observe(c); });
+    }, { rootMargin: '-30% 0px -65% 0px' });
+    document.querySelectorAll('.wchap, .wpart[id]').forEach(function (c) { spy.observe(c); });
   }
 })();
