@@ -32,6 +32,7 @@ jobs:
       - name: Build the site as it will go live
         env:
           MMT_REPORTS: ${{ inputs.reports == 'shown' && 'on' || 'off' }}
+          MMT_SITE_URL: https://mmt.benchmarkintl.com/
         run: |
           pip install -q pillow
           python3 mid-market-practice/_build/build.py > /dev/null
