@@ -47,6 +47,19 @@ jobs:
           git -c user.name="MMT site" -c user.email="mmt-site@users.noreply.github.com" commit -qm "Publish ${GITHUB_SHA::7}"
           git push -q origin HEAD:main
           echo "Published $(git rev-parse --short HEAD) ($(git ls-files | wc -l) files)"
+      - name: Tell search engines the site changed (IndexNow)
+        if: ${{ !startsWith(inputs.ref, 'live-') }}
+        continue-on-error: true
+        run: |
+          key=$(ls live-preview/*.txt | xargs -n1 basename | grep -E '^[0-9a-f]{32}\.txt$' | head -1 | sed 's/\.txt$//')
+          [ -n "$key" ] || { echo "No IndexNow key file"; exit 0; }
+          urls=$(grep -o '<loc>[^<]*</loc>' live-preview/sitemap.xml | sed 's#</\?loc>##g')
+          host=$(echo "$urls" | head -1 | sed -E 's#https?://([^/]+)/.*#\1#')
+          echo "Waiting for the server to pull the new copy"; sleep 420
+          code=$(curl -s -o /dev/null -w "%{http_code}" "https://$host/$key.txt")
+          [ "$code" = 200 ] || { echo "https://$host/$key.txt is not reachable yet ($code); skipping"; exit 0; }
+          body=$(python3 -c 'import json,sys; u=sys.argv[3].split(); print(json.dumps({"host":sys.argv[1],"key":sys.argv[2],"keyLocation":"https://%s/%s.txt"%(sys.argv[1],sys.argv[2]),"urlList":u}))' "$host" "$key" "$urls")
+          curl -s -w "IndexNow %{http_code}\n" -H "Content-Type: application/json; charset=utf-8" -d "$body" https://api.indexnow.org/indexnow
       - name: Label this live version
         if: ${{ !startsWith(inputs.ref, 'live-') }}
         run: |
