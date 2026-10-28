@@ -1,24 +1,17 @@
 name: Publish MMT site
 
-# Takes the site live. Merging to main only updates the github.io preview; this runs only when
-# started by hand (Actions > Publish MMT site > Run workflow). It copies the finished Middle Market
-# site (everything in mid-market-practice/ except the build scripts) from main, or from an earlier
-# live-* tag to roll back, to the jp-hardin/mmt-site repo, which the mmt.benchmarkintl.com server
-# pulls every 5 minutes. Each publish from main is tagged live-<date>-<time> here. The live copy is rebuilt first
-# with the industry reports hidden (MMT_REPORTS=off) unless "reports" is set to shown.
+# "merge live": sends the staged live preview (live-preview/ on main, made by Stage live preview) to the
+# jp-hardin/mmt-site repo, which the mmt.benchmarkintl.com server pulls every 5 minutes. The banner and noindex
+# that mark the live preview are removed on the way, so the live site is exactly the copy that was reviewed.
+# Each publish from main is tagged live-<date>-<time>; to roll back, run it with ref set to an earlier live-* tag.
 # Needs the MMT_SITE_TOKEN secret (fine-grained token: mmt-site only, Contents read and write).
 on:
   workflow_dispatch:
     inputs:
       ref:
-        description: 'What to publish: main, or a live-* tag to roll back to'
+        description: 'What to publish: main (the staged live preview), or a live-* tag to roll back to'
         default: main
         required: true
-      reports:
-        description: 'Industry reports on the live site'
-        type: choice
-        options: [hidden, shown]
-        default: hidden
 
 permissions:
   contents: write
@@ -32,17 +25,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ inputs.ref }}
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Build the live copy
-        env:
-          MMT_REPORTS: ${{ inputs.reports == 'shown' && 'on' || 'off' }}
+      - name: Take the staged live preview
         run: |
-          pip install -q pillow
-          python3 mid-market-practice/_build/build.py > /dev/null
-          echo "Built with industry reports $MMT_REPORTS"
-      - name: Copy the finished site into mmt-site
+          [ -f live-preview/staged.json ] || { echo "::error::Nothing is staged. Run Stage live preview first."; exit 1; }
+          cat live-preview/staged.json
+          python3 mid-market-practice/_build/stage.py strip live-preview
+          rm live-preview/staged.json
+      - name: Copy it into mmt-site
         env:
           TOKEN: ${{ secrets.MMT_SITE_TOKEN }}
         run: |
@@ -51,7 +40,7 @@ jobs:
           if ! git clone -q --depth 1 "$remote" site 2>/dev/null || [ -z "$(git -C site rev-parse --verify -q HEAD)" ]; then
             rm -rf site && mkdir site && git -C site init -q -b main && git -C site remote add origin "$remote"
           fi
-          rsync -a --delete --exclude .git --exclude _build/ --exclude README.md mid-market-practice/ site/
+          rsync -a --delete --exclude .git live-preview/ site/
           cd site
           git add -A
           if git diff --cached --quiet; then echo "No changes to publish"; exit 0; fi
