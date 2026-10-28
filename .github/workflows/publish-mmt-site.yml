@@ -1,14 +1,21 @@
 name: Publish MMT site
 
-# On every merge to main, copies the finished Middle Market site (everything in
-# mid-market-practice/ except the build scripts) to the jp-hardin/mmt-site repo.
-# The mmt.benchmarkintl.com server pulls that repo every 5 minutes.
+# Takes the site live. Merging to main only updates the github.io preview; this runs only when
+# started by hand (Actions > Publish MMT site > Run workflow). It copies the finished Middle Market
+# site (everything in mid-market-practice/ except the build scripts) from main, or from an earlier
+# live-* tag to roll back, to the jp-hardin/mmt-site repo, which the mmt.benchmarkintl.com server
+# pulls every 5 minutes. Each publish from main is tagged live-<date>-<time> here.
 # Needs the MMT_SITE_TOKEN secret (fine-grained token: mmt-site only, Contents read and write).
 on:
-  push:
-    branches: [main]
-    paths: ['mid-market-practice/**', '.github/workflows/publish-mmt-site.yml']
   workflow_dispatch:
+    inputs:
+      ref:
+        description: 'What to publish: main, or a live-* tag to roll back to'
+        default: main
+        required: true
+
+permissions:
+  contents: write
 
 concurrency: publish-mmt-site
 
@@ -17,6 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
       - name: Copy the finished site into mmt-site
         env:
           TOKEN: ${{ secrets.MMT_SITE_TOKEN }}
@@ -33,3 +42,8 @@ jobs:
           git -c user.name="MMT site" -c user.email="mmt-site@users.noreply.github.com" commit -qm "Publish ${GITHUB_SHA::7}"
           git push -q origin HEAD:main
           echo "Published $(git rev-parse --short HEAD) ($(git ls-files | wc -l) files)"
+      - name: Label this live version
+        if: ${{ !startsWith(inputs.ref, 'live-') }}
+        run: |
+          tag="live-$(TZ=America/New_York date +%Y-%m-%d-%H%M)"
+          git tag "$tag" && git push -q origin "$tag" && echo "Tagged $tag"
