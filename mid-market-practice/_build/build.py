@@ -32,7 +32,9 @@ AS_OF = "October 2026"
 
 # Search and AI discovery. SITE_URL is the one place to change when the site moves (for example to HubSpot);
 # canonical links, sitemap.xml, robots.txt, llms.txt, social previews and structured data all build from it.
-SITE_URL = "https://jp-hardin.github.io/about/mid-market-practice/"
+# The sandbox (github.io) builds with its own address; the live preview and the live copy build with
+# MMT_SITE_URL=https://mmt.benchmarkintl.com/ (set by the Stage live preview workflow).
+SITE_URL = os.environ.get("MMT_SITE_URL", "https://jp-hardin.github.io/about/mid-market-practice/")
 SITE_UPDATED = "2026-10-21"   # date stamp for sitemap.xml; update when content changes
 ORG_NAME = "Benchmark International Middle Market"
 PARENT_ORG = {"@type": "Organization", "@id": "https://www.benchmarkintl.com/#organization", "name": "Benchmark International",
