@@ -356,16 +356,11 @@
 .report .rpart .rh3 { font-size: clamp(1.1rem, 1.7vw, 1.25rem); margin-top: 30px; }
 
 /* ── Web-native report layout ──
-   One reading column; side-by-side content as a responsive grid; company names as lists; notes and long tables fold away. */
-.wbar { position: sticky; top: 76px; z-index: 20; background: rgba(255,255,255,.96); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
-.wbar-in { display: flex; gap: 4px; align-items: center; overflow-x: auto; scrollbar-width: none; }
-.wbar-in::-webkit-scrollbar { display: none; }
-.wbar a { flex: 0 0 auto; padding: 14px 12px; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--graphite); text-decoration: none; border-bottom: 2px solid transparent; }
-.wbar a:hover, .wbar a.is-active { color: var(--ink); border-bottom-color: var(--gold); }
-.wbar .wbar-pdf { margin-left: auto; color: var(--gold-deep); }
-.wreport { max-width: 980px; }
-.wdoc { padding: 24px 0 80px; }
-.wchap { padding-top: 56px; scroll-margin-top: 140px; }
+   Contents sidebar beside one reading column; side-by-side content as a responsive grid; company names as lists; notes and long tables fold away. */
+.wdoc { padding: 0; }
+.wdoc > .wchap:first-child { padding-top: 0; }
+.wdoc .wpart[id] { scroll-margin-top: 100px; }
+.wchap { padding-top: 56px; scroll-margin-top: 100px; }
 .wchap + .wchap { border-top: 1px solid var(--line); margin-top: 48px; }
 .wchap-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 8px; }
 .wchap-num { font-family: var(--font-serif); font-size: 28px; color: var(--sand); }
@@ -422,7 +417,6 @@
 .wdoc .rtable td { border-bottom: 1px solid var(--line); padding: 10px; vertical-align: top; }
 @media (max-width: 900px) {
   .wcols--3, .wcols--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .wbar { top: 64px; }
 }
 @media (max-width: 640px) {
   .wcols--2, .wcols--3, .wcols--4 { grid-template-columns: 1fr; }
@@ -444,3 +438,19 @@
 .wlink { margin: 10px 0 0 !important; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .wlink a { color: var(--gold-deep); text-decoration: none; }
 .wfig { margin-left: 0; }
+
+/* Beside the contents sidebar: figures as one dark band, wider cards, tables never squeezed into a card */
+.wstats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin: 22px 0 26px; background: var(--ink); border-top: 3px solid var(--gold); }
+.wstat { padding: 22px 24px 20px; border-left: 1px solid rgba(255,255,255,.12); }
+.wstat:first-child { border-left: 0; }
+.wstats .wnum { color: var(--gold); font-size: 34px; margin: 0 0 8px !important; }
+.wstats .wstat-l { color: rgba(255,255,255,.82); font-size: 13px; line-height: 1.5; margin: 0; max-width: none; }
+.wcard--dark .wstats { background: none; border-top: 0; margin: 8px -24px 0; }
+.rlayout .wgrid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.rlayout .wgrid--wide { grid-template-columns: 1fr; }
+.wgrid > .wcard:has(.rtable-wrap) { grid-column: 1 / -1; }
+.wcard--dark:has(> .rtable-wrap) { background: none; color: inherit; padding: 0; border-top: 0; }
+.wgrid .wcols--2 { grid-template-columns: minmax(0, 1fr) auto; }
+@media (max-width: 640px) { .wstat { border-left: 0; border-top: 1px solid rgba(255,255,255,.12); } .wstat:first-child { border-top: 0; } }
+.wcols--2:has(> .wcol:first-child > .wperson:only-child) { grid-template-columns: 72px minmax(0, 1fr); }
+.rtoc .btn { white-space: nowrap; font-size: 11px; letter-spacing: .1em; padding: 13px 10px; }

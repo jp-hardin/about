@@ -278,7 +278,7 @@ def merge_continued(pages):
     """A deck page that continues the one before it (same title, or "(Continued)") joins it: online it is one section.
     Returns the pages and a map from each folded page number to the page it joined."""
     out, alias = [], {}
-    key = lambda t: re.sub(r'\s*\((?:continued|cont\.)\)\s*$', '', t or '', flags=re.I).strip().lower()
+    key = lambda t: re.sub(r'\s*\((?:continued|cont\.|\d+ of \d+)\)\s*$', '', t or '', flags=re.I).strip().lower()
     for pg in pages:
         prev = out[-1] if out else None
         if prev is not None and not pg['part'] and not prev['part'] and key(pg['title']) == key(prev['title']):
@@ -293,7 +293,7 @@ def merge_continued(pages):
             prev['foot'] = join_notes(prev['foot'])
             continue
         for k in ('title', 'title_html'):
-            pg[k] = re.sub(r'\s*\((?:Continued|continued|CONTINUED)\)\s*$', '', pg[k] or '')
+            pg[k] = re.sub(r'\s*\((?:continued|\d+ of \d+)\)\s*$', '', pg[k] or '', flags=re.I)
         out.append(pg)
     return out, alias
 
@@ -572,6 +572,26 @@ def build_page(prs):
     # Online the report is organized by what a reader comes for, not by deck page: chapters (Industry at a Glance,
     # Market Conditions, Sector by Sector, ...) hold the deck pages as subsections, in deck order within each chapter.
     # Part dividers go; long tables, the disclosures and the sources fold away until opened.
+    def polish(body):
+        """Runs of figures ("54.5" over its label) as one row of stats; a list of names already given just above is dropped."""
+        pair = r'<p class="wnum">(.*?)</p>\s*<p(?: class="(?:wfine|wlead)")?>(.*?)</p>\s*'
+        def band(m):
+            items = re.findall(pair, m.group(0), re.S)
+            return ('<div class="wstats">' + ''.join(f'<div class="wstat"><p class="wnum">{a}</p><p class="wstat-l">{b}</p></div>'
+                                                     for a, b in items) + '</div>\n')
+        body = re.sub(f'(?:{pair}){{2,}}', band, body, flags=re.S)
+        def names(m):
+            before = re.sub(r'<[^>]+>', ' ', body[:m.start()]).lower()
+            items = [re.sub(r'<[^>]+>', '', x).lower() for x in re.findall(r'<li>(.*?)</li>', m.group(0))]
+            return '' if items and all(x in before for x in items) else m.group(0)
+        body = re.sub(r'<ul class="wnames">.*?</ul>', names, body, flags=re.S)
+        # an icon whose name repeats the label beside it ("Distribution & Services" next to INDUSTRIAL DISTRIBUTION & SERVICES)
+        def icon(m):
+            words = set(re.findall(r'[a-z]{3,}', m.group(1).lower()))
+            return m.group(2) if words and words <= set(re.findall(r'[a-z]{3,}', m.group(2).lower())) else m.group(0)
+        return re.sub(r'<div class="wcols wcols--2"><div class="wcol"><ul class="wnames"><li>([^<]*)</li></ul></div>'
+                      r'<div class="wcol">(<p class="wlabel">.*?</p>)</div></div>', icon, body, flags=re.S)
+
     def key_list(body):
         """The divider's numbered key insights (a bold "NN  headline" line, then its sentence) as a list."""
         pat = (r'(?:<p(?: class="fine")?><strong>|<h4 class="wh">)(\d\d)\s+(.*?)(?:</strong></p>|</h4>)\s*'
@@ -588,23 +608,33 @@ def build_page(prs):
     chaps = chapters(pages)
     toc, secs = [], []
     chaps = [c for c in chaps if c[0] != 'about']     # the firm boilerplate: the page ends with the team and the contact form
-    for k, (key, ctitle, pgs) in enumerate(chaps, 1):
+    k = 0
+    for key, ctitle, pgs in chaps:
         subs = [pg for pg in pgs if not pg['part']]
-        toc.append(f'<a href="#ch-{key}">{esc(ctitle)}</a>')
+        sub_toc = ''.join(f'<li><a href="#p{pg["num"]:02d}">{esc(web_title(pg))}</a></li>' for pg in subs) if len(subs) > 1 and key != 'notes' else ''
         inner = []
         for pg in pgs:
             notes = f'<details class="wnotes"><summary>Notes</summary><div>{pg["foot"]}</div></details>' if pg['foot'] else ''
             if pg['part']:
-                inner.append(f'<div class="wpart wglance">{key_list(pg["web"])}</div>')
+                # the deck's contents slide: the sidebar lists the contents, so only its summary paragraph stays
+                body = key_list(pg['web'])
+                summary = body if 'class="rkey"' in body else \
+                    ''.join(m for m in re.findall(r'<p>.*?</p>', body, re.S) if len(re.sub(r'<[^>]+>', '', m)) > 120)
+                if summary:
+                    inner.append(f'<div class="wpart wglance">{summary}</div>')
                 continue
             t = esc(web_title(pg))
             sub = f'<p class="wsub">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
-            body = fold_tables(pg['web'])
+            body = polish(fold_tables(pg['web']))
             head = f'<h3 class="wh3">{t}</h3>\n' if len(subs) > 1 else ''
             block = f'<section class="wpart" id="p{pg["num"]:02d}">\n{head}{sub}\n{body}\n{notes}\n</section>'
             if key == 'notes':
                 block = (f'<details class="wfold" id="p{pg["num"]:02d}"><summary>{t}</summary>\n{sub}\n{body}\n{pg["foot"]}\n</details>')
             inner.append(block)
+        if not inner:
+            continue
+        k += 1
+        toc.append(f'<li class="rtoc-ch"><a href="#ch-{key}"><span>{k:02d}</span>{esc(ctitle)}</a>' + (f'<ol class="rtoc-sub">{sub_toc}</ol>' if sub_toc else '') + '</li>')
         secs.append(f'<section class="wchap" id="ch-{key}">\n<header class="wchap-head"><span class="wchap-num">{k:02d}</span>'
                     f'<h2 class="h2">{esc(ctitle)}</h2></header>\n{chr(10).join(inner)}\n</section>')
 
@@ -636,9 +666,9 @@ def build_page(prs):
              f'    <p class="rbyline">{esc(norm(byline))}</p>\n'
              f'    <div class="btn-row"><a class="btn" href="{pdf}" download>{DL} Download the PDF</a>'
              f'<a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a></div>\n  </div>\n</section>\n'
-             f'{band}\n<nav class="wbar" aria-label="Report sections"><div class="wrap wbar-in">{"".join(toc)}'
-             f'<a class="wbar-pdf" href="{pdf}" download>{DL} PDF</a></div></nav>\n'
-             f'<div class="wrap wreport">\n  <article class="report wdoc">\n{chr(10).join(secs)}\n    {author}\n  </article>\n</div>\n\n')
+             f'{band}\n<div class="wrap rlayout">\n  <aside class="rtoc" aria-label="Report contents">\n    <p class="eyebrow">Contents</p>\n'
+             f'    <ol>{"".join(toc)}</ol>\n    <a class="btn" href="{pdf}" download>{DL} Download the PDF</a>\n  </aside>\n'
+             f'  <article class="report wdoc">\n{chr(10).join(secs)}\n    {author}\n  </article>\n</div>\n\n')
     faqs = report_faqs(pages, lead)
     if faqs:
         page += site.faq_html(faqs, f'{NAME} M&A, {PERIOD}: Common Questions', 'From the Report')

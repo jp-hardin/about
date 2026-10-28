@@ -368,296 +368,6 @@ Chart data:
 
 * 2026 is the annualized pace of an estimated 337 transactions in the first half. Annual counts are the chart labels in PitchBook’s Q4 2025 report, and PitchBook restates earlier years as late-reported transactions are added. The 2025 count is an estimate.
 
-### Sources (1 of 2)
-
-Sources cited in this report, listed by page.
-
-HEALTHCARE M&A: STATE OF PLAY
-
-[PitchBook via Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)  fiercehealthcare.com
-
-[PwC via MedTech Dive](https://www.medtechdive.com/news/medtech-ma-maintains-momentum-following-decade-high-2025-pwc/823113/)  medtechdive.com
-
-[Kaufman Hall](https://www.kaufmanhall.com/news/ma-activity-remains-strong-among-large-health-systems-amid-continued-industry-transformation)  kaufmanhall.com
-
-[IQVIA](https://www.iqvia.com/locations/emea/blogs/2026/07/biopharma-ma-mid-year-2026-update)  iqvia.com
-
-[CMS](https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-proposed-rule)  cms.gov
-
-[CMS outpatient rule](https://www.cms.gov/newsroom/fact-sheets/calendar-year-2027-hospital-outpatient-prospective-payment-system-opps-ambulatory-surgical-center)  cms.gov
-
-[CMS home health](https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-home-health-prospective-payment-system-proposed-rule-fact-sheet-cms-1844-p)  cms.gov
-
-[CMS rate notice](https://www.cms.gov/newsroom/fact-sheets/2027-medicare-advantage-part-d-rate-announcement)  cms.gov
-
-[CMS](https://www.medicaid.gov/medicaid/downloads/elig-redet-section-71107-deck.pdf)  medicaid.gov
-
-[Federal Reserve](https://federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm)  federalreserve.gov
-
-[US Treasury](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610)  home.treasury.gov
-
-[PitchBook](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf)  pitchbook.brightspotcdn.com
-
-[GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)  acg.org
-
-[Altarum](https://www.altarum.org/news-and-insights/september-2026-health-sector-economic-indicators-briefs)  altarum.org
-
-[CMS](https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/nhe-fact-sheet)  cms.gov
-
-[Bureau of Labor Statistics](https://www.bls.gov/news.release/archives/empsit_10022026.htm)  bls.gov
-
-[White House proclamation](https://www.whitehouse.gov/presidential-actions/2026/04/adjusting-imports-of-pharmaceuticals-and-pharmaceutical-ingredients-into-the-united-states/)  whitehouse.gov
-
-[iData Research](https://idataresearch.com/news-medical-device-tariffs-in-2026/)  idataresearch.com
-
-[Nixon Peabody](https://www.nixonpeabody.com/insights/alerts/2026/05/27/ohcas-proposed-emergency-regulations-clarify-ab-1415-notice-requirements)  nixonpeabody.com
-
-[Foley & Lardner](https://www.foley.com/insights/publications/2026/04/maine-health-care-transactions-new-state-approvals-involving-some-private-equity-hedge-funds-and-msos/)  foley.com
-
-[PitchBook via Becker’s ASC Review](https://www.beckersasc.com/asc-transactions-and-valuation-issues/why-asc-deals-are-outperforming-the-rest-of-healthcare-ma-in-2026-8-things-to-know/)  beckersasc.com
-
-[IBBA and M&A Source](https://www.ibba.org/market-pulse-q2-2026-survey-results/)  ibba.org
-
-HISTORICAL MARKET CONTEXT
-
-[CMS](https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/historical)  cms.gov
-
-[Committee for a Responsible Federal Budget](https://www.crfb.org/blogs/national-health-expenditures-continue-rise)  crfb.org
-
-[Kaufman Hall](https://www.kaufmanhall.com/news/hospital-and-health-system-ma-activity-ends-2025-momentum)  kaufmanhall.com
-
-[Kaufman Hall](https://www.kaufmanhall.com/news/ma-activity-remains-strong-among-large-health-systems-amid-continued-industry-transformation)  kaufmanhall.com
-
-[PitchBook](https://pitchbook.brightspotcdn.com/2d/0a/acb3601c4e19925c22d3f3877637/q4-2025-healthcare-services-report.pdf)  pitchbook.brightspotcdn.com
-
-MARKET FUNDAMENTALS
-
-[FRED](https://fred.stlouisfed.org/series/CES6562000101)  fred.stlouisfed.org
-
-[Bureau of Labor Statistics JOLTS](https://www.bls.gov/news.release/jolts.t01.htm)  bls.gov
-
-[FRED](https://fred.stlouisfed.org/series/TLHLTHCONS)  fred.stlouisfed.org
-
-[Sage Growth Partners via HFMA](https://www.hfma.org/fast-finance/health-system-capital-investment-strategy-2026/)  hfma.org
-
-[FDA](https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026)  fda.gov
-
-[RAPS](https://www.raps.org/resource/cder-approved-50-novel-drugs-in-2024-record-numbe.html)  raps.org
-
-[IQVIA](https://www.biospace.com/press-releases/iqvia-reports-second-quarter-2026-results)  biospace.com
-
-PERSPECTIVES ON FOUR SECTORS
-
-[Journal of Urgent Care Medicine](https://www.jucm.com/?p=86881)  jucm.com
-
-[Becker’s ASC Review](https://www.beckersasc.com/asc-transactions-and-valuation-issues/hcas-urgent-care-acquisition-spree/)  beckersasc.com
-
-[Healthcare Dive](https://www.healthcaredive.com/news/hca-texas-medclinic-acquisition-urgent-care/826917/)  healthcaredive.com
-
-[LevinPro](https://healthcare.levinassociates.com/2026/05/11/top-home-health-hospice-deals-of-2026-so-far/)  healthcare.levinassociates.com
-
-[Enhabit](https://www.sec.gov/Archives/edgar/data/1803737/000119312526064210/d29040dex991.htm)  sec.gov
-
-[AMA 2024 Benchmark Survey via Medical Economics](https://www.ama-assn.org/about/research/physician-practice-benchmark-survey)  ama-assn.org
-
-[Quest Diagnostics](https://newsroom.questdiagnostics.com/2026-07-23-Quest-Diagnostics-Reports-Second-Quarter-2026-Financial-Results-Raises-Revenue-and-EPS-Guidance-for-Full-Year-2026)  newsroom.questdiagnostics.com
-
-[Labcorp Form 10-Q](https://www.sec.gov/Archives/edgar/data/0000920148/000092014826000175/lh-20260630.htm)  sec.gov
-
-[Association for Diagnostics & Laboratory Medicine](https://myadlm.org/cln/The-Lab-Advocate/2026/August/ADLM-Continues-Push-for-Permanent-PAMA-Reform)  myadlm.org
-
-[IQVIA](https://www.sec.gov/Archives/edgar/data/0001478242/000162828026049923/iqv-q2x2026earningspressre.htm)  sec.gov
-
-[Medpace](https://www.sec.gov/Archives/edgar/data/0001668397/000166839726000023/medp-2026722exx991.htm)  sec.gov
-
-[Headlands Research](https://www.prnewswire.com/news-releases/headlands-research-expands-california-presence-with-acquisition-of-clinical-trials-research-302814202.html)  prnewswire.com
-
-[Summit Clinical Research](https://www.prnewswire.com/news-releases/summit-clinical-research-solutions-expands-pinnacle-site-network-with-acquisition-of-dallas-research-institute-302874775.html)  prnewswire.com
-
-PERSPECTIVES ON FOUR SECTORS
-
-[Stryker](https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm)  sec.gov
-
-[Steris](https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm)  sec.gov
-
-[Sage Growth Partners via HFMA](https://www.hfma.org/fast-finance/health-system-capital-investment-strategy-2026/)  hfma.org
-
-[Owens & Minor](https://www.owens-minor.com/pressreleases/owens-minor-announces-definitive-agreement-to-divest-products-healthcare-services-segment-to-platinum-equity-for-375mm-in-cash-and-a-retained-equity-stake/)  owens-minor.com
-
-[McKesson](https://www.sec.gov/Archives/edgar/data/0000927653/000092765326000232/mck_exhibit991x6302026.htm)  sec.gov
-
-[Learning Resources v. Trump](https://www.kslaw.com/news-and-insights/u-s-supreme-court-invalidates-the-president-s-ieepa-tariffs-in-learning-resources-inc-v-trump)  kslaw.com
-
-[IQVIA Institute](https://www.iqvia.com/insights/the-iqvia-institute/reports/us-medicine-use-trends-2026)  iqvia.com
-
-[NCPA 2025 Digest](https://ncpa.org/newsroom/news-releases/2025/10/19/ncpa-releases-2025-digest-report)  ncpa.org
-
-[Guardian Pharmacy Services](https://www.sec.gov/Archives/edgar/data/0001802255/000119312526338032/d160709dex991.htm)  sec.gov
-
-[BrightSpring](https://www.sec.gov/Archives/edgar/data/0001865782/000119312526326654/btsg-ex99_1.htm)  sec.gov
-
-[Staffing Industry Analysts](https://www.staffingindustry.com/editorial/healthcare-staffing-report/healthcare-staffing-rebounds-as-demand-strengthens-in-the-second-and-third-quarters)  staffingindustry.com
-
-WHAT WE’RE READING
-
-[Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)  fiercehealthcare.com
-
-[IQVIA](https://www.iqvia.com/locations/emea/blogs/2026/07/biopharma-ma-mid-year-2026-update)  iqvia.com
-
-[MedTech Dive](https://www.medtechdive.com/news/top-10-medtech-deals-in-the-first-half-of-2026/824435/)  medtechdive.com
-
-[Drug Channels](https://www.drugchannels.net/2026/08/the-k-shaped-pharmacy-shakeout.html)  drugchannels.net
-
-HEALTHCARE SERVICES DEAL VOLUME
-
-[AMA](https://www.ama-assn.org/system/files/2021-01/cf-history.pdf)  ama-assn.org
-
-[PitchBook](https://pitchbook.brightspotcdn.com/7b/53/6ae3fbf84f12bfd344a7ae0a691a/q2-2026-healthcare-services-report-gusting-macroeconomic-headwinds-impede-progress.pdf)  pitchbook.brightspotcdn.com
-
-[Kaufman Hall](https://www.kaufmanhall.com/news/ma-activity-remains-strong-among-large-health-systems-amid-continued-industry-transformation)  kaufmanhall.com
-
-[PitchBook Q4 2025 Healthcare Services Report](https://pitchbook.brightspotcdn.com/2d/0a/acb3601c4e19925c22d3f3877637/q4-2025-healthcare-services-report.pdf)  pitchbook.brightspotcdn.com
-
-[PitchBook via Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)  fiercehealthcare.com
-
-Listed-company data pages at [StockAnalysis](https://www.jucm.com/?p=86881) are linked from the company names on the participants and appendix sections. Adjusted EBITDA figures are from company earnings releases and SEC filings for the eight quarters to June 30, 2026.
-
-### Sources (2 of 2)
-
-Sources cited in this report, listed by page.
-
-SELECT MARKET PARTICIPANTS
-
-StockAnalysis company pages  stockanalysis.com (company statistics pages)
-
-SELECT RECENT HEALTHCARE M&A TRANSACTIONS
-
-[Eyewire News](https://eyewire.news/news/myeyedr-to-acquire-eyecare-partners-optometry-division-adding-more-than-300-offices)  eyewire.news
-
-[EyeCare Partners](https://www.businesswire.com/news/home/20260928896885/en/EyeCare-Partners-Announces-Sale-of-Optometry-Business)  businesswire.com
-
-[Addus HomeCare](https://www.sec.gov/Archives/edgar/data/0001468328/000143774926030348/ex_1015828.htm)  sec.gov
-
-[Bio-Techne](https://www.sec.gov/Archives/edgar/data/0000842023/000199937126013429/ex99-1.htm)  sec.gov
-
-[Danaher](https://www.sec.gov/Archives/edgar/data/0000313616/000031361626000163/dhr-20260721xex991.htm)  sec.gov
-
-[PE Professional](https://peprofessional.com/2026/07/statlab-sold-to-danahers-leica-biosystems/)  peprofessional.com
-
-[Integer](https://www.sec.gov/Archives/edgar/data/1114483/000095010326011709/dp251126_ex9901.htm)  sec.gov
-
-[Medical Design & Outsourcing](https://www.medicaldesignandoutsourcing.com/?p=280019)  medicaldesignandoutsourcing.com
-
-[Fierce Healthcare](https://www.fiercehealthcare.com/finance/staffing-firm-cross-country-healthcare-be-acquired-knox-lane-437m)  fiercehealthcare.com
-
-[Staffing Industry Analysts](https://www.staffingindustry.com/news/global-daily-news/private-equity-firm-knox-lane-completes-acquisition-of-cross-county)  staffingindustry.com
-
-BENCHMARK INTERNATIONAL’S HEALTHCARE TRANSACTIONS
-
-[Benchmark International](https://www.benchmarkintl.com/about/our-success/)  benchmarkintl.com
-
-[Precise Bioscience, LLC and New Horizon Medical Solutions](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-precise-bioscience-llc-and-new-horizon-medical-solutions/)  benchmarkintl.com
-
-[Formulation Technology, Incorporated and Aavin Private Equity](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-formulation-technology-incorporated-and-aavin-private-equity/)  benchmarkintl.com
-
-[Fast Response On-Site Testing, Inc. and Relentless Health, Inc.](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-fast-response-onsite-testing-inc-and-relentless-health-inc/)  benchmarkintl.com
-
-[Critical Environments Professionals and Scientific Safety Alliance](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-critical-environments-professionals-and-scientific-safety-alliance/)  benchmarkintl.com
-
-[Dental Holdings, LLC and Solmetex, LLC](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitated-the-transaction-of-dental-holdings-llc-and-solmetex-llc/)  benchmarkintl.com
-
-[Fosterbridge, Inc. and Amvie](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-fosterbridge-inc-and-amvie/)  benchmarkintl.com
-
-[Medical Temps, Inc. and Health Advocates Network](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-medical-temps-inc-and-health-advocates-network/)  benchmarkintl.com
-
-[The Brooks Group and private investors](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-the-brooks-group-and-private-investors/)  benchmarkintl.com
-
-[Fitzgerald Enterprises and Pioneers Operations](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-fitzgerald-enterprises-and-pioneers-operations/)  benchmarkintl.com
-
-VALUATION MULTIPLES BY SECTOR
-
-[PitchBook via Becker’s ASC Review](https://www.beckersasc.com/asc-transactions-and-valuation-issues/why-asc-deals-are-outperforming-the-rest-of-healthcare-ma-in-2026-8-things-to-know/)  beckersasc.com
-
-[GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)  acg.org
-
-[IBBA and M&A Source](https://www.ibba.org/market-pulse-q2-2026-survey-results/)  ibba.org
-
-[StockAnalysis](https://stockanalysis.com/)  stockanalysis.com
-
-PUBLIC COMPANY STOCK PERFORMANCE: PAST 12 MONTHS
-
-[StockAnalysis](https://stockanalysis.com/)  stockanalysis.com
-
-PUBLIC COMPANY OPERATING AND VALUATION METRICS
-
-[StockAnalysis](https://stockanalysis.com/)  stockanalysis.com
-
-EARNINGS AND COMMENTARY
-
-[Ensign Group](https://www.sec.gov/Archives/edgar/data/0001125376/000112537626000036/q22026pressrelease.htm)  sec.gov
-
-[Medpace](https://www.sec.gov/Archives/edgar/data/0001668397/000166839726000023/medp-2026722exx991.htm)  sec.gov
-
-[Thermo Fisher Scientific](https://www.sec.gov/Archives/edgar/data/0000097745/000009774526000138/q22026earnings8kex99_1.htm)  sec.gov
-
-[Quest Diagnostics](https://newsroom.questdiagnostics.com/2026-07-23-Quest-Diagnostics-Reports-Second-Quarter-2026-Financial-Results-Raises-Revenue-and-EPS-Guidance-for-Full-Year-2026)  newsroom.questdiagnostics.com
-
-[Stryker](https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm)  sec.gov
-
-[HCA Healthcare](https://www.sec.gov/Archives/edgar/data/0000860730/000119312526315151/hca-ex99_1.htm)  sec.gov
-
-[IQVIA](https://www.sec.gov/Archives/edgar/data/0001478242/000162828026049923/iqv-q2x2026earningspressre.htm)  sec.gov
-
-[U.S. Physical Therapy](https://www.sec.gov/Archives/edgar/data/0000885978/000088597826000042/ex99-1.htm)  sec.gov
-
-[Addus HomeCare](https://www.sec.gov/Archives/edgar/data/0001468328/000143774926025448/ex_997368.htm)  sec.gov
-
-[McKesson](https://www.mckesson.com/about-us/newsroom/press-releases/2026/mckesson-reports-fiscal-2027-first-quarter-results-and-raises-full-year-adjusted-eps-guidance/)  mckesson.com
-
-[Steris](https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm)  sec.gov
-
-[Tenet Healthcare](https://www.sec.gov/Archives/edgar/data/0000070318/000007031826000032/thc-20260630ex991earningsr.htm)  sec.gov
-
-[Henry Schein](https://investor.henryschein.com/news-releases/news-release-details/2026/Henry-Schein-Reports-Strong-Second-Quarter-2026-Financial-Results-and-Raises-FY2026-Guidance)  investor.henryschein.com
-
-[Labcorp](https://www.sec.gov/Archives/edgar/data/0000920148/000092014826000162/form8-kexhibit9912q26.htm)  sec.gov
-
-[Cardinal Health](https://www.sec.gov/Archives/edgar/data/0000721371/000072137126000037/a26q4_x063026xex991xnewsre.htm)  sec.gov
-
-[AMN Healthcare](https://www.sec.gov/Archives/edgar/data/0001142750/000114275026000008/amn-ex991x20260630xearning.htm)  sec.gov
-
-[Guardian Pharmacy Services](https://www.sec.gov/Archives/edgar/data/0001802255/000119312526338032/d160709dex991.htm)  sec.gov
-
-[Option Care Health](https://www.sec.gov/Archives/edgar/data/1014739/000101473926000021/exhibit991-q22026.htm)  sec.gov
-
-[Addus HomeCare call transcript](https://stockanalysis.com/stocks/adus/transcripts/660727-q2-2026/)  stockanalysis.com
-
-[Quest Diagnostics prepared comments](https://s2.q4cdn.com/390454341/files/doc_earnings/2026/q2/transcript/prepared-comments-for-website-Q2-2026-final.pdf)  s2.q4cdn.com
-
-[Thermo Fisher Scientific call transcript](https://stockanalysis.com/stocks/tmo/transcripts/653574-q2-2026/)  stockanalysis.com
-
-[STERIS call transcript](https://stockanalysis.com/stocks/ste/transcripts/666655-q1-2027/)  stockanalysis.com
-
-[Henry Schein call transcript](https://s206.q4cdn.com/399858780/files/doc_financials/2026/q2/HSIC-USQ_Transcript_2026-08-04.pdf)  s206.q4cdn.com
-
-[Cardinal Health call transcript](https://s201.q4cdn.com/566741227/files/doc_financials/2026/q4/Q4-FY26-CAH-Earnings-Transcript.pdf)  s201.q4cdn.com
-
-[AMN Healthcare call transcript](https://stockanalysis.com/stocks/amn/transcripts/662833-q2-2026/)  stockanalysis.com
-
-BENCHMARK INTERNATIONAL
-
-[Benchmark International](https://www.benchmarkintl.com/about/our-success/)  benchmarkintl.com
-
-APPENDIX: PUBLIC MARKET OPERATING AND VALUATION METRICS
-
-[StockAnalysis](https://stockanalysis.com/)  stockanalysis.com
-
-APPENDIX: PUBLIC MARKET OPERATING AND VALUATION METRICS
-
-[StockAnalysis](https://stockanalysis.com/)  stockanalysis.com
-
-Listed-company data pages at [StockAnalysis](https://stockanalysis.com/stocks/adus/transcripts/660727-q2-2026/) are linked from the company names on the participants and appendix sections. Adjusted EBITDA figures are from company earnings releases and SEC filings for the eight quarters to June 30, 2026.
-
 ## 3. Our View
 
 Strategic buyers hold the advantage into 2027, and the owners who do best will have answered the policy questions before a buyer asks them.
@@ -1783,6 +1493,8 @@ Ranking based on PitchBook’s Q2 2026 Global League Tables, as published at [be
 
 ## 9. Disclosures and Sources
 
+### Important Disclosures
+
 “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. Benchmark International Middle Market is the mid-market advisory team within Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires. Benchmark International and its affiliates may have had, may currently have, or may in the future have business relationships with companies named in this material, with potential parties to a transaction and their related persons, or with their competitors, customers or suppliers. When Benchmark International is engaged to provide advisory services in a transaction, it acts only for its client in connection with that transaction. The distribution of this material in certain jurisdictions may be restricted by law, and accordingly, recipients of this material represent that they are able to receive it without contravention of any registration requirement or other legal restrictions in the jurisdictions in which they reside or in which they conduct business.
 
 This material does not contain all the information needed to assess any transaction. You must conduct your own investigations and analyses. Benchmark International does not provide valuations, appraisals, or fairness opinions, and does not provide accounting, tax, investment, regulatory, or legal advice to anyone. This material is for discussion and informational purposes only and is not a recommendation, offer, or solicitation for the purchase or sale of any security or an invitation or inducement to engage in any transaction or investment activity. Benchmark International obtained the information in this material from public filings, company announcements, published reports, and other third-party sources, together with its own transaction experience. Benchmark International has not independently verified such information, the information is current only as of the date stated, and no obligation is undertaken to provide updated or additional information. Transaction values, multiples, and other figures are as publicly reported, and the price of any private company depends on that business. No representation or warranty, expressed or implied, is made in relation to the fairness, accuracy, correctness, or completeness of the information, opinions, or conclusions expressed herein. All forward-looking statements herein involve assumptions and elements of subjective judgment and analysis and are not facts. Past transactions are not indicative of future results, and nothing in this material guarantees future results or performance.
@@ -1792,3 +1504,287 @@ Company names, logos, and trademarks referenced in this material are the propert
 This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the “Order”); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as “Relevant Persons”). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.
 
 Information in this report is as of October 19, 2026, unless stated otherwise.
+
+### Sources
+
+Sources cited in this report, listed by page.
+
+HEALTHCARE M&A: STATE OF PLAY
+
+[PitchBook via Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)  fiercehealthcare.com
+
+[PwC via MedTech Dive](https://www.medtechdive.com/news/medtech-ma-maintains-momentum-following-decade-high-2025-pwc/823113/)  medtechdive.com
+
+[Kaufman Hall](https://www.kaufmanhall.com/news/ma-activity-remains-strong-among-large-health-systems-amid-continued-industry-transformation)  kaufmanhall.com
+
+[IQVIA](https://www.iqvia.com/locations/emea/blogs/2026/07/biopharma-ma-mid-year-2026-update)  iqvia.com
+
+[CMS](https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-proposed-rule)  cms.gov
+
+[CMS outpatient rule](https://www.cms.gov/newsroom/fact-sheets/calendar-year-2027-hospital-outpatient-prospective-payment-system-opps-ambulatory-surgical-center)  cms.gov
+
+[CMS home health](https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-home-health-prospective-payment-system-proposed-rule-fact-sheet-cms-1844-p)  cms.gov
+
+[CMS rate notice](https://www.cms.gov/newsroom/fact-sheets/2027-medicare-advantage-part-d-rate-announcement)  cms.gov
+
+[CMS](https://www.medicaid.gov/medicaid/downloads/elig-redet-section-71107-deck.pdf)  medicaid.gov
+
+[Federal Reserve](https://federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm)  federalreserve.gov
+
+[US Treasury](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610)  home.treasury.gov
+
+[PitchBook](https://pitchbook.brightspotcdn.com/40/42/bbeb88094080abaea3d7c87530b8/q2-2026-us-pe-breakdown.pdf)  pitchbook.brightspotcdn.com
+
+[GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)  acg.org
+
+[Altarum](https://www.altarum.org/news-and-insights/september-2026-health-sector-economic-indicators-briefs)  altarum.org
+
+[CMS](https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/nhe-fact-sheet)  cms.gov
+
+[Bureau of Labor Statistics](https://www.bls.gov/news.release/archives/empsit_10022026.htm)  bls.gov
+
+[White House proclamation](https://www.whitehouse.gov/presidential-actions/2026/04/adjusting-imports-of-pharmaceuticals-and-pharmaceutical-ingredients-into-the-united-states/)  whitehouse.gov
+
+[iData Research](https://idataresearch.com/news-medical-device-tariffs-in-2026/)  idataresearch.com
+
+[Nixon Peabody](https://www.nixonpeabody.com/insights/alerts/2026/05/27/ohcas-proposed-emergency-regulations-clarify-ab-1415-notice-requirements)  nixonpeabody.com
+
+[Foley & Lardner](https://www.foley.com/insights/publications/2026/04/maine-health-care-transactions-new-state-approvals-involving-some-private-equity-hedge-funds-and-msos/)  foley.com
+
+[PitchBook via Becker’s ASC Review](https://www.beckersasc.com/asc-transactions-and-valuation-issues/why-asc-deals-are-outperforming-the-rest-of-healthcare-ma-in-2026-8-things-to-know/)  beckersasc.com
+
+[IBBA and M&A Source](https://www.ibba.org/market-pulse-q2-2026-survey-results/)  ibba.org
+
+HISTORICAL MARKET CONTEXT
+
+[CMS](https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/historical)  cms.gov
+
+[Committee for a Responsible Federal Budget](https://www.crfb.org/blogs/national-health-expenditures-continue-rise)  crfb.org
+
+[Kaufman Hall](https://www.kaufmanhall.com/news/hospital-and-health-system-ma-activity-ends-2025-momentum)  kaufmanhall.com
+
+[Kaufman Hall](https://www.kaufmanhall.com/news/ma-activity-remains-strong-among-large-health-systems-amid-continued-industry-transformation)  kaufmanhall.com
+
+[PitchBook](https://pitchbook.brightspotcdn.com/2d/0a/acb3601c4e19925c22d3f3877637/q4-2025-healthcare-services-report.pdf)  pitchbook.brightspotcdn.com
+
+MARKET FUNDAMENTALS
+
+[FRED](https://fred.stlouisfed.org/series/CES6562000101)  fred.stlouisfed.org
+
+[Bureau of Labor Statistics JOLTS](https://www.bls.gov/news.release/jolts.t01.htm)  bls.gov
+
+[FRED](https://fred.stlouisfed.org/series/TLHLTHCONS)  fred.stlouisfed.org
+
+[Sage Growth Partners via HFMA](https://www.hfma.org/fast-finance/health-system-capital-investment-strategy-2026/)  hfma.org
+
+[FDA](https://www.fda.gov/drugs/novel-drug-approvals-fda/novel-drug-approvals-2026)  fda.gov
+
+[RAPS](https://www.raps.org/resource/cder-approved-50-novel-drugs-in-2024-record-numbe.html)  raps.org
+
+[IQVIA](https://www.biospace.com/press-releases/iqvia-reports-second-quarter-2026-results)  biospace.com
+
+PERSPECTIVES ON FOUR SECTORS
+
+[Journal of Urgent Care Medicine](https://www.jucm.com/?p=86881)  jucm.com
+
+[Becker’s ASC Review](https://www.beckersasc.com/asc-transactions-and-valuation-issues/hcas-urgent-care-acquisition-spree/)  beckersasc.com
+
+[Healthcare Dive](https://www.healthcaredive.com/news/hca-texas-medclinic-acquisition-urgent-care/826917/)  healthcaredive.com
+
+[LevinPro](https://healthcare.levinassociates.com/2026/05/11/top-home-health-hospice-deals-of-2026-so-far/)  healthcare.levinassociates.com
+
+[Enhabit](https://www.sec.gov/Archives/edgar/data/1803737/000119312526064210/d29040dex991.htm)  sec.gov
+
+[AMA 2024 Benchmark Survey via Medical Economics](https://www.ama-assn.org/about/research/physician-practice-benchmark-survey)  ama-assn.org
+
+[Quest Diagnostics](https://newsroom.questdiagnostics.com/2026-07-23-Quest-Diagnostics-Reports-Second-Quarter-2026-Financial-Results-Raises-Revenue-and-EPS-Guidance-for-Full-Year-2026)  newsroom.questdiagnostics.com
+
+[Labcorp Form 10-Q](https://www.sec.gov/Archives/edgar/data/0000920148/000092014826000175/lh-20260630.htm)  sec.gov
+
+[Association for Diagnostics & Laboratory Medicine](https://myadlm.org/cln/The-Lab-Advocate/2026/August/ADLM-Continues-Push-for-Permanent-PAMA-Reform)  myadlm.org
+
+[IQVIA](https://www.sec.gov/Archives/edgar/data/0001478242/000162828026049923/iqv-q2x2026earningspressre.htm)  sec.gov
+
+[Medpace](https://www.sec.gov/Archives/edgar/data/0001668397/000166839726000023/medp-2026722exx991.htm)  sec.gov
+
+[Headlands Research](https://www.prnewswire.com/news-releases/headlands-research-expands-california-presence-with-acquisition-of-clinical-trials-research-302814202.html)  prnewswire.com
+
+[Summit Clinical Research](https://www.prnewswire.com/news-releases/summit-clinical-research-solutions-expands-pinnacle-site-network-with-acquisition-of-dallas-research-institute-302874775.html)  prnewswire.com
+
+PERSPECTIVES ON FOUR SECTORS
+
+[Stryker](https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm)  sec.gov
+
+[Steris](https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm)  sec.gov
+
+[Sage Growth Partners via HFMA](https://www.hfma.org/fast-finance/health-system-capital-investment-strategy-2026/)  hfma.org
+
+[Owens & Minor](https://www.owens-minor.com/pressreleases/owens-minor-announces-definitive-agreement-to-divest-products-healthcare-services-segment-to-platinum-equity-for-375mm-in-cash-and-a-retained-equity-stake/)  owens-minor.com
+
+[McKesson](https://www.sec.gov/Archives/edgar/data/0000927653/000092765326000232/mck_exhibit991x6302026.htm)  sec.gov
+
+[Learning Resources v. Trump](https://www.kslaw.com/news-and-insights/u-s-supreme-court-invalidates-the-president-s-ieepa-tariffs-in-learning-resources-inc-v-trump)  kslaw.com
+
+[IQVIA Institute](https://www.iqvia.com/insights/the-iqvia-institute/reports/us-medicine-use-trends-2026)  iqvia.com
+
+[NCPA 2025 Digest](https://ncpa.org/newsroom/news-releases/2025/10/19/ncpa-releases-2025-digest-report)  ncpa.org
+
+[Guardian Pharmacy Services](https://www.sec.gov/Archives/edgar/data/0001802255/000119312526338032/d160709dex991.htm)  sec.gov
+
+[BrightSpring](https://www.sec.gov/Archives/edgar/data/0001865782/000119312526326654/btsg-ex99_1.htm)  sec.gov
+
+[Staffing Industry Analysts](https://www.staffingindustry.com/editorial/healthcare-staffing-report/healthcare-staffing-rebounds-as-demand-strengthens-in-the-second-and-third-quarters)  staffingindustry.com
+
+WHAT WE’RE READING
+
+[Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)  fiercehealthcare.com
+
+[IQVIA](https://www.iqvia.com/locations/emea/blogs/2026/07/biopharma-ma-mid-year-2026-update)  iqvia.com
+
+[MedTech Dive](https://www.medtechdive.com/news/top-10-medtech-deals-in-the-first-half-of-2026/824435/)  medtechdive.com
+
+[Drug Channels](https://www.drugchannels.net/2026/08/the-k-shaped-pharmacy-shakeout.html)  drugchannels.net
+
+HEALTHCARE SERVICES DEAL VOLUME
+
+[AMA](https://www.ama-assn.org/system/files/2021-01/cf-history.pdf)  ama-assn.org
+
+[PitchBook](https://pitchbook.brightspotcdn.com/7b/53/6ae3fbf84f12bfd344a7ae0a691a/q2-2026-healthcare-services-report-gusting-macroeconomic-headwinds-impede-progress.pdf)  pitchbook.brightspotcdn.com
+
+[Kaufman Hall](https://www.kaufmanhall.com/news/ma-activity-remains-strong-among-large-health-systems-amid-continued-industry-transformation)  kaufmanhall.com
+
+[PitchBook Q4 2025 Healthcare Services Report](https://pitchbook.brightspotcdn.com/2d/0a/acb3601c4e19925c22d3f3877637/q4-2025-healthcare-services-report.pdf)  pitchbook.brightspotcdn.com
+
+[PitchBook via Fierce Healthcare](https://www.fiercehealthcare.com/finance/projected-healthcare-services-deal-count-be-lowest-2017-pitchbook-finds)  fiercehealthcare.com
+
+SELECT MARKET PARTICIPANTS
+
+StockAnalysis company pages  stockanalysis.com (company statistics pages)
+
+SELECT RECENT HEALTHCARE M&A TRANSACTIONS
+
+[Eyewire News](https://eyewire.news/news/myeyedr-to-acquire-eyecare-partners-optometry-division-adding-more-than-300-offices)  eyewire.news
+
+[EyeCare Partners](https://www.businesswire.com/news/home/20260928896885/en/EyeCare-Partners-Announces-Sale-of-Optometry-Business)  businesswire.com
+
+[Addus HomeCare](https://www.sec.gov/Archives/edgar/data/0001468328/000143774926030348/ex_1015828.htm)  sec.gov
+
+[Bio-Techne](https://www.sec.gov/Archives/edgar/data/0000842023/000199937126013429/ex99-1.htm)  sec.gov
+
+[Danaher](https://www.sec.gov/Archives/edgar/data/0000313616/000031361626000163/dhr-20260721xex991.htm)  sec.gov
+
+[PE Professional](https://peprofessional.com/2026/07/statlab-sold-to-danahers-leica-biosystems/)  peprofessional.com
+
+[Integer](https://www.sec.gov/Archives/edgar/data/1114483/000095010326011709/dp251126_ex9901.htm)  sec.gov
+
+[Medical Design & Outsourcing](https://www.medicaldesignandoutsourcing.com/?p=280019)  medicaldesignandoutsourcing.com
+
+[Fierce Healthcare](https://www.fiercehealthcare.com/finance/staffing-firm-cross-country-healthcare-be-acquired-knox-lane-437m)  fiercehealthcare.com
+
+[Staffing Industry Analysts](https://www.staffingindustry.com/news/global-daily-news/private-equity-firm-knox-lane-completes-acquisition-of-cross-county)  staffingindustry.com
+
+BENCHMARK INTERNATIONAL’S HEALTHCARE TRANSACTIONS
+
+[Benchmark International](https://www.benchmarkintl.com/about/our-success/)  benchmarkintl.com
+
+[Precise Bioscience, LLC and New Horizon Medical Solutions](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-precise-bioscience-llc-and-new-horizon-medical-solutions/)  benchmarkintl.com
+
+[Formulation Technology, Incorporated and Aavin Private Equity](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-formulation-technology-incorporated-and-aavin-private-equity/)  benchmarkintl.com
+
+[Fast Response On-Site Testing, Inc. and Relentless Health, Inc.](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-fast-response-onsite-testing-inc-and-relentless-health-inc/)  benchmarkintl.com
+
+[Critical Environments Professionals and Scientific Safety Alliance](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-critical-environments-professionals-and-scientific-safety-alliance/)  benchmarkintl.com
+
+[Dental Holdings, LLC and Solmetex, LLC](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-facilitated-the-transaction-of-dental-holdings-llc-and-solmetex-llc/)  benchmarkintl.com
+
+[Fosterbridge, Inc. and Amvie](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-fosterbridge-inc-and-amvie/)  benchmarkintl.com
+
+[Medical Temps, Inc. and Health Advocates Network](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-medical-temps-inc-and-health-advocates-network/)  benchmarkintl.com
+
+[The Brooks Group and private investors](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-the-brooks-group-and-private-investors/)  benchmarkintl.com
+
+[Fitzgerald Enterprises and Pioneers Operations](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-fitzgerald-enterprises-and-pioneers-operations/)  benchmarkintl.com
+
+VALUATION MULTIPLES BY SECTOR
+
+[PitchBook via Becker’s ASC Review](https://www.beckersasc.com/asc-transactions-and-valuation-issues/why-asc-deals-are-outperforming-the-rest-of-healthcare-ma-in-2026-8-things-to-know/)  beckersasc.com
+
+[GF Data via ACG](https://www.acg.org/news-trends/news/gf-data-reports-show-steady-middle-market-deal-flow-amid-more-selective)  acg.org
+
+[IBBA and M&A Source](https://www.ibba.org/market-pulse-q2-2026-survey-results/)  ibba.org
+
+[StockAnalysis](https://stockanalysis.com/)  stockanalysis.com
+
+PUBLIC COMPANY STOCK PERFORMANCE: PAST 12 MONTHS
+
+[StockAnalysis](https://stockanalysis.com/)  stockanalysis.com
+
+PUBLIC COMPANY OPERATING AND VALUATION METRICS
+
+[StockAnalysis](https://stockanalysis.com/)  stockanalysis.com
+
+EARNINGS AND COMMENTARY
+
+[Ensign Group](https://www.sec.gov/Archives/edgar/data/0001125376/000112537626000036/q22026pressrelease.htm)  sec.gov
+
+[Medpace](https://www.sec.gov/Archives/edgar/data/0001668397/000166839726000023/medp-2026722exx991.htm)  sec.gov
+
+[Thermo Fisher Scientific](https://www.sec.gov/Archives/edgar/data/0000097745/000009774526000138/q22026earnings8kex99_1.htm)  sec.gov
+
+[Quest Diagnostics](https://newsroom.questdiagnostics.com/2026-07-23-Quest-Diagnostics-Reports-Second-Quarter-2026-Financial-Results-Raises-Revenue-and-EPS-Guidance-for-Full-Year-2026)  newsroom.questdiagnostics.com
+
+[Stryker](https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm)  sec.gov
+
+[HCA Healthcare](https://www.sec.gov/Archives/edgar/data/0000860730/000119312526315151/hca-ex99_1.htm)  sec.gov
+
+[IQVIA](https://www.sec.gov/Archives/edgar/data/0001478242/000162828026049923/iqv-q2x2026earningspressre.htm)  sec.gov
+
+[U.S. Physical Therapy](https://www.sec.gov/Archives/edgar/data/0000885978/000088597826000042/ex99-1.htm)  sec.gov
+
+[Addus HomeCare](https://www.sec.gov/Archives/edgar/data/0001468328/000143774926025448/ex_997368.htm)  sec.gov
+
+[McKesson](https://www.mckesson.com/about-us/newsroom/press-releases/2026/mckesson-reports-fiscal-2027-first-quarter-results-and-raises-full-year-adjusted-eps-guidance/)  mckesson.com
+
+[Steris](https://www.sec.gov/Archives/edgar/data/0001757898/000162828026053412/ste6302026ex991.htm)  sec.gov
+
+[Tenet Healthcare](https://www.sec.gov/Archives/edgar/data/0000070318/000007031826000032/thc-20260630ex991earningsr.htm)  sec.gov
+
+[Henry Schein](https://investor.henryschein.com/news-releases/news-release-details/2026/Henry-Schein-Reports-Strong-Second-Quarter-2026-Financial-Results-and-Raises-FY2026-Guidance)  investor.henryschein.com
+
+[Labcorp](https://www.sec.gov/Archives/edgar/data/0000920148/000092014826000162/form8-kexhibit9912q26.htm)  sec.gov
+
+[Cardinal Health](https://www.sec.gov/Archives/edgar/data/0000721371/000072137126000037/a26q4_x063026xex991xnewsre.htm)  sec.gov
+
+[AMN Healthcare](https://www.sec.gov/Archives/edgar/data/0001142750/000114275026000008/amn-ex991x20260630xearning.htm)  sec.gov
+
+[Guardian Pharmacy Services](https://www.sec.gov/Archives/edgar/data/0001802255/000119312526338032/d160709dex991.htm)  sec.gov
+
+[Option Care Health](https://www.sec.gov/Archives/edgar/data/1014739/000101473926000021/exhibit991-q22026.htm)  sec.gov
+
+[Addus HomeCare call transcript](https://stockanalysis.com/stocks/adus/transcripts/660727-q2-2026/)  stockanalysis.com
+
+[Quest Diagnostics prepared comments](https://s2.q4cdn.com/390454341/files/doc_earnings/2026/q2/transcript/prepared-comments-for-website-Q2-2026-final.pdf)  s2.q4cdn.com
+
+[Thermo Fisher Scientific call transcript](https://stockanalysis.com/stocks/tmo/transcripts/653574-q2-2026/)  stockanalysis.com
+
+[STERIS call transcript](https://stockanalysis.com/stocks/ste/transcripts/666655-q1-2027/)  stockanalysis.com
+
+[Henry Schein call transcript](https://s206.q4cdn.com/399858780/files/doc_financials/2026/q2/HSIC-USQ_Transcript_2026-08-04.pdf)  s206.q4cdn.com
+
+[Cardinal Health call transcript](https://s201.q4cdn.com/566741227/files/doc_financials/2026/q4/Q4-FY26-CAH-Earnings-Transcript.pdf)  s201.q4cdn.com
+
+[AMN Healthcare call transcript](https://stockanalysis.com/stocks/amn/transcripts/662833-q2-2026/)  stockanalysis.com
+
+BENCHMARK INTERNATIONAL
+
+[Benchmark International](https://www.benchmarkintl.com/about/our-success/)  benchmarkintl.com
+
+APPENDIX: PUBLIC MARKET OPERATING AND VALUATION METRICS
+
+[StockAnalysis](https://stockanalysis.com/)  stockanalysis.com
+
+APPENDIX: PUBLIC MARKET OPERATING AND VALUATION METRICS
+
+[StockAnalysis](https://stockanalysis.com/)  stockanalysis.com
+
+Listed-company data pages at [StockAnalysis](https://www.jucm.com/?p=86881) are linked from the company names on the participants and appendix sections. Adjusted EBITDA figures are from company earnings releases and SEC filings for the eight quarters to June 30, 2026.
