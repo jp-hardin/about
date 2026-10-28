@@ -51,7 +51,7 @@ REPORT_DATE = "2026-10"       # publication month of the current industry report
 # gates the download but records nothing. REPORT_TERMS_VERSION is written into each row's Notes, so change it when
 # the wording of report-terms.html or of the form's consent lines changes.
 REPORT_FORM_URL = "https://script.google.com/macros/s/AKfycbyWqNQfWuW0IGHqsuDyAKeQBP2RSgcuWHhgJAxsFVR2Wg-y16KaXDYSQyenhe7isEJV/exec"
-REPORT_TERMS_VERSION = "2026-10-28"
+REPORT_TERMS_VERSION = "2026-10-28b"
 
 # IndexNow (Bing, Copilot, ChatGPT search, Yandex and others): the key file sits at the site root, and the Publish MMT
 # site workflow sends the sitemap URLs to api.indexnow.org after each live publish.
@@ -1750,8 +1750,8 @@ REPORT_TERMS = [
     ("Limitation of liability", [
         "Reports are provided “as is” without any warranty. To the fullest extent permitted by law, Benchmark International and its affiliates, officers, and employees are not liable for any loss or damage arising from the use of, or reliance on, a Report or this website."]),
     ("Privacy notice", [
-        "When you download a Report we collect your first name, last name, and email address, which Report you requested, the date, your agreement to these terms, and your choices about the two optional emails. We use this information to provide the Report, to keep a record of your agreement and your choices, and, only if you opted in, to send you new industry reports or the Middle Market newsletter. We may also use it to respond to you if you contact us.",
-        "We do not sell your information or share it for targeted advertising. It is stored with service providers that process it on our behalf, such as our cloud document and email providers, and it may be disclosed if the law requires. We keep it for as long as you remain subscribed or we have a business need for it, and we keep a record of any unsubscribe request so that we can continue to honor it.",
+        "When you download a Report we collect your first name, last name, and email address, which Report you requested, the date, your agreement to these terms, and your choices about the two optional emails. We use this information to provide the Report, to keep a record of your agreement and your choices, and, only if you opted in, to send you new industry reports or the Middle Market newsletter. So that our team can follow up in an informed way, we may also look up publicly available business information about you and your company, such as your company's website, news coverage, and professional profiles, and share it with the Middle Market team; we do not collect sensitive or private personal information this way. We may also use your information to respond to you if you contact us.",
+        "We do not sell your information or share it for targeted advertising. It is stored with service providers that process it on our behalf, such as our cloud document, email, and research service providers, and it may be disclosed if the law requires. We keep it for as long as you remain subscribed or we have a business need for it, and we keep a record of any unsubscribe request so that we can continue to honor it.",
         "Depending on where you live, you may have the right to ask for access to, correction of, or deletion of your information, to withdraw your consent at any time, and to object to its use, and visitors in the European Economic Area and the United Kingdom may complain to their data protection authority. To make a request, email " + EMAIL + ". We will not treat you differently for exercising these rights. Your information may be stored and processed in the United States. These Reports are intended for business owners and professionals and are not directed to anyone under 18.",
         "For more on how Benchmark International handles personal information, see the Benchmark International Privacy Policy."]),
     ("Emails and unsubscribing", [
