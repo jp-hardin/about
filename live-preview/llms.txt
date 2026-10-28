@@ -11,6 +11,7 @@ Information as of October 2026. Contact: 813-771-6675, mmt@benchmarkintl.com. Pa
 - [Transactions](https://mmt.benchmarkintl.com/transactions.html): selected completed transactions
 - [Important Disclosures](https://mmt.benchmarkintl.com/disclosures.html)
 - [Full text for AI assistants](https://mmt.benchmarkintl.com/llms-full.txt): every page's key facts, services, team, industries, and FAQs in one file
+- Every page has a plain Markdown version at the same address ending in .md instead of .html (for example https://mmt.benchmarkintl.com/about.md)
 
 ## Industries
 - [Industrials](https://mmt.benchmarkintl.com/industries/industrial.html): Manufacturing, industrial distribution, building products, energy and environmental services, and transportation.
