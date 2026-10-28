@@ -1,0 +1,52 @@
+name: Stage live preview
+
+# "merge live preview": builds the site from main the way it will go live (industry reports hidden unless
+# reports is set to shown), marks every page with a Live preview banner and noindex, and commits it to
+# live-preview/ on main, which GitHub Pages serves at /about/live-preview/. "merge live" (Publish MMT site)
+# then sends exactly this staged copy, without the banner, to mmt-site.
+on:
+  workflow_dispatch:
+    inputs:
+      reports:
+        description: 'Industry reports on the live site'
+        type: choice
+        options: [hidden, shown]
+        default: hidden
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency: publish-mmt-site
+
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build the site as it will go live
+        env:
+          MMT_REPORTS: ${{ inputs.reports == 'shown' && 'on' || 'off' }}
+        run: |
+          pip install -q pillow
+          python3 mid-market-practice/_build/build.py > /dev/null
+      - name: Copy it to live-preview and mark it
+        run: |
+          mkdir -p live-preview
+          rsync -a --delete --exclude _build/ --exclude README.md mid-market-practice/ live-preview/
+          python3 mid-market-practice/_build/stage.py mark live-preview "$GITHUB_SHA" "${{ inputs.reports }}"
+          printf '{"commit": "%s", "staged": "%s", "reports": "%s"}\n' "$GITHUB_SHA" "$(date -u +%Y-%m-%dT%H:%MZ)" "${{ inputs.reports }}" > live-preview/staged.json
+      - name: Commit the live preview
+        run: |
+          git add -A live-preview
+          if git diff --cached --quiet; then echo "Live preview already matches main"; exit 0; fi
+          git -c user.name="MMT site" -c user.email="mmt-site@users.noreply.github.com" commit -qm "Stage live preview from ${GITHUB_SHA::7} (reports ${{ inputs.reports }})"
+          git push -q origin HEAD:main
+          curl -s -o /dev/null -X POST -H "Authorization: Bearer ${{ github.token }}" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true
+          echo "Staged at https://jp-hardin.github.io/about/live-preview/"

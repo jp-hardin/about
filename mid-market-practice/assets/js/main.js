@@ -192,4 +192,13 @@
         .then(function () { prefs.querySelector('.prefs-done').hidden = false; });
     });
   }
+  // The github.io sandbox says so, and links to the live preview (what "merge live" would publish).
+  if (/\/about\/mid-market-practice\//.test(location.pathname) && /github\.io$/.test(location.hostname)) {
+    var note = document.createElement('div');
+    note.setAttribute('role', 'note');
+    note.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:9999;display:flex;gap:16px;justify-content:center;align-items:center;flex-wrap:wrap;padding:9px 16px;background:#2b2725;color:#fff;font:600 12px/1.4 Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase';
+    note.innerHTML = '<span>Sandbox &middot; working copy, not live</span><a style="color:#d4b48c" href="' +
+      location.pathname.replace(/\/about\/mid-market-practice\/.*/, '/about/live-preview/index.html') + '">Live preview &rarr;</a>';
+    document.body.appendChild(note);
+  }
 })();
