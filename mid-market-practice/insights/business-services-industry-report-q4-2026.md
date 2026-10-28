@@ -4,8 +4,7 @@ Benchmark International's Middle Market team. October 2026 | Jared Hardin, Manag
 
 Mergers and acquisitions across commercial, professional, and human capital services
 
-Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.html  
-PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.pdf
+Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.html
 
 Sectors: Commercial & Facility Services; Engineering, Architecture & Consulting; Financial & Insurance Services; Staffing & Human Capital
 

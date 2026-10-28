@@ -4,8 +4,7 @@ Benchmark International's Middle Market team. October 2026 | Jared Hardin, Manag
 
 Mergers and acquisitions across technology services, hardware, and government technology
 
-Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.html  
-PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.pdf
+Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.html
 
 ## 1. Industry at a Glance
 

@@ -4,8 +4,7 @@ Benchmark International's Middle Market team. October 2026 | Jared Hardin, Manag
 
 Strategic and financial buyers stayed active across consumer through the third quarter, and they are paying for brands and operators that have held price and volume while the cost of financing a purchase rises.
 
-Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.html  
-PDF: https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.pdf
+Web version: https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.html
 
 Sectors: Food & Beverage; Consumer Brands & Products; Foodservice & Distribution; Consumer Services & Retail
 

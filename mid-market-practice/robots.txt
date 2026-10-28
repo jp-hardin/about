@@ -2,65 +2,86 @@
 User-agent: *
 Allow: /
 Disallow: /about/mid-market-practice/_build/
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: GPTBot
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: Claude-User
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: Googlebot
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: Applebot
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: Bingbot
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: Meta-ExternalAgent
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: Meta-ExternalFetcher
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: Amazonbot
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: DuckAssistBot
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: MistralAI-User
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: CCBot
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /about/mid-market-practice/insights/*.pdf
 
 Sitemap: https://jp-hardin.github.io/about/mid-market-practice/sitemap.xml
