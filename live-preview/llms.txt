@@ -5,19 +5,19 @@
 Information as of October 2026. Contact: 813-771-6675, mmt@benchmarkintl.com. Parent firm: Benchmark International (https://www.benchmarkintl.com/).
 
 ## Key pages
-- [Home](https://jp-hardin.github.io/about/mid-market-practice/): overview, team, client stories, and contact form
-- [About](https://jp-hardin.github.io/about/mid-market-practice/about.html): key facts about the Middle Market team
-- [Industries](https://jp-hardin.github.io/about/mid-market-practice/industries/index.html): the five industries
-- [Transactions](https://jp-hardin.github.io/about/mid-market-practice/transactions.html): selected completed transactions
-- [Important Disclosures](https://jp-hardin.github.io/about/mid-market-practice/disclosures.html)
-- [Full text for AI assistants](https://jp-hardin.github.io/about/mid-market-practice/llms-full.txt): every page's key facts, services, team, industries, and FAQs in one file
+- [Home](https://mmt.benchmarkintl.com/): overview, team, client stories, and contact form
+- [About](https://mmt.benchmarkintl.com/about.html): key facts about the Middle Market team
+- [Industries](https://mmt.benchmarkintl.com/industries/index.html): the five industries
+- [Transactions](https://mmt.benchmarkintl.com/transactions.html): selected completed transactions
+- [Important Disclosures](https://mmt.benchmarkintl.com/disclosures.html)
+- [Full text for AI assistants](https://mmt.benchmarkintl.com/llms-full.txt): every page's key facts, services, team, industries, and FAQs in one file
 
 ## Industries
-- [Industrials](https://jp-hardin.github.io/about/mid-market-practice/industries/industrial.html): Manufacturing, industrial distribution, building products, energy and environmental services, and transportation.
-- [Business Services](https://jp-hardin.github.io/about/mid-market-practice/industries/business-services.html): Commercial and facility services, marketing and tech-enabled services, engineering and consulting, financial and insurance services, and staffing and human capital.
-- [Consumer](https://jp-hardin.github.io/about/mid-market-practice/industries/consumer.html): Food and beverage (including restaurants), consumer brands and products, foodservice and distribution, and consumer services.
-- [Healthcare](https://jp-hardin.github.io/about/mid-market-practice/industries/healthcare.html): Provider services, life sciences and diagnostics, medical products and distribution, and pharmacy and healthcare services.
-- [Technology](https://jp-hardin.github.io/about/mid-market-practice/industries/technology.html): Vertical software, enterprise and infrastructure software, IT and managed services, and communications and hardware.
+- [Industrials](https://mmt.benchmarkintl.com/industries/industrial.html): Manufacturing, industrial distribution, building products, energy and environmental services, and transportation.
+- [Business Services](https://mmt.benchmarkintl.com/industries/business-services.html): Commercial and facility services, marketing and tech-enabled services, engineering and consulting, financial and insurance services, and staffing and human capital.
+- [Consumer](https://mmt.benchmarkintl.com/industries/consumer.html): Food and beverage (including restaurants), consumer brands and products, foodservice and distribution, and consumer services.
+- [Healthcare](https://mmt.benchmarkintl.com/industries/healthcare.html): Provider services, life sciences and diagnostics, medical products and distribution, and pharmacy and healthcare services.
+- [Technology](https://mmt.benchmarkintl.com/industries/technology.html): Vertical software, enterprise and infrastructure software, IT and managed services, and communications and hardware.
 
 ## Common questions
 - **What does Benchmark International's Middle Market team do?** Benchmark International's Middle Market team represents premier privately held companies across the United States in sell-side M&A, offering white-glove, high-touch service to the firm's largest clients.

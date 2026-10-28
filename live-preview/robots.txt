@@ -1,7 +1,7 @@
 # Search engines and AI assistants are welcome to read and cite this site.
 User-agent: *
 Allow: /
-Disallow: /about/mid-market-practice/_build/
+Disallow: /_build/
 
 User-agent: GPTBot
 Allow: /
@@ -63,4 +63,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://jp-hardin.github.io/about/mid-market-practice/sitemap.xml
+Sitemap: https://mmt.benchmarkintl.com/sitemap.xml

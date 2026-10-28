@@ -2,7 +2,7 @@
 
 > Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions.
 
-Information as of October 2026 (updated 2026-10-21). Source: https://jp-hardin.github.io/about/mid-market-practice/
+Information as of October 2026 (updated 2026-10-21). Source: https://mmt.benchmarkintl.com/
 
 ## Key facts
 
@@ -110,7 +110,7 @@ Luke supports the deal team on every transaction in process. He contacts prospec
 
 ### Industrials
 
-Page: https://jp-hardin.github.io/about/mid-market-practice/industries/industrial.html
+Page: https://mmt.benchmarkintl.com/industries/industrial.html
 
 Advising founder-led manufacturers, distributors, and industrial services businesses on strategic sales, mergers, and qualifying change-of-control transactions designed to maximize enterprise value and achieve shareholder objectives.
 
@@ -153,7 +153,7 @@ Our Middle Market team focuses on qualifying mergers, business sales, and contro
 
 ### Business Services
 
-Page: https://jp-hardin.github.io/about/mid-market-practice/industries/business-services.html
+Page: https://mmt.benchmarkintl.com/industries/business-services.html
 
 Advising owners of commercial, professional, and tech-enabled service businesses with recurring revenue and loyal clients.
 
@@ -190,7 +190,7 @@ As of October 2026, Benchmark International's published transaction history iden
 
 ### Consumer
 
-Page: https://jp-hardin.github.io/about/mid-market-practice/industries/consumer.html
+Page: https://mmt.benchmarkintl.com/industries/consumer.html
 
 Advising founders of food, restaurant, consumer brand, foodservice, and consumer services businesses.
 
@@ -229,7 +229,7 @@ Certain qualifying controlling ownership transactions may allow sellers to retai
 
 ### Healthcare
 
-Page: https://jp-hardin.github.io/about/mid-market-practice/industries/healthcare.html
+Page: https://mmt.benchmarkintl.com/industries/healthcare.html
 
 Advising healthcare providers, life sciences and medical products companies, and pharmacy and healthcare services businesses.
 
@@ -271,7 +271,7 @@ Our Middle Market team focuses on qualifying mergers, business sales, and contro
 
 ### Technology
 
-Page: https://jp-hardin.github.io/about/mid-market-practice/industries/technology.html
+Page: https://mmt.benchmarkintl.com/industries/technology.html
 
 Advising founders of software, IT services, and technology businesses with recurring revenue and mission-critical products.
 
@@ -317,7 +317,7 @@ Our Middle Market team focuses on qualifying mergers, business sales, and contro
 
 ## Selected completed transactions
 
-Publicly announced transactions advised by Benchmark International. Full list: https://jp-hardin.github.io/about/mid-market-practice/transactions.html
+Publicly announced transactions advised by Benchmark International. Full list: https://mmt.benchmarkintl.com/transactions.html
 
 - Ranews Companies acquired by ALJ Regional Holdings, Inc. (Industrials, Manufacturing & Industrial Technology, 2024): Supplier of precision fabrication, industrial coating, assembly, and logistics services to multinational vehicle and equipment manufacturers. [Announcement](https://www.benchmarkintl.com/insights/benchmark-international-successfully-facilitated-the-transaction-between-ranews-companies-and-alj-regional-holdings-inc-united-global-development/)
 - MaxVac Inc. acquired by DXP Enterprises, Inc. (Industrials, Manufacturing & Industrial Technology, 2024): Vacuum pump sales, repair, and maintenance provider serving electronics and semiconductor customers in Northern California. [Announcement](https://www.benchmarkintl.com/insights/completed-transactions/benchmark-international-successfully-facilitated-the-transaction-between-maxvac-inc-and-dxp-enterprises-inc/)
@@ -517,4 +517,4 @@ Our process begins with a confidential discussion to understand the company's fi
 
 ## Important disclosures
 
-Benchmark International does not provide valuations, appraisals, or fairness opinions. Full disclosures: https://jp-hardin.github.io/about/mid-market-practice/disclosures.html
+Benchmark International does not provide valuations, appraisals, or fairness opinions. Full disclosures: https://mmt.benchmarkintl.com/disclosures.html
