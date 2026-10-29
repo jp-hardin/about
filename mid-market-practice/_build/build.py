@@ -644,7 +644,7 @@ def footer(root):
     </div>
     <div class="footer-base">
       <span>&copy; 2026 Benchmark International. All rights reserved. Information as of <time datetime="{SITE_UPDATED}">{AS_OF}</time>.</span>
-      <span><a href="{root}disclosures.html">Important Disclosures</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/terms/">Terms</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/privacy-policy/">Privacy Policy</a>{f' &nbsp;/&nbsp; <a href="{root}report-terms.html">Report Terms</a> &nbsp;/&nbsp; <a href="{root}email-preferences.html">Email Preferences</a>' if REPORTS_LIVE else ""}</span>
+      <span><a href="{root}disclosures.html">Important Disclosures</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/terms-and-conditions/">Terms</a> &nbsp;/&nbsp; <a href="https://www.benchmarkintl.com/privacy-policy/">Privacy Policy</a>{f' &nbsp;/&nbsp; <a href="{root}report-terms.html">Report Terms</a> &nbsp;/&nbsp; <a href="{root}email-preferences.html">Email Preferences</a>' if REPORTS_LIVE else ""}</span>
     </div>
   </div>
 </footer>
