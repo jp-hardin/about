@@ -35,6 +35,13 @@ jobs:
           MMT_SITE_URL: https://mmt.benchmarkintl.com/
         run: |
           pip install -q pillow
+          if [ "${{ inputs.reports }}" = "shown" ]; then
+            # the report pages are built from the decks by brief.py, not by build.py: rebuild them for the live address
+            pip install -q python-pptx pypdf lxml
+            for d in mid-market-practice/_build/reports/*-q*-*/; do
+              python3 mid-market-practice/_build/reports/brief.py "$(basename "$d")" --page-only
+            done
+          fi
           python3 mid-market-practice/_build/build.py > /dev/null
       - name: Copy it to live-preview and mark it
         run: |
