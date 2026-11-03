@@ -45,13 +45,14 @@ PARENT_ORG = {"@type": "Organization", "@id": "https://www.benchmarkintl.com/#or
                           "addressRegion": "FL", "postalCode": "33607", "addressCountry": "US"}}
 REPORT_DATE = "2026-10"       # publication month of the current industry reports (ISO 8601)
 
-# Report downloads: every "Download" button opens a short form (name, email, two opt-ins, agreement to the report
-# terms). Each submission is added as a row to the "MMT Report Downloads" Google Sheet by the Apps Script web app in
-# _build/forms/report-signups.gs. REPORT_FORM_URL is that web app's /exec address; while it is empty the form still
-# gates the download but records nothing. REPORT_TERMS_VERSION is written into each row's Notes, so change it when
-# the wording of report-terms.html or of the form's consent lines changes.
+# Report downloads: every "Download" button downloads the PDF at once, and then an optional form offers future
+# reports (name, email, a box for each industry, the newsletter, agreement to the report terms; Subscribe, No Thanks,
+# Already Subscribed). Downloads and subscriptions are added as rows to the "MMT Report Downloads" Google Sheet by the
+# Apps Script web app in _build/forms/report-signups.gs. REPORT_FORM_URL is that web app's /exec address; while it is
+# empty nothing is recorded. REPORT_TERMS_VERSION is written into each subscription's Notes, so change it when the
+# wording of report-terms.html or of the form's consent lines changes.
 REPORT_FORM_URL = "https://script.google.com/macros/s/AKfycbyWqNQfWuW0IGHqsuDyAKeQBP2RSgcuWHhgJAxsFVR2Wg-y16KaXDYSQyenhe7isEJV/exec"
-REPORT_TERMS_VERSION = "2026-10-28"
+REPORT_TERMS_VERSION = "2026-11-03"
 
 # IndexNow (Bing, Copilot, ChatGPT search, Yandex and others): the key file sits at the site root, and the Publish MMT
 # site workflow sends the sitemap URLs to api.indexnow.org after each live publish.
@@ -575,39 +576,48 @@ SOCIAL = {
 
 
 def report_gate(root):
-    """The short form in front of every report PDF. The download links carry data-gate (the PDF) and data-report
-    (its title); assets/js/main.js opens this dialog, sends the form to REPORT_FORM_URL and then starts the download."""
+    """The optional form shown after a report download starts: future reports by industry and the newsletter. The
+    download links carry data-report (the report title) and data-industry; assets/js/main.js logs the download,
+    opens this dialog and sends a subscription to REPORT_FORM_URL."""
+    boxes = "".join(f'<label class="gate-check gate-ind"><input type="checkbox" name="industries" value="{e(s["name"])}"><span>{e(s["name"])}</span></label>'
+                    for s in SECTORS)
     return f"""<dialog class="gate" id="report-gate" aria-labelledby="gate-title" data-endpoint="{e(REPORT_FORM_URL)}" data-terms="{REPORT_TERMS_VERSION}">
   <button class="gate-close" type="button" aria-label="Close">&times;</button>
   <form class="gate-form" novalidate>
-    <p class="eyebrow">Free download</p>
-    <h2 id="gate-title">Get the full report</h2>
-    <p class="gate-report"></p>
+    <p class="eyebrow">Your download has started</p>
+    <h2 id="gate-title">Get future industry reports</h2>
+    <p class="gate-report">Optional. Choose the industries you follow and we will email each new report when it is published. <a class="gate-file" href="#" download>Download again</a></p>
     <div class="gate-row">
       <label>First name<input name="first_name" autocomplete="given-name" required maxlength="80"></label>
       <label>Last name<input name="last_name" autocomplete="family-name" required maxlength="80"></label>
     </div>
-    <label>Work email<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
+    <label>Email<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
     <label class="gate-hp" aria-hidden="true">Company website<input name="company_website" tabindex="-1" autocomplete="off"></label>
-    <label class="gate-check"><input type="checkbox" name="reports" value="yes"><span>Email me new Middle Market industry reports when they are published.</span></label>
-    <label class="gate-check"><input type="checkbox" name="newsletter" value="yes"><span>Send me the Benchmark International Middle Market newsletter.</span></label>
+    <fieldset class="gate-inds"><legend>Send me reports for</legend>{boxes}</fieldset>
+    <label class="gate-check"><input type="checkbox" name="newsletter" value="yes"><span>Also send me the Benchmark International Middle Market newsletter.</span></label>
     <label class="gate-check gate-terms"><input type="checkbox" name="terms" value="yes" required><span>I agree to the <a href="{root}report-terms.html" target="_blank">Report Terms and Conditions</a>, including the Important Disclosures and the Privacy Notice.</span></label>
     <p class="gate-error" role="alert" hidden></p>
-    <button class="btn gate-submit" type="submit">Download the report</button>
-    <p class="gate-fine">The two email boxes are optional, and you can unsubscribe at any time from any email or on our <a href="{root}email-preferences.html" target="_blank">email preferences</a> page. Your details stay with the Middle Market team.</p>
+    <button class="btn gate-submit" type="submit">Subscribe</button>
+    <div class="gate-alt">
+      <button class="gate-skip" type="button" data-skip="no">No Thanks</button>
+      <button class="gate-skip" type="button" data-skip="subscribed">Already Subscribed</button>
+    </div>
+    <p class="gate-fine">This form is optional and is not needed for the download. You can unsubscribe at any time from any email or on our <a href="{root}email-preferences.html" target="_blank">email preferences</a> page. Your details stay with the Middle Market team.</p>
   </form>
   <div class="gate-done" hidden>
     <p class="eyebrow">Thank you</p>
-    <h2>Your download is starting</h2>
-    <p>If it does not start, use the button below.</p>
-    <a class="btn gate-file" href="#" download>Download the PDF</a>
+    <h2>You are subscribed</h2>
+    <p>We will email each new report for the industries you chose. You can change this at any time on our <a href="{root}email-preferences.html">email preferences</a> page.</p>
+    <button class="btn gate-ok" type="button">Close</button>
   </div>
 </dialog>"""
 
 
 def gated(root, pdf, title, cls, label):
-    """A download link that goes through the report form. Without JavaScript it opens the report terms page."""
-    return (f'<a class="{cls}" href="{root}report-terms.html#download" data-gate="{root}{pdf}" data-report="{e(title)}">{label}</a>')
+    """A report download link: the PDF downloads at once, then main.js offers the optional subscription form."""
+    industry = next((s["name"] for s in SECTORS if title.startswith(s["name"])), "")
+    return (f'<a class="{cls}" href="{root}{pdf}" download data-report="{e(title)}" data-industry="{e(industry)}">{label}</a>')
+
 
 def footer(root):
     ext = ' target="_blank" rel="noopener"'
@@ -1730,13 +1740,14 @@ def page_insights():
 
 
 
-# Report Terms and Conditions: agreed to on the download form. A working draft for Compliance and counsel to confirm
-# before the site goes live; change REPORT_TERMS_VERSION and TERMS_UPDATED whenever the wording changes.
-TERMS_UPDATED = "October 28, 2026"
+# Report Terms and Conditions: agreed to by downloading a report, and confirmed on the subscription form. A working
+# draft for Compliance and counsel to confirm before the site goes live; change REPORT_TERMS_VERSION and TERMS_UPDATED
+# whenever the wording changes.
+TERMS_UPDATED = "November 3, 2026"
 POSTAL_ADDRESS = "Benchmark International, 4030 W Boy Scout Blvd, Suite 500, Tampa, FL 33607, United States"
 REPORT_TERMS = [
     ("About these terms", [
-        "These terms apply when you request or download a Middle Market industry report (a “Report”) from this website. By checking the box on the download form and downloading a Report, you agree to them. If you do not agree, please do not download the Report. The online version of each Report remains available on this website.",
+        "These terms apply when you download a Middle Market industry report (a “Report”) from this website or subscribe to receive Reports by email. By downloading a Report you agree to them, and by subscribing you confirm that agreement by checking the box on the subscription form. If you do not agree, please do not download the Report. The online summary of each Report remains available on this website.",
         f"The Reports are published by the Middle Market team of Benchmark International, {POSTAL_ADDRESS.split(', ', 1)[1]}. You can reach us at {EMAIL}."]),
     ("How you may use a Report", [
         "You may read, download, and print a Report for your own information and for internal use within your business. You may quote brief passages with attribution to Benchmark International and a link to this website.",
@@ -1750,12 +1761,12 @@ REPORT_TERMS = [
     ("Limitation of liability", [
         "Reports are provided “as is” without any warranty. To the fullest extent permitted by law, Benchmark International and its affiliates, officers, and employees are not liable for any loss or damage arising from the use of, or reliance on, a Report or this website."]),
     ("Privacy notice", [
-        "When you download a Report we collect your first name, last name, and email address, which Report you requested, the date, your agreement to these terms, and your choices about the two optional emails. We use this information to provide the Report, to keep a record of your agreement and your choices, and, only if you opted in, to send you new industry reports or the Middle Market newsletter. We may also use it to respond to you if you contact us.",
+        "When you download a Report we record which Report was downloaded, the page, and the date. If you subscribe, we also collect your first name, last name, and email address, the industries you chose, your choice about the newsletter, the date, and your agreement to these terms. We use this information to send you new Reports for the industries you chose and, only if you opted in, the Middle Market newsletter, and to keep a record of your agreement and your choices. We may also use it to respond to you if you contact us.",
         "We do not sell your information or share it for targeted advertising. It is stored with service providers that process it on our behalf, such as our cloud document and email providers, and it may be disclosed if the law requires. We keep it for as long as you remain subscribed or we have a business need for it, and we keep a record of any unsubscribe request so that we can continue to honor it.",
         "Depending on where you live, you may have the right to ask for access to, correction of, or deletion of your information, to withdraw your consent at any time, and to object to its use, and visitors in the European Economic Area and the United Kingdom may complain to their data protection authority. To make a request, email " + EMAIL + ". We will not treat you differently for exercising these rights. Your information may be stored and processed in the United States. These Reports are intended for business owners and professionals and are not directed to anyone under 18.",
         "For more on how Benchmark International handles personal information, see the Benchmark International Privacy Policy."]),
     ("Emails and unsubscribing", [
-        "Checking a box on the download form is optional and is never a condition of receiving a Report. We send industry reports or the Middle Market newsletter only to people who opt in. Every such email identifies Benchmark International, includes our postal address, and has a working unsubscribe link. You can also unsubscribe on our email preferences page or by emailing " + EMAIL + ". We act on unsubscribe requests promptly, and in any case within 10 business days.",
+        "Subscribing is optional and is never a condition of downloading a Report. We send industry reports, for the industries you chose, and the Middle Market newsletter only to people who opt in. Every such email identifies Benchmark International, includes our postal address, and has a working unsubscribe link. You can also unsubscribe on our email preferences page or by emailing " + EMAIL + ". We act on unsubscribe requests promptly, and in any case within 10 business days.",
         "Postal address: " + POSTAL_ADDRESS + "."]),
     ("Changes and governing law", [
         "We may update these terms from time to time; the date below shows the latest version, and the version you agreed to is recorded with your download. These terms are governed by the laws of the State of Florida, United States, without regard to conflict-of-laws rules, except where the law of your country of residence gives you rights that cannot be waived."]),
@@ -1818,7 +1829,8 @@ def page_email_preferences():
     <form class="prefs-form legal" data-endpoint="{e(REPORT_FORM_URL)}" novalidate>
       <label>Email address<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
       <label class="gate-hp" aria-hidden="true">Company website<input name="company_website" tabindex="-1" autocomplete="off"></label>
-      <label class="gate-check"><input type="checkbox" name="reports" value="yes" checked><span>Stop sending me Middle Market industry reports.</span></label>
+      <label class="gate-check"><input type="checkbox" name="reports" value="yes" checked><span>Stop sending me all Middle Market industry reports.</span></label>
+      <fieldset class="gate-inds prefs-inds"><legend>Or stop only these industries</legend>{"".join(f'<label class="gate-check gate-ind"><input type="checkbox" name="industries" value="{e(s["name"])}"><span>{e(s["name"])}</span></label>' for s in SECTORS)}</fieldset>
       <label class="gate-check"><input type="checkbox" name="newsletter" value="yes" checked><span>Stop sending me the Middle Market newsletter.</span></label>
       <p class="gate-error" role="alert" hidden></p>
       <button class="btn" type="submit">Update my preferences</button>

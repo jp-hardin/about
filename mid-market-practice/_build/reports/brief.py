@@ -9,9 +9,8 @@
 #
 # What it writes:
 #   insights/<industry>-industry-report-q<N>-<year>.pdf    the deck, converted by LibreOffice
-#   insights/<industry>-industry-report-q<N>-<year>.html   the site page: one report section per deck page, with the
-#                                                      deck's words, links, tables and logos in the site's report
-#                                                      styles and its charts redrawn as SVG from the chart data
+#   insights/<industry>-industry-report-q<N>-<year>.html   the site page: a teaser section per deck page (teaser.py),
+#                                                      with its charts summarized in words and a download button
 #   insights/<industry>-industry-report-q<N>-<year>.md     the same content as Markdown, for AI tools (linked from the
 #                                                      page and from llms.txt)
 #   assets/img/reports/<industry>-industry-report-q<N>-<year>/   logos and pictures used on the page
@@ -32,6 +31,7 @@ import build as site  # noqa: E402
 from webdeck import WebDeck, plain  # noqa: E402
 from flow import flow  # noqa: E402
 from readable import readable  # noqa: E402
+from teaser import teaser  # noqa: E402
 
 FOLDER = os.path.join(HERE, sys.argv[1].strip('/'))
 SLUG = os.path.basename(FOLDER)                                   # industrial-q4-2026
@@ -464,9 +464,8 @@ def to_markdown(pages, lead, byline, segs):
                 out += [f'### {web_title(pg)}', '']
             if pg['subtitle']:
                 out += [inline_md(pg['subtitle']), '']
-            out += [body_md(pg['body']), '']
-            if pg['foot']:
-                out += [body_md(pg['foot']), '']
+            out += [body_md(pg.get('teaser', pg['body'])), '']
+    out += [f'The full report, with every chart, table and source, is a free download: {url}', '']
     return '\n'.join(out).strip() + '\n'
 
 
@@ -615,7 +614,6 @@ def build_page(prs):
         sub_toc = ''.join(f'<li><a href="#p{pg["num"]:02d}">{esc(web_title(pg))}</a></li>' for pg in subs) if len(subs) > 1 and key != 'notes' else ''
         inner = []
         for pg in pgs:
-            notes = f'<details class="wnotes"><summary>Notes</summary><div>{pg["foot"]}</div></details>' if pg['foot'] else ''
             if pg['part']:
                 # the deck's contents slide: the sidebar lists the contents, so only its summary paragraph stays
                 body = key_list(pg['web'])
@@ -626,21 +624,28 @@ def build_page(prs):
                 continue
             t = esc(web_title(pg))
             sub = f'<p class="wsub">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
-            body = readable(polish(fold_tables(pg['web'])))
             head = f'<h3 class="wh3">{t}</h3>\n' if len(subs) > 1 and t.lower() != esc(ctitle).lower() else ''
-            block = f'<section class="wpart" id="p{pg["num"]:02d}">\n{head}{sub}\n{body}\n{notes}\n</section>'
             if key == 'notes':
-                block = (f'<details class="wfold" id="p{pg["num"]:02d}"><summary>{t}</summary>\n{sub}\n{body}\n{pg["foot"]}\n</details>')
-            inner.append(block)
+                body = readable(polish(fold_tables(pg['web'])))
+                pg['teaser'] = body + '\n' + pg['foot']
+                inner.append(f'<details class="wfold" id="p{pg["num"]:02d}"><summary>{t}</summary>\n{sub}\n{body}\n{pg["foot"]}\n</details>')
+                continue
+            # online each section is a teaser: the finding, a lead, the key points and the deals it names, with a
+            # download button; the charts, graphics and full tables stay in the PDF
+            body, adds = teaser(readable(polish(pg['web'])), plain(pg['subtitle'] or ''))
+            pg['teaser'] = body
+            adds = ('The full section adds ' + (adds[0] if len(adds) == 1 else ', '.join(adds[:-1]) + (',' if len(adds) > 2 else '') + ' and ' + adds[-1]) + '.') if adds \
+                else 'The full section is in the report.'
+            more = (f'<div class="wmore"><p>{adds}</p>'
+                    + site.gated(root, f'insights/{pdf}', f'{NAME} {PERIOD} M&A Industry Report', 'btn', f'{DL} Download the full report') + '</div>')
+            inner.append(f'<section class="wpart" id="p{pg["num"]:02d}">\n{head}{sub}\n{body}\n{more}\n</section>')
+            continue
         if not inner:
             continue
         k += 1
         toc.append(f'<li class="rtoc-ch"><a href="#ch-{key}"><span>{k:02d}</span>{esc(ctitle)}</a>' + (f'<ol class="rtoc-sub">{sub_toc}</ol>' if sub_toc else '') + '</li>')
         secs.append(f'<section class="wchap" id="ch-{key}">\n<header class="wchap-head"><span class="wchap-num">{k:02d}</span>'
                     f'<h2 class="h2">{esc(ctitle)}</h2></header>\n{chr(10).join(inner)}\n</section>')
-        if k % 2 == 0 and k < len(chaps) - 1:
-            secs.append(f'<aside class="wdl"><p><strong>The full {esc(NAME)} {PERIOD} report</strong> has every chart, table, and source in the original layout.</p>'
-                        + site.gated(root, f'insights/{pdf}', f'{NAME} {PERIOD} M&A Industry Report', 'btn', f'{DL} Download the full report (PDF)') + '</aside>')
 
     pairs, band_label, _ = stats_band(pages)
     band = ''
@@ -666,7 +671,8 @@ def build_page(prs):
              f'    <p class="lead">{esc(lead)}</p>\n    {seg_html}\n'
              f'    <p class="rbyline">{esc(norm(byline))}</p>\n'
              f'    <div class="btn-row">' + site.gated(root, f'insights/{pdf}', f'{NAME} {PERIOD} M&A Industry Report', 'btn', f'{DL} Download the PDF') +
-             f'<a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a></div>\n  </div>\n</section>\n'
+             f'<a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a></div>\n'
+             f'    <p class="rterms">The PDF is free to download. Downloading it means you agree to the <a href="{root}report-terms.html">Report Terms</a>.</p>\n  </div>\n</section>\n'
              f'{band}\n<div class="wrap rlayout">\n  <aside class="rtoc" aria-label="Report contents">\n    <p class="eyebrow">Contents</p>\n'
              f'    <ol>{"".join(toc)}</ol>\n    ' + site.gated(root, f'insights/{pdf}', f'{NAME} {PERIOD} M&A Industry Report', 'btn', f'{DL} Download the PDF') + '\n  </aside>\n'
              f'  <article class="report wdoc">\n{chr(10).join(secs)}\n    {final_dl}\n  </article>\n</div>\n\n')
