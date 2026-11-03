@@ -476,3 +476,19 @@
 .report.wdoc .wnames li { font-size: 15px; line-height: 1.7; color: var(--ink); margin: 0; padding: 0; }
 .report.wdoc .wnames li::before { content: none; }
 .wdoc .wfig { width: 100%; max-width: 620px !important; }
+
+/* Teaser sections: key points, named deals and a download row under each section */
+.report.wdoc .wpoints, .report.wdoc .wdeals { list-style: none; margin: 18px 0 0; padding: 0; max-width: 72ch; }
+.report.wdoc .wpoints li, .report.wdoc .wdeals li { position: relative; margin: 0 0 12px; padding: 0 0 0 20px; font-size: 17px; line-height: 1.6; color: var(--ink); }
+.report.wdoc .wpoints li::before, .report.wdoc .wdeals li::before { content: ""; position: absolute; left: 0; top: .72em; width: 8px; height: 2px; background: var(--gold); }
+.report.wdoc .wpoints strong { color: var(--ink); }
+.report.wdoc .wdeals-h { margin: 22px 0 6px; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-deep); }
+.wmore { display: flex; align-items: center; justify-content: space-between; gap: 14px 28px; flex-wrap: wrap; margin: 26px 0 0; padding: 16px 20px; background: var(--paper); border-left: 3px solid var(--gold); }
+.wmore p { margin: 0; font-size: 15px; line-height: 1.5; color: var(--ink); }
+.wmore .btn { flex: 0 0 auto; font-size: 12px; padding: 12px 18px; }
+.wdoc .wmore .btn, .wdoc .wmore .btn:hover { color: #fff; text-decoration: none; }
+@media (max-width: 640px) {
+  .wmore .btn { width: 100%; justify-content: center; }
+}
+.rterms { margin: 14px 0 0; font-size: 13px; color: rgba(255, 255, 255, .72); }
+.rterms a { color: inherit; text-decoration: underline; }

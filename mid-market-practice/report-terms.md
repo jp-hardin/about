@@ -10,7 +10,7 @@ Legal
 
 The terms for downloading our industry reports, including the Important Disclosures and how we handle your information.
 
-Last updated October 28, 2026.
+Last updated November 3, 2026.
 
 - About these terms
 
@@ -34,7 +34,7 @@ Last updated October 28, 2026.
 
 ## About these terms
 
-These terms apply when you request or download a Middle Market industry report (a “Report”) from this website. By checking the box on the download form and downloading a Report, you agree to them. If you do not agree, please do not download the Report. The online version of each Report remains available on this website.
+These terms apply when you download a Middle Market industry report (a “Report”) from this website or subscribe to receive Reports by email. By downloading a Report you agree to them, and by subscribing you confirm that agreement by checking the box on the subscription form. If you do not agree, please do not download the Report. The online summary of each Report remains available on this website.
 
 The Reports are published by the Middle Market team of Benchmark International, 4030 W Boy Scout Blvd, Suite 500, Tampa, FL 33607, United States. You can reach us at mmt@benchmarkintl.com.
 
@@ -62,7 +62,7 @@ Reports are provided “as is” without any warranty. To the fullest extent per
 
 ## Privacy notice
 
-When you download a Report we collect your first name, last name, and email address, which Report you requested, the date, your agreement to these terms, and your choices about the two optional emails. We use this information to provide the Report, to keep a record of your agreement and your choices, and, only if you opted in, to send you new industry reports or the Middle Market newsletter. We may also use it to respond to you if you contact us.
+When you download a Report we record which Report was downloaded, the page, and the date. If you subscribe, we also collect your first name, last name, and email address, the industries you chose, your choice about the newsletter, the date, and your agreement to these terms. We use this information to send you new Reports for the industries you chose and, only if you opted in, the Middle Market newsletter, and to keep a record of your agreement and your choices. We may also use it to respond to you if you contact us.
 
 We do not sell your information or share it for targeted advertising. It is stored with service providers that process it on our behalf, such as our cloud document and email providers, and it may be disclosed if the law requires. We keep it for as long as you remain subscribed or we have a business need for it, and we keep a record of any unsubscribe request so that we can continue to honor it.
 
@@ -72,7 +72,7 @@ For more on how Benchmark International handles personal information, see the [B
 
 ## Emails and unsubscribing
 
-Checking a box on the download form is optional and is never a condition of receiving a Report. We send industry reports or the Middle Market newsletter only to people who opt in. Every such email identifies Benchmark International, includes our postal address, and has a working unsubscribe link. You can also unsubscribe on our [email preferences page](https://jp-hardin.github.io/about/mid-market-practice/email-preferences.html)  or by emailing mmt@benchmarkintl.com. We act on unsubscribe requests promptly, and in any case within 10 business days.
+Subscribing is optional and is never a condition of downloading a Report. We send industry reports, for the industries you chose, and the Middle Market newsletter only to people who opt in. Every such email identifies Benchmark International, includes our postal address, and has a working unsubscribe link. You can also unsubscribe on our [email preferences page](https://jp-hardin.github.io/about/mid-market-practice/email-preferences.html)  or by emailing mmt@benchmarkintl.com. We act on unsubscribe requests promptly, and in any case within 10 business days.
 
 Postal address: Benchmark International, 4030 W Boy Scout Blvd, Suite 500, Tampa, FL 33607, United States.
 

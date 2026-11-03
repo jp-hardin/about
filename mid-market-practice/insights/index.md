@@ -22,7 +22,7 @@ Industry Report  Industrials  Current
 
 Order books are full and financing costs more. Buyers are paying the most for what they cannot build in time: power and data center work, certified aerospace machining, and the service revenue that codes and regulations require.
 
-[Read the Report](https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html)  [Download PDF](https://jp-hardin.github.io/about/mid-market-practice/report-terms.html#download)
+[Read the Report](https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.html)  [Download PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/industrial-industry-report-q4-2026.pdf)
 
 [Q4 2026 Business Services](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.html)
 
@@ -32,7 +32,7 @@ Industry Report  Business Services  Current
 
 Mergers and acquisitions across commercial, professional, and human capital services
 
-[Read the Report](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.html)  [Download PDF](https://jp-hardin.github.io/about/mid-market-practice/report-terms.html#download)
+[Read the Report](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.html)  [Download PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/business-services-industry-report-q4-2026.pdf)
 
 [Q4 2026 Consumer](https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.html)
 
@@ -42,7 +42,7 @@ Industry Report  Consumer  Current
 
 Strategic and financial buyers stayed active across consumer through the third quarter, and they are paying for brands and operators that have held price and volume while the cost of financing a purchase rises.
 
-[Read the Report](https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.html)  [Download PDF](https://jp-hardin.github.io/about/mid-market-practice/report-terms.html#download)
+[Read the Report](https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.html)  [Download PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/consumer-industry-report-q4-2026.pdf)
 
 [Q4 2026 Healthcare](https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.html)
 
@@ -52,7 +52,7 @@ Industry Report  Healthcare  Current
 
 Mergers and acquisitions across provider services, life sciences, medical products, and pharmacy services
 
-[Read the Report](https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.html)  [Download PDF](https://jp-hardin.github.io/about/mid-market-practice/report-terms.html#download)
+[Read the Report](https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.html)  [Download PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/healthcare-industry-report-q4-2026.pdf)
 
 [Q4 2026 Technology](https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.html)
 
@@ -62,7 +62,7 @@ Industry Report  Technology  Current
 
 Mergers and acquisitions across technology services, hardware, and government technology
 
-[Read the Report](https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.html)  [Download PDF](https://jp-hardin.github.io/about/mid-market-practice/report-terms.html#download)
+[Read the Report](https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.html)  [Download PDF](https://jp-hardin.github.io/about/mid-market-practice/insights/technology-industry-report-q4-2026.pdf)
 
 Report Archive
 

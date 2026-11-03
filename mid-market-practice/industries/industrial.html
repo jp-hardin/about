@@ -16,7 +16,7 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"></noscript>
-<link rel="stylesheet" href="../assets/css/style.css?v=0ae0fa0d">
+<link rel="stylesheet" href="../assets/css/style.css?v=80837b85">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://jp-hardin.github.io/about/mid-market-practice/industries/industrial.html">
 <link rel="alternate" type="text/markdown" href="https://jp-hardin.github.io/about/mid-market-practice/industries/industrial.md" title="Industrials M&amp;A Advisory | Benchmark International (Markdown)">
@@ -338,32 +338,36 @@
     </div>
   </div>
 </footer>
-<dialog class="gate" id="report-gate" aria-labelledby="gate-title" data-endpoint="https://script.google.com/macros/s/AKfycbyWqNQfWuW0IGHqsuDyAKeQBP2RSgcuWHhgJAxsFVR2Wg-y16KaXDYSQyenhe7isEJV/exec" data-terms="2026-10-28">
+<dialog class="gate" id="report-gate" aria-labelledby="gate-title" data-endpoint="https://script.google.com/macros/s/AKfycbyWqNQfWuW0IGHqsuDyAKeQBP2RSgcuWHhgJAxsFVR2Wg-y16KaXDYSQyenhe7isEJV/exec" data-terms="2026-11-03">
   <button class="gate-close" type="button" aria-label="Close">&times;</button>
   <form class="gate-form" novalidate>
-    <p class="eyebrow">Free download</p>
-    <h2 id="gate-title">Get the full report</h2>
-    <p class="gate-report"></p>
+    <p class="eyebrow">Your download has started</p>
+    <h2 id="gate-title">Get future industry reports</h2>
+    <p class="gate-report">Optional. Choose the industries you follow and we will email each new report when it is published. <a class="gate-file" href="#" download>Download again</a></p>
     <div class="gate-row">
       <label>First name<input name="first_name" autocomplete="given-name" required maxlength="80"></label>
       <label>Last name<input name="last_name" autocomplete="family-name" required maxlength="80"></label>
     </div>
-    <label>Work email<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
+    <label>Email<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
     <label class="gate-hp" aria-hidden="true">Company website<input name="company_website" tabindex="-1" autocomplete="off"></label>
-    <label class="gate-check"><input type="checkbox" name="reports" value="yes"><span>Email me new Middle Market industry reports when they are published.</span></label>
-    <label class="gate-check"><input type="checkbox" name="newsletter" value="yes"><span>Send me the Benchmark International Middle Market newsletter.</span></label>
+    <fieldset class="gate-inds"><legend>Send me reports for</legend><label class="gate-check gate-ind"><input type="checkbox" name="industries" value="Industrials"><span>Industrials</span></label><label class="gate-check gate-ind"><input type="checkbox" name="industries" value="Business Services"><span>Business Services</span></label><label class="gate-check gate-ind"><input type="checkbox" name="industries" value="Consumer"><span>Consumer</span></label><label class="gate-check gate-ind"><input type="checkbox" name="industries" value="Healthcare"><span>Healthcare</span></label><label class="gate-check gate-ind"><input type="checkbox" name="industries" value="Technology"><span>Technology</span></label></fieldset>
+    <label class="gate-check"><input type="checkbox" name="newsletter" value="yes"><span>Also send me the Benchmark International Middle Market newsletter.</span></label>
     <label class="gate-check gate-terms"><input type="checkbox" name="terms" value="yes" required><span>I agree to the <a href="../report-terms.html" target="_blank">Report Terms and Conditions</a>, including the Important Disclosures and the Privacy Notice.</span></label>
     <p class="gate-error" role="alert" hidden></p>
-    <button class="btn gate-submit" type="submit">Download the report</button>
-    <p class="gate-fine">The two email boxes are optional, and you can unsubscribe at any time from any email or on our <a href="../email-preferences.html" target="_blank">email preferences</a> page. Your details stay with the Middle Market team.</p>
+    <button class="btn gate-submit" type="submit">Subscribe</button>
+    <div class="gate-alt">
+      <button class="gate-skip" type="button" data-skip="no">No Thanks</button>
+      <button class="gate-skip" type="button" data-skip="subscribed">Already Subscribed</button>
+    </div>
+    <p class="gate-fine">This form is optional and is not needed for the download. You can unsubscribe at any time from any email or on our <a href="../email-preferences.html" target="_blank">email preferences</a> page. Your details stay with the Middle Market team.</p>
   </form>
   <div class="gate-done" hidden>
     <p class="eyebrow">Thank you</p>
-    <h2>Your download is starting</h2>
-    <p>If it does not start, use the button below.</p>
-    <a class="btn gate-file" href="#" download>Download the PDF</a>
+    <h2>You are subscribed</h2>
+    <p>We will email each new report for the industries you chose. You can change this at any time on our <a href="../email-preferences.html">email preferences</a> page.</p>
+    <button class="btn gate-ok" type="button">Close</button>
   </div>
 </dialog>
-<script src="../assets/js/main.js?v=40ba81b2" defer></script>
+<script src="../assets/js/main.js?v=d6b7e70d" defer></script>
 </body>
 </html>

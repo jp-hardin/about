@@ -8,7 +8,7 @@ To change the report, edit the deck in PowerPoint, save it here as `brief.pptx` 
 sh build.sh
 ```
 
-This runs `../brief.py` (with `../webdeck.py` and `../deckhtml.py`), which writes:
+This runs `../brief.py` (with `../webdeck.py`, `../deckhtml.py` and `../teaser.py`), which writes:
 
 - `insights/industrial-industry-report-q4-2026.pdf`: the deck converted to PDF (the download).
 - `insights/industrial-industry-report-q4-2026.html`: the site page, laid out for the web rather than as slides: chapters by what a reader comes for (Industry at a Glance, Market Conditions, Sector by Sector, Deals and Buyers, Valuations and Public Markets, Indicators to Watch, What We're Reading, Disclosures and Sources), each holding the deck pages as subsections in one reading column (`flow.py`), with the same words, links, tables and logos; long tables and the sources fold away until opened; the deck's charts are redrawn as SVG from their data, each with its values as a table.
