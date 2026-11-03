@@ -170,11 +170,11 @@
         .map(function (b) { return b.value; });
       if (!f.first_name.value.trim() || !f.last_name.value.trim()) problem = 'Please enter your first and last name.';
       else if (!f.email.checkValidity() || !f.email.value.trim()) problem = 'Please enter a valid email address.';
-      else if (!industries.length && !f.newsletter.checked) problem = 'Please choose at least one industry or the newsletter.';
+      else if (!industries.length) problem = 'Please choose at least one industry.';
       else if (!f.terms.checked) problem = 'Please agree to the Report Terms and Conditions to subscribe.';
       if (problem) { err.textContent = problem; err.hidden = false; return; }
       var data = { action: 'subscribe', first_name: f.first_name.value.trim(), last_name: f.last_name.value.trim(),
-        email: f.email.value.trim(), industries: industries.join(', '), newsletter: f.newsletter.checked ? 'yes' : 'no',
+        email: f.email.value.trim(), industries: industries.join(', '),
         terms: 'yes', terms_version: gate.getAttribute('data-terms'), report: current ? current.report : '', page: location.pathname,
         company_website: f.company_website.value };
       var btn = form.querySelector('.gate-submit');
@@ -198,7 +198,7 @@
       var stop = Array.prototype.filter.call(prefs.querySelectorAll('input[name="industries"]'), function (b) { return b.checked; })
         .map(function (b) { return b.value; });
       send(prefs.getAttribute('data-endpoint'), { action: 'unsubscribe', email: f.email.value.trim(), industries: stop.join(', '),
-        reports: f.reports.checked ? 'yes' : 'no', newsletter: f.newsletter.checked ? 'yes' : 'no', company_website: f.company_website.value })
+        reports: f.reports.checked ? 'yes' : 'no', company_website: f.company_website.value })
         .then(function () { prefs.querySelector('.prefs-done').hidden = false; });
     });
   }

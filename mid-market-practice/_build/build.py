@@ -46,7 +46,7 @@ PARENT_ORG = {"@type": "Organization", "@id": "https://www.benchmarkintl.com/#or
 REPORT_DATE = "2026-10"       # publication month of the current industry reports (ISO 8601)
 
 # Report downloads: every "Download" button downloads the PDF at once, and then an optional form offers future
-# reports (name, email, a box for each industry, the newsletter, agreement to the report terms; Subscribe, No Thanks,
+# reports (name, email, a box for each industry, agreement to the report terms; Subscribe, No Thanks,
 # Already Subscribed). Downloads and subscriptions are added as rows to the "MMT Report Downloads" Google Sheet by the
 # Apps Script web app in _build/forms/report-signups.gs. REPORT_FORM_URL is that web app's /exec address; while it is
 # empty nothing is recorded. REPORT_TERMS_VERSION is written into each subscription's Notes, so change it when the
@@ -576,7 +576,7 @@ SOCIAL = {
 
 
 def report_gate(root):
-    """The optional form shown after a report download starts: future reports by industry and the newsletter. The
+    """The optional form shown after a report download starts: future reports by industry. The
     download links carry data-report (the report title) and data-industry; assets/js/main.js logs the download,
     opens this dialog and sends a subscription to REPORT_FORM_URL."""
     boxes = "".join(f'<label class="gate-check gate-ind"><input type="checkbox" name="industries" value="{e(s["name"])}"><span>{e(s["name"])}</span></label>'
@@ -594,7 +594,6 @@ def report_gate(root):
     <label>Email<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
     <label class="gate-hp" aria-hidden="true">Company website<input name="company_website" tabindex="-1" autocomplete="off"></label>
     <fieldset class="gate-inds"><legend>Send me reports for</legend>{boxes}</fieldset>
-    <label class="gate-check"><input type="checkbox" name="newsletter" value="yes"><span>Also send me the Benchmark International Middle Market newsletter.</span></label>
     <label class="gate-check gate-terms"><input type="checkbox" name="terms" value="yes" required><span>I agree to the <a href="{root}report-terms.html" target="_blank">Report Terms and Conditions</a>, including the Important Disclosures and the Privacy Notice.</span></label>
     <p class="gate-error" role="alert" hidden></p>
     <button class="btn gate-submit" type="submit">Subscribe</button>
@@ -1761,12 +1760,12 @@ REPORT_TERMS = [
     ("Limitation of liability", [
         "Reports are provided “as is” without any warranty. To the fullest extent permitted by law, Benchmark International and its affiliates, officers, and employees are not liable for any loss or damage arising from the use of, or reliance on, a Report or this website."]),
     ("Privacy notice", [
-        "When you download a Report we record which Report was downloaded, the page, and the date. If you subscribe, we also collect your first name, last name, and email address, the industries you chose, your choice about the newsletter, the date, and your agreement to these terms. We use this information to send you new Reports for the industries you chose and, only if you opted in, the Middle Market newsletter, and to keep a record of your agreement and your choices. We may also use it to respond to you if you contact us.",
+        "When you download a Report we record which Report was downloaded, the page, and the date. If you subscribe, we also collect your first name, last name, and email address, the industries you chose, the date, and your agreement to these terms. We use this information to send you new Reports for the industries you chose and to keep a record of your agreement and your choices. We may also use it to respond to you if you contact us.",
         "We do not sell your information or share it for targeted advertising. It is stored with service providers that process it on our behalf, such as our cloud document and email providers, and it may be disclosed if the law requires. We keep it for as long as you remain subscribed or we have a business need for it, and we keep a record of any unsubscribe request so that we can continue to honor it.",
         "Depending on where you live, you may have the right to ask for access to, correction of, or deletion of your information, to withdraw your consent at any time, and to object to its use, and visitors in the European Economic Area and the United Kingdom may complain to their data protection authority. To make a request, email " + EMAIL + ". We will not treat you differently for exercising these rights. Your information may be stored and processed in the United States. These Reports are intended for business owners and professionals and are not directed to anyone under 18.",
         "For more on how Benchmark International handles personal information, see the Benchmark International Privacy Policy."]),
     ("Emails and unsubscribing", [
-        "Subscribing is optional and is never a condition of downloading a Report. We send industry reports, for the industries you chose, and the Middle Market newsletter only to people who opt in. Every such email identifies Benchmark International, includes our postal address, and has a working unsubscribe link. You can also unsubscribe on our email preferences page or by emailing " + EMAIL + ". We act on unsubscribe requests promptly, and in any case within 10 business days.",
+        "Subscribing is optional and is never a condition of downloading a Report. We send industry reports only to people who subscribe, and only for the industries they chose. Every such email identifies Benchmark International, includes our postal address, and has a working unsubscribe link. You can also unsubscribe on our email preferences page or by emailing " + EMAIL + ". We act on unsubscribe requests promptly, and in any case within 10 business days.",
         "Postal address: " + POSTAL_ADDRESS + "."]),
     ("Changes and governing law", [
         "We may update these terms from time to time; the date below shows the latest version, and the version you agreed to is recorded with your download. These terms are governed by the laws of the State of Florida, United States, without regard to conflict-of-laws rules, except where the law of your country of residence gives you rights that cannot be waived."]),
@@ -1809,7 +1808,7 @@ def page_report_terms():
 
 
 def page_email_preferences():
-    """Unsubscribe from the industry report emails or the newsletter; recorded in the report downloads sheet."""
+    """Unsubscribe from the industry report emails, for all industries or some; recorded in the report downloads sheet."""
     root = ""
     html = head("Email Preferences | Benchmark International", "Unsubscribe from Benchmark International Middle Market emails.", root)
     html = html.replace("</head>", '<meta name="robots" content="noindex">\n</head>')
@@ -1831,7 +1830,6 @@ def page_email_preferences():
       <label class="gate-hp" aria-hidden="true">Company website<input name="company_website" tabindex="-1" autocomplete="off"></label>
       <label class="gate-check"><input type="checkbox" name="reports" value="yes" checked><span>Stop sending me all Middle Market industry reports.</span></label>
       <fieldset class="gate-inds prefs-inds"><legend>Or stop only these industries</legend>{"".join(f'<label class="gate-check gate-ind"><input type="checkbox" name="industries" value="{e(s["name"])}"><span>{e(s["name"])}</span></label>' for s in SECTORS)}</fieldset>
-      <label class="gate-check"><input type="checkbox" name="newsletter" value="yes" checked><span>Stop sending me the Middle Market newsletter.</span></label>
       <p class="gate-error" role="alert" hidden></p>
       <button class="btn" type="submit">Update my preferences</button>
       <p class="prefs-done" hidden>Thank you. Your request has been recorded. You can also email <a href="mailto:{EMAIL}">{EMAIL}</a> at any time.</p>
