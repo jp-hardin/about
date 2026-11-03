@@ -472,6 +472,37 @@ def to_markdown(pages, lead, byline, segs):
 
 JH_PHONE, JH_EMAIL = site.TEAM_CONTACT['jared-hardin']
 
+# Benchmark International transactions named in the deck (linked to their announcements) are shown online as tombstones,
+# in the same format as the rest of the site. A transaction already in tombstones.json uses that tombstone; any other
+# is built from deals.json (seller and buyer as named in the announcement, kept here so builds need no network).
+DEALS = json.load(open(os.path.join(HERE, 'deals.json'), encoding='utf-8'))
+_slug = lambda u: re.sub(r'/$', '', u).rsplit('/', 1)[-1]
+SITE_TOMBS = {_slug(t['link']): t for t in site.TOMBSTONES if t.get('link')}
+
+
+def benchmark_tombs(body, root):
+    """Tombstones for the Benchmark International transactions linked from a section, in the order they appear."""
+    links = list(dict.fromkeys(re.findall(r'href="(https://www\.benchmarkintl\.com/insights/[^"]*facilitated[^"]*)"', body)))
+    out = []
+    for u in links:
+        t = SITE_TOMBS.get(_slug(u))
+        if t:
+            out.append(site.tombstone(t, root))
+            continue
+        d = DEALS.get(u)
+        if not d:
+            print('no tombstone or deals.json entry for', u)
+            continue
+        texts = [plain(x) for x in re.findall(r'<a href="' + re.escape(u) + r'"[^>]*>(.*?)</a>', body, re.S)]
+        desc = max((x for x in texts if len(x) > 25), key=len, default='')
+        verb = d.get('verb', 'Acquired By')
+        face = (f'<div class="tomb-face tomb-face--text"><span class="tomb-name">{esc(d["seller"])}</span>'
+                f'<span class="tomb-verb">{esc(verb)}</span><span class="tomb-name">{esc(d["buyer"])}</span></div>')
+        cap = (f'<div class="tomb-cap"><strong>{esc(d["seller"])}</strong><span>{esc(verb.lower())} {esc(d["buyer"])}</span>'
+               + (f'<p class="tomb-desc">{esc(desc)}</p>' if desc else '') + '</div>')
+        out.append(f'<a class="tomb" href="{esc(u)}" target="_blank" rel="noopener">{face}{cap}</a>')
+    return out
+
 # Questions answered on the report page, each answered in the deck's own words: the subtitle of the first deck page
 # whose title matches. {adj} is the industry adjective ("industrial", "consumer", ...).
 FAQ_PAGES = [
@@ -635,7 +666,10 @@ def build_page(prs):
                 continue
             # online each section is a teaser: the finding, a lead, the key points and the deals it names, with a
             # download button; the charts, graphics and full tables stay in the PDF
-            body, adds = teaser(readable(polish(pg['web'])), plain(pg['subtitle'] or ''))
+            tombs = benchmark_tombs(pg['web'], root)
+            body, adds = teaser(readable(polish(pg['web'])), plain(pg['subtitle'] or ''), bm=bool(tombs))
+            if tombs:
+                body += '\n<div class="tomb-grid tomb-grid--report">' + ''.join(tombs) + '</div>'
             pg['teaser'] = body
             adds = ('The full section adds ' + (adds[0] if len(adds) == 1 else ', '.join(adds[:-1]) + (',' if len(adds) > 2 else '') + ' and ' + adds[-1]) + '.') if adds \
                 else 'The full section is in the report.'

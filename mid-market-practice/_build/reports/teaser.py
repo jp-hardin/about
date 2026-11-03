@@ -239,7 +239,7 @@ def grids(root):
         anchor.drop_tree()
 
 
-def mega_card(c, root):
+def mega_card(c, root, bm=False):
     """A deal tile that holds a whole slide (several deals run together): its full sentences become points and the
     short deal descriptions one list."""
     descs, ours = [], False
@@ -254,7 +254,7 @@ def mega_card(c, root):
             q.set('class', 'wlead')
             q.text = sentences(t, 1)
             c.addprevious(q)
-    if descs:
+    if descs and not bm:
         head = 'Sales we advised include' if ours else 'Transactions include'
         point_before(c, head, '; '.join(descs[:10]) + (f'; and {len(descs) - 10} more in the full report' if len(descs) > 10 else ''))
     c.drop_tree()
@@ -268,8 +268,9 @@ def para(root_el, before, txt):
     return p
 
 
-def teaser(body, sub=''):
-    """(teaser html, what the full section adds) for a section body already in the web vocabulary."""
+def teaser(body, sub='', bm=False):
+    """(teaser html, what the full section adds) for a section body already in the web vocabulary. With bm=True the
+    section's Benchmark International transactions are shown as tombstones, so they are left out of the text."""
     root = LH.fragment_fromstring(body or '<p></p>', create_parent='div')
     n_charts = len(root.xpath('.//figure')) + (1 if root.xpath('.//*[contains(@class,"dbar")]') else 0)
     has_quotes = bool(root.xpath('.//blockquote'))
@@ -333,7 +334,7 @@ def teaser(body, sub=''):
                 point_before(wrap, f'Companies covered ({len(names)})', ', '.join(names) + '.')
     for c in root.xpath('.//div[contains(@class,"wdeal")]'):
         if len(c.xpath('.//p')) > 7:
-            mega_card(c, root)
+            mega_card(c, root, bm)
             continue
         get = lambda x: [text(e) for e in c.xpath(x)]
         target, acq = (get('.//h4') or [''])[0], (get('.//*[contains(@class,"wacq")]') or [''])[0]
@@ -447,6 +448,9 @@ def teaser(body, sub=''):
             pending = {'h': '', 'raw': '', 'b': s, 'card': card(el), 'names': False}
             points.append(pending)
     points = [p for p in points if p['b'] or len(p['h']) > 40]
+    if bm:      # the tombstones show who bought whom
+        points = [p for p in points if not p['b'].lower().startswith('acquired by')]
+        deals = []
     limit = 16 if sum(p['names'] for p in points) > 6 else MAX_POINTS
     points = points[:limit]
 
