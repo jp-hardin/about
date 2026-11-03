@@ -170,6 +170,7 @@ def cover(prs):
 
 
 WEB_SKIP = re.compile(r'(Connect With|Our Team$)', re.I)
+WEB_DROP = re.compile(r'disclosures', re.I)   # the site's Important Disclosures page is linked from every report page
 TEAM_NAMES = [t[0] for t in site.TEAM_LEAD] + [t[0] for t in site.TEAM_SUPPORT]
 
 
@@ -406,7 +407,7 @@ def web_title(pg):
 
 
 CHAPTERS = [  # (key, title, deck-page titles that belong to it); the first match wins, in this order
-    ('notes', 'Disclosures and Sources', r'disclosures|^sources$'),
+    ('notes', 'Sources', r'^sources$'),
     ('about', 'About Benchmark International', r'^benchmark international$'),
     ('reading', "What We're Reading", r'reading'),
     ('indicators', 'Indicators to Watch', r'economic trends|indicators'),
@@ -557,6 +558,8 @@ def build_page(prs):
     # carries: the author card, the call to action and the site's team section. They stay in the PDF only.
     web, after_skip = [pages[0]], False
     for pg in pages[1:]:
+        if not pg['part'] and WEB_DROP.search(pg['title']):
+            continue
         if WEB_SKIP.match(pg['title']):
             after_skip = after_skip or bool(pg['part'])
             continue
