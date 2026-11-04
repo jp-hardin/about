@@ -145,6 +145,16 @@ A Laredo logistics and customs brokerage group and a Mexico manufacturing servic
 - **Buyers are paying for border capability.** Trade with Mexico reached a monthly record of $94.8 billion in July, 27.5% above a year earlier, and $36.95 billion of it moved through Laredo (Census data reported by FreightWaves).
 - Carmi’s brokerage licenses, bonded warehousing, and four decades of Laredo relationships are the capability. The trucks are the capacity, and buyers can rent those.
 
+The Carmi Companies
+
+Combined With
+
+The Nearshore Company
+
+The Carmi Companiescombined with The Nearshore Company
+
+Single-source logistics group in Laredo, Texas: land, air, and ocean freight, customs brokerage, warehousing, and transloading
+
 ### Recent Transactions
 
 Public acquirers disclosed prices of about 6 to 10 times EBITDA, and sponsor-owned platforms bought family-owned companies on undisclosed terms.
@@ -176,15 +186,149 @@ of the 71 companies with a classified buyer were bought by a strategic acquirer
 - **Trailing 24 months.** Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook’s Q2 2026 Global League Tables (Benchmark International).
 - **By sector.** Building Products & Construction is highest at 45, followed by Manufacturing & Industrial Tech at 22 and Distribution & Services at 8; Transportation & Logistics is lowest at 3.
 
-**Transactions in this section**
+FPS Technologies Inc.
 
-- Cintas acquired FPS Technologies, Inc. (fire suppression and detection systems)
-- Cemtrex acquired Invocon, Inc. (instrumentation and wireless sensing for aerospace platforms)
-- Triumvirate Environmental acquired Capitol Plastics Recycling Inc. (industrial plastics recycling)
-- Assessimus Group acquired A.T. Parker, Inc. (Solar Electronics) (test equipment for electromagnetic interference)
-- DXP Enterprises acquired MaxVac Inc. (sales, repair, and maintenance of industrial vacuum pumps)
-- Harris Company acquired Climate Engineering, Inc. (commercial HVAC and building automation)
-- and 6 more in the full report
+Acquired By
+
+Cintas Corporation
+
+FPS Technologies Inc.acquired by Cintas Corporation
+
+Fire protection and safety systems design, installation, and service
+
+Distribution & Services
+
+MaxVac Inc.
+
+Acquired By
+
+DXP Enterprises, Inc.
+
+MaxVac Inc.acquired by DXP Enterprises, Inc.
+
+Sales, repair, and maintenance of industrial vacuum pumps
+
+Manufacturing
+
+Trinity Industrial Services, LLC
+
+Acquired By
+
+Aecon Group Inc.
+
+Trinity Industrial Services, LLCacquired by Aecon Group Inc.
+
+Industrial maintenance, capital projects, and turnarounds
+
+Distribution & Services
+
+Invocon, Inc.
+
+Acquired By
+
+Cemtrex, Inc.
+
+Invocon, Inc.acquired by Cemtrex, Inc.
+
+Instrumentation and wireless sensing for aerospace platforms
+
+Manufacturing
+
+Climate Engineering, Inc.
+
+Acquired By
+
+Harris Company
+
+Climate Engineering, Inc.acquired by Harris Company
+
+Commercial HVAC and building automation
+
+Building & Construction
+
+Briggs Engineering & Testing
+
+Acquired By
+
+Phenna Group
+
+Briggs Engineering & Testingacquired by Phenna Group
+
+Geotechnical and materials testing and special inspection
+
+Building & Construction
+
+Capitol Plastics Recycling Inc
+
+Acquired By
+
+Triumvirate Environmental
+
+Capitol Plastics Recycling Incacquired by Triumvirate Environmental
+
+Industrial plastics recycling
+
+Energy & Environmental
+
+WESCO Chemicals, Inc.
+
+Acquired By
+
+Apex Water and Process Inc.
+
+WESCO Chemicals, Inc.acquired by Apex Water and Process Inc.
+
+Water treatment chemical production and service
+
+Energy & Environmental
+
+DW Industries
+
+Acquired By
+
+TIPCO Technologies
+
+DW Industriesacquired by TIPCO Technologies
+
+Hose and hose assemblies for industrial customers
+
+Distribution & Services
+
+A.T. Parker, Inc.
+
+Acquired By
+
+Assessimus Group GmbH
+
+A.T. Parker, Inc.acquired by Assessimus Group GmbH
+
+Test equipment for electromagnetic interference
+
+Manufacturing
+
+Clark Crane
+
+Acquired By
+
+Capital Extension Crane & Lift
+
+Clark Craneacquired by Capital Extension Crane & Lift
+
+Crane rental and rigging
+
+Building & Construction
+
+Christian Network International
+
+Acquired By
+
+Symbia Logistics
+
+Christian Network Internationalacquired by Symbia Logistics
+
+Fulfillment and distribution
+
+Transportation
 
 ### Who Is Buying
 

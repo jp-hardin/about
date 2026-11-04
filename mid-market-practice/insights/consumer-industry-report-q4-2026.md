@@ -140,7 +140,181 @@ HF Foods agreed in July to acquire Searay Foods, a British Columbia distributor 
 
 Consumer services and retail is the most active sector, and operating companies and platforms bought just over half of the named companies.
 
-- **Sales we advised include.** landscape design and installation, Madison, WI area; landscape construction and maintenance, Fortuna, CA; sales and marketing brokerage for packaged goods; two collision repair centers, Permian Basin, TX; family-owned residential roofing since 1983, Texas; contract manufacturer of supplements, Oakdale, CA; customized youth sports apparel, Taunton, MA; bulk cooking oil distribution and collection, Ocala, FL; garage door sales, installation, and repair, IN and IL; sports bar and grill restaurant group, Texas; and 3 more in the full report.
+WRS Group, LTD.
+
+Acquired By
+
+Project Energy Savers, Inc.
+
+WRS Group, LTD.acquired by Project Energy Savers, Inc.
+
+Educational and community outreach materials
+
+July 2026
+
+Kittleson Landscape, Inc.
+
+Acquired By
+
+Lancaster Group, LLC
+
+Kittleson Landscape, Inc.acquired by Lancaster Group, LLC
+
+Landscape design and installation, Madison, WI area
+
+June 2026
+
+Jagimo Corporation, Inc.
+
+Acquired By
+
+Castleford Group
+
+Jagimo Corporation, Inc.acquired by Castleford Group
+
+Landscape construction and maintenance, Fortuna, CA
+
+June 2026
+
+Telmark Sales Solutions, Inc.
+
+Acquired By
+
+Market Performance Group
+
+Telmark Sales Solutions, Inc.acquired by Market Performance Group
+
+Sales and marketing brokerage for packaged goods
+
+Mar 2026
+
+Stepfar Investments LLC
+
+Acquired By
+
+Classic Collision, LLC
+
+Stepfar Investments LLCacquired by Classic Collision, LLC
+
+Two collision repair centers, Permian Basin, TX
+
+Mar 2026
+
+M&M Roofing Co.
+
+Acquired By
+
+Allied Roofing Partners
+
+M&M Roofing Co.acquired by Allied Roofing Partners
+
+Family-owned residential roofing since 1983, Texas
+
+Feb 2026
+
+Formulation Technology Incorporated
+
+Acquired By
+
+AAVIN Private Equity
+
+Formulation Technology Incorporatedacquired by AAVIN Private Equity
+
+Contract manufacturer of supplements, Oakdale, CA
+
+Jan 2026
+
+Arocam, Inc.
+
+Acquired By
+
+Innova Capital
+
+Arocam, Inc.acquired by Innova Capital
+
+Customized youth sports apparel, Taunton, MA
+
+Dec 2025
+
+Stirling Food Systems, Inc.
+
+Acquired By
+
+GreaseCycle, LLC
+
+Stirling Food Systems, Inc.acquired by GreaseCycle, LLC
+
+Bulk cooking oil distribution and collection, Ocala, FL
+
+Dec 2025
+
+Affordable Garage Doors, Inc.
+
+Acquired By
+
+A.S.A.P. Garage Door Repair
+
+Affordable Garage Doors, Inc.acquired by A.S.A.P. Garage Door Repair
+
+Garage door sales, installation, and repair, IN and IL
+
+July 2025
+
+GSM Wings, LLC
+
+Acquired By
+
+GPC Investments
+
+GSM Wings, LLCacquired by GPC Investments
+
+Sports bar and grill restaurant group, Texas
+
+June 2025
+
+Southern Pool Designs, Inc.
+
+Acquired ByAn Individual InvestorSouthern Pool Designs, Inc.acquired by An Individual Investor
+
+Custom pool design and construction, Central Florida
+
+June 2025
+
+Smart Buffet Ware LLC
+
+Acquired By
+
+Front of House Worldwide
+
+Smart Buffet Ware LLCacquired by Front of House Worldwide
+
+Buffet and food presentation equipment, Daphne, AL
+
+June 2025
+
+Gilco Restoration, Inc.
+
+Acquired By
+
+Thomasville Restoration
+
+Gilco Restoration, Inc.acquired by Thomasville Restoration
+
+Fire and water damage restoration, Williamsburg, VA
+
+Sept 2026
+
+Edison Martial Arts LLC
+
+Acquired By
+
+Elevate Youth Development
+
+Edison Martial Arts LLCacquired by Elevate Youth Development
+
+Six martial arts academies, New Jersey
+
+Sept 2026
 
 ### Landscape: Select Participants
 

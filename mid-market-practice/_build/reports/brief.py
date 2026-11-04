@@ -291,6 +291,7 @@ def merge_continued(pages):
             if pg['foot'] and pg['foot'] not in prev['foot']:
                 prev['foot'] = (prev['foot'] + '\n' + pg['foot']).strip()
             alias[pg['num']] = prev['num']
+            prev['links'] = prev.get('links', []) + pg.get('links', [])
             prev['body'] = join_tables(prev['body'])
             prev['foot'] = join_notes(prev['foot'])
             continue
@@ -473,35 +474,132 @@ def to_markdown(pages, lead, byline, segs):
 JH_PHONE, JH_EMAIL = site.TEAM_CONTACT['jared-hardin']
 
 # Benchmark International transactions named in the deck (linked to their announcements) are shown online as tombstones,
-# in the same format as the rest of the site. A transaction already in tombstones.json uses that tombstone; any other
-# is built from deals.json (seller and buyer as named in the announcement, kept here so builds need no network).
+# in the same format as the rest of the site, so the page matches the PDF: names from deals.json (seller and buyer as named
+# in the announcement, and the alt text of each company's logo in the decks), logos from the decks, and the description
+# and sector printed on the deck tile. A company without a logo (a private investor) is named in type.
 DEALS = json.load(open(os.path.join(HERE, 'deals.json'), encoding='utf-8'))
 _slug = lambda u: re.sub(r'/$', '', u).rsplit('/', 1)[-1]
-SITE_TOMBS = {_slug(t['link']): t for t in site.TOMBSTONES if t.get('link')}
+DEALS_BY_SLUG = {_slug(u): d for u, d in DEALS.items()}
+SECTOR_WORDS = set('manufacturing industrial tech distribution services transportation logistics building products construction energy '
+                   'power environmental commercial facility marketing sales enabled engineering architecture consulting financial '
+                   'insurance staffing human capital life sciences diagnostics medical pharmacy healthcare provider managed it cloud '
+                   'telecom ucaas systems integration electronics hardware government technology cybersecurity food beverage consumer '
+                   'brands foodservice retail and'.split())   # words a tile's sector label is made of
+TILE_INFO = {}   # deal -> (description, sector) from its tile on the deck's transactions slide
+_LOGOS = {}
 
 
-def benchmark_tombs(body, root):
-    """Tombstones for the Benchmark International transactions linked from a section, in the order they appear."""
-    links = list(dict.fromkeys(re.findall(r'href="(https://www\.benchmarkintl\.com/insights/[^"]*facilitated[^"]*)"', body)))
+def deck_logos():
+    """Logo pictures in the five decks, by alt text (first one found)."""
+    if not _LOGOS:
+        for d in sorted(os.listdir(HERE)):
+            deck = os.path.join(HERE, d, 'brief.pptx')
+            if not os.path.exists(deck):
+                continue
+            for slide in Presentation(deck).slides:
+                for sh in all_shapes(slide.shapes):
+                    if sh._element.tag.endswith('}pic'):
+                        alt = html.unescape(sh._element.xpath('.//p:cNvPr')[0].get('descr') or '')
+                        if alt and alt not in _LOGOS:
+                            _LOGOS[alt] = sh.image.blob
+    return _LOGOS
+
+
+def logo_file(alt):
+    """The logo with this alt text, trimmed and saved for the page; its path from the site root, or None."""
+    from PIL import Image
+    import io
+    blob = deck_logos().get(alt)
+    if not blob:
+        return None
+    rel = f'{IMG_DIR}/logo-{re.sub(r"[^a-z0-9]+", "-", alt.lower().replace(" logo", "")).strip("-")}.webp'
+    out = os.path.join(SITE, rel)
+    if not os.path.exists(out):
+        im = Image.open(io.BytesIO(blob)).convert('RGBA')
+        flat = Image.alpha_composite(Image.new('RGBA', im.size, (255, 255, 255, 255)), im).convert('L')
+        im = im.crop(flat.point(lambda v: 255 if v < 245 else 0).getbbox() or (0, 0) + im.size)
+        if im.height > 140:
+            im = im.resize((round(im.width * 140 / im.height), 140), Image.LANCZOS)
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        im.save(out, 'WEBP', lossless=True)
+    return rel
+
+
+def slide_links(slide):
+    """Every link on a deck slide, from text and from pictures, in drawing order, with the description and sector
+    printed under it on its tile: [(url, description, sector)]."""
+    shapes = list(all_shapes(slide.shapes))
+    texts = [(sh, ' '.join(sh.text_frame.text.split())) for sh in shapes if sh.has_text_frame and sh.text_frame.text.strip()]
+
+    def inside(box, sh):
+        cx, cy = sh.left + sh.width // 2, sh.top + sh.height // 2
+        return box.left <= cx <= box.left + box.width and box.top <= cy <= box.top + box.height
+
+    # a tile is the smallest empty box (a card) around the link
+    cards = [sh for sh in shapes if not (sh.has_text_frame and sh.text_frame.text.strip())
+             and not sh._element.tag.endswith('}pic') and sh.width and sh.height and sh.height > 600000]
+
+    def below(sh):
+        tile = min((c for c in cards if inside(c, sh)), key=lambda c: c.width * c.height, default=None)
+        if tile is None:
+            return '', ''
+        inner = [x for t, x in texts if inside(tile, t)]
+        desc = next((x for x in inner if x != x.upper() and len(x) > 15 and len(x) < 200), '')
+        sector = next((x for x in inner if x == x.upper() and len(x) > 4
+                       and set(re.findall(r'[a-z]+', x.lower())) <= SECTOR_WORDS), '')
+        if not sector:      # tiles dated instead of labeled by sector (Consumer)
+            sector = next((x for x in inner if re.match(r'^[A-Z]{3,9} \d{4}$', x)), '')
+        sector = re.sub(r'\bIt\b', 'IT', sector.title().replace(' And ', ' and ')).replace('Ucaas', 'UCaaS')
+        return desc, sector
+    out = []
+    for sh in shapes:
+        urls = []
+        try:
+            if sh.click_action.hyperlink.address:
+                urls.append(sh.click_action.hyperlink.address)
+        except Exception:
+            pass
+        if sh.has_text_frame:
+            urls += [r.hyperlink.address for p in sh.text_frame.paragraphs for r in p.runs if r.hyperlink.address]
+        for u in urls:
+            out.append((u,) + below(sh))
+    return out
+
+
+def benchmark_tombs(body, root, extra=()):
+    """Tombstones for the Benchmark International transactions linked from a section (its web text and, in extra, the
+    links on its deck slide), in the order they appear."""
+    found = re.findall(r'href="(https://www\.benchmarkintl\.com/insights/[^"]*facilitated[^"]*)"', body)
+    info = TILE_INFO
+    found += [u for u, _, _ in extra if re.match(r'https://www\.benchmarkintl\.com/insights/[^"]*facilitated', u)]
+    seen, links = set(), []
+    for u in found:
+        if _slug(u) not in seen:
+            seen.add(_slug(u))
+            links.append(u)
     out = []
     for u in links:
-        t = SITE_TOMBS.get(_slug(u))
-        if t:
-            out.append(site.tombstone(t, root))
-            continue
-        d = DEALS.get(u)
+        d = DEALS_BY_SLUG.get(_slug(u))
         if not d:
             print('no tombstone or deals.json entry for', u)
             continue
         texts = [plain(x) for x in re.findall(r'<a href="' + re.escape(u) + r'"[^>]*>(.*?)</a>', body, re.S)]
-        desc = max((x for x in texts if len(x) > 25), key=len, default='')
+        tile_desc, sector = info.get(_slug(u), ('', ''))
+        desc = d.get('desc') or tile_desc or max((x for x in texts if len(x) > 25), key=len, default='')
         verb = d.get('verb', 'Acquired By')
-        face = (f'<div class="tomb-face tomb-face--text"><span class="tomb-name">{esc(d["seller"])}</span>'
-                f'<span class="tomb-verb">{esc(verb)}</span><span class="tomb-name">{esc(d["buyer"])}</span></div>')
+
+        def mark(side):
+            rel = logo_file(d[side + '_logo']) if d.get(side + '_logo') else None
+            if rel:
+                return f'<img src="{root}{rel}" alt="{esc(d[side])}" loading="lazy" {site.img_size(rel)}>'
+            return f'<span class="tomb-name">{esc(d[side])}</span>'
+        face = f'<div class="tomb-face">{mark("seller")}<span class="tomb-verb">{esc(verb)}</span>{mark("buyer")}</div>'
         cap = (f'<div class="tomb-cap"><strong>{esc(d["seller"])}</strong><span>{esc(verb.lower())} {esc(d["buyer"])}</span>'
-               + (f'<p class="tomb-desc">{esc(desc)}</p>' if desc else '') + '</div>')
+               + (f'<p class="tomb-desc">{esc(desc)}</p>' if desc else '')
+               + (f'<span class="tomb-sector">{esc(sector)}</span>' if sector else '') + '</div>')
         out.append(f'<a class="tomb" href="{esc(u)}" target="_blank" rel="noopener">{face}{cap}</a>')
     return out
+
 
 # Questions answered on the report page, each answered in the deck's own words: the subtitle of the first deck page
 # whose title matches. {adj} is the industry adjective ("industrial", "consumer", ...).
@@ -584,7 +682,18 @@ def build_page(prs):
     shutil.rmtree(media, ignore_errors=True)
     root, pdf, md_name = '../', f'{PUBLIC}.pdf', f'{PUBLIC}.md'
     wd = WebDeck(prs, media, f'{root}{IMG_DIR}')
+    links = [slide_links(s) for s in prs.slides]          # before WebDeck, which rewrites the slides as it reads them
     pages = [wd.page(s, i) for i, s in enumerate(prs.slides, 1)]
+    for pg, ln in zip(pages, links):
+        pg['links'] = ln
+    best = {}
+    for pg in pages:
+        bm = [x for x in pg['links'] if 'facilitated' in x[0]]
+        for u, dsc, sec in bm:
+            rank = (bool(dsc), bool(sec), len(bm))       # a tile with a description and sector beats a plain list of links
+            if _slug(u) not in best or rank > best[_slug(u)][0]:
+                best[_slug(u)] = (rank, dsc, sec)
+    TILE_INFO.update({k: (v[1], v[2]) for k, v in best.items()})
     # The deck's contact and team pages (and the part divider that opens them) repeat what the web page already
     # carries: the author card, the call to action and the site's team section. They stay in the PDF only.
     web, after_skip = [pages[0]], False
@@ -666,7 +775,7 @@ def build_page(prs):
                 continue
             # online each section is a teaser: the finding, a lead, the key points and the deals it names, with a
             # download button; the charts, graphics and full tables stay in the PDF
-            tombs = benchmark_tombs(pg['web'], root)
+            tombs = benchmark_tombs(pg['web'], root, pg.get('links', ()))
             body, adds = teaser(readable(polish(pg['web'])), plain(pg['subtitle'] or ''), bm=bool(tombs))
             if tombs:
                 body += '\n<div class="tomb-grid tomb-grid--report">' + ''.join(tombs) + '</div>'

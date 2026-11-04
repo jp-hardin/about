@@ -147,15 +147,109 @@ sellers shown were bought by an operating company
 
 - **Trailing 24 months.** The world’s #1 privately owned sell-side M&A advisor, based on PitchBook’s Q2 2026 Global League Tables (Benchmark International).
 
-**Transactions in this section**
+Precise Bioscience, LLC
 
-- New Horizon Medical Solutions acquired Precise Bioscience (amniotic membrane allografts for wound care and sports medicine)
-- Aavin Private Equity acquired Formtech (contract manufacturer of nutritional supplements)
-- Relentless Health acquired Fast Response On Site Testing (mobile occupational health testing)
-- Scientific Safety Alliance acquired CEPRO (certification testing for compounding pharmacies, laboratories, and bio-containment facilities)
-- Solmetex acquired ReLeaf (patent holder and brand owner of ReLeaf hands-free dental suction devices)
-- Amivie acquired Fosterbridge (in-home care for Ohio Medicaid waiver participants)
-- and 3 more in the full report
+Acquired By
+
+New Horizon Medical Solutions
+
+Precise Bioscience, LLCacquired by New Horizon Medical Solutions
+
+Amniotic membrane allografts for wound care and sports medicine
+
+Life Sciences & Diagnostics
+
+Formulation Technology Incorporated
+
+Acquired By
+
+AAVIN Private Equity
+
+Formulation Technology Incorporatedacquired by AAVIN Private Equity
+
+Contract manufacturer of nutritional supplements
+
+Life Sciences & Diagnostics
+
+Fast Response On-Site Testing, Inc.
+
+Acquired By
+
+Relentless Health, Inc.
+
+Fast Response On-Site Testing, Inc.acquired by Relentless Health, Inc.
+
+Mobile occupational health testing
+
+Life Sciences & Diagnostics
+
+Critical Environments Professionals
+
+Acquired By
+
+Scientific Safety Alliance
+
+Critical Environments Professionalsacquired by Scientific Safety Alliance
+
+Certification testing for compounding pharmacies, laboratories, and bio-containment facilities
+
+Life Sciences & Diagnostics
+
+Dental Holdings, LLC
+
+Acquired By
+
+Solmetex, LLC
+
+Dental Holdings, LLCacquired by Solmetex, LLC
+
+Patent holder and brand owner of ReLeaf hands-free dental suction devices
+
+Medical Products & Distribution
+
+Fosterbridge, Inc.
+
+Acquired By
+
+Amvie
+
+Fosterbridge, Inc.acquired by Amvie
+
+In-home care for Ohio Medicaid waiver participants
+
+Provider Services
+
+Medical Temps, Inc
+
+Acquired By
+
+Health Advocates Network
+
+Medical Temps, Incacquired by Health Advocates Network
+
+Nurse staffing for healthcare facilities in northern Louisiana
+
+Pharmacy & Healthcare Services
+
+The Brooks Group
+
+Acquired ByPrivate InvestorsThe Brooks Groupacquired by Private Investors
+
+Training, research, and instructional design for pharmaceutical, biotech, and device companies
+
+Pharmacy & Healthcare Services
+
+Fitzgerald Enterprises
+
+Acquired By
+
+Pioneers Operations
+
+Fitzgerald Enterprisesacquired by Pioneers Operations
+
+Healthcare executive and clinical placement
+
+Pharmacy & Healthcare Services
 
 ## 6. Valuations and Public Markets
 

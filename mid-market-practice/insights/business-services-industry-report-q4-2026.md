@@ -80,11 +80,39 @@ Three fire protection businesses sold to operators already in the field
 - **A defined home region.** Oklahoma City, Arkansas, and Montana and Wyoming gave the buyer territories to add to its existing coverage.
 - **A buyer already in the field.** Cintas and AI Fire both operate fire protection businesses, so the purchases extended platforms that were already in place.
 
-**Transactions in this section**
+FPS Technologies Inc.
 
-- FPS Technologies and Cintas
-- Fire Systems Technology and AI Fire
-- High Tech Solutions and AI Fire
+Acquired By
+
+Cintas Corporation
+
+FPS Technologies Inc.acquired by Cintas Corporation
+
+Fire protection and safety systems design, installation, and service
+
+Commercial & Facility
+
+Fire Systems Technology Incorporated
+
+Acquired By
+
+AI Fire, LLC
+
+Fire Systems Technology Incorporatedacquired by AI Fire, LLC
+
+Full-service fire sprinkler contractor, Arkansas
+
+Commercial & Facility
+
+High Tech Solutions - Systems Group, Inc.
+
+Acquired By
+
+AI Fire
+
+High Tech Solutions - Systems Group, Inc.acquired by AI Fire
+
+Fire alarm, security, access control, and video surveillance systems
 
 ### Recent Transactions
 
@@ -115,15 +143,137 @@ sellers named publicly, more than half of them bought by a company in their own 
 
 - **Trailing 24 months.** Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables (Benchmark International).
 
-**Transactions in this section**
+FPS Technologies Inc.
 
-- Cintas acquired FPS Technologies (fire protection and safety systems design, installation, and service)
-- AI Fire acquired Fire Systems Technology (full-service fire sprinkler contractor, Arkansas)
-- Cresswell Ventures acquired Pacific Green Protection (armed and unarmed security services)
-- Phenna Group acquired Briggs (inspection, testing, and quality control engineering)
-- Sentinel Capital Partners acquired Telmark Sales Solutions (consumer packaged goods sales brokerage, sold to Sentinel's Market Performance Group)
-- Walnut Capital Partners acquired MartianCraft (software design and development agency)
-- and 6 more in the full report
+Acquired By
+
+Cintas Corporation
+
+FPS Technologies Inc.acquired by Cintas Corporation
+
+Fire protection and safety systems design, installation, and service
+
+Commercial & Facility
+
+Fire Systems Technology Incorporated
+
+Acquired By
+
+AI Fire, LLC
+
+Fire Systems Technology Incorporatedacquired by AI Fire, LLC
+
+Full-service fire sprinkler contractor, Arkansas
+
+Commercial & Facility
+
+Pacific Green Protection, Inc.
+
+Acquired By
+
+Cresswell Ventures
+
+Pacific Green Protection, Inc.acquired by Cresswell Ventures
+
+Armed and unarmed security services
+
+Commercial & Facility
+
+Briggs Engineering & Testing
+
+Acquired By
+
+Phenna Group
+
+Briggs Engineering & Testingacquired by Phenna Group
+
+Inspection, testing, and quality control engineering
+
+Commercial & Facility
+
+Telmark Sales Solutions, Inc.
+
+Acquired By
+
+Market Performance Group
+
+Telmark Sales Solutions, Inc.acquired by Market Performance Group
+
+Consumer packaged goods sales brokerage, sold to Sentinel's Market Performance Group
+
+Marketing, Sales & Tech-Enabled
+
+MartianCraft, LLC
+
+Acquired By
+
+Walnut Capital Partners
+
+MartianCraft, LLCacquired by Walnut Capital Partners
+
+Software design and development agency
+
+Marketing, Sales & Tech-Enabled
+
+SnailWorks, LLC
+
+Acquired By
+
+Beacon Software
+
+SnailWorks, LLCacquired by Beacon Software
+
+Mail-tracking software for direct mailers
+
+Marketing, Sales & Tech-Enabled
+
+Total Sales & Marketing, Inc.
+
+Acquired By
+
+Retail Rex Capital
+
+Total Sales & Marketing, Inc.acquired by Retail Rex Capital
+
+Promotional products and marketing services
+
+Marketing, Sales & Tech-Enabled
+
+SJB Group, LLC
+
+Acquired By
+
+Surveying and Mapping, LLC
+
+SJB Group, LLCacquired by Surveying and Mapping, LLC
+
+Civil engineering firm, Baton Rouge, Louisiana
+
+Engineering & Architecture
+
+Engineered Building Systems
+
+Acquired By
+
+RTM Engineering Consultants
+
+Engineered Building Systemsacquired by RTM Engineering Consultants
+
+Mechanical, electrical, and plumbing engineering, Northern Kentucky
+
+Engineering & Architecture
+
+Mokavia Aerospace
+
+Acquired By
+
+Hi-Tek, Inc.
+
+Mokavia Aerospaceacquired by Hi-Tek, Inc.
+
+Aerospace engineering and technical contract staffing
+
+Staffing & Human Capital
 
 ### Select Participants
 

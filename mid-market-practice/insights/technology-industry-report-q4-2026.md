@@ -121,7 +121,137 @@ Closed transactions in the six sectors, trailing 24 months.
 
 Ranked the leading privately owned sell-side M&A advisor in the world in PitchBook's Q2 2026 Global League Tables (Benchmark International).
 
-- **Sales we advised include.** voice and data cabling, audiovisual, and security systems; fire alarm, security, access control, and video surveillance systems; software design and development for mobile, Mac, and backend systems; dedicated leased lit fiber for schools, hospitals, and libraries; asset management consulting and risk software for power generators; build-to-print cables, harnesses, and electromechanical assemblies; test equipment for electromagnetic compatibility laboratories; indoor and outdoor display assemblies for school sports programs; precision optical components and coatings for laser systems; instrumentation and wireless sensing for satellites and launch vehicles; and 1 more in the full report.
+Clearline Networks, LLC
+
+Acquired By
+
+Zeus Fire and Security
+
+Clearline Networks, LLCacquired by Zeus Fire and Security
+
+Voice and data cabling, audiovisual, and security systems
+
+Systems Integration
+
+High Tech Solutions - Systems Group, Inc.
+
+Acquired By
+
+AI Fire
+
+High Tech Solutions - Systems Group, Inc.acquired by AI Fire
+
+Fire alarm, security, access control, and video surveillance systems
+
+Systems Integration
+
+MartianCraft, LLC
+
+Acquired By
+
+Walnut Capital Partners
+
+MartianCraft, LLCacquired by Walnut Capital Partners
+
+Software design and development for mobile, Mac, and backend systems
+
+Managed IT & Cloud
+
+EM3 Networks, LLC
+
+Acquired By
+
+Capcon Networks
+
+EM3 Networks, LLCacquired by Capcon Networks
+
+Dedicated leased lit fiber for schools, hospitals, and libraries
+
+Telecom & UCaaS
+
+Sheffield Scientific
+
+Acquired By
+
+TRM
+
+Sheffield Scientificacquired by TRM
+
+Asset management consulting and risk software for power generators
+
+Systems Integration
+
+Paragon Manufacturing Corp.
+
+Acquired By
+
+BlueRock Global Private Equity
+
+Paragon Manufacturing Corp.acquired by BlueRock Global Private Equity
+
+Build-to-print cables, harnesses, and electromechanical assemblies
+
+Electronics & Hardware
+
+A.T. Parker, Inc.
+
+Acquired By
+
+Assessimus Group GmbH
+
+A.T. Parker, Inc.acquired by Assessimus Group GmbH
+
+Test equipment for electromagnetic compatibility laboratories
+
+Electronics & Hardware
+
+Boostr, LLC
+
+Acquired By
+
+Balius Partners
+
+Boostr, LLCacquired by Balius Partners
+
+Indoor and outdoor display assemblies for school sports programs
+
+Electronics & Hardware
+
+Laser Lens Tek, Inc.
+
+Acquired By
+
+BlueRock Global Private Equity
+
+Laser Lens Tek, Inc.acquired by BlueRock Global Private Equity
+
+Precision optical components and coatings for laser systems
+
+Electronics & Hardware
+
+Invocon, Inc.
+
+Acquired By
+
+Cemtrex, Inc.
+
+Invocon, Inc.acquired by Cemtrex, Inc.
+
+Instrumentation and wireless sensing for satellites and launch vehicles
+
+Government Technology
+
+Complete Control Services, Inc.
+
+Acquired By
+
+Amtech Drives, Inc.
+
+Complete Control Services, Inc.acquired by Amtech Drives, Inc.
+
+Instrumentation, calibration, and controls integration
+
+Electronics & Hardware
 
 ### Who Is Buying
 
