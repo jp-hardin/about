@@ -788,3 +788,14 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .legal-toc { margin: 0 0 12px; padding-left: 20px; columns: 2; column-gap: 40px; font-size: .95rem; line-height: 1.9; }
 .legal-toc a { color: var(--gold-deep); }
 @media (max-width: 640px) { .gate { padding: 30px 20px 22px; } .gate-row { grid-template-columns: 1fr; gap: 0; } .legal-toc { columns: 1; } }
+
+/* Report subscription form (after a download) */
+.gate-inds { border: 0; margin: 4px 0 12px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
+.gate-inds legend { font-size: .8rem; font-weight: 600; color: var(--ink); margin: 0 0 8px; padding: 0; }
+.gate-inds .gate-check { margin-bottom: 8px; }
+.gate-report a { color: var(--gold-deep); }
+.gate-alt { display: flex; gap: 10px; margin-top: 10px; }
+.gate-skip { flex: 1 1 0; padding: 11px 10px; border: 1px solid var(--line); background: transparent; color: var(--ink); font: inherit; font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+.gate-skip:hover, .gate-skip:focus-visible { border-color: var(--gold); color: var(--gold-deep); }
+.gate-done a { color: var(--gold-deep); }
+@media (max-width: 640px) { .gate-inds { grid-template-columns: 1fr; } .gate-alt { flex-direction: column; } }

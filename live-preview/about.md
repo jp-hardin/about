@@ -114,6 +114,8 @@ Across our five core industries, we develop sector-focused insights examining ma
 
 This research supports informed discussions with business owners, helps identify transaction opportunities, and strengthens the investment positioning of companies preparing for a sale.
 
+[Explore Our Industry Research](https://mmt.benchmarkintl.com/insights/index.html)
+
 ## Key Facts
 
 | Who we are | The Middle Market team of Benchmark International, serving owners of companies with $50M–$500M in total enterprise value (TEV). |
@@ -125,7 +127,20 @@ This research supports informed discussions with business owners, helps identify
 | Firm | Headquartered in Tampa, FL, with over 300 employees across 15 global offices in the Americas, Europe, and Africa; ranked the #1 global M&A advisor for privately owned businesses (PitchBook Q2 2026 Global League Tables). |
 | Leadership | Jordan Houtz (Managing Director / Head of Middle Market), Jared Hardin (Managing Director), Alex Zykov (Transaction Director), Shannon Hess (Client Engagement Director). |
 | Deal team | Sunny Garten (Senior Deal Associate), Michael Wynn (Senior Deal Associate), Jason Lisiak, CFA (Research Associate), Alexandra Barr (Transaction Support Associate), Josiah Warren (Transaction Support Associate), Luke Ernst (Deal Analyst). |
+| Research | Quarterly M&A reports for each of our five industries, published on the Insights page. |
 | Contact | 813-771-6675 / mmt@benchmarkintl.com |
+
+## Current Industry Reports
+
+- [Industrials Q4 2026 M&A Industry Report](https://mmt.benchmarkintl.com/insights/industrial-industry-report-q4-2026.html)
+
+- [Business Services Q4 2026 M&A Industry Report](https://mmt.benchmarkintl.com/insights/business-services-industry-report-q4-2026.html)
+
+- [Consumer Q4 2026 M&A Industry Report](https://mmt.benchmarkintl.com/insights/consumer-industry-report-q4-2026.html)
+
+- [Healthcare Q4 2026 M&A Industry Report](https://mmt.benchmarkintl.com/insights/healthcare-industry-report-q4-2026.html)
+
+- [Technology Q4 2026 M&A Industry Report](https://mmt.benchmarkintl.com/insights/technology-industry-report-q4-2026.html)
 
 Information as of October 2026. See the [Important Disclosures](https://mmt.benchmarkintl.com/disclosures.html) .
 

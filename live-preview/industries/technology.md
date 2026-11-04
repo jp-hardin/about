@@ -8,7 +8,7 @@ Specialized M&A Advisory for Software, IT Services, and Technology Businesses.
 
 Advising owners of privately held technology companies on strategic sales, mergers, and qualifying controlling ownership transactions. We combine deep sector knowledge, sophisticated financial analysis, and disciplined transaction execution to maximize enterprise value and achieve shareholder objectives.
 
-Selected Transactions[Discuss Your Business](https://mmt.benchmarkintl.com/index.html#form)
+Selected Transactions[Discuss Your Business](https://mmt.benchmarkintl.com/index.html#form) [Q4 2026 Industry Report](https://mmt.benchmarkintl.com/insights/technology-industry-report-q4-2026.html)
 
 105+
 

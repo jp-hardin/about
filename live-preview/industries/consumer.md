@@ -8,7 +8,7 @@ Specialized M&A advisory for consumer products, food and beverage, distribution,
 
 Helping owners of privately held consumer businesses maximize enterprise value through differentiated strategic positioning, targeted buyer engagement, and disciplined transaction execution.
 
-Selected Transactions[Discuss Your Business](https://mmt.benchmarkintl.com/index.html#form)
+Selected Transactions[Discuss Your Business](https://mmt.benchmarkintl.com/index.html#form) [Q4 2026 Industry Report](https://mmt.benchmarkintl.com/insights/consumer-industry-report-q4-2026.html)
 
 80+
 

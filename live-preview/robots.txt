@@ -2,65 +2,86 @@
 User-agent: *
 Allow: /
 Disallow: /_build/
+Disallow: /insights/*.pdf
 
 User-agent: GPTBot
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: Claude-User
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: Googlebot
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: Applebot
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: Bingbot
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: Meta-ExternalAgent
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: Meta-ExternalFetcher
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: Amazonbot
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: DuckAssistBot
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: MistralAI-User
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: CCBot
 Allow: /
+Disallow: /insights/*.pdf
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /insights/*.pdf
 
 Sitemap: https://mmt.benchmarkintl.com/sitemap.xml

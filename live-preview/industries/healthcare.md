@@ -8,7 +8,7 @@ Specialized M&A Advisory for Healthcare Providers, Life Sciences, Medical Produc
 
 Advising privately held healthcare businesses on strategic sales, mergers, and qualifying controlling ownership transactions. We combine sector expertise, institutional-quality transaction preparation, and disciplined execution to maximize enterprise value and achieve shareholder objectives.
 
-Selected Transactions[Discuss Your Business](https://mmt.benchmarkintl.com/index.html#form)
+Selected Transactions[Discuss Your Business](https://mmt.benchmarkintl.com/index.html#form) [Q4 2026 Industry Report](https://mmt.benchmarkintl.com/insights/healthcare-industry-report-q4-2026.html)
 
 55+
 

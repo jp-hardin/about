@@ -1,6 +1,6 @@
 # Important Disclosures
 
-> Important disclosures for Benchmark International's Middle Market website.
+> Important disclosures for Benchmark International's Middle Market industry reports and website.
 
 Source: https://mmt.benchmarkintl.com/disclosures.html
 
@@ -8,7 +8,7 @@ Legal
 
 
 
-These disclosures apply to the content of this website.
+These disclosures apply to the Middle Market industry reports and to the content of this website.
 
 “Benchmark International” refers to the Benchmark International group of companies, which provide merger and acquisition advisory services to business owners through offices around the world. The Middle Market team is part of Benchmark International. Any reference to Benchmark International in this material includes its affiliated companies, as the context requires.
 
@@ -22,4 +22,4 @@ Company names, logos, and trademarks referenced in this material are the propert
 
 This material is only being distributed to, and only made available to, and directed at: (a) persons who are outside the United Kingdom; (b) persons in the United Kingdom who have professional experience in matters relating to investments falling within Article 19(5) of the UK Financial Services and Markets Act 2000 (Financial Promotion) Order 2005, as amended (the “Order”); (c) high net worth entities and other persons to whom it may otherwise lawfully be communicated falling within Article 49(2)(a) to (d) of the Order; or (d) any other person to whom this material may otherwise lawfully be communicated or caused to be communicated (all such persons in (b) to (d) together being referred to as “Relevant Persons”). This material must not be acted on or relied on by persons in the United Kingdom who are not Relevant Persons. In the United Kingdom, any investment or investment activity to which this material relates is only available to, and will be engaged with, Relevant Persons.
 
-[Back to Home](https://mmt.benchmarkintl.com/index.html)
+[Back to Insights](https://mmt.benchmarkintl.com/insights/index.html)
