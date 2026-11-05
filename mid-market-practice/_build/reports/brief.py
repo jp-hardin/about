@@ -475,7 +475,7 @@ JH_PHONE, JH_EMAIL = site.TEAM_CONTACT['jared-hardin']
 
 # Hand-written online copy (web.json in the report folder): for a deck page number, the summary shown online in place of
 # the automatic teaser. {"sections": {"7": {"lead": ["paragraph", ...], "points": [{"h": "Label", "b": "sentence"}, ...],
-# "subtitle": "optional, for a section that runs over two deck pages"}}}
+# "subtitle": "optional, for a section that runs over two deck pages", "tombstones": false to leave them out}}}
 _web = os.path.join(FOLDER, 'web.json')
 COPY = json.load(open(_web, encoding='utf-8')).get('sections', {}) if os.path.exists(_web) else {}
 MMT_DUMP = os.environ.get('MMT_DUMP')   # a file to write each section's deck content to, for writing web.json
@@ -797,6 +797,8 @@ def build_page(prs):
             # online each section is a teaser: the finding, a lead, the key points and the deals it names, with a
             # download button; the charts, graphics and full tables stay in the PDF
             tombs = benchmark_tombs(pg['web'], root, pg.get('links', ()))
+            if COPY.get(str(pg['num']), {}).get('tombstones') is False:
+                tombs = []          # web.json can leave a section's tombstones out (the featured deal)
             body, adds = teaser(readable(polish(pg['web'])), plain(pg['subtitle'] or ''), bm=bool(tombs))
             if MMT_DUMP:
                 with open(MMT_DUMP, 'a', encoding='utf-8') as fh:
