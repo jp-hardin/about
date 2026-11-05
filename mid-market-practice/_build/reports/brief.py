@@ -473,6 +473,22 @@ def to_markdown(pages, lead, byline, segs):
 
 JH_PHONE, JH_EMAIL = site.TEAM_CONTACT['jared-hardin']
 
+# Hand-written online copy (web.json in the report folder): for a deck page number, the summary shown online in place of
+# the automatic teaser. {"sections": {"7": {"lead": ["paragraph", ...], "points": [{"h": "Label", "b": "sentence"}, ...]}}}
+_web = os.path.join(FOLDER, 'web.json')
+COPY = json.load(open(_web, encoding='utf-8')).get('sections', {}) if os.path.exists(_web) else {}
+MMT_DUMP = os.environ.get('MMT_DUMP')   # a file to write each section's deck content to, for writing web.json
+
+
+def copy_html(c):
+    def point(p):
+        head = f'<strong>{esc(p["h"], quote=False)}.</strong> ' if p.get('h') else ''
+        return f'<li>{head}{esc(p["b"], quote=False)}</li>'
+    out = [f'<p>{esc(x, quote=False)}</p>' for x in c.get('lead', [])]
+    if c.get('points'):
+        out.append('<ul class="wpoints">' + ''.join(point(p) for p in c['points']) + '</ul>')
+    return '\n'.join(out)
+
 # Benchmark International transactions named in the deck (linked to their announcements) are shown online as tombstones,
 # in the same format as the rest of the site, so the page matches the PDF: names from deals.json (seller and buyer as named
 # in the announcement, and the alt text of each company's logo in the decks), logos from the decks, and the description
@@ -777,6 +793,18 @@ def build_page(prs):
             # download button; the charts, graphics and full tables stay in the PDF
             tombs = benchmark_tombs(pg['web'], root, pg.get('links', ()))
             body, adds = teaser(readable(polish(pg['web'])), plain(pg['subtitle'] or ''), bm=bool(tombs))
+            if MMT_DUMP:
+                with open(MMT_DUMP, 'a', encoding='utf-8') as fh:
+                    fh.write(f'\n\n===== SECTION {pg["num"]} | {web_title(pg)} | chapter: {ctitle}\n'
+                             f'DECK SUBTITLE (shown online above the summary): {plain(pg["subtitle"] or "")}\n\n'
+                             f'--- FULL DECK PAGE ---\n{body_md(pg["body"])}\n\n--- NOTES AND SOURCES ---\n{body_md(pg["foot"] or "")}\n\n'
+                             f'--- CURRENT ONLINE SUMMARY ---\n{body_md(body)}\n'
+                             + ('--- TOMBSTONES SHOWN (Benchmark deals, keep out of the copy) ---\n' if tombs else ''))
+            copy = COPY.get(str(pg['num']))
+            if copy:
+                # hand-written copy for this section (web.json); the headline figures stay above it
+                stats = re.search(r'<div class="wstats">.*?</div>\s*</div>', body, re.S)
+                body = (stats.group(0) + '\n' if stats else '') + copy_html(copy)
             if tombs:
                 body += '\n<div class="tomb-grid tomb-grid--report">' + ''.join(tombs) + '</div>'
             pg['teaser'] = body
