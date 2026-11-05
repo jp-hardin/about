@@ -28,74 +28,79 @@ Sectors: Provider Services; Life Sciences & Diagnostics; Medical Products & Dist
 
 Strategic buyers are setting the pace in 2026 while private equity completes fewer healthcare services transactions.
 
-- **M&A market dynamics.** Private equity completed an estimated 337 healthcare services transactions in the first half, a pace of 674 for the year and the lowest annual count since 2017 (PitchBook via Fierce Healthcare).
-- Strategic buyers carried more of the activity: medtech deal value reached $36.5 billion in the first half (PwC via MedTech Dive), and hospitals and health systems announced 56 transactions through September, 16 of them in the third quarter (Kaufman Hall).
-- Biopharma deal value reached $130 billion in six months, almost matching the total for all of 2025 (IQVIA).
-- **Reimbursement and policy.** Medicare has proposed 2027 physician conversion factors of $33.17 and $32.84, reductions of 1.19% and 1.68%, with the final rule pending (CMS).
-- Hospital outpatient, surgery center, and home health rates are proposed to rise 2.4% (CMS outpatient rule; CMS home health), and Medicare Advantage rates rise 2.48% (CMS rate notice).
-- Medicaid work requirements and six-month eligibility reviews for expansion adults begin in January 2027 (CMS).
-- **Financing and macro backdrop.** The Federal Reserve raised its target range to 3.75% to 4.00% on September 16 (Federal Reserve), and the 10-year Treasury yielded 5.09% on October 16 (US Treasury).
+Operating companies, health systems, and the largest medtech and biopharma acquirers are carrying 2026 deal activity, and operating companies are winning auctions against sponsors while senior debt prices at 7.8%. Private equity’s healthcare services count, by contrast, is tracking to its lowest year since 2017.
+
+The policy calendar weighs on valuations as much as financing does: Medicaid redeterminations begin in January, so a Medicaid-weighted provider should expect diligence on enrollment attrition, and negotiated Medicare drug prices cut Guardian Pharmacy’s growth to 2% in one quarter.
+
+- **Sponsor Volume.** Private equity completed an estimated 337 healthcare services transactions in the first half of 2026, a pace of 674 for the year and the lowest annual count since 2017 (PitchBook via Fierce Healthcare).
+- **Strategic Activity.** Medtech deal value reached $36.5 billion in the first half (PwC via MedTech Dive), biopharma deal value reached $130 billion in six months, almost matching all of 2025 (IQVIA), and hospitals and health systems announced 56 transactions through September, 16 of them in the third quarter (Kaufman Hall).
+- **2027 Reimbursement.** Medicare has proposed 2027 physician conversion factors of $33.17 and $32.84, reductions of 1.19% and 1.68%, while outpatient, surgery center, and home health rates are proposed to rise 2.4% and Medicare Advantage rates rise 2.48% (CMS). Medicaid work requirements and six-month eligibility reviews for expansion adults begin in January 2027 (CMS).
+- **Financing Costs.** The Federal Reserve raised its target range to 3.75% to 4.00% on September 16, and the 10-year Treasury yielded 5.09% on October 16 (Federal Reserve; US Treasury). In a small sample of buyout loans, direct-lender spreads averaged 509 basis points in the second quarter against 474 in the first (PitchBook).
+- **Pricing and Competition.** Private equity paid a median 13.6x EBITDA for healthcare services companies in 2025, on median target revenue of $162.5 million (PitchBook via Becker’s ASC Review), while completed Middle Market transactions across industries averaged 7.0x (GF Data via ACG) and 87% of sales above $5 million drew three or more offers (IBBA and M&A Source).
+- **Demand and Regulation.** National health spending grew 6.8% in the year to July 2026 to 18.4% of GDP (Altarum), and CMS projects nearly $9.0 trillion by 2034 (CMS). California now requires transaction notices from private equity groups and management services organizations, and Maine’s 180-day notice and approval regime begins January 1, 2027 (Nixon Peabody; Foley & Lardner).
 
 ### Historical Context
 
 Health spending has grown steadily since 2016, and hospital transaction counts have recovered from the 2025 low.
 
-Spending on care has grown annually for a decade, and transaction counts have moved with financing costs and policy.
+US national health expenditures have risen in every year of the series, from $3.3 trillion in 2016 to $5.3 trillion in 2024, or 18.0% of GDP, and CMS projects $5.7 trillion for 2025 and $6.0 trillion for 2026 (CMS). Hospital and health system transaction counts have been far less steady, moving with financing costs and policy: they fell to a series low in 2025 and have since recovered, with the first three quarters of 2026 already ahead of the full prior year (Kaufman Hall).
 
-National health expenditures reached $5.3 trillion in 2024, or 18.0% of GDP, against $3.3 trillion in 2016 (CMS).
-
-- CMS projects average annual spending growth of 5.4% from 2025 to 2034, against 4.1% for the economy, which would take spending to $9.0 trillion (Committee for a Responsible Federal Budget).
-- **National health expenditures.** $ trillions; 2025 and 2026 are CMS projections. Source: CMS; CRFB. Up from $3.3T in 2016 to $6.0T in 2026.
-- Hospitals and health systems announced 46 transactions in 2025, the fewest in the series, against 117 in 2017 (Kaufman Hall).
-- The first three quarters of 2026 produced 56 announced hospital transactions: 22 in the first quarter, 18 in the second, and 16 in the third (Kaufman Hall).
-- Private equity completed 1,217 healthcare services transactions in 2021 and an estimated 747 in 2025 (PitchBook).
-- **Announced hospital and health system transactions.** Number per year; 2026 covers the first three quarters. Source: Kaufman Hall. Down from 117 in 2017 to 56 in 9M 2026, with a low of 46 in 2025.
+- **Spending Outlook.** CMS projects average annual health spending growth of 5.4% from 2025 to 2034, against 4.1% for the economy, which would take national health expenditures to $9.0 trillion (Committee for a Responsible Federal Budget).
+- **Hospital Transactions.** Announced hospital and health system transactions fell from 117 in 2017 to 49 in 2021, recovered to 72 in 2024, and then dropped to 46 in 2025, the fewest in the series (Kaufman Hall).
+- **2026 Recovery.** The first three quarters of 2026 produced 56 announced hospital transactions, with 22 in the first quarter, 18 in the second, and 16 in the third, so the year has already passed the 2025 total (Kaufman Hall).
+- **Sponsor Volume.** Private equity completed 1,217 healthcare services transactions in 2021 and an estimated 747 in 2025, which leaves sponsor activity well below its earlier level even before the 2026 slowdown (PitchBook).
 
 ### Market Fundamentals
 
 Employment, capital investment, and drug approvals have grown since 2021, which supports demand across the four sectors.
 
-- **Healthcare employment.** All employees, healthcare, millions, monthly, seasonally adjusted. Source: Bureau of Labor Statistics via FRED. Up 16% since September 2021.
-- Healthcare employed 18.55 million people in September 2026, 16.1% more than in September 2021 and 2.0% more than a year earlier.
-- Health care and social assistance had 1,359,000 open positions in August (Bureau of Labor Statistics JOLTS). Buyers test clinician turnover as closely as payer mix.
-- **Facility construction.** Total construction spending on healthcare, $ billions at an annual rate, monthly. Source: US Census Bureau via FRED. Up 49% since September 2021, peaking in April 2025.
-- Healthcare construction ran at an annual rate of $75.8 billion in August 2026, 49% above September 2021 in nominal dollars.
-- Among hospital and health system executives surveyed, 41% plan to cut capital spending in 2026 (Sage Growth Partners via HFMA), which shifts spending from new construction toward acquisition.
-- **FDA drug approvals.** Novel drugs approved by the FDA Center for Drug Evaluation and Research, by year. Source: FDA; RAPS: 18 is highest at 59, followed by 23 at 55 and 20 at 53; 16 is lowest at 22.
+Healthcare employment, facility construction, and novel drug approvals all stand above their 2021 levels, which supports demand in provider services, life sciences and diagnostics, medical products and distribution, and pharmacy and healthcare services. The constraints have moved to labor and capital budgets: clinician supply is tight enough that buyers test turnover as closely as payer mix, and hospital executives planning capital cuts shift spending from new construction toward acquisition.
+
+- **Healthcare Employment.** Healthcare employed 18.55 million people in September 2026, 16.1% more than in September 2021 and 2.0% more than a year earlier, with the monthly series rising from 16.0 million and pausing only briefly in early 2026 (Bureau of Labor Statistics via FRED).
+- **Open Positions.** Health care and social assistance had 1,359,000 open positions in August (Bureau of Labor Statistics JOLTS), and buyers now test clinician turnover as closely as payer mix when they assess a provider.
+- **Facility Construction.** Healthcare construction ran at an annual rate of $75.8 billion in August 2026, 49% above September 2021 in nominal dollars, after peaking at $79 billion in April 2025 and easing to $74 billion in early 2026 (US Census Bureau via FRED).
+- **Capital Budgets.** Among hospital and health system executives surveyed, 41% plan to cut capital spending in 2026 (Sage Growth Partners via HFMA), which shifts spending from new construction toward acquisition.
+- **Drug Approvals.** The FDA approved 46 novel drugs in 2025 and 46 in 2026 through October 9, against a low of 37 in 2022 and a high of 59 in 2018 (FDA; RAPS).
+- **Outsourced Research.** Outsourced research has recovered alongside approvals, with IQVIA booking $1.22 of new work for each dollar of revenue in the second quarter (IQVIA).
 
 ### Healthcare Services Deal Volume
 
 Private equity completed 1,217 healthcare services transactions in 2021 and is on pace for 674 in 2026, the lowest annual count since 2017.
 
-- **Steady platform building.** Private equity completed between 490 and 684 healthcare services transactions a year, and hospitals announced 117 transactions in 2017 and 92 in 2019.
-- **The peak.** Volume rose to 829 in 2020 and 1,217 in 2021, the highest in the series.
-- **Three years of decline.** Annual volume fell from 998 to 682, and the Medicare conversion factor fell from $34.61 in 2022 to $32.35 in 2025 before rising to $33.40 in 2026 (AMA).
-- **Strategic buyers lead.** Volume recovered to an estimated 747 in 2025. The first half of 2026 produced an estimated 337, with physician practice deals down 46% on pace (PitchBook), while hospitals announced 56 transactions through September (Kaufman Hall).
-- **US private equity healthcare services transactions.** Announced or closed transactions per year. Source: PitchBook Q4 2025 and Q2 2026 Healthcare Services Reports; 2026 pace from PitchBook via Fierce Healthcare. Up from 490 in 2017 to 674 in 2026*, with a high of 1,217 in 2021.
+Sponsor volume in healthcare services has run a full cycle since 2017: steady platform building, a 2021 peak, three years of decline as the Medicare physician conversion factor fell, a partial recovery in 2025, and a 2026 pace that is the lowest since 2017. Physician practice deals are down 46% on pace, while hospitals and other strategic buyers have kept transaction activity going (PitchBook; Kaufman Hall).
+
+- **Steady Platform Building.** From 2017 to 2019, private equity completed between 490 and 684 healthcare services transactions a year, while hospitals announced 117 transactions in 2017 and 92 in 2019 (PitchBook; Kaufman Hall).
+- **The 2021 Peak.** Volume rose to 829 in 2020 and then to 1,217 in 2021, the highest annual count in the PitchBook series and the reference point against which the later decline is measured (PitchBook).
+- **Three Years of Decline.** Annual volume fell from 998 in 2022 to 682 in 2024, while the Medicare conversion factor fell from $34.61 in 2022 to $32.35 in 2025 before rising to $33.40 in 2026 (AMA).
+- **Strategic Buyers Lead.** Volume recovered to an estimated 747 in 2025, but the first half of 2026 produced an estimated 337, with physician practice deals down 46% on pace (PitchBook), while hospitals announced 56 transactions through September (Kaufman Hall).
+- **Estimates and Revisions.** The 2026 figure of 674 annualizes the first-half estimate, the 2025 count is itself an estimate, and PitchBook restates earlier years as late-reported transactions are added (PitchBook).
 
 ## 3. Our View
 
 Strategic buyers hold the advantage into 2027, and the owners who do best will have answered the policy questions before a buyer asks them.
 
-- **The house view.** Operating companies and the largest platforms are buying through 7.8% senior debt and 500-basis-point spreads because they pay from cash flow, and hospital transactions are tracking to their most active year since 2020 while private equity’s healthcare services count is at a 2017 pace.
-- We expect that division to hold through the first half of 2027. Sponsor volume returns once the September rate increase is absorbed and the 2027 Medicare and Medicaid rules are final, and the 2021 vintage of platforms still waiting for an exit will bring supply to market before then.
-- For an owner, the next twelve months favor a process built around strategic buyers, launched with the payer-mix and enrollment analysis already done and timed ahead of the sponsor exits that will crowd the second half of 2027.
-- **Strategic Buyers.** Operating companies bought seven of the nine named sellers in Benchmark’s last 24 months of healthcare closings, HCA has added about 70 urgent care centers this year, and Danaher, Merck KGaA, and Labcorp are paying for consumables and testing volume.
-- **Reimbursement Dates.** The 2027 physician fee schedule proposes conversion factor cuts of 1.2% to 1.7%, Medicaid work requirements, and six-month redeterminations start in January, and laboratory fee cuts of up to 15% a year resume unless the RESULTS Act passes.
-- **Adjusted Multiples.** On company-reported adjusted EBITDA the listed reference set trades at 14.3x, with provider services at 14.2x, medical products at 10.7x and pharmacy services at 15.0x, all within about a turn of a year ago, while life sciences and diagnostics re-rated to 18.7x.
-- **Supply.** PitchBook’s healthcare analyst expects mean reversion from the 2026 low, and AMN and Thermo Fisher both described fuller pipelines on their second-quarter calls. Sponsor exits are running 26% below last year’s pace, which builds a backlog of platforms waiting to sell.
+Operating companies and the largest platforms are buying through 7.8% senior debt and 500-basis-point spreads because they pay from cash flow, while private equity’s healthcare services count runs at a 2017 pace. Benchmark International expects that division to hold through the first half of 2027, with sponsor volume returning once the September rate increase is absorbed and the 2027 Medicare and Medicaid rules are final.
+
+For an owner, the next twelve months favor a process built around strategic buyers, launched with the payer-mix and enrollment analysis already done and timed ahead of the sponsor exits that will crowd the second half of 2027.
+
+- **Strategic Buyers.** Operating companies bought seven of the nine named sellers in Benchmark International’s last 24 months of healthcare closings, HCA has added about 70 urgent care centers this year, and Danaher, Merck KGaA, and Labcorp are paying for consumables and testing volume. A buyer list that leads with strategics and brings in sponsors for competitive tension suits a 2027 process.
+- **Reimbursement Dates.** The 2027 physician fee schedule proposes conversion factor cuts of 1.2% to 1.7%, Medicaid work requirements and six-month redeterminations start in January, and laboratory fee cuts of up to 15% a year resume unless the RESULTS Act passes. An owner who brings a line-by-line analysis of these items to the first meeting stays in control of the valuation conversation.
+- **Adjusted Multiples.** The listed reference set trades at 14.3x adjusted EBITDA, with provider services at 14.2x, medical products at 10.7x, pharmacy services at 15.0x, and life sciences and diagnostics re-rated to 18.7x. Private healthcare services deals cleared a 13.6x median in 2025 against 5.8x for $5 million to $50 million businesses, a gap explained by scale, contracted revenue, and payer mix.
+- **Platform Supply.** PitchBook’s healthcare analyst expects mean reversion from the 2026 low, and AMN and Thermo Fisher both described fuller pipelines on their second-quarter calls. Sponsor exits are running 26% below last year’s pace, which builds a backlog of platforms waiting to sell, and owners who launch in the first half of 2027 meet buyers before that backlog clears.
+- **What We Are Watching.** Integer shareholders vote on the KKR offer and the FOMC meets in late October; final CY2027 physician fee schedule, outpatient, and home health rules follow; January 1, 2027 brings Medicaid work requirements, Maine’s 180-day notice regime, and PAMA lab cuts absent legislation; and mid-January full-year counts from Kaufman Hall and PitchBook set the 2026 baseline.
 
 ## 4. Sector by Sector
 
-Buyers and drivers differ by sector, and this page covers providers, laboratories, and research services.
+Buyers and drivers differ by sector across providers, laboratories, research services, medical products, distribution, pharmacy, and staffing.
 
-- **Provider services.** Health systems are buying access points and sponsors are trading platforms.
-- **Subsectors we cover.** Urgent care, Optometry & eye care, Pediatric & physical therapy, Multi-specialty medical groups, Emergency medical services, Renal care.
-- **Key trends.** The 100 largest urgent care operators hold 6,056 of the country’s 14,655 centers, and 55.9% of those Top 100 locations are affiliated with a hospital (Journal of Urgent Care Medicine).
-- HCA Healthcare acquired about 70 urgent care centers in three 2026 transactions: CommunityMed, Urgent Care Group, and Texas MedClinic (Becker’s ASC Review; Healthcare Dive).
-- Care in the home drew some of the largest sponsor-led provider transactions of the year, including General Atlantic’s purchase of TEAM Services Group at about $3 billion (LevinPro) and Kinderhook’s agreement to take Enhabit private at about $1.1 billion (Enhabit).
-- **Active buyers.** HCA Healthcare, MyEyeDr., U.S. Physical Therapy, Addus HomeCare, Concentra, Kinderhook, and Universal Health Services.
-- **Listed reference companies.** HCA Healthcare, Tenet Health, U.S. Physical Therapy, DaVita Kidney Care, Addus HomeCare, Pennant Group, Acadia Healthcare, LifeStance Health, Privia Health, Concentra, Ensign Group.
+Buyer sets and demand drivers differ across the four sectors. In provider services, health systems are buying access points and sponsors are trading platforms; in life sciences and diagnostics, research spending has turned up and laboratories are selling to the national networks; in medical products and distribution, procedure demand is firm and consumables are outgrowing capital equipment; and in pharmacy and healthcare services, drug pricing reform is reshaping pharmacy while staffing returns to growth.
+
+- **Urgent Care Consolidation.** The 100 largest urgent care operators hold 6,056 of the country’s 14,655 centers, and 55.9% of those locations are affiliated with a hospital (Journal of Urgent Care Medicine). HCA Healthcare acquired about 70 centers in three 2026 transactions: CommunityMed, Urgent Care Group, and Texas MedClinic (Becker’s ASC Review; Healthcare Dive).
+- **Home and Physician Care.** General Atlantic bought TEAM Services Group at about $3 billion (LevinPro), and Kinderhook agreed to take Enhabit private at about $1.1 billion (Enhabit). Independent practice continues to shrink, with 42.2% of physicians in physician-owned practices against 60.1% in 2012 (AMA via Medical Economics).
+- **Laboratory Demand.** Quest grew revenue 10.2% in the second quarter on 13.1% more requisitions (Quest Diagnostics), and Labcorp agreed acquisitions with total consideration of $528.6 million in the first half (Labcorp Form 10-Q). Medicare laboratory fee cuts of up to 15% a year could resume in 2027 unless Congress passes the RESULTS Act (ADLM).
+- **Research and Tools.** IQVIA’s net bookings rose 19% (IQVIA) and Medpace grew revenue 17.2% (Medpace), while sponsor-backed networks such as Headlands Research and Summit Clinical Research continue to buy clinical research sites, and Thermo Fisher, Danaher, Agilent, and Merck KGaA buy in tools and reagents.
+- **Products and Distribution.** Stryker grew 9.0% organically in the second quarter, and Steris grew healthcare consumables 9% against 1% for capital equipment (Stryker; Steris). Platinum Equity agreed to buy Owens & Minor’s products business, and Apollo bought a 13% interest in McKesson’s medical-surgical unit for $1.25 billion (Owens & Minor; McKesson).
+- **Pharmacy and Staffing.** US net medicine spending reached $606 billion in 2025, up 10.6% (IQVIA Institute), yet negotiated Medicare prices held Guardian’s revenue growth to 2% while it served 8% more residents (Guardian Pharmacy Services). BrightSpring’s pharmacy solutions revenue grew 22% to $3.4 billion, and healthcare staffing is forecast to grow 1% to $39.0 billion in 2026 (BrightSpring; Staffing Industry Analysts).
 
 ## 5. Deals and Buyers
 
@@ -103,35 +108,29 @@ Buyers and drivers differ by sector, and this page covers providers, laboratorie
 
 The listed reference companies in each sector, and the private platforms, sponsors, and strategic buyers acquiring founder-owned businesses.
 
-- **Provider services: listed companies.** HCA Healthcare, Tenet Health, U.S. Physical Therapy, DaVita Kidney Care, Addus HomeCare, Pennant Group, Acadia Healthcare, LifeStance Health, Privia Health, Concentra, Ensign Group.
-- **Provider services: platforms, sponsors and health systems.** HCA Healthcare, MyEyeDr., EyeCare Partners, Kinderhook Industries, Universal Health Services, ACES.
-- **MKH Capital Partners: grant Avenue Capital.** Global Medical Response.
-- **Life sciences & diagnostics: listed companies.** Labcorp, Quest Diagnostics, Thermo Fisher Scientific, Danaher, Bio-Techne, IQVIA, Medpace, ICON, Charles River Laboratories.
-- **Life sciences & diagnostics: research networks and strategic buyers.** Headlands Research, Summit Clinical Research: Fortrea: Resonetics, Agilent Technologies, Merck KGaA, Leica Biosystems.
-- **Medical products & distribution: listed companies.** Stryker, Steris, Teleflex, Henry Schein, Dentsply Sirona, Envista, Zimmer Biomet, Integer Holdings, Solventum, Viemed Healthcare.
-- **Medical products & distribution: sponsors and product strategics.** Mitsui Chemicals.
-- **Medical products & distribution: aspen Surgical.** KKR, Platinum Equity, Hanger, Apollo, Medline, Intersurgical.
-- **Pharmacy & healthcare services: listed companies.** Option Care Health, BrightSpring Health Services, Guardian Pharmacy Services, McKesson, Cencora, Cardinal Health, CVS Health, AMN Healthcare.
-- **Pharmacy & healthcare services: pharmacy, staffing and logistics buyers.** Knox Lane, JLL Partners: Soleo Health.
-- **Pharmacy & healthcare services: genieRx Holdings.** Strata Critical Medical.
-- **Pharmacy & healthcare services: veloSource (Interlock Equity).** Care Career, Elite365 Family of Brands.
+Buyers of founder-owned healthcare businesses fall into two groups in each sector: the listed reference companies used in the valuation sections, and the private platforms, sponsors, health systems, and strategic buyers named in 2026 transactions. HCA Healthcare appears in both groups in provider services, and the private buyer lists mix financial sponsors such as KKR, Apollo, and Knox Lane with operating companies such as Merck KGaA, Medline, and Leica Biosystems.
+
+- **Provider Services.** The listed reference companies are HCA Healthcare, Tenet Health, U.S. Physical Therapy, DaVita Kidney Care, Addus HomeCare, Pennant Group, Acadia Healthcare, LifeStance Health, Privia Health, Concentra, and Ensign Group. Private buyers include HCA Healthcare, MyEyeDr., EyeCare Partners, Kinderhook Industries, Universal Health Services, ACES, MKH Capital Partners, Grant Avenue Capital, and Global Medical Response.
+- **Life Sciences and Diagnostics.** The listed reference companies are Labcorp, Quest Diagnostics, Thermo Fisher Scientific, Danaher, Bio-Techne, IQVIA, Medpace, ICON, and Charles River Laboratories. Research networks and strategic buyers include Headlands Research, Summit Clinical Research, Worldwide Clinical Trials, Fortrea, Resonetics, Agilent Technologies, Merck KGaA, and Leica Biosystems.
+- **Medical Products and Distribution.** The listed reference companies are Stryker, Steris, Teleflex, Henry Schein, Dentsply Sirona, Envista, Zimmer Biomet, Integer Holdings, Solventum, and Viemed Healthcare. Sponsors and product strategics include Mitsui Chemicals, Aspen Surgical, KKR, Platinum Equity, Hanger, Apollo, Medline, Intersurgical, and Montagu and Kohlberg.
+- **Pharmacy and Healthcare Services.** The listed reference companies are Option Care Health, BrightSpring Health Services, Guardian Pharmacy Services, McKesson, Cencora, Cardinal Health, CVS Health, and AMN Healthcare. Pharmacy, staffing, and logistics buyers include Knox Lane, JLL Partners, Soleo Health, GenieRx Holdings, Strata Critical Medical, VeloSource (Interlock Equity), Care Career, and Elite365 Family of Brands.
 
 ### Recent Transactions
 
 Six transactions announced or completed between June and September 2026, with at least one from each sector.
 
-**Transactions in this section**
+The six transactions span all four sectors and show the main routes to a sale this year: a strategic buyer paying a premium for recurring consumable demand, a listed operator buying personal care scale at about one times revenue, a sponsor-built pathology roll-up sold to a strategic, a take-private of a contract manufacturer, and two sales whose terms were shaped by the seller’s balance sheet or by antitrust review. Benchmark International did not advise on these transactions.
 
-- MyEyeDr. agrees to buy the optometry business of EyeCare Partners, September 2026
-- Addus HomeCare agrees to buy AccentCare’s personal care division, September 2026
-- Merck KGaA agrees to acquire Bio-Techne, June 2026
-- Leica Biosystems agrees to buy StatLab from Audax and Linden, July 2026
-- KKR agrees to take Integer Holdings private, August 2026
-- Knox Lane completes its purchase of Cross Country Healthcare, July 2026
+- **MyEyeDr. and EyeCare Partners.** MyEyeDr. agreed in September to buy the optometry business of EyeCare Partners, with more than 300 offices, and EyeCare Partners will apply the proceeds to debt reduction (Eyewire News; EyeCare Partners). A sponsor-backed platform sold a division to a competitor to repair its balance sheet, and the consolidator with capacity set the terms.
+- **Addus and AccentCare.** Addus HomeCare will pay about $275 million for AccentCare’s personal care operations outside New York, which have about $280 million of annual revenue in ten states (Addus HomeCare). About one times revenue, paid in cash by a listed operator, is the current reference for personal care scale.
+- **Merck KGaA and Bio-Techne.** Merck KGaA agreed in June to acquire Bio-Techne at an enterprise value of $11.3 billion, with closing expected by early 2027 (Bio-Techne). The strategic paid a 36% premium for reagents and instruments with recurring consumable demand.
+- **Leica and StatLab.** Leica Biosystems bought StatLab, a maker of anatomic pathology consumables with about $250 million of 2025 revenue, from Audax and Linden, closing on September 28 (Danaher; PE Professional). Its sponsors built it through nine add-on acquisitions in five years, a path open to other pathology suppliers.
+- **KKR and Integer.** KKR agreed in August to take Integer Holdings private at $127 a share, an enterprise value of $5.7 billion and a 51.8% premium to the undisturbed price, with closing expected by year end (Integer; Medical Design & Outsourcing). A 52% premium for contract device manufacturing supports demand for smaller manufacturers as add-ons.
+- **Knox Lane and Cross Country.** Knox Lane completed its $437 million purchase of Cross Country Healthcare at $13.25 a share on July 21, after Aya Healthcare ended an agreement at $18.61 following an extended FTC review (Fierce Healthcare; Staffing Industry Analysts). The delay cost the seller $5.36 a share, so antitrust timing belongs in process design for mergers of scale.
 
 ### Our Transactions
 
-Twelve transactions closed in the trailing 24 months across the four sectors, and seven of the nine named buyers were operating companies.
+Twelve transactions closed in the trailing 24 months across the four sectors, and operating companies bought seven of the nine named sellers.
 
 **12**
 
@@ -145,23 +144,122 @@ sellers shown are life sciences and diagnostics companies
 
 sellers shown were bought by an operating company
 
-- **Trailing 24 months.** The world’s #1 privately owned sell-side M&A advisor, based on PitchBook’s Q2 2026 Global League Tables (Benchmark International).
+Benchmark International advised the seller on twelve transactions that closed in provider services, life sciences and diagnostics, medical products and distribution, and pharmacy and healthcare services over the trailing 24 months, nine of which are shown. The buyer mix matches the wider healthcare market described in the report: operating companies acquired seven of the nine sellers shown, and financial buyers acquired the other two.
 
-**Transactions in this section**
+- **Sector Mix.** Four of the nine sellers shown are life sciences and diagnostics companies, three are in pharmacy and healthcare services, and one each comes from provider services and from medical products and distribution.
+- **Buyer Mix.** Seven of the nine sellers shown were bought by an operating company, one by a private equity firm, and one by a group of private investors, consistent with strategic buyers setting the pace in healthcare.
+- **Seller Profile.** The sellers are specialized businesses with a defined service or product niche, including clinical and executive staffing, testing and certification, contract manufacturing, dental devices, and in-home care for Medicaid waiver participants.
+- **Advisor Standing.** Benchmark International is the world’s #1 privately owned sell-side M&A advisor, based on PitchBook’s Q2 2026 Global League Tables (Benchmark International).
 
-- New Horizon Medical Solutions acquired Precise Bioscience (amniotic membrane allografts for wound care and sports medicine)
-- Aavin Private Equity acquired Formtech (contract manufacturer of nutritional supplements)
-- Relentless Health acquired Fast Response On Site Testing (mobile occupational health testing)
-- Scientific Safety Alliance acquired CEPRO (certification testing for compounding pharmacies, laboratories, and bio-containment facilities)
-- Solmetex acquired ReLeaf (patent holder and brand owner of ReLeaf hands-free dental suction devices)
-- Amivie acquired Fosterbridge (in-home care for Ohio Medicaid waiver participants)
-- and 3 more in the full report
+Precise Bioscience, LLC
+
+Acquired By
+
+New Horizon Medical Solutions
+
+Precise Bioscience, LLCacquired by New Horizon Medical Solutions
+
+Amniotic membrane allografts for wound care and sports medicine
+
+Life Sciences & Diagnostics
+
+Formulation Technology Incorporated
+
+Acquired By
+
+AAVIN Private Equity
+
+Formulation Technology Incorporatedacquired by AAVIN Private Equity
+
+Contract manufacturer of nutritional supplements
+
+Life Sciences & Diagnostics
+
+Fast Response On-Site Testing, Inc.
+
+Acquired By
+
+Relentless Health, Inc.
+
+Fast Response On-Site Testing, Inc.acquired by Relentless Health, Inc.
+
+Mobile occupational health testing
+
+Life Sciences & Diagnostics
+
+Critical Environments Professionals
+
+Acquired By
+
+Scientific Safety Alliance
+
+Critical Environments Professionalsacquired by Scientific Safety Alliance
+
+Certification testing for compounding pharmacies, laboratories, and bio-containment facilities
+
+Life Sciences & Diagnostics
+
+Dental Holdings, LLC
+
+Acquired By
+
+Solmetex, LLC
+
+Dental Holdings, LLCacquired by Solmetex, LLC
+
+Patent holder and brand owner of ReLeaf hands-free dental suction devices
+
+Medical Products & Distribution
+
+Fosterbridge, Inc.
+
+Acquired By
+
+Amvie
+
+Fosterbridge, Inc.acquired by Amvie
+
+In-home care for Ohio Medicaid waiver participants
+
+Provider Services
+
+Medical Temps, Inc
+
+Acquired By
+
+Health Advocates Network
+
+Medical Temps, Incacquired by Health Advocates Network
+
+Nurse staffing for healthcare facilities in northern Louisiana
+
+Pharmacy & Healthcare Services
+
+The Brooks Group
+
+Acquired ByPrivate InvestorsThe Brooks Groupacquired by Private Investors
+
+Training, research, and instructional design for pharmaceutical, biotech, and device companies
+
+Pharmacy & Healthcare Services
+
+Fitzgerald Enterprises
+
+Acquired By
+
+Pioneers Operations
+
+Fitzgerald Enterprisesacquired by Pioneers Operations
+
+Healthcare executive and clinical placement
+
+Pharmacy & Healthcare Services
 
 ## 6. Valuations and Public Markets
 
 ### Valuation Multiples by Sector
 
-Life sciences and diagnostics re-rated from 13.3x to 18.7x adjusted EBITDA in a year; provider services, medical products, and pharmacy services moved within about one turn.
+Life sciences and diagnostics re-rated from 13.3x to 18.7x adjusted EBITDA in a year; provider services, medical products, and pharmacy services moved by 1.3 turns or less.
 
 **13.6x**
 
@@ -175,67 +273,72 @@ Average for completed middle-market transactions across industries, second quart
 
 Multiple paid for businesses of $5 million to $50 million across industries, second quarter of 2026 ([IBBA and M&A Source](https://www.ibba.org/market-pulse-q2-2026-survey-results/))
 
-- **Enterprise value to trailing adjusted EBITDA, median by subsector.** Enterprise value at October 16, 2026 (a year ago: September 30, 2025) over adjusted EBITDA for the twelve months to June 2026 (June 2025).
-- **Provider Services.** A year ago 14.5x, today 14.2x, change -0.3x, companies 11 / 11.
-- **Life Sciences & Diagnostics.** A year ago 13.3x, today 18.7x, change +5.4x, companies 9 / 9.
-- **Medical Products & Distribution.** A year ago 12.0x, today 10.7x, change -1.3x, companies 10 / 9.
-- **Pharmacy & Healthcare Services.** A year ago 14.2x, today 15.0x, change +0.9x, companies 8 / 8.
-- **Private-market reference points.** Listed multiples describe companies many times larger than a founder-owned business. They show relative standing among the sectors, and a private company’s price is set by its own earnings, growth, and risk.
+Re-rating in tools and reagents and in research services added 5.4 turns to the life sciences and diagnostics median, the only large move among the four sectors, while provider services, medical products and distribution, and pharmacy and healthcare services stayed close to last year’s levels. Private-market reference points sit below most listed medians, because listed companies are many times larger than a founder-owned business and a private company’s price is set by its own earnings, growth, and risk.
+
+- **Sector Medians.** Median EV to trailing adjusted EBITDA moved from 14.5x to 14.2x in provider services, 13.3x to 18.7x in life sciences and diagnostics, 12.0x to 10.7x in medical products and distribution, and 14.2x to 15.0x in pharmacy and healthcare services (company filings; StockAnalysis).
+- **Life Sciences Subsectors.** Tools and reagents rose from 19.5x to 25.0x and research services from 11.1x to 16.8x, while clinical laboratories moved only from 13.3x to 13.5x; Bio-Techne trades at its agreed acquisition price (company filings; StockAnalysis).
+- **Provider and Products Subsectors.** Hospitals, behavioral, and post-acute operators rose from 8.6x to 9.2x while outpatient, physician, and home care fell from 18.8x to 17.1x; devices, consumables, and manufacturing rose from 12.6x to 14.3x, and dental, distribution, and home equipment fell from 9.6x to 8.0x.
+- **Pharmacy Subsectors.** Pharmacy services and staffing rose from 14.3x to 15.8x, and drug distribution and retail rose from 14.2x to 15.0x, measured on enterprise value at October 16, 2026 against September 30, 2025 (company filings; StockAnalysis).
+- **Private-Market Reference.** Private equity paid a median 13.6x EBITDA for healthcare services companies in 2025 on median target revenue of $162.5 million (PitchBook via Becker’s ASC Review), against a 7.0x average for completed Middle Market transactions (GF Data via ACG) and 5.8x for $5 million to $50 million businesses (IBBA and M&A Source) in the second quarter of 2026.
 
 ### Share Prices, Past 12 Months
 
 Pharmacy and healthcare services shares rose 44% at the median and life sciences shares rose 22%, while provider shares rose 21% and medical products shares rose 12%.
 
-- **Share price change, past 52 weeks.** Median of the listed companies by sector. Pharmacy & Services is highest at +44.3%, followed by Life Sciences & Dx at +21.8%; Medical Products is lowest at +12.1%.
-- **Largest gains, 52 weeks.** LifeStance Health, AMN Healthcare, BrightSpring Health Services, Concentra, Charles River Laboratories, Pennant Group, Cardinal Health, Guardian Pharmacy Services.
-- **Flat or down, 52 weeks.** Dentsply Sirona, Stryker, Privia Health, ICON, Steris, U.S. Physical Therapy, Zimmer Biomet, Ensign Group.
-- **Share price relative to the 52-week high.** Life Sciences & Dx is highest at 93%, followed by Pharmacy & Services at 88%; Medical Products is lowest at 86%. DaVita Kidney Care, Henry Schein, Tenet Health, Viemed Healthcare, IQVIA, Thermo Fisher Scientific, McKesson, Quest Diagnostics: Addus HomeCare.
-- Shares rose over the year at 29 of the 38 companies: 7 of 11 provider companies, 8 of 9 life sciences and diagnostics companies, 6 of 10 medical products companies, 8 of 8 pharmacy and healthcare services companies.
+Shares rose over the 52 weeks to October 16, 2026 at 29 of the 38 listed reference companies, and pharmacy and healthcare services led, with every company in the sector higher. Medical products lagged, with six of ten companies up, the smallest median gain, and a median price at 86% of the 52-week high, the lowest of the four sectors (StockAnalysis).
+
+- **Sector Returns.** Median 52-week share price changes, excluding dividends, were +21.5% for provider services, +21.8% for life sciences and diagnostics, +12.1% for medical products, and +44.3% for pharmacy and healthcare services (StockAnalysis).
+- **Distance From Highs.** Median share prices stand at 93% of the 52-week high in life sciences and diagnostics, 88% in pharmacy and healthcare services, 87% in provider services, and 86% in medical products (StockAnalysis).
+- **Largest Gains.** LifeStance Health rose 126.2%, AMN Healthcare 111.0%, and BrightSpring Health Services 108.4%, followed by Concentra at 85.7%, Charles River Laboratories at 75.8%, Pennant Group at 72.9%, and Cardinal Health at 63.2% (StockAnalysis).
+- **Share Price Decliners.** Dentsply Sirona fell 33.0% and Stryker 20.3%, with smaller declines at Privia Health, ICON, Steris, U.S. Physical Therapy, Zimmer Biomet, and Ensign Group, while Addus HomeCare was unchanged at 0.0% (StockAnalysis).
+- **Breadth by Sector.** Shares rose at 7 of 11 provider companies, 8 of 9 life sciences and diagnostics companies, 6 of 10 medical products companies, and 8 of 8 pharmacy and healthcare services companies; Bio-Techne and Integer Holdings trade near agreed acquisition prices (StockAnalysis).
 
 ### Operating and Valuation Metrics
 
 Provider companies are growing fastest, life sciences and diagnostics earns the highest margins and multiples, and drug distribution holds the pharmacy sector’s margins down.
 
-Life Sciences & Diagnostics
+Growth, margins, and multiples rank the four sectors differently. Provider companies lead on growth, with 14.0% median trailing revenue growth and 8.7% expected for the current fiscal year, while life sciences and diagnostics combines the highest adjusted EBITDA margin, the highest free cash flow margin, and the highest revenue and EBITDA multiples. Pharmacy and healthcare services posts a 4.9% median EBITDA margin, held down by drug distribution, yet trades at 15.0x EBITDA, second only to life sciences (company filings; StockAnalysis).
 
-Medical Products & Distribution
-
-- Pharmacy & Healthcare Services.
-- **Revenue growth, trailing twelve months.** Median, year over year, including acquisitions. Provider Services is highest at 14.0%, followed by Pharmacy & Services at 9.6%; Life Sciences & Dx is lowest at 6.4%.
-- **Revenue growth, analyst consensus.** Median estimate for the current fiscal year. Provider Services is highest at 8.7%, followed by Life Sciences & Dx at 6.8%; Pharmacy & Services is lowest at 4.7%.
-- **Adjusted EBITDA margin, LTM.** Median, company-reported adjusted EBITDA. Life Sciences & Dx is highest at 22.9%, followed by Medical Products at 22.3%; Pharmacy & Services is lowest at 4.9%.
-- **Free cash flow margin.** Median, trailing twelve months. Life Sciences & Dx is highest at 12.9%, followed by Medical Products at 9.2%; Pharmacy & Services is lowest at 2.8%.
-- **EV to trailing revenue.** Life Sciences & Dx is highest at 4.3x, followed by Medical Products at 2.7x; Pharmacy & Services is lowest at 0.5x.
-- **EV to trailing adjusted EBITDA.** Life Sciences & Dx is highest at 18.7x, followed by Pharmacy & Services at 15.0x; Medical Products is lowest at 10.7x.
-- **EV to trailing adjusted EBITDA, a year ago.** Provider Services is highest at 14.5x, followed by Pharmacy & Services at 14.2x; Medical Products is lowest at 12.0x.
-- **Share price relative to 52-week high.** Life Sciences & Dx is highest at 93%, followed by Pharmacy & Services at 88%; Medical Products is lowest at 86%.
+- **Revenue Growth.** Median trailing twelve-month revenue growth, including acquisitions, was 14.0% for provider services, 9.6% for pharmacy and healthcare services, 8.4% for medical products, and 6.4% for life sciences and diagnostics (company filings; StockAnalysis).
+- **Consensus Growth.** Analysts expect median current-year growth of 8.7% for provider services, 6.8% for life sciences and diagnostics, 5.6% for medical products, and 4.7% for pharmacy and healthcare services; life sciences is the only sector whose consensus exceeds its trailing rate, although fiscal years differ (StockAnalysis).
+- **Margin Ranking.** Median adjusted EBITDA margins are 22.9% in life sciences and diagnostics, 22.3% in medical products, 13.1% in provider services, and 4.9% in pharmacy and healthcare services, and free cash flow margins follow the same order at 12.9%, 9.2%, 8.0%, and 2.8%.
+- **Revenue Multiples.** Median enterprise value to trailing revenue is 4.3x in life sciences and diagnostics, 2.7x in medical products, 1.8x in provider services, and 0.5x in pharmacy and healthcare services (StockAnalysis).
+- **EBITDA Multiples.** Median EV to trailing adjusted EBITDA is 18.7x for life sciences and diagnostics, 15.0x for pharmacy and healthcare services, 14.2x for provider services, and 10.7x for medical products, against 13.3x, 14.2x, 14.5x, and 12.0x a year ago for the same companies.
 
 ### What Public Companies Said
 
-Skilled nursing and research services grew fastest in the latest quarter, laboratories and device makers grew 6% to 10%, and pharmacy and staffing grew about 2%.
+Skilled nursing and research services grew fastest in the latest quarter, laboratories and device makers grew 5.8% to 10.5%, and pharmacy and staffing grew about 2%.
 
-- **Revenue growth, latest reported quarter.** Year over year, as stated in each earnings release; quarters ended June 2026. The highest are Ensign Group (+17.3%), Medpace (+17.2%), Thermo Fisher Scientific (+10.5%), Quest Diagnostics (+10.2%), Stryker (+9.4%); the lowest are AMN Healthcare (+2.3%), Guardian Pharmacy Services (+2.2%), Option Care Health (+1.9%).
-- **Medical products & distribution.** Life Sciences & Diagnostics.
-- Medical Products & Distribution.
-- Pharmacy & Healthcare Services.
+Results for quarters ended June 2026 put skilled nursing and research services at the top, with Ensign Group growing revenue 17.3% and Medpace 17.2%, while Thermo Fisher Scientific, Quest Diagnostics, Stryker, and Labcorp grew between 5.8% and 10.5%, and AMN Healthcare, Guardian Pharmacy Services, and Option Care Health grew about 2%. Management commentary in all four sectors describes more assets coming to market and active acquisition pipelines (earnings releases).
+
+- **Other Reported Growth.** HCA Healthcare and IQVIA each grew revenue 8.7%, U.S. Physical Therapy 8.5%, Addus HomeCare 8.0%, McKesson 7.7%, Steris 7.3%, Tenet Healthcare 6.8%, Henry Schein 6.7%, and Cardinal Health 5.8%, all including acquisitions (earnings releases).
+- **Provider Deal Flow.** Chad Keetch, Chief Investment Officer of The Ensign Group, sees opportunities from larger portfolios, landlords replacing tenants, and non-profits divesting post-acute assets, while Addus HomeCare’s Dirk Allison reports more personal care opportunities and more optimism about skilled home health deals since the 2027 proposed rate.
+- **Laboratories and Tools.** Quest Diagnostics’ Jim Davis describes hospitals under workforce and financial pressure turning to Quest as a strategic partner, and Thermo Fisher’s Marc Casper says capital deployment continues to prioritize strategic M&A, with an active pipeline in a highly fragmented industry.
+- **Manufacturing and Dental.** STERIS CEO Dan Carestio expects tariffs to drive localization in the US and Europe, with some duplication of manufacturing sites, and Henry Schein’s Fred Lowery expects consolidation among dental service organizations, driven by the Middle Market, to let the company outgrow the broader dental market.
+- **Pharmacy and Staffing.** Cardinal Health CEO Jason Hollar points to fast-growing categories in urology, oncology, and neurology, and AMN Healthcare CFO and COO Brian Scott says that after a relatively quiet year, more assets have come to market over the last couple of quarters.
 
 ### Appendix: Company-by-Company Metrics
 
-As of October 16, 2026. Provider Services and Life Sciences & Diagnostics sectors, grouped by subsector.
+As of October 16, 2026. All four sectors, grouped by subsector.
 
-As of October 16, 2026. Medical Products & Distribution and Pharmacy & Healthcare Services sectors, grouped by subsector.
+The appendix sets out market capitalization, enterprise value, share price performance, growth, margins, and multiples for each of the 38 listed reference companies as of October 16, 2026, grouped by sector and subsector. Across the full set the median company trades at 14.3x trailing adjusted EBITDA and 1.91x revenue, on 8.4% revenue growth and a 17.2% adjusted EBITDA margin (company filings; StockAnalysis).
 
-- **Companies covered (36).** HCA Healthcare, Tenet Healthcare, Acadia Healthcare, Ensign Group, DaVita, U.S. Physical Therapy, Addus HomeCare, Pennant Group, LifeStance Health, Privia Health, Concentra, Labcorp, Quest Diagnostics, Thermo Fisher Scientific, Danaher, Bio-Techne, Medpace, Charles River Laboratories, Stryker, Zimmer Biomet, Teleflex, Solventum, Steris, Integer Holdings, Henry Schein, Dentsply Sirona, Envista, Viemed Healthcare, Option Care Health, BrightSpring, Guardian Pharmacy Services, AMN Healthcare, McKesson, Cencora, Cardinal Health, CVS Health.
+- **Provider Services.** Hospital, behavioral, and post-acute operators such as HCA Healthcare at 9.5x, DaVita at 8.6x, and Tenet Healthcare at 6.9x trade well below outpatient and home-based peers such as LifeStance Health at 22.9x and Pennant Group at 22.6x; the sector median is 14.2x on 14.0% growth.
+- **Life Sciences and Diagnostics.** Research services and tools companies carry the highest multiples in the set, led by Medpace at 27.6x, Bio-Techne at 26.4x, Thermo Fisher Scientific at 25.0x, and Danaher at 23.1x, while Labcorp and Quest Diagnostics trade at 13.0x and 14.0x; the sector median is 18.7x.
+- **Medical Products and Distribution.** Stryker trades at 17.2x and Teleflex at 15.5x, while Dentsply Sirona at 6.1x and Viemed Healthcare at 5.8x sit at the low end; Dentsply Sirona is also at 58% of its 52-week high, the lowest in the set, and the sector median is 10.7x.
+- **Pharmacy and Healthcare Services.** Drug distributors McKesson, Cencora, and Cardinal Health earn adjusted EBITDA margins of 1.5% to 1.7% yet trade at 14.9x to 17.3x EBITDA, while BrightSpring at 20.1x and Guardian Pharmacy Services at 19.4x lead pharmacy services and AMN Healthcare trades at 5.7x.
+- **Basis of Figures.** LTM covers the twelve months to June 30, 2026, a year-ago multiple uses enterprise value at September 30, 2025, and depreciation is added where a company reports adjusted operating income; Teleflex has no comparable year-ago figure.
 
 ## 7. What We're Reading
 
 Primary sources and trade reporting from the third quarter.
 
-- **What We’re Reading.** Four pieces from the third quarter, one per sector, with a marked passage and the takeaway for an owner.
-- **Projected healthcare services deal count to be lowest since 2017, PitchBook finds.** Private equity is on pace for 674 healthcare services transactions in 2026 after an estimated 337 in the first half. The analyst behind the count expects activity to return toward its longer-run level.
-- **Biopharma M&A: Mid-year 2026 update.** The count covers acquisitions of $250 million or more, so it describes the largest buyers. Their spending supports demand for the research, laboratory, and manufacturing services that founder-owned companies supply.
-- **Top 10 medtech deals in the first half of 2026.** PwC counted $36.5 billion of medtech acquisitions in the first half. The largest were Boston Scientific’s $14.5 billion purchase of Penumbra and Danaher’s $9.9 billion purchase of Masimo.
-- **The K-Shaped Pharmacy Shakeout: Consolidation in Cities, Lost Access in Rural America.** Prescription dispensing revenues reached a record $751 billion in 2025, up 10%, while the number of pharmacies fell. Scale, specialty mix, and payer contracts decide which pharmacies remain attractive to a buyer.
+Four third-quarter pieces, one for each sector, cover the slowdown in sponsor-backed healthcare services transactions, first-half medtech and biopharma acquisitions, and pharmacy consolidation, each paired with a marked passage and the takeaway for an owner. Read together, they describe large strategic buyers spending heavily while sponsor deal counts and retail pharmacy numbers fall.
+
+- **Sponsor Deal Count.** Fierce Healthcare (August 19, 2026) reports PitchBook’s finding that private equity is on pace for 674 healthcare services transactions in 2026 after an estimated 337 in the first half, and PitchBook’s Brian Wright expects mean reversion toward the longer-run level.
+- **Medtech Acquisitions.** MedTech Dive (July 6, 2026) reports PwC’s count of $36.5 billion of medtech acquisitions in the first half, led by Boston Scientific’s $14.5 billion purchase of Penumbra and Danaher’s $9.9 billion purchase of Masimo.
+- **Biopharma Deal Value.** IQVIA (July 8, 2026) finds biopharma deal value of $130 billion in six months, almost matching 2025, across 42 deals of $250 million or more; spending by these large buyers supports demand for the research, laboratory, and manufacturing services that founder-owned companies supply.
+- **Pharmacy Consolidation.** Drug Channels (August 11, 2026) reports almost 8,000 fewer retail pharmacies than in 2018 and more than 2,000 closures in 2025, while dispensing revenues reached a record $751 billion, up 10%; scale, specialty mix, and payer contracts decide which pharmacies remain attractive to a buyer.
 
 ## 8. About Benchmark International
 

@@ -490,3 +490,10 @@
 }
 .rterms { margin: 14px 0 0; font-size: 13px; color: rgba(255, 255, 255, .72); }
 .rterms a { color: inherit; text-decoration: underline; }
+
+/* Benchmark International transactions as tombstones, in the site's format */
+.report .tomb-grid--report { margin: 24px 0 0; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
+.report.wdoc a.tomb, .report.wdoc a.tomb:hover { color: inherit; text-decoration: none; }
+.report .tomb-cap strong { color: var(--ink); }
+.tomb-name { font-family: var(--font-serif); font-size: 0.95rem; line-height: 1.25; text-align: center; color: var(--ink); }
+@media (max-width: 640px) { .report .tomb-grid--report { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
