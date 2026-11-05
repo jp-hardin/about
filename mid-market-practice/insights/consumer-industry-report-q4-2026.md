@@ -78,7 +78,7 @@ Margin differences across the listed consumer peer groups are wide: beverages ea
 - **EBITDA Margin by Group.** Beverages lead at 27.9%, followed by consumer services at 23.1%, household and personal care at 19.4%, packaged food at 17.9%, and restaurants at 17.1%. Snacks run at 14.7% and durables, outdoor, and pet at 11.8%, with retail at 7.0% and foodservice distribution at 4.8% (StockAnalysis).
 - **Free Cash Flow Conversion.** Median free cash flow margins are 17.6% in beverages, 16.6% in household and personal care, and 14.0% in consumer services, against 2.5% in retail and 2.3% in foodservice distribution. Vital Farms is left out of the free cash flow median because it has no reading.
 - **Fastest Revenue Growth.** Celsius grew revenue 82.9% over the trailing twelve months, followed by e.l.f. Beauty at 31.2%, Monster Beverage at 20.4%, Boyd Group Services at 17.3%, Vital Farms at 16.4%, Driven Brands at 15.3%, McCormick at 13.2%, and Planet Fitness at 11.6%, with acquisitions included.
-- **Breadth of Growth.** 28 of 54 listed consumer companies grew revenue more than 5% over the trailing twelve months, measured against the prior twelve months and including acquisitions, so acquired growth is part of the figure buyers will separate out (StockAnalysis).
+- **Breadth of Growth.** 28 of 54 listed consumer companies with a revenue growth reading grew revenue more than 5% over the trailing twelve months, measured against the prior twelve months and including acquisitions, so acquired growth is part of the figure buyers will separate out (StockAnalysis).
 
 ## 3. Our View
 

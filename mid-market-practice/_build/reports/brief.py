@@ -335,8 +335,8 @@ def web_refs(pages, alias):
         nxt = pages[i + 1] if i + 1 < len(pages) else None
         for k in ('body', 'web', 'foot', 'subtitle'):
             h = pg[k] or ''
-            h = re.sub(r'\b(on|across|in) (pages? \d+(?:\s*(?:,|and|to|–)\s*\d+)*)', lambda m: pages_ref(m), h)
-            h = re.sub(r'\b(shown) (pages? \d+(?:\s*(?:,|and|to|–)\s*\d+)*)', lambda m: ('shown ' + pages_ref(m)).strip(), h)
+            h = re.sub(r'\b(on|across|in) (pages? \d+(?:\s*(?:,\s*and|,|and|to|–)\s*\d+)*)', lambda m: pages_ref(m), h)
+            h = re.sub(r'\b(shown) (pages? \d+(?:\s*(?:,\s*and|,|and|to|–)\s*\d+)*)', lambda m: ('shown ' + pages_ref(m)).strip(), h)
             h = re.sub(r' +([.,;])', r'\1', h)
             h = re.sub(r'\s*\(PAGES? [^)]*\)', '', h)
             if nxt is not None:
@@ -474,7 +474,8 @@ def to_markdown(pages, lead, byline, segs):
 JH_PHONE, JH_EMAIL = site.TEAM_CONTACT['jared-hardin']
 
 # Hand-written online copy (web.json in the report folder): for a deck page number, the summary shown online in place of
-# the automatic teaser. {"sections": {"7": {"lead": ["paragraph", ...], "points": [{"h": "Label", "b": "sentence"}, ...]}}}
+# the automatic teaser. {"sections": {"7": {"lead": ["paragraph", ...], "points": [{"h": "Label", "b": "sentence"}, ...],
+# "subtitle": "optional, for a section that runs over two deck pages"}}}
 _web = os.path.join(FOLDER, 'web.json')
 COPY = json.load(open(_web, encoding='utf-8')).get('sections', {}) if os.path.exists(_web) else {}
 MMT_DUMP = os.environ.get('MMT_DUMP')   # a file to write each section's deck content to, for writing web.json
@@ -725,6 +726,9 @@ def build_page(prs):
         pg['body'] = drop_team_cards(pg['body']) if pg['part'] else flow(drop_team_cards(pg['body']))
         web.append(pg)
     pages, alias = merge_continued(web)
+    for pg in pages:      # a section that runs over two deck pages can take one subtitle for both from web.json
+        if COPY.get(str(pg['num']), {}).get('subtitle'):
+            pg['subtitle'] = esc(COPY[str(pg['num'])]['subtitle'], quote=False)
     pages = web_refs(pages, alias)
     byline, segs, included = cover(prs)
     lead = CONF['lead']

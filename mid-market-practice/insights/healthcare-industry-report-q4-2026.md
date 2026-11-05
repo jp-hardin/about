@@ -91,7 +91,7 @@ For an owner, the next twelve months favor a process built around strategic buye
 
 ## 4. Sector by Sector
 
-Buyers and drivers differ by sector, and this page covers providers, laboratories, and research services.
+Buyers and drivers differ by sector across providers, laboratories, research services, medical products, distribution, pharmacy, and staffing.
 
 Buyer sets and demand drivers differ across the four sectors. In provider services, health systems are buying access points and sponsors are trading platforms; in life sciences and diagnostics, research spending has turned up and laboratories are selling to the national networks; in medical products and distribution, procedure demand is firm and consumables are outgrowing capital equipment; and in pharmacy and healthcare services, drug pricing reform is reshaping pharmacy while staffing returns to growth.
 
@@ -130,7 +130,7 @@ The six transactions span all four sectors and show the main routes to a sale th
 
 ### Our Transactions
 
-Twelve transactions closed in the trailing 24 months across the four sectors, and seven of the nine named buyers were operating companies.
+Twelve transactions closed in the trailing 24 months across the four sectors, and operating companies bought seven of the nine named sellers.
 
 **12**
 
@@ -259,7 +259,7 @@ Pharmacy & Healthcare Services
 
 ### Valuation Multiples by Sector
 
-Life sciences and diagnostics re-rated from 13.3x to 18.7x adjusted EBITDA in a year; provider services, medical products, and pharmacy services moved within about one turn.
+Life sciences and diagnostics re-rated from 13.3x to 18.7x adjusted EBITDA in a year; provider services, medical products, and pharmacy services moved by 1.3 turns or less.
 
 **13.6x**
 
@@ -307,7 +307,7 @@ Growth, margins, and multiples rank the four sectors differently. Provider compa
 
 ### What Public Companies Said
 
-Skilled nursing and research services grew fastest in the latest quarter, laboratories and device makers grew 6% to 10%, and pharmacy and staffing grew about 2%.
+Skilled nursing and research services grew fastest in the latest quarter, laboratories and device makers grew 5.8% to 10.5%, and pharmacy and staffing grew about 2%.
 
 Results for quarters ended June 2026 put skilled nursing and research services at the top, with Ensign Group growing revenue 17.3% and Medpace 17.2%, while Thermo Fisher Scientific, Quest Diagnostics, Stryker, and Labcorp grew between 5.8% and 10.5%, and AMN Healthcare, Guardian Pharmacy Services, and Option Care Health grew about 2%. Management commentary in all four sectors describes more assets coming to market and active acquisition pipelines (earnings releases).
 
@@ -319,7 +319,7 @@ Results for quarters ended June 2026 put skilled nursing and research services a
 
 ### Appendix: Company-by-Company Metrics
 
-As of October 16, 2026. Provider Services and Life Sciences & Diagnostics sectors, grouped by subsector.
+As of October 16, 2026. All four sectors, grouped by subsector.
 
 The appendix sets out market capitalization, enterprise value, share price performance, growth, margins, and multiples for each of the 38 listed reference companies as of October 16, 2026, grouped by sector and subsector. Across the full set the median company trades at 14.3x trailing adjusted EBITDA and 1.91x revenue, on 8.4% revenue growth and a 17.2% adjusted EBITDA margin (company filings; StockAnalysis).
 
