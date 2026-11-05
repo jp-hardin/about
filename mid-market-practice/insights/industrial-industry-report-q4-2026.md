@@ -155,16 +155,6 @@ Buyers price Carmi's brokerage licenses, bonded warehousing, and four decades of
 - **Record Mexico Trade.** Trade with Mexico reached a monthly record of $94.8 billion in July, 27.5% above a year earlier, and $36.95 billion of it moved through Laredo (Census data reported by FreightWaves).
 - **Border Broker Acquisitions.** Logistics platforms have responded by buying brokers at the border, and Redwood Logistics and Imperative Logistics Group each acquired a Laredo customs broker this year (FreightWaves). Gaurang Shastri of Lincoln International described the market as one in which buyers acquire capabilities rather than capacity.
 
-The Carmi Companies
-
-Combined With
-
-The Nearshore Company
-
-The Carmi Companiescombined with The Nearshore Company
-
-Single-source logistics group in Laredo, Texas: land, air, and ocean freight, customs brokerage, warehousing, and transloading
-
 ### Recent Transactions
 
 Public acquirers disclosed prices of about 6 to 10 times EBITDA, and sponsor-owned platforms bought family-owned companies on undisclosed terms.
