@@ -482,7 +482,8 @@ MMT_DUMP = os.environ.get('MMT_DUMP')   # a file to write each section's deck co
 
 def copy_html(c):
     def point(p):
-        head = f'<strong>{esc(p["h"], quote=False)}.</strong> ' if p.get('h') else ''
+        h = p.get('h', '').strip()
+        head = f'<strong>{esc(h if h.endswith((".", "?")) else h + ".", quote=False)}</strong> ' if h else ''
         return f'<li>{head}{esc(p["b"], quote=False)}</li>'
     out = [f'<p>{esc(x, quote=False)}</p>' for x in c.get('lead', [])]
     if c.get('points'):
