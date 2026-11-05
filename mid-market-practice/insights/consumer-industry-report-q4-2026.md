@@ -30,21 +30,18 @@ Tariffs, fuel, and financing: three costs buyers are repricing
 
 Four developments shaping the consumer market in the third quarter, with management commentary in [What Public Companies Said](#p20).
 
-- **What it means for owners.** Buyers are paying for brands and operators that have held price and volume, that sell through more than one channel, and that have room to add distribution or locations.
-- An owner who can show price increases by product or service line, with unit volume, and customer retention beside them, gives a buyer the evidence that supports a higher valuation.
-- **Brands are being sorted by whether volume follows price.** Hershey’s organic sales rose 3.6% in the second quarter on about 12 points of price and an 8-point decline in volume, while Church & Dwight grew organic sales 5.8% with volume up 4.3% (Hershey; Church & Dwight).
-- **Growth is arriving through more than one channel.** E-commerce reached $340.2 billion in the second quarter, or 17.1% of retail sales, and Walmart’s global e-commerce sales grew 23% in its July quarter (Census Bureau; Walmart).
-- **Strategic acquirers are reshaping portfolios at scale.** Kimberly-Clark, McCormick, and Sysco have committed more than $120 billion to three transactions since November 2025 (Kenvue; Unilever’s food business; Jetro Restaurant Depot).
-- **Multi-site platforms keep adding locations.** Add-on acquisitions made up about three-quarters of US private equity buyouts in the second quarter (PitchBook).
-- **Read-through.** Buyers pay for brands that hold unit volume while they raise price.
+Buyers of consumer companies are separating businesses that held unit volume while raising price, that sell through several channels, and that can add distribution or locations from those whose growth rests on price alone. Each of the four developments of the third quarter bears on how an owner's earnings will be read.
+
+An owner who can present price increases by product or service line, with unit volume and customer retention beside them, gives a buyer the evidence that supports a higher valuation, because buyers now test where growth came from before they pay for it.
+
+- **Price Versus Volume.** Hershey's organic sales rose 3.6% in the second quarter on about 12 points of price and an 8-point volume decline, while Church & Dwight grew organic sales 5.8% with volume up 4.3%. General Mills reported flat organic sales, and store brands reached a record 23.8% of units sold in the first half (company releases; PLMA).
+- **Channel Mix.** E-commerce reached $340.2 billion in the second quarter, or 17.1% of retail sales, and Walmart's global e-commerce sales grew 23% (Census Bureau; Walmart). YETI grew wholesale sales 10% and direct-to-consumer sales 7%, and General Mills' foodservice business grew organic sales 4% while total organic sales were flat.
+- **Strategic Portfolio Moves.** Kimberly-Clark, McCormick, and Sysco have committed more than $120 billion to three transactions since November 2025, for Kenvue, Unilever's food business, and Jetro Restaurant Depot. At the same time, General Mills sold its Brazil business on September 2, Keurig Dr Pepper is preparing to separate in early 2027, and Middleby spun off its food processing business in July.
+- **Platform Add-Ons.** Add-on acquisitions made up about three-quarters of US private equity buyouts in the second quarter (PitchBook). Boyd Group's sales rose 29.9%, mostly from new locations that include 258 Joe Hudson's collision centers, Tidal Wave Auto Spa reached 332 car wash locations, and SPS PoolCare had completed 191 acquisitions since 2021.
 
 ### Tariffs, Fuel, and Financing: Three Costs Buyers Are Repricing
 
 Tariffs, fuel, and interest rates moved in the past year, and the moves change what a buyer will treat as normal earnings.
-
-A consumer company that reaches the market in the next year will present earnings that passed through three tariff regimes, a fuel shock, and the first increase in the federal funds rate since 2023.
-
-The effect differs from one company to the next.
 
 12.5%
 
@@ -62,25 +59,26 @@ Federal funds target range after the September 16 increase
 
 Share of 2025 transactions that included an earn-out
 
-- An owner who can hand a buyer landed cost by period, fuel recovery by contract, and a clear account of how the business is financed shortens diligence and protects the earnings figure the price is built on.
-- **What buyers are rebuilding.** The Supreme Court held on February 20 that the International Emergency Economic Powers Act does not authorize tariffs, a temporary 10% tariff followed, and since July 24 Section 301 tariffs of 10% to 12.5% apply to 60 trading partners.
-- **What buyers ask for.** Landed cost under each regime, the status of any refund claim, and the sourcing alternatives the company has already qualified.
-- On-highway diesel averaged $6.29 a gallon in September against $3.75 a year earlier (FRED).
-- **What buyers ask for.** Which customer contracts carry fuel surcharges or cost escalators, how quickly they reset, and how much of the increase the company has recovered.
-- The Federal Reserve raised its target range to 3.75% to 4.00% in September and projects a policy rate of 4.1% at the end of 2026 and 2027.
-- **What buyers ask for.** How much of the price is paid in cash at closing, how much is contingent, and how much is rolled into the buyer’s equity.
+Earnings presented by a consumer company that comes to market in the next year will have passed through three tariff regimes, a fuel shock, and the first increase in the federal funds rate since 2023, and buyers are rebuilding each of those costs period by period before settling on the earnings they will pay for.
+
+The effect varies by company. YETI recorded a $45.6 million net benefit from tariff refunds in its second quarter and Walmart reinvested its refunds into price, while 91% of foodservice equipment manufacturers surveyed by their trade association reported negative effects from tariffs and 78% were passing the cost on to customers.
+
+- **Tariff Regimes.** The Supreme Court held on February 20 that the International Emergency Economic Powers Act does not authorize tariffs, a temporary 10% tariff followed, and since July 24 Section 301 tariffs of 10% to 12.5% apply to 60 trading partners. Buyers ask for landed cost under each regime and the status of any refund claim.
+- **Section 232 Duties.** Section 232 duties stayed in place, including 25% on upholstered furniture, and duty-free treatment for parcels under $800 remains suspended. Buyers therefore also ask which alternative sources of supply the company has already qualified.
+- **Diesel and Fuel Recovery.** On-highway diesel averaged $6.29 a gallon in September against $3.75 a year earlier (FRED), and the Energy Information Administration expects retail diesel to average about $4.50 next year. Buyers ask which customer contracts carry fuel surcharges or cost escalators, how quickly they reset, and how much of the increase has been recovered.
+- **Rates and Loan Spreads.** The Federal Reserve raised its target range to 3.75% to 4.00% on September 16 and projects a policy rate of 4.1% at the end of 2026 and 2027. Spreads on new direct loans to Middle Market buyouts widened by roughly 25 basis points in the second quarter (Northleaf Capital Partners).
+- **Earn-Outs and Buyer Mix.** Earn-outs appeared in 24% of 2025 transactions, with a median equal to 34% of the closing payment (SRS Acquiom). Because a higher rate lowers the debt a sponsor can place against the same earnings, price support shifts toward strategic buyers that fund purchases from cash flow.
 
 ### Operating Metrics
 
 Beverage companies keep the highest EBITDA and free cash flow margins, and foodservice distribution and retail run on the thinnest margins.
 
-- **Median EBITDA margin.** Trailing twelve months, by peer group.
-- **Food & beverage.** The highest are Celsius (+82.9%), HOUSEHOLD & PERSONAL CARE (+31.2%), Beverages (27.9%), Consumer services (23.1%), Monster Beverage (+20.4%); the lowest are Durables, outdoor & pet (10.7%), Retail (7.0%), Foodservice distribution (4.8%).
-- **Median free cash flow margin: food & beverage.** Packaged food 8.1%, Snacks 8.6%, Beverages 17.6%.
-- **Consumer services & retail: fastest revenue growth.** Trailing twelve months, 56 listed companies: Celsius.
-- **What the margins show: 15.8%.** median EBITDA margin of the listed consumer companies.
-- **What the margins show: 9.6%.** median free cash flow margin of the listed consumer companies.
-- listed consumer companies grew revenue more than 5% over the trailing twelve months.
+Margin differences across the listed consumer peer groups are wide: beverages earn a median 27.9% EBITDA margin and foodservice distribution 4.8%, and the same two groups sit at the top and bottom on free cash flow. The median listed consumer company earns a 15.8% EBITDA margin and a 9.6% free cash flow margin, which gives a private owner a reference point for its own conversion of revenue into cash (StockAnalysis).
+
+- **EBITDA Margin by Group.** Beverages lead at 27.9%, followed by consumer services at 23.1%, household and personal care at 19.4%, packaged food at 17.9%, and restaurants at 17.1%. Snacks run at 14.7% and durables, outdoor, and pet at 11.8%, with retail at 7.0% and foodservice distribution at 4.8% (StockAnalysis).
+- **Free Cash Flow Conversion.** Median free cash flow margins are 17.6% in beverages, 16.6% in household and personal care, and 14.0% in consumer services, against 2.5% in retail and 2.3% in foodservice distribution. Vital Farms is left out of the free cash flow median because it has no reading.
+- **Fastest Revenue Growth.** Celsius grew revenue 82.9% over the trailing twelve months, followed by e.l.f. Beauty at 31.2%, Monster Beverage at 20.4%, Boyd Group Services at 17.3%, Vital Farms at 16.4%, Driven Brands at 15.3%, McCormick at 13.2%, and Planet Fitness at 11.6%, with acquisitions included.
+- **Breadth of Growth.** 28 of 54 listed consumer companies grew revenue more than 5% over the trailing twelve months, measured against the prior twelve months and including acquisitions, so acquired growth is part of the figure buyers will separate out (StockAnalysis).
 
 ## 3. Our View
 
@@ -98,25 +96,28 @@ of US private equity buyouts in the second quarter were add-on acquisitions (Pit
 
 named acquirers of our consumer clients were operating companies or platforms adding to an existing business
 
-- **Our position.** Buyers are paying for brands and operators that held volume while they raised price, that sell through more than one channel, and that can add locations, and with financing costs higher they are testing the earnings behind that performance more closely than a year ago.
-- **Strong: our view.** Buyers are separating brands that hold volume from brands that rely on price. Hershey’s organic sales rose 3.6% on about 12 points of price against an 8-point volume decline, store brands reached 23.8% of units, and packaged food companies trade at a median 8.8x EBITDA against 9.8x a year ago.
-- Beauty, personal care, over-the-counter health, and pet products drew a large share of this year’s brand acquisitions, and household and personal care companies trade at a median 17.1x EBITDA against 16.3x a year ago.
-- Foodservice distribution companies trade at a median 13.6x EBITDA, level with a year ago, and Sysco agreed to pay 14.6x operating income for Jetro Restaurant Depot.
-- Sponsors and public acquirers keep paying for scale and recurring customers: Leonard Green paid $3.1 billion for Mister Car Wash, Oak Hill agreed to buy Guild Garage Group at a reported 16x EBITDA, and Rollins allocated about 89% of its Romex price to customer contracts and goodwill.
-- **Strong: our advice to owners.** Show price, volume, and customer retention by product or service line, because buyers separate growth that comes from units from growth that comes from price.
-- Assemble landed cost by period, fuel recovery by contract, and the financing terms of the business before a process, since buyers are rebuilding earnings from those three costs.
+Benchmark International's position is that buyers are paying for brands and operators that held volume while they raised price, that sell through more than one channel, and that can add locations, and that with financing costs higher they are testing the earnings behind that performance more closely than a year ago.
+
+About 75% of US private equity buyouts in the second quarter were add-on acquisitions (PitchBook). Demand is rated Mixed in Food & Beverage, Steady in Consumer Brands & Products and in Foodservice & Distribution, and Strong in Consumer Services & Retail.
+
+- **Food & Beverage: Mixed.** Buyers are separating brands that hold volume from brands that rely on price: store brands reached 23.8% of units, and packaged food companies trade at a median 8.8x EBITDA against 9.8x a year ago. Strategics still pay for growth categories, as Hormel did at 10.7x for Brakebush Brothers.
+- **Consumer Brands: Steady.** Household and personal care companies trade at a median 17.1x EBITDA against 16.3x a year ago. Non-edible packaged goods rose 3.1% in dollars and fell 2.2% in units, so buyers will test unit trends and tariff exposure by product.
+- **Foodservice: Steady.** Foodservice distribution companies trade at a median 13.6x EBITDA, level with a year ago, and Sysco agreed to pay 14.6x operating income for Jetro Restaurant Depot. The share of manufacturers' agents reporting more quoting fell to 33%, and a 314-unit Wendy's franchisee in Chapter 11 shows where credit risk sits.
+- **Consumer Services: Strong.** Leonard Green paid $3.1 billion for Mister Car Wash, Oak Hill agreed to buy Guild Garage Group at a reported 16x EBITDA, and Rollins allocated about 89% of its Romex price to customer contracts and goodwill. Consumer services shares are down 33.3% in a year, and the median multiple is 11.9x against 18.2x.
+- **Advice to Owners.** Show price, volume, and customer retention by product or service line; assemble landed cost by period, fuel recovery by contract, and financing terms before a process; and approach operating companies and platforms in adjacent categories alongside sponsors, since 9 of the 17 named acquirers of Benchmark International's consumer clients were operating companies or platforms.
 
 ## 4. Sector by Sector
 
 What is moving demand, and who is buying, in each of the sectors the consumer practice covers.
 
-- **Food & Beverage.** The largest packaged food companies report flat or falling volume, and they are selling slow brands and buying growth and capacity from smaller companies (General Mills; Conagra).
-- Growth is in protein, zero-sugar beverages, supplements, and foodservice, and Procter & Gamble agreed to buy Thorne in a deal reportedly valued at $3.8 billion.
-- National distributors are growing case volume with independent restaurants, up 5.1% at US Foods and 5.8% organically at Performance Food Group.
-- **Who is buying.** Family-owned strategics such as Rich Products, Sargento, and C.H. Guenther, bakery consolidators, private equity platforms, and European strategics entering the United States.
-- **Benchmark International.** closed since January 2025.
-- **Consumer Brands & Products.** Beauty, personal care, over-the-counter health, and pet products drew a large share of this year’s brand acquisitions, and beauty and pet spending are still growing (Circana; American Pet Products Association).
-- Dollar growth overstates unit demand: non-edible packaged goods rose 3.1% in dollars and fell 2.2% in units in the five weeks to July 4 (Circana).
+Demand drivers and buyer types differ across the four consumer sectors. Volume at the largest packaged food companies is flat or falling while protein, zero-sugar beverages, supplements, and foodservice grow; beauty and pet spending is still rising; restaurant operators are spending carefully on equipment; and sponsors and public acquirers keep paying for scale in consumer services, where Benchmark International has been most active.
+
+- **Food & Beverage.** The largest packaged food companies are selling slow brands and buying growth and capacity from smaller companies, and Procter & Gamble agreed to buy Thorne in a deal reportedly valued at $3.8 billion. Buyers include Rich Products, Sargento, C.H. Guenther, bakery consolidators, private equity platforms, and European strategics entering the United States.
+- **Independent Restaurant Volume.** National distributors are growing case volume with independent restaurants, by 5.1% at US Foods and by 5.8% organically at Performance Food Group, and store brands held 23.8% of units sold in the first half of 2026 (company releases; PLMA).
+- **Consumer Brands & Products.** Prestige and mass beauty sales each grew 7% in the first half of 2026, but non-edible packaged goods rose 3.1% in dollars and fell 2.2% in units in the five weeks to July 4 (Circana). Buyers include Procter & Gamble, Clorox, Henkel, Advent, TSG, TowerBrook, and brand-management firms.
+- **Foodservice & Distribution.** Restaurant and foodservice sales are forecast at $1.55T for 2026 (National Restaurant Association), yet agents' equipment and supplies sales rose 2.0% in the second quarter, and a 314-unit Wendy's franchisee filed for Chapter 11 after store-level EBITDA fell 48%. Parts Town and Easy Ice kept buying repair and ice-machine businesses.
+- **Consumer Services & Retail.** Leonard Green completed the $3.1B Mister Car Wash take-private in May, and Blackstone agreed to buy a majority stake in Champions Group in a deal reported at about $2.5 billion. Growth in home improvement spending is projected to slow to 0.5% by the second quarter of 2027.
+- **Benchmark International Activity.** Since January 2025, Benchmark International has closed 4 transactions in Food & Beverage, 2 in Consumer Brands & Products, 6 in Foodservice & Distribution, and 20 in Consumer Services & Retail, based on the firm's records as of October 1, 2026.
 
 ## 5. Deals and Buyers
 
@@ -124,21 +125,26 @@ What is moving demand, and who is buying, in each of the sectors the consumer pr
 
 Acquirers disclosed a price in most of these transactions and a multiple of earnings in only a few.
 
-Hormel paid 10.7x projected 2026 adjusted EBITDA for a prepared chicken producer, against a median of 8.8x for listed packaged food companies.
+Three transactions in each of the four sectors show how acquirers priced consumer businesses this year, from an $18.7 million first-aid brand to a $29.1 billion foodservice distributor. Where acquirers disclosed an earnings multiple, it ranged from 5.0x adjusted EBITDA for a frozen seafood distributor to 16x for a platform assembled from garage door companies, against a 7.0x average for Middle Market deals.
 
-HF Foods agreed in July to acquire Searay Foods, a British Columbia distributor of frozen specialty seafood, completed the purchase on September 3 and stated the base price as a multiple of 2025 adjusted EBITDA (HF Foods and Searay Foods).
+Buyers in foodservice and consumer services paid for store networks, subscription members, and recurring customer contracts.
 
-- A frozen seafood distributor sold at 5.0x adjusted EBITDA, the lowest multiple in this table.
-- Vita Coco acquired Copra, a privately held producer of super-premium Thai coconut water sold chilled and frozen, for $175 million at closing plus an earn-out of $45 million to $100 million payable in 2029 (Vita Coco and Copra).
-- Vita Coco tied $45 million to $100 million of the price to an earn-out payable in 2029, so the total depends on results after closing.
-- Clorox agreed in January and completed on April 1 the purchase of GOJO Industries, the maker of Purell, family-led in Akron, Ohio since its founding in 1946 (Clorox and GOJO Industries).
-- A family-led brand founded in 1946 sold to a strategic at 11.9x adjusted EBITDA, net of anticipated tax benefits.
-- Health, first-aid, and foodservice transactions, from an $18.7 million brand to a $29.1 billion distributor.
-- Brands with $95 million of EBITDA on about $200 million of revenue sold at 5.2x revenue and 11.0x EBITDA, a margin of 47.5%.
+- **Food Producers and Distributors.** Hormel agreed to acquire Brakebush Brothers, a prepared chicken producer with about $1.2 billion of net sales, for about $1.06B, or 10.7x projected 2026 adjusted EBITDA against a median 8.8x for listed packaged food companies. HF Foods bought Searay Foods, a frozen seafood distributor, at 5.0x 2025 adjusted EBITDA on a C$47.9M base price.
+- **Earn-Out Structure.** Vita Coco acquired Copra, a privately held producer of super-premium Thai coconut water, for $175 million at closing plus an earn-out of $45 million to $100 million payable in 2029, so the total price depends on results after closing.
+- **Health and Hygiene Brands.** Clorox paid $2.25B for GOJO Industries, the family-led maker of Purell founded in 1946, at 11.9x adjusted EBITDA net of anticipated tax benefits. Prestige Consumer Healthcare agreed to buy Breathe Right, Dimetapp, and Anbesol for $1.045B, about 5.2x revenue and 11.0x EBITDA on a 47.5% margin.
+- **Smaller Brands and Carve-Outs.** Acme United bought My Medic, a first-aid kit maker selling almost entirely direct to consumers, for $18.7M, about 1.0x revenue. AeriTek (Mill Point Capital) bought Federal Industries, a food display case maker with $35.7 million of revenue, from Standex for about $70M, about 2.0x revenue.
+- **Foodservice Consolidation.** Sysco agreed to acquire Jetro Restaurant Depot and its 166 cash-and-carry stores for about $29.1B at 14.6x 2025 operating income, and members of Congress have asked the FTC to investigate. Singer Equipment bought Bresco, a dealer with $39.3 million of 2025 sales, without disclosing a price.
+- **Services Platforms.** Leonard Green took Mister Car Wash private at $3.1B, 9.0x EBITDA and 2.9x revenue, for about 550 locations and 2.5 million subscription members. Oak Hill agreed to buy Guild Garage Group at a reported $800M and 16x EBITDA, and Rollins paid $95.7M for Romex Pest Control, 2.7x 2025 revenue, allocating about 89% to customer contracts and goodwill.
 
 ### Our Transactions
 
 Consumer services and retail is the most active sector, and operating companies and platforms bought just over half of the named companies.
+
+Benchmark International closed 32 consumer transactions in the four sectors between January 1, 2025 and September 30, 2026, and Consumer Services & Retail accounted for 20 of them. Operating companies and platforms adding to an existing business were the largest group of buyers of the named companies, ahead of private equity and private investment firms and individual buyers.
+
+- **Closings by Sector.** Consumer Services & Retail closed 20 transactions, Foodservice & Distribution 6, Food & Beverage 4, and Consumer Brands & Products 2 over the period, according to Benchmark International's records.
+- **Buyer Mix.** Of the 17 named acquirers, 9 were operating companies or platforms adding to an existing business, 6 were private equity and private investment firms, and 2 were individual and entrepreneur-led buyers, with Benchmark International advising the seller in each case.
+- **Seller Profile.** The 15 most recent named transactions are mostly regional, owner-operated businesses, including restoration, landscaping, collision repair, roofing, garage door, pool, and martial arts operators, alongside a supplement contract manufacturer, a youth sports apparel maker, and foodservice equipment and distribution companies, several of them bought by platforms in the same trade.
 
 WRS Group, LTD.
 
@@ -320,14 +326,14 @@ Sept 2026
 
 The listed reference companies in each sector, and the platforms, sponsors, and strategic buyers acquiring founder-owned consumer businesses.
 
-- **20 listed: listed companies.** General Mills, Conagra Brands, Kraft Heinz, Campbell's, J.M. Smucker, Hormel Foods, Utz Brands, McCormick, BellRing Brands, Post Holdings, Simply Good Foods, Mondelez, Vital Farms, Hershey, Coca-Cola, PepsiCo, Keurig Dr Pepper, Monster Beverage, Celsius, Constellation Brands.
-- **20 listed: active private and strategic buyers.** Hormel Foods, Intersnack, Rich Products, Procter & Gamble, Sargento, Vita Coco, Europastry, HF Foods, Rise Baking, C.H. Guenther.
-- **12 listed: listed companies.** Procter & Gamble, Estee Lauder, Colgate-Palmolive, Church & Dwight, Central Garden & Pet, Clorox, Spectrum Brands, YETI, Mattel, Newell Brands, Traeger.
-- **12 listed: active private and strategic buyers.** Clorox, Prestige Consumer Healthcare, Henkel, Kimberly-Clark: Advent International: TSG Consumer Partners: TowerBrook, Authentic Brands Group, WHP Global.
-- **6 listed: listed companies.** Sysco, United Natural Foods, US Foods, Chefs' Warehouse, Performance Food Group, Middleby.
-- **6 listed: active private and strategic buyers.** Sysco, Parts Town, Performance Food Group, Singer Equipment, Five Star Breaktime Solutions, Wasserstrom, AeriTek, Front of House Worldwide, GreaseCycle, Market Performance Group.
-- **18 listed: listed companies.** Darden Restaurants, Domino's Pizza, Brinker International, Texas Roadhouse, Rollins, Chipotle, Frontdoor, Driven Brands, McDonald's, Planet Fitness, Boyd Group Services, Service Corporation International, Walmart, Costco, Target, Kroger, Dollar General, Tractor Supply.
-- **18 listed: active private and strategic buyers.** Leonard Green & Partners, Oak Hill Capital, Rollins, Boyd Group, El Car Wash, Blackstone, Classic Collision, SPS PoolCare, Tidal Wave Auto Spa, Allied Roofing Partners.
+The report benchmarks 56 listed companies across the four sectors and names the private and strategic buyers that acquired consumer businesses in 2026 transactions covered in the report and in Benchmark International's announcements. The listed companies supply the public valuation reference points, and the buyer lists show which strategics, sponsors, and platforms have been acquiring founder-owned businesses in each sector.
+
+- **Listed Food and Beverage.** The 20 listed food and beverage companies are General Mills, Conagra Brands, Kraft Heinz, Campbell's, J.M. Smucker, Hormel Foods, Utz Brands, McCormick, BellRing Brands, Post Holdings, Simply Good Foods, Mondelez, Vital Farms, Hershey, Coca-Cola, PepsiCo, Keurig Dr Pepper, Monster Beverage, Celsius, and Constellation Brands.
+- **Food and Beverage Buyers.** Active buyers include strategic acquirers Hormel Foods, Procter & Gamble, Vita Coco, HF Foods, and Intersnack, together with Rich Products, Sargento, C.H. Guenther, and the bakery businesses Europastry and Rise Baking.
+- **Consumer Brands & Products.** Listed companies include Procter & Gamble, Estee Lauder, Colgate-Palmolive, Church & Dwight, Clorox, YETI, Mattel, Central Garden & Pet, Newell Brands, Spectrum Brands, and Traeger. Buyers include strategics Clorox, Prestige Consumer Healthcare, Henkel, Kimberly-Clark, and Acme United, private equity firms Advent International, TSG Consumer Partners, and TowerBrook, and Authentic Brands Group and WHP Global.
+- **Foodservice & Distribution.** The 6 listed companies are Sysco, United Natural Foods, US Foods, Chefs' Warehouse, Performance Food Group, and Middleby. Buyers include Sysco and Performance Food Group, dealers Singer Equipment and Wasserstrom, and platforms Parts Town, Five Star Breaktime Solutions, AeriTek, Front of House Worldwide, GreaseCycle, and Market Performance Group.
+- **Listed Services and Retail.** The 18 listed companies are Darden Restaurants, Domino's Pizza, Brinker International, Texas Roadhouse, Chipotle, McDonald's, Planet Fitness, Boyd Group Services, Rollins, Frontdoor, Driven Brands, Service Corporation International, Costco, Target, Kroger, Walmart, Dollar General, and Tractor Supply.
+- **Services and Retail Buyers.** Sponsors Leonard Green & Partners, Oak Hill Capital, and Blackstone, public acquirers Rollins and Boyd Group, and platforms Classic Collision, Tidal Wave Auto Spa, El Car Wash, SPS PoolCare, and Allied Roofing Partners are the active buyers named in consumer services and retail.
 
 ## 6. Valuations and Public Markets
 
@@ -335,89 +341,105 @@ The listed reference companies in each sector, and the platforms, sponsors, and 
 
 Packaged food and snack shares are down a quarter to a third in a year, and earnings rose most at consumer services and foodservice companies.
 
-- **Median change in share price over 52 weeks.** Share prices dated October 14 to October 19, 2026, against a year earlier.
-- **Food & beverage.** The highest are Durables, outdoor & pet (+19.8%), Consumer services (+12.0%), Beverages (+11.6%), Foodservice distribution (+8.7%), Foodservice distribution (+8.1%); the lowest are Packaged food (−22.8%), Snacks (−31.9%), Consumer services (−33.3%).
-- **Consumer services & retail: median change in EBITDA, latest fiscal year.** Reported EBITDA for the latest fiscal year against the year before.
-- **What the market is pricing: 31 of 56.** listed consumer companies trade below their share price of a year ago.
-- **What the market is pricing: 12.0x.** median enterprise value to trailing EBITDA today, against 14.2x a year ago.
-- **What the market is pricing: 7 of 9.** peer groups carry a lower median multiple of EBITDA than a year ago.
+Share prices and reported earnings have moved in different directions across the nine peer groups, and the market now pays a lower multiple for most consumer earnings than it did a year ago. 31 of 56 listed consumer companies trade below their share price of a year ago, which resets the public reference points a buyer cites when it prices a private consumer company (StockAnalysis).
+
+- **Share Price Declines.** Over the 52 weeks to mid-October 2026, median share prices fell 33.3% in consumer services, 31.9% in snacks, 22.8% in packaged food, and 13.3% in restaurants (StockAnalysis).
+- **Share Price Gains.** Durables, outdoor, and pet rose a median 19.8%, beverages 11.6%, foodservice distribution 8.7%, retail 8.0%, and household and personal care 7.1% over the same period.
+- **Change in EBITDA.** Median reported EBITDA for the latest fiscal year rose 12.0% in consumer services, 8.1% in foodservice distribution, 6.4% in beverages, and 6.3% in restaurants, and fell 15.3% in snacks, 11.1% in packaged food, and 8.0% in durables, outdoor, and pet.
+- **Earnings Versus Price.** Consumer services shares fell 33.3% even as median EBITDA rose 12.0%. The snack and packaged food EBITDA declines include commodity hedging and impairment charges, and the snacks median sits between Hershey, down 10%, and three smaller companies down 54% to 79%.
+- **Multiple Compression.** The median enterprise value to trailing EBITDA is 12.0x against 14.2x a year ago, and 7 of 9 peer groups carry a lower median multiple; foodservice distribution is unchanged and household and personal care is higher.
 
 ### Revenue Growth
 
 Snack, restaurant, and consumer services companies grew fastest in their latest fiscal year, and packaged food revenue has declined three years running.
 
-- **Food & Beverage.** Median revenue growth of the listed peer group, by fiscal year.
-- **Consumer Brands & Products.** Household & personal care (6)
-- Durables, outdoor & pet (6)
-- **Foodservice & Distribution.** Foodservice distribution (5). Two years ago +3.3%, Prior year +6.4%, Latest fiscal year +4.1%, Current year est. +6.5%, Next year est. +2.8%.
+Consumer services grew a median 8.6% in the latest fiscal year, snacks 7.4%, and restaurants 6.6%, while packaged food revenue fell for a third year, by 0.7%. Analyst consensus points to slower growth next year in most peer groups, and packaged food is expected to return to growth of only 0.3%. All figures are medians that include acquisitions (StockAnalysis).
+
+- **Packaged Food and Snacks.** Packaged food declined 0.3%, 0.3%, and 0.7% over the last three fiscal years, with a 1.3% decline expected this year. Snacks slowed from 10.8% two years ago to 4.2% the following year and 7.4% in the latest year, with consensus at 2.9% this year and 1.8% next.
+- **Beverage Growth.** Beverage growth of 5.2% in the latest fiscal year is expected to rise to 11.5% this year, but the estimate carries Keurig Dr Pepper's JDE Peet's purchase and Celsius's Alani Nu purchase, and consensus falls back to 5.6% next year.
+- **Consumer Brands & Products.** Household and personal care grew 2.4% in the latest year and is expected to grow 4.8% this year and 3.7% next, while durables, outdoor, and pet declined 3.8%, 0.7%, and 3.6% over three years before an expected 1.9% this year and 2.9% next.
+- **Foodservice Distribution.** The five foodservice distributors grew a median 4.1% in the latest year after 6.4% the year before, with 6.5% expected this year and 2.8% next. Middleby is left out because its revenue was restated for a spin-off.
+- **Services, Restaurants, and Retail.** Consumer services is expected to grow 8.1% this year and 7.7% next, the highest next-year estimate of any group, while restaurants slow from 10.3% in the prior year to 4.8% next year. Retail growth rose from 2.4% to 4.5% over three years, with 4.7% and 4.1% expected.
 
 ### Valuation Multiples
 
 The median multiple of EBITDA is lower than a year ago in seven of nine peer groups and below its three-year median in eight of nine.
 
-- **Median enterprise value to revenue: food & beverage.** The highest are Household & personal care (25.4x), Restaurants (18.6x), Beverages (18.4x), Snacks (17.7x), Consumer services (17.4x); the lowest are Retail (1.2x), Durables, outdoor & pet (1.1x), Foodservice distribution (0.7x).
-- **Consumer services & retail: median forward price to earnings.** Share price to consensus earnings for the next year.
-- **Deal multiples, large and middle market: 12.5x.** median EV to EBITDA on US buyouts closed in 2025 (PitchBook)
-- **Deal multiples, large and middle market: 7.0x.** average EBITDA multiple, GF Data middle-market deals, Q2 2026 (Mercer)
-- **Deal multiples, large and middle market: 14.3x.** trailing adjusted EBITDA: Kimberly-Clark for Kenvue.
-- **Deal multiples, large and middle market: 10.7x.** CY2026 adjusted EBITDA: Hormel for Brakebush Brothers.
-- **Deal multiples, large and middle market: 5.0x.** 2025 adjusted EBITDA on the base price: HF Foods for Searay Foods.
+Public consumer valuations vary widely by peer group, with household and personal care at the top on every measure and packaged food and durables, outdoor, and pet at the bottom on EBITDA. Seven of the nine groups trade below their year-ago median EBITDA multiple, and eight trade below their three-year median. Because medians can move with one or two companies in a group of six, the multiples paid in private buyouts and by strategic acquirers offer a second reference point for owners (StockAnalysis).
+
+- **Revenue Multiples.** Median enterprise value to revenue is 4.0x in household and personal care, 3.5x in beverages, 3.2x in consumer services, and 2.7x in restaurants, against 1.5x in packaged food and snacks, 1.2x in retail, 1.1x in durables, outdoor, and pet, and 0.7x in foodservice distribution.
+- **EBITDA Multiples.** Household and personal care leads at 17.1x, followed by restaurants at 15.2x and foodservice distribution at 13.6x, with retail at 12.2x, consumer services at 11.9x, beverages at 11.5x, and snacks at 10.6x; packaged food and durables, outdoor, and pet both trade at 8.8x.
+- **Forward Earnings.** Share price to next year's consensus earnings runs from 25.4x in household and personal care to 11.8x in packaged food, with restaurants at 18.6x, beverages at 18.4x, snacks at 17.7x, and consumer services at 17.4x.
+- **Private Deal Multiples.** US buyouts closed in 2025 carried a median 12.5x EV to EBITDA (PitchBook), while the average for 85 Middle Market deals of $10 million to $500 million enterprise value in the second quarter of 2026 was 7.0x (GF Data via Mercer).
+- **Strategic Acquirer Multiples.** Kimberly-Clark paid 14.3x trailing adjusted EBITDA for Kenvue, Hormel 10.7x CY2026 adjusted EBITDA for Brakebush Brothers, and HF Foods 5.0x 2025 adjusted EBITDA on the base price for Searay Foods, each as stated by the acquirer on its own basis.
 
 ### What Public Companies Said
 
 Beverage, beauty, and platform companies grew fastest in their latest quarter, while General Mills and Campbell’s reported lower sales.
 
-- **Net sales growth, latest quarter.** Year over year, as reported; selected companies. The highest are Keurig Dr Pepper (+75.6%), e.l.f. Beauty (+35.5%), Boyd Group Services (+29.9%), Monster Beverage (+20.2%), McCormick (+17.4%); the lowest are Church & Dwight (+1.6%), General Mills (−2.8%), Campbell's (−7.9%).
-- **Brands and pricing: read-through.** Hershey’s second-quarter organic sales rose 3.6% on about 12 points of price against an 8-point volume decline, and Church & Dwight grew volume 4.3%, so buyers look at units before price.
-- **Channels and portfolios: read-through.** Keurig Dr Pepper’s growth includes JDE Peet’s, YETI grew wholesale sales 10% and direct-to-consumer sales 7%, and McCormick is planning its Unilever Foods combination, so buyers separate acquired from organic growth.
-- **Platforms and distribution: read-through.** Boyd’s sales rose 29.9%, mostly from new locations that include 258 Joe Hudson’s centers, and Sysco reported positive case growth across its local, national, and international businesses.
+Latest-quarter net sales growth among the selected companies ranged from 75.6% at Keurig Dr Pepper, which includes JDE Peet's, to a decline of 7.9% at Campbell's, with General Mills down 2.8% (StockAnalysis). Commentary from Hershey, Church & Dwight, YETI, McCormick, Sysco, and Boyd Group points buyers to three questions: whether growth came from units or price, whether it was organic or acquired, and whether it came from new locations.
+
+- **Fastest Growers.** Keurig Dr Pepper led at 75.6%, followed by e.l.f. Beauty at 35.5%, Boyd Group Services at 29.9%, Monster Beverage at 20.2%, McCormick at 17.4%, and Chefs' Warehouse at 12.9%. Growth is as reported and includes acquisitions, divestitures, and currency.
+- **Brands and Pricing.** Hershey's second-quarter organic sales rose 3.6% on about 12 points of price against an 8-point volume decline, while Church & Dwight grew volume 4.3%, so buyers look at units before price. Hershey's chief executive cited first-half reported net sales up 8.7%.
+- **Channels and Portfolios.** YETI grew wholesale sales 10% and direct-to-consumer sales 7%, citing strong wholesale sell-through and healthy DTC demand. With Keurig Dr Pepper's growth including JDE Peet's and McCormick planning its Unilever Foods combination, buyers separate acquired from organic growth.
+- **Platforms and Distribution.** Boyd's sales rose 29.9%, mostly from new locations that include 258 Joe Hudson's centers whose conversion was completed during the quarter, and Sysco reported positive case growth across its local, national, and international businesses.
+- **Slower Growers.** Hershey grew 6.6%, Walmart 5.9%, Sysco 4.7%, and Church & Dwight 1.6% in their latest quarters, ended between May and September 2026, while General Mills and Campbell's reported lower sales.
 
 ### Food and Beverage Companies
 
 Packaged food companies trade at a median 8.8 times EBITDA. Keurig Dr Pepper’s figures include JDE Peet’s, and Utz has agreed to be acquired by Intersnack.
 
-- **Companies covered (20).** General Mills, Conagra Brands, Kraft Heinz, Campbell's, J.M. Smucker, Hormel Foods, McCormick, Post Holdings, Mondelez, Hershey, Utz Brands, BellRing Brands, Simply Good Foods, Vital Farms, Coca-Cola, PepsiCo, Keurig Dr Pepper, Monster Beverage, Celsius, Constellation Brands.
+Valuations of the 20 listed food and beverage companies have fallen in each peer group: packaged food trades at a median 8.8x EBITDA against 9.8x a year ago, snacks and better-for-you at 10.6x against 14.7x, and beverages at 11.5x against 19.6x. The steepest share price declines are among smaller snack companies and Celsius, while Coca-Cola and Monster Beverage trade at higher multiples than a year ago (StockAnalysis).
+
+- **Packaged Food.** General Mills trades at 9.1x against 11.1x a year ago after its shares fell 30.6%, Campbell's shares fell 34.1%, and McCormick's multiple dropped from 18.0x to 11.4x. J.M. Smucker is the exception, with shares up 23.1% and trailing revenue up 5.1%.
+- **Snacks and Better-for-You.** BellRing Brands fell 72.7%, Simply Good Foods 54.1%, and Vital Farms 78.6%, and BellRing and Simply Good now trade at 6.7x and 6.0x. Utz Brands, up 16.2% at 33.4x, has agreed to be acquired by Intersnack, and Hershey trades at 14.5x against 17.6x.
+- **Beverage Multiples.** Coca-Cola trades at 25.4x against 19.6x a year ago and Monster Beverage at 29.4x against 25.6x, while Celsius fell from 39.5x to 10.7x despite trailing revenue growth of 82.9%. Keurig Dr Pepper's figures include JDE Peet's, with current-year revenue growth estimated at 58.5%.
+- **Margins and Outlook.** Median EBITDA margins are 27.9% in beverages, 17.9% in packaged food, and 14.7% in snacks, and median current-year revenue growth is estimated at 11.5% for beverages and 2.9% for snacks, against a decline of 1.3% for packaged food.
 
 ### Consumer Brands and Foodservice Companies
 
 Household and personal care companies hold the highest multiples of the nine groups. Middleby’s figures follow the July spin-off of its food processing business.
 
-- **Companies covered (17).** Procter & Gamble, Colgate-Palmolive, Church & Dwight, Clorox, Estee Lauder, e.l.f. Beauty, Central Garden & Pet, Spectrum Brands, Mattel, Newell Brands, Traeger, Sysco, US Foods, Performance Food Group, Chefs' Warehouse, United Natural Foods, Middleby.
+Household and personal care companies trade at a median 17.1x EBITDA and 4.00x revenue, up from 16.3x a year ago, while durables, outdoor, and pet trade at 8.8x and foodservice distribution at 13.6x, level with a year ago. e.l.f. Beauty carries the highest multiple in the table at 34.8x on trailing revenue growth of 31.2%, and Middleby's figures follow the July spin-off of its food processing business (StockAnalysis).
+
+- **Household and Personal Care.** Church & Dwight shares rose 21.0% and trade at 19.9x against 16.9x a year ago, and Colgate-Palmolive rose 21.2% to 16.3x, while Clorox fell 28.4% and trades at 14.0x, with current-year revenue growth estimated at 13.6%.
+- **Durables, Outdoor, and Pet.** Shares in the group rose a median 19.8%, led by Spectrum Brands at 54.6%, Central Garden & Pet at 44.5%, and YETI at 28.1%, while Traeger fell 16.3% on a 15.3% revenue decline. The median EBITDA margin is 11.7%.
+- **Foodservice Distribution.** Sysco trades at 11.9x on a 5.3% EBITDA margin, US Foods at 15.4x, and Performance Food Group at 13.6x, while Chefs' Warehouse shares rose 97.9% and its multiple rose from 14.8x to 20.8x. United Natural Foods trades at 9.4x on a 2.0% margin.
+- **Middleby After the Spin-Off.** Middleby's year-ago multiple and growth rates are marked not comparable and left out of the medians after the July spin-off; the company trades at 9.6x EBITDA with a 20.7% margin and shares down 19.4%.
 
 ### Public Company Metrics: Restaurants, Services, and Retail
 
 Rollins, Planet Fitness, and Boyd Group shares fell more than 40% in a year while their revenue kept growing.
 
-- **Companies covered (18).** Darden Restaurants, Texas Roadhouse, Chipotle, McDonald's, Domino's Pizza, Brinker International, Rollins, Frontdoor, Driven Brands, Planet Fitness, Service Corporation Intl, Boyd Group Services, Walmart, Costco, Target, Kroger, Dollar General, Tractor Supply.
+Rollins, Planet Fitness, and Boyd Group Services shares fell 41.6%, 45.5%, and 45.6% over the year while trailing revenue grew 9.9%, 11.6%, and 17.3%, and the consumer services median multiple is 11.9x EBITDA against 18.2x a year ago. Restaurants trade at a median 15.2x against 17.7x and retail at 12.2x against 14.9x (StockAnalysis).
+
+- **Consumer and Route-Based Services.** Rollins trades at 19.3x against 34.8x a year ago, Planet Fitness at 11.1x against 20.3x, and Boyd Group Services at 13.9x against 21.3x, while Frontdoor rose 21.1% and trades at 11.6x. The group's median EBITDA margin is 23.1% and median trailing revenue growth 10.8%.
+- **Restaurant Multiples.** Brinker International rose 54.5% and trades at 12.0x against 9.6x, while Chipotle fell 29.3% to 18.6x and Domino's Pizza fell 27.1% to 14.4x. McDonald's carries a 53.9% EBITDA margin and trades at 15.1x against 18.9x.
+- **Retail Multiples.** Target shares rose 69.3% and its multiple rose from 7.2x to 9.7x, while Tractor Supply fell 40.6% and trades at 12.1x against 17.9x. Walmart at 22.8x and Costco at 30.2x carry the highest multiples on EBITDA margins of 6.0% and 4.7%.
+- **Growth Outlook.** Current-year revenue growth is estimated at 29.5% for Boyd Group Services, 15.0% for Planet Fitness, and 8.6% for Rollins, so the share price declines in services came alongside continued revenue growth.
 
 ## 7. Indicators to Watch
 
 Spending is rising in dollars while sentiment falls, food manufacturers’ selling prices sit below a year ago, and diesel costs two thirds more than a year ago.
 
-- **Retail and food services sales.** Up 33% since January 2021, with its low in February 2021.
-- **Food services and drinking places sales.** Up 69% since January 2021, with its low in February 2021.
-- **E-commerce share of retail sales.** Up 2.2 points since January 2021, with its low in April 2022.
-- **Consumer sentiment.** Down 30.9 points since January 2021, peaking in April 2021 and with its low in May 2026.
-- **Food at home prices.** Up 27% since January 2021, peaking in June 2026.
-- **Food away from home prices.** Up 33% since January 2021.
-- **Food manufacturing producer prices.** Up 33% since January 2021, peaking in June 2026.
-- **Diesel price.** Up 135% since January 2021.
+Retail and food services sales reached $745.0B in September 2026, up 6.3% over one year, while consumer sentiment fell to 48.1. On the cost side, food manufacturers' producer prices are 1.0% below a year ago and diesel at $6.29 a gallon is up 67.8%, so spending is growing in dollars while confidence weakens and fuel costs rise for distributors and route-based businesses (Census Bureau; University of Michigan; Bureau of Labor Statistics; FRED).
+
+- **Restaurant Spending.** Food services and drinking places sales reached $92.9B in September, up 7.0% over one year and higher in every month since January 2026, ahead of the 6.3% gain in total retail and food services sales (Census Bureau).
+- **E-Commerce Share.** E-commerce reached 17.1% of retail sales in the second quarter of 2026, up 0.8 points over one year and up from 14.2% in the second quarter of 2022, the lowest reading since 2021 (Census Bureau).
+- **Consumer Sentiment.** The University of Michigan index fell to 48.1 in September, down 7.0 points over one year, after reaching 44.8 in May 2026, its lowest reading since the series shown begins in January 2021 (Surveys of Consumers).
+- **Food Prices.** Food-at-home prices rose 1.8% over one year to September (1.9% unadjusted) and food-away-from-home prices 3.5%, while the food manufacturing producer price index fell 1.0% to 271.8 after peaking in June 2026 (FRED; Bureau of Labor Statistics).
+- **Diesel Prices.** Diesel averaged $6.29 a gallon in September, up 67.8% over one year, after rising from $3.72 in February 2026 to $4.92 in March and $5.50 in April (FRED).
 
 ## 8. What We're Reading
 
 Primary sources and industry releases from the third quarter.
 
-Four pieces from the quarter
+Four third-quarter releases bear on how consumer businesses are valued and sold: a federal food price forecast, the restaurant industry's performance index, store brand share data, and a holiday sales forecast. Each speaks to a variable buyers test in diligence, from input costs by product line to customer traffic, unit volume, and channel mix.
 
-Four releases from the quarter that speak to how consumer businesses are valued and sold.
-
-- **USDA Economic Research Service.** Food Price Outlook: Summary Findings.
-- Key takeaway. Food-at-home prices are forecast to rise 2.4% and food-away-from-home prices 3.5%, with beef and veal up 9.4% and eggs down 29.4%.
-- **Private Label Manufacturers Association.** Store Brands Continue Gains in Unit Sales and Shares.
-- Key takeaway. Store brand unit share reached a record 23.8% in the six months to mid-June, while store brand dollar sales were flat and national brand dollars rose 2.2%.
-- **National Restaurant Association.** Restaurant Performance Index: August 2026.
-- Key takeaway. The index stood at 100.6, with 51% of operators reporting higher same-store sales than a year earlier and 46% still reporting lower traffic.
-- **Deloitte.** Deloitte Forecasts Holiday Retail Sales to Reach $1.70 Trillion to $1.71 Trillion.
+- **USDA Economic Research Service.** The September 25 Food Price Outlook forecasts all food prices up 2.9% in 2026, food at home up 2.4%, and food away from home up 3.5%, with beef and veal up 9.4% and eggs down 29.4%, which is why buyers ask for price and cost history by product line.
+- **National Restaurant Association.** The Restaurant Performance Index rose for a fourth consecutive month to 100.6 in August, with 51% of operators reporting higher same-store sales and 46% still reporting lower traffic. Distributors and equipment dealers that sell to restaurants are valued partly on the health of those customers.
+- **Private Label Manufacturers Association.** Store brand unit share reached a record 23.8% in the six months to mid-June, while store brand dollar sales were flat and national brand dollars rose 2.2%, a gap the association links in part to national brand pricing. Buyers pay for brands that hold unit volume while they raise price.
+- **Deloitte Holiday Forecast.** Deloitte forecasts holiday retail sales of $1.70 trillion to $1.71 trillion for November 2026 through January 2027, up 4.0% to 4.8%, with e-commerce sales up 7.5% to 8.4%. Online sales growing at nearly twice the pace of the total keeps channel mix in front of every buyer of a consumer brand.
 
 ## 9. About Benchmark International
 

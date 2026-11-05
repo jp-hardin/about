@@ -253,7 +253,7 @@
           "b": "Packaged food declined 0.3%, 0.3%, and 0.7% over the last three fiscal years, with a 1.3% decline expected this year. Snacks slowed from 10.8% two years ago to 4.2% the following year and 7.4% in the latest year, with consensus at 2.9% this year and 1.8% next."
         },
         {
-          "h": "Beverages",
+          "h": "Beverage Growth",
           "b": "Beverage growth of 5.2% in the latest fiscal year is expected to rise to 11.5% this year, but the estimate carries Keurig Dr Pepper's JDE Peet's purchase and Celsius's Alani Nu purchase, and consensus falls back to 5.6% next year."
         },
         {
@@ -272,7 +272,7 @@
     },
     "18": {
       "lead": [
-        "Public consumer valuations vary widely by peer group, with household and personal care at the top on every measure and packaged food and durables, outdoor, and pet at the bottom on EBITDA. Fewer than one group in four has held its year-ago multiple. Because medians can move with one or two companies in a group of six, the multiples paid in private buyouts and by strategic acquirers offer a second reference point for owners (StockAnalysis)."
+        "Public consumer valuations vary widely by peer group, with household and personal care at the top on every measure and packaged food and durables, outdoor, and pet at the bottom on EBITDA. Seven of the nine groups trade below their year-ago median EBITDA multiple, and eight trade below their three-year median. Because medians can move with one or two companies in a group of six, the multiples paid in private buyouts and by strategic acquirers offer a second reference point for owners (StockAnalysis)."
       ],
       "points": [
         {
@@ -338,7 +338,7 @@
           "b": "BellRing Brands fell 72.7%, Simply Good Foods 54.1%, and Vital Farms 78.6%, and BellRing and Simply Good now trade at 6.7x and 6.0x. Utz Brands, up 16.2% at 33.4x, has agreed to be acquired by Intersnack, and Hershey trades at 14.5x against 17.6x."
         },
         {
-          "h": "Beverages",
+          "h": "Beverage Multiples",
           "b": "Coca-Cola trades at 25.4x against 19.6x a year ago and Monster Beverage at 29.4x against 25.6x, while Celsius fell from 39.5x to 10.7x despite trailing revenue growth of 82.9%. Keurig Dr Pepper's figures include JDE Peet's, with current-year revenue growth estimated at 58.5%."
         },
         {
@@ -372,7 +372,7 @@
     },
     "23": {
       "lead": [
-        "Rollins, Planet Fitness, and Boyd Group Services shares fell 41.6%, 45.5%, and 45.6% over the year while trailing revenue grew 9.9%, 11.6%, and 17.3%, and the consumer services median multiple is 11.9x EBITDA against 18.2x a year ago. Restaurants trade at a median 15.2x against 17.7x and retail at 12.2x against 14.9x, so the lower multiples in this group reflect repricing rather than falling revenue (StockAnalysis)."
+        "Rollins, Planet Fitness, and Boyd Group Services shares fell 41.6%, 45.5%, and 45.6% over the year while trailing revenue grew 9.9%, 11.6%, and 17.3%, and the consumer services median multiple is 11.9x EBITDA against 18.2x a year ago. Restaurants trade at a median 15.2x against 17.7x and retail at 12.2x against 14.9x (StockAnalysis)."
       ],
       "points": [
         {
@@ -380,11 +380,11 @@
           "b": "Rollins trades at 19.3x against 34.8x a year ago, Planet Fitness at 11.1x against 20.3x, and Boyd Group Services at 13.9x against 21.3x, while Frontdoor rose 21.1% and trades at 11.6x. The group's median EBITDA margin is 23.1% and median trailing revenue growth 10.8%."
         },
         {
-          "h": "Restaurants",
+          "h": "Restaurant Multiples",
           "b": "Brinker International rose 54.5% and trades at 12.0x against 9.6x, while Chipotle fell 29.3% to 18.6x and Domino's Pizza fell 27.1% to 14.4x. McDonald's carries a 53.9% EBITDA margin and trades at 15.1x against 18.9x."
         },
         {
-          "h": "Retail",
+          "h": "Retail Multiples",
           "b": "Target shares rose 69.3% and its multiple rose from 7.2x to 9.7x, while Tractor Supply fell 40.6% and trades at 12.1x against 17.9x. Walmart at 22.8x and Costco at 30.2x carry the highest multiples on EBITDA margins of 6.0% and 4.7%."
         },
         {
@@ -415,7 +415,7 @@
           "b": "Food-at-home prices rose 1.8% over one year to September (1.9% unadjusted) and food-away-from-home prices 3.5%, while the food manufacturing producer price index fell 1.0% to 271.8 after peaking in June 2026 (FRED; Bureau of Labor Statistics)."
         },
         {
-          "h": "Diesel",
+          "h": "Diesel Prices",
           "b": "Diesel averaged $6.29 a gallon in September, up 67.8% over one year, after rising from $3.72 in February 2026 to $4.92 in March and $5.50 in April (FRED)."
         }
       ]
@@ -438,7 +438,7 @@
           "b": "Store brand unit share reached a record 23.8% in the six months to mid-June, while store brand dollar sales were flat and national brand dollars rose 2.2%, a gap the association links in part to national brand pricing. Buyers pay for brands that hold unit volume while they raise price."
         },
         {
-          "h": "Deloitte",
+          "h": "Deloitte Holiday Forecast",
           "b": "Deloitte forecasts holiday retail sales of $1.70 trillion to $1.71 trillion for November 2026 through January 2027, up 4.0% to 4.8%, with e-commerce sales up 7.5% to 8.4%. Online sales growing at nearly twice the pace of the total keeps channel mix in front of every buyer of a consumer brand."
         }
       ]
