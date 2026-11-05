@@ -1,0 +1,52 @@
+name: Publish coming soon page
+
+# Replaces the live site (jp-hardin/mmt-site, served at mmt.benchmarkintl.com) with the Benchmark-branded coming soon
+# page in mid-market-practice/_build/coming-soon/. The page has no links. Every page address the full site used
+# (taken from the staged copy in live-preview/) serves the same page, marked noindex, so old links land on it
+# instead of a server error page. The sandbox and the live preview are not touched.
+# To bring the full site back, run Publish MMT site with ref main (the staged copy) or a live-* tag.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency: publish-mmt-site
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Build the coming soon copy
+        run: |
+          src=mid-market-practice/_build/coming-soon/index.html
+          mkdir -p cs/assets/img/brand
+          for f in benchmark-logo-white.png knot-dark.jpg favicon.png; do cp "mid-market-practice/assets/img/brand/$f" cs/assets/img/brand/; done
+          sed 's/content="ROBOTS"/content="index, follow"/' "$src" > cs/index.html
+          if [ -d live-preview ]; then
+            (cd live-preview && find . -name '*.html' ! -path ./index.html) | while read -r p; do
+              mkdir -p "cs/$(dirname "$p")"
+              sed 's/content="ROBOTS"/content="noindex"/' "$src" > "cs/$p"
+            done
+          fi
+          printf 'User-agent: *\nAllow: /\n\nSitemap: https://mmt.benchmarkintl.com/sitemap.xml\n' > cs/robots.txt
+          printf '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://mmt.benchmarkintl.com/</loc></url>\n</urlset>\n' > cs/sitemap.xml
+          if grep -rl '<a ' cs --include='*.html'; then echo "::error::The coming soon page must not contain links"; exit 1; fi
+          echo "$(find cs -name '*.html' | wc -l) pages, $(find cs -type f | wc -l) files"
+      - name: Copy it into mmt-site
+        env:
+          TOKEN: ${{ secrets.MMT_SITE_TOKEN }}
+        run: |
+          [ -n "$TOKEN" ] || { echo "::error::Secret MMT_SITE_TOKEN is not set"; exit 1; }
+          remote="https://x-access-token:${TOKEN}@github.com/jp-hardin/mmt-site.git"
+          git clone -q --depth 1 "$remote" site
+          rsync -a --delete --exclude .git cs/ site/
+          cd site
+          git add -A
+          if git diff --cached --quiet; then echo "No changes to publish"; exit 0; fi
+          git -c user.name="MMT site" -c user.email="mmt-site@users.noreply.github.com" commit -qm "Coming soon page (${GITHUB_SHA::7})"
+          git push -q origin HEAD:main
+          echo "Published $(git rev-parse --short HEAD) ($(git ls-files | wc -l) files)"
