@@ -801,3 +801,22 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 @media (max-width: 640px) { .gate-inds { grid-template-columns: 1fr; } .gate-alt { flex-direction: column; } }
 
 /* Team photos (img.team-photo) are cropped to keep heads in frame; each sets object-position on the faces (team_photos.py) */
+
+/* Home hero carousel (hero_carousel() in build.py): the slides stack and crossfade in turn, each on a slow zoom,
+   so the hero plays almost like a video. Each slide is on screen for 5 s, with a 1.5 s dissolve. */
+.hero-reel img { position: absolute; inset: 0; }
+.hero-reel .reel-intro { animation: none; object-position: center; }  /* the black knot brand background, shown first */
+.hero-reel picture { display: contents; }
+.hero-reel .reel-slide { opacity: 0; animation: reel var(--reel) linear infinite; object-position: var(--pos); transform-origin: var(--pos); }
+@media (max-aspect-ratio: 1/1) { .hero-reel .reel-slide { object-position: var(--pos-narrow); transform-origin: var(--pos-narrow); } }
+/* @keyframes reel is written next to the hero by hero_carousel(), timed from the number of slides */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-reel .reel-slide { animation: none; }
+  .hero-reel picture:nth-child(2) .reel-slide { opacity: 1; }
+}
+/* The carousel hero grows with wide screens (up to the window height) so the photos never become a thin strip that
+   cuts off heads; the text stays vertically centered. */
+.hero--reel { min-height: min(38vw, 92vh); display: flex; align-items: center; }
+.hero--reel > .wrap { width: 100%; }
+
