@@ -1255,28 +1255,6 @@
    "width": 667,
    "height": 1000,
    "bytes": 44560
-  },
-  "crop_box": [
-   0.0,
-   0.34,
-   1.0,
-   1.0,
-   0.48,
-   0.74
-  ],
-  "focus_y": 21,
-  "focus_x": 74,
-  "crop": {
-   "file": "dsc07130-crop.webp",
-   "width": 2000,
-   "height": 1980,
-   "bytes": 360890
-  },
-  "crop_small": {
-   "file": "dsc07130-crop-sm.webp",
-   "width": 1000,
-   "height": 990,
-   "bytes": 73698
   }
  },
  {
@@ -1715,29 +1693,6 @@
    "width": 1000,
    "height": 667,
    "bytes": 44598
-  },
-  "crop_box": [
-   0.0,
-   0.08,
-   1.0,
-   1.0,
-   0.28,
-   0.66,
-   "flip"
-  ],
-  "focus_y": 22,
-  "focus_x": 66,
-  "crop": {
-   "file": "dsc07204-crop.webp",
-   "width": 2000,
-   "height": 1227,
-   "bytes": 116336
-  },
-  "crop_small": {
-   "file": "dsc07204-crop-sm.webp",
-   "width": 1000,
-   "height": 613,
-   "bytes": 43144
   }
  },
  {
@@ -2104,6 +2059,28 @@
    "width": 667,
    "height": 1000,
    "bytes": 43952
+  },
+  "crop_box": [
+   0.0,
+   0.27,
+   1.0,
+   1.0,
+   0.4,
+   0.48
+  ],
+  "focus_y": 18,
+  "focus_x": 48,
+  "crop": {
+   "file": "dsc07290-crop.webp",
+   "width": 1827,
+   "height": 2000,
+   "bytes": 161932
+  },
+  "crop_small": {
+   "file": "dsc07290-crop-sm.webp",
+   "width": 914,
+   "height": 1000,
+   "bytes": 59642
   }
  },
  {
@@ -2136,6 +2113,29 @@
    "width": 1000,
    "height": 668,
    "bytes": 52738
+  },
+  "crop_box": [
+   0.0,
+   0.12,
+   1.0,
+   1.0,
+   0.3,
+   0.72,
+   "flip"
+  ],
+  "focus_y": 20,
+  "focus_x": 72,
+  "crop": {
+   "file": "dsc07292-crop.webp",
+   "width": 2000,
+   "height": 1176,
+   "bytes": 129340
+  },
+  "crop_small": {
+   "file": "dsc07292-crop-sm.webp",
+   "width": 1000,
+   "height": 588,
+   "bytes": 49406
   }
  },
  {

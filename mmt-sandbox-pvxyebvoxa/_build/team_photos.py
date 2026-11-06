@@ -60,8 +60,8 @@ CROPS = {
     'dsc07264': (0.0, 0.20, 1.0, 1.0, 0.35, 0.50),   # phone: colleague at the table
     'dsc07260': (0.0, 0.20, 1.0, 1.0, 0.35, 0.50),   # phone: colleague at the table
     'dsc06886': (0.0, 0.14, 1.0, 1.0, 0.30, 0.45),   # phone: Jordan at his desk
-    'dsc07130': (0.0, 0.34, 1.0, 1.0, 0.48, 0.74),   # phone: Michael (right) with a colleague
-    'dsc07204': (0.0, 0.08, 1.0, 1.0, 0.28, 0.66, 'flip'),   # Michael at the table, flipped so he sits clear of the hero text
+    'dsc07290': (0.0, 0.27, 1.0, 1.0, 0.40, 0.48),   # phone: Michael
+    'dsc07292': (0.0, 0.12, 1.0, 1.0, 0.30, 0.72, 'flip'),   # Michael smiling at the table, flipped so he sits clear of the hero text
     # Third photo in each industry page's photo strip (4:3 boxes, close to the photos' own shape, so uncropped)
     'dsc07163': (0.0, 0.0, 1.0, 1.0, 0.28),     # Industrials: conversation at the window table
     'dsc07155': (0.0, 0.0, 1.0, 1.0, 0.33),     # Business Services: the boardroom, laughing
