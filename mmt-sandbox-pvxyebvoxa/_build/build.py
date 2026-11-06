@@ -844,6 +844,38 @@ def team_img(key, root="", small=False, cls="", lazy=True, priority=False):
     return f'<img src="{root}assets/img/team-photos/{v["file"]}" alt=""{attrs} width="{v["width"]}" height="{v["height"]}"{cls_attr}>'
 
 
+# Home hero carousel: team shoot photos that crossfade on a slow zoom so the hero plays almost like a video.
+HERO_SLIDES = [
+    "dsc06817",  # the open office
+    "dsc07371",  # the team standing together outside the office
+    "dsc07122",  # the boardroom
+    "dsc07199",  # a one-on-one conversation
+    "dsc07004",  # the deal team around the laptop
+    "dsc07065",  # the lounge
+    "dsc06747",  # research at the desk
+]
+HERO_SLIDE_SECONDS = 5
+
+
+def hero_carousel(root=""):
+    """Opening tag of the home hero with the photo carousel. Each slide uses its head-safe crop centered on the faces
+    (team_photos.py), a phone-sized file on small screens, and a staggered crossfade and zoom (style.css .hero-reel)."""
+    n, d = len(HERO_SLIDES), HERO_SLIDE_SECONDS
+    slides = []
+    for i, name in enumerate(HERO_SLIDES):
+        ph = TEAM_PHOTOS[name]
+        big, small = ph["crop"], ph["crop_small"]
+        delay = i * d - 1.5  # the first slide starts already faded in
+        priority = ' fetchpriority="high"' if i == 0 else ""
+        slides.append(
+            f'<img src="{root}assets/img/team-photos/{big["file"]}" '
+            f'srcset="{root}assets/img/team-photos/{small["file"]} {small["width"]}w, {root}assets/img/team-photos/{big["file"]} {big["width"]}w" '
+            f'sizes="100vw" alt="" width="{big["width"]}" height="{big["height"]}"{priority} '
+            f'style="object-position: 50% {ph["focus_y"]}%; transform-origin: 50% {ph["focus_y"]}%; animation-delay: {delay:g}s">')
+    return (f'<section class="hero hero--photo hero--reel"><div class="hero-media hero-reel" aria-hidden="true" '
+            f'style="--slides: {n}; --reel: {n * d}s">{"".join(slides)}</div>')
+
+
 def team_hero(key, root="", page=True):
     """Opening tag of a photo hero using a team shoot photo."""
     return (f'<section class="hero{" hero--page" if page else ""} hero--photo"><div class="hero-media" aria-hidden="true">'
@@ -1197,7 +1229,7 @@ def page_home():
                 "Sell-side M&A advisory for owners of privately held companies with $100M–$500M in enterprise value: strategic sales, mergers, and change-of-control transactions.", root)
     html += header(root)
     html += f"""
-{team_hero("home-hero", page=False)}
+{hero_carousel()}
   <div class="wrap">
     <p class="eyebrow">Benchmark International · <span class="nowrap">Middle Market</span></p>
     <h1 class="display">Your Legacy Is Built. <em>Your Next Chapter Awaits.</em></h1>
