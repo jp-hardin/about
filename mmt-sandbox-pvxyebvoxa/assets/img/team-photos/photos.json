@@ -125,6 +125,26 @@
    "width": 1000,
    "height": 667,
    "bytes": 47430
+  },
+  "crop_box": [
+   0.0,
+   0.05,
+   1.0,
+   0.85,
+   0.32
+  ],
+  "focus_y": 34,
+  "crop": {
+   "file": "dsc06680-crop.webp",
+   "width": 2000,
+   "height": 1067,
+   "bytes": 111004
+  },
+  "crop_small": {
+   "file": "dsc06680-crop-sm.webp",
+   "width": 1000,
+   "height": 533,
+   "bytes": 39996
   }
  },
  {
@@ -769,6 +789,26 @@
    "width": 1000,
    "height": 667,
    "bytes": 65876
+  },
+  "crop_box": [
+   0.0,
+   0.2,
+   1.0,
+   0.95,
+   0.4
+  ],
+  "focus_y": 27,
+  "crop": {
+   "file": "dsc07005-crop.webp",
+   "width": 2000,
+   "height": 1000,
+   "bytes": 153054
+  },
+  "crop_small": {
+   "file": "dsc07005-crop-sm.webp",
+   "width": 1000,
+   "height": 500,
+   "bytes": 55346
   }
  },
  {
@@ -1037,6 +1077,26 @@
    "width": 1000,
    "height": 708,
    "bytes": 51018
+  },
+  "crop_box": [
+   0.0,
+   0.05,
+   1.0,
+   0.85,
+   0.25
+  ],
+  "focus_y": 25,
+  "crop": {
+   "file": "dsc07116-crop.webp",
+   "width": 2000,
+   "height": 1133,
+   "bytes": 126498
+  },
+  "crop_small": {
+   "file": "dsc07116-crop-sm.webp",
+   "width": 1000,
+   "height": 566,
+   "bytes": 45292
   }
  },
  {
@@ -1369,6 +1429,26 @@
    "width": 1000,
    "height": 667,
    "bytes": 47914
+  },
+  "crop_box": [
+   0.0,
+   0.15,
+   1.0,
+   0.9,
+   0.38
+  ],
+  "focus_y": 31,
+  "crop": {
+   "file": "dsc07178-crop.webp",
+   "width": 2000,
+   "height": 1001,
+   "bytes": 107766
+  },
+  "crop_small": {
+   "file": "dsc07178-crop-sm.webp",
+   "width": 1000,
+   "height": 500,
+   "bytes": 41448
   }
  },
  {
@@ -1417,6 +1497,26 @@
    "width": 1000,
    "height": 667,
    "bytes": 42998
+  },
+  "crop_box": [
+   0.0,
+   0.15,
+   1.0,
+   0.9,
+   0.36
+  ],
+  "focus_y": 28,
+  "crop": {
+   "file": "dsc07187-crop.webp",
+   "width": 2000,
+   "height": 1000,
+   "bytes": 87738
+  },
+  "crop_small": {
+   "file": "dsc07187-crop-sm.webp",
+   "width": 1000,
+   "height": 500,
+   "bytes": 30654
   }
  },
  {
@@ -2085,6 +2185,26 @@
    "width": 1000,
    "height": 667,
    "bytes": 55826
+  },
+  "crop_box": [
+   0.0,
+   0.2,
+   1.0,
+   0.78,
+   0.4
+  ],
+  "focus_y": 34,
+  "crop": {
+   "file": "dsc07374-crop.webp",
+   "width": 2000,
+   "height": 773,
+   "bytes": 107868
+  },
+  "crop_small": {
+   "file": "dsc07374-crop-sm.webp",
+   "width": 1000,
+   "height": 387,
+   "bytes": 38236
   }
  },
  {
