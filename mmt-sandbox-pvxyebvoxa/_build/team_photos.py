@@ -28,7 +28,8 @@ SIZES = (('', 2000, 80), ('-sm', 1000, 78))
 # faces and a tall box shows heads to waist: whatever the screen's aspect ratio, nobody is cut off at the
 # shoulders. Written as <name>-crop.webp (2000 px long side) and <name>-crop-sm.webp (1000 px).
 CROPS = {
-    'dsc07371': (0.0, 0.22, 1.0, 0.80, 0.38),   # home hero: the team standing together outside the office
+    'dsc07371': (0.0, 0.22, 1.0, 0.80, 0.38),   # standing group outside the office (default social image)
+    'dsc06817': (0.0, 0.38, 1.0, 0.95, 0.64),   # home hero: the open office (no breakroom sign)
     'dsc07322': (0.0, 0.22, 1.0, 0.80, 0.38),   # home stats band: the full boardroom
     'dsc07199': (0.0, 0.05, 1.0, 0.85, 0.25),   # journey card 1: a one-on-one conversation
     'dsc06716': (0.0, 0.12, 1.0, 0.90, 0.30),   # journey card 2: analysis at the desk

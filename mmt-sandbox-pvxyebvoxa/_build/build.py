@@ -808,7 +808,7 @@ def deals_in(slug):
 # section keeps the individual headshots in assets/img/team/.
 TEAM_PHOTOS = {p["name"]: p for p in json.load(open(os.path.join(SITE, "assets", "img", "team-photos", "photos.json")))}
 TEAM_PHOTO = {
-    "home-hero": "dsc07371",      # the team standing together outside the office
+    "home-hero": "dsc06817",      # the open office, so the hero isn't a team shot right before the boardroom stats band
     "stats": "dsc07322",          # the full boardroom
     "journey-1": "dsc07199",      # Understand Your Options: a one-on-one conversation
     "journey-2": "dsc06716",      # Be Positioned to Win: analysis at the desk
