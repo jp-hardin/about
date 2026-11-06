@@ -852,7 +852,7 @@ HERO_SLIDES = [  # (wide screens, phones and portrait tablets)
     ("dsc07161", "dsc07264"),  # Alex at the boardroom table / a colleague
     ("dsc07005", "dsc07260"),  # the full boardroom / a colleague
     ("dsc06947", "dsc06886"),  # Jordan laughing at the table / Jordan
-    ("dsc07204", "dsc07130"),  # Michael at the table / Michael with a colleague
+    ("dsc07292", "dsc07290"),  # Michael smiling at the table / Michael
 ]
 HERO_NARROW = "(max-aspect-ratio: 1/1)"  # phones and portrait tablets get the tall single-person shots
 HERO_INTRO_SECONDS = 1.5  # the hero opens on the black knot brand background, then the photos fade in
