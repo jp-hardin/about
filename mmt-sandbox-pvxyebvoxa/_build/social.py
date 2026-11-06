@@ -36,7 +36,7 @@ h1 {{ font-family: 'Newsreader', serif; font-weight: 500; font-size: 76px; line-
 def main():
     os.makedirs(OUT, exist_ok=True)
     img = lambda rel: 'file://' + os.path.join(SITE, rel)
-    jobs = [('default', card(img('assets/img/team-photos/dsc07374.webp'), 'Benchmark International',
+    jobs = [('default', card(img('assets/img/team-photos/dsc07371.webp'), 'Benchmark International',
                              'Sell-Side M&amp;A for Middle&#8209;Market Companies',
                              '$100M to $500M TEV &nbsp;·&nbsp; Industrial, Business Services, Consumer, Healthcare and Technology'))]
     for s in site.SECTORS:

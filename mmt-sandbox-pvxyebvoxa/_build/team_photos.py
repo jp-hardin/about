@@ -22,6 +22,25 @@ from PIL import Image, ImageOps
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(os.path.dirname(HERE), 'assets', 'img', 'team-photos')
 SIZES = (('', 2000, 80), ('-sm', 1000, 78))
+# Crops for the photos placed on the site: (left, top, right, bottom, faces) as fractions of the original. Each
+# starts just above the highest head and ends around the waist of the people in front; "faces" is the eye line.
+# The site centers each crop on that line (object-position, stored as focus_y), so a thin, wide band shows the
+# faces and a tall box shows heads to waist: whatever the screen's aspect ratio, nobody is cut off at the
+# shoulders. Written as <name>-crop.webp (2000 px long side) and <name>-crop-sm.webp (1000 px).
+CROPS = {
+    'dsc07371': (0.0, 0.22, 1.0, 0.80, 0.38),   # home hero: the team standing together outside the office
+    'dsc07322': (0.0, 0.22, 1.0, 0.80, 0.38),   # home stats band: the full boardroom
+    'dsc07199': (0.0, 0.05, 1.0, 0.85, 0.25),   # journey card 1: a one-on-one conversation
+    'dsc06716': (0.0, 0.12, 1.0, 0.90, 0.30),   # journey card 2: analysis at the desk
+    'dsc07004': (0.0, 0.12, 1.0, 0.92, 0.38),   # journey card 3: the deal team around the laptop
+    'dsc07035': (0.00, 0.18, 1.00, 0.95, 0.38),   # Who We Help (portrait)
+    'dsc07355': (0.00, 0.12, 1.00, 0.90, 0.26),   # home contact band
+    'dsc07193': (0.0, 0.18, 1.0, 0.88, 0.37),   # closing band on other pages
+    'dsc07343': (0.00, 0.16, 1.00, 0.85, 0.30),   # About hero: the team at the boardroom table
+    'dsc07122': (0.0, 0.27, 1.0, 0.82, 0.47),   # Transactions hero: the boardroom
+    'dsc06747': (0.0, 0.15, 1.0, 0.85, 0.38),   # Insights hero: research at the desk
+    'dsc06809': (0.00, 0.15, 1.00, 0.90, 0.33),   # Industries hero: the open office (no breakroom sign)
+}
 
 
 def main(src):
@@ -32,7 +51,8 @@ def main(src):
         if not fn.lower().endswith(('.jpg', '.jpeg')):
             continue
         name = os.path.splitext(fn)[0].lower()
-        if name in manifest and all(os.path.exists(os.path.join(OUT, name + s + '.webp')) for s, _, _ in SIZES):
+        if name in manifest and all(os.path.exists(os.path.join(OUT, name + s + '.webp')) for s, _, _ in SIZES) \
+                and (manifest[name].get('crop_box') == list(CROPS.get(name, [])) or (name not in CROPS and 'crop' not in manifest[name])):
             continue
         im = ImageOps.exif_transpose(Image.open(os.path.join(src, fn))).convert('RGB')
         entry = {'name': name, 'orientation': 'landscape' if im.width > im.height else 'portrait' if im.height > im.width else 'square'}
@@ -43,6 +63,18 @@ def main(src):
             copy.save(path, 'WEBP', quality=quality, method=6)  # no exif= argument, so no camera data is written
             entry['large' if not suffix else 'small'] = {'file': name + suffix + '.webp', 'width': copy.width,
                                                           'height': copy.height, 'bytes': os.path.getsize(path)}
+        if name in CROPS:
+            entry['crop_box'] = list(CROPS[name])
+            l, t, r, b, face = CROPS[name]
+            entry['focus_y'] = round(100 * (face - t) / (b - t))
+            crop = im.crop((round(l * im.width), round(t * im.height), round(r * im.width), round(b * im.height)))
+            for suffix, edge, quality in (('-crop', 2000, 80), ('-crop-sm', 1000, 78)):
+                copy = crop.copy()
+                copy.thumbnail((edge, edge), Image.LANCZOS)
+                path = os.path.join(OUT, name + suffix + '.webp')
+                copy.save(path, 'WEBP', quality=quality, method=6)
+                entry['crop' if suffix == '-crop' else 'crop_small'] = {'file': name + suffix + '.webp', 'width': copy.width,
+                                                                       'height': copy.height, 'bytes': os.path.getsize(path)}
         manifest[name] = entry
         print('wrote', name, entry['large']['bytes'] // 1024, 'KB +', entry['small']['bytes'] // 1024, 'KB')
     json.dump(sorted(manifest.values(), key=lambda p: p['name']), open(manifest_path, 'w'), indent=1)

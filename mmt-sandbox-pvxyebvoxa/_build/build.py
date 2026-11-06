@@ -808,7 +808,7 @@ def deals_in(slug):
 # section keeps the individual headshots in assets/img/team/.
 TEAM_PHOTOS = {p["name"]: p for p in json.load(open(os.path.join(SITE, "assets", "img", "team-photos", "photos.json")))}
 TEAM_PHOTO = {
-    "home-hero": "dsc07377",      # the team walking outside the office
+    "home-hero": "dsc07371",      # the team standing together outside the office
     "stats": "dsc07322",          # the full boardroom
     "journey-1": "dsc07199",      # Understand Your Options: a one-on-one conversation
     "journey-2": "dsc06716",      # Be Positioned to Win: analysis at the desk
@@ -816,19 +816,26 @@ TEAM_PHOTO = {
     "who-we-help": "dsc07035",    # portrait, the team reviewing a deal together
     "contact": "dsc07355",        # two Managing Directors at the table
     "cta": "dsc07193",            # the closing band on every other page: a private conversation at the table
-    "about-hero": "dsc07374",     # the team in front of the office
+    "about-hero": "dsc07343",     # the team at the boardroom table
     "transactions-hero": "dsc07122",  # the boardroom
     "insights-hero": "dsc06747",  # research at the desk
-    "industries-hero": "dsc06798",    # the open office
+    "industries-hero": "dsc06809",    # the open office (no breakroom sign)
 }
 
 
 def team_img(key, root="", small=False, cls="", lazy=True, priority=False):
     """An <img> for one of the team shoot photos (decorative: alt is empty)."""
     ph = TEAM_PHOTOS[TEAM_PHOTO[key]]
-    v = ph["small" if small else "large"]
+    # Use the head-safe crop (made by team_photos.py) centered on the faces, so no one is cut off at the
+    # shoulders whatever the box's aspect ratio.
+    crop = "crop" in ph
+    v = ph[("crop_small" if crop else "small") if small else ("crop" if crop else "large")]
+    cls = " ".join(x for x in (cls, "team-photo" if crop else "") if x)
     attrs = (' loading="lazy"' if lazy and not priority else "") + (' fetchpriority="high"' if priority else "")
-    return f'<img src="{root}assets/img/team-photos/{v["file"]}" alt=""{attrs} width="{v["width"]}" height="{v["height"]}"{f" class={cls!r}" if cls else ""}>'
+    cls_attr = ' class="%s"' % cls if cls else ""
+    if crop:
+        cls_attr += ' style="object-position: 50%% %d%%; transform-origin: 50%% %d%%"' % (ph["focus_y"], ph["focus_y"])
+    return f'<img src="{root}assets/img/team-photos/{v["file"]}" alt=""{attrs} width="{v["width"]}" height="{v["height"]}"{cls_attr}>'
 
 
 def team_hero(key, root="", page=True):
