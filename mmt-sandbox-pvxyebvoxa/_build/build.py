@@ -845,16 +845,17 @@ def team_img(key, root="", small=False, cls="", lazy=True, priority=False):
 
 
 # Home hero carousel: team shoot photos that crossfade on a slow zoom so the hero plays almost like a video.
-HERO_SLIDES = [
-    "dsc06817",  # the open office
-    "dsc07116",  # Alexandra with two colleagues by the window
-    "dsc06557",  # Alex smiling at his desk
-    "dsc07374",  # the standing group, Alexandra in the center
-    "dsc07161",  # Alex at the boardroom table
-    "dsc07005",  # the full boardroom
-    "dsc07187",  # Alexandra at the table
-    "dsc07178",  # a meeting at the table
+HERO_SLIDES = [  # (wide screens, phones and portrait tablets)
+    ("dsc06817", "dsc06700"),  # the open office
+    ("dsc07116", "dsc07220"),  # Alexandra with two colleagues by the window / Alexandra
+    ("dsc06557", "dsc07245"),  # Alex smiling at his desk / Alex
+    ("dsc07374", "dsc07251"),  # the standing group, Alexandra in the center / a colleague
+    ("dsc07161", "dsc07264"),  # Alex at the boardroom table / a colleague
+    ("dsc07005", "dsc07260"),  # the full boardroom / a colleague
+    ("dsc06947", "dsc06886"),  # Jordan laughing at the table / Jordan
+    ("dsc07204", "dsc07130"),  # Michael at the table / Michael with a colleague
 ]
+HERO_NARROW = "(max-aspect-ratio: 1/1)"  # phones and portrait tablets get the tall single-person shots
 HERO_INTRO_SECONDS = 1.5  # the hero opens on the black knot brand background, then the photos fade in
 HERO_SLIDE_SECONDS = 5
 
@@ -865,23 +866,25 @@ def hero_carousel(root=""):
     (team_photos.py), a phone-sized file on small screens, and a staggered crossfade and zoom (style.css .hero-reel)."""
     n, d = len(HERO_SLIDES), HERO_SLIDE_SECONDS
     slides = []
-    for i, name in enumerate(HERO_SLIDES):
-        ph = TEAM_PHOTOS[name]
-        big, small = ph["crop"], ph["crop_small"]
+    for i, (name, narrow) in enumerate(HERO_SLIDES):
+        ph, nph = TEAM_PHOTOS[name], TEAM_PHOTOS[narrow]
+        big, small, tall = ph["crop"], ph["crop_small"], nph["crop_small"]
         delay = HERO_INTRO_SECONDS + i * d  # the knot background shows first, then each slide fades in on its turn
         priority = ' fetchpriority="high"' if i == 0 else ""
         slides.append(
+            f'<picture><source media="{HERO_NARROW}" srcset="{root}assets/img/team-photos/{tall["file"]}">'
             f'<img src="{root}assets/img/team-photos/{big["file"]}" '
             f'srcset="{root}assets/img/team-photos/{small["file"]} {small["width"]}w, {root}assets/img/team-photos/{big["file"]} {big["width"]}w" '
             f'sizes="100vw" alt="" width="{big["width"]}" height="{big["height"]}"{priority} class="reel-slide" '
-            # pinned to the top (the crop starts just above the heads) and centered on the subject on narrow screens
-            f'style="object-position: {ph["focus_x"]}% 0%; transform-origin: {ph["focus_x"]}% 0%; animation-delay: {delay:g}s">')
+            # pinned to the top (each crop starts just above the heads) and centered on the subject
+            f'style="--pos: {ph["focus_x"]}% 0%; --pos-narrow: {nph["focus_x"]}% 0%; animation-delay: {delay:g}s"></picture>')
     # crossfade timing from the slide count: 1.5 s fade in, held until the next slide is fully in, then a 1.5 s fade out
     cycle, fade = n * d, 1.5
     pct = lambda sec: f"{100 * sec / cycle:.2f}%"
-    keyframes = (f"@keyframes reel {{ 0% {{ opacity: 0; transform: scale(1.1); }} {pct(fade)} {{ opacity: 1; }} "
-                 f"{pct(d + fade)} {{ opacity: 1; }} {pct(d + 2 * fade)} {{ opacity: 0; transform: scale(1.02); }} "
-                 f"100% {{ opacity: 0; transform: scale(1.02); }} }}")
+    # a gentle zoom out that ends at the full frame, so people at the edges of group shots are never trimmed for long
+    keyframes = (f"@keyframes reel {{ 0% {{ opacity: 0; transform: scale(1.06); }} {pct(fade)} {{ opacity: 1; }} "
+                 f"{pct(d + fade)} {{ opacity: 1; transform: scale(1); }} {pct(d + 2 * fade)} {{ opacity: 0; transform: scale(1); }} "
+                 f"100% {{ opacity: 0; transform: scale(1); }} }}")
     return (f'<style>{keyframes}</style>'
             f'<section class="hero hero--photo hero--reel"><div class="hero-media hero-reel" aria-hidden="true" '
             f'style="--slides: {n}; --reel: {n * d}s"><img class="reel-intro" src="{root}assets/img/brand/knot-dark.jpg" alt="" width="1920" height="1080">'
