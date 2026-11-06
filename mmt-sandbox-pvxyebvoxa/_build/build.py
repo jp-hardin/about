@@ -341,7 +341,7 @@ for _s in SECTORS:
 # ─────────────────────────────────────────────────────────────────────────────
 TEAM_LEAD = [
     ("Jordan Houtz", "Managing Director | Head of Middle Market", "jordan-houtz",
-     ["As Managing Director and Head of Middle Market, Jordan represents clients with total enterprise values (TEV) ranging from $50 million to $500 million across the United States. He is a seasoned investment banker with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
+     ["As Managing Director and Head of Middle Market, Jordan represents clients with total enterprise values (TEV) ranging from $100 million to $500 million across the United States. He is a seasoned investment banker with more than 15 years of experience originating and executing complex domestic and cross-border M&A transactions for corporate and private equity clients.",
       "His deep experience on both the buy and sell sides of M&A transactions gives his clients a unique advantage in understanding deal dynamics and achieving their objectives. By leading full-cycle processes from idea and thesis generation through valuation, diligence, and negotiation, he stays closely involved in every stage of his clients’ transactions. Jordan builds lasting client relationships and stays focused on the outcomes that matter to them."]),
     ("Jared Hardin", "Managing Director", "jared-hardin",
      ["As Managing Director, Jared is the first team member an owner works with. He walks owners through their options as they consider and plan their next step.",
@@ -945,7 +945,7 @@ def org_schema():
         "alternateName": ["Benchmark International Middle Market team", "Middle Market team"],
         "url": SITE_URL, "logo": SITE_URL + "assets/img/brand/benchmark-logo-black.svg",
         "description": "Benchmark International's Middle Market team represents privately held companies across the United States "
-                       "with $50M–$500M in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions.",
+                       "with $100M–$500M in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions.",
         "parentOrganization": PARENT_ORG, "telephone": "+1-" + PHONE, "email": EMAIL, "address": PARENT_ORG["address"],
         "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "telephone": "+1-" + PHONE, "email": EMAIL, "areaServed": "US", "availableLanguage": "English"},
         "slogan": "Your Legacy Is Built. Your Next Chapter Awaits.",
@@ -996,9 +996,7 @@ def home_faqs():
          "Benchmark International's Middle Market team represents premier privately held companies across the United States in sell-side M&A, "
          "offering white-glove, high-touch service to the firm's largest clients."),
         ("What size companies does the Middle Market team advise?",
-         "Our Middle Market team advises privately held businesses, typically with enterprise values of $50 million to $500 million, "
-         "that meet applicable M&A broker exemption requirements, including companies with less than $25 million in annual EBITDA "
-         "or less than $250 million in annual revenue."),
+         "Our Middle Market team advises privately held businesses, typically with total enterprise values (TEV) of $100 million to $500 million."),
         ("Which industries does the Middle Market team focus on?",
          "Five industries: " + ", ".join(x["name"] for x in SECTORS[:-1]) + ", and " + SECTORS[-1]["name"] + "."),
         ("What services does the Middle Market team provide?",
@@ -1006,7 +1004,6 @@ def home_faqs():
          "controlling ownership transfers, strategic acquisitions, and exit planning for privately held companies. Our services span "
          "transaction preparation, valuation analysis, buyer identification, deal structuring, negotiation, and execution, subject to "
          "applicable regulatory requirements."),
-        next((q, " ".join(ans)) for q, ans in pagecopy.load("about")["faq"] if "FINRA" in q),
         ("How does working with Benchmark International start?",
          "The first step is always a confidential conversation about your goals, your company, and your options. A senior member of the "
          "Middle Market team sets up a private conversation, then walks you through the paths available, from a strategic sale to a merger or change-of-control transaction."),
@@ -1145,7 +1142,7 @@ def page_home():
     awards = "".join(f'<img src="assets/img/awards/award-{i}.png" alt="{e(a[0])}" loading="lazy" width="520" height="300">' for i, a in enumerate(AWARDS, 1))
 
     html = head("Middle Market M&A Advisory | Benchmark International",
-                "Sell-side M&A advisory for owners of privately held companies with $50M–$500M in enterprise value: strategic sales, mergers, and change-of-control transactions.", root)
+                "Sell-side M&A advisory for owners of privately held companies with $100M–$500M in enterprise value: strategic sales, mergers, and change-of-control transactions.", root)
     html += header(root)
     html += f"""
 <section class="hero">
@@ -1165,7 +1162,7 @@ def page_home():
   <div class="wrap">
     <div class="stats">
       <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Privately owned sell-side M&amp;A advisor worldwide<sup>*</sup></div></div>
-      <div class="stat"><div class="stat-num">$50M–$500M</div><div class="stat-label">Total Enterprise Value (TEV) range we serve</div></div>
+      <div class="stat"><div class="stat-num">$100M–$500M</div><div class="stat-label">Total Enterprise Value (TEV) range we serve</div></div>
       <div class="stat"><div class="stat-num">5</div><div class="stat-label">Focused industries with dedicated deal expertise</div></div>
       <div class="stat"><div class="stat-num">15</div><div class="stat-label">Global offices across the Americas, Europe &amp; Africa</div></div>
     </div>
@@ -1382,11 +1379,11 @@ def paras_html(ps):
 
 # Search-result descriptions for the industry pages (about 160 characters, so Google shows them whole).
 SECTOR_META_DESC = {
-    "industrial": "Industrials M&A advisory for owners of $50M–$500M companies in manufacturing, distribution, building products, energy services, and transportation.",
-    "business-services": "Business Services M&A advisory for owners of $50M–$500M companies in facility, marketing, engineering, financial, and staffing services.",
-    "consumer": "Consumer M&A advisory for owners of $50M–$500M food and beverage, restaurant, consumer brand, foodservice, and consumer services companies.",
-    "healthcare": "Healthcare M&A advisory for owners of $50M–$500M provider, life sciences, medical products, and pharmacy and healthcare services companies.",
-    "technology": "Technology M&A advisory for owners of $50M–$500M software, IT and managed services, communications, and hardware companies.",
+    "industrial": "Industrials M&A advisory for owners of $100M–$500M companies in manufacturing, distribution, building products, energy services, and transportation.",
+    "business-services": "Business Services M&A advisory for owners of $100M–$500M companies in facility, marketing, engineering, financial, and staffing services.",
+    "consumer": "Consumer M&A advisory for owners of $100M–$500M food and beverage, restaurant, consumer brand, foodservice, and consumer services companies.",
+    "healthcare": "Healthcare M&A advisory for owners of $100M–$500M provider, life sciences, medical products, and pharmacy and healthcare services companies.",
+    "technology": "Technology M&A advisory for owners of $100M–$500M software, IT and managed services, communications, and hardware companies.",
 }
 
 
@@ -1874,9 +1871,9 @@ def about_facts():
     lead = ", ".join(f"{n} ({r})" for n, r, _, _ in TEAM_LEAD)
     support = ", ".join(f"{n} ({r})" for n, r, _ in TEAM_SUPPORT)
     rows = [
-        ("Who we are", "The Middle Market team of Benchmark International, serving owners of companies with $50M–$500M in total enterprise value (TEV)."),
+        ("Who we are", "The Middle Market team of Benchmark International, serving owners of companies with $100M–$500M in total enterprise value (TEV)."),
         ("What we do", "Specialized sell-side M&A advisory services to owners of privately held businesses, focused on qualifying mergers, business sales, and controlling ownership transitions."),
-        ("Company size served", "$50 million to $500 million in total enterprise value (TEV)."),
+        ("Company size served", "$100 million to $500 million in total enterprise value (TEV)."),
         ("Industries", ", ".join(x["name"] for x in SECTORS) + "."),
         ("Services", ", ".join(n for n, _ in SERVICES) + "."),
         ("Firm", "Headquartered in Tampa, FL, with over 300 employees across 15 global offices in the Americas, Europe, and Africa; ranked the #1 global M&A advisor for privately owned businesses (PitchBook Q2 2026 Global League Tables)."),
@@ -1938,7 +1935,7 @@ def page_about():
 
     faqs = [(q, " ".join(ans)) for q, ans in cp["faq"]]
     html = head("About the Middle Market Team | Benchmark International",
-                "Benchmark International's Middle Market team: sell-side M&A advisory for privately held companies with $50M–$500M in enterprise value across five industries.", root)
+                "Benchmark International's Middle Market team: sell-side M&A advisory for privately held companies with $100M–$500M in enterprise value across five industries.", root)
     html += header(root)
     html += f"""
 <section class="hero hero--page">
@@ -2009,7 +2006,7 @@ def write_discovery_files():
     faqs = "\n".join(f"- **{q}** {a}" for q, a in home_faqs())
     llms = f"""# {ORG_NAME}
 
-> Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions, across five industries: {", ".join(x["name"] for x in SECTORS)}.
+> Benchmark International's Middle Market team represents privately held companies across the United States with $100M–$500M in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions, across five industries: {", ".join(x["name"] for x in SECTORS)}.
 
 Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark International (https://www.benchmarkintl.com/).
 
@@ -2038,7 +2035,7 @@ Information as of {AS_OF}. Contact: {PHONE}, {EMAIL}. Parent firm: Benchmark Int
 def llms_full():
     """The whole site as one plain Markdown file, so an AI assistant can answer from it without crawling every page."""
     out = [f"# {ORG_NAME}", "",
-           "> Benchmark International's Middle Market team represents privately held companies across the United States with $50M–$500M "
+           "> Benchmark International's Middle Market team represents privately held companies across the United States with $100M–$500M "
            "in total enterprise value (TEV) on strategic sales, mergers, and qualifying change-of-control transactions.", "",
            f"Information as of {AS_OF} (updated {SITE_UPDATED}). Source: {SITE_URL}", "", "## Key facts", ""]
     out += [f"- **{k}:** {v}" for k, v in about_facts()]

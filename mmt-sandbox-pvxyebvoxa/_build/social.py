@@ -38,7 +38,7 @@ def main():
     img = lambda rel: 'file://' + os.path.join(SITE, rel)
     jobs = [('default', card(img('assets/img/site/stats-bg.jpg'), 'Benchmark International',
                              'Sell-Side M&amp;A for Middle&#8209;Market Companies',
-                             '$50M to $500M TEV &nbsp;·&nbsp; Industrial, Business Services, Consumer, Healthcare and Technology'))]
+                             '$100M to $500M TEV &nbsp;·&nbsp; Industrial, Business Services, Consumer, Healthcare and Technology'))]
     for s in site.SECTORS:
         hero = img(f"assets/img/industries/{s['slug']}/hero.jpg")
         jobs.append((s['slug'], card(hero, 'Sector Expertise', f"{s['name']} M&amp;A Advisory", site.e(s['tagline']))))

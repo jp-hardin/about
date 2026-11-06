@@ -24,7 +24,7 @@ Benchmark International's Middle Market team provides specialized sell-side M&A 
 
 ### What size companies does the Middle Market team advise?
 
-Our Middle Market team generally focuses on privately held businesses with enterprise values ranging from $50 million to $500 million, subject to applicable regulatory requirements and transaction eligibility criteria.
+Our Middle Market team generally focuses on privately held businesses with enterprise values ranging from $100 million to $500 million, subject to applicable regulatory requirements and transaction eligibility criteria.
 
 Our advisory approach is tailored to each company's financial profile, ownership structure, strategic objectives, and transaction requirements.
 
@@ -45,14 +45,6 @@ We advise clients throughout the transaction lifecycle, including valuation anal
 Our Middle Market team combines senior-level transaction leadership, sector specialization, rigorous financial and operational analysis, and disciplined competitive transaction execution.
 
 We develop tailored investment theses, identify qualified acquirers with compelling acquisition rationales, and manage transaction processes designed to maximize shareholder value while balancing transaction terms, execution certainty, and ownership objectives.
-
-### Is Benchmark International's Middle Market team registered with FINRA?
-
-No. Benchmark International's Middle Market team is not registered as a FINRA member broker-dealer.
-
-The team focuses on qualifying M&A advisory activities conducted in reliance on applicable registration exemptions, including the federal M&A Broker Exemption under Section 15(b)(13) of the Securities Exchange Act of 1934, where its requirements are satisfied.
-
-Our services are subject to the applicable federal and state regulatory requirements governing each engagement and transaction. We do not offer services requiring broker-dealer registration unless conducted through an appropriately registered entity.
 
 ### Can owners retain equity following a transaction?
 

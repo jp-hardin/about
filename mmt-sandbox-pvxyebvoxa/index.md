@@ -1,6 +1,6 @@
 # Your Legacy Is Built. Your Next Chapter Awaits.
 
-> Sell-side M&A advisory for owners of privately held companies with $50M–$500M in enterprise value: strategic sales, mergers, and change-of-control transactions.
+> Sell-side M&A advisory for owners of privately held companies with $100M–$500M in enterprise value: strategic sales, mergers, and change-of-control…
 
 Source: https://jp-hardin.github.io/about/mmt-sandbox-pvxyebvoxa/
 
@@ -16,7 +16,7 @@ Start the Conversation [Explore Our Industries](https://jp-hardin.github.io/abou
 
 Privately owned sell-side M&A advisor worldwide*
 
-$50M–$500M
+$100M–$500M
 
 Total Enterprise Value (TEV) range we serve
 
@@ -214,7 +214,7 @@ Benchmark International's Middle Market team represents premier privately held c
 
 ### What size companies does the Middle Market team advise?
 
-Our Middle Market team advises privately held businesses, typically with enterprise values of $50 million to $500 million, that meet applicable M&A broker exemption requirements, including companies with less than $25 million in annual EBITDA or less than $250 million in annual revenue.
+Our Middle Market team advises privately held businesses, typically with total enterprise values (TEV) of $100 million to $500 million.
 
 ### Which industries does the Middle Market team focus on?
 
@@ -223,10 +223,6 @@ Five industries: Industrials, Business Services, Consumer, Healthcare, and Techn
 ### What services does the Middle Market team provide?
 
 Our Middle Market team provides comprehensive sell-side M&A advisory services, specializing in business sales, mergers, controlling ownership transfers, strategic acquisitions, and exit planning for privately held companies. Our services span transaction preparation, valuation analysis, buyer identification, deal structuring, negotiation, and execution, subject to applicable regulatory requirements.
-
-### Is Benchmark International's Middle Market team registered with FINRA?
-
-No. Benchmark International's Middle Market team is not registered as a FINRA member broker-dealer. The team focuses on qualifying M&A advisory activities conducted in reliance on applicable registration exemptions, including the federal M&A Broker Exemption under Section 15(b)(13) of the Securities Exchange Act of 1934, where its requirements are satisfied. Our services are subject to the applicable federal and state regulatory requirements governing each engagement and transaction. We do not offer services requiring broker-dealer registration unless conducted through an appropriately registered entity.
 
 ### How does working with Benchmark International start?
 

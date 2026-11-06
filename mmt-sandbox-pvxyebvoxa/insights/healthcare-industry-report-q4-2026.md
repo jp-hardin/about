@@ -344,9 +344,9 @@ Four third-quarter pieces, one for each sector, cover the slowdown in sponsor-ba
 
 The world’s leading privately owned sell-side M&A advisor focused on five industries.
 
-Benchmark International advises owners of privately held companies around the world, and its Middle Market team represents owners of companies with $50 million to $500 million of total enterprise value in strategic sales, mergers, and qualifying change-of-control transactions. The first step is a confidential conversation about your goals, your company, and your options.
+Benchmark International advises owners of privately held companies around the world, and its Middle Market team represents owners of companies with $100 million to $500 million of total enterprise value in strategic sales, mergers, and qualifying change-of-control transactions. The first step is a confidential conversation about your goals, your company, and your options.
 
-#1Privately owned sell-side M&A advisor worldwide, based on PitchBook’s Q2 2026 Global League Tables$50M to $500MTotal enterprise value range the Middle Market team serves5Focused industry groups with dedicated sector expertise15Global offices across the Americas, Europe, and Africa
+#1Privately owned sell-side M&A advisor worldwide, based on PitchBook’s Q2 2026 Global League Tables$100M to $500MTotal enterprise value range the Middle Market team serves5Focused industry groups with dedicated sector expertise15Global offices across the Americas, Europe, and Africa
 RECOGNITION
 FIVE INDUSTRY GROUPS
 

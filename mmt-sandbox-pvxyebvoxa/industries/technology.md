@@ -1,6 +1,6 @@
 # Technology
 
-> Technology M&A advisory for owners of $50M–$500M software, IT and managed services, communications, and hardware companies.
+> Technology M&A advisory for owners of $100M–$500M software, IT and managed services, communications, and hardware companies.
 
 Source: https://jp-hardin.github.io/about/mmt-sandbox-pvxyebvoxa/industries/technology.html
 
