@@ -797,6 +797,26 @@
    "width": 1000,
    "height": 664,
    "bytes": 51402
+  },
+  "crop_box": [
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   0.38
+  ],
+  "focus_y": 38,
+  "crop": {
+   "file": "dsc07033-crop.webp",
+   "width": 2000,
+   "height": 1327,
+   "bytes": 152332
+  },
+  "crop_small": {
+   "file": "dsc07033-crop-sm.webp",
+   "width": 1000,
+   "height": 664,
+   "bytes": 51402
   }
  },
  {
@@ -894,6 +914,26 @@
   },
   "small": {
    "file": "dsc07065-sm.webp",
+   "width": 1000,
+   "height": 667,
+   "bytes": 72202
+  },
+  "crop_box": [
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   0.35
+  ],
+  "focus_y": 35,
+  "crop": {
+   "file": "dsc07065-crop.webp",
+   "width": 2000,
+   "height": 1333,
+   "bytes": 202376
+  },
+  "crop_small": {
+   "file": "dsc07065-crop-sm.webp",
    "width": 1000,
    "height": 667,
    "bytes": 72202
@@ -1109,6 +1149,26 @@
    "width": 1000,
    "height": 667,
    "bytes": 54962
+  },
+  "crop_box": [
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   0.33
+  ],
+  "focus_y": 33,
+  "crop": {
+   "file": "dsc07155-crop.webp",
+   "width": 2000,
+   "height": 1333,
+   "bytes": 150404
+  },
+  "crop_small": {
+   "file": "dsc07155-crop-sm.webp",
+   "width": 1000,
+   "height": 667,
+   "bytes": 54962
   }
  },
  {
@@ -1186,6 +1246,26 @@
   },
   "small": {
    "file": "dsc07163-sm.webp",
+   "width": 1000,
+   "height": 667,
+   "bytes": 40048
+  },
+  "crop_box": [
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   0.28
+  ],
+  "focus_y": 28,
+  "crop": {
+   "file": "dsc07163-crop.webp",
+   "width": 2000,
+   "height": 1334,
+   "bytes": 105582
+  },
+  "crop_small": {
+   "file": "dsc07163-crop-sm.webp",
    "width": 1000,
    "height": 667,
    "bytes": 40048
@@ -1874,6 +1954,26 @@
   },
   "small": {
    "file": "dsc07345-sm.webp",
+   "width": 1000,
+   "height": 667,
+   "bytes": 58982
+  },
+  "crop_box": [
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   0.42
+  ],
+  "focus_y": 42,
+  "crop": {
+   "file": "dsc07345-crop.webp",
+   "width": 2000,
+   "height": 1334,
+   "bytes": 164896
+  },
+  "crop_small": {
+   "file": "dsc07345-crop-sm.webp",
    "width": 1000,
    "height": 667,
    "bytes": 58982

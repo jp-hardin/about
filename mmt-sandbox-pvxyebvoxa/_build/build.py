@@ -820,6 +820,12 @@ TEAM_PHOTO = {
     "transactions-hero": "dsc07122",  # the boardroom
     "insights-hero": "dsc06747",  # research at the desk
     "industries-hero": "dsc06809",    # the open office (no breakroom sign)
+    # third photo in each industry page's photo strip (the other three stay industry photos)
+    "strip-industrial": "dsc07163",
+    "strip-business-services": "dsc07155",
+    "strip-consumer": "dsc07065",
+    "strip-healthcare": "dsc07345",
+    "strip-technology": "dsc07033",
 }
 
 
@@ -854,7 +860,11 @@ def photo_hero(slug, root):
 
 
 def photo_strip(slug, root, n=4):
-    imgs = "".join(f'<figure class="photo-strip-item"><img src="{photo(slug, f"g{k}", root)}" alt="" loading="lazy" width="900" height="675"></figure>' for k in range(1, n + 1))
+    def item(k):
+        if k == 3 and f"strip-{slug}" in TEAM_PHOTO:  # one team photo in each industry's strip
+            return f'<figure class="photo-strip-item">{team_img(f"strip-{slug}", root, small=True)}</figure>'
+        return f'<figure class="photo-strip-item"><img src="{photo(slug, f"g{k}", root)}" alt="" loading="lazy" width="900" height="675"></figure>'
+    imgs = "".join(item(k) for k in range(1, n + 1))
     return f'<div class="photo-strip reveal" aria-hidden="true">{imgs}</div>'
 
 
