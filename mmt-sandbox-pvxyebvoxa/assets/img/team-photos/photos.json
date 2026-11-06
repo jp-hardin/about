@@ -739,9 +739,9 @@
    0.12,
    1.0,
    0.92,
-   0.38
+   0.2
   ],
-  "focus_y": 32,
+  "focus_y": 10,
   "crop": {
    "file": "dsc07004-crop.webp",
    "width": 2000,

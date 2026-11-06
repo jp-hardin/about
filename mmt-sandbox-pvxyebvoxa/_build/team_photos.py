@@ -33,7 +33,7 @@ CROPS = {
     'dsc07322': (0.0, 0.22, 1.0, 0.80, 0.38),   # home stats band: the full boardroom
     'dsc07199': (0.0, 0.05, 1.0, 0.85, 0.25),   # journey card 1: a one-on-one conversation
     'dsc06716': (0.0, 0.12, 1.0, 0.90, 0.30),   # journey card 2: analysis at the desk
-    'dsc07004': (0.0, 0.12, 1.0, 0.92, 0.38),   # journey card 3: the deal team around the laptop
+    'dsc07004': (0.0, 0.12, 1.0, 0.92, 0.20),   # journey card 3 and hero slide: the deal team around the laptop (focus high so the standing heads stay in a thin band)
     'dsc07035': (0.00, 0.18, 1.00, 0.95, 0.38),   # Who We Help (portrait)
     'dsc07355': (0.00, 0.12, 1.00, 0.90, 0.26),   # home contact band
     'dsc07193': (0.0, 0.18, 1.0, 0.88, 0.37),   # closing band on other pages

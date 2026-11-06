@@ -801,3 +801,23 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 @media (max-width: 640px) { .gate-inds { grid-template-columns: 1fr; } .gate-alt { flex-direction: column; } }
 
 /* Team photos (img.team-photo) are cropped to keep heads in frame; each sets object-position on the faces (team_photos.py) */
+
+/* Home hero carousel (hero_carousel() in build.py): the slides stack and crossfade in turn, each on a slow zoom,
+   so the hero plays almost like a video. Each slide is on screen for --reel / --slides (5 s), with a 1.5 s dissolve. */
+.hero-reel img { position: absolute; inset: 0; opacity: 0; animation: reel var(--reel) linear infinite; }
+@keyframes reel {
+  0% { opacity: 0; transform: scale(1.12); }
+  4.3% { opacity: 1; }
+  18.6% { opacity: 1; }
+  23% { opacity: 0; transform: scale(1.02); }
+  100% { opacity: 0; transform: scale(1.02); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-reel img { animation: none; }
+  .hero-reel img:first-child { opacity: 1; }
+}
+/* The carousel hero grows with wide screens (up to the window height) so the photos never become a thin strip that
+   cuts off heads; the text stays vertically centered. */
+.hero--reel { min-height: min(38vw, 92vh); display: flex; align-items: center; }
+.hero--reel > .wrap { width: 100%; }
+
