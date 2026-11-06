@@ -537,6 +537,26 @@
    "width": 1000,
    "height": 667,
    "bytes": 47424
+  },
+  "crop_box": [
+   0.0,
+   0.38,
+   1.0,
+   0.95,
+   0.64
+  ],
+  "focus_y": 46,
+  "crop": {
+   "file": "dsc06817-crop.webp",
+   "width": 2000,
+   "height": 761,
+   "bytes": 93666
+  },
+  "crop_small": {
+   "file": "dsc06817-crop-sm.webp",
+   "width": 1000,
+   "height": 380,
+   "bytes": 34036
   }
  },
  {
