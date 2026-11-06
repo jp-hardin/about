@@ -806,7 +806,30 @@ def deals_in(slug):
 # Photos from the Middle Market team shoot (assets/img/team-photos/, made by team_photos.py) used for the
 # general pages. Industry pages, industry cards and report pages keep their industry photos, and the Team
 # section keeps the individual headshots in assets/img/team/.
-TEAM_PHOTOS = {p["name"]: p for p in json.load(open(os.path.join(SITE, "assets", "img", "team-photos", "photos.json")))}
+TEAM_PHOTO_LIBRARY = os.path.join(HERE, "team-photo-library")  # the full shoot, not published
+TEAM_PHOTOS = {p["name"]: p for p in json.load(open(os.path.join(TEAM_PHOTO_LIBRARY, "photos.json")))}
+USED_TEAM_PHOTOS = set()  # files the pages reference; publish_team_photos() copies just these into the site
+
+
+def team_photo(file, root=""):
+    """URL of a team photo file, recorded so the build publishes it."""
+    USED_TEAM_PHOTOS.add(file)
+    return f"{root}assets/img/team-photos/{file}"
+
+
+def publish_team_photos():
+    """Copies the team photos the pages use from the library into assets/img/team-photos/ and removes any that no
+    page uses any more, so the published site (and every deploy) carries only what visitors can see."""
+    import shutil
+    out = os.path.join(SITE, "assets", "img", "team-photos")
+    os.makedirs(out, exist_ok=True)
+    for f in USED_TEAM_PHOTOS:
+        src, dst = os.path.join(TEAM_PHOTO_LIBRARY, f), os.path.join(out, f)
+        if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
+            shutil.copy2(src, dst)
+    for f in os.listdir(out):
+        if f not in USED_TEAM_PHOTOS:
+            os.remove(os.path.join(out, f))
 TEAM_PHOTO = {
     "stats": "dsc07322",          # the full boardroom
     "journey-1": "dsc07199",      # Understand Your Options: a one-on-one conversation
@@ -840,7 +863,7 @@ def team_img(key, root="", small=False, cls="", lazy=True, priority=False):
     cls_attr = ' class="%s"' % cls if cls else ""
     if crop:
         cls_attr += ' style="object-position: 50%% %d%%; transform-origin: 50%% %d%%"' % (ph["focus_y"], ph["focus_y"])
-    return f'<img src="{root}assets/img/team-photos/{v["file"]}" alt=""{attrs} width="{v["width"]}" height="{v["height"]}"{cls_attr}>'
+    return f'<img src="{team_photo(v["file"], root)}" alt=""{attrs} width="{v["width"]}" height="{v["height"]}"{cls_attr}>'
 
 
 # Home hero carousel: team shoot photos that crossfade on a slow zoom so the hero plays almost like a video.
@@ -872,9 +895,9 @@ def hero_carousel(root=""):
         # the first photo gets the bandwidth; the rest load quietly behind it (they appear 5 s apart)
         priority = ' fetchpriority="high"' if i == 0 else ' fetchpriority="low" decoding="async"'
         slides.append(
-            f'<picture><source media="{HERO_NARROW}" srcset="{root}assets/img/team-photos/{tall["file"]}">'
-            f'<img src="{root}assets/img/team-photos/{big["file"]}" '
-            f'srcset="{root}assets/img/team-photos/{small["file"]} {small["width"]}w, {root}assets/img/team-photos/{big["file"]} {big["width"]}w" '
+            f'<picture><source media="{HERO_NARROW}" srcset="{team_photo(tall["file"], root)}">'
+            f'<img src="{team_photo(big["file"], root)}" '
+            f'srcset="{team_photo(small["file"], root)} {small["width"]}w, {team_photo(big["file"], root)} {big["width"]}w" '
             f'sizes="100vw" alt="" width="{big["width"]}" height="{big["height"]}"{priority} class="reel-slide" '
             # pinned to the top (each crop starts just above the heads) and centered on the subject
             f'style="--pos: {ph["focus_x"]}% 0%; --pos-narrow: {nph["focus_x"]}% 0%; animation-delay: {delay:g}s"></picture>')
@@ -2252,4 +2275,5 @@ if __name__ == "__main__":
         page_email_preferences()
     page_about()
     write_discovery_files()
+    publish_team_photos()
     strip_meta.main(os.path.join(SITE, "assets"))
