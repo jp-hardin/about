@@ -668,7 +668,8 @@ def cta(root, title="It All Starts With a Conversation", form=False, sub="", par
     if not form:
         body = (f'<p class="lead"><strong>{e(sub)}</strong></p>' if sub else "") + "".join(f'<p class="lead">{e(x)}</p>' for x in paras) if paras else \
             '<p class="lead">Our first step is always a confidential conversation exploring your goals, your company, and your options.</p>'
-        return f"""<section class="section section--knot cta" id="contact">
+        return f"""<section class="section section--knot section--photo cta" id="contact">
+  <div class="section-media" aria-hidden="true">{team_img("cta", root)}</div>
   <div class="wrap center reveal">
     <p class="eyebrow">Confidential. No pressure. No commitments.</p>
     <h2 class="display">{e(title)}</h2>
@@ -689,7 +690,7 @@ def cta(root, title="It All Starts With a Conversation", form=False, sub="", par
     icon_mail = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>'
     icon_lock = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>'
     return f"""<section class="section section--knot section--photo section--photo-soft contact" id="contact">
-  <div class="section-media" aria-hidden="true"><img src="{root}assets/img/site/contact-bg.jpg" alt="" loading="lazy" width="1920" height="1100"></div>
+  <div class="section-media" aria-hidden="true">{team_img("contact", root)}</div>
   <div class="wrap contact-grid">
     <div class="contact-info reveal">
       <p class="eyebrow">Confidential. No pressure. No commitments.</p>
@@ -800,6 +801,40 @@ def deals_in(slug):
                 out.append(dict(t, sector=slug, segment=extra["segment"], sector_name=SECTOR_BY_SLUG[slug]["name"], cross=True))
     return out
 
+
+
+# Photos from the Middle Market team shoot (assets/img/team-photos/, made by team_photos.py) used for the
+# general pages. Industry pages, industry cards and report pages keep their industry photos, and the Team
+# section keeps the individual headshots in assets/img/team/.
+TEAM_PHOTOS = {p["name"]: p for p in json.load(open(os.path.join(SITE, "assets", "img", "team-photos", "photos.json")))}
+TEAM_PHOTO = {
+    "home-hero": "dsc07377",      # the team walking outside the office
+    "stats": "dsc07322",          # the full boardroom
+    "journey-1": "dsc07199",      # Understand Your Options: a one-on-one conversation
+    "journey-2": "dsc06716",      # Be Positioned to Win: analysis at the desk
+    "journey-3": "dsc07004",      # Execute with Confidence: the deal team around the laptop
+    "who-we-help": "dsc07035",    # portrait, the team reviewing a deal together
+    "contact": "dsc07355",        # two Managing Directors at the table
+    "cta": "dsc07193",            # the closing band on every other page: a private conversation at the table
+    "about-hero": "dsc07374",     # the team in front of the office
+    "transactions-hero": "dsc07122",  # the boardroom
+    "insights-hero": "dsc06747",  # research at the desk
+    "industries-hero": "dsc06798",    # the open office
+}
+
+
+def team_img(key, root="", small=False, cls="", lazy=True, priority=False):
+    """An <img> for one of the team shoot photos (decorative: alt is empty)."""
+    ph = TEAM_PHOTOS[TEAM_PHOTO[key]]
+    v = ph["small" if small else "large"]
+    attrs = (' loading="lazy"' if lazy and not priority else "") + (' fetchpriority="high"' if priority else "")
+    return f'<img src="{root}assets/img/team-photos/{v["file"]}" alt=""{attrs} width="{v["width"]}" height="{v["height"]}"{f" class={cls!r}" if cls else ""}>'
+
+
+def team_hero(key, root="", page=True):
+    """Opening tag of a photo hero using a team shoot photo."""
+    return (f'<section class="hero{" hero--page" if page else ""} hero--photo"><div class="hero-media" aria-hidden="true">'
+            f'{team_img(key, root, priority=True)}</div>')
 
 def photo(slug, name, root):
     """Path to an industry photo from the approved image library (assets/img/industries/<slug>/)."""
@@ -1145,7 +1180,7 @@ def page_home():
                 "Sell-side M&A advisory for owners of privately held companies with $100M–$500M in enterprise value: strategic sales, mergers, and change-of-control transactions.", root)
     html += header(root)
     html += f"""
-<section class="hero">
+{team_hero("home-hero", page=False)}
   <div class="wrap">
     <p class="eyebrow">Benchmark International · <span class="nowrap">Middle Market</span></p>
     <h1 class="display">Your Legacy Is Built. <em>Your Next Chapter Awaits.</em></h1>
@@ -1158,7 +1193,7 @@ def page_home():
 </section>
 
 <section class="section--dark section--tight section--photo section--photo-soft">
-  <div class="section-media" aria-hidden="true"><img src="assets/img/site/stats-bg.jpg" alt="" width="1920" height="900"></div>
+  <div class="section-media" aria-hidden="true">{team_img("stats")}</div>
   <div class="wrap">
     <div class="stats">
       <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Privately owned sell-side M&amp;A advisor worldwide<sup>*</sup></div></div>
@@ -1214,16 +1249,16 @@ def page_home():
       <p class="lead">We serve presidents, CEOs, founders, and owners of privately held companies in our five industries. As they consider the next step, most want three things:</p>
     </div>
     <div class="pillars">
-      <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-1.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">01</div><h3 class="h3">Understand Every Option</h3><p>We'll walk you through every path, from a full sale to a merger or change-of-control transaction, with buyers from across the country and around the world.</p></div>
-      <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-2.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">02</div><h3 class="h3">Be Positioned for Maximum Value</h3><p>We'll help you see your company the way buyers do, so you can address gaps and highlight strengths before going to market.</p></div>
-      <div class="pillar pillar--photo reveal"><div class="pillar-photo"><img src="assets/img/site/journey-3.jpg" alt="" loading="lazy" width="900" height="600"></div><div class="pillar-num">03</div><h3 class="h3">Execute with Confidence</h3><p>While you weigh your options, our experienced team works as your partner, running a discreet process to secure the right deal on your terms.</p></div>
+      <div class="pillar pillar--photo reveal"><div class="pillar-photo">{team_img("journey-1", small=True)}</div><div class="pillar-num">01</div><h3 class="h3">Understand Every Option</h3><p>We'll walk you through every path, from a full sale to a merger or change-of-control transaction, with buyers from across the country and around the world.</p></div>
+      <div class="pillar pillar--photo reveal"><div class="pillar-photo">{team_img("journey-2", small=True)}</div><div class="pillar-num">02</div><h3 class="h3">Be Positioned for Maximum Value</h3><p>We'll help you see your company the way buyers do, so you can address gaps and highlight strengths before going to market.</p></div>
+      <div class="pillar pillar--photo reveal"><div class="pillar-photo">{team_img("journey-3", small=True)}</div><div class="pillar-num">03</div><h3 class="h3">Execute with Confidence</h3><p>While you weigh your options, our experienced team works as your partner, running a discreet process to secure the right deal on your terms.</p></div>
     </div>
   </div>
 </section>
 
 <section class="section section--dark" id="who-we-help">
   <div class="wrap fit-split">
-    <figure class="fit-photo reveal" aria-hidden="true"><img src="assets/img/site/who-we-help.jpg" alt="" loading="lazy" width="900" height="1100"></figure>
+    <figure class="fit-photo reveal" aria-hidden="true">{team_img("who-we-help", small=True)}</figure>
     <div>
     <div class="section-head reveal">
       <p class="eyebrow">Who We Help</p>
@@ -1339,7 +1374,7 @@ def page_industries():
                 "Benchmark International's Middle Market team focuses on five industries: Industrials, Business Services, Consumer, Healthcare, and Technology.", root)
     html += header(root, "industries")
     html += f"""
-<section class="hero hero--page">
+{team_hero("industries-hero", root)}
   <div class="wrap">
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Industries</div>
     <p class="eyebrow">Industry Expertise</p>
@@ -1627,7 +1662,7 @@ def page_transactions():
                 "Selected completed sell-side M&A transactions advised by Benchmark International across Industrials, Business Services, Consumer, Healthcare, and Technology.", root)
     html += header(root, "transactions")
     html += f"""
-<section class="hero hero--page hero--photo"><div class="hero-media" aria-hidden="true"><img src="assets/img/site/transactions-hero.jpg" alt="" width="1920" height="1000" fetchpriority="high"></div>
+{team_hero("transactions-hero")}
   <div class="wrap">
     <div class="crumbs"><a href="index.html">Middle Market</a> / Transactions</div>
     <p class="eyebrow">Our Success</p>
@@ -1700,7 +1735,7 @@ def page_insights():
                 "Quarterly middle market M&A reports on deal activity, valuation metrics, and buyer demand in Industrials, Business Services, Consumer, Healthcare, and Technology.", root)
     html += header(root, "insights")
     html += f"""
-<section class="hero hero--page">
+{team_hero("insights-hero", root)}
   <div class="wrap">
     <div class="crumbs"><a href="{root}index.html">Middle Market</a> / Insights</div>
     <p class="eyebrow">Insights</p>
@@ -1938,7 +1973,7 @@ def page_about():
                 "Benchmark International's Middle Market team: sell-side M&A advisory for privately held companies with $100M–$500M in enterprise value across five industries.", root)
     html += header(root)
     html += f"""
-<section class="hero hero--page">
+{team_hero("about-hero", root)}
   <div class="wrap">
     <div class="crumbs"><a href="index.html">Middle Market</a> / About</div>
     <p class="eyebrow">About</p>
