@@ -1,6 +1,6 @@
 # Industrials
 
-> Industrials M&A advisory for owners of $50M–$500M companies in manufacturing, distribution, building products, energy services, and transportation.
+> Industrials M&A advisory for owners of $100M–$500M companies in manufacturing, distribution, building products, energy services, and transportation.
 
 Source: https://jp-hardin.github.io/about/mmt-sandbox-pvxyebvoxa/industries/industrial.html
 
