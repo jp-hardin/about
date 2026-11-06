@@ -5,12 +5,13 @@ Usage: python3 team_photos.py <folder of original JPEGs>
 
 The originals live in the "MMT Team Images For Website" folder on Google Drive (3000x2000 camera JPEGs, about
 1 MB each) and are not kept in the repository. For each photo this writes two WebP files to
-assets/img/team-photos/, with the camera data (EXIF, GPS, camera settings) removed and the orientation applied:
+_build/team-photo-library/ (not published), with the camera data (EXIF, GPS, camera settings) removed and the orientation applied:
 
     <name>.webp      2000 px on the long side, for full-width banners and heroes
     <name>-sm.webp   1000 px on the long side, for cards, grids and side images
 
-and lists every photo with its size and orientation in assets/img/team-photos/photos.json. Reruns skip
+and lists every photo with its size and orientation in _build/team-photo-library/photos.json. The site build copies
+only the files its pages use into assets/img/team-photos/. Reruns skip
 photos that are already done.
 """
 import json
@@ -20,7 +21,9 @@ import sys
 from PIL import Image, ImageOps
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(os.path.dirname(HERE), 'assets', 'img', 'team-photos')
+# The full library lives here, outside the published site; build.py copies only the photos the pages use into
+# assets/img/team-photos/ (see publish_team_photos()).
+OUT = os.path.join(HERE, 'team-photo-library')
 SIZES = (('', 2000, 80), ('-sm', 1000, 78))
 # Crops for the photos placed on the site: (left, top, right, bottom, faces) as fractions of the original. Each
 # starts just above the highest head and ends around the waist of the people in front; "faces" is the eye line.
