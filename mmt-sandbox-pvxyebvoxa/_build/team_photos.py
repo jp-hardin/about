@@ -47,9 +47,9 @@ CROPS = {
     # 'flip' mirrors the photo.
     'dsc07116': (0.0, 0.03, 1.0, 1.0, 0.25, 0.85),   # Alexandra with two colleagues by the window
     'dsc06557': (0.0, 0.05, 1.0, 1.0, 0.25, 0.68),   # Alex smiling at his desk
-    'dsc07374': (0.0, 0.23, 1.0, 0.98, 0.40, 0.50),  # the standing group, Alexandra in the center
+    'dsc07374': (0.0, 0.15, 1.0, 0.98, 0.40, 0.50),  # the standing group, Alexandra in the center
     'dsc07161': (0.0, 0.15, 1.0, 1.0, 0.35, 0.78),   # Alex at the boardroom table
-    'dsc07005': (0.0, 0.24, 1.0, 1.0, 0.40, 0.50),   # the full boardroom
+    'dsc07005': (0.0, 0.16, 1.0, 1.0, 0.40, 0.50),   # the full boardroom
     'dsc06947': (0.0, 0.15, 1.0, 1.0, 0.30, 0.66),   # Jordan laughing at the table
     # Tall shots shown in place of the wide ones on phones and portrait tablets (one person each, so no one is sliced
     # at the sides); same rules: start just above the head, pinned to the top, centered on the person.

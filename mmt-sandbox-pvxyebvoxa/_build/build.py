@@ -808,7 +808,6 @@ def deals_in(slug):
 # section keeps the individual headshots in assets/img/team/.
 TEAM_PHOTOS = {p["name"]: p for p in json.load(open(os.path.join(SITE, "assets", "img", "team-photos", "photos.json")))}
 TEAM_PHOTO = {
-    "home-hero": "dsc06817",      # the open office, so the hero isn't a team shot right before the boardroom stats band
     "stats": "dsc07322",          # the full boardroom
     "journey-1": "dsc07199",      # Understand Your Options: a one-on-one conversation
     "journey-2": "dsc06716",      # Be Positioned to Win: analysis at the desk
@@ -870,7 +869,8 @@ def hero_carousel(root=""):
         ph, nph = TEAM_PHOTOS[name], TEAM_PHOTOS[narrow]
         big, small, tall = ph["crop"], ph["crop_small"], nph["crop_small"]
         delay = HERO_INTRO_SECONDS + i * d  # the knot background shows first, then each slide fades in on its turn
-        priority = ' fetchpriority="high"' if i == 0 else ""
+        # the first photo gets the bandwidth; the rest load quietly behind it (they appear 5 s apart)
+        priority = ' fetchpriority="high"' if i == 0 else ' fetchpriority="low" decoding="async"'
         slides.append(
             f'<picture><source media="{HERO_NARROW}" srcset="{root}assets/img/team-photos/{tall["file"]}">'
             f'<img src="{root}assets/img/team-photos/{big["file"]}" '

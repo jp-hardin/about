@@ -862,25 +862,25 @@
   },
   "crop_box": [
    0.0,
-   0.24,
+   0.16,
    1.0,
    1.0,
    0.4,
    0.5
   ],
-  "focus_y": 21,
+  "focus_y": 29,
   "focus_x": 50,
   "crop": {
    "file": "dsc07005-crop.webp",
    "width": 2000,
-   "height": 1013,
-   "bytes": 153762
+   "height": 1120,
+   "bytes": 164410
   },
   "crop_small": {
    "file": "dsc07005-crop-sm.webp",
    "width": 1000,
-   "height": 507,
-   "bytes": 55848
+   "height": 560,
+   "bytes": 58842
   }
  },
  {
@@ -2399,25 +2399,25 @@
   },
   "crop_box": [
    0.0,
-   0.23,
+   0.15,
    1.0,
    0.98,
    0.4,
    0.5
   ],
-  "focus_y": 23,
+  "focus_y": 30,
   "focus_x": 50,
   "crop": {
    "file": "dsc07374-crop.webp",
    "width": 2000,
-   "height": 1000,
-   "bytes": 120094
+   "height": 1107,
+   "bytes": 131568
   },
   "crop_small": {
    "file": "dsc07374-crop-sm.webp",
    "width": 1000,
-   "height": 500,
-   "bytes": 42828
+   "height": 553,
+   "bytes": 46774
   }
  },
  {
