@@ -29,7 +29,7 @@ SIZES = (('', 2000, 80), ('-sm', 1000, 78))
 # shoulders. Written as <name>-crop.webp (2000 px long side) and <name>-crop-sm.webp (1000 px).
 CROPS = {
     'dsc07371': (0.0, 0.22, 1.0, 0.80, 0.38),   # standing group outside the office (default social image)
-    'dsc06817': (0.0, 0.38, 1.0, 0.95, 0.64),   # home hero: the open office (no breakroom sign)
+    'dsc06817': (0.0, 0.45, 1.0, 1.0, 0.62, 0.60),   # home hero: the open office (no breakroom sign)
     'dsc07322': (0.0, 0.22, 1.0, 0.80, 0.38),   # home stats band: the full boardroom
     'dsc07199': (0.0, 0.05, 1.0, 0.85, 0.25),   # journey card 1: a one-on-one conversation
     'dsc06716': (0.0, 0.12, 1.0, 0.90, 0.30),   # journey card 2: analysis at the desk
@@ -41,13 +41,16 @@ CROPS = {
     'dsc07122': (0.0, 0.27, 1.0, 0.82, 0.47),   # Transactions hero: the boardroom
     'dsc06747': (0.0, 0.15, 1.0, 0.85, 0.38),   # Insights hero: research at the desk
     'dsc06809': (0.00, 0.15, 1.00, 0.90, 0.33),   # Industries hero: the open office (no breakroom sign)
-    # Home hero carousel slides that appear nowhere else on the site
-    'dsc07116': (0.0, 0.05, 1.0, 0.85, 0.25),   # Alexandra with two colleagues by the window
-    'dsc07374': (0.0, 0.20, 1.0, 0.78, 0.40),   # the standing group, Alexandra in the center
-    'dsc06680': (0.0, 0.05, 1.0, 0.85, 0.32),   # Alexandra smiling at her desk
-    'dsc07005': (0.0, 0.20, 1.0, 0.95, 0.40),   # the full boardroom
-    'dsc07187': (0.0, 0.15, 1.0, 0.90, 0.36),   # Alexandra at the table
-    'dsc07178': (0.0, 0.15, 1.0, 0.90, 0.38),   # a meeting at the table
+    # Home hero carousel slides (appear nowhere else on the site). These start just above the highest head and the
+    # carousel pins them to the top (object-position y 0), so on any screen the heads are in frame, at worst near
+    # the bottom. The last value is where to center on narrow (phone) screens.
+    'dsc07116': (0.0, 0.03, 1.0, 1.0, 0.25, 0.85),   # Alexandra with two colleagues by the window
+    'dsc06557': (0.0, 0.05, 1.0, 1.0, 0.25, 0.68),   # Alex smiling at his desk
+    'dsc07374': (0.0, 0.23, 1.0, 0.98, 0.40, 0.50),  # the standing group, Alexandra in the center
+    'dsc07161': (0.0, 0.15, 1.0, 1.0, 0.35, 0.78),   # Alex at the boardroom table
+    'dsc07005': (0.0, 0.24, 1.0, 1.0, 0.40, 0.50),   # the full boardroom
+    'dsc07187': (0.0, 0.17, 1.0, 1.0, 0.36, 0.70),   # Alexandra at the table
+    'dsc07178': (0.0, 0.17, 1.0, 1.0, 0.38, 0.55),   # a meeting at the table
     # Third photo in each industry page's photo strip (4:3 boxes, close to the photos' own shape, so uncropped)
     'dsc07163': (0.0, 0.0, 1.0, 1.0, 0.28),     # Industrials: conversation at the window table
     'dsc07155': (0.0, 0.0, 1.0, 1.0, 0.33),     # Business Services: the boardroom, laughing
@@ -79,8 +82,9 @@ def main(src):
                                                           'height': copy.height, 'bytes': os.path.getsize(path)}
         if name in CROPS:
             entry['crop_box'] = list(CROPS[name])
-            l, t, r, b, face = CROPS[name]
+            l, t, r, b, face = CROPS[name][:5]
             entry['focus_y'] = round(100 * (face - t) / (b - t))
+            entry['focus_x'] = round(100 * ((CROPS[name][5] if len(CROPS[name]) > 5 else 0.5) - l) / (r - l))
             crop = im.crop((round(l * im.width), round(t * im.height), round(r * im.width), round(b * im.height)))
             for suffix, edge, quality in (('-crop', 2000, 80), ('-crop-sm', 1000, 78)):
                 copy = crop.copy()
