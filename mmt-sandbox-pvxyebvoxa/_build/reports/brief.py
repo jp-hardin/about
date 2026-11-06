@@ -1,0 +1,906 @@
+# Builds an industry report from its PowerPoint brief: the downloadable PDF and the site page come
+# from the same .pptx, so the two always match.
+#
+# Usage: python3 brief.py <report-folder>     e.g. python3 brief.py industrial-q4-2026
+#
+# The folder holds the deck (brief.pptx) and brief.json:
+#   {"lead": "<the cover's summary sentence, as written on the cover>"}
+# The sector and quarter come from the folder name.
+#
+# What it writes:
+#   insights/<industry>-industry-report-q<N>-<year>.pdf    the deck, converted by LibreOffice
+#   insights/<industry>-industry-report-q<N>-<year>.html   the site page: a teaser section per deck page (teaser.py),
+#                                                      with its charts summarized in words and a download button
+#   insights/<industry>-industry-report-q<N>-<year>.md     the same content as Markdown, for AI tools (linked from the
+#                                                      page and from llms.txt)
+#   assets/img/reports/<industry>-industry-report-q<N>-<year>/   logos and pictures used on the page
+#
+# Needs LibreOffice (soffice) with Impress, poppler-utils (pdffonts) and pip packages python-pptx, pypdf, Pillow.
+# The deck fonts (Calibri and Cambria stand-ins, Quicksand, Newsreader, Cinzel) are in brief-fonts/ and are
+# loaded for the conversion only, so nothing needs installing system-wide.
+import html, json, os, re, shutil, subprocess, sys, tempfile
+from pptx import Presentation
+from pptx.enum.shapes import MSO_SHAPE_TYPE
+from pypdf import PdfReader, PdfWriter
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+SITE = os.path.normpath(os.path.join(HERE, '..', '..'))
+sys.path.insert(0, os.path.join(SITE, '_build'))
+sys.path.insert(0, HERE)
+import build as site  # noqa: E402
+from webdeck import WebDeck, plain  # noqa: E402
+from flow import flow  # noqa: E402
+from readable import readable  # noqa: E402
+from teaser import teaser  # noqa: E402
+
+FOLDER = os.path.join(HERE, sys.argv[1].strip('/'))
+SLUG = os.path.basename(FOLDER)                                   # industrial-q4-2026
+SECTOR = SLUG.rsplit('-', 2)[0]                                   # industrial
+QUARTER, YEAR = SLUG.rsplit('-', 2)[1:]                           # q4, 2026
+PUBLIC = f'{SECTOR}-industry-report-{QUARTER}-{YEAR}'
+PERIOD = f'{QUARTER.upper()} {YEAR}'
+NAME = site.SECTOR_BY_SLUG[SECTOR]['name']
+CONF = json.load(open(os.path.join(FOLDER, 'brief.json'), encoding='utf-8'))
+IMG_DIR = f'assets/img/reports/{PUBLIC}'
+
+# Corrections applied to a working copy of the deck before anything is built, so the deck itself stays as supplied.
+# Site style: no em dashes. Links to the old report addresses go straight to the current ones.
+TEXT_FIXES = [('” — ', '” '), (' — ', ', '), ('—', ', ')]
+LINK_FIXES = [('-sector-report-', '-industry-report-'), ('/mmt-sandbox-pvxyebvoxa/sectors/', '/mmt-sandbox-pvxyebvoxa/industries/')]
+
+esc = html.escape
+
+
+# ─── 1. Working copy of the deck ─────────────────────────────────────────────
+def corrected_deck(dst):
+    prs = Presentation(os.path.join(FOLDER, 'brief.pptx'))
+    fixed = 0
+    for slide in prs.slides:
+        for sh in all_shapes(slide.shapes):
+            frames = [sh.text_frame] if sh.has_text_frame else []
+            if getattr(sh, 'has_table', False) and sh.has_table:
+                frames += [c.text_frame for r in sh.table.rows for c in r.cells]
+            for tf in frames:
+                for p in tf.paragraphs:
+                    for r in p.runs:
+                        t = r.text
+                        for a, b in TEXT_FIXES:
+                            t = t.replace(a, b)
+                        if t != r.text:
+                            r.text, fixed = t, fixed + 1
+        for rel in slide.part.rels.values():
+            if rel.is_external:
+                t = rel._target
+                for a, b in LINK_FIXES:
+                    t = t.replace(a, b)
+                if t != rel._target:
+                    rel._target, fixed = t, fixed + 1
+    prs.save(dst)
+    print('corrections applied to the working copy:', fixed)
+    return prs
+
+
+def all_shapes(shapes):
+    for sh in shapes:
+        if sh._element.tag.endswith('}grpSp'):  # shape_type raises on some shapes in newer decks
+            yield from all_shapes(sh.shapes)
+        else:
+            yield sh
+
+
+# ─── 2. PDF ──────────────────────────────────────────────────────────────────
+def convert(pptx, tmp):
+    fonts = os.path.join(HERE, 'brief-fonts')
+    conf = os.path.join(tmp, 'fonts.conf')
+    open(conf, 'w').write(f'<?xml version="1.0"?><!DOCTYPE fontconfig SYSTEM "fonts.dtd"><fontconfig>'
+                          f'<include ignore_missing="yes">/etc/fonts/fonts.conf</include><dir>{esc(fonts)}</dir>'
+                          f'<cachedir>{esc(tmp)}/fc-cache</cachedir></fontconfig>')
+    env = dict(os.environ, FONTCONFIG_FILE=conf, HOME=tmp)
+    subprocess.run(['soffice', f'-env:UserInstallation=file://{tmp}/lo', '--headless', '--convert-to', 'pdf',
+                    '--outdir', tmp, pptx], check=True, env=env, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    out = os.path.splitext(pptx)[0] + '.pdf'
+    assert os.path.exists(out), 'LibreOffice did not write a PDF (is libreoffice-impress installed?)'
+    used = subprocess.run(['pdffonts', out], capture_output=True, text=True).stdout
+    for bad in ('DejaVu', 'Liberation'):
+        assert bad not in used, f'a deck font was substituted with {bad}; check brief-fonts/\n{used}'
+    return out
+
+
+def write_pdf(src):
+    r = PdfReader(src)
+    w = PdfWriter(clone_from=r)
+    w.add_metadata({
+        '/Title': f'{NAME} {PERIOD} M&A Industry Report | Benchmark International',
+        '/Author': 'Jared Hardin, Benchmark International',
+        '/Subject': f'{NAME} mergers and acquisitions: deal activity, valuations and what buyers are paying for, {PERIOD}',
+        '/Keywords': f'{NAME} M&A, {NAME} mergers and acquisitions, middle market, sell-side M&A, valuation multiples, {PERIOD}, Benchmark International',
+        '/Creator': 'Benchmark International',
+    })
+    w.compress_identical_objects()
+    out = os.path.join(SITE, 'insights', f'{PUBLIC}.pdf')
+    with open(out, 'wb') as f:
+        w.write(f)
+    print('wrote', os.path.relpath(out, SITE), round(os.path.getsize(out) / 1024), 'KB', len(r.pages), 'pages')
+    return r
+
+
+# ─── 3. Site page ────────────────────────────────────────────────────────────
+DL = ('<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
+      'stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>')
+
+
+def norm(t):
+    return re.sub(r'\s+', ' ', html.unescape(t).replace('\xa0', ' ')).strip()
+
+
+def title_case(t):
+    t = norm(t)
+    return t.title().replace("'S ", "'s ").replace('’S ', '’s ') if t.isupper() else t
+
+
+def cover(prs):
+    """Byline and segment names from the cover; checks that brief.json's lead is the cover sentence."""
+    texts = []
+    for sh in all_shapes(prs.slides[0].shapes):
+        if sh.has_text_frame and sh.text_frame.text.strip():
+            texts.append([p for p in (par.text for par in sh.text_frame.paragraphs) if p.strip()])
+    flat = norm(' '.join(' '.join(t) for t in texts))
+    assert norm(CONF['lead']) in flat, 'brief.json "lead" must be copied from the cover'
+    m = re.search(r'October \d{4}\s*\|\s*Jared Hardin, Managing Director', flat, re.I)
+    assert m, 'cover byline not found'
+    # Segment names, in cover order, as the site names them
+    known = {norm(x[0]).lower().replace(' and ', ' & '): x[0] for x in site.SECTOR_BY_SLUG[SECTOR]['segments']}
+    segs = []
+    for t in texts:
+        for p in t:
+            for x in re.split(r'\s*[·\x0b\n]\s*', p):
+                k = norm(x).lower().replace(' and ', ' & ')
+                if k in known and known[k] not in segs:
+                    segs.append(known[k])
+    # What's included: part number -> description
+    seq = [norm(p) for t in texts for p in t]
+    parts = {}
+    for i, x in enumerate(seq):
+        if re.fullmatch(r'0[1-9]', x) and i + 2 < len(seq):
+            parts[x] = seq[i + 2]
+    byline = m.group(0)
+    if byline.isupper():
+        byline = 'October ' + byline.split(' ', 1)[1].title().replace(' | ', ' | ')
+    return byline, segs, parts
+
+
+WEB_SKIP = re.compile(r'(Connect With|Our Team$)', re.I)
+WEB_DROP = re.compile(r'disclosures', re.I)   # the site's Important Disclosures page is linked from every report page
+TEAM_NAMES = [t[0] for t in site.TEAM_LEAD] + [t[0] for t in site.TEAM_SUPPORT]
+
+
+def drop_team_cards(body):
+    """Removes cards that hold a team member's name and contact details (the page's author card and the site's
+    team section already carry them), with the label that introduces them."""
+    names = '|'.join(re.escape(x) for x in TEAM_NAMES)
+    while True:
+        m = re.search(r'<div class="dcard[^"]*"[^>]*><div class="dtx"><h3 class="dh"><strong>(?:' + names + r')</strong></h3>', body)
+        if not m:
+            break
+        depth, i = 0, m.start()
+        for t in re.finditer(r'<div\b|</div>', body[m.start():]):
+            depth += 1 if t.group(0) != '</div>' else -1
+            if depth == 0:
+                i = m.start() + t.end()
+                break
+        body = body[:m.start()] + body[i:].lstrip()
+    return re.sub(r'<div class="dtx"><p class="dlabel"><strong>TALK WITH THE TEAM</strong></p></div>\s*', '', body)
+
+
+def stats_band(pages):
+    """The figures from the page on Benchmark International's own transactions, shown under the hero."""
+    for pg in pages:
+        if pg['title'].startswith('Benchmark International') and 'Transactions' in pg['title']:
+            pairs = re.findall(r'<p class="dnum">(.*?)</p>\s*<p>(.*?)</p>', pg['body'])[:3]
+            label = re.search(r'<p class="dlabel">([^<]*)</p>\s*<p class="dnum">', pg['body'])
+            if len(pairs) >= 2:
+                return pairs, (label.group(1) if label else ''), pg['num']
+    return None, '', None
+
+
+def inline_md(h):
+    h = re.sub(r'<br>', ' ', h)
+    h = re.sub(r'<a href="([^"]+)"[^>]*>(.*?)</a>', lambda m: f'[{plain(m.group(2))}]({m.group(1)})', h, flags=re.S)
+    h = re.sub(r'</?strong>', '**', h)
+    h = re.sub(r'</?em>', '*', h)
+    h = re.sub(r'<[^>]+>', '', h)
+    return html.unescape(h).replace('****', '').strip()
+
+
+def table_md(t):
+    rows = [[plain(c) for c in re.findall(r'<t[hd][^>]*>(.*?)</t[hd]>', r, re.S)] for r in re.findall(r'<tr>(.*?)</tr>', t, re.S)]
+    if not rows:
+        return ''
+    w = max(len(r) for r in rows)
+    rows = [r + [''] * (w - len(r)) for r in rows]
+    return '\n'.join(['| ' + ' | '.join(rows[0]) + ' |', '|' + ' --- |' * w] + ['| ' + ' | '.join(r) + ' |' for r in rows[1:]])
+
+
+def body_md(h):
+    h = re.sub(r'<figure class="dchart"[^>]*>.*?<table>(.*?)</table>.*?</figure>', lambda m: '\n\nChart data:\n\n' + table_md(m.group(1)) + '\n\n', h, flags=re.S)
+    h = re.sub(r'<div class="rtable-wrap"><table[^>]*>(.*?)</table></div>', lambda m: '\n\n' + table_md(m.group(1)) + '\n\n', h, flags=re.S)
+    h = re.sub(r'<div class="dline">(.*?)</div></div>', lambda m: '\n- ' + ' '.join(plain(c) for c in re.findall(r'<div class="dline-c[^"]*">(.*?)</div>', m.group(1) + '</div>', re.S)), h, flags=re.S)
+    h = re.sub(r'<div class="dbar"><span class="dbar-l">(.*?)</span>.*?<span class="dbar-v">(.*?)</span></div>', lambda m: f'\n- {plain(m.group(1))}: {plain(m.group(2))}', h, flags=re.S)
+    h = re.sub(r'<div class="dgrid-wrap"><table[^>]*>(.*?)</table></div>', lambda m: '\n\n' + table_md(m.group(1)) + '\n\n', h, flags=re.S)
+    h = re.sub(r'<h3[^>]*>(.*?)</h3>', lambda m: f'\n\n### {plain(m.group(1))}\n\n', h, flags=re.S)
+    h = re.sub(r'<li>(.*?)</li>', lambda m: f'\n- {inline_md(m.group(1))}', h, flags=re.S)
+    h = re.sub(r'<blockquote[^>]*>(.*?)</blockquote>', lambda m: f'\n\n> {inline_md(m.group(1))}\n\n', h, flags=re.S)
+    h = re.sub(r'<p class="dlabel">(.*?)</p>', lambda m: f'\n\n**{plain(m.group(1))}**\n\n', h, flags=re.S)
+    h = re.sub(r'<p[^>]*>(.*?)</p>', lambda m: f'\n\n{inline_md(m.group(1))}\n\n', h, flags=re.S)
+    h = re.sub(r'<img [^>]*alt="([^"]+)"[^>]*>', r'\n\n\1\n\n', h)
+    h = re.sub(r'<(?!https?:)[^>]+>', '', h)
+    h = html.unescape(h)
+    return re.sub(r'\n{3,}', '\n\n', h).strip()
+
+
+def join_tables(body):
+    """Two tables with the same columns, one after the other (a list split across deck pages), become one table;
+    a lead sentence that sat between them moves above it."""
+    from lxml import html as LH
+    root = LH.fragment_fromstring(body, create_parent='div')
+    head = lambda w: ' '.join(' '.join(w.xpath('.//thead')[0].itertext()).split()) if w.xpath('.//thead') else None
+    wraps = root.xpath('./div[contains(concat(" ", @class, " "), " rtable-wrap ")]')
+    for a, b in zip(wraps, wraps[1:]):
+        if a.getparent() is None or b.getparent() is None or head(a) is None or head(a) != head(b):
+            continue
+        between, cur = [], a.getnext()
+        while cur is not None and cur is not b:
+            between.append(cur)
+            cur = cur.getnext()
+        if cur is not b or any(x.tag != 'p' for x in between):
+            continue
+        for x in between:
+            x.tail = None
+            a.addprevious(x)
+        tb = a.xpath('.//tbody')[0]
+        for tr in b.xpath('.//tbody/tr'):
+            tb.append(tr)
+        b.getparent().remove(b)
+    return (root.text or '') + ''.join(LH.tostring(k, encoding='unicode') for k in root)
+
+
+def join_notes(foot):
+    """Footnotes of joined pages: each sentence once."""
+    sents, seen = [], set()
+    for m in re.findall(r'<p[^>]*>(.*?)</p>', foot, re.S):
+        for x in re.split(r'(?<=[.])\s+(?=[A-Z])', m.strip()):
+            k = re.sub(r'<[^>]+>|\s+', ' ', x).strip().lower()
+            if k and k not in seen:
+                seen.add(k)
+                sents.append(x.strip())
+    return f'<p class="fine">{" ".join(sents)}</p>' if sents else foot
+
+
+def merge_continued(pages):
+    """A deck page that continues the one before it (same title, or "(Continued)") joins it: online it is one section.
+    Returns the pages and a map from each folded page number to the page it joined."""
+    out, alias = [], {}
+    key = lambda t: re.sub(r'\s*\((?:continued|cont\.|\d+ of \d+)\)\s*$', '', t or '', flags=re.I).strip().lower()
+    for pg in pages:
+        prev = out[-1] if out else None
+        if prev is not None and not pg['part'] and not prev['part'] and key(pg['title']) == key(prev['title']):
+            sub = f'<p class="rlead">{pg["subtitle"]}</p>\n' if pg['subtitle'] and pg['subtitle'] != prev['subtitle'] else ''
+            prev['body'] += '\n' + sub + pg['body']
+            prev['web'] += '\n' + sub + pg['web']
+            prev['web'] = join_tables(prev['web'])
+            if pg['foot'] and pg['foot'] not in prev['foot']:
+                prev['foot'] = (prev['foot'] + '\n' + pg['foot']).strip()
+            alias[pg['num']] = prev['num']
+            prev['links'] = prev.get('links', []) + pg.get('links', [])
+            prev['body'] = join_tables(prev['body'])
+            prev['foot'] = join_notes(prev['foot'])
+            continue
+        for k in ('title', 'title_html'):
+            pg[k] = re.sub(r'\s*\((?:continued|\d+ of \d+)\)\s*$', '', pg[k] or '', flags=re.I)
+        out.append(pg)
+    return out, alias
+
+
+def web_refs(pages, alias):
+    """Page references written for the PDF ("appear on page 10", "on the next page") point to sections online."""
+    kept = {pg['num']: pg for pg in pages[1:]}
+
+    def link(n):
+        n = alias.get(n, n)
+        pg = kept.get(n)
+        return (n, f'<a href="#p{n:02d}">{esc(web_title(pg))}</a>') if pg else None
+
+    def nums(spec):
+        out = []
+        for a, b in re.findall(r'(\d+)(?:\s*(?:to|–)\s*(\d+))?', spec):
+            out += list(range(int(a), int(b) + 1)) if b else [int(a)]
+        return out
+
+    def pages_ref(m):
+        seen, links = set(), []
+        targets = [link(n) for n in nums(m.group(2))]
+        if targets and all(t and t[0] == here for t in targets):
+            return ''          # the section itself: online it needs no pointer
+        for l in targets:
+            if l and l[0] not in seen:
+                seen.add(l[0])
+                links.append(l[1])
+        if not links:
+            return m.group(0)
+        text = links[0] if len(links) == 1 else ', '.join(links[:-1]) + ' and ' + links[-1]
+        return f'in {text}'
+
+    for i, pg in enumerate(pages[1:], 1):
+        here = pg['num']
+        nxt = pages[i + 1] if i + 1 < len(pages) else None
+        for k in ('body', 'web', 'foot', 'subtitle'):
+            h = pg[k] or ''
+            h = re.sub(r'\b(on|across|in) (pages? \d+(?:\s*(?:,\s*and|,|and|to|–)\s*\d+)*)', lambda m: pages_ref(m), h)
+            h = re.sub(r'\b(shown) (pages? \d+(?:\s*(?:,\s*and|,|and|to|–)\s*\d+)*)', lambda m: ('shown ' + pages_ref(m)).strip(), h)
+            h = re.sub(r' +([.,;])', r'\1', h)
+            h = re.sub(r'\s*\(PAGES? [^)]*\)', '', h)
+            if nxt is not None:
+                h = h.replace('on the next page', f'in <a href="#p{nxt["num"]:02d}">{esc(web_title(nxt))}</a>')
+            h = re.sub(r'\s*This page covers [^.<]*\.', '', h)
+            h = h.replace('on the valuation page of this brief', 'in the valuation section of this report')
+            h = h.replace('on the valuation pages', 'in the valuation sections')
+            h = h.replace('this brief', 'this report').replace('This brief', 'This report').replace('with the brief', 'with the report')
+            h = h.replace('linked on each page, listed by page', 'linked in each section, listed by section')
+            h = h.replace('appendix pages', 'appendix sections').replace('the valuation pages', 'the valuation sections')
+            if pg['title'].strip().lower() == 'sources':
+                h = re.sub(r'(<h4 class="rh4">(?:<strong>)?)\d{1,2} ', r'\1', h)
+            pg[k] = h
+    return pages
+
+
+# Shorter, plainer subsection titles for the web; the deck and PDF keep their own. Keys are lower case.
+WEB_TITLES = {
+    'market insights: q4 2026': 'The Quarter in Brief',
+    'power demand: the buildout reaches every industrial sector': 'Power Demand Reaches Every Sector',
+    'featured engagement: the carmi companies': 'Featured Deal: The Carmi Companies',
+    'public company performance and trends: valuation history': 'Valuation History',
+    'public company performance and trends: operating metrics': 'Operating Metrics',
+    'public company performance and trends: valuation metrics': 'Valuation Multiples',
+    'key trends in business services': 'Key Trends',
+    'key trends in technology': 'Key Trends',
+    'perspectives on five sectors': 'Five Sectors',
+    'perspectives on six sectors': 'Six Sectors',
+    'perspectives on four sectors': 'Four Sectors',
+    'perspectives on four consumer sectors': 'Four Sectors',
+    'feature: fire and life safety': 'Fire and Life Safety',
+    'client spotlight: three fire and life safety sales': 'Three Fire and Life Safety Sales We Advised',
+    'select market participants': 'Who Is Buying',
+    'healthcare market: select participants': 'Who Is Buying',
+    'public companies: valuation': 'Valuation',
+    'public companies: operating and valuation metrics': 'Operating and Valuation Metrics',
+    'public companies: operating metrics': 'Operating Metrics',
+    'earnings and commentary': 'What Public Companies Said',
+    'happening in consumer right now': "What's Happening Now",
+    'tariffs, fuel and financing: three costs buyers are repricing': 'Tariffs, Fuel and Financing',
+    'public company market performance': 'Share Prices',
+    'revenue growth trends': 'Revenue Growth',
+    'public company valuation metrics': 'Valuation Multiples',
+    'public company metrics: food and beverage': 'Food and Beverage Companies',
+    'public company metrics: consumer brands and foodservice': 'Consumer Brands and Foodservice Companies',
+    'public company metrics: restaurants, services and retail': 'Restaurant, Services and Retail Companies',
+    'healthcare m&a: state of play': 'State of Play',
+    'historical market context': 'Historical Context',
+    'strong fundamentals support continued activity': 'Why Demand Holds Up',
+    'healthcare services deal volume has reset': 'Deal Volume Has Reset',
+    'valuation multiples have shifted by sector': 'Valuation Multiples by Sector',
+    'public company stock performance: past 12 months': 'Share Prices, Past 12 Months',
+    'public company operating and valuation metrics': 'Operating and Valuation Metrics',
+    'appendix: public market operating and valuation metrics': 'Appendix: Company-by-Company Metrics',
+    'key cost and demand indicators': 'Cost and Demand Indicators',
+}
+
+
+def web_title(pg):
+    t = re.sub(r'<[^>]+>', '', html.unescape(pg['title'])).replace('\u2019', "'").strip()
+    k = t.lower()
+    if k in WEB_TITLES:
+        return WEB_TITLES[k]
+    if re.match(r"select recent .*transactions$", k):
+        return 'Recent Transactions'
+    if re.match(r"benchmark international's .*transactions$", k):
+        return 'Our Transactions'
+    return title_case(t) if t.isupper() else t
+
+
+CHAPTERS = [  # (key, title, deck-page titles that belong to it); the first match wins, in this order
+    ('notes', 'Sources', r'^sources$'),
+    ('about', 'About Benchmark International', r'^benchmark international$'),
+    ('reading', "What We're Reading", r'reading'),
+    ('indicators', 'Indicators to Watch', r'economic trends|indicators'),
+    ('valuations', 'Valuations and Public Markets', r'public compan|valuation|earnings|revenue growth|appendix|stock performance'),
+    ('deals', 'Deals and Buyers', r'transactions|engagement|spotlight|who is buying|participants'),
+    ('sectors', 'Sector by Sector', r'perspectives|feature:'),
+    ('view', 'Our View', r'^our view'),
+    ('market', 'Market Conditions', r'.'),
+]
+ORDER = ['short', 'market', 'view', 'sectors', 'deals', 'valuations', 'indicators', 'reading', 'about', 'notes']
+
+
+def chapters(pages):
+    """The web report's chapters: [(key, title, [pages])]. The first part divider (the key insights) is Industry at a
+    Version; the other part dividers are dropped."""
+    groups = {}
+    for pg in pages[1:]:
+        if pg['part']:
+            if pg['part'] == '01':
+                groups.setdefault('short', ('Industry at a Glance', []))[1].append(pg)
+            continue
+        t = re.sub(r'<[^>]+>', '', pg['title']).strip().lower()
+        for key, title, pat in CHAPTERS:
+            if re.search(pat, t):
+                groups.setdefault(key, (title, []))[1].append(pg)
+                break
+    return [(k, groups[k][0], groups[k][1]) for k in ORDER if k in groups]
+
+
+def fold_tables(body):
+    """Long tables (more than 12 rows) show their first rows and fold the rest behind a button; every table of
+    eight rows or more gets a filter box."""
+    def fold(m):
+        html_ = m.group(0)
+        rows = html_.count('<tr')
+        if rows < 9:
+            return html_
+        box = '<div class="rfilter"><input type="search" placeholder="Filter this table" aria-label="Filter this table"></div>'
+        if rows <= 13:
+            return box + html_
+        return f'<details class="wtable-fold"><summary>Show the full table ({rows - 1} rows)</summary>{box}{html_}</details>'
+    return re.sub(r'<div class="rtable-wrap">.*?</table></div>', fold, body, flags=re.S)
+
+
+def to_markdown(pages, lead, byline, segs):
+    url = site.abs_url(f'insights/{PUBLIC}.html')
+    out = [f'# {NAME} {PERIOD} M&A Industry Report', '', f"Benchmark International's Middle Market team. {byline}.", '',
+           lead, '', f'Web version: {url}', '']
+    if segs:
+        out += ['Sectors: ' + '; '.join(segs), '']
+    for k, (key, ctitle, pgs) in enumerate(chapters(pages), 1):
+        out += [f'## {k}. {ctitle}', '']
+        for pg in pgs:
+            if not pg['part'] and len([x for x in pgs if not x['part']]) > 1:
+                out += [f'### {web_title(pg)}', '']
+            if pg['subtitle']:
+                out += [inline_md(pg['subtitle']), '']
+            out += [body_md(pg.get('teaser', pg['body'])), '']
+    out += [f'The full report, with every chart, table and source, is a free download: {url}', '']
+    return '\n'.join(out).strip() + '\n'
+
+
+JH_PHONE, JH_EMAIL = site.TEAM_CONTACT['jared-hardin']
+
+# Hand-written online copy (web.json in the report folder): for a deck page number, the summary shown online in place of
+# the automatic teaser. {"sections": {"7": {"lead": ["paragraph", ...], "points": [{"h": "Label", "b": "sentence"}, ...],
+# "subtitle": "optional, for a section that runs over two deck pages", "tombstones": false to leave them out}}}
+_web = os.path.join(FOLDER, 'web.json')
+COPY = json.load(open(_web, encoding='utf-8')).get('sections', {}) if os.path.exists(_web) else {}
+MMT_DUMP = os.environ.get('MMT_DUMP')   # a file to write each section's deck content to, for writing web.json
+
+
+def copy_html(c):
+    def point(p):
+        h = p.get('h', '').strip()
+        head = f'<strong>{esc(h if h.endswith((".", "?")) else h + ".", quote=False)}</strong> ' if h else ''
+        return f'<li>{head}{esc(p["b"], quote=False)}</li>'
+    out = [f'<p>{esc(x, quote=False)}</p>' for x in c.get('lead', [])]
+    if c.get('points'):
+        out.append('<ul class="wpoints">' + ''.join(point(p) for p in c['points']) + '</ul>')
+    return '\n'.join(out)
+
+# Benchmark International transactions named in the deck (linked to their announcements) are shown online as tombstones,
+# in the same format as the rest of the site, so the page matches the PDF: names from deals.json (seller and buyer as named
+# in the announcement, and the alt text of each company's logo in the decks), logos from the decks, and the description
+# and sector printed on the deck tile. A company without a logo (a private investor) is named in type.
+DEALS = json.load(open(os.path.join(HERE, 'deals.json'), encoding='utf-8'))
+_slug = lambda u: re.sub(r'/$', '', u).rsplit('/', 1)[-1]
+DEALS_BY_SLUG = {_slug(u): d for u, d in DEALS.items()}
+SECTOR_WORDS = set('manufacturing industrial tech distribution services transportation logistics building products construction energy '
+                   'power environmental commercial facility marketing sales enabled engineering architecture consulting financial '
+                   'insurance staffing human capital life sciences diagnostics medical pharmacy healthcare provider managed it cloud '
+                   'telecom ucaas systems integration electronics hardware government technology cybersecurity food beverage consumer '
+                   'brands foodservice retail and'.split())   # words a tile's sector label is made of
+TILE_INFO = {}   # deal -> (description, sector) from its tile on the deck's transactions slide
+_LOGOS = {}
+
+
+def deck_logos():
+    """Logo pictures in the five decks, by alt text (first one found)."""
+    if not _LOGOS:
+        for d in sorted(os.listdir(HERE)):
+            deck = os.path.join(HERE, d, 'brief.pptx')
+            if not os.path.exists(deck):
+                continue
+            for slide in Presentation(deck).slides:
+                for sh in all_shapes(slide.shapes):
+                    if sh._element.tag.endswith('}pic'):
+                        alt = html.unescape(sh._element.xpath('.//p:cNvPr')[0].get('descr') or '')
+                        if alt and alt not in _LOGOS:
+                            _LOGOS[alt] = sh.image.blob
+    return _LOGOS
+
+
+def logo_file(alt):
+    """The logo with this alt text, trimmed and saved for the page; its path from the site root, or None."""
+    from PIL import Image
+    import io
+    blob = deck_logos().get(alt)
+    if not blob:
+        return None
+    rel = f'{IMG_DIR}/logo-{re.sub(r"[^a-z0-9]+", "-", alt.lower().replace(" logo", "")).strip("-")}.webp'
+    out = os.path.join(SITE, rel)
+    if not os.path.exists(out):
+        im = Image.open(io.BytesIO(blob)).convert('RGBA')
+        flat = Image.alpha_composite(Image.new('RGBA', im.size, (255, 255, 255, 255)), im).convert('L')
+        im = im.crop(flat.point(lambda v: 255 if v < 245 else 0).getbbox() or (0, 0) + im.size)
+        if im.height > 140:
+            im = im.resize((round(im.width * 140 / im.height), 140), Image.LANCZOS)
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        im.save(out, 'WEBP', lossless=True)
+    return rel
+
+
+def slide_links(slide):
+    """Every link on a deck slide, from text and from pictures, in drawing order, with the description and sector
+    printed under it on its tile: [(url, description, sector)]."""
+    shapes = list(all_shapes(slide.shapes))
+    texts = [(sh, ' '.join(sh.text_frame.text.split())) for sh in shapes if sh.has_text_frame and sh.text_frame.text.strip()]
+
+    def inside(box, sh):
+        cx, cy = sh.left + sh.width // 2, sh.top + sh.height // 2
+        return box.left <= cx <= box.left + box.width and box.top <= cy <= box.top + box.height
+
+    # a tile is the smallest empty box (a card) around the link
+    cards = [sh for sh in shapes if not (sh.has_text_frame and sh.text_frame.text.strip())
+             and not sh._element.tag.endswith('}pic') and sh.width and sh.height and sh.height > 600000]
+
+    def below(sh):
+        tile = min((c for c in cards if inside(c, sh)), key=lambda c: c.width * c.height, default=None)
+        if tile is None:
+            return '', ''
+        inner = [x for t, x in texts if inside(tile, t)]
+        desc = next((x for x in inner if x != x.upper() and len(x) > 15 and len(x) < 200), '')
+        sector = next((x for x in inner if x == x.upper() and len(x) > 4
+                       and set(re.findall(r'[a-z]+', x.lower())) <= SECTOR_WORDS), '')
+        if not sector:      # tiles dated instead of labeled by sector (Consumer)
+            sector = next((x for x in inner if re.match(r'^[A-Z]{3,9} \d{4}$', x)), '')
+        sector = re.sub(r'\bIt\b', 'IT', sector.title().replace(' And ', ' and ')).replace('Ucaas', 'UCaaS')
+        return desc, sector
+    out = []
+    for sh in shapes:
+        urls = []
+        try:
+            if sh.click_action.hyperlink.address:
+                urls.append(sh.click_action.hyperlink.address)
+        except Exception:
+            pass
+        if sh.has_text_frame:
+            urls += [r.hyperlink.address for p in sh.text_frame.paragraphs for r in p.runs if r.hyperlink.address]
+        for u in urls:
+            out.append((u,) + below(sh))
+    return out
+
+
+def benchmark_tombs(body, root, extra=()):
+    """Tombstones for the Benchmark International transactions linked from a section (its web text and, in extra, the
+    links on its deck slide), in the order they appear."""
+    found = re.findall(r'href="(https://www\.benchmarkintl\.com/insights/[^"]*facilitated[^"]*)"', body)
+    info = TILE_INFO
+    found += [u for u, _, _ in extra if re.match(r'https://www\.benchmarkintl\.com/insights/[^"]*facilitated', u)]
+    seen, links = set(), []
+    for u in found:
+        if _slug(u) not in seen:
+            seen.add(_slug(u))
+            links.append(u)
+    out = []
+    for u in links:
+        d = DEALS_BY_SLUG.get(_slug(u))
+        if not d:
+            print('no tombstone or deals.json entry for', u)
+            continue
+        texts = [plain(x) for x in re.findall(r'<a href="' + re.escape(u) + r'"[^>]*>(.*?)</a>', body, re.S)]
+        tile_desc, sector = info.get(_slug(u), ('', ''))
+        desc = d.get('desc') or tile_desc or max((x for x in texts if len(x) > 25), key=len, default='')
+        verb = d.get('verb', 'Acquired By')
+
+        def mark(side):
+            rel = logo_file(d[side + '_logo']) if d.get(side + '_logo') else None
+            if rel:
+                return f'<img src="{root}{rel}" alt="{esc(d[side])}" loading="lazy" {site.img_size(rel)}>'
+            return f'<span class="tomb-name">{esc(d[side])}</span>'
+        face = f'<div class="tomb-face">{mark("seller")}<span class="tomb-verb">{esc(verb)}</span>{mark("buyer")}</div>'
+        cap = (f'<div class="tomb-cap"><strong>{esc(d["seller"])}</strong><span>{esc(verb.lower())} {esc(d["buyer"])}</span>'
+               + (f'<p class="tomb-desc">{esc(desc)}</p>' if desc else '')
+               + (f'<span class="tomb-sector">{esc(sector)}</span>' if sector else '') + '</div>')
+        out.append(f'<a class="tomb" href="{esc(u)}" target="_blank" rel="noopener">{face}{cap}</a>')
+    return out
+
+
+# Questions answered on the report page, each answered in the deck's own words: the subtitle of the first deck page
+# whose title matches. {adj} is the industry adjective ("industrial", "consumer", ...).
+FAQ_PAGES = [
+    (r'^our view$', "What is the Middle Market team's view of {adj} M&A for {period}?"),
+    (r'select recent .*transactions', 'What are buyers paying for {adj} companies?'),
+    (r'who is buying|participants', 'Who is buying {adj} companies?'),
+    (r'valuation (history|metrics)|public companies: valuation', 'How are public {adj} companies valued?'),
+    (r'operating metrics|revenue growth|market performance', 'How are listed {adj} companies performing?'),
+    (r'earnings', 'What are {adj} company executives saying about the market?'),
+    (r'economic trends|indicators', 'Which indicators should owners of {adj} companies watch?'),
+]
+
+
+def is_answer(t):
+    """A sentence that states a finding, not a label such as "Latest reported quarter, by theme"."""
+    return t.endswith('.') and 50 < len(t) <= 450 and bool(re.search(
+        r'\b(are|is|was|were|has|have|grew|rose|fell|trades?|traded|paid|pay|paying|favor|tied|turned|draws?|held|holds|'
+        r'bought|buy|buying|carry|carries|surging|drifting|rising|falls?|grow|growing|earns?|sit|decoupled|expect|compete)\b', t))
+
+
+FINE = re.compile(r'^(Expectations|Views|Figures|Sources?|Ratings|Information|Data|Listed|Medians?|Quotations|Notes?|Company names|'
+                  r'Demand ratings|Revenue growth is|Share prices are|Private participants|Active buyers are)\b')
+
+
+def tidy(t):
+    t = re.sub(r'\(\s+', '(', re.sub(r'\s+\)', ')', t))
+    return re.sub(r'^[A-Z][A-Z ]{3,}[A-Z]\s+(?=[A-Z][a-z])', '', t).strip()    # drop a leading label such as "WHAT IT SHOWS"
+
+
+def first_sentence(t):
+    m = re.match(r'(.+?[.])(\s|$)', t)
+    return m.group(1) if m else t
+
+
+def answer(pg, body=False):
+    """The page's subtitle when it states a finding. With body=True, otherwise the first finding sentence on the page
+    (used for Our View, where the subtitle is often a heading)."""
+    sub = tidy(html.unescape(plain(pg['subtitle']))) if pg['subtitle'] else ''
+    if is_answer(sub):
+        return sub
+    if body:
+        for para in re.findall(r'<p[^>]*>(.*?)</p>', pg['body'], re.S):
+            t = tidy(html.unescape(plain(para)))
+            if not FINE.match(t) and is_answer(first_sentence(t)):
+                return first_sentence(t)
+    return ''
+
+
+def owners_summary(pages):
+    """The "What it means for owners" sentence on the first pages, if the deck has one."""
+    for pg in pages[1:6]:
+        m = re.search(r'WHAT IT MEANS\s*(?:<[^>]+>\s*)*FOR OWNERS.*?<p[^>]*>(.*?)</p>', pg['body'], re.S | re.I)
+        if m:
+            t = first_sentence(tidy(html.unescape(plain(m.group(1)))))
+            if is_answer(t):
+                return t
+    return ''
+
+
+def report_faqs(pages, lead):
+    adj = site.SECTOR_BY_SLUG[SECTOR]['adj']
+    title = lambda p: re.sub(r'<[^>]+>', '', html.unescape(p['title'])).lower()
+    market = [p for key, _, pgs in chapters(pages) if key == 'market' for p in pgs if not p['part']]
+    lead_ = lead.rstrip('.') + '.'
+    first = lead_ if is_answer(lead_) else (owners_summary(pages) or next((a for a in map(answer, market) if a), ''))
+    faqs = [(f'What is happening in {adj} M&A in {PERIOD}?', first)] if first else []
+    for pat, q in FAQ_PAGES:
+        for pg in pages[1:]:
+            if not pg['part'] and re.search(pat, title(pg)):
+                a = answer(pg, body=pat == '^our view$')
+                if a:
+                    faqs.append((q.format(adj=adj, period=PERIOD), a))
+                    break
+    return faqs
+
+
+def build_page(prs):
+    media = os.path.join(SITE, IMG_DIR)
+    shutil.rmtree(media, ignore_errors=True)
+    root, pdf, md_name = '../', f'{PUBLIC}.pdf', f'{PUBLIC}.md'
+    wd = WebDeck(prs, media, f'{root}{IMG_DIR}')
+    links = [slide_links(s) for s in prs.slides]          # before WebDeck, which rewrites the slides as it reads them
+    pages = [wd.page(s, i) for i, s in enumerate(prs.slides, 1)]
+    for pg, ln in zip(pages, links):
+        pg['links'] = ln
+    best = {}
+    for pg in pages:
+        bm = [x for x in pg['links'] if 'facilitated' in x[0]]
+        for u, dsc, sec in bm:
+            rank = (bool(dsc), bool(sec), len(bm))       # a tile with a description and sector beats a plain list of links
+            if _slug(u) not in best or rank > best[_slug(u)][0]:
+                best[_slug(u)] = (rank, dsc, sec)
+    TILE_INFO.update({k: (v[1], v[2]) for k, v in best.items()})
+    # The deck's contact and team pages (and the part divider that opens them) repeat what the web page already
+    # carries: the author card, the call to action and the site's team section. They stay in the PDF only.
+    web, after_skip = [pages[0]], False
+    for pg in pages[1:]:
+        if not pg['part'] and WEB_DROP.search(pg['title']):
+            continue
+        if WEB_SKIP.match(pg['title']):
+            after_skip = after_skip or bool(pg['part'])
+            continue
+        if after_skip and not pg['part']:
+            pg['part_label'], after_skip = 'About This Report', False
+        pg['body'] = drop_team_cards(pg['body']) if pg['part'] else flow(drop_team_cards(pg['body']))
+        web.append(pg)
+    pages, alias = merge_continued(web)
+    for pg in pages:      # a section that runs over two deck pages can take one subtitle for both from web.json
+        if COPY.get(str(pg['num']), {}).get('subtitle'):
+            pg['subtitle'] = esc(COPY[str(pg['num'])]['subtitle'], quote=False)
+    pages = web_refs(pages, alias)
+    byline, segs, included = cover(prs)
+    lead = CONF['lead']
+
+    # Online the report is organized by what a reader comes for, not by deck page: chapters (Industry at a Glance,
+    # Market Conditions, Sector by Sector, ...) hold the deck pages as subsections, in deck order within each chapter.
+    # Part dividers go; long tables, the disclosures and the sources fold away until opened.
+    def polish(body):
+        """Runs of figures ("54.5" over its label) as one row of stats; a list of names already given just above is dropped."""
+        pair = r'<p class="wnum">(.*?)</p>\s*<p(?: class="(?:wfine|wlead)")?>(.*?)</p>\s*'
+        def band(m):
+            items = re.findall(pair, m.group(0), re.S)
+            return ('<div class="wstats">' + ''.join(f'<div class="wstat"><p class="wnum">{a}</p><p class="wstat-l">{b}</p></div>'
+                                                     for a, b in items) + '</div>\n')
+        body = re.sub(f'(?:{pair}){{2,}}', band, body, flags=re.S)
+        def names(m):
+            before = re.sub(r'<[^>]+>', ' ', body[:m.start()]).lower()
+            items = [re.sub(r'<[^>]+>', '', x).lower() for x in re.findall(r'<li>(.*?)</li>', m.group(0))]
+            return '' if items and all(x in before for x in items) else m.group(0)
+        body = re.sub(r'<ul class="wnames">.*?</ul>', names, body, flags=re.S)
+        # an icon whose name repeats the label beside it ("Distribution & Services" next to INDUSTRIAL DISTRIBUTION & SERVICES)
+        def icon(m):
+            words = set(re.findall(r'[a-z]{3,}', m.group(1).lower()))
+            return m.group(2) if words and words <= set(re.findall(r'[a-z]{3,}', m.group(2).lower())) else m.group(0)
+        return re.sub(r'<div class="wcols wcols--2"><div class="wcol"><ul class="wnames"><li>([^<]*)</li></ul></div>'
+                      r'<div class="wcol">(<p class="wlabel">.*?</p>)</div></div>', icon, body, flags=re.S)
+
+    def key_list(body):
+        """The divider's numbered key insights (a bold "NN  headline" line, then its sentence) as a list."""
+        pat = (r'(?:<p(?: class="fine")?><strong>|<h4 class="wh">)(\d\d)\s+(.*?)(?:</strong></p>|</h4>)\s*'
+               r'<p(?: class="(?:fine|wfine)")?>(.*?)</p>')
+        items = re.findall(pat, body, re.S)
+        if not items:
+            return body
+        ol = '<ol class="rkey">' + ''.join(f'<li><h3 class="rkey-t">{h}</h3><p class="rkey-d">{d}</p></li>' for _, h, d in items) + '</ol>'
+        body = re.sub(r'<p class="(d|w)label"><strong>KEY INSIGHTS</strong></p>', r'<p class="\1label">Key insights</p>', body)
+        first = re.search(pat, body, re.S)
+        body = body[:first.start()] + ol + re.sub(pat, '', body[first.start():], flags=re.S)
+        return body
+
+    chaps = chapters(pages)
+    toc, secs = [], []
+    chaps = [c for c in chaps if c[0] != 'about']     # the firm boilerplate: the page ends with the team and the contact form
+    k = 0
+    for key, ctitle, pgs in chaps:
+        subs = [pg for pg in pgs if not pg['part']]
+        sub_toc = ''.join(f'<li><a href="#p{pg["num"]:02d}">{esc(web_title(pg))}</a></li>' for pg in subs) if len(subs) > 1 and key != 'notes' else ''
+        inner = []
+        for pg in pgs:
+            if pg['part']:
+                # the deck's contents slide: the sidebar lists the contents, so only its summary paragraph stays
+                body = key_list(pg['web'])
+                summary = body if 'class="rkey"' in body else \
+                    ''.join(m for m in re.findall(r'<p>.*?</p>', body, re.S) if len(re.sub(r'<[^>]+>', '', m)) > 120)
+                if summary:
+                    inner.append(f'<div class="wpart wglance">{summary}</div>')
+                continue
+            t = esc(web_title(pg))
+            sub = f'<p class="wsub">{pg["subtitle"]}</p>' if pg['subtitle'] else ''
+            head = f'<h3 class="wh3">{t}</h3>\n' if len(subs) > 1 and t.lower() != esc(ctitle).lower() else ''
+            if key == 'notes':
+                body = readable(polish(fold_tables(pg['web'])))
+                pg['teaser'] = body + '\n' + pg['foot']
+                inner.append(f'<details class="wfold" id="p{pg["num"]:02d}"><summary>{t}</summary>\n{sub}\n{body}\n{pg["foot"]}\n</details>')
+                continue
+            # online each section is a teaser: the finding, a lead, the key points and the deals it names, with a
+            # download button; the charts, graphics and full tables stay in the PDF
+            tombs = benchmark_tombs(pg['web'], root, pg.get('links', ()))
+            if COPY.get(str(pg['num']), {}).get('tombstones') is False:
+                tombs = []          # web.json can leave a section's tombstones out (the featured deal)
+            body, adds = teaser(readable(polish(pg['web'])), plain(pg['subtitle'] or ''), bm=bool(tombs))
+            if MMT_DUMP:
+                with open(MMT_DUMP, 'a', encoding='utf-8') as fh:
+                    fh.write(f'\n\n===== SECTION {pg["num"]} | {web_title(pg)} | chapter: {ctitle}\n'
+                             f'DECK SUBTITLE (shown online above the summary): {plain(pg["subtitle"] or "")}\n\n'
+                             f'--- FULL DECK PAGE ---\n{body_md(pg["body"])}\n\n--- NOTES AND SOURCES ---\n{body_md(pg["foot"] or "")}\n\n'
+                             f'--- CURRENT ONLINE SUMMARY ---\n{body_md(body)}\n'
+                             + ('--- TOMBSTONES SHOWN (Benchmark deals, keep out of the copy) ---\n' if tombs else ''))
+            copy = COPY.get(str(pg['num']))
+            if copy:
+                # hand-written copy for this section (web.json); the headline figures stay above it
+                stats = re.search(r'<div class="wstats">.*?</div>\s*</div>', body, re.S)
+                body = (stats.group(0) + '\n' if stats else '') + copy_html(copy)
+            if tombs:
+                body += '\n<div class="tomb-grid tomb-grid--report">' + ''.join(tombs) + '</div>'
+            pg['teaser'] = body
+            adds = ('The full section adds ' + (adds[0] if len(adds) == 1 else ', '.join(adds[:-1]) + (',' if len(adds) > 2 else '') + ' and ' + adds[-1]) + '.') if adds \
+                else 'The full section is in the report.'
+            more = (f'<div class="wmore"><p>{adds}</p>'
+                    + site.gated(root, f'insights/{pdf}', f'{NAME} {PERIOD} M&A Industry Report', 'btn', f'{DL} Download the full report') + '</div>')
+            inner.append(f'<section class="wpart" id="p{pg["num"]:02d}">\n{head}{sub}\n{body}\n{more}\n</section>')
+            continue
+        if not inner:
+            continue
+        k += 1
+        toc.append(f'<li class="rtoc-ch"><a href="#ch-{key}"><span>{k:02d}</span>{esc(ctitle)}</a>' + (f'<ol class="rtoc-sub">{sub_toc}</ol>' if sub_toc else '') + '</li>')
+        secs.append(f'<section class="wchap" id="ch-{key}">\n<header class="wchap-head"><span class="wchap-num">{k:02d}</span>'
+                    f'<h2 class="h2">{esc(ctitle)}</h2></header>\n{chr(10).join(inner)}\n</section>')
+
+    pairs, band_label, _ = stats_band(pages)
+    band = ''
+    if pairs:
+        stat_html = ''.join(f'<div class="stat"><div class="stat-num">{a}</div><div class="stat-label">{b}</div></div>' for a, b in pairs)
+        eyebrow = f'<p class="eyebrow">{band_label}</p>' if band_label else ''
+        band = (f'\n<section class="section--dark section--tight">\n  <div class="wrap">\n    {eyebrow}\n'
+                f'    <div class="stats rhero-stats">{stat_html}</div>\n  </div>\n</section>\n')
+    seg_html = f'<p class="rsegs">{" &nbsp;·&nbsp; ".join(esc(x) for x in segs)}</p>' if segs else ''
+    desc = f"{NAME} {PERIOD} middle market M&A report: {lead}"
+    page = site.head(f'{NAME} M&A Report, {PERIOD} | Benchmark International', site.meta_desc(desc, 160), root).replace(
+        '</head>', f'<link rel="stylesheet" href="{root}assets/css/report.css">\n'
+                   f'<link rel="alternate" type="text/markdown" href="{md_name}" title="{esc(NAME)} {PERIOD} M&amp;A Industry Report (Markdown)">\n</head>')
+    page += site.header(root, 'industries')
+    final_dl = (f'<aside class="wdl wdl--end"><p><strong>Download the full {esc(NAME)} {PERIOD} report</strong> with every chart, table, and source, '
+                f'or <a href="{root}index.html#form">start a confidential conversation</a> about your business.</p>'
+                + site.gated(root, f'insights/{pdf}', f'{NAME} {PERIOD} M&A Industry Report', 'btn', f'{DL} Download the full report (PDF)') + '</aside>')
+    page += (f'\n<section class="hero hero--page">\n  <div class="wrap">\n'
+             f'    <div class="crumbs"><a href="{root}index.html">Middle Market</a> / <a href="{root}industries/index.html">Industries</a> / '
+             f'<a href="{root}industries/{SECTOR}.html">{esc(NAME)}</a> / {PERIOD} Industry Report</div>\n'
+             f'    <p class="eyebrow">Quarterly Industry Report &nbsp;|&nbsp; {PERIOD}</p>\n'
+             f'    <h1 class="display">{esc(NAME)} <em>{PERIOD}</em></h1>\n'
+             f'    <p class="lead">{esc(lead)}</p>\n    {seg_html}\n'
+             f'    <p class="rbyline">{esc(norm(byline))}</p>\n'
+             f'    <div class="btn-row">' + site.gated(root, f'insights/{pdf}', f'{NAME} {PERIOD} M&A Industry Report', 'btn', f'{DL} Download the PDF') +
+             f'<a class="btn btn--light" href="{root}index.html#form">Discuss Your Business</a></div>\n'
+             f'    <p class="rterms">The PDF is free to download. Downloading it means you agree to the <a href="{root}report-terms.html">Report Terms</a>.</p>\n  </div>\n</section>\n'
+             f'{band}\n<div class="wrap rlayout">\n  <aside class="rtoc" aria-label="Report contents">\n    <p class="eyebrow">Contents</p>\n'
+             f'    <ol>{"".join(toc)}</ol>\n    ' + site.gated(root, f'insights/{pdf}', f'{NAME} {PERIOD} M&A Industry Report', 'btn', f'{DL} Download the PDF') + '\n  </aside>\n'
+             f'  <article class="report wdoc">\n{chr(10).join(secs)}\n    {final_dl}\n  </article>\n</div>\n\n')
+    faqs = report_faqs(pages, lead)
+    if faqs:
+        page += site.faq_html(faqs, f'{NAME} M&A, {PERIOD}: Common Questions', 'From the Report')
+    json.dump({'faqs': faqs}, open(os.path.join(FOLDER, 'faq.json'), 'w'), indent=1, ensure_ascii=False)
+    page += site.team_section(root) + '\n'
+    page += ("<script>document.querySelectorAll('.rfilter input').forEach(function(i){var t=i.closest('.rfilter').nextElementSibling;"
+             "i.addEventListener('input',function(){var q=i.value.toLowerCase();t.querySelectorAll('tbody tr').forEach(function(r){"
+             "r.style.display=r.textContent.toLowerCase().indexOf(q)>-1?'':'none';});});});</script>\n")
+    page += site.cta(root)
+    page += site.footer(root)
+    extra = {
+        'abstract': lead, 'temporalCoverage': str(YEAR), 'isAccessibleForFree': True,
+        'keywords': ', '.join([f'{NAME} M&A', f'{NAME} mergers and acquisitions', 'middle market', 'valuation multiples', 'sell-side M&A'] + segs),
+        'encoding': [{'@type': 'MediaObject', 'contentUrl': site.abs_url(f'insights/{md_name}'), 'encodingFormat': 'text/markdown'}],
+        'hasPart': [dict({'@type': 'WebPageElement', 'name': title_case(pg['title']), 'url': site.abs_url(f'insights/{PUBLIC}.html') + f'#p{pg["num"]:02d}'},
+                         **({'description': html.unescape(plain(pg['subtitle']))} if pg['subtitle'] else {})) for pg in pages[1:]],
+    }
+    page = site.report_extras(page, SECTOR, root, extra, faqs=faqs)
+    for bad, why in (('—', 'em dash'), ('Capital Markets', 'old team name'), ('BCM', 'old team name')):
+        assert bad not in page, f'{why} on the page'
+    assert not re.search(r'\bMMT\b|Middle Market Team', page), 'MMT on the page'
+    out = os.path.join(SITE, 'insights', f'{PUBLIC}.html')
+    open(out, 'w', encoding='utf-8').write(page)
+    md = to_markdown(pages, lead, norm(byline), segs)
+    open(os.path.join(SITE, 'insights', md_name), 'w', encoding='utf-8').write(md)
+    for f in os.listdir(media) if os.path.isdir(media) else []:
+        if f'{IMG_DIR}/{f}' not in page:
+            os.remove(os.path.join(media, f))     # pictures the page leaves out (decoration and photos)
+    n_media = len(os.listdir(media)) if os.path.isdir(media) else 0
+    print('wrote', os.path.relpath(out, SITE), round(len(page) / 1024), 'KB,', len(pages) - 1, 'sections,', n_media, 'images, and', md_name)
+    return pages
+
+
+def main():
+    if not site.REPORTS_LIVE and '--preview' not in sys.argv:
+        sys.exit('Reports are switched off (REPORTS_LIVE = False in build.py). Set it to True to publish, '
+                 'or add --preview to build this report locally without publishing it.')
+    with tempfile.TemporaryDirectory() as tmp:
+        work = os.path.join(tmp, f'{PUBLIC}.pptx')
+        prs = corrected_deck(work)
+        if '--page-only' not in sys.argv:
+            write_pdf(convert(work, tmp))
+        build_page(prs)
+
+
+if __name__ == '__main__':
+    main()

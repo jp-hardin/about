@@ -1,6 +1,6 @@
 name: Publish MMT site
 
-# "merge live": sends the staged live preview (live-preview/ on main, made by Stage live preview) to the
+# "merge live": sends the staged live preview (mmt-preview-38yb8qpa58/ on main, made by Stage live preview) to the
 # jp-hardin/mmt-site repo, which the mmt.benchmarkintl.com server pulls every 5 minutes. The banner and noindex
 # that mark the live preview are removed on the way, so the live site is exactly the copy that was reviewed.
 # Each publish from main is tagged live-<date>-<time>; to roll back, run it with ref set to an earlier live-* tag.
@@ -27,10 +27,13 @@ jobs:
           ref: ${{ inputs.ref }}
       - name: Take the staged live preview
         run: |
-          [ -f live-preview/staged.json ] || { echo "::error::Nothing is staged. Run Stage live preview first."; exit 1; }
-          cat live-preview/staged.json
-          python3 mid-market-practice/_build/stage.py strip live-preview
-          rm live-preview/staged.json
+          # live-* tags from before 2026-11-06 use the old folder names
+          [ -d mmt-preview-38yb8qpa58 ] || [ ! -d live-preview ] || mv live-preview mmt-preview-38yb8qpa58
+          [ -d mmt-sandbox-pvxyebvoxa ] || [ ! -d mid-market-practice ] || mv mid-market-practice mmt-sandbox-pvxyebvoxa
+          [ -f mmt-preview-38yb8qpa58/staged.json ] || { echo "::error::Nothing is staged. Run Stage live preview first."; exit 1; }
+          cat mmt-preview-38yb8qpa58/staged.json
+          python3 mmt-sandbox-pvxyebvoxa/_build/stage.py strip mmt-preview-38yb8qpa58
+          rm mmt-preview-38yb8qpa58/staged.json
       - name: Copy it into mmt-site
         env:
           TOKEN: ${{ secrets.MMT_SITE_TOKEN }}
@@ -40,7 +43,7 @@ jobs:
           if ! git clone -q --depth 1 "$remote" site 2>/dev/null || [ -z "$(git -C site rev-parse --verify -q HEAD)" ]; then
             rm -rf site && mkdir site && git -C site init -q -b main && git -C site remote add origin "$remote"
           fi
-          rsync -a --delete --exclude .git live-preview/ site/
+          rsync -a --delete --exclude .git mmt-preview-38yb8qpa58/ site/
           cd site
           git add -A
           if git diff --cached --quiet; then echo "No changes to publish"; exit 0; fi
@@ -51,9 +54,9 @@ jobs:
         if: ${{ !startsWith(inputs.ref, 'live-') }}
         continue-on-error: true
         run: |
-          key=$(ls live-preview/*.txt | xargs -n1 basename | grep -E '^[0-9a-f]{32}\.txt$' | head -1 | sed 's/\.txt$//')
+          key=$(ls mmt-preview-38yb8qpa58/*.txt | xargs -n1 basename | grep -E '^[0-9a-f]{32}\.txt$' | head -1 | sed 's/\.txt$//')
           [ -n "$key" ] || { echo "No IndexNow key file"; exit 0; }
-          urls=$(grep -o '<loc>[^<]*</loc>' live-preview/sitemap.xml | sed 's#</\?loc>##g')
+          urls=$(grep -o '<loc>[^<]*</loc>' mmt-preview-38yb8qpa58/sitemap.xml | sed 's#</\?loc>##g')
           host=$(echo "$urls" | head -1 | sed -E 's#https?://([^/]+)/.*#\1#')
           echo "Waiting for the server to pull the new copy"; sleep 420
           code=$(curl -s -o /dev/null -w "%{http_code}" "https://$host/$key.txt")
