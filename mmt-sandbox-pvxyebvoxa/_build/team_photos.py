@@ -43,14 +43,25 @@ CROPS = {
     'dsc06809': (0.00, 0.15, 1.00, 0.90, 0.33),   # Industries hero: the open office (no breakroom sign)
     # Home hero carousel slides (appear nowhere else on the site). These start just above the highest head and the
     # carousel pins them to the top (object-position y 0), so on any screen the heads are in frame, at worst near
-    # the bottom. The last value is where to center on narrow (phone) screens.
+    # the bottom. The sixth value is where to center on narrow (phone) screens (in the image as shown, after any flip);
+    # 'flip' mirrors the photo.
     'dsc07116': (0.0, 0.03, 1.0, 1.0, 0.25, 0.85),   # Alexandra with two colleagues by the window
     'dsc06557': (0.0, 0.05, 1.0, 1.0, 0.25, 0.68),   # Alex smiling at his desk
     'dsc07374': (0.0, 0.23, 1.0, 0.98, 0.40, 0.50),  # the standing group, Alexandra in the center
     'dsc07161': (0.0, 0.15, 1.0, 1.0, 0.35, 0.78),   # Alex at the boardroom table
     'dsc07005': (0.0, 0.24, 1.0, 1.0, 0.40, 0.50),   # the full boardroom
-    'dsc07187': (0.0, 0.17, 1.0, 1.0, 0.36, 0.70),   # Alexandra at the table
-    'dsc07178': (0.0, 0.17, 1.0, 1.0, 0.38, 0.55),   # a meeting at the table
+    'dsc06947': (0.0, 0.15, 1.0, 1.0, 0.30, 0.66),   # Jordan laughing at the table
+    # Tall shots shown in place of the wide ones on phones and portrait tablets (one person each, so no one is sliced
+    # at the sides); same rules: start just above the head, pinned to the top, centered on the person.
+    'dsc06700': (0.0, 0.20, 1.0, 1.0, 0.40, 0.50),   # phone: the office
+    'dsc07220': (0.0, 0.24, 1.0, 1.0, 0.40, 0.52),   # phone: Alexandra
+    'dsc07245': (0.0, 0.20, 1.0, 1.0, 0.35, 0.50),   # phone: Alex
+    'dsc07251': (0.0, 0.20, 1.0, 1.0, 0.35, 0.50),   # phone: colleague at the table
+    'dsc07264': (0.0, 0.20, 1.0, 1.0, 0.35, 0.50),   # phone: colleague at the table
+    'dsc07260': (0.0, 0.20, 1.0, 1.0, 0.35, 0.50),   # phone: colleague at the table
+    'dsc06886': (0.0, 0.14, 1.0, 1.0, 0.30, 0.45),   # phone: Jordan at his desk
+    'dsc07130': (0.0, 0.34, 1.0, 1.0, 0.48, 0.74),   # phone: Michael (right) with a colleague
+    'dsc07204': (0.0, 0.08, 1.0, 1.0, 0.28, 0.66, 'flip'),   # Michael at the table, flipped so he sits clear of the hero text
     # Third photo in each industry page's photo strip (4:3 boxes, close to the photos' own shape, so uncropped)
     'dsc07163': (0.0, 0.0, 1.0, 1.0, 0.28),     # Industrials: conversation at the window table
     'dsc07155': (0.0, 0.0, 1.0, 1.0, 0.33),     # Business Services: the boardroom, laughing
@@ -83,8 +94,11 @@ def main(src):
         if name in CROPS:
             entry['crop_box'] = list(CROPS[name])
             l, t, r, b, face = CROPS[name][:5]
+            if 'flip' in CROPS[name][5:]:  # mirrored so the subject sits on the right, clear of the hero text
+                im = ImageOps.mirror(im)
             entry['focus_y'] = round(100 * (face - t) / (b - t))
-            entry['focus_x'] = round(100 * ((CROPS[name][5] if len(CROPS[name]) > 5 else 0.5) - l) / (r - l))
+            fx = CROPS[name][5] if len(CROPS[name]) > 5 and not isinstance(CROPS[name][5], str) else 0.5
+            entry['focus_x'] = round(100 * (fx - l) / (r - l))
             crop = im.crop((round(l * im.width), round(t * im.height), round(r * im.width), round(b * im.height)))
             for suffix, edge, quality in (('-crop', 2000, 80), ('-crop-sm', 1000, 78)):
                 copy = crop.copy()
