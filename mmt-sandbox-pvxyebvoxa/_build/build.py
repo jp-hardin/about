@@ -847,33 +847,36 @@ def team_img(key, root="", small=False, cls="", lazy=True, priority=False):
 # Home hero carousel: team shoot photos that crossfade on a slow zoom so the hero plays almost like a video.
 HERO_SLIDES = [
     "dsc06817",  # the open office
-    "dsc07371",  # the team standing together outside the office
-    "dsc07122",  # the boardroom
-    "dsc07199",  # a one-on-one conversation
-    "dsc07004",  # the deal team around the laptop
-    "dsc07065",  # the lounge
-    "dsc06747",  # research at the desk
+    "dsc07116",  # Alexandra with two colleagues by the window
+    "dsc07374",  # the standing group, Alexandra in the center
+    "dsc06680",  # Alexandra smiling at her desk
+    "dsc07005",  # the full boardroom
+    "dsc07187",  # Alexandra at the table
+    "dsc07178",  # a meeting at the table
 ]
+HERO_INTRO_SECONDS = 1.5  # the hero opens on the black knot brand background, then the photos fade in
 HERO_SLIDE_SECONDS = 5
 
 
 def hero_carousel(root=""):
-    """Opening tag of the home hero with the photo carousel. Each slide uses its head-safe crop centered on the faces
+    """Opening tag of the home hero with the photo carousel. It opens on the black knot brand background for
+    HERO_INTRO_SECONDS, then the photos crossfade in turn. Each slide uses its head-safe crop centered on the faces
     (team_photos.py), a phone-sized file on small screens, and a staggered crossfade and zoom (style.css .hero-reel)."""
     n, d = len(HERO_SLIDES), HERO_SLIDE_SECONDS
     slides = []
     for i, name in enumerate(HERO_SLIDES):
         ph = TEAM_PHOTOS[name]
         big, small = ph["crop"], ph["crop_small"]
-        delay = i * d - 1.5  # the first slide starts already faded in
+        delay = HERO_INTRO_SECONDS + i * d  # the knot background shows first, then each slide fades in on its turn
         priority = ' fetchpriority="high"' if i == 0 else ""
         slides.append(
             f'<img src="{root}assets/img/team-photos/{big["file"]}" '
             f'srcset="{root}assets/img/team-photos/{small["file"]} {small["width"]}w, {root}assets/img/team-photos/{big["file"]} {big["width"]}w" '
-            f'sizes="100vw" alt="" width="{big["width"]}" height="{big["height"]}"{priority} '
+            f'sizes="100vw" alt="" width="{big["width"]}" height="{big["height"]}"{priority} class="reel-slide" '
             f'style="object-position: 50% {ph["focus_y"]}%; transform-origin: 50% {ph["focus_y"]}%; animation-delay: {delay:g}s">')
     return (f'<section class="hero hero--photo hero--reel"><div class="hero-media hero-reel" aria-hidden="true" '
-            f'style="--slides: {n}; --reel: {n * d}s">{"".join(slides)}</div>')
+            f'style="--slides: {n}; --reel: {n * d}s"><img class="reel-intro" src="{root}assets/img/brand/knot-dark.jpg" alt="" width="1920" height="1080">'
+            f'{"".join(slides)}</div>')
 
 
 def team_hero(key, root="", page=True):

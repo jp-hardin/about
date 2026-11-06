@@ -41,6 +41,13 @@ CROPS = {
     'dsc07122': (0.0, 0.27, 1.0, 0.82, 0.47),   # Transactions hero: the boardroom
     'dsc06747': (0.0, 0.15, 1.0, 0.85, 0.38),   # Insights hero: research at the desk
     'dsc06809': (0.00, 0.15, 1.00, 0.90, 0.33),   # Industries hero: the open office (no breakroom sign)
+    # Home hero carousel slides that appear nowhere else on the site
+    'dsc07116': (0.0, 0.05, 1.0, 0.85, 0.25),   # Alexandra with two colleagues by the window
+    'dsc07374': (0.0, 0.20, 1.0, 0.78, 0.40),   # the standing group, Alexandra in the center
+    'dsc06680': (0.0, 0.05, 1.0, 0.85, 0.32),   # Alexandra smiling at her desk
+    'dsc07005': (0.0, 0.20, 1.0, 0.95, 0.40),   # the full boardroom
+    'dsc07187': (0.0, 0.15, 1.0, 0.90, 0.36),   # Alexandra at the table
+    'dsc07178': (0.0, 0.15, 1.0, 0.90, 0.38),   # a meeting at the table
     # Third photo in each industry page's photo strip (4:3 boxes, close to the photos' own shape, so uncropped)
     'dsc07163': (0.0, 0.0, 1.0, 1.0, 0.28),     # Industrials: conversation at the window table
     'dsc07155': (0.0, 0.0, 1.0, 1.0, 0.33),     # Business Services: the boardroom, laughing
