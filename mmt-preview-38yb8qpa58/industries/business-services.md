@@ -1,6 +1,6 @@
 # Business Services
 
-> Business Services M&A advisory for owners of $50M–$500M companies in facility, marketing, engineering, financial, and staffing services.
+> Business Services M&A advisory for owners of $100M–$500M companies in facility, marketing, engineering, financial, and staffing services.
 
 Source: https://mmt.benchmarkintl.com/industries/business-services.html
 

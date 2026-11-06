@@ -1,6 +1,6 @@
 # Healthcare
 
-> Healthcare M&A advisory for owners of $50M–$500M provider, life sciences, medical products, and pharmacy and healthcare services companies.
+> Healthcare M&A advisory for owners of $100M–$500M provider, life sciences, medical products, and pharmacy and healthcare services companies.
 
 Source: https://mmt.benchmarkintl.com/industries/healthcare.html
 

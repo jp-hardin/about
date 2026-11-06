@@ -1,6 +1,6 @@
 # Consumer
 
-> Consumer M&A advisory for owners of $50M–$500M food and beverage, restaurant, consumer brand, foodservice, and consumer services companies.
+> Consumer M&A advisory for owners of $100M–$500M food and beverage, restaurant, consumer brand, foodservice, and consumer services companies.
 
 Source: https://mmt.benchmarkintl.com/industries/consumer.html
 
