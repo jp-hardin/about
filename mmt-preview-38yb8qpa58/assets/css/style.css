@@ -799,3 +799,5 @@ a.tomb:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-co
 .gate-skip:hover, .gate-skip:focus-visible { border-color: var(--gold); color: var(--gold-deep); }
 .gate-done a { color: var(--gold-deep); }
 @media (max-width: 640px) { .gate-inds { grid-template-columns: 1fr; } .gate-alt { flex-direction: column; } }
+
+/* Team photos (img.team-photo) are cropped to keep heads in frame; each sets object-position on the faces (team_photos.py) */
