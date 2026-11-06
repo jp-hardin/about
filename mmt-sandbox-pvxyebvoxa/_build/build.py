@@ -848,8 +848,9 @@ def team_img(key, root="", small=False, cls="", lazy=True, priority=False):
 HERO_SLIDES = [
     "dsc06817",  # the open office
     "dsc07116",  # Alexandra with two colleagues by the window
+    "dsc06557",  # Alex smiling at his desk
     "dsc07374",  # the standing group, Alexandra in the center
-    "dsc06680",  # Alexandra smiling at her desk
+    "dsc07161",  # Alex at the boardroom table
     "dsc07005",  # the full boardroom
     "dsc07187",  # Alexandra at the table
     "dsc07178",  # a meeting at the table
@@ -873,8 +874,16 @@ def hero_carousel(root=""):
             f'<img src="{root}assets/img/team-photos/{big["file"]}" '
             f'srcset="{root}assets/img/team-photos/{small["file"]} {small["width"]}w, {root}assets/img/team-photos/{big["file"]} {big["width"]}w" '
             f'sizes="100vw" alt="" width="{big["width"]}" height="{big["height"]}"{priority} class="reel-slide" '
-            f'style="object-position: 50% {ph["focus_y"]}%; transform-origin: 50% {ph["focus_y"]}%; animation-delay: {delay:g}s">')
-    return (f'<section class="hero hero--photo hero--reel"><div class="hero-media hero-reel" aria-hidden="true" '
+            # pinned to the top (the crop starts just above the heads) and centered on the subject on narrow screens
+            f'style="object-position: {ph["focus_x"]}% 0%; transform-origin: {ph["focus_x"]}% 0%; animation-delay: {delay:g}s">')
+    # crossfade timing from the slide count: 1.5 s fade in, held until the next slide is fully in, then a 1.5 s fade out
+    cycle, fade = n * d, 1.5
+    pct = lambda sec: f"{100 * sec / cycle:.2f}%"
+    keyframes = (f"@keyframes reel {{ 0% {{ opacity: 0; transform: scale(1.1); }} {pct(fade)} {{ opacity: 1; }} "
+                 f"{pct(d + fade)} {{ opacity: 1; }} {pct(d + 2 * fade)} {{ opacity: 0; transform: scale(1.02); }} "
+                 f"100% {{ opacity: 0; transform: scale(1.02); }} }}")
+    return (f'<style>{keyframes}</style>'
+            f'<section class="hero hero--photo hero--reel"><div class="hero-media hero-reel" aria-hidden="true" '
             f'style="--slides: {n}; --reel: {n * d}s"><img class="reel-intro" src="{root}assets/img/brand/knot-dark.jpg" alt="" width="1920" height="1080">'
             f'{"".join(slides)}</div>')
 
